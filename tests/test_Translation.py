@@ -6,9 +6,24 @@ from glwa.translation.Coverage import CoverageCalculator
 from glwa.translation.FlowStore import FlowStore
 from glwa.translation.Provenance import classify
 from glwa.translation.OpenAIFlowDiscovery import OpenAIFlowDiscovery
+from glwa.translation.Availability import check
 
 
 class TestTranslation(unittest.TestCase):
+    def test_classifies_redirected_404_as_unavailable(self):
+        result = check(404, "https://aib.gov.lk/aib", "404 Sorry")
+
+        self.assertEqual("unavailable", result["status"])
+        self.assertEqual(404, result["http_status"])
+
+    def test_classifies_empty_success_page_as_unusable(self):
+        result = check(200, "https://example.gov.lk/", "  ")
+
+        self.assertEqual("unusable", result["status"])
+
+    def test_allows_visible_success_page_to_reach_translation_checks(self):
+        self.assertIsNone(check(200, "https://example.gov.lk/", "English"))
+
     def test_calculates_script_coverage_for_sinhala(self):
         result = CoverageCalculator().calculate("සිංහල පුවත් English", "si")
 

@@ -3,6 +3,7 @@ from __future__ import annotations
 from pathlib import Path
 from urllib.parse import urlsplit
 
+from .Availability import check
 from .Coverage import CoverageCalculator
 from .FlowStore import FlowStore
 from .OpenAIFlowDiscovery import OpenAIFlowDiscovery
@@ -18,13 +19,33 @@ class TranslationVerifier:
         self.coverage = CoverageCalculator()
 
     async def run(self, url: str) -> dict:
-        from playwright.async_api import async_playwright
+        from playwright.async_api import Error, async_playwright
 
         async with async_playwright() as playwright:
             browser = await playwright.chromium.launch()
             context = await browser.new_context()
             page = await context.new_page()
-            await page.goto(url, wait_until="domcontentloaded")
+            try:
+                response = await page.goto(url, wait_until="domcontentloaded")
+            except Error as error:
+                await context.close()
+                await browser.close()
+                return {
+                    "url": url,
+                    "status": "unavailable",
+                    "reason": f"browser navigation failed: {error}",
+                    "pages": [],
+                }
+            visible_text = await page.locator("body").inner_text()
+            unavailable = check(
+                response.status if response else None,
+                page.url,
+                visible_text,
+            )
+            if unavailable:
+                await context.close()
+                await browser.close()
+                return {"url": url, **unavailable, "pages": []}
             structure = await page.locator(
                 "a,button,select,input,[role=button]"
             ).evaluate_all(
