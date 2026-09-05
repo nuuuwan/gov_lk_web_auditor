@@ -1,8 +1,11 @@
 import argparse
 import asyncio
 import json
+from pathlib import Path
+from urllib.parse import urlsplit
 
 from src.glwa.translation import TranslationVerifier
+from src.glwa.translation.ResultStore import ResultStore
 
 
 def main() -> None:
@@ -10,6 +13,7 @@ def main() -> None:
     parser.add_argument("url")
     parser.add_argument("--flow-dir", default="translation_mappings")
     parser.add_argument("--mapping")
+    parser.add_argument("--result")
     parser.add_argument("--replay", action="store_true")
     parser.add_argument("--model")
     args = parser.parse_args()
@@ -18,6 +22,10 @@ def main() -> None:
             args.url, args.mapping, args.replay
         )
     )
+    result_path = Path(args.result or "translation_results")
+    if result_path.suffix != ".json":
+        result_path /= f"{urlsplit(args.url).hostname}.json"
+    ResultStore(result_path).save(result)
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

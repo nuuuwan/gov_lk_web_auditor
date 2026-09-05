@@ -1,3 +1,4 @@
+import json
 import tempfile
 import unittest
 from pathlib import Path
@@ -7,6 +8,7 @@ from glwa.translation.FlowStore import FlowStore
 from glwa.translation.Provenance import classify
 from glwa.translation.OpenAIFlowDiscovery import OpenAIFlowDiscovery
 from glwa.translation.Availability import check
+from glwa.translation.ResultStore import ResultStore
 
 
 class TestTranslation(unittest.TestCase):
@@ -110,6 +112,16 @@ class TestTranslation(unittest.TestCase):
         )
 
         self.assertEqual(["https://example.gov.lk/about"], result["pages"])
+
+    def test_result_store_overwrites_result_json(self):
+        with tempfile.TemporaryDirectory() as directory:
+            store = ResultStore(Path(directory) / "result.json")
+            store.save({"status": "ok", "pages": []})
+
+            self.assertEqual(
+                {"status": "ok", "pages": []},
+                json.loads(store.path.read_text("utf-8")),
+            )
 
 
 if __name__ == "__main__":

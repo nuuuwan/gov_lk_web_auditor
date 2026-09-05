@@ -61,7 +61,8 @@ freshness check. Missing Level 3 evidence remains inconclusive.
 ## Translation verification
 
 The first run asks the LLM to discover a flow and upserts its reusable mapping
-under `translation_mappings/<host>.json`:
+under `translation_mappings/<host>.json`. It also upserts the measured result
+under `translation_results/<host>.json`:
 
 ```bash
 PYTHONPATH=. uv run python workflows/translation_verification.py https://example.gov.lk/
@@ -80,7 +81,7 @@ PYTHONPATH=. uv run python workflows/translation_verification.py \
 
 Replay refuses stale mappings when the interactive DOM fingerprint changes.
 Each replay records visible-text script coverage and observed translation-related
-network URLs.
+network URLs in the result JSON.
 
 ## Classification rules
 
