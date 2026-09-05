@@ -13,12 +13,17 @@ from .Provenance import classify
 class TranslationVerifier:
     LANGUAGES = ("en", "si", "ta")
 
-    def __init__(self, flow_dir: Path = Path("translation.flows"), model: str | None = None):
+    def __init__(self, flow_dir: Path = Path("translation_mappings"), model: str | None = None):
         self.flow_dir = Path(flow_dir)
         self.discovery = OpenAIFlowDiscovery(model)
         self.coverage = CoverageCalculator()
 
-    async def run(self, url: str) -> dict:
+    async def run(
+        self,
+        url: str,
+        mapping_path: Path | None = None,
+        replay: bool = False,
+    ) -> dict:
         from playwright.async_api import Error, async_playwright
 
         async with async_playwright() as playwright:
@@ -55,17 +60,25 @@ class TranslationVerifier:
                 "id: element.id, className: element.className} ))"
             )
             structure = str(structure)[:20000]
-            store = FlowStore(self.flow_dir / f"{urlsplit(url).hostname}.json")
+            store = FlowStore(
+                mapping_path or self.flow_dir / f"{urlsplit(url).hostname}.json"
+            )
             cached = store.load()
             fingerprint = store.fingerprint(structure)
-            flow = cached["flow"] if cached and cached["fingerprint"] == fingerprint else None
+            if cached and cached["fingerprint"] != fingerprint:
+                if replay:
+                    raise ValueError("translation mapping is stale for the live page")
+                cached = None
+            flow = self._flow(cached) if cached else None
             if flow is None or not await self._valid_flow(page, flow):
+                if replay:
+                    raise ValueError("translation mapping selectors do not match the live page")
                 flow = self.discovery.discover(url, structure)
                 if not await self._valid_flow(page, flow):
                     raise ValueError("OpenAI flow selectors did not match the live page")
-                store.save(fingerprint, flow)
-            pages = [url, *flow["pages"]]
-            pages = list(dict.fromkeys(pages))[:5]
+                flow = {**flow, "pages": [url, *flow["pages"]]}
+                store.save(fingerprint, flow, url, page.url)
+            pages = list(dict.fromkeys(flow["pages"]))[:5]
             results = [await self._page(page, flow["languages"], page_url) for page_url in pages]
             await context.close()
             await browser.close()
@@ -75,6 +88,20 @@ class TranslationVerifier:
                 "flow_fingerprint": fingerprint,
                 "redirect_chain": self._redirect_chain(response),
             }
+
+    def _flow(self, mapping: dict | None) -> dict | None:
+        if not mapping:
+            return None
+        if "actions" in mapping:
+            return {
+                "pages": [item["url"] for item in mapping.get("pages", [])],
+                "languages": {
+                    language: action["locator"]
+                    for language, action in mapping["actions"].items()
+                    if action.get("kind") == "locator"
+                },
+            }
+        return mapping.get("flow")
 
     def _redirect_chain(self, response) -> list[str]:
         if not response:

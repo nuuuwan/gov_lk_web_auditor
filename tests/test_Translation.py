@@ -61,12 +61,44 @@ class TestTranslation(unittest.TestCase):
     def test_flow_store_round_trips(self):
         with tempfile.TemporaryDirectory() as directory:
             store = FlowStore(Path(directory) / "flow.json")
-            store.save("fingerprint", {"languages": {"en": ".english"}})
+            store.save(
+                "fingerprint",
+                {
+                    "languages": {"en": ".english"},
+                    "pages": ["https://example.gov.lk/about"],
+                },
+                "https://example.gov.lk/",
+                "https://example.gov.lk/",
+            )
 
             self.assertEqual(
-                {"fingerprint": "fingerprint", "flow": {"languages": {"en": ".english"}}},
+                {
+                    "schema_version": "translation-flow-1",
+                    "source_url": "https://example.gov.lk/",
+                    "final_url": "https://example.gov.lk/",
+                    "fingerprint": "fingerprint",
+                    "pages": [
+                        {"url": "https://example.gov.lk/about", "path": "/about"}
+                    ],
+                    "actions": {
+                        "en": {"kind": "locator", "locator": ".english"}
+                    },
+                },
                 store.load(),
             )
+
+    def test_mapping_actions_convert_back_to_replay_flow(self):
+        from glwa.translation.Verifier import TranslationVerifier
+
+        flow = TranslationVerifier()._flow(
+            {
+                "pages": [{"url": "https://example.gov.lk/about", "path": "/about"}],
+                "actions": {"en": {"kind": "locator", "locator": ".english"}},
+            }
+        )
+
+        self.assertEqual(["https://example.gov.lk/about"], flow["pages"])
+        self.assertEqual({"en": ".english"}, flow["languages"])
 
     def test_flow_validation_rejects_cross_origin_pages(self):
         result = OpenAIFlowDiscovery()._validate(

@@ -58,6 +58,30 @@ payment information, a legal basis, processing time, a downloadable non-image
 form, and a visible update date. Update dates older than 730 days fail the
 freshness check. Missing Level 3 evidence remains inconclusive.
 
+## Translation verification
+
+The first run asks the LLM to discover a flow and upserts its reusable mapping
+under `translation_mappings/<host>.json`:
+
+```bash
+PYTHONPATH=. uv run python workflows/translation_verification.py https://example.gov.lk/
+```
+
+The committed mapping records the final URL, interactive DOM fingerprint,
+selected pages, and one locator action for each official language. Replay it
+without an LLM call:
+
+```bash
+PYTHONPATH=. uv run python workflows/translation_verification.py \
+  https://example.gov.lk/ \
+  --mapping translation_mappings/example.gov.lk.json \
+  --replay
+```
+
+Replay refuses stale mappings when the interactive DOM fingerprint changes.
+Each replay records visible-text script coverage and observed translation-related
+network URLs.
+
 ## Classification rules
 
 Levels are cumulative. The reported level is the **highest level for which all required lower-level conditions are evidenced**. If a criterion cannot be determined safely by automation, do not guess: mark it inconclusive and lower the confidence.

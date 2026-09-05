@@ -8,10 +8,16 @@ from src.glwa.translation import TranslationVerifier
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("url")
-    parser.add_argument("--flow-dir", default="translation.flows")
+    parser.add_argument("--flow-dir", default="translation_mappings")
+    parser.add_argument("--mapping")
+    parser.add_argument("--replay", action="store_true")
     parser.add_argument("--model")
     args = parser.parse_args()
-    result = asyncio.run(TranslationVerifier(args.flow_dir, args.model).run(args.url))
+    result = asyncio.run(
+        TranslationVerifier(args.flow_dir, args.model).run(
+            args.url, args.mapping, args.replay
+        )
+    )
     print(json.dumps(result, ensure_ascii=False, indent=2))
 
 
