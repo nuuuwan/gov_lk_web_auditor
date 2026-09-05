@@ -22,8 +22,9 @@ class OpenAIFlowDiscovery:
                         {
                             "type": "input_text",
                             "text": (
-                                "Return JSON only. Identify robust CSS selectors for language controls "
-                                "and up to five same-origin content pages. Use selectors, not XPath. "
+                        "Return JSON only. Identify robust Playwright locator strings for language controls "
+                        "and up to five same-origin content pages. CSS, text=, and role= locators are valid; "
+                        "do not return prose or XPath. "
                                 "Languages are en, si, and ta. Never invent a selector."
                             ),
                         },
