@@ -23,6 +23,7 @@ class TranslationVerifier:
         url: str,
         mapping_path: Path | None = None,
         replay: bool = False,
+        rediscover: bool = False,
     ) -> dict:
         from playwright.async_api import Error, async_playwright
 
@@ -65,6 +66,8 @@ class TranslationVerifier:
             )
             cached = store.load()
             fingerprint = store.fingerprint(structure)
+            if rediscover and not replay:
+                cached = None
             if cached and cached["fingerprint"] != fingerprint:
                 if replay:
                     raise ValueError("translation mapping is stale for the live page")
@@ -77,9 +80,10 @@ class TranslationVerifier:
                 if not await self._valid_flow(page, flow):
                     raise ValueError("OpenAI flow selectors did not match the live page")
                 flow = {**flow, "pages": [url, *flow["pages"]]}
+                flow = await self._record_actions(page, flow)
                 store.save(fingerprint, flow, url, page.url)
             pages = list(dict.fromkeys(flow["pages"]))[:5]
-            results = [await self._page(page, flow["languages"], page_url) for page_url in pages]
+            results = [await self._page(page, flow, page_url) for page_url in pages]
             await context.close()
             await browser.close()
             return {
@@ -99,6 +103,14 @@ class TranslationVerifier:
                     language: action["locator"]
                     for language, action in mapping["actions"].items()
                     if action.get("kind") == "locator"
+                },
+                "action_metadata": {
+                    language: {
+                        key: value
+                        for key, value in action.items()
+                        if key not in {"kind", "locator"}
+                    }
+                    for language, action in mapping["actions"].items()
                 },
             }
         return mapping.get("flow")
@@ -122,24 +134,41 @@ class TranslationVerifier:
                 return False
         return all(language in flow.get("languages", {}) for language in self.LANGUAGES)
 
-    async def _page(self, page, selectors: dict, page_url: str) -> dict:
+    async def _record_actions(self, page, flow: dict) -> dict:
+        metadata = {}
+        for language, selector in flow["languages"].items():
+            await page.goto(flow["pages"][0], wait_until="domcontentloaded")
+            await self._activate(page, selector)
+            await page.wait_for_timeout(1500)
+            metadata[language] = {
+                "resolved_url": page.url,
+                "resolved_path": urlsplit(page.url).path,
+            }
+        return {**flow, "action_metadata": metadata}
+
+    async def _page(self, page, flow: dict, page_url: str) -> dict:
         result = {"url": page_url, "languages": {}}
         for language in self.LANGUAGES:
             await page.goto(page_url, wait_until="domcontentloaded")
             request_urls = []
             page.on("request", lambda request: request_urls.append(request.url))
-            selector = selectors.get(language)
+            selector = flow["languages"].get(language)
             if selector:
-                control = page.locator(selector).first
-                if await control.evaluate("element => element.tagName") == "OPTION":
-                    select = control.locator("..")
-                    await select.select_option(value=await control.get_attribute("value"))
-                else:
-                    await control.click(timeout=5000)
-                await page.wait_for_load_state("networkidle")
+                await self._activate(page, selector)
+                await page.wait_for_timeout(1500)
             text = await page.locator("body").inner_text()
             result["languages"][language] = {
                 "coverage": self.coverage.calculate(text, language).to_dict(),
                 "provenance": classify(request_urls, page.url),
+                "resolved_url": page.url,
+                "resolved_path": urlsplit(page.url).path,
             }
         return result
+
+    async def _activate(self, page, selector: str) -> None:
+        control = page.locator(selector).first
+        if await control.evaluate("element => element.tagName") == "OPTION":
+            select = control.locator("..")
+            await select.select_option(value=await control.get_attribute("value"))
+            return
+        await control.click(timeout=5000)

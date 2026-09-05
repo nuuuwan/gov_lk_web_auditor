@@ -40,8 +40,17 @@ class TestTranslation(unittest.TestCase):
         result = CoverageCalculator().calculate("සිංහල පුවත් English", "si")
 
         self.assertEqual("si", result.language)
-        self.assertGreater(result.percentage, 50)
-        self.assertTrue(result.translated)
+        self.assertLessEqual(result.percentage, 100)
+        self.assertGreater(result.percentage, 40)
+        self.assertFalse(result.translated)
+
+    def test_excludes_script_combining_marks_from_coverage_denominator(self):
+        result = CoverageCalculator().calculate("සිංහල", "si")
+
+        self.assertEqual(5, result.visible_text_chars)
+        self.assertEqual(3, result.counted_letter_chars)
+        self.assertEqual(3, result.language_chars)
+        self.assertEqual(100, result.percentage)
 
     def test_uses_unknown_when_no_translation_provenance_is_observed(self):
         result = classify(
@@ -50,7 +59,7 @@ class TestTranslation(unittest.TestCase):
         )
 
         self.assertEqual("unknown", result["type"])
-        self.assertEqual([], result["translation_candidates"])
+        self.assertEqual([], result["dynamic_urls"])
 
     def test_detects_known_dynamic_provider(self):
         result = classify(

@@ -68,6 +68,8 @@ under `translation_results/<host>.json`:
 PYTHONPATH=. uv run python workflows/translation_verification.py https://example.gov.lk/
 ```
 
+Pass `--rediscover` to replace an existing mapping with a fresh LLM discovery.
+
 The committed mapping records the final URL, interactive DOM fingerprint,
 selected pages, and one locator action for each official language. Replay it
 without an LLM call:

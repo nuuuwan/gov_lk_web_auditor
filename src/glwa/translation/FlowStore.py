@@ -33,7 +33,11 @@ class FlowStore:
                 for url in flow["pages"]
             ],
             "actions": {
-                language: {"kind": "locator", "locator": selector}
+                language: {
+                    "kind": "locator",
+                    "locator": selector,
+                    **flow.get("action_metadata", {}).get(language, {}),
+                }
                 for language, selector in flow["languages"].items()
             },
         }

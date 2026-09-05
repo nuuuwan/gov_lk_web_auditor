@@ -15,11 +15,12 @@ def main() -> None:
     parser.add_argument("--mapping")
     parser.add_argument("--result")
     parser.add_argument("--replay", action="store_true")
+    parser.add_argument("--rediscover", action="store_true")
     parser.add_argument("--model")
     args = parser.parse_args()
     result = asyncio.run(
         TranslationVerifier(args.flow_dir, args.model).run(
-            args.url, args.mapping, args.replay
+            args.url, args.mapping, args.replay, args.rediscover
         )
     )
     result_path = Path(args.result or "translation_results")

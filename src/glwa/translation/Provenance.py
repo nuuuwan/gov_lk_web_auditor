@@ -34,6 +34,4 @@ def classify(request_urls: list[str], page_url: str) -> dict:
     return {
         "type": kind,
         "dynamic_urls": dynamic,
-        "same_origin_urls": same_origin,
-        "translation_candidates": candidates,
     }
