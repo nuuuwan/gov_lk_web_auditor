@@ -41,6 +41,7 @@ class TranslationVerifier:
                 response.status if response else None,
                 page.url,
                 visible_text,
+                self._redirect_chain(response),
             )
             if unavailable:
                 await context.close()
@@ -68,7 +69,22 @@ class TranslationVerifier:
             results = [await self._page(page, flow["languages"], page_url) for page_url in pages]
             await context.close()
             await browser.close()
-            return {"url": url, "pages": results, "flow_fingerprint": fingerprint}
+            return {
+                "url": url,
+                "pages": results,
+                "flow_fingerprint": fingerprint,
+                "redirect_chain": self._redirect_chain(response),
+            }
+
+    def _redirect_chain(self, response) -> list[str]:
+        if not response:
+            return []
+        chain = []
+        request = response.request
+        while request:
+            chain.append(request.url)
+            request = request.redirected_from
+        return list(reversed(chain))
 
     async def _valid_flow(self, page, flow: dict) -> bool:
         for selector in flow.get("languages", {}).values():

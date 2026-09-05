@@ -24,6 +24,16 @@ class TestTranslation(unittest.TestCase):
     def test_allows_visible_success_page_to_reach_translation_checks(self):
         self.assertIsNone(check(200, "https://example.gov.lk/", "English"))
 
+    def test_keeps_redirect_chain_for_final_destination(self):
+        result = check(
+            200,
+            "https://new.example.gov.lk/",
+            "English",
+            ["https://old.example.gov.lk/", "https://new.example.gov.lk/"],
+        )
+
+        self.assertIsNone(result)
+
     def test_calculates_script_coverage_for_sinhala(self):
         result = CoverageCalculator().calculate("සිංහල පුවත් English", "si")
 

@@ -7,7 +7,7 @@ from urllib.parse import urljoin, urlsplit
 
 class OpenAIFlowDiscovery:
     def __init__(self, model: str | None = None):
-        self.model = model or os.getenv("OPENAI_MODEL", "gpt-5-mini")
+        self.model = model or os.getenv("OPENAI_MODEL", "gpt-5.4-nano")
 
     def discover(self, url: str, structure: str) -> dict:
         from openai import OpenAI
