@@ -22,6 +22,8 @@ class ContentDetector:
             "apache2 ubuntu default page",
             "welcome to nginx",
             "website coming soon",
+            "under construction",
+            "back soon",
         ),
         "unrelated": (
             "online casino",

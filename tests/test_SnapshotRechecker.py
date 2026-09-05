@@ -11,7 +11,8 @@ class TestSnapshotRechecker(unittest.TestCase):
             path = Path(folder) / "page.html"
             path.write_text(
                 "<address>123 Parliament Road, Colombo 01</address>"
-                "<h2>Eligibility</h2>",
+                "<h2>Eligibility</h2>"
+                "<p>" + ("Our office serves citizens every weekday. " * 30) + "</p>",
                 encoding="utf-8",
             )
             data = self._data(path)

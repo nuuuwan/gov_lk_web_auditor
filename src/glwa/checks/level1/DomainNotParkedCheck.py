@@ -13,6 +13,9 @@ class DomainNotParkedCheck(Check):
         for item in evidence:
             if item.check == self.FAILURE and item.status == "fail":
                 return self.result("fail", item.detail)
+        gated = self.substance_gate(evidence)
+        if gated:
+            return self.result("inconclusive", gated)
         if any(
             item.check == "http" and item.status == "pass"
             for item in evidence

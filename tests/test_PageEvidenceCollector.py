@@ -27,6 +27,41 @@ class TestPageEvidenceCollector(unittest.TestCase):
         self.assertTrue({"postal_address", "phone", "email"} <= checks)
         self.assertIn("eligibility_criteria", checks)
 
+    def test_emits_substance_evidence(self):
+        collector = PageEvidenceCollector()
+        rich = HttpObservation(
+            "https://example.gov.lk/",
+            200,
+            "https://example.gov.lk/",
+            [],
+            10,
+            "text/html",
+            "<html><body><p>" + ("Substantive content. " * 100) + "</p></body></html>",
+            None,
+        )
+        stub = HttpObservation(
+            "https://stub.gov.lk/",
+            200,
+            "https://stub.gov.lk/",
+            [],
+            10,
+            "text/html",
+            "<html><body>Under construction...</body></html>",
+            None,
+        )
+        rich_text = [
+            item
+            for item in collector.collect([rich], rich.url)
+            if item.check == "page_text"
+        ]
+        stub_text = [
+            item
+            for item in collector.collect([stub], stub.url)
+            if item.check == "page_text"
+        ]
+        self.assertEqual("pass", rich_text[0].status)
+        self.assertEqual("fail", stub_text[0].status)
+
 
 if __name__ == "__main__":
     unittest.main()

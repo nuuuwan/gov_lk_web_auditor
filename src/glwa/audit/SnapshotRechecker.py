@@ -14,6 +14,7 @@ class SnapshotRechecker:
         "generic_hosting",
         "unrelated",
         "identity",
+        "page_text",
         "redirect_unrelated",
         "postal_address",
         "phone",
