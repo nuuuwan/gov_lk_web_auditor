@@ -26,8 +26,9 @@ It is inspired by the Level 0–5 framework, originally described in [Grading Go
 ## Run audits
 
 ```bash
-python3 -m pip install -r requirements.txt
-python3 workflows/pipeline.py
+uv sync
+uv run playwright install chromium
+uv run python workflows/pipeline.py
 ```
 
 The pipeline audits every ministry URL in the government web directory. Each
