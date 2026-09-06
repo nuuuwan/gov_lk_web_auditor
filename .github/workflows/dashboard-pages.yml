@@ -1,0 +1,49 @@
+name: Build and deploy dashboard to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/glwa/dashboard/**"
+      - "latest_audit_reports/**"
+      - "static_data/websites.json"
+      - "audit.output/**"
+      - "tests/test_Dashboard*.py"
+      - ".github/workflows/dashboard-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build static dashboard (committed audit data only)
+        run: PYTHONPATH=src python -m glwa.dashboard --reports latest_audit_reports --output site
+      - name: Check for broken internal links
+        run: PYTHONPATH=src python -m unittest tests.test_DashboardBuilder -v
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
