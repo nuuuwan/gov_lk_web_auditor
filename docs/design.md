@@ -28,7 +28,7 @@ It is inspired by the Level 0–5 framework, originally described in [Grading Go
 ```bash
 uv sync
 uv run playwright install chromium
-uv run python workflows/pipeline.py
+PYTHONPATH=. uv run python workflows/pipeline.py
 ```
 
 The pipeline audits every ministry URL in the government web directory. Each
@@ -37,6 +37,10 @@ The latest rendered files are stored under `latest_audit_reports/<host>` and
 can be regenerated from raw audit data. Each audit performs at
 least two HTTPS and HTTP probes from the local vantage point. Independent
 geographic probes must run the pipeline from separate environments.
+
+The Sri Lankan network workflow and runner operations are documented in
+[GitHub Actions](github-actions.md). The workflow is manually dispatched until
+the self-hosted runner has passed a limited reliability run.
 
 Each website reports `pass`, `fail`, or `inconclusive` for Levels 0–5. A failed
 level prevents all higher-level checks from running. After the pipeline
