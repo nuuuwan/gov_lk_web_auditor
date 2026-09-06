@@ -1,0 +1,98 @@
+name: Run Sri Lankan network audit
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_urls:
+        description: "Maximum number of URLs to audit; leave empty for all URLs"
+        required: false
+        type: string
+        default: "1"
+      create_pr:
+        description: "Open a report pull request after a successful audit"
+        required: false
+        type: boolean
+        default: true
+      skip_browser:
+        description: "Skip Chromium installation for local workflow smoke tests"
+        required: false
+        type: boolean
+        default: false
+      skip_artifacts:
+        description: "Skip artifact upload for local workflow smoke tests"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sri-lanka-audit
+  cancel-in-progress: false
+
+jobs:
+  audit:
+    runs-on: [self-hosted, linux, sri-lanka]
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install Python
+        run: uv python install 3.12
+
+      - name: Install locked environment
+        run: uv sync --locked
+
+      - name: Install Playwright Chromium
+        if: ${{ !inputs.skip_browser }}
+        run: uv run playwright install chromium
+
+      - name: Run audit pipeline
+        env:
+          MAX_URLS: ${{ inputs.max_urls }}
+        run: |
+          repo_root="$(pwd)"
+          while [[ ! -f "$repo_root/pyproject.toml" && "$repo_root" != "/" ]]; do
+            repo_root="$(dirname "$repo_root")"
+          done
+          cd "$repo_root"
+          args=()
+          if [[ -n "$MAX_URLS" ]]; then
+            args+=(--max-urls "$MAX_URLS")
+          fi
+          PYTHONPATH=. uv run python workflows/pipeline.py "${args[@]}"
+
+      - name: Upload audit outputs
+        if: ${{ always() && !inputs.skip_artifacts }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: audit-${{ github.run_id }}
+          if-no-files-found: warn
+          path: |
+            audit.output
+            latest_audit_reports
+            README.md
+
+      - name: Open report pull request
+        if: ${{ success() && inputs.create_pr }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/audit-${{ github.run_id }}
+          delete-branch: true
+          add-paths: |
+            README.md
+            latest_audit_reports
+          commit-message: "chore(audit): refresh audit reports"
+          title: "chore(audit): refresh audit reports"
+          body: |
+            ## what changed
+
+            Refresh the generated audit reports and README summary from the Sri Lankan self-hosted runner.
+
+            ## verification
+
+            Audit run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
