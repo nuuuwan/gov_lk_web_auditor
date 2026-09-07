@@ -29,10 +29,13 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - uses: astral-sh/setup-uv@v6
+      - name: Install locked environment
+        run: uv sync --locked
       - name: Build static dashboard (committed audit data only)
-        run: PYTHONPATH=src python -m glwa.dashboard --reports latest_audit_reports --output site
+        run: PYTHONPATH=src uv run python -m glwa.dashboard --reports latest_audit_reports --output site
       - name: Check for broken internal links
-        run: PYTHONPATH=src python -m unittest tests.test_DashboardBuilder -v
+        run: PYTHONPATH=src uv run python -m unittest tests.test_DashboardBuilder -v
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
