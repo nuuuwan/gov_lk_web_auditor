@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="assets/css/mystyles.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (including Popper.js for dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://landcom.gov.lk/assets/js/feather.min.js" type="text/javascript"></script>
+    <title>LCGD</title>
+  	<link rel="icon" type="image/png" href="https://landcom.gov.lk/assets/images/national_logo.png">
+
+    <style>
+        .topic {
+            color: black;
+            font-size: 10mm;
+            font-family: sans-serif;
+        }
+
+        .sticky_header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        /* Container to control the marquee boundaries */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: green;
+            color: white;
+            height: 50px;
+            border: 1px solid #ccc;
+            z-index: 5;
+        }
+
+        /* Content inside the marquee */
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            justify-content: center;
+            animation: marquee-animation 80s linear infinite;
+            animation-play-state: running;
+            /* Default: running */
+        }
+
+        /* Pause the animation when hovering */
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        /* Keyframes to create the scrolling effect */
+        @keyframes marquee-animation {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .remove-styles {
+            text-decoration: none;
+        }
+
+        .custom_card:hover {
+            background-color: rgb(92, 95, 99);
+            border-color: rgb(101, 101, 102);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .bg_img {
+            background-image: url(../assets/images/mountains.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover
+        }
+
+        .nf {
+            color: white;
+            padding: 5px;
+            margin-top: 10px;
+            width: 50%;
+            border: 1px solid white;
+            border-radius: 0px 20px;
+            text-align: center;
+        }
+
+        .nfxx {
+            color: black;
+            padding: 5px;
+            margin-top: 10px;
+            width: 50%;
+            border: 5px solid black;
+            border-radius: 0px 20px;
+            text-align: center;
+        }
+
+
+        /* for responsive features */
+        /* Larger devices (desktop) */
+        @media (max-width: 1200px) {
+            .topic_sin {
+                font-size: 8mm;
+            }
+
+            .topic_ta {
+                font-size: 8mm;
+            }
+
+            .topic_en {
+                font-size: 8mm;
+            }
+
+
+            #nationalLogo {
+                max-width: 110px;
+            }
+        }
+
+        /* Larger devices (tablet) */
+        @media (max-width: 992px) {
+
+            /* header */
+            .topic_sin {
+                font-size: 8mm;
+            }
+
+            .topic_ta {
+                font-size: 8mm;
+            }
+
+            .topic_en {
+                font-size: 8mm;
+            }
+
+            #nationalLogo {
+                max-width: 110px;
+            }
+
+            /* content */
+
+
+        }
+
+        /* Medium devices (tablet) */
+        @media (max-width: 768px) {
+            .topic_sin {
+                font-size: 6mm;
+            }
+
+            .topic_ta {
+                font-size: 6mm;
+            }
+
+            .topic_en {
+                font-size: 6mm;
+            }
+
+            #nationalLogo {
+                max-width: 100px;
+            }
+        }
+
+        /* Smaller devices */
+        @media (max-width: 576px) {
+            .topic_sin {
+                font-size: 4mm;
+            }
+
+            .topic_ta {
+                font-size: 4mm;
+            }
+
+            .topic_en {
+                font-size: 4mm;
+            }
+
+            #nationalLogo {
+                max-width: 100px;
+            }
+
+            .content_p {
+                font-size: 3mm;
+            }
+
+            .content_h {
+                font-size: 5mm;
+                font-weight: bold;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--//header-->
+    <div class="container-fluid p-0 m-0">
+    <div class="row bg-light p-2">
+        <div class="col" style="height: 150px;display: flex; justify-content: center; align-items: center;">
+            <div class="" style="display: flex; align-items: center; justify-content: center;">
+                <img src="https://landcom.gov.lk/assets/images/national_logo.png" id="nationalLogo" style="width:110px;" alt="">
+                <div class="p-0" style="text-align: center;">
+                    <p class="m-0 p-0 topic topic_sin" style="line-height: 1.2">ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව</p>
+                    <p class="m-0 p-0 topic topic_ta" style="line-height: 1.2">காணி ஆணையாளர் நாயகத்தின் திணைக்களம்</p>
+                    <p class="m-0 p-0 topic topic_en" style="line-height: 1.2">Land Commissioner General's Department</p>
+                  	<p class="m-0 p-0 fs-6 fs-md-4 topic_en" style="line-height: 1.2;font-weight:bold">Ministry of Agriculture, Livestock, Land and Irrigation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="height: 60px;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2" style="z-index: 6;">
+                <div class=" container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="https://landcom.gov.lk/sinhalaDoc/home_sin.php">මුල පිටුව</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle 
+                                " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    අප පිළිබදව
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/intro_sin.php">හැදින්වීම</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/history_sin.php">ඉතිහාසය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/depServices_sin.php">දෙපාර්තමේන්තුවේ සේවා</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php">සංවිධාන ව්‍යුහය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/lcg_sin.php">ඉඩම් කොමසාරිස් ජනරාල්</a></li>
+                                  <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/alcg_sin.php">අතිරේක ඉඩම් කොමසාරිස් ජනරාල්</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle
+                                " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    අංශ
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/admin_sin.php">පාලන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/accounts_sin.php">ගිණුම් අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/audit_sin.php">විගණන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/rAndDev_sin.php">පර්යේෂණ හා සංවර්ධන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/policyInvestigation_sin.php">ප්‍රතිපත්ති හා විමර්ශන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/landLease_sin.php">ඉඩම් බදු අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/legal_sin.php">නීති අංශය</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/faq_sin.php">නිතර අසන පැන</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php">අප අමතන්න</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/diviSec_sin.php">ප්‍රාදේශීය කාර්යාල</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/downloads_sin.php">බාගත කිරීම්</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/eslims_sin.php">eSlims </a>
+                            </li>
+                          	<li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/procurementAds_sin.php">ප්‍රසම්පාදන දැන්වීම්</a>
+                            </li>
+                          	 <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/news_sin.php">පුවත්</a>
+                            </li>
+                           	<li class="px-1">
+                                <a class="text-light btn btn-outline-warning btn-xs" href="https://landcom.gov.lk/sinhalaDoc/home_sin.php">සිංහල</a>
+                            </li>
+                            <li class="">
+                                <!-- <a class="text-light btn btn-outline-primary btn-xs" href="https://landcom.gov.lk/tamilDoc/home_tam.php">தமிழ்</a> -->
+                            </li>
+                            <li class="px-1">
+                                <a class="btn btn-outline-light btn-xs" href="https://landcom.gov.lk/englishDoc/home_en.php">English </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid pt-5 bg_img">
+        <div class="container" style="min-height:100vh;">
+            <div class="row p-4 mt-4 mb-4" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="col-3 d-none d-lg-block" style="">
+                    <div class="card border-dark mb-3">
+  <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/internalAffairs_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body bg-warning">
+                  <p class="card-text"><b>Internal Affairs Unit</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body">
+                    <p class="card-text">රාජ්‍ය ඉඩම් කලමනාකරණ පද්ධතියට පිවිසීම</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">විශේෂ ව්‍යාපෘති</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<hr>
+<div class="card border-dark mb-3" style="">
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circuitBunglows_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">සංචාරක බංගලා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/landManagementCenter_sin.php" class="remove-styles" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">රත්මලාන ඉඩම් කලමනාකරණ මධ්‍යස්ථානය</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circulars_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">චක්‍රලේඛ බාගත කිරීම (New)</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php" class="remove-styles">
+            <div class="card custom_card text-light bg-secondary">
+                <div class="card-body">
+                    <p class="card-text">ජංගම සේවා තොරතුරු</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/ourPublications_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">අපගේ ප්‍රකාශන මෙතනින් බලන්න</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/importantLinks_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">වැදගත් සබදතා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/photos_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">ඡායාරූප</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/infoAct_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">තොරතුරු පනත</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>                </div>
+                <div class="col-3 d-lg-none d-block" style="">
+                    <div class="offcanvas offcanvas-start" id="demo">
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title">පැති මෙනුව</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="card border-dark mb-3">
+  <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/internalAffairs_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body bg-warning">
+                  <p class="card-text"><b>Internal Affairs Unit</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body">
+                    <p class="card-text">රාජ්‍ය ඉඩම් කලමනාකරණ පද්ධතියට පිවිසීම</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">විශේෂ ව්‍යාපෘති</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<hr>
+<div class="card border-dark mb-3" style="">
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circuitBunglows_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">සංචාරක බංගලා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/landManagementCenter_sin.php" class="remove-styles" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">රත්මලාන ඉඩම් කලමනාකරණ මධ්‍යස්ථානය</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circulars_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">චක්‍රලේඛ බාගත කිරීම (New)</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php" class="remove-styles">
+            <div class="card custom_card text-light bg-secondary">
+                <div class="card-body">
+                    <p class="card-text">ජංගම සේවා තොරතුරු</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/ourPublications_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">අපගේ ප්‍රකාශන මෙතනින් බලන්න</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/importantLinks_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">වැදගත් සබදතා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/photos_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">ඡායාරූප</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/infoAct_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">තොරතුරු පනත</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>                        </div>
+                    </div>
+
+                    <div class="container-fluid mt-3 mb-3">
+                        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <span>☰</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-9" style="">
+                    <div class="card border-dark mb-3" style="">
+                        <div class="mx-2 mt-2 mb-2">
+                            <div class="remove-styles">
+                                <div class="card text-dark bg-light custom_card" style="max-width: 100%">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                           <h2>ජංගම සේවා තොරතුරු</h2>
+											<div class="row">
+                                            <div class="col mb-2">
+                                              <!-- Start of card -->
+                                                <div class="card mb-3" style="width: 100%;">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div id="carouselExampleIndicators5" class="carousel slide">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/wayamba_wanajeewi/4.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/wayamba_wanajeewi/3.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/wayamba_wanajeewi/1.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/wayamba_wanajeewi/2.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/wayamba_wanajeewi/5.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/wayamba_wanajeewi/6.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/wayamba_wanajeewi/7.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators5" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                                                <p class="card-text">
+                                                                <p class="content_p">
+                                                                    වයඹ වනජීවී කළාපයේ ඉතා වැදගත් අභය භූමියක් වන කහල්ල පල්ලේකැලේ අභය භූමිය තුළ දීර්ඝ කාලයක සිට පදිංචි සිටින ජනතාවගේ ඉඩම් අයිතිය තහවුරු කිරීම, කහල්ල පල්ලේකැලේ අභයභූමිය තුළ පිහිටා ඇති එම අභයභූමිය සහ ගල්ගමුව අවට කළාපයේ අලි ඇතුන් ඇතුළු වන සතුන්ගේ ජල අවශ්‍යතා සපුරන ප්‍රධාන මූලශ්‍රයක් වන හක්වටුනාව වැව් රක්ෂිතය මැන මායිම් ලකුණු කර වැව රක්ෂිතය ආරක්ෂා කිරීම හා කලමඩු ඇල රක්ෂිතය තුළ පිහිටා ඇති කලමඩුව වැව ඇතුළු ඉපැරණි වැව් පිළිසකර කර වනඅලින් ඇතුළු වනජීවීන්ට ජලය හා ආහාර අවශ්‍යතාවයන් රක්ෂිතය තුළින්ම සපයා ගැනීමට අවශ්‍ය කටයුතු සිදු කිරීම තුළින් අලි මිනිස් ගැටුමට ස්ථීරසාර විසදුම් යෝජනා කි‍රීම සදහා අදාළ නිලධාරීන්, මහජනතාව හා දේශපාලන අධිකාරිය එක්ව ක්ෂේත්‍ර චාරිකාවක් 2025.08.22 දින දවස පුරා සිදුකෙරිණ.
+                                                                    <br>
+                                                                    <br>
+                                                                    මෙම අවස්ථාවට කෘෂිකර්ම හා පශු සම්පත් නියෝජ්‍ය අමාත්‍ය ගරු නාමල් කරුණාරත්න මහතා, පාර්ලිමේන්තු මන්ත්‍රිනී ගරු නීතිඥ ගීතා හේරත් මහත්මිය, පරිසර අමාත්‍යාංශයේ ලේකම්තුමන්, අතිරේක ලේකම්තුමා, කුරුණෑගල දිස්ත්‍රික් ලේකම්තුමන්, වයඹ ආණ්ඩුකාරවර ලේකම් තුමා, පළාත් ඉඩම් කොමසාරිස්තුමා, කුරුණෑගල වාරිමාර්ග අධ්‍යක්ෂ තුමිය, පොල්පිතිගම ප්‍රාදේශීයතුමා, කුරුණෑගල දිසාවන නිලධාරීතුමා, දිස්ත්‍රීක් වනජීවී සහකාර අධ්‍යක්ෂතුමා, ප්‍රදේශයේ ප්‍රාදේශීය සභා මන්ත්‍රීවරැන්, ප්‍රදේශවාසීන් ඇතුලු විශාල පිරිසක් සහභාගී වූ අතර, ඉඩම් කොමසාරිස් ජනරාල්තුමන්
+                                                                    නියෝජනය කරමින් සහකාර ඉඩම් කොමසාරිස් ජනක ඩී. බණ්ඩාර හේරත් මහතා සහභාගි විය.
+                                                                </p>
+                                                               
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End of card -->
+                                              <!-- Start of card -->
+                                                <div class="card mb-3" style="width: 100%;">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div id="carouselExampleIndicators2" class="carousel slide">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                                                      	<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                                                      	<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                                                      	<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                                                      	<button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/2.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/6.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/7.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/4.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/5.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                      	<div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/1.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                      	<div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/3.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                      	<div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/10.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                      	<div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/9.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                      	<div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/anuradhapura_mobile/12.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                                                <p class="card-text">
+                                                                <p class="content_p">
+                                                                    2025.08.13,14 දෙදින අනුරාධපුර දිස්ත්‍රික්කයේ නොවිසඳුනු ඉඩම් ගැටලු වලට අදාළව පැවති ක්ෂේත්‍ර පරීක්ෂණ හා ඉදිරි කටයුතු සිදු වීමකින් තොරව පැවති දීර්ඝ කාලීන බදු ගොනු 1000කට ආසන්න ප්‍රමාණයක් පරීක්ෂාව හා ගොනු වලට අදාළව ඉදිරි කටයුතු කිරීම ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුවේ ප්‍රධානත්වයෙන් උතුරු මැද පළාත් ඉඩම් කොමසාරිස් දෙපාර්තමේන්තුව, අනුරාධපුර අන්තර් පළාත් ඉඩම් කොමසාරිස් කාර්‍යාලය හා අනුරාධපුර දිස්ත්‍රික්කයෙහි සියලුම ප්‍රාදේශීය ලේකම් කාර්‍යාල සහභාගීත්වයෙන් උතුරු මැද පළාත් ඉඩම් කොමසාරිස් දෙපාර්තමේන්තු පරිශ්‍රයෙහිදී සාර්ථකව නිමාවට පත් විය. 2025.08.15 දින ඊට සමගාමීව ගරු ඉඩම් හා වාරිමාර්ග නියෝජ්‍ය අමාත්‍යවරයාගේ ප්‍රධානත්වයෙන්, අනුරාධපුර දිස්ත්‍රික් ලේකම් කාර්‍යාලයේ මෙහෙයවීම මත කෘෂිකර්ම, පශුසම්පත්, ඉඩම් හා වාරිමාර්ග අමාත්‍යාංශය, ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව, ඉඩම් හිමිකම් නිරවුල් කිරීමේ දෙපාර්තමේන්තුව, වාරිමාර්ග දෙපාර්තමේන්තුව, මහවැලි අධිකාරිය, සියලුම ප්‍රාදේශීය ලේකම් කාර්‍යාල ඇතුළු අනෙකුත් ඉඩම් හා සම්බන්ධ සියලු ආයතන වල සහභාගීත්වයෙන් රජයේ ඉඩම් කළමනාකරණය හා ගැටලු විසඳීම සඳහා වන සාකාච්ඡාවක් පැවැති අතර රජයේ ඉඩම් රාජකාරි හා සබැඳි ගැටලු බොහොමයක් එහිදී සාකච්ඡාවට බඳුන් විය
+                                                                </p>
+                                                                <p>
+
+                                                                </p>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End of card -->
+                                              <!-- Start of card -->
+                                                <div class="card mb-3" style="width: 100%;">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div id="carouselExampleIndicators1" class="carousel slide">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/eastern_province_madakalapuwa/1.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/eastern_province_madakalapuwa/2.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/eastern_province_madakalapuwa/3.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/eastern_province_madakalapuwa/4.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/eastern_province_madakalapuwa/5.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/eastern_province_madakalapuwa/7.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                                                <p class="card-text">
+                                                                <p class="content_p">
+                                                                    2025.06.17,18,19 සහ 20 දින වල නැගෙනහිර පළතේ අම්පාර හා මඩකලපුව දිස්ත්‍රික්ක තුල සුනාමි දීමනාපත්‍ර සැකසීමේ කාර්යන් කඩිනම් කිරීම උදෙසා ජංගම සේවා වැඩසටහනක් පොතුවිල්,මන්මුනේ උතුර හා වාකරේ ප්‍රාදේශීය ලේකම් කාර්යාල මූලික කර ගනිමින් පැවැත්විනි.
+                                                                    මෙහෙදී සුනාමි දීමනාපත්‍ර සැකසීම සදහා සුදුසුකම් ලද අයදුම්පත් 375 ආසන්න ප්‍රමාණයක් ඉදිරි කටයුතු සදහා ඉ.කො.ජ්.දෙ වෙත රැගෙන එන ලදී.
+                                                                    මේ සදහා සහය දැක්වු සියලු ප්‍රාදේශීය ලේකම් වරුන් වෙත ස්තූතිය පුද කරමි.
+
+                                                                </p>
+                                                                <p>
+
+                                                                </p>
+                                                                </p>
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+                                                <!-- End of card -->
+                                                <div class="card" style="width: 100%;">
+                                                    <div class="card-body">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div id="carouselExampleIndicators" class="carousel slide">
+                                                                    <div class="carousel-indicators">
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="10" aria-label="Slide 11"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="11" aria-label="Slide 12"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="12" aria-label="Slide 13"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="13" aria-label="Slide 14"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="14" aria-label="Slide 15"></button>
+                                                                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="15" aria-label="Slide 16"></button>
+                                                                    </div>
+                                                                    <div class="carousel-inner">
+                                                                        <div class="carousel-item active">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/15.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/2.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/3.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/4.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/5.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/6.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/7.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/8.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item ">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/10.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/11.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/12.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item ">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/13.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/14.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/17.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/16.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                        <div class="carousel-item">
+                                                                            <img src="https://landcom.gov.lk/assets/images/news/nothern_province/1.jpeg" class="d-block w-100" alt="..." style="height: 400px; object-fit: cover;">
+                                                                        </div>
+                                                                    </div>
+                                                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Previous</span>
+                                                                    </button>
+                                                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                                        <span class="visually-hidden">Next</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-12 d-flex align-items-center justify-content-center">
+                                                                <p class="card-text">
+                                                                <p class="content_p">
+                                                                    උතුරු පළාතේ රජයේ ඉඩම් සම්බන්ධව පවතින ඉඩම් ගැටලු සදහා විසදුම් ලබා දීමේ අරමුණින් 2025 මාර්තු මස 19,20 සහ 21 දිනයන්හි දී ජංගම සේවා වැඩසටහනක් උතුරු පළාත් ඉඩම් කොමසාරිස් කාර්‍යාලය දී පැවැත්විණි.<br><br>
+                                                                    හදුනාගත් ගැටලු 50කට ආසන්න ප්‍රමාණයක් සම්බන්ධව ක්ෂේත්‍ර පරීක්ෂාවකින් අනතුරුව විසදුම් ලබාදීම සහ ගරු ආණ්ඩුකාරතුමාගේ ප්‍රධානත්වයෙන් උතුරු පළාතේ ඉඩම් කලමණාකරණය සම්බන්ධව සාකච්ඡාවක් පැවැත්විණි.
+
+                                                                </p>
+                                                                <p>
+
+                                                                </p>
+                                                                </p>
+                                                            </div>
+
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->
+    <div class="container-fluid bg-dark text-white">
+    <div class="row">
+        <div class="col" style="height:100px">
+            <h1></h1>
+            <p>කතුහිමිකම © 2026 ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව. සියළු හිමිකම් ඇවිරිනි.</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/calenderScript.js"></script>
+
+</html>

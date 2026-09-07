@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Information System for Smart Farming - Login</title>
+    <style>
+        :root {
+            color-scheme: light;
+            --border: #d8dfd8;
+            --ink: #1e2b22;
+            --muted: #5d6b61;
+            --surface: #ffffff;
+            --wash: #f4f7f2;
+            --accent: #276749;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: var(--wash);
+            color: var(--ink);
+            line-height: 1.5;
+        }
+
+        header,
+        main {
+            width: min(1040px, calc(100% - 32px));
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 28px 0 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 16px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        header a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        main {
+            padding: 28px 0 48px;
+            display: grid;
+            gap: 18px;
+        }
+
+        .panel {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 22px;
+        }
+
+        .eyebrow {
+            margin: 0 0 8px;
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        h1,
+        h2,
+        p {
+            margin-top: 0;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+            font-size: clamp(30px, 4vw, 46px);
+        }
+
+        h2 {
+            margin-bottom: 14px;
+            font-size: 20px;
+        }
+
+        ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        li + li {
+            margin-top: 8px;
+        }
+
+        li span {
+            color: var(--muted);
+            margin-left: 6px;
+        }
+
+        code {
+            background: #edf2ea;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            padding: 1px 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="/">Information System for Smart Farming</a>
+    </header>
+    <main>
+        <section class="login-page" aria-labelledby="login-title">
+    <div class="login-brand-panel">
+        <div class="login-brand-overlay"></div>
+        <div class="login-brand-content">
+            <div class="login-logo-row" aria-label="Department logos">
+                <img src="https://agrarian.lk/img/logo/logo.png" alt="Department of Agrarian Development">
+                <img src="https://agrarian.lk/img/logo/dad_logo.png" alt="Department of Agrarian Development">
+            </div>
+            <p class="login-kicker">Department of Agrarian Development</p>
+            <h1 id="login-title">Information System for Smart Farming</h1>
+            <p class="login-intro">Staff access for agrarian services.</p>
+        </div>
+    </div>
+
+    <div class="login-form-panel">
+        <form class="login-form" action="https://agrarian.lk/sql/log.php" method="POST">
+            <div class="login-form-heading">
+                <p class="login-kicker">Secure Login</p>
+                <h2>Sign in to continue</h2>
+            </div>
+
+                        
+            <div class="field-group">
+                <label for="email">User Name / Email address</label>
+                <input type="text" id="email" name="email" value="" autocomplete="username" required autofocus>
+            </div>
+
+            <div class="field-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="current-password" required>
+            </div>
+
+            <label class="remember-row" for="remember">
+                <input type="checkbox" id="remember" value="">
+                <span>Remember me</span>
+            </label>
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</section>
+
+<style>
+    body {
+        min-height: 100vh;
+        background:
+            linear-gradient(135deg, rgba(246, 249, 242, 0.96), rgba(232, 241, 226, 0.95)),
+            url("https://agrarian.lk/img/background-4.jpg") center / cover fixed;
+    }
+
+    body > header {
+        display: none;
+    }
+
+    body > main {
+        width: 100%;
+        min-height: 100vh;
+        padding: 0;
+    }
+
+    .login-page {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: minmax(320px, 1.05fr) minmax(360px, 0.95fr);
+        color: #16251b;
+    }
+
+    .login-brand-panel,
+    .login-form-panel {
+        min-height: 100vh;
+        display: grid;
+        align-items: center;
+    }
+
+    .login-brand-panel {
+        position: relative;
+        overflow: hidden;
+        padding: 56px;
+        background:
+            linear-gradient(135deg, rgba(13, 61, 35, 0.9), rgba(34, 92, 51, 0.78)),
+            url("https://agrarian.lk/img/background-4.jpg") center / cover;
+        color: #fff;
+    }
+
+    .login-brand-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0)),
+            repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0 1px, transparent 1px 18px);
+        pointer-events: none;
+    }
+
+    .login-brand-content {
+        position: relative;
+        z-index: 1;
+        max-width: 620px;
+    }
+
+    .login-logo-row {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        margin-bottom: 36px;
+    }
+
+    .login-logo-row img {
+        width: 78px;
+        height: 78px;
+        object-fit: contain;
+        background: rgba(255, 255, 255, 0.94);
+        border: 1px solid rgba(255, 255, 255, 0.68);
+        border-radius: 8px;
+        padding: 8px;
+    }
+
+    .login-kicker {
+        margin: 0 0 10px;
+        color: #cfdc80;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0;
+        text-transform: uppercase;
+    }
+
+    .login-brand-content h1 {
+        max-width: 560px;
+        margin: 0 0 16px;
+        color: #fff;
+        font-size: 44px;
+        line-height: 1.08;
+        letter-spacing: 0;
+    }
+
+    .login-intro {
+        max-width: 480px;
+        margin: 0;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 18px;
+    }
+
+    .login-form-panel {
+        padding: 48px;
+        background: rgba(247, 250, 245, 0.82);
+        backdrop-filter: blur(6px);
+    }
+
+    .login-form {
+        width: min(100%, 430px);
+        margin: 0 auto;
+        display: grid;
+        gap: 18px;
+        padding: 34px;
+        background: #ffffff;
+        border: 1px solid #d8e2d3;
+        border-radius: 8px;
+        box-shadow: 0 20px 48px rgba(22, 45, 31, 0.14);
+    }
+
+    .login-form-heading {
+        display: grid;
+        gap: 2px;
+        margin-bottom: 4px;
+    }
+
+    .login-form-heading h2 {
+        margin: 0;
+        color: #1d2b22;
+        font-size: 26px;
+        line-height: 1.2;
+        letter-spacing: 0;
+    }
+
+    .field-group {
+        display: grid;
+        gap: 7px;
+    }
+
+    .field-group label,
+    .remember-row {
+        color: #344237;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .field-group input[type="text"],
+    .field-group input[type="password"] {
+        width: 100%;
+        min-height: 46px;
+        padding: 10px 12px;
+        border: 1px solid #c9d4c5;
+        border-radius: 6px;
+        background: #fbfdf9;
+        color: #17231b;
+        font: inherit;
+        outline: none;
+        transition: border-color 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+    }
+
+    .field-group input:focus {
+        border-color: #2d6a4f;
+        background: #fff;
+        box-shadow: 0 0 0 3px rgba(45, 106, 79, 0.14);
+    }
+
+    .remember-row {
+        display: flex;
+        align-items: center;
+        gap: 9px;
+        font-weight: 400;
+        color: #617063;
+    }
+
+    .remember-row input {
+        width: 16px;
+        height: 16px;
+        accent-color: #2d6a4f;
+    }
+
+    .login-form button {
+        min-height: 46px;
+        border: 0;
+        border-radius: 6px;
+        background: #2d6a4f;
+        color: #fff;
+        font: inherit;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 150ms ease, transform 150ms ease;
+    }
+
+    .login-form button:hover,
+    .login-form button:focus {
+        background: #24553f;
+    }
+
+    .login-form button:active {
+        transform: translateY(1px);
+    }
+
+    .auth-alert {
+        padding: 11px 12px;
+        border: 1px solid #d79d9a;
+        border-radius: 6px;
+        background: #fff3f0;
+        color: #842c27;
+        font-size: 14px;
+        font-weight: 700;
+    }
+
+    .auth-alert.is-success {
+        border-color: #8dc79d;
+        background: #eef9f0;
+        color: #1f6f45;
+    }
+
+    @media (max-width: 880px) {
+        .login-page {
+            grid-template-columns: 1fr;
+        }
+
+        .login-brand-panel {
+            min-height: auto;
+            padding: 36px 24px 30px;
+        }
+
+        .login-form-panel {
+            min-height: auto;
+            padding: 28px 20px 40px;
+        }
+
+        .login-brand-content h1 {
+            font-size: 34px;
+        }
+
+        .login-intro {
+            font-size: 16px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .login-logo-row {
+            gap: 10px;
+            margin-bottom: 24px;
+        }
+
+        .login-logo-row img {
+            width: 62px;
+            height: 62px;
+        }
+
+        .login-form {
+            padding: 24px;
+        }
+
+        .login-brand-content h1 {
+            font-size: 30px;
+        }
+    }
+</style>
+    </main>
+</body>
+</html>
