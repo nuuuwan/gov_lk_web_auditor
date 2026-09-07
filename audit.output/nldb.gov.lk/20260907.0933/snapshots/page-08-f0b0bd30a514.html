@@ -1,0 +1,2876 @@
+<!DOCTYPE html>
+<!--[if IE 8 ]><html class="ie ie8" class="no-js" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>National LiveStock Development Board</title>
+    <!-- Meta Tags -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="National Livestock Development Board Official web site which contatins details about livestock and breeds" />
+	<meta name="keywords" content="NLDB Srilanka,Livestock,Breeds,export,Milk,Fresh Milk,Narahenpita Milk Board,Inotek Solutions,Dairy Products Srilanka" />
+	<meta property="og:title" content="National Livestock Development Board" />
+	<meta property="og:description" content="National Livestock Development Board Official web site which contatins details about livestock and breeds" />
+	<meta property="og:image" content="images/about/logo.png" />
+	<meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <meta property="og:url" content="url" />
+    <meta property="og:type" content="article" />
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="expires" content="0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="http://www.nldb.gov.lk/images/about/logo.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="http://www.nldb.gov.lk/images/about/logo.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="http://www.nldb.gov.lk/images/about/logo.png">
+    <link rel="manifest" href="http://www.nldb.gov.lk/images/about/logo.png">
+
+
+    <!-- CSS FILES -->
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" data-name="skins">
+    <link rel="stylesheet" href="css/layout/wide.css" data-name="layout">
+
+    <link rel="stylesheet" href="css/fractionslider.css"/>
+    <link rel="stylesheet" href="css/style-fraction.css"/>
+    <link rel="stylesheet" href="css/card_style.css"/>
+
+    <link rel="stylesheet" type="text/css" href="css/switcher.css" media="screen" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+<style>
+.buttonn {
+  border-radius: 4px;
+  background-color: #8CBE45;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+
+}
+
+.buttonn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttonn span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttonn:hover span {
+  padding-right: 25px;
+}
+
+.buttonn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* card css for Advertising */
+
+#card {
+  width: 300px;
+  min-width: 300px; /* To Prevent Element's Width From Going Below 300px */
+
+  background: #fff;
+  font-family: "Open Sans", sans-serif;
+  box-shadow: rgba(0, 0, 0, 0.176) 0px 16px 48px 0px;
+  border-radius: 7px;
+
+  resize: both; /* To Resize */
+  overflow: auto;
+  border : solid 2px #8CBE45 !important;
+}
+
+#img {
+  height: 100px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 7px 7px 0 0;
+  border-bottom: solid 2px #8CBE45;
+}
+
+#title {
+  text-align: center;
+}
+
+#desc {
+  margin: 1rem;
+  color: #a5a2bc;
+  line-height: 1.6rem;
+  word-spacing: 2px;
+}
+
+
+
+
+
+
+
+
+
+.popup-link{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.popup-link a{
+    background: #333;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size:17px;
+    cursor:pointer;
+    margin:20px;
+    text-decoration:none;
+}
+
+.popup-container {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.3);
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(21, 17, 17, 0.61);
+    display: flex;
+    align-items: center;
+
+
+}
+.popup-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0px;
+    border: 1px solid #888;
+    width: 100%;
+
+
+}
+.popup-content p{
+    font-size: 17px;
+    padding: 10px;
+    line-height: 20px;
+}
+.popup-content a.close{
+    color: #fff;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    background: red;
+    padding: 8px;
+    margin: 0;
+    text-decoration:none;
+}
+
+.popup-content a.close:hover{
+  color: #fff;
+}
+
+.popup-content span:hover,
+.popup-content span:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.popup-container:target{
+  visibility: visible;
+  opacity: 1;
+  transform: scale(1);
+}
+
+.popup-container h3{
+  margin:10px;
+}
+/*End popup styles*/
+
+/* Additional styles */
+.popup-style-2{
+  transform: scale(0.3);
+  
+}
+
+.popup-style-2:target{
+  transform: scale(1);
+}
+
+.popup-style-3{
+  left:100%;
+  
+}
+
+.popup-style-3:target{
+  left:0;
+}
+
+.popup-style-4{
+  transform: rotate(180deg);
+}
+
+.popup-style-4:target{
+  transform: rotate(0deg);
+}
+
+.popup-style-5{
+  top:100%;
+  
+}
+
+.popup-style-5:target{
+  top:0;
+}
+
+.popup-style-6{
+  transform: scale(15.3);
+  
+}
+
+.popup-style-6:target{
+ transform: scale(1);
+ }
+
+.popup-style-7{
+  transform: skewY(180deg);
+   transition: all 0.7s ease-in-out;
+}
+
+.popup-style-7:target{
+ transform: skewY(0deg);
+
+ }
+ .pb_action_new {
+    margin: auto 0;
+    text-align: center;
+    margin-top: 30px;
+ }
+ .course-btn {
+    background-color:#d9671e !important;
+ 
+
+ }
+.course-btn:hover{
+  background-color: #fff !important;
+  color: #d9671e;
+  border : solid 2px #d9671e;
+}
+.course-btn-texts {
+    color : #fff;
+    font-size: 15px;
+
+}
+.card-img-nldb {
+    text-align : center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border-radius: 2px;
+  
+}
+.dark_custom {
+ background-color : #323a45;
+}
+
+.contain-card{
+  position: relative;
+  width: 100%;
+}
+.card-center-nldb{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contain-card:hover .card-center-nldb{
+  opacity: 1;
+}
+
+.contain-card:hover .card-img-nldb{
+  opacity: 0.7;
+}
+.model-btn-nldb {
+font-size :30px;
+
+margin :auto 0; 
+color : red !important;
+}
+.modal-header {
+ border-bottom: 0px solid #e5e5e5 !important;
+}
+
+
+
+.countedown {
+  text-align: center;
+ margin :0 auto;
+  
+  padding: 10px;
+  background-color: #000000c4;
+  border: 2px solid #d9671e;
+  color: white;
+
+}
+
+ /* Desktop styles (400px width) */
+        @media (min-width: 768px) {
+            .countedown {
+                width: 400px;
+            }
+        }
+
+        /* Mobile styles (Full width) */
+        @media (max-width: 767px) {
+            .countedown {
+                width: 100%;
+            }
+        }
+
+
+
+.counter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.counter div {
+  background-color: #d9671e;
+  width: 22%;
+  padding: 10px;
+  
+}
+
+span {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.countedown-text {
+   color:#fff;
+}
+
+
+.hr-color {
+border-top: 1px solid #d9671e ;
+}
+
+
+
+.blink {
+                animation: blinker 1.5s linear infinite;
+                color: rgb(247, 171, 31);
+                font-family: sans-serif;
+                text-align: center;
+                margin-top: -4%;
+                font-weight: bold;
+            }
+            @keyframes blinker {
+                80% {
+                    opacity: 0.3;
+                }
+            }
+
+#snow {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      z-index: 9999;
+    }
+
+
+</style>
+
+</head>
+<body>
+    
+    <!--canvas id="snow"></canvas-->
+<!--script>
+console.log("Snow script loaded");
+
+const canvas = document.getElementById("snow");
+const ctx = canvas.getContext("2d");
+
+function resize() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resize();
+window.addEventListener("resize", resize);
+
+const flakes = Array.from({ length: 100 }, () => ({
+  x: Math.random() * canvas.width,
+  y: Math.random() * canvas.height,
+  r: Math.random() * 3 + 1,
+  s: Math.random() * 1 + 0.5
+}));
+
+function draw() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  ctx.fillStyle = "white";
+  flakes.forEach(f => {
+    ctx.beginPath();
+    ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+    ctx.fill();
+    f.y += f.s;
+    if (f.y > canvas.height) f.y = 0;
+  });
+  requestAnimationFrame(draw);
+}
+
+draw();
+</script-->
+
+<!--Start Header-->
+<header id="header">
+    <div id="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-7 hidden-xs top-info">
+                    <span><i class="fa fa-phone"></i>Phone: +94112501701</span>
+                    
+                </div>
+                <div class="col-sm-5 top-info">
+                    <ul class="langu">
+                       
+                        <li><a href="./si.html" class="langs">සිංහල</i></a></li>
+                        <li><a href="./ta.html" class="langsselcted">தமிழ்</i></a></li> 
+                        <li><a href="./index.html" class="langs">English</i></a></li>
+                    </ul>
+                    <!-- <ul>
+                        
+                        <li><a href="https://www.facebook.com/nldb.lk/" class="my-facebook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com/@NLDBOFFICIAL" class="my-youtube"><i class="fa fa-youtube"></i></a></li>
+                        
+                    </ul> -->
+                 </div>
+   
+            </div>
+        </div>
+    </div>
+    <!-- LOGO bar -->
+    <div id="logo-bar" class="clearfix">
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <div class="top-leftADs blink" id="myADs" >
+                            
+                    <div class="leftalert" >
+                        <a href="./pig diseases.html" class="blink">
+                            <!-- <img src="./images/alertttamil.png" alt="Slide11" width="220px"  style="margin-top: -2%;">  -->
+                         </a>
+                                    
+                    </div>
+    
+                   </div>
+                <!-- Logo / Mobile Menu -->
+                <div class="col-xs-12">
+                    <div id="logo">
+                        <h1><a href="ta.html"><img src="images/logo.png" alt="Velocity" /></a></h1>
+                    </div>
+                </div>
+                <div class="top-rightS" id="myADs" style="z-index: 1000;">
+                            
+                    <div class="leftalert" >
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/people/NLDB-Sri-lanka/100092933026891/"  title="NLDB Facebook" style="color: blue;"> 
+                              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                            </a>
+                         
+                            <a href="https://www.youtube.com/@NLDBOFFICIAL" title="NLDB Youtube" style="color: red;">
+                              <i class="fa fa-youtube-square" aria-hidden="true"></i>
+                            </a>
+                           
+                            </a>
+                          </div>
+                                    
+                    </div>
+    
+                   </div>
+            </div>
+        </div>
+        <!-- Container / End -->
+    </div>
+    <!--LOGO bar / End-->
+    
+    <!-- Navigation
+    ================================================== -->
+    <div class="navbar navbar-default navbar-static-top container-fluid" role="navigation" >
+        <!--  <div class="container">-->
+        <div class="row" >
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">வழிசெலுத்தலை மாற்றுn</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse" >
+                <ul class="nav navbar-nav">
+                    
+                    <li><a href="ta.html">முகப்பு</a></li>
+                    
+    <li ><a href="about -ta.html" > எங்களை பற்றி </a>
+    <ul class="dropdown-menu">
+    <li><a href="about -ta.html">எங்களை பற்றி </a></li>
+        <li><a href="DirectorBoard -ta.html">இயக்குநர் குழு</a></li> 
+        <li><a href="members ta.html">எமது ஊழியர்கள்</a></li> 
+              
+                            <!--- <li><a href="HeadOffice.html">Head Office</a></li> --->
+                         <!---  <li><a href="FarmStaff.html">Farms </a></li> --->
+                          <!--- <li><a href="http://www.agrimin.gov.lk/web/">Ministry</a></li> --->
+                            
+                         
+                        </ul>
+                    </li>
+                    <li><a href="Bungallow/BungallowMapTa.html" >சுற்றுலா மாளிகை</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Bungallow/Nikawaratiya_Bungallow -ta.html">நிக்கவெரட்டிய</a></li>
+                            <li><a href="Bungallow/Bopaththalawa_Bungallow -ta.html">போபத்தலாவ</a></li>
+                            <li><a href="Bungallow/Nelumwewa_Bungallow -ta.html">நெலும்வெவ (பொலன்னறுவை)</a></li>
+                            <li><a href="Bungallow/Galpokuna_Bungallow -ta.html">கல் குளம்</a></li>
+                            <li><a href="Bungallow/MLDC_Bungallow -ta.html">எம். எல்.டி.சி.</a></li>
+                            <li><a href="Bungallow/Weerawila_Bungallow -ta.html">வீரவில</a></li>
+                            <li><a href="Bungallow/Anuradhapura_Bungallow -ta.html">அநுராதபுரம்</a></li>
+                            
+                            <li><a href="Bungallow/BungallowMapTa.html">கூடுதலான . . .</a></li>
+                            
+                        </ul>
+                    </li>
+                    <li><a href="Farm/FarmMapTa.html">பண்ணைகள்</a>
+                        <ul class="dropdown-menu">
+                              <li><a href="Farm/AndigamaFarm ta.html">அண்டிகம</a></li>
+                              <li><a href="Farm/BopathalawaFarm  ta.html">போபத்தலாவ</a></li>
+                              <li><a href="Farm/Galpokuna Farm  ta.html">கல் குளம்</a></li>
+                              <li><a href="Farm/KoulwewaFarm  ta.html">கூல்வெவ</a></li>
+                              <li><a href="Farm/NikaweratiyaFarm ta.html">நிக்கவெரட்டிய</a></li>
+                              <li><a href="Farm/FarmMapTa.html">கூடுதலான . . .</a></li>
+                        </ul>
+                    </li>
+                        <li><a href="#">தயாரிப்புகள்</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="products/breeding-equipment -ta.html">இனப்பெருக்க உபகரணங்கள்</a></li>
+
+                                <li>
+                                    <a href="#">பண்ணை பொருட்கள்</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="products/dairy-product -ta.html">பால் பொருட்கள்</a></li>
+                                        <li><a href="products/meat-product -ta.html">இறைச்சி பொருட்கள்</a></li>
+                                        <li><a href="products/product -ta.html"> பொருட்கள்</a></li>
+                                    </ul>
+                                </li>
+                            </ul></li>
+
+                            
+                    <li>
+                        <a href="#">கால்நடை இனங்கள்  </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="Breeds/NeatCattles -ta.html">பசுக்கள் </a></li>
+                            <li><a href="Breeds/BuffaloBreeds -ta.html">மெஹராக் வகைகள்</a></li>
+                            <li><a href="Breeds/GoatsBreeds -ta.html">வெள்ளாடு இனங்கள்</a></li>
+                            <li><a href="Breeds/PigBreeds -ta.html">பன்றி இனங்கள்</a></li>
+                            <li><a href="Breeds/SheepBreeds -ta.html">செம்மறி ஆட்டு இனங்கள் </a></li>
+                        </ul>
+                        
+                    </li>
+                        <li><a href="#">பாடதொகுப்புகள்</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="courses/monthlydairycattleC -ta.html"> நடைமுறை பால் மேலாண்மை படிப்பு
+                                    </a></li>
+                                <li><a href="courses/sixMonthLSTechniC -ta.html">கால்நடை தொழில்நுட்பப் படிப்பு
+                                </a></li>
+                                <li><a href="courses/ShortTC -ta.html">குறுகிய கால படிப்பு</a></li>
+  
+                            </ul>
+                        </li>
+                        
+                    <li><a href="contact -ta.html">தொடர்பு கொள்ளவும்</a>
+                        <ul class="dropdown-menu">
+                           <li><a href="contact -ta.html">தொடர்பு</a></li>
+    
+                        </ul>
+                    </li>
+    
+                    <li><a href="#">பதிவிறக்கம்</a>
+                        <ul class="dropdown-menu">
+                          
+                           
+                            <!-- <li><a href="download/Purchase-of-Feed-Ingredients-for-NLDB-Farms.pdf" download>Purchase of Feed Ingredients for NLDB Farms</a></li>
+                              <li><a href="download/Purchase-of-Feed ingredient-(Grain Maize)-for-NLDB-Farms.pdf" download>Purchase of Feed ingredient (Grain Maize) for NLDB Farms</a></li>
+                          <li><a href="download/Purchase-of-Broiler.pdf" download>Purchase of Broiler Breeder Parent Chicks</a></li>    -->
+                          <!-- <li><a href="download/Application-NVQ-4-LT.pdf" download>Application NVQ-4 LT.pdf</a></li>   -->
+
+ <li><a href="">விலங்கு சந்தைப்படுத்தல் சுற்றறிக்கை - 2025&nbsp;&nbsp; </a>
+                                <ul class="dropdown-menu">
+                                    <!-- <li><a href="download/farms/Sin- Application Form for Farm Visits (සිංහල).docx">Sinhala</a></li>
+                                    <li><a href="download/farms/Application Form for Farm Visits .docx">Tamil</a></li> -->
+                                    <li><a href="download/selling price circular.pdf">ஆங்கிலம்</a></li>
+                                </ul>
+                            </li>
+
+
+
+                          <li><a href="">பண்ணை வருகைக்கான விண்ணப்பப் படிவம் &nbsp;&nbsp; </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="download/farms/Sin- Application Form for Farm Visits (සිංහල).docx">சிங்களம்</a></li>
+                                <li><a href="download/farms/Application Form for Farm Visits .docx">தமிழ்</a></li>
+                                <li><a href="download/farms/Application Form for Farm Visits .docx">ஆங்கிலம்</a></li>
+                            </ul>
+                        </li>
+                          <li><a href=""> பங்களா முன்பதிவு படிவம் PDF </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="download/Bungalow/Application-for-Circuit-Bungaow-Reservation-(Sinhala).pdf">சிங்களம்</a></li>
+                                <li><a href="download/Bungalow/Application-for-Circuit-Bungalow-Reservation-(English).pdf">தமிழ்</a></li>
+                                <li><a href="download/Bungalow/Application-for-Circuit-Bungalow-Reservation-(English).pdf">ஆங்கிலம்</a></li>
+                            </ul>
+                        </li>
+                    
+                          <!-- <li><a href="download/Products/How to purchase breeding materials and Poultry chicks.pdf">Purchase Breeding Materials &emsp;&emsp; </a></li> -->
+                          <!-- <li><a href="download/breeds/Application for animal issue - Sinhala.pdf">Application for animal issue[Sinhala] &emsp;&emsp; </a></li> -->    
+                          <li><a href="">சிக்கல்களுக்கான விண்ணப்பம் &emsp;&emsp; </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="download/breeds/Application for animal issue - Sinhala.pdf">சிங்களம்</a></li>
+                                <li><a href="download/breeds/Tamil Appli.pdf">தமிழ்</a></li>
+                                <li><a href="download/breeds/application for animal issue-English.pdf">ஆங்கிலம்</a></li>
+                            </ul>
+                        </li>
+
+                          <li><a href=""> குறுகிய கால படிப்பு&nbsp; &nbsp;</a>
+                            <ul class="dropdown-menu">
+                                 <li><a href="download/courses/sinhal AppTraining.docx">சிங்களம்</a></li>
+                                <li><a href="download/courses/AppTraining.docx">தமிழ்</a></li>
+                                <li><a href="download/courses/AppTraining.docx">ஆங்கிலம்</a></li>
+                            </ul>
+                        </li>
+                          <li><a href="" download>கால்நடை தொழில்நுட்பப் படிப்பு</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="download/NVQ 4 Application - 2025 II si.pdf">சிங்களம்</a></li>
+                                <li><a href="download/NVQ 4 Application - 2025 II Tamil.pdf">தமிழ்</a></li>
+                                <li><a href="download/NVQ 4 Application 2025 II En..pdf">ஆங்கிலம்</a></li>
+                            </ul></li>
+                          
+                          <li><a href="">NLDBயின் பால் விற்பனை நிலையங்கள் &emsp;&emsp;&emsp;&emsp;&emsp; </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="download/Products/nldb-outlets.pdf">சிங்களம்</a></li>
+                                <li><a href="download/Products/nldb-outlets.pdf">தமிழ்</a></li>
+                                <li><a href="download/Products/nldb-outlets.pdf">ஆங்கிலம்</a></li>
+                            </ul></li>
+                          <li><a href="">NLDB விற்பனை மையங்கள் &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="download/Products/sale-centers.pdf">சிங்களம்</a></li>
+                                <li><a href="download/Products/sale-centers.pdf">தமிழ்</a></li>
+                                <li><a href="download/Products/sale-centers.pdf">ஆங்கிலம்</a></li>
+                            </ul>
+                        </li>
+
+                          <li><a href="" >கார்ப்பரேட் திட்டம் 2024-2028</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="download/Corporate Plan 2024-2028 Final (1).pdf" download>சிங்களம்</a></li>
+                                <li><a href="download/Corporate Plan 2024-2028 Final (1).pdf" download>தமிழ்</a></li>
+                                <li><a href="download/Corporate Plan 2024-2028 Final (1).pdf" download>ஆங்கிலம்</a></li>
+                            </ul>
+                        </li>
+                         <li><a href="" >ஆண்டறிக்கை </a>
+
+                            <ul class="dropdown-menu">
+                                <li><a href="">ஆண்டறிக்கை 2021 </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="download/NLDB sinhala (1)2021.pdf" download>சிங்களம்</a></li>
+                                        <li><a href="download/NLDB tamil (1)2021.pdf" download>தமிழ்</a></li>
+                                        <li><a href="download/NLDB english final2021.pdf" download>ஆங்கிலம்</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">ஆண்டறிக்கை 2020 </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="download/NLDB Annual report All.pdf" download>சிங்களம்</a></li>
+                                        <li><a href="download/NLDB Annual report All.pdf" download>தமிழ்</a></li>
+                                        <li><a href="download/NLDB Annual report All.pdf" download>ஆங்கிலம்</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">ஆண்டறிக்கை 2019 </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="download/NLDB ANNUAL REPORT 2019.pdf" download>சிங்களம்</a></li>
+                                        <li><a href="download/NLDB ANNUAL REPORT 2019.pdf" download>தமிழ்</a></li>
+                                        <li><a href="download/NLDB ANNUAL REPORT 2019.pdf" download>ஆங்கிலம்</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="">ஆண்டறிக்கை 2018</a>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="download/Annual-Report-2018.pdf" download>சிங்களம்</a></li>
+                                        <li><a href="download/Annual-Report-2018.pdf" download>தமிழ்</a></li>
+                                        <li><a href="download/Annual-Report-2018.pdf" download>ஆங்கிலம்</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+                            
+                        </li>
+
+                        <li><a href="" >Livestock Valuation 2024</a>
+                            <ul class="dropdown-menu">
+                                <!-- <li><a href="download/Livestock Valuation 2024.pdf" download>Sinhala</a></li>
+                                <li><a href="download/Livestock Valuation 2024.pdf" download>Tamil</a></li> -->
+                                <li><a href="download/Livestock Valuation 2024.pdf" download>English</a></li>
+                            </ul>
+                        </li>
+                          
+
+
+
+  <!-- <li><a href="download/Bungalow/Application-for-Circuit-Bungaow-Reservation-(Sinhala).pdf">Application for Circuit Bungaow Reservation [Sinhala] &emsp;&emsp; </a></li>
+-->
+  <!-- <li><a href="download/Bungalow/Application-for-Circuit-Bungalow-Reservation-(English).pdf">Application for Circuit Bungalow Reservation [English] &emsp;&emsp; </a></li> -->
+
+  <!-- <li><a href="download/Annual Report 2018.pdf">Application for Circuit Bungalow Reservation [English] &emsp;&emsp; </a></li> -->
+
+                        </ul>
+                    </li>
+    
+              </li>
+        <li><a href="#">செய்தி</a>
+                            <ul class="dropdown-menu">
+                                  <li><a href="https://www.youtube.com/live/1JC_MmBVX3k?si=X03rO9SgSvTRhztS" download>Big Focus | வறண்ட காலநிலையின் தாக்கம் இந்நாட்டின் கால்நடைத் தொழிலில்</a></li>
+                                   <li><a href="https://www.facebook.com/nldb.lk/posts/pfbid02rHkxy3MTkHo858gZDY49TYwKdftmz2rJwaMzFmbfQ9C2EZMzi1A3gyf3KDrHJe3ql?notif_id=1705903150330458&notif_t=feedback_reaction_generic&ref=notif" download>தேசிய கால்நடை மேம்பாட்டு வாரியத்தால் முதலில் தொடங்கப்பட்ட கால்நடை தொழில்நுட்பப் படிப்பு</a></li>
+                                   <li><a href="./resentNews -ta.html">சமீபத்திய செய்திகள்</a>
+                        
+                                   </li>
+                                                
+    
+    
+                            </ul>
+                        </li>
+    
+                    </li>
+                      
+                    <!-- <li><a href="resentNews.html">Resent Posts</a></li> -->
+                    <!-- <li><a href="siteMap.html">Site map</a></li> -->
+                   
+                    <li><a href="procurements -ta.html">கொள்முதல் மற்றும் டெண்டர்கள் </a>
+                        
+                    </li> 
+                    <li><a href="NLDB_sale_centers -ta.html">NLDB விற்பனை மையம்</a> </li>
+
+
+                    <li><a >கேலரி</a> 
+                            <ul class="dropdown-menu">
+                                <li><a href="./Gallery -ta.html">புகைப்படங்கள் </a></li>
+                                <li><a href="./Gallery -ta vedio.html">வீடியோ</a></li>
+                                
+                            </ul>
+                        </li>
+
+
+                </ul> 
+              
+            </div>
+        </div><!--/.row -->
+        <!--</div>--><!--/.container -->
+    
+    </div>
+</header>
+<!--End Header-->
+
+<!--start wrapper-->
+<section class="wrapper">
+	
+    <div class="slider-wrapper">
+        <!-- <div class="slider">
+            <div class="fs_loader"></div> -->
+
+
+
+
+
+
+          
+<!---- Video Slider --->
+
+			<div class="slide">
+	
+                <div class="containerk"> 
+                <video   autoplay controls loop muted id="myVideo" style="margin-top:-340px ; padding-bottom: 150px;  height: 1280px; width: 100%;">
+                        <source src="video/1103.mp4" type="video/mp4" style="height: auto;">
+                        <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                        Your browser does not support HTML video.
+     </video>
+                
+                
+                <!-- uncomment containerk and below 3 line -->
+                <!-- <div class="top-leftADsTwo" id="myADs" >
+                            
+                <a href="./courses/monthlydairycattleC -ta.html">   <img src="images/dairy cattale.jpg" alt="Slide11" width="250px"></a> 
+                
+                   </div>
+                                         
+                <div class="top-rightADs" id="myADs" >
+                            
+                    <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button>
+                    <img src="images/ads/ads1.gif" alt="Slide11" width="250px">
+
+                   </div> -->
+                                       
+                                         
+                                       </div> 
+                <!-- <p class="slide-heading" data-position="130,370" data-in="top" data-out="top" data-ease-in="easeOutBounce" data-delay="1500">NLDB ගොවිපලවල්</p>
+
+                <p class="sub-line" data-position="230,370" data-in="right" data-out="left" data-delay="2500">NLDB ගොවිපලවලින් නැවුම් කිරි නිෂ්පාදන </p>
+				
+				 <img src="images/fraction-slider/Response.png" width="500" height="auto" data-position="60,1200" data-in="bottomLeft" data-out="fade" style="width:auto; height:auto" data-delay="500"> 
+                
+ Tender File Location -- Tenders/ Tenders.html 
+
+<a href="procurements.html" class="btn btn-default2 btn-lg" data-position="320,370" data-in="bottom"  data-out="bottom" data-delay="3500" >ප්‍රසම්පාදන සහ ටෙන්ඩර්</a> -->
+
+            <!-- </div> -->
+			
+
+        </div>
+    </div>
+    <!--End Slider-->
+
+<!---
+<section class="promo_box dark">
+        <div class="container">
+            <div class="row">
+            
+ <div class="col-sm-12">
+ <div class="promo_content">
+   
+ <div class="countedown">
+        <h2 class="countedown-text">Livestock Show 2023</h2>
+        <div class="counter">
+          <div>
+            <span class="days">00</span>
+            <h3>days</h3>
+          </div>
+          <div>
+            <span class="hours">00</span>
+            <h3>hrs</h3>
+          </div>
+          <div>
+            <span class="minutes">00</span>
+            <h3>mins</h3>
+          </div>
+          <div>
+            <span class="seconds">00</span>
+            <h3>secs</h3>
+          </div>
+        </div>
+      </div>
+
+</div>
+</div>
+
+</div>
+</div>
+</section>
+--->
+
+<!---
+<section class="promo_box dark_custom">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4">
+              <div class = "contain-card">
+                   <img class ="card-img-nldb" src="images/card/english.jpeg" alt="NLDB">
+                 <div class = "card-center-nldb">
+<button type="button" class="btn btn-lg btn-default course-btn" data-toggle="modal" data-target=".english"><i class="fa fa-eye"></i>  Full Screen</button>    
+                </div>
+              </div>
+           </div>
+
+  <div class="col-sm-4">
+              <div class = "contain-card">
+                   <img class ="card-img-nldb" src="images/card/sinhala.jpeg" alt="NLDB">
+                 <div class = "card-center-nldb">
+<button type="button" class="btn btn-lg btn-default course-btn" data-toggle="modal" data-target=".sinhala"><i class="fa fa-eye"></i>  Full Screen</button>  
+                </div>
+              </div>
+           </div>
+
+  <div class="col-sm-4">
+              <div class = "contain-card">
+                   <img class ="card-img-nldb" src="images/card/tamil.jpeg" alt="NLDB">
+                 <div class = "card-center-nldb">
+<button type="button" class="btn btn-lg btn-default course-btn" data-toggle="modal" data-target=".tamil"><i class="fa fa-eye"></i>  Full Screen</button>  
+                </div>
+              </div>
+           </div>
+
+
+
+
+
+        </div>
+    </div>
+</section> --->
+
+
+<section class="promo_box dark">
+<div class="container">
+	<div class="row">
+      
+
+
+<div class="">
+    <!-- Carousel
+    ================================================== -->            
+                                 
+    <div id="myCarousel" class="carousel slide ">
+        <div class="carousel-inner">
+            <div class="item active">
+                <div class="row">
+                  <img src="./images/after vedio.png" alt="" width="100%">
+                                        
+                </div>
+
+
+               
+
+
+
+            </div>
+
+           
+            
+            
+              
+        </div>
+
+        
+          <!-- <div class="top-rightADs" id="myADs" style="margin-top: -25px; margin-right: -310px;" >
+                
+            <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button>
+            <img src="images/ads/ads1.gif" alt="Slide11" width="250px" height="200px">
+
+           </div> -->
+                   
+                  <br>
+
+
+                  <!-- <div class="top-rightADs"  style="margin-top: -10px; margin-right: -285px;">
+                   <a href="./products/fodder.html">
+                   <img src="images/ads/ads2.png" alt="Slide12" width="250px" height="150px" style="margin-top: 200px; ">
+               </a>            
+            </div>  -->
+
+      
+
+     
+                       
+    </div><!-- End Carousel --> 
+
+
+
+
+</div><!-- End Well -->
+
+
+
+
+    </div>
+</div>
+</section>
+
+ <!-- <section class="promo_box dark">
+        <div class="container">
+            <div class="row">
+
+
+ <div class="col-sm-12">
+                    <div class="promo_content">
+<hr class="hr-color">
+                        <h3>පශු සම්පත් තාක්ෂණවේදී  පාඨමාලාව </h3>
+                        <p>කරුණාකර පශු සම්පත් තාක්ෂණවේදී  පාඨමාලාව සඳහා ඉල්ලුම් පත්‍රය බාගත කරන්න</p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pb_action_new">
+                        <h4 class="course-btn-texts">වෙළඳ දැන්වීම </h4>
+                        <a class="btn btn-lg btn-default course-btn" href=""  data-toggle="modal" data-target=".courselt">
+                            <i class="fa fa-download"></i>
+                            දැන්වීම බලන්න  </a>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="pb_action_new">
+                        <h4 class="course-btn-texts">අයදුම්පත බාගත කරන්න </h4>
+                        <a class="btn btn-lg btn-default course-btn" href="download/Application-NVQ-4-LT.pdf" target="_blank">
+                            <i class="fa fa-download"></i>
+                            බාගත කරගන්න 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  -->
+<!--- Card View --->
+
+    <!--start info service-->
+    <!-- <section class="info_service">
+        <div class="container missin">
+		            <div class="row sub_content"> -->
+                <!-- <div class="rs_box">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="serviceBox_1">
+                            <div class="icon_service">
+                                <i class="fa fa-gear"></i>
+                                <h3>නිෂ්පාදන</h3>
+                            </div>
+                            <div class="fr_content">
+                                <p>අපි ලොව පුරා කිරි නිෂ්පාදන සපයන්නෙමු. සියලුම නිෂ්පාදන පාරිභෝගික සහ වෙළඳපල අවශ්‍යතා අනුව විවිධ හැඩයන් සහ ප්‍රමාණවලින් ඇසුරුම් කර ඇත.</p>
+                                <a class="read" href="#">වැඩි දුරටත් කියවන්න……</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="serviceBox_1">
+                            <div class="icon_service">
+                                <i class="fa fa-volume-off"></i>
+                                <h3> ගොවිපලවල්</h3>
+                            </div>
+                            <div class="fr_content">
+                                <p>ජා.ප.ස.ම  දැනට පශු සම්පත් සහ පොල් වගාවන් පවත්වාගෙන යනු ලබන පශු සම්පත් සහ භෝග ඒකාබද්ධ ගොවිපල 31 ක් කළමනාකරණය කරයි. ගොවීන්ට ප්‍රායෝගික හා න්‍යායාත්මක දැනුම ලබාදීම සඳහා පුහුණු මධ්‍යස්ථානයක් ද මණ්ඩලය සතුව ඇත.</p>
+                                <a class="read" href="Farm/FarmMap.html">වැඩි දුරටත් කියවන්න……</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="serviceBox_1">
+                            <div class="icon_service">
+                                <i class="fa fa-suitcase"></i>
+                                <h3>සංචාරක බංගලා </h3>
+                            </div>
+                            <div class="fr_content">
+                                <p>NLDB නිකවැරටිය, බෝපතලාව, ගල්පොකුණ, නෙළුම්වැව, MLDC, වීරවිල සහ අනුරාධපුරයේ සංචාරක බංගලා ක්‍රියාත්මක කරයි. මෙම බංගලා වෙන් කිරීමට  සහ  වැඩි විස්තර සඳහා සඳුදා සිට සිකුරාදා දක්වා කාර්යාල වේලාවන් තුළ  +94112501701/2 අංකයට අමතන්න  </p>
+                                <a class="read" href="Bungallow/BungallowMap.html">වැඩි දුරටත් කියවන්න……</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> -->
+            <!-- </div>
+            <div class="row sub_content">
+                <div class="rs_box"> -->
+                    <!-- <div class="col-sm-4 col-md-4 col-lg-4">
+                        <div class="serviceBox_1">
+                            <div class="icon_service">
+                                <i class="fa fa-laptop"></i>
+                                <h3>අපගේ ව්‍යාපෘති</h3>
+                            </div>
+                            <div class="fr_content">
+                                <p>පශු සම්පත් හා කිරි ආශ්‍රිත නිෂ්පාදනයෙන් දේශය ස්වයංපෝෂිත කරලීමේ ජාතික මෙහෙවරට උරදෙනු වස්, නවීන තාක්ෂණ හා නවෝත්පාදන ක්‍ර‍ම තුලින් ගුණාත්මක සත්ව, කෘෂිකාර්මික හා කිරි ආශ්‍රිත නිෂ්පාදන ප්‍ර‍ශස්ථ මට්ටමින් පවත්වාගෙන යාමට ජාතික පශු සම්පත් මණ්ඩලය කැපවී සිටී.</p>
+                                <a class="read" href="#">වැඩි දුරටත් කියවන්න……</a>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="serviceBox_1 mission" style=" padding: 30px; margin-top: -10%;">
+                            <div class="icon_service">
+                          
+                                <h3>பார்வை </h3>
+                            </div>
+                            <div class="fr_content">
+                                <p>நிலையான பண்ணை விலங்கு <br> உற்பத்தியின் <br>முன்னோடியாக  இருக்க <br> வேண்டும்.
+                                </p><br>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6 col-md-6 col-lg-6">
+                        <div class="serviceBox_1 vision" style=" padding: 30px; margin-top: -10%;">
+                            <div class="icon_service">
+                          
+                                <h3>பணி
+                                </h3>
+                            </div>
+                            <div class="fr_content">
+                                <p>விலங்கு பொருட்களில் <br>தன்னிறைவுக்கான<br>  தேசிய தேவைக்கு<br> பங்களிப்பு செய்தல்.
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </section> -->
+    <!--end info service-->
+
+    <!--Start recent work-->
+	<!--#include file="products.inc"-->
+    <!--Start recent work-->
+
+    <!-- Parallax with Testimonial -->
+     <hr  style="height:300px; border-color: #000; margin-top: 30px;">
+                 <section class="info_service "  >
+                    <div class="container-fluid missin" >
+                <!-- <div class="row sub_content"  >
+                    <div class="rs_box" > -->
+ <!-- ghgdjkhfkjhdjkfhjd -->
+ <!-- <div class="slideshow-container"> -->
+    <!-- Repeat for 7 slideshows -->
+    
+
+    <!-- <div id="slideshow2" class="slideshow">
+        <div class="slideshow-inner"> -->
+
+
+
+
+
+
+            <!-- <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner"> -->
+      <div class="col-sm-6 col-md-6 col-lg-4 " style="margin-left: 220px;"> 
+        <div class="adds">
+
+            
+                  
+ <!-- <div class="top-rightADs" id="myADs" style=" border: 3px solid #000; margin-right: 350px; margin-top: -400px;"> -->
+                      
+    <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+    <!-- <img src="images/ads/ads1.gif" alt="Slide11" width="280px" height="220px" style="border:balack;">
+
+   </div> -->
+
+          <!-- <br> -->
+
+<!--          
+          <div class="top-rightADs" id="myADs"  style=" margin-right: 30px; border: 3px solid #000; margin-top: -400px;" >
+           <a href="./products/fodder.html">  
+           
+           <img src="images/ads/ads2.png" alt="Slide12" width="280px" height="170px" >
+           </a> 
+        </div> -->
+             
+
+        
+         <!-- <div class="top-rightADs" id="myADs" style=" border: 3px solid #000; margin-right: -290px; margin-top: -500px;">  -->
+                      
+            <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+             <!-- <a href="./courses/sixMonthLSTechniC.html">
+            <img src="images/ads/ads6.jpg" alt="Slide11" width="280px" height="270px" style="border:balack;">
+        </a>
+           </div>  -->
+
+ 
+    <div class="top-rightADs" id="myADs" style=" border: 3px solid #000; margin-top: -300px; margin-right: 300px;"> 
+                      
+            <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+             <!-- <a href="./courses/monthlydairycattleC.html"> -->
+                  <a href="#imageModal83" data-toggle="modal">
+            <img src="images/ads/ads8.jpg" alt="Slide11" width="280px" height="270px" style="border:balack;">
+            </a>
+        <!-- </a> -->
+           </div> 
+           
+    <div class="top-rightADs" id="myADs" style=" border: 3px solid #000; margin-top: -300px; margin-right: 0px;"> 
+                      
+            <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+                  <a href="./courses/monthlydairycattleC -ta.html">
+                  <!--a href="#imageModal83" data-toggle="modal"-->
+            <img src="images/ads/practical dairy cattle management-2026-jul-13.jpeg" alt="Slide11" width="280px" height="270px" style="border:balack;">
+            </a>
+         </a>
+           </div> 
+
+           
+    <div class="top-rightADs" id="myADs" style=" border: 3px solid #000;margin-top: -300px; margin-right: -300px;"> 
+                      
+            <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+             <!--a href="./courses/monthlydairycattleC.html"-->
+            <img src="images/ads/CurdBuyerNeeded.png" alt="Slide11" width="280px" height="270px" style="border:balack;">
+        </a>
+           </div> 
+    
+    <div class="top-rightADs" id="myADs" style=" border: 3px solid #000; margin-top: -300px; margin-right: -600px;"> 
+                      
+            <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+             <a href="./courses/sixMonthLSTechniC -ta.html">
+            <img src="images/ads/course-2026-jun-2.jpeg" alt="Slide11" width="280px" height="270px" style="border:balack;">
+        </a>
+           </div>
+           
+        </div>
+
+ 
+  
+
+
+
+
+                <!-- <div class="col-sm-6 col-md-6 col-lg-4" >     
+                     <img src="./image s/mission/dekma1.png" alt="" class="vision"> 
+                     <div class="serviceBox_1 mission" style=" padding: 30px; ">
+                        <div class="icon_service">
+                            
+                            <h3>  Vision</h3>
+                        </div>
+                        <div class="fr_content">
+                            <p>To be the pioneer of sustainable <br>farm animal production .</p>
+                            
+                        </div>
+                    </div>
+                </div>
+          
+
+
+
+                <div class="col-sm-6 col-md-6 col-lg-4" >
+                   
+                    <div class="serviceBox_1 vision" style=" padding: 30px;">
+                        <div class="icon_service" >
+                            
+                            <h3>  Mission</h3>
+                        </div>
+                        <div class="fr_content">
+                            <p>Contributing to the national <br> need for self-sufficiency in animal <br> products.
+                                </p>
+                            
+                        </div>
+                    </div>
+                    
+                </div> -->
+
+                                
+            <!-- </div>
+        </div> -->
+
+    </div>
+     
+ <hr style="border-color: #000; margin-top: 50px; height: auto;">
+</section>  
+
+    <!-- end : Parallax with Testimonial -->
+
+
+    <section class="info_service "  >
+    <div class="container-fluid missin" >
+          <div class="slide">
+            <div class="containerk" style="margin-right: 620px; " > 
+                <div class="row">
+                    <a href="#imageModal70" data-toggle="modal">
+<video width="230px" height="auto" autoplay muted loop id="myVideo" >
+                    <source src="video/01 video.mp4" type="video/mp4">
+                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support HTML video.
+ </video>
+</a>
+<a href="#imageModal71" data-toggle="modal">
+ <video width="230px" height="auto" autoplay muted loop id="myVideo" style=" margin-right: 10px;  margin-top: 50px;">
+    <source src="video/02 video.mp4" type="video/mp4">
+    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+    Your browser does not support HTML video.
+</video>
+</a>
+
+<a href="#imageModal72" data-toggle="modal">
+<video width="280px" height="auto" autoplay muted loop id="myVideo" style=" margin-top:-300px ; margin-right: -170px;">
+    <source src="video/03 video.mp4" type="video/mp4" >
+    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+    Your browser does not support HTML video.
+</video>
+</a>
+
+<a href="#imageModal73" data-toggle="modal">
+<div class="top-rightADs" id="myADs" style="   margin-right:-375px; margin-top: -60px;">
+                      
+    <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+    <img src="video/05 image.jpg" alt="Slide11" width="200px"  style="border:balack;">
+
+   </div>
+</a>
+
+<a href="#imageModal74" data-toggle="modal">
+   <div class="top-rightADs" id="myADs" style="  margin-right: -580px; margin-top:-60px ;">
+                      
+    <!-- <button type="button" class="btn btn-danger cancel" onclick="closeForm()" style="z-index: 200 !important;">X</button> -->
+   
+    <img src="video/06 image.jpg" alt="Slide11" width="200px" height="" style="border:balack;">
+
+   </div>
+</a>
+
+
+
+<!-- <video width="250px" height="auto" autoplay muted loop id="myVideo" style=" margin-left: 940px; margin-top: -250px;">
+    <source src="video/04 video.mp4" type="video/mp4"> -->
+    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+    <!-- Your browser does not support HTML video.
+</video> -->
+
+</div>
+
+<div class="modal fade" id="imageModal70" tabindex="-1" role="dialog" >
+											<!-- <div class="modal-dialog">
+												<div class="modal-content"> -->
+				<video  height="auto" autoplay muted loop id="myVideo" >
+                    <source src="video/01 video.mp4" type="video/mp4">
+                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support HTML video.
+ </video>
+												<!-- </div>
+											</div> -->
+										</div>
+
+<div class="modal fade" id="imageModal71" tabindex="-1" role="dialog" >
+											<!-- <div class="modal-dialog">
+												<div class="modal-content"> -->
+					<video  height="auto" autoplay muted loop id="myVideo" >
+                    <source src="video/02 video.mp4" type="video/mp4">
+                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support HTML video.
+ </video>
+												<!-- </div>
+											</div> -->
+										</div>
+
+            <div class="modal fade" id="imageModal72" tabindex="-1" role="dialog" >
+											<!-- <div class="modal-dialog">
+												<div class="modal-content"> -->
+								<video  height="auto" autoplay muted loop id="myVideo" >
+                    <source src="video/03 video.mp4" type="video/mp4">
+                    <!-- <source src="mov_bbb.ogg" type="video/ogg"> -->
+                    Your browser does not support HTML video.
+ </video>
+												<!-- </div>
+											</div> -->
+										</div>
+
+              <div class="modal fade" id="imageModal73" tabindex="-1" role="dialog" >
+											<!-- <div class="modal-dialog">
+												<div class="modal-content"> -->
+ <img src="video/05 image.jpg" alt="Slide11"   style="border:balack;">
+												<!-- </div>
+											</div> -->
+										</div>
+
+
+<div class="modal fade" id="imageModal74" tabindex="-1" role="dialog" >
+											<!-- <div class="modal-dialog">
+												<div class="modal-content"> -->
+ <img src="video/06 image.jpg" alt="Slide11"  height="" style="border:balack;">
+												<!-- </div>
+											</div> -->
+										</div>
+
+</div>   
+</div>
+
+
+
+</div>
+<hr style="border-color: #000; margin-top: 60px;">
+</section>
+    
+    
+
+
+
+
+    <section class="feature_bottom">
+        <div class="container-fluid">
+            <div class="row sub_content">
+                <div class="col-lg-6 " style="padding: 3%;">
+
+                    <div class="row sub_content"  >
+                        <div class="rs_box" >
+                            <!-- <div class="col-sm-4 col-md-4 col-lg-4">
+                                <div class="serviceBox_1">
+                                    <div class="icon_service">
+                                        <i class="fa fa-laptop"></i>
+                                        <h3>Our  Projects</h3>
+                                    </div>
+                                    <div class="fr_content">
+                                        <p>NLDB is committed to foster the Livestock and dairy industry in the Island by developing quality breeding material , Livestock and agricultural products &ensp;infusing new technology and innovations in due recognition of the national effort, making the country self-sufficient in Livestock and dairy products.</p>
+                                        <a class="read" href="#">Read more</a>
+                                    </div>
+                                </div>
+                            </div> -->
+                          
+                            <div class="col-sm-6 col-md-6 col-lg-6" >     
+                                <!-- <img src="./images/mission/dekma1.png" alt="" class="vision"> -->
+                                <div class="serviceBox_1 mission" style=" padding: 30px; ">
+                                    <div class="icon_service">
+                                        
+                                        <h3>பார்வை </h3>
+                                    </div>
+                                    <div class="fr_content">
+                                        <p>நிலையான பண்ணை விலங்கு <br> உற்பத்தியின் <br>முன்னோடியாக  இருக்க <br> வேண்டும்.
+                                        </p><br>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                      
+            
+            
+            
+                            <div class="col-sm-6 col-md-6 col-lg-6" >
+                               
+                                <div class="serviceBox_1 vision" style=" padding: 30px;">
+                                    <div class="icon_service" >
+                                        
+                                    
+                                <h3>பணி
+                                </h3>
+                            </div>
+                            <div class="fr_content">
+                                <p>விலங்கு பொருட்களில் <br>தன்னிறைவுக்கான<br>  தேசிய தேவைக்கு<br> பங்களிப்பு செய்தல்.
+                                </p>
+                                
+                            </div>
+                                </div>
+                                
+                            </div>
+            
+                                            
+                        </div>
+                    </div>
+                    <div style="margin-top: 100px;">
+                    <div class="dividerHeading">
+                        <h4><span>NLDB ஏன் சிறப்பு வாய்ந்தது?</span></h4>
+                    </div>
+                    <p>தேசிய கால்நடை மேம்பாட்டு வாரியம் (NLDB) என்பது நாடு முழுவதும் கால்நடை மற்றும் கோழி வளர்ப்பு பண்ணைகளை நிர்வகிக்கும் ஒரு அரசுக்குச் சொந்தமான நிறுவனமாகும். ஐம்பது ஆண்டுகளுக்கும் மேலாக, நாங்கள் கால்நடைத் துறையில் ஒரு மூலக்கல்லாக இருந்து வருகிறோம், வணிகப் பண்ணைகளை நிறுவுவதற்கும் நிலைத்தன்மை செய்வதற்கும் ஆண்டுதோறும் மில்லியன் கணக்கான குஞ்சுகள் மற்றும் ஆயிரக்கணக்கான கன்றுகள், குட்டிகள், பன்றிக்குட்டிகள் மற்றும் பிற இனப்பெருக்கப் பொருட்களை வழங்குகிறோம்.
+
+                        எங்கள் நீண்டகால இருப்பு கால்நடை மற்றும் கோழித் தொழில்களின் வளர்ச்சி மற்றும் மாற்றத்திற்கு குறிப்பிடத்தக்க பங்களிப்பை வழங்கியுள்ளது. புதிய இனங்கள், தொழில்நுட்பங்களை அறிமுகப்படுத்துவதில் நாங்கள் முன்னோடியாக இருந்துள்ளோம், மேலும் விவசாயிகள் மற்றும் இளைஞர்களுக்கு பயிற்சி அளித்து, கடந்த சில தசாப்தங்களாக தனியார் துறையால் பரவலாக ஏற்றுக்கொள்ளப்பட்டு விரிவுபடுத்தப்பட்ட மாதிரிகளை அமைத்துள்ளோம்.
+                        
+                        நாங்கள் ஒரு சுயநிதி நிறுவனமாகும், இது கருவூலத்தைச் சார்ந்து இல்லாமல் அனைத்து செலவுகளையும் பூர்த்தி செய்வதற்காக எங்கள் பண்ணைகளில் உற்பத்தி செய்யப்படும் இனப்பெருக்கப் பொருட்கள், பால், முட்டை மற்றும் இறைச்சி பொருட்கள், தேங்காய் மற்றும் பிற விவசாயப் பொருட்கள் உள்ளிட்ட உற்பத்திப் பொருட்களிலிருந்து வருவாயை உருவாக்குகிறது. அதே நேரத்தில், எதிர்காலத்தில் நிலைத்தன்மைக்கான இருப்புக்களுடன் எங்கள் சொத்துக்களை வளர்த்து வருகிறோம்.
+                        
+                        உணவுப் பாதுகாப்பு மற்றும் பாதுகாப்பிற்கான தேவை தொடர்ந்து வளர்ந்து வருவதால், NLDB இன் பங்கு மிக முக்கியமானதாக இருப்பதாக நாங்கள் நம்புகிறோம். தேசியத் தேவைகளைப் பூர்த்தி செய்வதற்கும் நிலையான வளர்ச்சியை உறுதி செய்வதற்கும் வரும் ஆண்டுகளில் புதிய விவசாயிகளை அறிமுகப்படுத்துதல், முதலீடுகளை ஈர்த்தல் மற்றும் இந்தத் துறையை மேலும் விரிவுபடுத்துவதில் நாங்கள் உறுதியாக உள்ளோம்.</p>
+					
+                    <!-- <ul class="list_style circle">
+                        <li><a href="#"> கால்நடைத் தொழிலில் 45 ஆண்டுகளுக்கும் மேலான அனுபவம். </a></li>
+                        <li><a href="#"> உயர் புரதம் மற்றும் ஆற்றல் அளவுகள் </a></li>
+                        <li><a href="#"> எங்கள் போட்டியாளர்களின் சந்தை விலைகளை விட தொடர்ந்து குறைந்த விலைகள்</a></li>
+                        <li><a href="#"> அறிவு, நட்பு மற்றும் தொழில்முறை ஊழியர்கள் </a></li>
+                        <li><a href="#"> நாங்கள் நாடு முழுவதும் நம்பகமான சேவையை வழங்குகிறோம்</a></li>
+                    </ul> -->
+                    </div>
+                </div>
+
+                <!-- TESTIMONIALS -->
+                <div class="col-lg-5 " style="padding: 3%; margin-left: 103px;">
+                    <div class="annual">
+                    <div class="dividerHeading">
+                        <h4><span>ஆண்டு வருமானம் 2024</span></h4>
+                    </div>
+
+                    <ul class="progress-skill-bar mrg-0">
+                        கால்நடைகள் மற்றும் எருமைகள் &#x21b4;<br>
+                        <img src="images/catle and buffolo.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+                        <li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">45%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="59" class="bar" style="width: 0px; height: 0px;">
+                                  <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">1648Mn</div>  -->
+                                </div>
+                            </div>
+                        </li>
+                        தேங்காய் மற்றும் தேங்காய் &#x21b4;<br>
+                        <img src="images/coconut three.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+						<li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">17%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="35" class="bar" style="width: 0px; height: 0px;">
+                                    <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">849Mn</div> -->
+                                </div>
+                            </div>
+                        </li> 
+                        முட்டையிடும் பெற்றோர் கோழிகள்  &#x21b4;<br>
+                        <img src="images/poulty breedr.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+                        <li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">13%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="27" class="bar" style="width: 0px; height: 0px;">
+                                    <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">395Mn</div> -->
+                                </div>
+                            </div>
+                        </li>
+                        விற்பனை நிலையங்கள்&#x21b4;<br>
+                        <img src="images/outlet2.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+                        <li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">10%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="24" class="bar" style="width: 0px; height: 0px;">
+                                    <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">291Mn</div> -->
+                                </div>
+                            </div>
+                        </li> 
+                        மற்ற வருமானம் &#x21b4;<br>
+                        <img src="images/other income.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+                        <li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">9%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="21" class="bar" style="width: 0px; height: 0px;">
+                                    <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">405Mn</div> -->
+                                </div>
+                            </div>
+                        </li>
+                        பாரம்பரியமற்றது... &#x21b4;<br>
+                        <img src="images/rabit2.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+                        <li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">3%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="17" class="bar" style="width: 0px; height: 0px;">
+                                    <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">186Mn</div> -->
+                                </div>
+                            </div>
+                        </li>
+                        முட்டைகள் &#x21b4;<br>
+                        <img src="images/eggs.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+                        <li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">2%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="15" class="bar" style="width: 0px; height: 0px;">
+                                    <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">56Mn</div> -->
+                                </div>
+                            </div>
+                        </li>
+
+                        கோழி  &#x21b4; <br>
+                        <img src="images/chicken.jpg" style="border-radius:360px; width:40px; height: 40px;" alt="">
+						<li style="margin-top: -20px; margin-left: 25px;">
+                            <span class="lable">1%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="13" class="bar" style="width: 0px; height: 0px;">
+                                    <!-- <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">35Mn</div> -->
+                                </div>
+                            </div>
+                        </li>
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- செம்மறி  &#x21b4;
+						<li>
+                            <span class="lable">1%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="13" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">35Mn</div>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        பன்றிகள் &#x21b4;
+                        <li>
+                            <span class="lable">1%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="15" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">56Mn</div>
+                                </div>
+                            </div>
+                        </li>
+                        வணிக ரீதியாக முட்டை உற்பத்தி &#x21b4;
+                        <li>
+                            <span class="lable">5%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="19" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">186Mn</div>
+                                </div>
+                            </div>
+                        </li>
+                        பிராய்லர் தாய் கோழிகள் &#x21b4;
+                        <li>
+                            <span class="lable">7%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="21" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">291Mn</div>
+                                </div>
+                            </div>
+                        </li>  -->
+                        <!-- முட்டையிடும் பெற்றோர் கோழிகள் &#x21b4;
+                        <li>
+                            <span class="lable">10%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="24" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">395Mn</div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- மற்றவைகள் &#x21b4;
+                        <li>
+                            <span class="lable">10%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="24" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">405Mn</div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- தேங்காய் மற்றும் தேங்காய் &#x21b4;
+						<li>
+                            <span class="lable">22%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="35" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">849Mn</div>
+                                </div>
+                            </div>
+                        </li>  -->
+                        <!-- கால்நடைகள் மற்றும் எருமைகள்&#x21b4;
+                        <li>
+                            <span class="lable">43%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="54" class="bar" style="width: 0px; height: 0px;">
+                                  <div style="margin-left: 350px; font-weight:black bold;text-transform:capitalize; font-size: 12px; color: #000; ">1648Mn</div> 
+                                </div>
+                            </div>
+                        </li> -->
+
+
+
+
+
+
+
+
+
+
+
+                        <!-- கால்நடைகள் மற்றும் எருமைகள் &#x21b4;
+                        <li>
+                            <span class="lable">40.79%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="50" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">1767.0மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li>
+                        தேங்காய் மற்றும் தேங்காய் &#x21b4;
+						<li>
+                            <span class="lable">21.41%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="33" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">927.06மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li>
+                        முட்டையிடும் பெற்றோர் கோழிகள் &#x21b4;
+                        <li>
+                            <span class="lable">11.06%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="22" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">479.15மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li>
+                        மற்றவைகள் &#x21b4;
+                        <li>
+                            <span class="lable">9.27%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="20" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">401.43மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li> -->
+
+                        <!-- பிராய்லர் தாய் கோழிகள் &#x21b4;
+                        <li>
+                            <span class="lable">8.74%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="19" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">378.47மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- வணிக ரீதியாக முட்டை உற்பத்தி &#x21b4;
+                        <li>
+                            <span class="lable">5.75%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="17" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">248.09மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- பன்றிகள்&#x21b4;
+                        <li>
+                            <span class="lable">2.01%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="13" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">86.45மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li>  -->
+                        <!-- செம்மறி &#x21b4;
+						<li>
+                            <span class="lable">0.98%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="10" class="bar" style="width: 0px; height: 0px;">
+                                    <div style="margin-left: 350px; font-weight:black bold;text-transform:lowercase; font-size: 12px; color: #000; ">42.05மி.ரூ.</div>
+                                </div>
+                            </div>
+                        </li> -->
+
+
+
+
+                        <!-- பன்றிகள்&#x21b4;
+                        <li>
+                            <span class="lable">2.01%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="13" class="bar" style="width: 0px; height: 0px;">
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- வணிக ரீதியாக முட்டை உற்பத்தி &#x21b4;
+                        <li>
+                            <span class="lable">5.75%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="17" class="bar" style="width: 0px; height: 0px;">
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- பிராய்லர் தாய் கோழிகள் &#x21b4;
+                        <li>
+                            <span class="lable">8.74%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="19" class="bar" style="width: 0px; height: 0px;">
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- மற்றவைகள் &#x21b4;
+                        <li>
+                            <span class="lable">9.27%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="20" class="bar" style="width: 0px; height: 0px;">
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- முட்டையிடும் பெற்றோர் கோழிகள் &#x21b4;
+                        <li>
+                            <span class="lable">11.06%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="22" class="bar" style="width: 0px; height: 0px;">
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- தேங்காய் மற்றும் தேங்காய் &#x21b4;
+						<li>
+                            <span class="lable">21.41%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="33" class="bar" style="width: 0px; height: 0px;">
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                        <!-- கால்நடைகள் மற்றும் எருமைகள் &#x21b4;
+                        <li>
+                            <span class="lable">40.79%</span>
+                            <div class="progress_skill">
+                                <div data-height="100" role="progressbar" data-value="50" class="bar" style="width: 0px; height: 0px;">
+                                    
+                                </div>
+                            </div>
+                        </li> -->
+                    </ul>
+                    </div>
+                </div><!-- TESTIMONIALS END -->
+            </div>
+        </div>
+    </section>
+	<!-- <section class="content elements">
+        <div class="container">
+	        <div class="row sub_content">
+            <div class="col-lg-6 col-md-6 col-sm-6">		
+                <div class="dividerHeading">
+                <h4><span>Farm Visits Are Temporarily suspended</span></h4> 
+                </div>
+           
+          <!---      <div class="alert alert-danger alert-dismissable">
+                    <strong> Island wide All NLDB farm Visits are temporarily suspended</strong>  Due To Foot And Mouth Disease(FMD).Foot and mouth disease (FMD) is a severe, highly contagious viral disease of livestock . The disease affects cattle, swine, sheep, goats ,buffalo and other cloven-hoofed ruminants. Intensively reared animals are more susceptible to the disease than traditional breeds.
+
+				</div> 
+				 <div class="dividerHeading">
+                    <h4><span>සාමාන්‍ය උපදෙස් </span></h4>
+                </div>
+				         <ul class="list_style square">
+                            <li><a href="#"> වාහන/පුද්ගලයින්/යන්ත්‍ර සූත්‍ර/ආහාර ආදිය.. ගොවිපල තුළට හෝ වත්මන් FMD පැතිර යන ප්‍රදේශ දෙසට ගමන් කිරීම වාර්තා කිරීම.</a></li>
+                            <li><a href="#">ගොවිපළට අමුත්තන් ඇතුළුවීම පාලනය කිරීම..</a></li>
+                            <li><a href="#"> අනවසර පුද්ගලයින්/සතුන්/වාහනවලට ඇතුළුවීම සීමා කිරීම සඳහා ගේට්ටු මත දැන්වීම් ප්‍රදර්ශනය කිරීම</a></li>
+                        </ul>
+				<div class="serviceBox_1">
+					<div class="fr_content">
+							<a class="read" href="download/farms/FMD Alert 3.pdf">තවත් කියවන්න</a>
+					</div>
+				</div>
+
+
+		
+
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="dividerHeading">
+                    <h4><span>බාගත කිරීම්</span></h4>
+                </div>
+				          <ul class="list_style play">
+
+
+                            <li><a href="download/farms/Sin- Application Form for Farm Visits (සිංහල).docx">ගොවිපල චාරිකා සඳහා ඉල්ලුම් පත්‍රය &nbsp;&nbsp; [අයදුම්පත්‍රය]</a></li>
+                            <li><a href="download/courses/AppTraining.docx">කෙටි කාලීන පුහුණු වැඩසටහන [අයදුම්පත්‍රය]</a></li></br>
+							 <li><a href="download/breeds/Livestock Application Tamil English Sinhala.pdf">පශු සම්පත් නිකුත් කිරීම සඳහා වන අයදුම්පත (PDF) PDF[බාගත කරන්න]</a></li>
+							 <li><a href="download/breeds/Livestock Application Tamil English Sinhala .docx">පශු සම්පත් නිකුත් කිරීම සඳහා ඉල්ලුම් පත්රය (WORD)[බාගත කරන්න]</a></li>
+                            <li><a href="download/Bungalow/Application-for-Circuit-Bungalow-Reservation-(English).pdf"> බංගලා වෙන්කිරීමේ පෝරමය PDF [ඉංග්‍රීසි]</a></li>
+							<li><a href="download/Products/nldb-outlets.pdf">NLDB හි කිරි අලෙවිසැල් [බාගත කරන්න]</a></li>
+							<li><a href="download/Products/sale-centers.pdf">NLDB විකුණුම් මධ්‍යස්ථාන [බාගත කරන්න]</a></li>
+							<li><a href="download/Products/How to purchase breeding materials and Poultry chicks.pdf">අභිජනන ද්‍රව්‍ය මිලදී ගන්න [බාගත කරන්න]</a></li>
+							<li><a href="download/breeds/Application for animal issue - Sinhala.pdf">සත්ව ගැටළු සඳහා අයදුම්පත[සිංහල] [බාගත කරන්න]</a></li>
+							<li><a href="download/breeds/application for animal issue-English.pdf"> ගැටළු සඳහා ඉල්ලුම්පත්‍රය[ඉංග්‍රීසි] [බාගත කරන්න]</a></li>
+
+	<li><a href="download/Bungalow/Application-for-Circuit-Bungaow-Reservation-(Sinhala).pdf">සර්කිට් බංගලාව වෙන්කරවා ගැනීම සඳහා ඉල්ලුම්පත්‍රය [සිංහල] [බාගත කරන්න]</a></li>
+
+	<li><a href="download/Bungalow/Application-for-Circuit-Bungalow-Reservation-(English).pdf">සංචාරක බංගලාව වෙන්කරවා ගැනීම සඳහා ඉල්ලුම්පත්‍රය [ඉංග්‍රීසි] [බාගත කරන්න]</a></li>
+
+	<li><a href="download/Annual Report 2018.pdf">සංචාරක බංගලා වෙන්කරවා ගැනීම සඳහා ඉල්ලුම්පත්‍රය [ඉංග්‍රීසි] [බාගත කරන්න]</a></li>
+	<li>
+<div class="">
+                        <p>කරුණාකර පශු සම්පත් තාක්ෂණවේදී  පාඨමාලාව සඳහා ඉල්ලුම් පත්‍රය බාගත කරන්න</p>
+<a href="#popup1">පශු සම්පත් තාක්ෂණ ශිල්පී පාඨමාලාව [ බාගත කරන්න ]</a>
+
+</div>
+<!--popup1
+<div id="popup1" class="popup-container">
+  <div class="popup-content">
+    <a href="#" class="close">&times;</a>
+<center>
+<a href ="images/course/course01.jpeg" download><button class="buttonn"><span>බාගත කරන්න</span></button></a>
+<br></br> 
+    <img src="images/course/course01.jpeg" style ="width : 600px; height : 600px; margin : 0 auto;" alt="Course">
+</center>
+  </div>
+</div>
+ </li>
+
+
+                        </ul>
+
+				</div>
+
+									
+								
+
+			</div> <!--./row
+		</div>
+	</section> -->
+
+<!---
+<section class="team">
+        <div class="container">
+            <div class="row  sub_content">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="dividerHeading">
+                        <h4><span>Advertisement</span></h4>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6">
+                    <div class="our-team">
+                     <div id="card" style = "border : solid  2px #8CBE45; border-radius: 7px 7px 0 0;">
+  <img id="img" src="images/coconut-bg.jpg">
+  <h3 id="title">Value Addition for Coconut</h3>
+  <div id="title"> <a href ="download/EOI-coconut.pdf" download><button class="buttonn"><span>Download Now</span></button></a></div>
+   <p id="desc">closing date 31st March 2023</p>
+</div>
+                    </div>
+                </div>
+				
+            </div>
+            </div>
+        </div>
+    </section> --->
+
+
+
+    <section class="team">
+        <div class="container-fluid">
+            
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <div class="dividerHeading" style="margin-top: 50px;">
+            <h4><span>உயர் நிர்வாகம்</span></h4>
+        </div>
+    </div>
+    <!-- <div class="column">
+      <div class="card">
+        <div class="our-team">
+            <div class="pic">
+                <img src="images/teams/amaraweera.png" alt="profile img">
+                <!-- < --
+            </div>
+            
+                <div class="team_prof">
+                    <h3 class="designation">கௌரவ. அமைச்சர் மஹிந்த அமரவீர<small>அமைச்சர்</small></h3><br/>
+                     <p class="description" style="text-align: left;">கமத்தொழில் மற்றும் பெருந்தோட்டக் கைத்தொழில் </p>
+                </div> 
+            
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <div class="our-team">
+            <div class="pic">
+                <img src="images/teams/dbherath.png" alt="profile img">
+                <div class="social_media_team">
+                    <ul class="team_social">
+                        <li><a class="fb" href="https://www.facebook.com/db.herath.1" data-placement="top" data-toggle="tooltip" title="Facbook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="gmail" href="#." data-placement="top" data-toggle="tooltip" title="Google"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="team_prof">
+                <h3 class="designation">கௌரவ. டி.பி.ஹேரத்<small>மாநில அமைச்சர் </small></h3><br/>
+                
+                
+            </div>
+        </div>
+      </div>
+    </div> -->
+    
+    <div class="column" style="margin-left: 3%;"> 
+      <div class="card">
+        <div class="our-team">
+            <div class="pic">
+                <img src="images/teams/chairman new.jpg" alt="profile img">
+                <div class="social_media_team">
+                    <ul class="team_social">
+                        <li><a class="fb" href="https://www.facebook.com/nldbs" data-placement="top" data-toggle="tooltip" title="Facbook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="gmail" href="#." data-placement="top" data-toggle="tooltip" title="Google"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+                <div class="team_prof">
+                    <h3 class="designation">கலாநிதி பி.சி.எஸ். பெரேரா <br><small>தலைவர்</small></h3><br/>
+                    
+                <br>
+                </div> 
+        </div>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <div class="our-team">
+            <div class="pic">
+                <img src="images/teams/deputy chairman.jpg" alt="profile img">
+                <div class="social_media_team">
+                    <ul class="team_social">
+                        <li><a class="fb" href="https://www.facebook.com/nldbs" data-placement="top" data-toggle="tooltip" title="Facbook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="gmail" href="#." data-placement="top" data-toggle="tooltip" title="Google"><i class="fa fa-google-plus"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+           <div class="team_prof">
+                <h3 class="designation">டாக்டர் டபிள்யூ.எம்.டி. எஸ்.வன்னிநாயக்க<br> <small>  பிரதித் தலைவர்</small></h3><br/>
+                
+           <br>
+            </div> 
+        </div>
+      </div>
+    </div>
+    
+    <div class="column" > 
+        <div class="card">
+          <div class="our-team">
+              <div class="pic">
+                  <img src="images/teams/general manager.jpg" alt="profile img">
+                  <div class="social_media_team">
+                      <ul class="team_social">
+                          <li><a class="fb" href="https://www.facebook.com/nldbs" data-placement="top" data-toggle="tooltip" title="Facbook"><i class="fa fa-facebook"></i></a></li>
+                          <li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                          <li><a class="gmail" href="#." data-placement="top" data-toggle="tooltip" title="Google"><i class="fa fa-google-plus"></i></a></li>
+                      </ul>
+                  </div>
+              </div>
+              <div class="team_prof">
+                <h3 class="designation">டாக்டர்.கே.ஜி.ஜே.எஸ் டிஸ்னாக<small>பொது மேலாளர்</small></h3><br/>
+                
+                <br>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+        </div>
+    </section>
+
+
+    <!-- <section class="clients">
+        <div class="container">
+            <div class="row sub_content">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="dividerHeading">
+                        <h4><span>අපගේ සේවාදායකයෝ</span></h4>
+
+                    </div>
+
+                    <div class="our_clients">
+                        <ul class="client_items clearfix">
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="https://pelwattedairy.com/"  data-placement="bottom" data-toggle="tooltip" title="Client 1" ><img src="images/clients/1.png" alt="palawaththa" /></a></li>
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="https://www.lmfgroup.lk/" data-placement="bottom" data-toggle="tooltip" title="Client 2" ><img src="images/clients/2.png" alt="Lanka Milk Foods" /></a></li>
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="http://www.milco.lk/" data-placement="bottom" data-toggle="tooltip" title="Client 3" ><img src="images/clients/3.png" alt="Milco Private Limited" /></a></li>
+                            <li class="col-sm-3 col-md-3 col-lg-3"><a href="http://www.cargillsceylon.com/" data-placement="bottom" data-toggle="tooltip" title="Client 4" ><img src="images/clients/4.png" alt="cargills food city" /></a></li>
+                        </ul><!--/ .client_items
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+</section><!--end wrapper-->
+
+<!--Model Contain Livestock Show OCT 2023 Application-->
+
+<!--Model 01-->
+<div class="modal fade english" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close model-btn-nldb" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+ <div class="modal-body">
+    <img class ="card-img-nldb" src="images/card/english.jpeg" alt="NLDB">
+</div>
+    </div>
+  </div>
+</div>
+<!--Model 02-->
+<div class="modal fade sinhala" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close model-btn-nldb" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+ <div class="modal-body">
+    <img class ="card-img-nldb" src="images/card/sinhala.jpeg" alt="NLDB">
+</div>
+    </div>
+  </div>
+</div>
+<!--Model 03-->
+<div class="modal fade tamil" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close model-btn-nldb" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+ <div class="modal-body">
+    <img class ="card-img-nldb" src="images/card/tamil.jpeg" alt="NLDB">
+</div>
+    </div>
+  </div>
+</div>
+
+<!--#include file="footer.inc"-->
+<footer class="footer">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-5 col-md-5 col-lg-4" style="margin-left: 3%;">
+                <!-- <div class="widget_title">
+                    <h4><span>About Us</span></h4>
+                </div>
+                <div class="widget_content">
+                    <p>The National Livestock Development Board was established  in 1973 under the State Agricultural   Corporation Act No.11 of 1972.Its field operations commenced on 1974.Government first milk processing plant was installed in 1954 in Narahenpita.</p>
+                    <ul class="contact-details-alt">
+                        <li><i class="fa fa-map-marker"></i> <p><strong>Address</strong>: P.O.Box 1748,No 40, Nawala Road,Narahenpita</p></li>
+                        <li><i class="fa fa-user"></i> <p><strong>Phone</strong>:+94112501701</p></li><li><i class="fa fa-user"></i> <p><strong>Phone</strong>:+94112501702</p></li>
+                        <li><i class="fa fa-envelope"></i> <p><strong>Email</strong>: <a href="mailto:info@nldb.gov.lk">info@nldb.gov.lk</a></p></li>
+                    </ul>
+                </div> -->
+                <div class="widget_title">
+                    <h4><span>முகநூல்</span></h4>
+                </div>
+                <div class="widget_content">
+                    <ul class="links">
+                        <li> <a href="https://www.facebook.com/share/p/1BwBwWjAfX">The appointment letters for newly recruited employees<span>July 11, 2026</span></a></li>
+                        <li> <a href="https://www.facebook.com/share/p/1FkFGEi2Nm"> The National Livestock Board recently opened four new outlets with the aim of expanding its services to the Sri Lankan people.<span>November 17, 2025</span></a></li>
+                        <li> <a href="https://www.facebook.com/permalink.php?story_fbid=pfbid0347gD3iWAnvKdABDmkVfMKEDrFV2nR72hgiUopBp16Q7v5WiX3a2QVTN6SLjQB7Qhl&id=100092933026891 ">NLDB starts selling silage for dairy farmers, through its farms and sales centers<span> December 21, 2024</span></a></li>
+                        <li> <a href="https://www.facebook.com/photo?fbid=411336478640783&set=pb.100092933026891.-2207520000">விலங்கு உற்பத்தி வளர்ச்சிக்கான ஐந்தாண்டு திட்டம்<span> செப்டம்பர் 02, 2024</span></a></li>
+                        <li> <a href="https://www.facebook.com/photo/?fbid=323045924136506&set=pcb.323049570802808">தேசிய நடவு தினம்<span> ஏப்ரல் 19, 2024</span></a></li>
+                        <li> <a href=https://www.facebook.com/nldb.lk/posts/pfbid02rHkxy3MTkHo858gZDY49TYwKdftmz2rJwaMzFmbfQ9C2EZMzi1A3gyf3KDrHJe3ql?notif_id=1705903150330458&notif_t=feedback_reaction_generic&ref=notif">1வது தொகுதி கால்நடை தொழில்நுட்ப பயிற்சி (NVQ LEVEL 4) 2024<span>ஜனவரி 22, 2024</span></a></li>
+                        <li> <a href="https://www.facebook.com/photo/?fbid=3230459241365"> கால்நடை கண்காட்சி 2023<span> அக்டோபர் 02, 2023</span></a></li>                      
+                        <li> <a href="https://www.facebook.com/nldb.lk/posts/3361578557190163">கொழும்பு மாவட்டத்தில் தேங்காய் விநியோகம் <span>ஏப்ரல் 1, 2020</span></a></li>
+                                                <li> <a href="https://www.facebook.com/media/set/?set=a.3208992152448805&type=3">நடைமுறை பயிற்சி பயிற்சி திட்டங்கள் <span>ஜனவரி 28, 2020</span></a></li>
+                                                <li> <a href="https://www.facebook.com/media/set/?set=a.3197564403591580&type=3">பொலந்தலாவ பாவா பங்களா<span>ஜனவரி 23, 2020</span></a></li>
+                                                <li> <a href="https://www.facebook.com/media/set/?set=a.3132544736760214&type=3">நெலும் வெவா சர்க்யூட் பங்களா <span>டிசம்பர் 26, 2019</span></a></li>
+
+                                            </ul>
+                </div>
+
+
+            </div>
+            <!-- <div class="col-sm-6 col-md-3 col-lg-3">
+                <div class="widget_title">
+                    <a href="resentNews.html"><h4><span> Recent News</span></h4></a>
+                </div>
+                <div class="widget_content">
+                    <ul class="links">
+                        
+                        
+                         <li><a href="download/farms/Sin- Application Form for Farm Visits (සිංහල).docx">Farm Visits Application<span>January 01, 2020</span></a></li>
+                      <!---   <li><a href="download/courses/AppTraining.docx"> Short Term Traning  Application<span>January 01, 2020</span></a></li> ---
+                        <li><a href="download/breeds/Livestock Application Tamil English Sinhala.pdf"> Application for issue of livestock <span>January 01, 2020</span></a></li>
+                        <li><a href="download/breeds/Livestock Application Tamil English Sinhala .docx"> Application for issue of livestock <span>January 01, 2020</span></a></li>
+                        <!--- <li><a href="download/Bungalow/application.pdf"> Bungalow Reservation Form <span>January 01, 2020</span></a></li> ---
+                        <li><a href="download/Products/nldb-outlets.pdf">Milk Outlets of NLDB  <span>January 01, 2020</span></a></li>
+                        <li><a href="download/Products/sale-centers.pdf">NLDB Sale Centers  <span>January 01, 2020</span></a></li>
+                    <!---	<li><a href="download/Products/How to purchase breeding materials and Poultry chicks.pdf">Purchase Breeding Materials <span>January 01, 2020</span></a></li> ---
+                        <li><a href="download/breeds/Application for animal issue - Sinhala.pdf">Application for animal issue[Sinhala]  <span>January 01, 2020</span></a></li>
+                    <!---	<li><a href="download/breeds/application for animal issue-English.pdf">Application for animal issue[English] <span>January 01, 2020</span></a></li> --->
+                    <!---	<li> <a href="download/farms/FMD Alert 3.pdf">FMD ALERT – 3nd Notice   <span>January 07, 2020</span></a></li> ---
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3 col-lg-3">
+                
+            </div> -->
+
+            <div class="col-sm-6 col-md-6 col-lg-7">
+                <div class="widget_title">
+                    <h4><span> அடிக்குறிப்பு கேலரி </span></h4>
+                </div>
+                <div class="widget_content">
+
+<!-- Section 1 -->
+<div class="row">
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal1" data-toggle="modal">
+            <img src="images/galery 2/20260711/01.jpeg" alt="01.jpeg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal2" data-toggle="modal">
+            <img src="images/galery 2/20260711/03.jpg" alt="03.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal3" data-toggle="modal">
+            <img src="images/galery 2/20260711/04.jpg" alt="04.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal4" data-toggle="modal">
+            <img src="images/galery 2/20260711/05.jpg" alt="05.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+</div>
+
+<!-- Section 2 -->
+<div class="row">
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal5" data-toggle="modal">
+            <img src="images/galery 2/20260711/06.jpg" alt="06.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal6" data-toggle="modal">
+            <img src="images/galery 2/20260711/07.jpg" alt="07.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal7" data-toggle="modal">
+            <img src="images/galery 2/20260711/11.jpg" alt="11.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal8" data-toggle="modal">
+            <img src="images/galery 2/20260711/12.jpg" alt="12.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+</div>
+
+<!-- Section 3 -->
+<div class="row">
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal9" data-toggle="modal">
+            <img src="images/galery 2/20260711/14.jpg" alt="14.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal10" data-toggle="modal">
+            <img src="images/galery 2/20260711/16.jpg" alt="16.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal11" data-toggle="modal">
+            <img src="images/galery 2/20260711/17.jpg" alt="17.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal12" data-toggle="modal">
+            <img src="images/galery 2/20260711/18.jpg" alt="18.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+</div>
+
+<!-- Section 4 -->
+<div class="row">
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal13" data-toggle="modal">
+            <img src="images/galery 2/20260711/19.jpg" alt="19.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal14" data-toggle="modal">
+            <img src="images/galery 2/20260711/20.jpg" alt="20.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal15" data-toggle="modal">
+            <img src="images/galery 2/20260711/21.jpg" alt="21.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal16" data-toggle="modal">
+            <img src="images/galery 2/20260711/41.jpg" alt="41.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+</div>
+
+<!-- Section 5 -->
+<div class="row">
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal17" data-toggle="modal">
+            <img src="images/galery 2/20260711/54.jpg" alt="54.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal18" data-toggle="modal">
+            <img src="images/galery 2/20260711/62.jpg" alt="62.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal19" data-toggle="modal">
+            <img src="images/galery 2/20260711/63.jpg" alt="63.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+    <div class="col-xs-3 col-sm-4 col-lg-3">
+        <a href="#imageModal20" data-toggle="modal">
+            <img src="images/galery 2/20260711/64.jpg" alt="64.jpg" width="100%" height="100px" class="footer-g-t">
+        </a>
+    </div>
+</div>
+
+<!-- Modals for the images -->
+
+<div class="modal fade" id="imageModal96" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/foundation/01.jpg" alt="Image 1" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal97" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/foundation/02.jpg" alt="Image 2" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal98" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/foundation/03.jpg" alt="Image 3" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal99" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class=" modal-content">
+            <img src="images/galery 2/foundation/19.jpg" alt="Image 4" class="popup-image">
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="imageModal92" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Maradana railway outlet/001M.jpg" alt="Image 1" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal93" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Maradana railway outlet/04M.jpg" alt="Image 2" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal94" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Maradana railway outlet/08M.jpg" alt="Image 3" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal95" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class=" modal-content">
+            <img src="images/galery 2/Maradana railway outlet/09M.jpg" alt="Image 4" class="popup-image">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="imageModal88" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Relaunch milk/R1.jpg" alt="Image 1" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal89" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Relaunch milk/R2.jpg" alt="Image 2" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal90" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Relaunch milk/R3.jpg" alt="Image 3" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal91" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class=" modal-content">
+            <img src="images/galery 2/Relaunch milk/R11.jpg" alt="Image 4" class="popup-image">
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="modal fade" id="imageModal84" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Training course/n7.jpg" alt="Image 1" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal85" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Training course/n12.jpg" alt="Image 2" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal86" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Training course/n23.jpg" alt="Image 3" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal87" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class=" modal-content">
+            <img src="images/galery 2/Training course/n24.jpg" alt="Image 4" class="popup-image">
+        </div>
+    </div>
+</div>
+
+
+
+<div class="modal fade" id="imageModal60" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/World milk day/wm2.jpg" alt="Image 1" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal61" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/World milk day/wm7.jpg" alt="Image 2" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal62" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/World milk day/wm10.jpg" alt="Image 3" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal63" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class=" modal-content">
+            <img src="images/galery 2/World milk day/wm27.jpg" alt="Image 4" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal75" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the Head Office of the Deputy Minister of Agriculture and Livestock (NLDB)/img06.jpg" alt="Image 5" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal76" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the Head Office of the Deputy Minister of Agriculture and Livestock (NLDB)/img15.jpg" alt="Image 6" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal77" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the Head Office of the Deputy Minister of Agriculture and Livestock (NLDB)/img20.jpg" alt="Image 7" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal78" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the Head Office of the Deputy Minister of Agriculture and Livestock (NLDB)/img23.jpg" alt="Image 8" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal79" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the head office of the Minister/m01.jpg" alt="Image 8" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal80" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the head office of the Minister/m05.jpg" alt="Image 8" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal81" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the head office of the Minister/m11.jpg" alt="Image 8" class="popup-image">
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="imageModal82" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <img src="images/galery 2/Visit to the head office of the Minister/m13.jpg" alt="Image 8" class="popup-image">
+        </div>
+    </div>
+</div>
+<!-- Modals for the images -->
+<div class="modal fade" id="imageModal16" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+   
+     <div id="product-slider" class="carousel slide" data-ride="carousel">
+    <!-- Indicators (optional) -->
+    <ol class="carousel-indicators">
+        <li data-target="#product-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#product-slider" data-slide-to="1"></li>
+        <li data-target="#product-slider" data-slide-to="2"></li>
+        <!-- Add more indicators as needed -->
+    </ol>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="../images/Bataatha/1.jpeg" alt="Product 1">
+            <div class="carousel-caption">
+                
+            </div>
+        </div>
+        <div class="item">
+            <img src="../images/gallery/10.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/111.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/12.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/13.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/14.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/15.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/16.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/17.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/18.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/19.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/20.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/21.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/222.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="../images/gallery/23.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="http://nldb.yourwebhosting.com/public_html/nldbhn/images/gallery/24.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="http://nldb.yourwebhosting.com/public_html/nldbhn/images/gallery/25.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="http://nldb.yourwebhosting.com/public_html/nldbhn/images/gallery/26.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="http://nldb.yourwebhosting.com/public_html/nldbhn/images/gallery/27.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="http://nldb.yourwebhosting.com/public_html/nldbhn/images/Bataatha/2.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+<div class="item">
+            <img src="http://nldb.yourwebhosting.com/public_html/nldbhn/images/Bataatha/1.jpeg" alt="Product 2">
+            <div class="carousel-caption">
+               
+            </div>
+        </div>
+
+
+        <!-- Add more slides as needed -->
+    </div>
+
+    <!-- Controls (optional) -->
+    <a class="left carousel-control" href="#product-slider" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#product-slider" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div>
+
+
+           
+        </div>
+    </div>
+</div>
+
+
+
+
+
+        </div>
+    </div>
+</footer>
+<!--start footer-->
+<!--#include file="footer.inc"-->
+<!--start footer-->
+
+<!--end footer-->
+<!--#include file="copyright.inc"-->
+
+<section class="footer_bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 ">
+                <p class="copyright">&copy; பதிப்புரிமை 2024 NLDB | மூலம் இயக்கப்படுகிறது  <a href="">தேசிய கால்நடை மேம்பாட்டு வாரியம்</a></p>
+            </div>
+            
+            <div class="col-lg-6 ">
+                <div class="footer_social">
+                    <ul class="footbot_social">
+                        <li><a class="fb" href="https://www.facebook.com/nldbs" data-placement="top" data-toggle="tooltip" title="Facbook"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twtr" href="#." data-placement="top" data-toggle="tooltip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+
+                        <li><a class="skype" href="#." data-placement="top" data-toggle="tooltip" title="Skype"><i class="fa fa-skype"></i></a></li>
+                        <li><a class="rss" href="#." data-placement="top" data-toggle="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/retina-1.1.0.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script> <!-- jQuery cookie -->
+<script type="text/javascript" src="js/styleswitch.js"></script> <!-- Style Colors Switcher -->
+<script src="js/jquery.fractionslider.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="js/jquery.smartmenus.min.js"></script>
+<script type="text/javascript" src="js/jquery.smartmenus.bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.js"></script>
+<script type="text/javascript" src="js/jflickrfeed.js"></script>
+<script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+
+
+<script src="js/main.js"></script>
+
+<!-- Start Style Switcher -->
+<!--- <div class="switcher"></div> --->
+<!-- End Style Switcher -->
+<script>
+    $(window).load(function(){
+        $('.slider').fractionSlider({
+            'fullWidth': 			true,
+            'controls': 			true,
+            'responsive': 			true,
+            'dimensions': 			"1920,450",
+            'timeout' :             5000,
+            'increase': 			true,
+            'pauseOnHover': 		true,
+            'slideEndAnimation': 	false,
+            'autoChange':           true
+        });
+    });
+</script>
+<script>
+$(function(){
+  $("button").click(function(){
+    $(".cover").fadeIn("300");
+  })
+  $(".cover,.close").click(function(){
+    $(".cover").fadeOut("300");
+  })
+  $(".contents").click(function(e){
+    e.stopPropagation();
+  })
+})
+</script>
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+ <script>
+        let countDown = new Date("Oct 8, 2023 08:00:00").getTime();
+
+        let counter = setInterval(() => {
+            let dateNow = new Date().getTime();
+            // Date difference
+            let dateDiff = countDown - dateNow;
+
+            // Days
+            let days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+
+            // Hours
+            let hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+            // Minutes
+            let minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
+
+            // Seconds
+            let seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
+
+            // Update the countdown display
+            document.querySelector(".days").innerHTML = days < 10 ? `0${days}` : days;
+            document.querySelector(".hours").innerHTML = hours < 10 ? `0${hours}` : hours;
+            document.querySelector(".minutes").innerHTML = minutes < 10 ? `0${minutes}` : minutes;
+            document.querySelector(".seconds").innerHTML = seconds < 10 ? `0${seconds}` : seconds;
+
+            if (dateDiff <= 1000) {
+                clearInterval(counter);
+            }
+        }, 1000);
+
+        
+function closeForm() {
+  document.getElementById("myADs").style.display = "none";
+}
+
+    </script>
+
+<!---- sponsors slider js ---->
+
+<!--Model Corses 01-->
+<div class="modal fade courselt" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+    <div class="modal-header">
+        <button type="button" class="close model-btn-nldb" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+ <div class="modal-body">
+    <img class ="card-img-nldb" src="images/card/dairy-cattle.jpeg" alt="NLDB">
+<a  href="download/Application-NVQ-4-LT.pdf" target="_blank">விண்ணப்பத்தைப் பதிவிறக்கவும்</a>
+</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

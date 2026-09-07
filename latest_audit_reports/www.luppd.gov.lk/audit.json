@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.2.0",
+  "audit_id": "91f76de8-fd36-443d-94f6-310b495b4539",
+  "url": "http://www.luppd.gov.lk/",
+  "normalized_url": "http://www.luppd.gov.lk/",
+  "started_at": "2026-09-07T09:29:55.014061+05:30",
+  "completed_at": "2026-09-07T09:29:59.672975+05:30",
+  "result": {
+    "status": "fail",
+    "confidence": 1.0,
+    "reasons": [
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)",
+      "tls_not_expired: TLS certificate has expired"
+    ]
+  },
+  "evidence": [
+    {
+      "check": "dns",
+      "status": "pass",
+      "detail": "Public DNS resolved",
+      "observed_at": "2026-09-07T09:29:55.470469+05:30"
+    },
+    {
+      "check": "domain_registration",
+      "status": "error",
+      "detail": "Domain is absent from RDAP",
+      "observed_at": "2026-09-07T09:29:55.470499+05:30"
+    },
+    {
+      "check": "tls_expired",
+      "status": "fail",
+      "detail": "TLS certificate has expired",
+      "observed_at": "2026-09-07T09:29:55.989740+05:30"
+    },
+    {
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)",
+      "source": "https://www.luppd.gov.lk/",
+      "observed_at": "2026-09-07T09:29:59.668980+05:30"
+    },
+    {
+      "check": "http",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 500 at http://www.luppd.gov.lk/",
+      "source": "http://www.luppd.gov.lk/",
+      "observed_at": "2026-09-07T09:29:59.669015+05:30"
+    },
+    {
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)",
+      "source": "https://www.luppd.gov.lk/",
+      "observed_at": "2026-09-07T09:29:59.669026+05:30"
+    },
+    {
+      "check": "http",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 500 at http://www.luppd.gov.lk/",
+      "source": "http://www.luppd.gov.lk/",
+      "observed_at": "2026-09-07T09:29:59.669033+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 190 visible characters across 2 pages; below substance threshold 200",
+      "source": "http://www.luppd.gov.lk/"
+    }
+  ],
+  "observations": [
+    {
+      "host": "www.luppd.gov.lk",
+      "addresses": [
+        "192.185.12.87",
+        "222.165.190.184"
+      ],
+      "status": "resolved",
+      "detail": "Public DNS resolved"
+    },
+    {
+      "domain": "luppd.gov.lk",
+      "status": "unknown",
+      "expires_at": null,
+      "detail": "Domain is absent from RDAP"
+    },
+    {
+      "host": "www.luppd.gov.lk",
+      "status": "expired",
+      "expires_at": "2026-04-25T05:14:06+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate has expired"
+    },
+    {
+      "url": "https://www.luppd.gov.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)"
+    },
+    {
+      "url": "http://www.luppd.gov.lk/",
+      "status_code": 500,
+      "final_url": "http://www.luppd.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 557,
+      "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "https://www.luppd.gov.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)"
+    },
+    {
+      "url": "http://www.luppd.gov.lk/",
+      "status_code": 500,
+      "final_url": "http://www.luppd.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 655,
+      "content_type": "text/html",
+      "error": null
+    }
+  ],
+  "snapshots": [
+    {
+      "url": "http://www.luppd.gov.lk/",
+      "path": "audit.output/www.luppd.gov.lk/20260907.0929/snapshots/page-01-a8a284f377cb.html",
+      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
+      "bytes": 7309
+    },
+    {
+      "url": "http://www.luppd.gov.lk/",
+      "path": "audit.output/www.luppd.gov.lk/20260907.0929/snapshots/page-02-a8a284f377cb.html",
+      "sha256": "a8a284f377cb9f21c53e5553234ecb693dc4c2c38f3306b6cde4aead5e05e913",
+      "bytes": 7309
+    }
+  ],
+  "reviewer_decisions": [],
+  "levels": [
+    {
+      "level": 0,
+      "description": "A site is classified as `Level 0` when it is unavailable or unusable, or when there is not enough evidence to establish that it meets `Level 1`.",
+      "status": "pass",
+      "reason": "Baseline website grade",
+      "executed": true,
+      "checks": []
+    },
+    {
+      "level": 1,
+      "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032); TLS certificate has expired",
+      "executed": true,
+      "checks": [
+        {
+          "name": "dns_resolves",
+          "level": 1,
+          "status": "pass",
+          "reason": "Public DNS resolved"
+        },
+        {
+          "name": "domain_not_parked",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+        },
+        {
+          "name": "site_not_defaced",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+        },
+        {
+          "name": "content_relevant",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+        },
+        {
+          "name": "hosting_configured",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200"
+        },
+        {
+          "name": "http_available",
+          "level": 1,
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
+        },
+        {
+          "name": "redirect_related",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
+        },
+        {
+          "name": "tls_browser_trusted",
+          "level": 1,
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1032)"
+        },
+        {
+          "name": "tls_not_expired",
+          "level": 1,
+          "status": "fail",
+          "reason": "TLS certificate has expired"
+        },
+        {
+          "name": "tls_hostname_matches",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "TLS hostname check did not run"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
+    },
+    {
+      "level": 3,
+      "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
+    },
+    {
+      "level": 4,
+      "description": "To pass `Level 4`, citizens must be able to complete, pay for, track, and receive the outcome of a service online.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 3 did not pass",
+      "executed": false,
+      "checks": []
+    },
+    {
+      "level": 5,
+      "description": "To pass `Level 5`, services must be connected across agencies, proactive for eligible citizens, explainable, and accountable.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 4 did not pass",
+      "executed": false,
+      "checks": []
+    }
+  ]
+}

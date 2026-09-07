@@ -32,12 +32,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma; Phone: +94 112 034 343 (14 phone numbers found); Email: jklindara@gmail.com (10 email addresses found); Published named responsibility: department
+Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma; Phone: +94 714 484 490 (14 phone numbers found); Email: info.cinnamontraining@gmail.com (10 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma |
-| reachable_contacts | ✅ | Phone: +94 112 034 343 (14 phone numbers found); Email: jklindara@gmail.com (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 714 484 490 (14 phone numbers found); Email: info.cinnamontraining@gmail.com (10 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❌
