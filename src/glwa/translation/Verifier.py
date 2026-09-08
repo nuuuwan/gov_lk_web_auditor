@@ -107,10 +107,18 @@ class TranslationVerifier:
                         "OpenAI flow selectors did not match the live page",
                     )
                 flow = {**flow, "pages": [url, *flow["pages"]]}
-                flow = await self._record_actions(page, flow)
+            try:
+                if not cached:
+                    flow = await self._record_actions(page, flow)
+                pages = list(dict.fromkeys(flow["pages"]))[:5]
+                results = [await self._page(page, flow, page_url) for page_url in pages]
+            except Exception as error:
+                return await self._save_discovery_status(
+                    context, browser, store, fingerprint, url, page.url,
+                    "discovery_error", str(error),
+                )
+            if not cached:
                 store.save(fingerprint, flow, url, page.url)
-            pages = list(dict.fromkeys(flow["pages"]))[:5]
-            results = [await self._page(page, flow, page_url) for page_url in pages]
             await context.close()
             await browser.close()
             return {
