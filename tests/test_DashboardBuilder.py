@@ -201,6 +201,7 @@ class TestDashboardBuilder(unittest.TestCase):
             detail = (output / "sites" / "a.gov.lk" / "index.html").read_text()
 
             self.assertIn("Translation verification", detail)
+            self.assertIn("LLM-assisted mappings", detail)
             self.assertIn("English", detail)
             self.assertIn("Sinhala", detail)
             self.assertIn("Tamil", detail)

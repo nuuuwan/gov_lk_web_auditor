@@ -598,13 +598,18 @@ class DashboardBuilder:
 
     def _translation_section(self, translation: dict) -> str:
         status = translation["status"]
+        note = (
+            "<p>Translation checks use LLM-assisted mappings and browser validation; "
+            "they may be inaccurate when a website changes or behaves differently.</p>"
+        )
         if status == "not_run":
-            return "<h2>Translation verification</h2><p>Not yet run.</p>"
+            return f"<h2>Translation verification</h2><p>Not yet run.</p>{note}"
         if status not in {"pass", "fail"}:
             reason = html.escape(translation.get("reason", ""))
             return (
                 "<h2>Translation verification</h2>"
                 f"<p>{html.escape(status.replace('_', ' ').capitalize())}: {reason}</p>"
+                f"{note}"
             )
         rows = "\n".join(
             self._translation_row(language, coverage)
@@ -613,6 +618,7 @@ class DashboardBuilder:
         return f"""\
 <h2>Translation verification</h2>
 <p>{self._translation_badge(translation)}</p>
+{note}
 <div class="table-wrap" role="region" aria-label="Translation coverage" tabindex="0">
 <table><thead><tr><th>Language</th><th>Coverage</th><th>Result</th></tr></thead>
 <tbody>{rows}</tbody></table>
