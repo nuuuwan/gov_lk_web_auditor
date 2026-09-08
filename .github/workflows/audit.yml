@@ -1,6 +1,8 @@
 name: Run Sri Lankan network audit
 
 on:
+  schedule:
+    - cron: "0 0 * * *"
   workflow_dispatch:
     inputs:
       max_urls:
@@ -78,10 +80,10 @@ jobs:
             README.md
 
       - name: Open report pull request
-        if: ${{ success() && inputs.create_pr }}
+        if: ${{ success() && (github.event_name == 'schedule' || inputs.create_pr) }}
         uses: peter-evans/create-pull-request@v7
         with:
-          branch: automation/audit-${{ github.run_id }}
+          branch: automation/audit-reports
           delete-branch: true
           add-paths: |
             README.md

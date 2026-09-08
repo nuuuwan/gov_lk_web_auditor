@@ -25,6 +25,7 @@ class FlowStore:
         self.path.parent.mkdir(parents=True, exist_ok=True)
         mapping = {
             "schema_version": "translation-flow-1",
+            "status": "mapped",
             "source_url": source_url,
             "final_url": final_url,
             "fingerprint": fingerprint,
@@ -43,6 +44,30 @@ class FlowStore:
         }
         self.path.write_text(
             json.dumps(mapping, indent=2),
+            encoding="utf-8",
+        )
+
+    def save_status(
+        self,
+        fingerprint: str,
+        status: str,
+        reason: str,
+        source_url: str,
+        final_url: str,
+    ) -> None:
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        self.path.write_text(
+            json.dumps(
+                {
+                    "schema_version": "translation-flow-1",
+                    "status": status,
+                    "source_url": source_url,
+                    "final_url": final_url,
+                    "fingerprint": fingerprint,
+                    "reason": reason,
+                },
+                indent=2,
+            ),
             encoding="utf-8",
         )
 
