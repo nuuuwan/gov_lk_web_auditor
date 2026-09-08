@@ -1,6 +1,6 @@
 # Website Audit: https://landcom.gov.lk/
 
-- Completed: 2026-09-08 23:16
+- Completed: 2026-09-07 09:27
 - Overall result: 🔴 Level 1
 
 ## ⚫ Level 0: ✅
@@ -37,7 +37,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0112864051 (4 phone numbers found); Email: lcglandcom@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112797400 (4 phone numbers found); Email: lcglandcom@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

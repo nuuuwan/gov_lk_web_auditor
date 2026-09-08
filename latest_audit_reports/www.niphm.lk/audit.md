@@ -1,6 +1,6 @@
 # Website Audit: https://www.niphm.lk/
 
-- Completed: 2026-09-08 23:23
+- Completed: 2026-09-07 09:33
 - Overall result: 🟠 Level 2
 
 ## ⚫ Level 0: ✅
@@ -32,12 +32,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Current Issues Related to Postharvest Sector. Two of the Main Projects Under Taken by this Division Most Recently Were, ; Phone: 025 3230000; Email: info@niphm.lk (27 email addresses found); Published named responsibility: director
+Published postal address: Current Issues Related to Postharvest Sector. Two of the Main Projects Under Taken by this Division Most Recently Were, ; Phone: 025 3230000; Email: info@niphm.lk (26 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Current Issues Related to Postharvest Sector. Two of the Main Projects Under Taken by this Division Most Recently Were,  |
-| reachable_contacts | ✅ | Phone: 025 3230000; Email: info@niphm.lk (27 email addresses found) |
+| reachable_contacts | ✅ | Phone: 025 3230000; Email: info@niphm.lk (26 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
