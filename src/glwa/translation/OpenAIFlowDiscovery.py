@@ -22,11 +22,9 @@ class OpenAIFlowDiscovery:
                         {
                             "type": "input_text",
                         "text": (
-                            "Return JSON only. Return status=mapped only when you identify robust "
-                            "Playwright locator strings for en, si, and ta controls and up to five "
-                            "same-origin content pages. Otherwise return status=not_found with a concise "
-                            "reason. CSS, text=, and role= locators are valid; do not return prose or XPath. "
-                            "Never invent a selector."
+                            "Return JSON only. Identify robust Playwright locator strings for language controls "
+                            "and up to five same-origin content pages. CSS, text=, and role= locators are valid; "
+                            "do not return prose or XPath. Languages are en, si, and ta. Never invent a selector."
                         ),
                         },
                     ],
@@ -49,11 +47,6 @@ class OpenAIFlowDiscovery:
                     "schema": {
                         "type": "object",
                         "properties": {
-                            "status": {
-                                "type": "string",
-                                "enum": ["mapped", "not_found"],
-                            },
-                            "reason": {"type": "string"},
                             "languages": {
                                 "type": "object",
                                 "properties": {
@@ -69,7 +62,7 @@ class OpenAIFlowDiscovery:
                                 "items": {"type": "string"},
                             },
                         },
-                        "required": ["status", "reason", "languages", "pages"],
+                        "required": ["languages", "pages"],
                         "additionalProperties": False,
                     },
                 }
@@ -81,14 +74,8 @@ class OpenAIFlowDiscovery:
     def _validate(self, value: dict, source: str) -> dict:
         languages = value.get("languages")
         pages = value.get("pages")
-        status = value.get("status")
-        reason = value.get("reason")
-        if status not in {"mapped", "not_found"} or not isinstance(reason, str):
-            raise ValueError("OpenAI flow response must contain a valid status and reason")
         if not isinstance(languages, dict) or not isinstance(pages, list):
             raise ValueError("OpenAI flow response must contain languages and pages")
-        if status == "not_found":
-            return {"status": status, "reason": reason}
         clean_languages = {
             language: selector
             for language, selector in languages.items()
@@ -104,9 +91,4 @@ class OpenAIFlowDiscovery:
                 clean_pages.append(absolute)
         if set(clean_languages) != {"en", "si", "ta"}:
             raise ValueError("OpenAI flow response did not provide all language selectors")
-        return {
-            "status": status,
-            "reason": reason,
-            "languages": clean_languages,
-            "pages": list(dict.fromkeys(clean_pages))[:5],
-        }
+        return {"languages": clean_languages, "pages": list(dict.fromkeys(clean_pages))[:5]}

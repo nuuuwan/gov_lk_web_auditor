@@ -143,8 +143,6 @@ class TestTranslation(unittest.TestCase):
     def test_flow_validation_rejects_cross_origin_pages(self):
         result = OpenAIFlowDiscovery()._validate(
             {
-                "status": "mapped",
-                "reason": "controls found",
                 "languages": {
                     "en": ".english",
                     "si": ".sinhala",
@@ -156,19 +154,6 @@ class TestTranslation(unittest.TestCase):
         )
 
         self.assertEqual(["https://example.gov.lk/about"], result["pages"])
-
-    def test_flow_discovery_keeps_a_negative_result(self):
-        result = OpenAIFlowDiscovery()._validate(
-            {
-                "status": "not_found",
-                "reason": "no language controls are present",
-                "languages": {},
-                "pages": [],
-            },
-            "https://example.gov.lk/",
-        )
-
-        self.assertEqual("not_found", result["status"])
 
     def test_result_store_overwrites_result_json(self):
         with tempfile.TemporaryDirectory() as directory:
