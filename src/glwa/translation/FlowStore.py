@@ -56,6 +56,14 @@ class FlowStore:
         final_url: str,
     ) -> None:
         self.path.parent.mkdir(parents=True, exist_ok=True)
+        existing = self.load()
+        if existing and existing.get("status", "mapped") == "mapped":
+            existing["last_discovery"] = {"status": status, "reason": reason}
+            self.path.write_text(
+                json.dumps(existing, indent=2),
+                encoding="utf-8",
+            )
+            return
         self.path.write_text(
             json.dumps(
                 {

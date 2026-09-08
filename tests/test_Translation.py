@@ -113,6 +113,33 @@ class TestTranslation(unittest.TestCase):
         self.assertEqual(["https://example.gov.lk/about"], flow["pages"])
         self.assertEqual({"en": ".english"}, flow["languages"])
 
+    def test_failed_discovery_preserves_a_valid_mapping(self):
+        with tempfile.TemporaryDirectory() as directory:
+            store = FlowStore(Path(directory) / "flow.json")
+            store.save(
+                "fingerprint",
+                {
+                    "languages": {"en": ".english"},
+                    "pages": ["https://example.gov.lk/"],
+                },
+                "https://example.gov.lk/",
+                "https://example.gov.lk/",
+            )
+            store.save_status(
+                "new-fingerprint",
+                "discovery_error",
+                "candidate selectors did not validate",
+                "https://example.gov.lk/",
+                "https://example.gov.lk/",
+            )
+
+            mapping = store.load()
+
+        self.assertEqual("mapped", mapping["status"])
+        self.assertEqual(
+            "discovery_error", mapping["last_discovery"]["status"]
+        )
+
     def test_flow_validation_rejects_cross_origin_pages(self):
         result = OpenAIFlowDiscovery()._validate(
             {
