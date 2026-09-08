@@ -1,5 +1,7 @@
 import argparse
+import asyncio
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from src.glwa import AuditRunner
 from src.glwa.audit.AuditHistory import AuditHistory
@@ -17,8 +19,9 @@ class Pipeline:
     PATH_REPORTS = Path("latest_audit_reports")
     URLS = Path("static_data") / "websites.json"
 
-    def __init__(self, max_urls=None):
+    def __init__(self, max_urls=None, concurrency=8):
         self.max_urls = max_urls
+        self.concurrency = concurrency
 
     def _level(self, audit):
         passed = [
@@ -42,38 +45,56 @@ class Pipeline:
         return Directory(self.URLS).urls()
 
     def run(self):
+        urls = self._limit(self._urls())
+        asyncio.run(self._run_all(urls))
+        ReadMe().update(self.PATH_REPORTS)
+
+    async def _run_all(self, urls: list[str]) -> None:
+        semaphore = asyncio.Semaphore(self.concurrency)
+        locks: dict[str, asyncio.Lock] = {}
+
+        async def audit(index: int, url: str) -> None:
+            host = urlsplit(url).hostname or url
+            lock = locks.setdefault(host, asyncio.Lock())
+            async with semaphore, lock:
+                await asyncio.to_thread(self._audit, index, len(urls), url)
+
+        await asyncio.gather(
+            *(audit(index, url) for index, url in enumerate(urls, start=1))
+        )
+
+    def _audit(self, index: int, total: int, url: str) -> None:
         runner = AuditRunner()
         writer = ReportWriter()
         translations = TranslationBatchVerifier(self.PATH_REPORTS)
         history = AuditHistory(self.PATH_HISTORY)
         rechecker = SnapshotRechecker()
-        urls = self._limit(self._urls())
-        n_urls = len(urls)
-        for index, url in enumerate(urls, start=1):
-            if history.fresh(url):
-                audit = rechecker.run(history.latest(url))
-                writer.write(audit, self.PATH_REPORTS / history.host(url))
-                translation = translations.run(url)
-                print(
-                    f"{index}/{n_urls}). {url}: "
-                    f"{self._summary(audit)} (cached), "
-                    f"translation {translation.get('status', 'checked')}"
-                )
-                continue
-            output = history.folder(url)
-            audit = runner.run(url, output)
-            history.write(audit, output)
+        if history.fresh(url):
+            audit = rechecker.run(history.latest(url))
             writer.write(audit, self.PATH_REPORTS / history.host(url))
             translation = translations.run(url)
             print(
-                f"{index}/{n_urls}). {url}: {self._summary(audit)}, "
+                f"{index}/{total}). {url}: "
+                f"{self._summary(audit)} (cached), "
                 f"translation {translation.get('status', 'checked')}"
             )
-        ReadMe().update(self.PATH_REPORTS)
+            return
+        output = history.folder(url)
+        audit = runner.run(url, output)
+        history.write(audit, output)
+        writer.write(audit, self.PATH_REPORTS / history.host(url))
+        translation = translations.run(url)
+        print(
+            f"{index}/{total}). {url}: {self._summary(audit)}, "
+            f"translation {translation.get('status', 'checked')}"
+        )
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-urls", type=int)
+    parser.add_argument("--concurrency", type=int, default=8)
     args = parser.parse_args()
-    Pipeline(max_urls=args.max_urls).run()
+    if args.concurrency < 1:
+        parser.error("concurrency must be positive")
+    Pipeline(max_urls=args.max_urls, concurrency=args.concurrency).run()
