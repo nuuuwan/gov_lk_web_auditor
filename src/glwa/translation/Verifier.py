@@ -206,4 +206,4 @@ class TranslationVerifier:
             select = control.locator("..")
             await select.select_option(value=await control.get_attribute("value"))
             return
-        await control.click(timeout=5000)
+        await control.click(timeout=5000, no_wait_after=True)
