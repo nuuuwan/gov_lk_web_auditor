@@ -8,6 +8,59 @@ from urllib.parse import urljoin, urlsplit
 class OpenAIFlowDiscovery:
     def __init__(self, model: str | None = None):
         self.model = model or os.getenv("OPENAI_MODEL", "gpt-5.4-nano")
+        self.classifier_model = os.getenv("OPENAI_CLASSIFIER_MODEL", "gpt-5-nano")
+
+    def availability(self, url: str, structure: str) -> dict:
+        from openai import OpenAI
+
+        response = OpenAI().responses.create(
+            model=self.classifier_model,
+            input=[
+                {
+                    "role": "system",
+                    "content": [
+                        {
+                            "type": "input_text",
+                            "text": (
+                                "Return JSON only. Determine whether the page structure includes user-facing "
+                                "controls that can switch the page among English, Sinhala, and Tamil. "
+                                "Return available only with evidence of such controls, unavailable when they "
+                                "are absent, or uncertain when the structure is insufficient."
+                            ),
+                        }
+                    ],
+                },
+                {
+                    "role": "user",
+                    "content": [
+                        {
+                            "type": "input_text",
+                            "text": json.dumps({"url": url, "page_structure": structure}),
+                        }
+                    ],
+                },
+            ],
+            text={
+                "format": {
+                    "type": "json_schema",
+                    "name": "translation_availability",
+                    "strict": True,
+                    "schema": {
+                        "type": "object",
+                        "properties": {
+                            "status": {
+                                "type": "string",
+                                "enum": ["available", "unavailable", "uncertain"],
+                            },
+                            "reason": {"type": "string"},
+                        },
+                        "required": ["status", "reason"],
+                        "additionalProperties": False,
+                    },
+                }
+            },
+        )
+        return self._validate_availability(json.loads(response.output_text or "{}"))
 
     def discover(self, url: str, structure: str) -> dict:
         from openai import OpenAI
@@ -92,3 +145,12 @@ class OpenAIFlowDiscovery:
         if set(clean_languages) != {"en", "si", "ta"}:
             raise ValueError("OpenAI flow response did not provide all language selectors")
         return {"languages": clean_languages, "pages": list(dict.fromkeys(clean_pages))[:5]}
+
+    def _validate_availability(self, value: dict) -> dict:
+        status = value.get("status")
+        reason = value.get("reason")
+        if status not in {"available", "unavailable", "uncertain"}:
+            raise ValueError("OpenAI availability response has an invalid status")
+        if not isinstance(reason, str) or not reason:
+            raise ValueError("OpenAI availability response has no reason")
+        return {"status": status, "reason": reason}

@@ -155,6 +155,19 @@ class TestTranslation(unittest.TestCase):
 
         self.assertEqual(["https://example.gov.lk/about"], result["pages"])
 
+    def test_availability_validation_accepts_unavailable(self):
+        result = OpenAIFlowDiscovery()._validate_availability(
+            {"status": "unavailable", "reason": "no language controls"}
+        )
+
+        self.assertEqual("unavailable", result["status"])
+
+    def test_availability_validation_rejects_unknown_status(self):
+        with self.assertRaises(ValueError):
+            OpenAIFlowDiscovery()._validate_availability(
+                {"status": "missing", "reason": "no language controls"}
+            )
+
     def test_result_store_overwrites_result_json(self):
         with tempfile.TemporaryDirectory() as directory:
             store = ResultStore(Path(directory) / "result.json")

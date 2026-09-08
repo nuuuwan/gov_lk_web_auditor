@@ -88,6 +88,12 @@ class TranslationVerifier:
                 if replay:
                     raise ValueError("translation mapping selectors do not match the live page")
                 try:
+                    availability = self.discovery.availability(url, structure)
+                    if availability["status"] == "unavailable":
+                        return await self._save_discovery_status(
+                            context, browser, store, fingerprint, url, page.url,
+                            "not_found", availability["reason"],
+                        )
                     flow = self.discovery.discover(url, structure)
                 except Exception as error:
                     return await self._save_discovery_status(
