@@ -40,6 +40,10 @@ jobs:
           MAX_URLS: ${{ inputs.max_urls }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         run: |
+          if [[ -z "$OPENAI_API_KEY" ]]; then
+            echo "OPENAI_API_KEY repository secret is required" >&2
+            exit 1
+          fi
           args=(--rediscover)
           if [[ -n "$MAX_URLS" ]]; then
             args+=(--max-urls "$MAX_URLS")
