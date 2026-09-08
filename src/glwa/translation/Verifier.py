@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -88,13 +89,15 @@ class TranslationVerifier:
                 if replay:
                     raise ValueError("translation mapping selectors do not match the live page")
                 try:
-                    availability = self.discovery.availability(url, structure)
+                    availability = await asyncio.to_thread(
+                        self.discovery.availability, url, structure
+                    )
                     if availability["status"] == "unavailable":
                         return await self._save_discovery_status(
                             context, browser, store, fingerprint, url, page.url,
                             "not_found", availability["reason"],
                         )
-                    flow = self.discovery.discover(url, structure)
+                    flow = await asyncio.to_thread(self.discovery.discover, url, structure)
                 except Exception as error:
                     return await self._save_discovery_status(
                         context, browser, store, fingerprint, url, page.url,
