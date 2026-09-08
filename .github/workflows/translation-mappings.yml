@@ -39,7 +39,8 @@ jobs:
         env:
           MAX_URLS: ${{ inputs.max_urls }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          OPENAI_CLASSIFIER_MODEL: gpt-5-nano
+          OPENAI_CLASSIFIER_MODEL: gpt-5.4-nano
+          OPENAI_MODEL: gpt-5.4-mini
         run: |
           if [[ -z "$OPENAI_API_KEY" ]]; then
             echo "OPENAI_API_KEY repository secret is required" >&2
