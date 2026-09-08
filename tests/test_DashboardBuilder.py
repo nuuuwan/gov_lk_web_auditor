@@ -176,6 +176,35 @@ class TestDashboardBuilder(unittest.TestCase):
             self.assertIn('aria-expanded="false"', detail)
             self.assertIn('collapsible-content', detail)
 
+    def test_detail_displays_translation_coverage(self):
+        with tempfile.TemporaryDirectory() as folder:
+            reports = self._reports(Path(folder) / "reports")
+            (reports / "a.gov.lk" / "translation.json").write_text(
+                json.dumps(
+                    {
+                        "pages": [
+                            {
+                                "languages": {
+                                    language: {
+                                        "coverage": {"percentage": 90, "translated": True}
+                                    }
+                                    for language in ("en", "si", "ta")
+                                }
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            output = Path(folder) / "site"
+            DashboardBuilder().build(reports, output, None)
+            detail = (output / "sites" / "a.gov.lk" / "index.html").read_text()
+
+            self.assertIn("Translation verification", detail)
+            self.assertIn("English", detail)
+            self.assertIn("Sinhala", detail)
+            self.assertIn("Tamil", detail)
+
     def test_print_styles_present(self):
         with tempfile.TemporaryDirectory() as folder:
             reports = self._reports(Path(folder) / "reports")

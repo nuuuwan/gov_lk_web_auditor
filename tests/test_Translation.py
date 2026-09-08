@@ -9,6 +9,7 @@ from glwa.translation.Provenance import classify
 from glwa.translation.OpenAIFlowDiscovery import OpenAIFlowDiscovery
 from glwa.translation.Availability import check
 from glwa.translation.ResultStore import ResultStore
+from glwa.translation.BatchVerifier import TranslationBatchVerifier
 
 
 class TestTranslation(unittest.TestCase):
@@ -131,6 +132,20 @@ class TestTranslation(unittest.TestCase):
                 {"status": "ok", "pages": []},
                 json.loads(store.path.read_text("utf-8")),
             )
+
+    def test_batch_verifier_records_outdated_mapping_and_continues(self):
+        class StaleVerifier:
+            async def run(self, url, replay, rediscover):
+                raise ValueError("translation mapping is stale for the live page")
+
+        with tempfile.TemporaryDirectory() as directory:
+            result = TranslationBatchVerifier(
+                Path(directory), StaleVerifier()
+            ).run("https://example.gov.lk/")
+
+            self.assertEqual("mapping_outdated", result["status"])
+            stored = Path(directory) / "example.gov.lk" / "translation.json"
+            self.assertEqual(result, json.loads(stored.read_text(encoding="utf-8")))
 
 
 if __name__ == "__main__":

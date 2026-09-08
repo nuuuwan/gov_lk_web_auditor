@@ -9,6 +9,7 @@ from src.glwa.directory.Directory import Directory
 from src.glwa.reporting.ReadMe import ReadMe
 from src.glwa.reporting.ReportWriter import ReportWriter
 from src.glwa.reporting.WebsiteScore import WebsiteScore
+from src.glwa.translation import TranslationBatchVerifier
 
 
 class Pipeline:
@@ -43,6 +44,7 @@ class Pipeline:
     def run(self):
         runner = AuditRunner()
         writer = ReportWriter()
+        translations = TranslationBatchVerifier(self.PATH_REPORTS)
         history = AuditHistory(self.PATH_HISTORY)
         rechecker = SnapshotRechecker()
         urls = self._limit(self._urls())
@@ -51,16 +53,22 @@ class Pipeline:
             if history.fresh(url):
                 audit = rechecker.run(history.latest(url))
                 writer.write(audit, self.PATH_REPORTS / history.host(url))
+                translation = translations.run(url)
                 print(
                     f"{index}/{n_urls}). {url}: "
-                    f"{self._summary(audit)} (cached)"
+                    f"{self._summary(audit)} (cached), "
+                    f"translation {translation.get('status', 'checked')}"
                 )
                 continue
             output = history.folder(url)
             audit = runner.run(url, output)
             history.write(audit, output)
             writer.write(audit, self.PATH_REPORTS / history.host(url))
-            print(f"{index}/{n_urls}). {url}: {self._summary(audit)}")
+            translation = translations.run(url)
+            print(
+                f"{index}/{n_urls}). {url}: {self._summary(audit)}, "
+                f"translation {translation.get('status', 'checked')}"
+            )
         ReadMe().update(self.PATH_REPORTS)
 
 

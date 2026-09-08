@@ -171,6 +171,31 @@ class TestDashboardLoader(unittest.TestCase):
             self.assertEqual("Min A", sites[0]["ministry"])
             self.assertEqual("Min Z", sites[1]["ministry"])
 
+    def test_loads_translation_coverage(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = self._reports(folder, {"a.gov.lk": _audit([_level(0, "pass")])})
+            (root / "a.gov.lk" / "translation.json").write_text(
+                json.dumps(
+                    {
+                        "pages": [
+                            {
+                                "languages": {
+                                    language: {
+                                        "coverage": {"percentage": 80, "translated": True}
+                                    }
+                                    for language in ("en", "si", "ta")
+                                }
+                            }
+                        ]
+                    }
+                ),
+                encoding="utf-8",
+            )
+            sites, _ = DashboardLoader().load(root)
+
+            self.assertEqual("pass", sites[0]["translation"]["status"])
+            self.assertEqual(80, sites[0]["translation"]["coverage"]["si"][0]["percentage"])
+
 
 if __name__ == "__main__":
     unittest.main()
