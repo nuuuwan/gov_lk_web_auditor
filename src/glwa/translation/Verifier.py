@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 from pathlib import Path
 from urllib.parse import urlsplit
 
@@ -68,6 +69,17 @@ class TranslationVerifier:
             fingerprint = store.fingerprint(structure)
             if rediscover and not replay:
                 cached = None
+            if cached and cached.get("status") == "discovery_error":
+                if replay:
+                    await context.close()
+                    await browser.close()
+                    return {
+                        "url": url,
+                        "status": cached["status"],
+                        "reason": cached.get("reason", ""),
+                        "pages": [],
+                    }
+                cached = None
             if cached and cached["fingerprint"] != fingerprint:
                 if replay:
                     raise ValueError("translation mapping is stale for the live page")
@@ -76,14 +88,40 @@ class TranslationVerifier:
             if flow is None or not await self._valid_flow(page, flow):
                 if replay:
                     raise ValueError("translation mapping selectors do not match the live page")
-                flow = self.discovery.discover(url, structure)
+                try:
+                    availability = await asyncio.to_thread(
+                        self.discovery.availability, url, structure
+                    )
+                    if availability["status"] == "unavailable":
+                        return await self._save_discovery_status(
+                            context, browser, store, fingerprint, url, page.url,
+                            "not_found", availability["reason"],
+                        )
+                    flow = await asyncio.to_thread(self.discovery.discover, url, structure)
+                except Exception as error:
+                    return await self._save_discovery_status(
+                        context, browser, store, fingerprint, url, page.url,
+                        "discovery_error", str(error),
+                    )
                 if not await self._valid_flow(page, flow):
-                    raise ValueError("OpenAI flow selectors did not match the live page")
+                    return await self._save_discovery_status(
+                        context, browser, store, fingerprint, url, page.url,
+                        "discovery_error",
+                        "OpenAI flow selectors did not match the live page",
+                    )
                 flow = {**flow, "pages": [url, *flow["pages"]]}
-                flow = await self._record_actions(page, flow)
+            try:
+                if not cached:
+                    flow = await self._record_actions(page, flow)
+                pages = list(dict.fromkeys(flow["pages"]))[:5]
+                results = [await self._page(page, flow, page_url) for page_url in pages]
+            except Exception as error:
+                return await self._save_discovery_status(
+                    context, browser, store, fingerprint, url, page.url,
+                    "discovery_error", str(error),
+                )
+            if not cached:
                 store.save(fingerprint, flow, url, page.url)
-            pages = list(dict.fromkeys(flow["pages"]))[:5]
-            results = [await self._page(page, flow, page_url) for page_url in pages]
             await context.close()
             await browser.close()
             return {
@@ -92,6 +130,14 @@ class TranslationVerifier:
                 "flow_fingerprint": fingerprint,
                 "redirect_chain": self._redirect_chain(response),
             }
+
+    async def _save_discovery_status(
+        self, context, browser, store, fingerprint, url, final_url, status, reason
+    ) -> dict:
+        store.save_status(fingerprint, status, reason, url, final_url)
+        await context.close()
+        await browser.close()
+        return {"url": url, "status": status, "reason": reason, "pages": []}
 
     def _flow(self, mapping: dict | None) -> dict | None:
         if not mapping:
@@ -171,4 +217,4 @@ class TranslationVerifier:
             select = control.locator("..")
             await select.select_option(value=await control.get_attribute("value"))
             return
-        await control.click(timeout=5000)
+        await control.click(timeout=5000, no_wait_after=True)

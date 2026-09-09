@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.2.0",
+  "audit_id": "b2f3796c-0036-4250-b42c-7f7c1ab525ae",
+  "url": "http://www.cmb.ac.lk/",
+  "normalized_url": "http://www.cmb.ac.lk/",
+  "started_at": "2026-09-08T23:28:11.316946+05:30",
+  "completed_at": "2026-09-08T23:28:16.675702+05:30",
+  "result": {
+    "status": "fail",
+    "confidence": 1.0,
+    "reasons": [
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)",
+      "tls_hostname_matches: TLS certificate does not match the hostname"
+    ]
+  },
+  "evidence": [
+    {
+      "check": "dns",
+      "status": "pass",
+      "detail": "Public DNS resolved",
+      "observed_at": "2026-09-08T23:28:11.479580+05:30"
+    },
+    {
+      "check": "domain_registration",
+      "status": "error",
+      "detail": "Domain is absent from RDAP",
+      "observed_at": "2026-09-08T23:28:11.479598+05:30"
+    },
+    {
+      "check": "tls_hostname",
+      "status": "fail",
+      "detail": "TLS certificate does not match the hostname",
+      "observed_at": "2026-09-08T23:28:11.516439+05:30"
+    },
+    {
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)",
+      "source": "https://www.cmb.ac.lk/",
+      "observed_at": "2026-09-08T23:28:16.675557+05:30"
+    },
+    {
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)",
+      "source": "http://www.cmb.ac.lk/",
+      "observed_at": "2026-09-08T23:28:16.675577+05:30"
+    },
+    {
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)",
+      "source": "https://www.cmb.ac.lk/",
+      "observed_at": "2026-09-08T23:28:16.675581+05:30"
+    },
+    {
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)",
+      "source": "http://www.cmb.ac.lk/",
+      "observed_at": "2026-09-08T23:28:16.675584+05:30"
+    }
+  ],
+  "observations": [
+    {
+      "host": "www.cmb.ac.lk",
+      "addresses": [
+        "192.248.16.88"
+      ],
+      "status": "resolved",
+      "detail": "Public DNS resolved"
+    },
+    {
+      "domain": "ac.lk",
+      "status": "unknown",
+      "expires_at": null,
+      "detail": "Domain is absent from RDAP"
+    },
+    {
+      "host": "www.cmb.ac.lk",
+      "status": "hostname_error",
+      "expires_at": "2026-11-23T07:22:32+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate does not match the hostname"
+    },
+    {
+      "url": "https://www.cmb.ac.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)"
+    },
+    {
+      "url": "http://www.cmb.ac.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)"
+    },
+    {
+      "url": "https://www.cmb.ac.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)"
+    },
+    {
+      "url": "http://www.cmb.ac.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)"
+    }
+  ],
+  "snapshots": [],
+  "reviewer_decisions": [],
+  "levels": [
+    {
+      "level": 0,
+      "description": "A site is classified as `Level 0` when it is unavailable or unusable, or when there is not enough evidence to establish that it meets `Level 1`.",
+      "status": "pass",
+      "reason": "Baseline website grade",
+      "executed": true,
+      "checks": []
+    },
+    {
+      "level": 1,
+      "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032); TLS certificate does not match the hostname",
+      "executed": true,
+      "checks": [
+        {
+          "name": "dns_resolves",
+          "level": 1,
+          "status": "pass",
+          "reason": "Public DNS resolved"
+        },
+        {
+          "name": "domain_not_parked",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
+        },
+        {
+          "name": "site_not_defaced",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
+        },
+        {
+          "name": "content_relevant",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
+        },
+        {
+          "name": "hosting_configured",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
+        },
+        {
+          "name": "http_available",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "HTTP checks did not run"
+        },
+        {
+          "name": "redirect_related",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
+        },
+        {
+          "name": "tls_browser_trusted",
+          "level": 1,
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.cmb.ac.lk'. (_ssl.c:1032)"
+        },
+        {
+          "name": "tls_not_expired",
+          "level": 1,
+          "status": "inconclusive",
+          "reason": "TLS expiry check did not run"
+        },
+        {
+          "name": "tls_hostname_matches",
+          "level": 1,
+          "status": "fail",
+          "reason": "TLS certificate does not match the hostname"
+        }
+      ]
+    },
+    {
+      "level": 2,
+      "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
+    },
+    {
+      "level": 3,
+      "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
+    },
+    {
+      "level": 4,
+      "description": "To pass `Level 4`, citizens must be able to complete, pay for, track, and receive the outcome of a service online.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 3 did not pass",
+      "executed": false,
+      "checks": []
+    },
+    {
+      "level": 5,
+      "description": "To pass `Level 5`, services must be connected across agencies, proactive for eligible citizens, explainable, and accountable.",
+      "status": "inconclusive",
+      "reason": "Not run because Level 4 did not pass",
+      "executed": false,
+      "checks": []
+    }
+  ]
+}

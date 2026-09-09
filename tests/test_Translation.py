@@ -9,6 +9,7 @@ from glwa.translation.Provenance import classify
 from glwa.translation.OpenAIFlowDiscovery import OpenAIFlowDiscovery
 from glwa.translation.Availability import check
 from glwa.translation.ResultStore import ResultStore
+from glwa.translation.BatchVerifier import TranslationBatchVerifier
 
 
 class TestTranslation(unittest.TestCase):
@@ -85,6 +86,7 @@ class TestTranslation(unittest.TestCase):
             self.assertEqual(
                 {
                     "schema_version": "translation-flow-1",
+                    "status": "mapped",
                     "source_url": "https://example.gov.lk/",
                     "final_url": "https://example.gov.lk/",
                     "fingerprint": "fingerprint",
@@ -111,16 +113,60 @@ class TestTranslation(unittest.TestCase):
         self.assertEqual(["https://example.gov.lk/about"], flow["pages"])
         self.assertEqual({"en": ".english"}, flow["languages"])
 
+    def test_failed_discovery_preserves_a_valid_mapping(self):
+        with tempfile.TemporaryDirectory() as directory:
+            store = FlowStore(Path(directory) / "flow.json")
+            store.save(
+                "fingerprint",
+                {
+                    "languages": {"en": ".english"},
+                    "pages": ["https://example.gov.lk/"],
+                },
+                "https://example.gov.lk/",
+                "https://example.gov.lk/",
+            )
+            store.save_status(
+                "new-fingerprint",
+                "discovery_error",
+                "candidate selectors did not validate",
+                "https://example.gov.lk/",
+                "https://example.gov.lk/",
+            )
+
+            mapping = store.load()
+
+        self.assertEqual("mapped", mapping["status"])
+        self.assertEqual(
+            "discovery_error", mapping["last_discovery"]["status"]
+        )
+
     def test_flow_validation_rejects_cross_origin_pages(self):
         result = OpenAIFlowDiscovery()._validate(
             {
-                "languages": {"en": ".english", "si": ".sinhala"},
+                "languages": {
+                    "en": ".english",
+                    "si": ".sinhala",
+                    "ta": ".tamil",
+                },
                 "pages": ["/about", "https://other.example/contact"],
             },
             "https://example.gov.lk/",
         )
 
         self.assertEqual(["https://example.gov.lk/about"], result["pages"])
+
+    def test_availability_validation_accepts_unavailable(self):
+        result = OpenAIFlowDiscovery()._validate_availability(
+            {"status": "unavailable", "reason": "no language controls"}
+        )
+
+        self.assertEqual("unavailable", result["status"])
+
+    def test_availability_validation_rejects_unknown_status(self):
+        with self.assertRaises(ValueError):
+            OpenAIFlowDiscovery()._validate_availability(
+                {"status": "missing", "reason": "no language controls"}
+            )
 
     def test_result_store_overwrites_result_json(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -131,6 +177,20 @@ class TestTranslation(unittest.TestCase):
                 {"status": "ok", "pages": []},
                 json.loads(store.path.read_text("utf-8")),
             )
+
+    def test_batch_verifier_records_outdated_mapping_and_continues(self):
+        class StaleVerifier:
+            async def run(self, url, replay, rediscover):
+                raise ValueError("translation mapping is stale for the live page")
+
+        with tempfile.TemporaryDirectory() as directory:
+            result = TranslationBatchVerifier(
+                Path(directory), StaleVerifier()
+            ).run("https://example.gov.lk/")
+
+            self.assertEqual("mapping_outdated", result["status"])
+            stored = Path(directory) / "example.gov.lk" / "translation.json"
+            self.assertEqual(result, json.loads(stored.read_text(encoding="utf-8")))
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 # Website Audit: https://milco.lk/
 
-- Completed: 2026-09-07 09:32
+- Completed: 2026-09-08 23:23
 - Overall result: 🔴 Level 1
 
 ## ⚫ Level 0: ✅

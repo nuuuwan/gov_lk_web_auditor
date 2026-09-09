@@ -7,7 +7,14 @@ from urllib.parse import urlparse
 from ..classification.LevelEvaluator import LevelEvaluator
 from ..reporting.WebsiteScore import WebsiteScore
 
-COPIED_FILES = ("audit.json", "audit.md", "evidence.csv", "levels.csv", "report.html")
+COPIED_FILES = (
+    "audit.json",
+    "audit.md",
+    "evidence.csv",
+    "levels.csv",
+    "report.html",
+    "translation.json",
+)
 
 
 class DashboardLoader:
@@ -56,6 +63,7 @@ class DashboardLoader:
             if isinstance(check, dict)
         ]
         evidence = audit.get("evidence") or []
+        translation = self._translation(path.parent / "translation.json")
         institution = self._institution(normalized, url, host, names)
         ministry = self._ministry(normalized, url, host, ministries)
         return {
@@ -76,6 +84,7 @@ class DashboardLoader:
                 check.get("status") == "inconclusive" for check in checks
             ),
             "status_group": self._group(checks),
+            "translation": self._translation_summary(translation),
             "levels": audit["levels"],
             "evidence": evidence if isinstance(evidence, list) else [],
             "files": [
@@ -84,6 +93,48 @@ class DashboardLoader:
                 if (path.parent / name).is_file()
             ],
         }
+
+    def _translation(self, path: Path) -> dict | None:
+        if not path.is_file():
+            return None
+        try:
+            result = json.loads(path.read_text(encoding="utf-8"))
+        except (OSError, ValueError):
+            return {"status": "invalid", "reason": "invalid translation result"}
+        if not isinstance(result, dict):
+            return {"status": "invalid", "reason": "invalid translation result"}
+        return result
+
+    def _translation_summary(self, result: dict | None) -> dict:
+        if result is None:
+            return {"status": "not_run", "pages": []}
+        if result.get("status"):
+            return {
+                "status": str(result["status"]),
+                "reason": str(result.get("reason", "")),
+                "pages": [],
+            }
+        pages = result.get("pages")
+        if not isinstance(pages, list) or not pages:
+            return {"status": "inconclusive", "pages": []}
+        languages = ("en", "si", "ta")
+        coverage = {
+            language: [
+                item.get("coverage", {})
+                for page in pages
+                if isinstance(page, dict)
+                for item in [page.get("languages", {}).get(language, {})]
+                if isinstance(item, dict)
+            ]
+            for language in languages
+        }
+        complete = all(len(coverage[language]) == len(pages) for language in languages)
+        status = "pass" if complete and all(
+            item.get("translated")
+            for language in languages
+            for item in coverage[language]
+        ) else "fail"
+        return {"status": status, "pages": pages, "coverage": coverage}
 
     def _level(self, audit: dict) -> int:
         passed = [
