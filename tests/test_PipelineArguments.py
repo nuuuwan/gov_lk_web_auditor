@@ -17,6 +17,22 @@ class TestPipelineArguments(unittest.TestCase):
         urls = ["one", "two", "three"]
         self.assertEqual(urls, Pipeline()._limit(urls))
 
+    def test_selects_shard_when_requested(self):
+        urls = ["one", "two", "three", "four"]
+        self.assertEqual(
+            ["three", "four"],
+            Pipeline(shard_index=1, shard_total=2)._limit(urls),
+        )
+
+    def test_shard_combines_with_max_urls(self):
+        urls = ["one", "two", "three", "four"]
+        self.assertEqual(
+            ["three"],
+            Pipeline(
+                max_urls=1, shard_index=1, shard_total=2
+            )._limit(urls),
+        )
+
     def test_loads_urls_from_json(self):
         with tempfile.TemporaryDirectory() as folder:
             target = Path(folder) / "static_data" / "urls.json"

@@ -29,7 +29,7 @@ class TestReportWriter(unittest.TestCase):
     def _audit(self):
         timestamp = "2026-09-01T10:00:00+00:00"
         return Audit(
-            "1.2.0",
+            "1.3.0",
             "123e4567-e89b-42d3-a456-426614174000",
             "example.gov.lk",
             "https://example.gov.lk/",
@@ -57,6 +57,12 @@ class TestReportWriter(unittest.TestCase):
                     Evidence("http", "pass", "HTTP available"),
                 ]
             ),
+            {
+                "egress_ip": "192.248.41.11",
+                "country": "LK",
+                "runner": "local",
+                "proxy": False,
+            },
         )
 
 

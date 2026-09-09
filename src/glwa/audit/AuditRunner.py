@@ -10,6 +10,7 @@ from ..network.DomainInspector import DomainInspector
 from ..network.HttpProbe import HttpProbe
 from ..network.TlsInspector import TlsInspector
 from ..network.UrlNormalizer import UrlNormalizer
+from ..network.VantageProbe import VantageProbe
 from ..reporting.SnapshotStore import SnapshotStore
 from ..time.SriLankaTime import SriLankaTime
 from .Audit import Audit
@@ -57,7 +58,7 @@ class AuditRunner:
         result = Classifier(Level1()).classify(evidence)
         levels = self.level_evaluator.evaluate(evidence)
         return Audit(
-            "1.2.0",
+            "1.3.0",
             str(uuid4()),
             url,
             normalized,
@@ -69,6 +70,7 @@ class AuditRunner:
             snapshots,
             [],
             levels,
+            VantageProbe().probe(),
         )
 
     def _initial(self, host):

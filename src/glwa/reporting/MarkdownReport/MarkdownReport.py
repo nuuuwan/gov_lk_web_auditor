@@ -17,11 +17,15 @@ class MarkdownReport(MarkdownReportPreparationMixin):
     def write_data(self, audit: dict, path: Path) -> Path:
         path.parent.mkdir(parents=True, exist_ok=True)
         audit = self.prepare(audit)
+        vantage = audit.get("vantage") or {}
         lines = [
             f"# Website Audit: {audit['normalized_url']}",
             "",
             f"- Completed: {self._time(audit['completed_at'])}",
             f"- Overall result: {self._label(self._overall(audit))}",
+            f"- Vantage: {vantage.get('egress_ip', 'unknown')} "
+            f"({vantage.get('country', 'unknown')}, "
+            f"{vantage.get('runner', 'unknown')})",
         ]
         for level in audit["levels"]:
             if not LevelEvaluator.LEVELS[level["level"]].implemented:

@@ -23,6 +23,24 @@ class TestAuditReclassifier(unittest.TestCase):
             "2026-09-01T15:30:30+05:30", audit.evidence[0].observed_at
         )
 
+    def test_preserves_vantage_from_stored_audit(self):
+        data = self._data()
+        data["vantage"] = {
+            "egress_ip": "20.1.2.3",
+            "country": "US",
+            "runner": "github-actions",
+            "proxy": False,
+        }
+        audit = AuditReclassifier().reclassify(data)
+        self.assertEqual("US", audit.to_dict()["vantage"]["country"])
+        self.assertEqual(
+            "github-actions", audit.to_dict()["vantage"]["runner"]
+        )
+
+    def test_defaults_vantage_for_old_audits(self):
+        audit = AuditReclassifier().reclassify(self._data())
+        self.assertIn("vantage", audit.to_dict())
+
     def _data(self):
         return {
             "schema_version": "1.2.0",

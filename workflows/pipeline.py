@@ -16,8 +16,10 @@ class Pipeline:
     PATH_REPORTS = Path("latest_audit_reports")
     URLS = Path("static_data") / "websites.json"
 
-    def __init__(self, max_urls=None):
+    def __init__(self, max_urls=None, shard_index=0, shard_total=1):
         self.max_urls = max_urls
+        self.shard_index = shard_index
+        self.shard_total = max(1, shard_total)
 
     def _level(self, audit):
         passed = [
@@ -33,9 +35,13 @@ class Pipeline:
         return f"{self._level(audit)}, {score:.1f}/{calculator.maximum}"
 
     def _limit(self, urls):
+        total = len(urls)
+        size = (total + self.shard_total - 1) // self.shard_total
+        start = min(self.shard_index * size, total)
+        shard = urls[start : start + size]
         if self.max_urls is None:
-            return urls
-        return urls[: self.max_urls]
+            return shard
+        return shard[: self.max_urls]
 
     def _urls(self) -> list[str]:
         return Directory(self.URLS).urls()
@@ -67,5 +73,11 @@ class Pipeline:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--max-urls", type=int)
+    parser.add_argument("--shard-index", type=int, default=0)
+    parser.add_argument("--shard-total", type=int, default=1)
     args = parser.parse_args()
-    Pipeline(max_urls=args.max_urls).run()
+    Pipeline(
+        max_urls=args.max_urls,
+        shard_index=args.shard_index,
+        shard_total=args.shard_total,
+    ).run()

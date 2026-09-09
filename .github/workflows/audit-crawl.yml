@@ -1,0 +1,67 @@
+name: Crawl from Actions vantage
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_urls:
+        description: "Cap URLs per shard (empty = whole shard)"
+        default: ""
+      shards:
+        description: "Number of parallel shards"
+        default: "10"
+  schedule:
+    - cron: "0 1 * * *"
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    outputs:
+      shards: ${{ steps.set.outputs.shards }}
+      total: ${{ steps.set.outputs.total }}
+    steps:
+      - id: set
+        run: |
+          N="${{ inputs.shards }}"
+          [ -z "$N" ] && N=10
+          IDS=$(seq 0 $((N - 1)) | jq -R . | jq -cs 'map(tonumber)')
+          echo "shards=$IDS" >> "$GITHUB_OUTPUT"
+          echo "total=$N" >> "$GITHUB_OUTPUT"
+
+  crawl:
+    needs: setup
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.setup.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: python3 -m pip install -r requirements.txt
+      - name: Log vantage point
+        run: |
+          curl -s https://api.ipify.org; echo
+          curl -s "http://ip-api.com/json/?fields=country,countryCode,org" ; echo
+      - name: Audit shard
+        run: >
+          PYTHONPATH=. python workflows/pipeline.py
+          --shard-index ${{ matrix.shard }}
+          --shard-total ${{ needs.setup.outputs.total }}
+          ${{ inputs.max_urls && format('--max-urls {0}', inputs.max_urls) || '' }}
+      - name: Show vantage recorded in audits
+        run: |
+          python3 -c "
+          import json, glob
+          for f in sorted(glob.glob('audit.output/*/2*/audit.json')):
+              a = json.load(open(f))
+              print(a['url'], '->', a.get('vantage'))
+          "
+      - uses: actions/upload-artifact@v4
+        with:
+          name: actions-vantage-audits-shard-${{ matrix.shard }}
+          path: |
+            audit.output/**/audit.json
+            latest_audit_reports/**/audit.json
