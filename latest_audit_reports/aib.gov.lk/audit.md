@@ -1,6 +1,6 @@
 # Website Audit: https://aib.gov.lk/aib/
 
-- Completed: 2026-09-05 10:31
+- Completed: 2026-09-08 23:07
 - Overall result: ⚫ Level 0
 
 ## ⚫ Level 0: ✅
@@ -18,10 +18,10 @@ Every repeated HTTP probe failed: [404, 404, 404, 404]
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | No usable page was inspected |
-| site_not_defaced | ❓ | No usable page was inspected |
-| content_relevant | ❓ | No usable page was inspected |
-| hosting_configured | ❓ | No usable page was inspected |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 71 visible characters across 4 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 71 visible characters across 4 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 71 visible characters across 4 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 71 visible characters across 4 pages; below substance threshold 200 |
 | http_available | ❌ | Every repeated HTTP probe failed: [404, 404, 404, 404] |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |

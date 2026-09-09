@@ -26,8 +26,9 @@ It is inspired by the Level 0–5 framework, originally described in [Grading Go
 ## Run audits
 
 ```bash
-python3 -m pip install -r requirements.txt
-python3 workflows/pipeline.py
+uv sync
+uv run playwright install chromium
+PYTHONPATH=. uv run python workflows/pipeline.py
 ```
 
 The pipeline audits every ministry URL in the government web directory. Each
@@ -36,6 +37,10 @@ The latest rendered files are stored under `latest_audit_reports/<host>` and
 can be regenerated from raw audit data. Each audit performs at
 least two HTTPS and HTTP probes from the local vantage point. Independent
 geographic probes must run the pipeline from separate environments.
+
+The Sri Lankan network workflow and runner operations are documented in
+[GitHub Actions](github-actions.md). The workflow is manually dispatched until
+the self-hosted runner has passed a limited reliability run.
 
 Each website reports `pass`, `fail`, or `inconclusive` for Levels 0–5. A failed
 level prevents all higher-level checks from running. After the pipeline
@@ -56,6 +61,33 @@ Level 3 requires published eligibility criteria, required documents, fees and
 payment information, a legal basis, processing time, a downloadable non-image
 form, and a visible update date. Update dates older than 730 days fail the
 freshness check. Missing Level 3 evidence remains inconclusive.
+
+## Translation verification
+
+The first run asks the LLM to discover a flow and upserts its reusable mapping
+under `translation_mappings/<host>.json`. It also upserts the measured result
+under `translation_results/<host>.json`:
+
+```bash
+PYTHONPATH=. uv run python workflows/translation_verification.py https://example.gov.lk/
+```
+
+Pass `--rediscover` to replace an existing mapping with a fresh LLM discovery.
+
+The committed mapping records the final URL, interactive DOM fingerprint,
+selected pages, and one locator action for each official language. Replay it
+without an LLM call:
+
+```bash
+PYTHONPATH=. uv run python workflows/translation_verification.py \
+  https://example.gov.lk/ \
+  --mapping translation_mappings/example.gov.lk.json \
+  --replay
+```
+
+Replay refuses stale mappings when the interactive DOM fingerprint changes.
+Each replay records visible-text script coverage and observed translation-related
+network URLs in the result JSON.
 
 ## Classification rules
 

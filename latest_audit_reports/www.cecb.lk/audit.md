@@ -1,6 +1,6 @@
 # Website Audit: https://www.cecb.lk/
 
-- Completed: 2026-09-05 10:32
+- Completed: 2026-09-08 23:08
 - Overall result: 🟠 Level 2
 
 ## ⚫ Level 0: ✅

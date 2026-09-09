@@ -1,0 +1,74 @@
+name: Update translation mappings
+
+on:
+  workflow_dispatch:
+    inputs:
+      max_urls:
+        description: "Maximum number of URLs to discover; leave empty for all URLs"
+        required: false
+        type: string
+        default: ""
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: translation-mapping-update
+  cancel-in-progress: false
+
+jobs:
+  discover:
+    runs-on: [self-hosted, linux, sri-lanka]
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install Python
+        run: uv python install 3.12
+
+      - name: Install locked environment
+        run: uv sync --locked
+
+      - name: Install Playwright Chromium
+        run: uv run playwright install chromium
+
+      - name: Discover and validate translation mappings
+        env:
+          MAX_URLS: ${{ inputs.max_urls }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_CLASSIFIER_MODEL: gpt-5.4-nano
+          OPENAI_MODEL: gpt-5.4-mini
+        run: |
+          if [[ -z "$OPENAI_API_KEY" ]]; then
+            echo "OPENAI_API_KEY repository secret is required" >&2
+            exit 1
+          fi
+          args=()
+          if [[ -n "$MAX_URLS" ]]; then
+            args+=(--max-urls "$MAX_URLS")
+          fi
+          PYTHONPATH=. uv run python workflows/translation_pipeline.py "${args[@]}"
+
+      - name: Open translation mapping pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/translation-mappings
+          delete-branch: true
+          add-paths: translation_mappings
+          commit-message: "chore(translation): refresh mappings"
+          title: "chore(translation): refresh mappings"
+          body: |
+            ## what changed
+
+            Refreshes OpenAI-discovered translation mappings and records validated negative discovery results.
+
+            ## why
+
+            Translation controls can change independently of the audited websites.
+
+            ## verification
+
+            Every mapped selector was validated against the live page before it was saved.

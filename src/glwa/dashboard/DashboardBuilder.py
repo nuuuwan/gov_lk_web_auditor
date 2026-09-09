@@ -97,7 +97,7 @@ tr[data-search] a { pointer-events: none; }
 .collapsible[aria-expanded="true"]::before { transform: rotate(90deg); }
 .collapsible-content { display: none; }
 .collapsible-content.open { display: block; }
-@media (max-width: 640px) { th:nth-child(5), td:nth-child(5) { display: none; } th:nth-child(4), td:nth-child(4) { display: none; } }
+@media (max-width: 640px) { th:nth-child(6), td:nth-child(6) { display: none; } th:nth-child(3), td:nth-child(3) { display: none; } }
 @media (prefers-color-scheme: dark) {
   :root {
     --ink: #e8edea;
@@ -139,29 +139,28 @@ JS = """\
   var rows = Array.prototype.slice.call(document.querySelectorAll("tbody tr[data-search]"));
   var page = 1;
   var perPage = parseInt(document.getElementById("page-size") ? document.getElementById("page-size").value : "25", 10);
-  function pageRows() { return rows.filter(function (r) { return r.style.display !== "none"; }); }
+  var filtered = [];
   function apply() {
     var q = search.value.toLowerCase();
+    filtered = [];
     rows.forEach(function (row) {
       var ok =
         row.dataset.search.indexOf(q) !== -1 &&
         (level.value === "" || row.dataset.level === level.value) &&
         (status.value === "" || row.dataset.status === status.value);
-      row.style.display = ok ? "" : "none";
+      if (ok) filtered.push(row);
+      row.style.display = "none";
     });
     page = 1;
     paginate();
   }
   function paginate() {
-    var shown = pageRows();
+    var shown = filtered;
     var total = shown.length;
     var start = (page - 1) * perPage;
     var end = start + perPage;
-    rows.forEach(function (row) {
-      var vis = row.style.display !== "none";
-      var idx = shown.indexOf(row);
-      if (vis) row.style.display = (idx >= start && idx < end) ? "" : "none";
-    });
+    rows.forEach(function (row) { row.style.display = "none"; });
+    for (var i = start; i < end && i < total; i++) { shown[i].style.display = ""; }
     var countEl = document.getElementById("result-count");
     if (countEl) countEl.textContent = (total === rows.length ? rows.length : start + 1 + "\\u2013" + Math.min(end, total) + " of " + total) + " sites shown";
     renderPagination(total, start, end);
@@ -296,6 +295,7 @@ class DashboardBuilder:
                 "failed_checks",
                 "inconclusive_checks",
                 "status_group",
+                "translation",
                 "files",
             )
         } | {"detail_url": f"sites/{site['host']}/"}
@@ -316,6 +316,7 @@ class DashboardBuilder:
           <th><button data-sort="level" aria-sort="none">Level &#9650;&#9660;</button></th>
           <th><button data-sort="score" aria-sort="none">Score &#9650;&#9660;</button></th>
           <th>Status</th>
+          <th>Translation</th>
           <th>Audited</th>
         </tr></thead>
         <tbody>
@@ -420,7 +421,7 @@ class DashboardBuilder:
         if ministry:
             count = len(sites)
             heading = (
-                f'          <tr><td colspan="5" class="group-heading">'
+            f'          <tr><td colspan="6" class="group-heading">'
                 f"{html.escape(ministry)} ({count} site{'s' if count != 1 else ''})"
                 f"</td></tr>\n"
             )
@@ -445,6 +446,7 @@ class DashboardBuilder:
             f"{html.escape(site['level_label'])}</td>"
             f"<td>{site['score']:.1f}/{site['max_score']}</td>"
             f"<td>{status}</td>"
+            f"<td>{self._translation_badge(site['translation'])}</td>"
             f"<td>{html.escape(self._short(site['completed_at']))}</td></tr>"
         )
 
@@ -476,6 +478,7 @@ class DashboardBuilder:
             evidence_block = (
                 '<h2>Evidence (0)</h2>\n<p>No evidence items recorded.</p>'
             )
+        translation = self._translation_section(site["translation"])
         return f"""\
 <!doctype html>
 <html lang="en">
@@ -517,6 +520,9 @@ class DashboardBuilder:
 </section>
 <section aria-label="Evidence">
 {evidence_block}
+</section>
+<section aria-label="Translation verification">
+{translation}
 </section>
 <section aria-label="Downloads">
 <h2>Reports and downloads</h2>
@@ -582,6 +588,50 @@ class DashboardBuilder:
                 + f" {site['inconclusive_checks']} inconclusive"
             )
         return self._badge("pass") + " clean"
+
+    def _translation_badge(self, translation: dict) -> str:
+        status = translation["status"]
+        if status in {"pass", "fail", "inconclusive"}:
+            return self._badge(status)
+        return html.escape(status.replace("_", " ").capitalize())
+
+    def _translation_section(self, translation: dict) -> str:
+        status = translation["status"]
+        note = (
+            "<p>Translation checks use LLM-assisted mappings and browser validation; "
+            "they may be inaccurate when a website changes or behaves differently.</p>"
+        )
+        if status == "not_run":
+            return f"<h2>Translation verification</h2><p>Not yet run.</p>{note}"
+        if status not in {"pass", "fail"}:
+            reason = html.escape(translation.get("reason", ""))
+            return (
+                "<h2>Translation verification</h2>"
+                f"<p>{html.escape(status.replace('_', ' ').capitalize())}: {reason}</p>"
+                f"{note}"
+            )
+        rows = "\n".join(
+            self._translation_row(language, coverage)
+            for language, coverage in translation["coverage"].items()
+        )
+        return f"""\
+<h2>Translation verification</h2>
+<p>{self._translation_badge(translation)}</p>
+{note}
+<div class="table-wrap" role="region" aria-label="Translation coverage" tabindex="0">
+<table><thead><tr><th>Language</th><th>Coverage</th><th>Result</th></tr></thead>
+<tbody>{rows}</tbody></table>
+</div>"""
+
+    def _translation_row(self, language: str, coverage: list[dict]) -> str:
+        average = sum(item.get("percentage", 0) for item in coverage) / len(coverage)
+        passed = all(item.get("translated") for item in coverage)
+        status = "pass" if passed else "fail"
+        label = {"en": "English", "si": "Sinhala", "ta": "Tamil"}[language]
+        return (
+            f"<tr><td>{label}</td><td>{average:.1f}%</td>"
+            f"<td>{self._badge(status)}</td></tr>"
+        )
 
     def _level_name(self, number: int) -> str:
         return LevelEvaluator.LEVELS[number].label

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="assets/css/mystyles.css" rel="stylesheet" type="text/css" /> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap JS (including Popper.js for dropdowns) -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+
+    <script src="https://landcom.gov.lk/assets/js/feather.min.js" type="text/javascript"></script>
+    <title>LCGD</title>
+  	<link rel="icon" type="image/png" href="https://landcom.gov.lk/assets/images/national_logo.png">
+
+    <style>
+        .topic {
+            color: black;
+            font-size: 10mm;
+            font-family: sans-serif;
+        }
+
+        .sticky_header {
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        /* Container to control the marquee boundaries */
+        .marquee-container {
+            width: 100%;
+            overflow: hidden;
+            background-color: green;
+            color: white;
+            height: 50px;
+            border: 1px solid #ccc;
+            z-index: 5;
+        }
+
+        /* Content inside the marquee */
+        .marquee-content {
+            display: inline-block;
+            white-space: nowrap;
+            padding-left: 100%;
+            justify-content: center;
+            animation: marquee-animation 80s linear infinite;
+            animation-play-state: running;
+            /* Default: running */
+        }
+
+        /* Pause the animation when hovering */
+        .marquee-container:hover .marquee-content {
+            animation-play-state: paused;
+        }
+
+        /* Keyframes to create the scrolling effect */
+        @keyframes marquee-animation {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .remove-styles {
+            text-decoration: none;
+        }
+
+        .custom_card:hover {
+            background-color: rgb(92, 95, 99);
+            border-color: rgb(101, 101, 102);
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        .bg_img {
+            background-image: url(../assets/images/mountains.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover
+        }
+
+        .nf {
+            color: white;
+            padding: 5px;
+            margin-top: 10px;
+            width: 50%;
+            border: 1px solid white;
+            border-radius: 0px 20px;
+            text-align: center;
+        }
+
+        .nfxx {
+            color: black;
+            padding: 5px;
+            margin-top: 10px;
+            width: 50%;
+            border: 5px solid black;
+            border-radius: 0px 20px;
+            text-align: center;
+        }
+
+
+        /* for responsive features */
+        /* Larger devices (desktop) */
+        @media (max-width: 1200px) {
+            .topic_sin {
+                font-size: 8mm;
+            }
+
+            .topic_ta {
+                font-size: 8mm;
+            }
+
+            .topic_en {
+                font-size: 8mm;
+            }
+
+
+            #nationalLogo {
+                max-width: 110px;
+            }
+        }
+
+        /* Larger devices (tablet) */
+        @media (max-width: 992px) {
+
+            /* header */
+            .topic_sin {
+                font-size: 8mm;
+            }
+
+            .topic_ta {
+                font-size: 8mm;
+            }
+
+            .topic_en {
+                font-size: 8mm;
+            }
+
+            #nationalLogo {
+                max-width: 110px;
+            }
+
+            /* content */
+
+
+        }
+
+        /* Medium devices (tablet) */
+        @media (max-width: 768px) {
+            .topic_sin {
+                font-size: 6mm;
+            }
+
+            .topic_ta {
+                font-size: 6mm;
+            }
+
+            .topic_en {
+                font-size: 6mm;
+            }
+
+            #nationalLogo {
+                max-width: 100px;
+            }
+        }
+
+        /* Smaller devices */
+        @media (max-width: 576px) {
+            .topic_sin {
+                font-size: 4mm;
+            }
+
+            .topic_ta {
+                font-size: 4mm;
+            }
+
+            .topic_en {
+                font-size: 4mm;
+            }
+
+            #nationalLogo {
+                max-width: 100px;
+            }
+
+            .content_p {
+                font-size: 3mm;
+            }
+
+            .content_h {
+                font-size: 5mm;
+                font-weight: bold;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--//header-->
+    <div class="container-fluid p-0 m-0">
+    <div class="row bg-light p-2">
+        <div class="col" style="height: 150px;display: flex; justify-content: center; align-items: center;">
+            <div class="" style="display: flex; align-items: center; justify-content: center;">
+                <img src="https://landcom.gov.lk/assets/images/national_logo.png" id="nationalLogo" style="width:110px;" alt="">
+                <div class="p-0" style="text-align: center;">
+                    <p class="m-0 p-0 topic topic_sin" style="line-height: 1.2">ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව</p>
+                    <p class="m-0 p-0 topic topic_ta" style="line-height: 1.2">காணி ஆணையாளர் நாயகத்தின் திணைக்களம்</p>
+                    <p class="m-0 p-0 topic topic_en" style="line-height: 1.2">Land Commissioner General's Department</p>
+                  	<p class="m-0 p-0 fs-6 fs-md-4 topic_en" style="line-height: 1.2;font-weight:bold">Ministry of Agriculture, Livestock, Land and Irrigation</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col" style="height: 60px;">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark pt-2" style="z-index: 6;">
+                <div class=" container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " aria-current="page" href="https://landcom.gov.lk/sinhalaDoc/home_sin.php">මුල පිටුව</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle 
+                                active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                                    අප පිළිබදව
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/intro_sin.php">හැදින්වීම</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/history_sin.php">ඉතිහාසය</a></li>
+                                    <li><a class="dropdown-item active" href="https://landcom.gov.lk/sinhalaDoc/depServices_sin.php">දෙපාර්තමේන්තුවේ සේවා</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php">සංවිධාන ව්‍යුහය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/lcg_sin.php">ඉඩම් කොමසාරිස් ජනරාල්</a></li>
+                                  <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/alcg_sin.php">අතිරේක ඉඩම් කොමසාරිස් ජනරාල්</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle
+                                " href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    අංශ
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/admin_sin.php">පාලන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/accounts_sin.php">ගිණුම් අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/audit_sin.php">විගණන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/rAndDev_sin.php">පර්යේෂණ හා සංවර්ධන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/policyInvestigation_sin.php">ප්‍රතිපත්ති හා විමර්ශන අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/landLease_sin.php">ඉඩම් බදු අංශය</a></li>
+                                    <li><a class="dropdown-item " href="https://landcom.gov.lk/sinhalaDoc/legal_sin.php">නීති අංශය</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/faq_sin.php">නිතර අසන පැන</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php">අප අමතන්න</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/diviSec_sin.php">ප්‍රාදේශීය කාර්යාල</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/downloads_sin.php">බාගත කිරීම්</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/eslims_sin.php">eSlims </a>
+                            </li>
+                          	<li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/procurementAds_sin.php">ප්‍රසම්පාදන දැන්වීම්</a>
+                            </li>
+                          	 <li class="nav-item">
+                                <a class="nav-link " href="https://landcom.gov.lk/sinhalaDoc/news_sin.php">පුවත්</a>
+                            </li>
+                           	<li class="px-1">
+                                <a class="text-light btn btn-outline-warning btn-xs" href="https://landcom.gov.lk/sinhalaDoc/home_sin.php">සිංහල</a>
+                            </li>
+                            <li class="">
+                                <!-- <a class="text-light btn btn-outline-primary btn-xs" href="https://landcom.gov.lk/tamilDoc/home_tam.php">தமிழ்</a> -->
+                            </li>
+                            <li class="px-1">
+                                <a class="btn btn-outline-light btn-xs" href="https://landcom.gov.lk/englishDoc/home_en.php">English </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</div>
+    <div class="container-fluid pt-5 bg_img">
+        <div class="container">
+            <div class="row p-4 mt-4 mb-4" style="background-color: rgba(0, 0, 0, 0.6);">
+                <div class="col-3 d-none d-lg-block" style="">
+                    <div class="card border-dark mb-3">
+  <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/internalAffairs_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body bg-warning">
+                  <p class="card-text"><b>Internal Affairs Unit</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body">
+                    <p class="card-text">රාජ්‍ය ඉඩම් කලමනාකරණ පද්ධතියට පිවිසීම</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">විශේෂ ව්‍යාපෘති</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<hr>
+<div class="card border-dark mb-3" style="">
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circuitBunglows_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">සංචාරක බංගලා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/landManagementCenter_sin.php" class="remove-styles" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">රත්මලාන ඉඩම් කලමනාකරණ මධ්‍යස්ථානය</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circulars_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">චක්‍රලේඛ බාගත කිරීම (New)</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">ජංගම සේවා තොරතුරු</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/ourPublications_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">අපගේ ප්‍රකාශන මෙතනින් බලන්න</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/importantLinks_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">වැදගත් සබදතා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/photos_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">ඡායාරූප</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/infoAct_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">තොරතුරු පනත</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>                </div>
+                <div class="col-3 d-lg-none d-block" style="">
+                    <div class="offcanvas offcanvas-start" id="demo">
+                        <div class="offcanvas-header">
+                            <h1 class="offcanvas-title">පැති මෙනුව</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div class="card border-dark mb-3">
+  <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/internalAffairs_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body bg-warning">
+                  <p class="card-text"><b>Internal Affairs Unit</b></p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light" style="">
+                <div class="card-body">
+                    <p class="card-text">රාජ්‍ය ඉඩම් කලමනාකරණ පද්ධතියට පිවිසීම</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://www.eslims.gov.lk/eLand/welcome.do" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">විශේෂ ව්‍යාපෘති</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+<hr>
+<div class="card border-dark mb-3" style="">
+    <div class="mx-2 mt-2 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circuitBunglows_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">සංචාරක බංගලා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/landManagementCenter_sin.php" class="remove-styles" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">රත්මලාන ඉඩම් කලමනාකරණ මධ්‍යස්ථානය</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/circulars_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">චක්‍රලේඛ බාගත කිරීම (New)</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">ජංගම සේවා තොරතුරු</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/ourPublications_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">අපගේ ප්‍රකාශන මෙතනින් බලන්න</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/importantLinks_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">වැදගත් සබදතා</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/photos_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">ඡායාරූප</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="mx-2 mt-0 mb-2">
+        <a href="https://landcom.gov.lk/sinhalaDoc/infoAct_sin.php" class="remove-styles">
+            <div class="card custom_card text-dark bg-light">
+                <div class="card-body">
+                    <p class="card-text">තොරතුරු පනත</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>                        </div>
+                    </div>
+
+                    <div class="container-fluid mt-3 mb-3">
+                        <button class="btn btn-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo">
+                            <span>☰</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-9" style="">
+                    <div class="card border-dark mb-3" style="">
+                        <div class="mx-2 mt-2 mb-2">
+                            <div class="remove-styles">
+                                <div class="card text-dark bg-light custom_card" style="max-width: 100%">
+                                    <div class="card-body">
+                                        <p class="card-text">
+                                        <h2 class="mb-5 content_h">අපගේ සේවාවන්</h2>
+
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+                                                ඉඩම් ප්‍රදාන (විශේෂ විධිවිධාන) පනත යටතේ නියාදන සාදන පත්‍රයක් ලාබාදීම
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse1">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3">ඉඩම් සංවර්ධන ආඥා පනත යටතේ ඉඩම් බැහැර කිරීමේ ක්‍රියාවලිය</li>
+                                                    <li> ශ්‍රී ලංකාවේ ගොවි පන්තිය, අඩු ආදායම් පන්තිය, වැඩි ආදායම් පන්තිය හා උගත් තරුණයන් යන පංති වලට අයත් පුද්ගලයන් කෘෂිකාර්මික කටයුත්තක් හෝ පදිංචිය සඳහා නිවසක් ඉදිකර ගැනීමට හෝ එම කාරණා දෙකටම ඉඩම් ලබාදීම මේ මගින් සිදු කෙරේ. ඉන් බැහැර කරeණු සඳහා මෙම පනත යටතේ ඉඩම් ලබා නොදේ.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                                                රජයේ ඉඩම් ආඥාපනත යටතේ දීමනා පත්‍ර නිකුත් කිරීම
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse2">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3">රජයේ ඉඩම් ආඥාපනත යටතේ ඉඩම් නිදහස් කිරීම</li>
+                                                    <li> රාජ්‍ය දෙපාර්තමේන්තු ‍‍‍ෙවත ඉඩම් ලබාදී‍‍මේ දී ඉඩම් නිදහස් කිරීමේ සහතික පත්‍රයක් ලබාදේ.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                                                දීර්ඝකාලීන බදු බලපත්‍ර ලබාදීම
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse3">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3">දීර්ඝකාලීන බදු බලපත්‍ර ලබාදීම</li>
+                                                    <li> 1947 අංක 8 දරණ රජයේ ඉඩම් ආඥා පනත යටතේ බදු බලපත්‍ර ලබාදේ. නේවාසික, කෘෂිකාර්මික හා වාණිජ අරමුණු උදෙසා වසර 30ක කාලයකට පුද්ගලයන්ට හා ආයතන වලට දීර්ඝකාලීන බදු ලබා දේ. වි‍ශේෂ ව්‍යාපෘති ‍වෙනුවෙන් බදු කාලය වසර 50 දක්වා දිගු කල හැක. මුල් බදු කාල‍‍යේ සාර්ථකත්වය මත නැවත බදු කාලය දීර්ඝ කල හැක. මෙම බලපත්‍ර ඉඩම් කොමසාරිස්‍ ගේ පූර්ව අනුමැතිය ලබා ‍ගෙ‍න පැවරීම හා උගස් කිරීම සිදුකල හැක
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                                                රජයේ ඉඩම් ආඥාපනත යටතේ ඉඩම් නිදහස් කිරීම
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse4">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3"> ඉඩම් නිදහස් කිරීම
+                                                    </li>
+                                                    <li> රාජ්‍ය දෙපාර්තමේන්තු ‍‍‍ෙවත ඉඩම් ලබාදී‍‍මේ දී ඉඩම් නිදහස් කිරීමේ සහතික පත්‍රයක් ලබාදේ.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+                                                රජයේ ඉඩම් ආඥාපනත යටතේ පූජා ඔප්පුවක් ලබාදීම
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse5">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3"> රජයේ ඉඩම් ආඥාපනත යටතේ පැවරුම් නි‍යෝග
+                                                    </li>
+                                                    <li> ත්‍රිවිධ හමුදාව හා පළාත් පාලන ආයතන සඳහා ඉඩම් පැවරීමක් සිදුකරයි. ඒ සඳහා පැවරීමේ නියෝග සකස් කළ යුතුයි.
+                                                    </li>
+                                                </ul>
+
+
+
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
+                                                ඉඩම් සංවර්ධන ආඥ පනත යටතේ රන්බිම දීමනාපත්‍ර ලබාදීම
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse6">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3">
+                                                        ඉඩම් සංවර්ධන ආඥ පනත යටතේ රන්බිම දීමනාපත්‍ර ලබාදීම
+                                                    </li>
+                                                    <li>
+                                                        ශ්‍රී ලංකාවාසී ගොවි ජනතාවට සහනයක් සලසාදීම සඳහා රජය විසින් ක්‍රියාත්මක කරන ලද ඉඩම් සංවර්ධන ආඥා පනත මගින් රජයේ ඉඩම් බෙදාදීමේ වැඩපිළිවෙල යටතේ දීමනාපත්‍ර ප්‍රදානය කරයි.
+                                                    </li>
+                                                    <li>
+                                                        ප්‍රාදේශීය ලේකම් කාර්යාලය.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම්ලාභීන් විසින් තම ඉඩමට දීමනාපත්‍රයක් ලබාදෙන ලෙස ඉල්ලීම.
+                                                    </li>
+                                                    <li>
+                                                        ප්‍රාදේශීය ලෙකම් කාර්යාලයේ නිලධාරීන් ක්ෂේත්‍ර පරීක්ෂණයකින් පසු ඉඩම නිසි පරිදි සංවර්ධනය කර ඇත්නම් දීමනාපත්‍රයක් ලබාදීම සඳහා ඉඩම මැන මායිම්ගල් යොදා අනුරේඛනයක් සකස් කර එවන ලෙස දිස්ත්‍රික් මිනින්දෝරු අධිකාරි වෙත මැනුම් නියෝගයක් නිකුත් කරනු ලබයි.
+                                                    </li>
+                                                    <li>
+                                                        ඒ අනුව මිනින්දෝරු අධිකාරි විසින් සකස් කළ අනුරේඛනය ප්‍රාදේශීය ලේකම් වෙත එවනු ලබයි.
+                                                    </li>
+                                                    <li>
+                                                        මිනින්දෝරු කාර්යාලයේ අනුරේඛනය ලද පසු ප්‍රාදේශීය ලේකම් විසින් ඉ.කො.156 ආකෘතියෙන් නිවැරදිව දීමනාපත්‍රයක් සකස් කිරීම කළ යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        දීමනාපත්‍ර සඳහා අංක ලබාදීම ද සිදු කළ යුතුයි. නමුත් සමහර පළාත් වල එම අංක පළාත් ඉඩම් කොමසාරිස් විසින් ලබාදෙනු ලැබේ.
+                                                    </li>
+                                                    <li>
+                                                        සකස් කරන ලද දීමනාපත්‍ර පළාත් ඉඩම් කොමසාරිස් / නියෝජ්‍ය ඉඩම් කොමසාරිස් වෙත යොමු කිරීම. මේ සමඟ 2008/01 චක්‍රලේඛයේ වාර්තාව ද අනිවාර්යෙන්ම එවිය යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        අතිගරු ජනාධිපතිතුමා විසින් අත්සන් කරන ලද දීමනාපත්‍ර නැවත ප්‍රාදේශීය ලේකම් වෙත ලැබුනු පසු එම දීමනාපත්‍ර ලියාපදිංචිය සඳහා ඉඩම් ලියාපදිංචි කිරීමේ කාර්යාලය යෙවත යැවීම.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් ලියාපදිංචි කිරීමේ කාර්යාලයේ ලියාපදිංචියෙන් පසු එම දීමනාපත්‍ර නැවත ප්‍රාදේශීය ලේකම් වෙත එවීම.
+                                                    </li>
+                                                    <li>
+                                                        ලියාපදිංචිය අවසන් කළ දීමනාපත්‍ර අදාළ සේවා ගාස්තු අයකර ඉඩම් හිමියන් වෙත ප්‍රදානය කිරීම සිදු කරයි.
+                                                    </li>
+                                                    <li>
+                                                        පළාත් ඉඩම් කොමසාරිස් කාර්යාලය / නියෝජ්‍ය ඉඩම් කොමසාරිස් කාර්යාලය.
+                                                    </li>
+                                                    <li>
+                                                        ප්‍රාදේශීය ලේකම් කාර්යාලයෙන් එවනු ලබන දීමනාපත්‍ර පරීක්ෂා කර අවශ්‍ය ලේඛන වල සටහන් කර අඩුපාඩු නොමැති දීමනාපත්‍ර ඉඩම් කොමසාරිස් ජනරාල් කාර්යාලයට එවනු ලබයි.
+                                                    </li>
+                                                    <li>
+                                                        අඩුපාඩු පවතින දීමනාපත්‍ර නැවත ප්‍රාදේශීය ලේකම් වෙත යවා නිවැරදි කරවාගත යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        ජනාධිපති ලේකම් විසින් අත්සන් කළ දීමනාපත්‍ර නැවත ප්‍රාදේශිය ලේකම් වෙත යොමු කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව.
+                                                    </li>
+                                                    <li>
+                                                        පළාත් ඉඩම් කොමසාරිස් / නියෝජ්‍ය ඉඩම් කොමසාරිස් මගින් ලැබෙන දීමනාපත්‍ර ලේඛනගත කරගැනීම / ලැබීම් ලේඛනයේ සටහන් කරගැනීම.
+                                                    </li>
+                                                    <li>
+                                                        දීමනාපත්‍ර පරීක්ෂා කිරීම. මෙහිදී පහත කරුණු පරීක්ෂා කරයි.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් කොමසාරිස් ජනරාල්ගේ 2008/01 චක්‍රලේඛය අනුව.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් කොමසාරිස් ජනරාල්ගේ 5/2/6/රන්බිම චක්‍රලේඛය හා 2007.11.07 දිනැති චක්‍රලේඛයේ පරිදි පළමු හා දෙවන උපලේඛන සකස් කර තිබේදැයි පරීක්ෂා කළ යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        නිවැරදි දීමනාපත්‍ර ලෙජරගත කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        දීමනාපත්‍ර වල රතු ලේබල් අලවා ජනාධිපති ලේකම් වෙත යැවීමට අවාරණ ලිපිය සකස් කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        ආවරණ ලිපිය සමගින් ජනාධිපති ලේකම් වෙත යොමු කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        අඩුපාඩු පවතින දීමනාපත්‍ර නැවත පළාත් ඉඩම් කොමසාරිස් / නියෝජ්‍ය ඉඩම් කොමසාරිස් වෙත යොමු කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        අතිගරු ජනාධිපතිතුමාගේ අත්සන ලබාගත් පසු එම දීමනාපත්‍ර ජනාධිපති ලේකම් විසින් අප වෙත එවීම.
+                                                    </li>
+                                                    <li>
+                                                        එම දීමනාපත්‍ර වල අනුපිටපත් සහතික කර මුල් පිටපතට කවර දමා නැවත පළාත් ඉඩම් කොමසාරිස් / නියෝජ්‍ය ඉඩම් කොමසාරිස් / සහකාර ඉඩම් කොමසාරිස් වෙත යැවීම.
+                                                    </li>
+                                                    <li>
+                                                        ජනාධිපති ලේකම් කාර්යාලය.
+
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් කොමසාරිස් ජනරාල් මගින් ලැබෙන දීමනාපත්‍ර සඳහා අතිගරු ජනාධිපතිතුමාගේ අත්සනේ ප්‍රතිරූප මුද්‍රාව සහතික කර නැවත ඉඩම් කොමසාරිස් ජනරාල් වෙත යොමු කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් රෙජිස්ටාර් කාර්යාලය.
+                                                    </li>
+                                                    <li>
+                                                        අතිගරු ජනාධිපතිතුමා අත්සන් කළ දීමනාපත්‍ර ප්‍රාදේශීය ලේකම් ප්‍රාදේශීය ලේකම් විසින් ඉඩම් රෙජස්ටාර් කාර්යාලය වෙත යැවූ පසු ඒවා නියමිත පරිදි ලියාපදිංචි කිරීම සිදු කරයි.
+                                                    </li>
+                                                    <li>
+                                                        ඉන්පසු නැවත ප්‍රාදේශීය ලේකම් වෙත යොමු කරයි.
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapse7">
+                                                රජයේ ඉඩම් ආඥාපනත යටතේ පැවරීම් නි‍‍යෝග
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse7">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3"> රජයේ ඉඩම් ආඥාපනත යටතේ පූජා ඔප්පුවක් ලබාදීම
+                                                    </li>
+                                                    <li> පන්සල් ‍වෙනුවෙන් ලබාදේ. පළමුව දායක සභාව සඳහා ප්‍රාරම්භක බදුකරයක් ලබාදේ. දෙවෙනුව විහාරාධිපති ස්වාමීන්වහන්සේට හා ශිෂානුශිෂ්‍ය පරම්පරාවට නිදහස් දීමනා පත්‍රයක් ලබාදේ.
+                                                    </li>
+                                                </ul>
+
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse8" role="button" aria-expanded="false" aria-controls="collapse8">
+                                                ඉඩම් සංවර්ධන ආඥා පනත යටතේ ඉඩම් බැහැර කිරීමේ ක්‍රියාවලිය.
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse8">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3">
+                                                        නියාදන සාදන පත්රයක් ලාබාදීම
+                                                    </li>
+                                                    <li>
+                                                        1979 අංක 43 දරණ ඉඩම් ප්‍රදාන (විශේෂ විධිවිධාන) පනත යටතේ අඩු ආදායම්ලාභීන් (වාර්ෂික අදායම රු. 1,750 ට වඩා අඩු) වෙත රජයේ ඉඩම් බෙදාදීම යටතේ නියාදන සාදන පත්‍ර නිකුත් කිරීම ආරම්භ කරන ලදී.
+                                                    </li>
+                                                    <li>
+                                                        ප්‍රාදේශීය ලේකම් කාර්යාලය.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් නොමැති අය වෙත සුදුසුකම් පරීක්ෂා කර කොටස් බෙදාදීම. මේ සඳහා නියාදන හිමිකම් ප්‍රදානපත්‍රය නිකුත් කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් හිමියන්ගේ ඉල්ලීම මත ඉඩම නියමිත පරිදි සංවර්ධනය කර ඇත්දැයි පරීක්ෂා කර බලා ඉඩම මැනීම සඳහා දිස්ත්‍රික් මිනින්දෝරු අධිකාරි වෙත මැනුම් නියෝගයක් නිකුත් කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        මිනින්දෝරු දෙපාර්තමේන්තුව විසින් නියමිත රේඛා චිත්‍රය සකස් කළ ප්‍රාදේශීය ලේකම් වෙත ඉදිරිපත් කළ පසු ප්‍රාදේශීය ලේකම් විසින් නියමිත ආකෘති පත්‍රය වන ඉ.කො.141 මගින් නිවැරදිව සකසා පළාත් ඉඩම් කොමසාරිස් වෙත / නියෝජ්‍ය ඉඩම් කොමසාරිස් වෙත ඉදිරිපත් කළ යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        නියාදන සාදන පත්‍ර සැකසීමට පෙර අදාල ඉඩම රජයට පවරාගත් බවට ගැසට් පත්‍රයේ ඵලකර තිබිය යුතු අතර එම ගැසට් පත්‍රයේ පිටපතක් ද නියාදන සාදන පත්‍රය සමග ඉදිරිපත් කළ යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        නියාදන සාදන පත්‍ර සඳහා අංක ලබා නොදිය යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        පළාත් ඉඩම් කොමසාරිස් කාර්යාලය / නියෝජ්‍ය ඉඩම් කොමසාරිස් කාර්යාලය.
+                                                    </li>
+                                                    <li>
+                                                        ප්‍රාදේශීය ලේකම් විසින් නියාදන සාදන පත්‍ර නිවැරදිව සකසා ඇත්දැයි පරීක්ෂා කර අදාළ ලේඛන වල සටහන් කරගෙන ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව වෙත යොමු කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        අඩුපාඩු පවතියි නම් ඒවා නැවත ප්‍රාදේශීය ලේකම් වෙත යවා නිවැරදි කරවා ගැනීම.
+                                                    </li>
+                                                    <li>
+                                                        ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව.
+                                                    </li>
+                                                    <li>
+                                                        ලැබෙන නියාදන සාදන පත්‍ර පරීක්ෂා කිරීම. මෙහිදී,
+                                                    </li>
+                                                    <li>
+                                                        අනුරේඛනය සමඟ උපලේඛනයේ සඳහන් තොරතුරු නිවැරදි දැයි බැලීම.
+                                                    </li>
+                                                    <li>
+                                                        සකස් කළ හා පරීක්ෂා කළ අයගේ නම් සඳහන් කරතිබීම.
+                                                    </li>
+                                                    <li>
+                                                        අදාළ ඉඩම රජයට පවරාගත් බවට ගැසට් පත්‍රයේ ඵලකර ඇත්දැයි බැලීම.
+                                                    </li>
+                                                    <li>
+                                                        ජනාධිපතිවරයාගේ නම නිවැරදිව සඳහන් කර ඇත්දැයි බැලීම.
+                                                    </li>
+                                                    <li>
+                                                        නියාදන සාදන පත්‍රකරුගේ ලිපිනය සහිත සම්පූර්ණ නම සටහන් වී දැයි බැලීම.
+                                                    </li>
+                                                    <li>
+                                                        පිටපත් 4 ක් තිබිය යුතුයි. මුල් පිටපත යතුරු ලියනය කර තිබිය යුතුයි. කාබන් පිටපත් අනුරේඛනය දිස්ත්‍රික් මිනින්දෝරු අධිකාරි විසින් සහතික කර ඇත්දැයි පරීක්ෂා කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        සියලුම කරුණු යතුරු ලියනය කර තිබිය යුතුයි. මකන තීන්ත භාවිතා කර නොතිබිය යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        ලෙජරගත කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        නියාදන සාදන පත්‍ර සඳහා අංක ලබාදී ඒවා අදාළ ලෙජරයේ සටහන් කිරීම. අංකය නියාදන සාදන පත්‍රයේ ඉහළ යතුරු ලියනය කිරීම
+                                                    </li>
+                                                    <li>
+                                                        මුල් පිටපත් රතු ලේබලය අලවා අනෙක් පිටපත් 3 වෙන් කර තැබිය යුතුයි.
+                                                    </li>
+                                                    <li>
+                                                        රතු ලේබල අලවන ලද මුල් පිටපත ජනාධිපති ලේකම් වෙත යැවීම සඳහා ආවරණ ලිපිය සකස් කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        ආවරණ ලිපිය සමගින් නියාදන සාදන පත්‍ර ජනාධිපති ලේකම් වෙත යොමු කිරීම.
+                                                    </li>
+                                                    <li>
+                                                        ජනානධිපති ලේකම් විසින් සහතික කර එවූ දීමනාපත්‍ර නියෝජ්‍ය ඉඩම් කොමසාරිස් / පළාත් ඉඩම් කොමසා‍රිස් මගින් ප්‍රාදේශීය ලේකම් වෙත යැවීම.
+                                                    </li>
+                                                    <li>
+                                                        ජනාධිපති ලේකම් කාර්යාලය.
+                                                    </li>
+                                                    <li>
+                                                        නියාදන සාදන පත්‍ර සඳහා අතිගරු ජනාධිපතිතුමාගේ අත්සනේ ප්‍රතිරූප මුද්‍රාව තබා සහතික කර අප වෙත නැවත එවීම.
+                                                    </li>
+                                                    <li>
+                                                        දිස්ත්‍රික් ඉඩම් ලියාපදිංචි කිරීමේ කාර්යාලය.
+                                                    </li>
+                                                    <li>
+                                                        අතිගරු ජනාධිපතිතුමා අත්සන් කර ප්‍රාදේශීය ලේකම් වෙත එවූ නියාදන සාදන පත්‍ර ප්‍රාදේශීය ලේකම් විසින් ලියාපදිංචිය සඳහා මෙම කාර්යාලයට යොමු කරයි.
+                                                    </li>
+                                                    <li>
+                                                        ලියාපදිංචි කර නැවත ප්‍රාදේශීය ලේකම් වෙත යවනු ලබයි.
+                                                    </li>
+                                                    <li>
+                                                        ලියාපදිංචියෙන් පසු ප්‍රාදේශීය ලේකම් විසින් දීමනාපත්‍රය අදාළ ඉඩම් හිමියන් වෙත ප්‍රදානය කරයි.
+                                                    </li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <p class="d-inline-flex gap-1" style="width:100%">
+                                            <a class="btn btn-primary content_p" style="width:100%" data-bs-toggle="collapse" href="#collapse9" role="button" aria-expanded="false" aria-controls="collapse9">
+                                                රජයේ ඉඩම් ආඥාපනත යටතේ විශේෂ දීමනා පත්‍ර
+                                            </a>
+                                        </p>
+                                        <div class="collapse" id="collapse9">
+                                            <div class="card card-body">
+                                                <ul type="none" class="content_p">
+                                                    <li class="mb-3">
+                                                        රජයේ ඉඩම් ආඥාපනත යටතේ විශේෂ දීමනා පත්‍ර
+                                                    </li>
+                                                    <li>
+                                                        වි‍‍ශේෂ හේතූන් මත අතිගරු ජනාධිපතිතුමාගේ අනුමැතිය ලබා ‍දීමනා පත්‍ර නිකුත් කල හැක. ‍‍මෙහිදී මුදල් අය ‍නොකෙ‍රේ. රජයේ විශේෂ සමාජමය ව්‍යාපෘති ‍වෙනු‍වෙන් විවිධ රාජ්‍යමය ආයතන සඳහා ඉඩම් ලබාදීම හා රජයට අතිපත් කරගත් පුද්ගලික ඉඩම් ‍වෙනුවෙන් වන්දි ලබා ‍නොගන්නා අයට විකල්ප ඉඩම් ලබාදීම උදාහරණ‍වේ
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//footer-->
+    <div class="container-fluid bg-dark text-white">
+    <div class="row">
+        <div class="col" style="height:100px">
+            <h1></h1>
+            <p>කතුහිමිකම © 2026 ඉඩම් කොමසාරිස් ජනරාල් දෙපාර්තමේන්තුව. සියළු හිමිකම් ඇවිරිනි.</p>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/calenderScript.js"></script>
+
+</html>
