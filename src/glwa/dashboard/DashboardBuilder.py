@@ -139,29 +139,28 @@ JS = """\
   var rows = Array.prototype.slice.call(document.querySelectorAll("tbody tr[data-search]"));
   var page = 1;
   var perPage = parseInt(document.getElementById("page-size") ? document.getElementById("page-size").value : "25", 10);
-  function pageRows() { return rows.filter(function (r) { return r.style.display !== "none"; }); }
+  var filtered = [];
   function apply() {
     var q = search.value.toLowerCase();
+    filtered = [];
     rows.forEach(function (row) {
       var ok =
         row.dataset.search.indexOf(q) !== -1 &&
         (level.value === "" || row.dataset.level === level.value) &&
         (status.value === "" || row.dataset.status === status.value);
-      row.style.display = ok ? "" : "none";
+      if (ok) filtered.push(row);
+      row.style.display = "none";
     });
     page = 1;
     paginate();
   }
   function paginate() {
-    var shown = pageRows();
+    var shown = filtered;
     var total = shown.length;
     var start = (page - 1) * perPage;
     var end = start + perPage;
-    rows.forEach(function (row) {
-      var vis = row.style.display !== "none";
-      var idx = shown.indexOf(row);
-      if (vis) row.style.display = (idx >= start && idx < end) ? "" : "none";
-    });
+    rows.forEach(function (row) { row.style.display = "none"; });
+    for (var i = start; i < end && i < total; i++) { shown[i].style.display = ""; }
     var countEl = document.getElementById("result-count");
     if (countEl) countEl.textContent = (total === rows.length ? rows.length : start + 1 + "\\u2013" + Math.min(end, total) + " of " + total) + " sites shown";
     renderPagination(total, start, end);
