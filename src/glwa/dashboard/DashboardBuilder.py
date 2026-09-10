@@ -12,7 +12,6 @@ from .DashboardSummary import DashboardSummary
 
 STATUS_ICON = {"pass": "\u2713", "fail": "\u2715", "inconclusive": "?"}
 SCHEMA_VERSION = "1.0.0"
-ROWS_PER_PAGE = 25
 LEVEL_BLURBS = {
     0: "Unavailable or unusable",
     1: "Available, usable and clearly the official site",
