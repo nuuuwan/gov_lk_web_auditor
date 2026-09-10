@@ -163,6 +163,18 @@ class TestDashboardBuilder(unittest.TestCase):
             self.assertIn('class="level-pills"', index)
             self.assertIn("L1 2", index)
 
+    def test_index_shows_level_descriptions_above_counts(self):
+        with tempfile.TemporaryDirectory() as folder:
+            reports = self._reports(Path(folder) / "reports")
+            output = Path(folder) / "site"
+            DashboardBuilder().build(reports, output, None)
+            index = (output / "index.html").read_text(encoding="utf-8")
+            legend_pos = index.index('class="level-legend"')
+            counts_pos = index.index('class="level-counts"')
+            self.assertLess(legend_pos, counts_pos)
+            self.assertIn("Unavailable or unusable", index)
+            self.assertIn("Available, usable and clearly the official site", index)
+
     def test_detail_has_favicon_link(self):
         with tempfile.TemporaryDirectory() as folder:
             reports = self._reports(Path(folder) / "reports")

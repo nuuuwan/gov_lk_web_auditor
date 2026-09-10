@@ -65,6 +65,7 @@ deploys through the `github-pages` environment, and serialises runs with
 | Ministry grouping | Sites grouped under their parent ministry from `websites.json` |
 | Group collapse | Each ministry can be collapsed/expanded via its header button |
 | Group level summary | Per-group pill counts of sites at each achieved level |
+| Level descriptions | Short legend of what each level (0-5) means, above the level counts |
 | Search | Case-insensitive filter across institution, host and URL |
 | Level filter | Filter by achieved level (0-5) |
 | Status filter | Filter by check status (clean, inconclusive, attention) |
