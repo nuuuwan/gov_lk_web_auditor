@@ -20,6 +20,7 @@ class Audit:
     snapshots: list[dict[str, Any]]
     reviewer_decisions: list[dict[str, Any]]
     levels: list[LevelResult]
+    vantage: dict[str, Any]
 
     def to_dict(self) -> dict[str, Any]:
         data = asdict(self)

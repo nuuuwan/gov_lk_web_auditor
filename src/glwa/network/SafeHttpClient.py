@@ -1,3 +1,4 @@
+import os
 import time
 from urllib.parse import urljoin, urlsplit
 
@@ -19,10 +20,12 @@ class SafeHttpClient:
     def get(self, url: str, max_bytes: int) -> FetchedPage:
         redirects = []
         current = url
+        proxy = os.getenv("HTTPS_PROXY") or os.getenv("HTTP_PROXY")
         with httpx.Client(
             follow_redirects=False,
             timeout=self.timeout,
             headers={"User-Agent": "lk-gov-web-auditor/0.1"},
+            proxy=proxy,
         ) as client:
             for _ in range(11):
                 self._validate(current)

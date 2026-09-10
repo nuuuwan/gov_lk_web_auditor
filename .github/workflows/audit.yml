@@ -15,6 +15,11 @@ on:
         required: false
         type: boolean
         default: true
+      shards:
+        description: "Parallel shards to split URLs across (1 = whole list on one runner)"
+        required: false
+        type: string
+        default: "1"
       skip_browser:
         description: "Skip Chromium installation for local workflow smoke tests"
         required: false
@@ -35,9 +40,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  setup:
+    runs-on: [self-hosted, linux, sri-lanka]
+    outputs:
+      shards: ${{ steps.set.outputs.shards }}
+      total: ${{ steps.set.outputs.total }}
+    steps:
+      - id: set
+        run: |
+          N="${{ inputs.shards }}"
+          [ -z "$N" ] && N=1
+          IDS=$(seq 0 $((N - 1)) | jq -R . | jq -cs 'map(tonumber)')
+          echo "shards=$IDS" >> "$GITHUB_OUTPUT"
+          echo "total=$N" >> "$GITHUB_OUTPUT"
+
   audit:
+    needs: setup
     runs-on: [self-hosted, linux, sri-lanka]
     timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.setup.outputs.shards) }}
     steps:
       - uses: actions/checkout@v4
 
@@ -53,6 +77,11 @@ jobs:
         if: ${{ !inputs.skip_browser }}
         run: uv run playwright install chromium
 
+      - name: Log vantage point
+        run: |
+          curl -s https://api.ipify.org; echo
+          curl -s "http://ip-api.com/json/?fields=country,countryCode,org"; echo
+
       - name: Run audit pipeline
         env:
           MAX_URLS: ${{ inputs.max_urls }}
@@ -66,13 +95,15 @@ jobs:
           if [[ -n "$MAX_URLS" ]]; then
             args+=(--max-urls "$MAX_URLS")
           fi
+          args+=(--shard-index "${{ matrix.shard }}")
+          args+=(--shard-total "${{ needs.setup.outputs.total }}")
           PYTHONPATH=. uv run python workflows/pipeline.py "${args[@]}"
 
       - name: Upload audit outputs
         if: ${{ always() && !inputs.skip_artifacts }}
         uses: actions/upload-artifact@v4
         with:
-          name: audit-${{ github.run_id }}
+          name: audit-${{ github.run_id }}-shard-${{ matrix.shard }}
           if-no-files-found: warn
           path: |
             audit.output
@@ -80,7 +111,7 @@ jobs:
             README.md
 
       - name: Open report pull request
-        if: ${{ success() && (github.event_name == 'schedule' || inputs.create_pr) }}
+        if: ${{ success() && needs.setup.outputs.total == '1' && (github.event_name == 'schedule' || inputs.create_pr) }}
         uses: peter-evans/create-pull-request@v7
         with:
           branch: automation/audit-reports

@@ -26,6 +26,7 @@ class AuditReclassifier:
             data["snapshots"],
             data["reviewer_decisions"],
             self.evaluator.evaluate(evidence),
+            data.get("vantage") or {},
         )
 
     def _evidence(self, item: dict) -> Evidence:
