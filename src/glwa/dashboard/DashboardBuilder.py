@@ -83,15 +83,19 @@ th button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; 
 footer.site { padding: 32px 0 56px; color: var(--muted); font-size: 14px; }
 .skip { position: absolute; left: -9999px; }
 .skip:focus { left: 8px; top: 8px; background: var(--card); padding: 8px 12px; z-index: 10; }
-.group-heading { font-size: 15px; font-weight: 700; margin: 24px 0 4px; padding: 6px 12px; background: #ecefec; border-radius: 6px; }
+.group-heading { font-size: 15px; font-weight: 700; background: #ecefec; }
+.group-toggle { all: unset; cursor: pointer; display: inline-flex; align-items: center; width: 100%; font: inherit; font-weight: inherit; }
+.group-toggle::before { content: "\25BC"; margin-right: 8px; font-size: 11px; line-height: 1; }
+.group-toggle[aria-expanded="false"]::before { content: "\25B6"; }
+.group-toggle:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
+tbody.group.collapsed tr:not(.group-heading-row) { display: none; }
+.group-level-summary td { padding: 6px 12px; background: var(--card); }
+.level-pills { display: flex; flex-wrap: wrap; gap: 6px; }
+.lv-pill { display: inline-flex; align-items: center; gap: 6px; background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 1px 10px; font-size: 12px; font-weight: 700; }
 tr[data-search] { cursor: pointer; }
 tr[data-search]:hover { background: var(--card); }
 tr[data-search] a { pointer-events: none; }
-.pagination { display: flex; gap: 6px; flex-wrap: wrap; margin: 12px 0; align-items: center; }
-.pagination button { all: unset; cursor: pointer; padding: 4px 10px; border: 1px solid var(--line); border-radius: 6px; background: var(--card); font-size: 14px; }
-.pagination button[aria-current="page"] { background: var(--accent); color: #fff; border-color: var(--accent); }
-.pagination button:focus-visible { outline: 3px solid var(--focus); outline-offset: 2px; }
-.pagination-info { font-size: 13px; color: var(--muted); }
+.score-note { color: var(--muted); font-size: 13px; max-width: 72ch; margin: 10px 0 0; }
 .collapsible { cursor: pointer; user-select: none; }
 .collapsible::before { content: "\\25B6"; display: inline-block; margin-right: 6px; font-size: 11px; transition: transform 0.2s; }
 .collapsible[aria-expanded="true"]::before { transform: rotate(90deg); }
@@ -118,7 +122,8 @@ tr[data-search] a { pointer-events: none; }
 @media print {
   header.site, footer.site { border: none; padding: 0; }
   header.site { padding-bottom: 8px; }
-  .filters, .pagination, .skip, form, nav { display: none !important; }
+  .filters, .skip, form, nav { display: none !important; }
+  tbody.group.collapsed tr { display: table-row !important; }
   .table-wrap { border: none; overflow: visible; }
   table { font-size: 11px; }
   th, td { padding: 4px 6px; }
@@ -136,58 +141,45 @@ JS = """\
   var search = document.getElementById("q");
   var level = document.getElementById("f-level");
   var status = document.getElementById("f-status");
-  var rows = Array.prototype.slice.call(document.querySelectorAll("tbody tr[data-search]"));
-  var page = 1;
-  var perPage = parseInt(document.getElementById("page-size") ? document.getElementById("page-size").value : "25", 10);
-  var filtered = [];
-  function apply() {
+  var groups = Array.prototype.slice.call(document.querySelectorAll("tbody.group"));
+  function filtered(groups) {
     var q = search.value.toLowerCase();
-    filtered = [];
-    rows.forEach(function (row) {
-      var ok =
-        row.dataset.search.indexOf(q) !== -1 &&
-        (level.value === "" || row.dataset.level === level.value) &&
-        (status.value === "" || row.dataset.status === status.value);
-      if (ok) filtered.push(row);
-      row.style.display = "none";
+    var shown = 0;
+    groups.forEach(function (tb) {
+      var collapsed = tb.classList.contains("collapsed");
+      Array.prototype.slice.call(tb.querySelectorAll("tr[data-search]")).forEach(function (row) {
+        var ok =
+          row.dataset.search.indexOf(q) !== -1 &&
+          (level.value === "" || row.dataset.level === level.value) &&
+          (status.value === "" || row.dataset.status === status.value);
+        if (ok && !collapsed) {
+          row.style.display = "";
+          shown++;
+        } else {
+          row.style.display = "none";
+        }
+      });
     });
-    page = 1;
-    paginate();
-  }
-  function paginate() {
-    var shown = filtered;
-    var total = shown.length;
-    var start = (page - 1) * perPage;
-    var end = start + perPage;
-    rows.forEach(function (row) { row.style.display = "none"; });
-    for (var i = start; i < end && i < total; i++) { shown[i].style.display = ""; }
     var countEl = document.getElementById("result-count");
-    if (countEl) countEl.textContent = (total === rows.length ? rows.length : start + 1 + "\\u2013" + Math.min(end, total) + " of " + total) + " sites shown";
-    renderPagination(total, start, end);
-  }
-  function renderPagination(total, start, end) {
-    var wrap = document.getElementById("pagination");
-    if (!wrap) return;
-    if (total <= perPage) { wrap.innerHTML = ""; return; }
-    var pages = Math.ceil(total / perPage);
-    var html = "";
-    if (page > 1) html += '<button data-pg="' + (page - 1) + '">Prev</button>';
-    for (var i = 1; i <= pages; i++) {
-      if (pages > 7 && i > 2 && i < pages - 1 && Math.abs(i - page) > 1) { if (i === 3 || i === pages - 2) html += '<span>...</span>'; continue; }
-      html += '<button data-pg="' + i + '"' + (i === page ? ' aria-current="page"' : '') + '>' + i + '</button>';
-    }
-    if (page < pages) html += '<button data-pg="' + (page + 1) + '">Next</button>';
-    wrap.innerHTML = html;
-    wrap.querySelectorAll("button[data-pg]").forEach(function (b) {
-      b.addEventListener("click", function () { page = parseInt(b.dataset.pg, 10); paginate(); });
-    });
+    if (countEl) countEl.textContent = shown + " sites shown";
   }
   function makeRowClickable() {
-    rows.forEach(function (row) {
+    document.querySelectorAll("tr[data-search]").forEach(function (row) {
       row.addEventListener("click", function (e) {
         if (e.target.tagName === "A") return;
         var link = row.querySelector("a");
         if (link) window.location.href = link.href;
+      });
+    });
+  }
+  function initGroups() {
+    groups.forEach(function (tb) {
+      var btn = tb.querySelector(".group-toggle");
+      if (!btn) return;
+      btn.addEventListener("click", function () {
+        var collapsed = tb.classList.toggle("collapsed");
+        btn.setAttribute("aria-expanded", collapsed ? "false" : "true");
+        filtered(groups);
       });
     });
   }
@@ -201,26 +193,27 @@ JS = """\
       });
     });
   }
-  [search, level, status].forEach(function (el) { el.addEventListener("input", apply); });
-  var ps = document.getElementById("page-size");
-  if (ps) ps.addEventListener("change", function () { perPage = parseInt(ps.value, 10); page = 1; paginate(); });
+  [search, level, status].forEach(function (el) { el.addEventListener("input", function () { filtered(groups); }); });
   document.querySelectorAll("th button[data-sort]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var key = btn.dataset.sort;
       var asc = btn.getAttribute("aria-sort") !== "ascending";
-      var tbody = document.querySelector("tbody");
-      rows.sort(function (a, b) {
-        var x = a.dataset[key], y = b.dataset[key];
-        var nx = parseFloat(x), ny = parseFloat(y);
-        if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
-        return asc ? x.localeCompare(y) : y.localeCompare(x);
+      groups.forEach(function (tb) {
+        var rows = Array.prototype.slice.call(tb.querySelectorAll("tr[data-search]"));
+        rows.sort(function (a, b) {
+          var x = a.dataset[key], y = b.dataset[key];
+          var nx = parseFloat(x), ny = parseFloat(y);
+          if (!isNaN(nx) && !isNaN(ny)) return asc ? nx - ny : ny - nx;
+          return asc ? x.localeCompare(y) : y.localeCompare(x);
+        });
+        rows.forEach(function (row) { tb.appendChild(row); });
       });
-      rows.forEach(function (row) { tbody.appendChild(row); });
       btn.setAttribute("aria-sort", asc ? "ascending" : "descending");
     });
   });
-  apply();
+  filtered(groups);
   makeRowClickable();
+  initGroups();
   initCollapsibles();
 })();
 """
@@ -303,8 +296,8 @@ class DashboardBuilder:
     def _index(self, sites: list, errors: list, summary: dict) -> str:
         if sites:
             groups = self._group_by_ministry(sites)
-            rows_html = "\n".join(
-                self._grouped_rows(label, group_sites)
+            groups_html = "".join(
+                self._group_table(label, group_sites)
                 for label, group_sites in groups
             )
             table = f"""\
@@ -319,18 +312,8 @@ class DashboardBuilder:
           <th>Translation</th>
           <th>Audited</th>
         </tr></thead>
-        <tbody>
-{rows_html}
-        </tbody>
+{groups_html}
       </table>
-      </div>
-      <div class="pagination" id="pagination" aria-label="Pagination"></div>
-      <div style="margin:8px 0">
-        <label for="page-size" style="font-size:13px;color:var(--muted)">Rows per page</label>
-        <select id="page-size" style="font:inherit;padding:4px 8px;border:1px solid var(--line);border-radius:6px">
-          <option value="10">10</option><option value="25" selected>25</option>
-          <option value="50">50</option><option value="100">100</option>
-        </select>
       </div>
       <noscript><p>Search, filters and sorting need JavaScript. All sites and report links are listed above.</p></noscript>"""
         else:
@@ -381,6 +364,7 @@ class DashboardBuilder:
 <div class="card"><strong>{summary['average_score']:.1f}/{summary['max_score']}</strong><span>Average score</span></div>
 <div class="card"><strong>{html.escape(self._short(summary['last_audit']))}</strong><span>Last audit</span></div>
 </div>
+<p class="score-note">Average score is the mean of every audited site's score, each out of {summary['max_score']}. A site scores up to 1 point per implemented level as passing checks over total checks ({summary['max_score']} levels); Level 0 adds nothing. The method matches the README.</p>
 <ul class="level-counts">{counts}</ul>
 </section>
 <section aria-label="Sites" id="sites">
@@ -416,17 +400,33 @@ class DashboardBuilder:
         ordered.sort(key=lambda item: (item[0] == "", item[0]))
         return ordered
 
-    def _grouped_rows(self, ministry: str, sites: list) -> str:
-        heading = ""
+    def _group_table(self, ministry: str, sites: list) -> str:
+        head = ""
+        summary_row = ""
         if ministry:
             count = len(sites)
-            heading = (
-            f'          <tr><td colspan="6" class="group-heading">'
+            head = (
+                f'          <tr class="group-heading-row"><td colspan="6" '
+                f'class="group-heading"><button type="button" '
+                f'class="group-toggle" aria-expanded="true">'
                 f"{html.escape(ministry)} ({count} site{'s' if count != 1 else ''})"
-                f"</td></tr>\n"
+                f"</button></td></tr>\n"
+            )
+            counts = {number: 0 for number in range(6)}
+            for site in sites:
+                counts[site["level"]] = counts.get(site["level"], 0) + 1
+            pills = "".join(
+                f'<span class="lv-pill"><span class="dot lv{number}" '
+                f'aria-hidden="true"></span>L{number} {counts[number]}</span>'
+                for number in range(6)
+                if counts[number]
+            )
+            summary_row = (
+                f'          <tr class="group-level-summary"><td colspan="6">'
+                f'<div class="level-pills">{pills}</div></td></tr>\n'
             )
         rows = "\n".join(self._row(site) for site in sites)
-        return heading + rows
+        return f"<tbody class=\"group\">\n{head}{summary_row}{rows}\n          </tbody>\n"
 
     def _row(self, site: dict) -> str:
         search = html.escape(

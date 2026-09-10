@@ -35,15 +35,19 @@ example `http://localhost:8000/sites/daph.gov.lk/`.
   detail page so links never leave the static site.
 - The overview table is server-rendered, so core content and report links
   work with JavaScript disabled. JavaScript adds search (with magnifying-glass
-  icon), level/status filters, column sorting, pagination, clickable rows,
-  and collapsible evidence tables.
+  icon), level/status filters, column sorting, clickable rows, group
+  collapse/expand and collapsible evidence tables. Each ministry group shows a
+  level summary (a pill per achieved level with the site count) and can be
+  collapsed via the button in its header row; all groups load expanded and
+  collapse is hidden on print.
 - Status is shown with text, icons (`pass`/`fail`/`inconclusive`) and colour,
   and the layout honours `prefers-color-scheme`, `prefers-reduced-motion`
   and print stylesheets.
 - `data.json` includes `schema_version` and `build_time` for staleness
   debugging.
-- Pages are paginated (25 per page, configurable 10/25/50/100) so the
-  dashboard scales to hundreds of sites without overwhelming the browser.
+- The overview shows an "Average score" note: each site's score is the share
+  of passing checks across its implemented levels (out of `max_score`), and
+  the average is the mean of those site scores, matching the README method.
 
 ## Deployment
 
@@ -59,10 +63,12 @@ deploys through the `github-pages` environment, and serialises runs with
 | Feature | Description |
 | --- | --- |
 | Ministry grouping | Sites grouped under their parent ministry from `websites.json` |
+| Group collapse | Each ministry can be collapsed/expanded via its header button |
+| Group level summary | Per-group pill counts of sites at each achieved level |
 | Search | Case-insensitive filter across institution, host and URL |
 | Level filter | Filter by achieved level (0-5) |
 | Status filter | Filter by check status (clean, inconclusive, attention) |
-| Pagination | 25 rows per page, configurable |
+| All rows shown | No pagination; every site renders in one table |
 | Sortable columns | Click column headers to sort |
 | Clickable rows | Click any row to open the detail page |
 | Evidence toggle | Evidence tables collapsed by default, click to expand |

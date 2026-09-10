@@ -121,15 +121,47 @@ class TestDashboardBuilder(unittest.TestCase):
                     self.assertTrue(target.exists(), f"{page} -> {href}")
                     target.relative_to(output.resolve())
 
-    def test_index_has_search_icon_and_pagination(self):
+    def test_index_has_search_icon_and_no_pagination(self):
         with tempfile.TemporaryDirectory() as folder:
             reports = self._reports(Path(folder) / "reports")
             output = Path(folder) / "site"
             DashboardBuilder().build(reports, output, None)
             index = (output / "index.html").read_text(encoding="utf-8")
             self.assertIn('class="search-icon"', index)
-            self.assertIn('id="pagination"', index)
-            self.assertIn('id="page-size"', index)
+            self.assertNotIn('id="pagination"', index)
+            self.assertNotIn('id="page-size"', index)
+
+    def test_index_groups_are_collapsible_and_expanded(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder) / "reports"
+            for host in ("x.gov.lk", "y.gov.lk"):
+                d = root / host
+                d.mkdir(parents=True)
+                (d / "audit.json").write_text(
+                    json.dumps(_audit(host)), encoding="utf-8"
+                )
+            directory = Path(folder) / "websites.json"
+            directory.write_text(
+                json.dumps(
+                    {
+                        "Depts": {
+                            "Ministry of Test": {
+                                "X": "https://x.gov.lk/",
+                                "Y": "https://y.gov.lk/",
+                            }
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+            output = Path(folder) / "site"
+            DashboardBuilder().build(root, output, directory)
+            index = (output / "index.html").read_text()
+            self.assertIn('class="group"', index)
+            self.assertIn('class="group-toggle"', index)
+            self.assertIn('aria-expanded="true"', index)
+            self.assertIn('class="level-pills"', index)
+            self.assertIn("L1 2", index)
 
     def test_detail_has_favicon_link(self):
         with tempfile.TemporaryDirectory() as folder:
