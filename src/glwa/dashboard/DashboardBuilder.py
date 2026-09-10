@@ -12,7 +12,14 @@ from .DashboardSummary import DashboardSummary
 
 STATUS_ICON = {"pass": "\u2713", "fail": "\u2715", "inconclusive": "?"}
 SCHEMA_VERSION = "1.0.0"
-ROWS_PER_PAGE = 25
+LEVEL_BLURBS = {
+    0: "Unavailable or unusable",
+    1: "Available, usable and clearly the official site",
+    2: "Identify and contact the right office",
+    3: "Complete instructions, requirements, fees and forms",
+    4: "Complete, pay for and track a service online",
+    5: "Services connected across agencies, proactive and accountable",
+}
 
 CSS = """\
 :root {
@@ -57,6 +64,9 @@ h3 { font-size: 17px; margin: 28px 0 8px; }
 .card span { color: var(--muted); font-size: 13px; }
 .level-counts { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 20px; padding: 0; list-style: none; }
 .level-counts li { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 4px 12px; font-size: 14px; }
+.level-legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 6px 16px; margin: 0 0 12px; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
+.level-legend li { display: flex; align-items: baseline; }
+.level-legend strong { color: var(--ink); white-space: nowrap; margin-right: 6px; font-weight: 600; }
 .filters { display: flex; flex-wrap: wrap; gap: 12px; margin: 16px 0; align-items: flex-end; }
 .filters label { display: flex; flex-direction: column; gap: 4px; font-size: 13px; font-weight: 700; }
 .filters input, .filters select { font: inherit; font-weight: 400; padding: 8px 10px; border: 1px solid var(--line); border-radius: 8px; background: var(--card); color: var(--ink); min-width: 200px; }
@@ -340,6 +350,12 @@ class DashboardBuilder:
             f"<strong>{summary['by_level'].get(number, 0)}</strong></li>"
             for number in range(6)
         )
+        legend = "".join(
+            f'<li><span class="dot lv{n}" aria-hidden="true"></span>'
+            f"<strong>Level {n}</strong><span>"
+            f"{html.escape(LEVEL_BLURBS[n])}</span></li>"
+            for n in range(6)
+        )
         return f"""\
 <!doctype html>
 <html lang="en">
@@ -365,6 +381,7 @@ class DashboardBuilder:
 <div class="card"><strong>{html.escape(self._short(summary['last_audit']))}</strong><span>Last audit</span></div>
 </div>
 <p class="score-note">Average score is the mean of every audited site's score, each out of {summary['max_score']}. A site scores up to 1 point per implemented level as passing checks over total checks ({summary['max_score']} levels); Level 0 adds nothing. The method matches the README.</p>
+<ul class="level-legend">{legend}</ul>
 <ul class="level-counts">{counts}</ul>
 </section>
 <section aria-label="Sites" id="sites">
