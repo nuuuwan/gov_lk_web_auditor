@@ -13,6 +13,8 @@ class ReadMeHeader:
             "nuuuwan/glwa)](LICENSE) "
             "[![Author](https://img.shields.io/badge/author-nuuuwan-"
             "181717?logo=github)](https://github.com/nuuuwan) "
+            "[![Author](https://img.shields.io/badge/author-Dushmilan-"
+            "181717?logo=github)](https://github.com/Dushmilan) "
             f"![Last updated](https://img.shields.io/badge/last_updated-"
             f"{updated}-007ec6)\n\n"
             "`glwa` audits Sri Lankan government websites using "
