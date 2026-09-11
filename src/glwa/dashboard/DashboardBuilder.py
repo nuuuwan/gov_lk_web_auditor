@@ -306,8 +306,9 @@ class DashboardBuilder:
     def _index(self, sites: list, errors: list, summary: dict) -> str:
         if sites:
             groups = self._group_by_ministry(sites)
+            by_ministry = summary.get("by_ministry", {})
             groups_html = "".join(
-                self._group_table(label, group_sites)
+                self._group_table(label, group_sites, summary, by_ministry.get(label))
                 for label, group_sites in groups
             )
             table = f"""\
@@ -384,6 +385,7 @@ class DashboardBuilder:
 <ul class="level-legend">{legend}</ul>
 <ul class="level-counts">{counts}</ul>
 </section>
+{self._ministry_scores(summary)}
 <section aria-label="Sites" id="sites">
 <h2>Sites</h2>
 <form class="filters" role="search" onsubmit="return false">
@@ -407,6 +409,31 @@ class DashboardBuilder:
 </html>
 """
 
+    def _ministry_scores(self, summary: dict) -> str:
+        by_ministry = summary.get("by_ministry", {})
+        if not by_ministry:
+            return ""
+        ranked = sorted(
+            by_ministry.items(),
+            key=lambda item: (-item[1]["average_score"], item[0]),
+        )
+        rows = "".join(
+            f"<tr><td>{html.escape(ministry)}</td>"
+            f"<td>{info['count']}</td>"
+            f"<td>{info['average_score']:.1f}/{summary['max_score']}</td></tr>"
+            for ministry, info in ranked
+        )
+        return f"""\
+<section aria-label="Ministry scores">
+<h2>Ministry scores</h2>
+<p class="score-note">Average score per ministry, weakest first. Each ministry average is the mean of its sites' scores, each out of {summary['max_score']}, matching the README method.</p>
+<div class="table-wrap" role="region" aria-label="Ministry scores" tabindex="0">
+<table><thead><tr><th>Ministry</th><th>Sites</th><th>Average score</th></tr></thead>
+<tbody>{rows}</tbody></table>
+</div>
+</section>
+"""
+
     def _group_by_ministry(self, sites: list) -> list[tuple[str, list]]:
         groups: dict[str, list] = {}
         for site in sites:
@@ -417,7 +444,7 @@ class DashboardBuilder:
         ordered.sort(key=lambda item: (item[0] == "", item[0]))
         return ordered
 
-    def _group_table(self, ministry: str, sites: list) -> str:
+    def _group_table(self, ministry: str, sites: list, summary: dict, ministry_info: dict | None = None) -> str:
         head = ""
         summary_row = ""
         if ministry:
@@ -438,6 +465,11 @@ class DashboardBuilder:
                 for number in range(6)
                 if counts[number]
             )
+            if ministry_info and "average_score" in ministry_info:
+                pills += (
+                    f'<span class="lv-pill">Avg '
+                    f"{ministry_info['average_score']:.1f}/{summary['max_score']}</span>"
+                )
             summary_row = (
                 f'          <tr class="group-level-summary"><td colspan="6">'
                 f'<div class="level-pills">{pills}</div></td></tr>\n'

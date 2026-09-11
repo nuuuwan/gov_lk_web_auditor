@@ -294,6 +294,65 @@ class TestDashboardBuilder(unittest.TestCase):
             DashboardBuilder().build(reports, output, None)
             index = (output / "index.html").read_text()
             self.assertNotIn("group-heading", index)
+            self.assertNotIn("Ministry scores", index)
+
+    def test_index_shows_ministry_scores_ranked_weakest_first(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder) / "reports"
+            low = root / "a.gov.lk"
+            low.mkdir(parents=True)
+            (low / "audit.json").write_text(
+                json.dumps(_audit("a.gov.lk")), encoding="utf-8"
+            )
+            high = root / "b.gov.lk"
+            high.mkdir(parents=True)
+            audit = _audit("b.gov.lk")
+            audit["levels"][2] = {
+                "level": 2,
+                "status": "pass",
+                "reason": "Contact published",
+                "checks": [
+                    {"name": "phone", "status": "pass", "reason": "ok"}
+                ],
+            }
+            (high / "audit.json").write_text(
+                json.dumps(audit), encoding="utf-8"
+            )
+            directory = Path(folder) / "websites.json"
+            directory.write_text(
+                json.dumps(
+                    {
+                        "Depts": {
+                            "Ministry of Alpha": {
+                                "A": "https://a.gov.lk/",
+                            },
+                            "Ministry of Zulu": {
+                                "B": "https://b.gov.lk/",
+                            },
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+            output = Path(folder) / "site"
+            DashboardBuilder().build(root, output, directory)
+            index = (output / "index.html").read_text()
+            self.assertIn("Ministry scores", index)
+            # Ranked weakest-first: Zulu (2.0) before Alpha (1.0),
+            # opposite of the alphabetical group order.
+            self.assertLess(
+                index.index("Ministry of Zulu"),
+                index.index("Ministry of Alpha"),
+            )
+            self.assertIn("2.0/3", index)
+            self.assertIn("1.0/3", index)
+            # Toggle buttons stay short: no score text inside them.
+            self.assertIn("(1 site)</button>", index)
+            buttons = re.findall(r"<button[^>]*>(.*?)</button>", index)
+            toggles = [text for text in buttons if "(1 site)" in text]
+            self.assertTrue(toggles)
+            for text in toggles:
+                self.assertNotIn("Avg", text)
 
 
 if __name__ == "__main__":
