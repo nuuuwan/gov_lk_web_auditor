@@ -64,7 +64,8 @@ deploys through the `github-pages` environment, and serialises runs with
 | --- | --- |
 | Ministry grouping | Sites grouped under their parent ministry from `websites.json` |
 | Group collapse | Each ministry can be collapsed/expanded via its header button |
-| Group level summary | Per-group pill counts of sites at each achieved level |
+| Group level summary | Per-group pill counts of sites at each achieved level, plus the group's average score |
+| Ministry scores | Overview table of every ministry's average site score, ranked weakest-first |
 | Level descriptions | Short legend of what each level (0-5) means, above the level counts |
 | Search | Case-insensitive filter across institution, host and URL |
 | Level filter | Filter by achieved level (0-5) |
