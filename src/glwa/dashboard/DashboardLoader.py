@@ -5,6 +5,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from ..classification.LevelEvaluator import LevelEvaluator
+from ..directory.Directory import normalize_url
 from ..reporting.WebsiteScore import WebsiteScore
 
 COPIED_FILES = (
@@ -197,6 +198,7 @@ class DashboardLoader:
             for value in node:
                 self._walk(value, trail, names, ministries)
             return
+        node = normalize_url(node)
         if isinstance(node, str) and node.startswith("http"):
             label = self._flatten_name(trail)
             names[node] = label

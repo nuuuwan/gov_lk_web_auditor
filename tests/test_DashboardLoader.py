@@ -143,6 +143,44 @@ class TestDashboardLoader(unittest.TestCase):
             sites, _ = DashboardLoader().load(root, directory)
             self.assertEqual("Minister of Health", sites[0]["ministry"])
 
+    def test_resolves_schemeless_directory_entry(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder) / "reports"
+            host = root / "www.ism.gov.lk"
+            host.mkdir(parents=True)
+            (host / "audit.json").write_text(
+                json.dumps(
+                    _audit(
+                        [_level(0, "pass")],
+                        url="https://www.ism.gov.lk/",
+                        normalized_url="https://www.ism.gov.lk/",
+                    )
+                ),
+                encoding="utf-8",
+            )
+            directory = Path(folder) / "websites.json"
+            directory.write_text(
+                json.dumps(
+                    {
+                        "Depts": {
+                            "Minister of Youth Affairs and Sports": {
+                                "Institute of Sports Medicine": "www.ism.gov.lk"
+                            }
+                        }
+                    }
+                ),
+                encoding="utf-8",
+            )
+            sites, _ = DashboardLoader().load(root, directory)
+            self.assertEqual(
+                "Minister of Youth Affairs and Sports / "
+                "Institute of Sports Medicine",
+                sites[0]["institution"],
+            )
+            self.assertEqual(
+                "Minister of Youth Affairs and Sports", sites[0]["ministry"]
+            )
+
     def test_groups_sorted_by_ministry_then_level(self):
         with tempfile.TemporaryDirectory() as folder:
             root = Path(folder) / "reports"
