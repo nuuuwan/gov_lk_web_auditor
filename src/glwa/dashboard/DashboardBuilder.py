@@ -698,7 +698,7 @@ class DashboardBuilder:
 <h2>Uptime history</h2>
 <p>{self._uptime_window("7 days", week)} &middot; {self._uptime_window("30 days", month)} &middot; Last down: {html.escape(self._short(last_down) if last_down else "—")}</p>
 <div class="up-chart" role="img" aria-label="Recent daily status checks, oldest to newest">{bars}</div>
-<p class="score-note">Daily lightweight check (DNS + HTTP + TLS) from the Sri Lanka runner. Each bar is one daily check; bars grow as history accumulates. Comparisons across sites are fairest once every site has a full month of checks.</p>"""
+<p class="score-note">Daily lightweight check (DNS + HTTP + TLS) from the scheduled GitHub runner. Each bar is one daily check; bars grow as history accumulates. Comparisons across sites are fairest once every site has a full month of checks.</p>"""
 
     def _uptime_window(self, label: str, window: dict) -> str:
         pct = window.get("uptime_pct")
