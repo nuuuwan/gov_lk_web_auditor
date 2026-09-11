@@ -315,12 +315,23 @@ class DashboardBuilder:
         } | {"detail_url": f"sites/{site['host']}/"}
 
     def _index(self, sites: list, errors: list, summary: dict) -> str:
+        uptime_col = any(
+            (site.get("uptime") or {}).get("total_checks") for site in sites
+        )
         if sites:
             groups = self._group_by_ministry(sites)
             by_ministry = summary.get("by_ministry", {})
             groups_html = "".join(
-                self._group_table(label, group_sites, summary, by_ministry.get(label))
+                self._group_table(
+                    label, group_sites, summary, by_ministry.get(label),
+                    uptime_col,
+                )
                 for label, group_sites in groups
+            )
+            uptime_th = (
+                '<th><button data-sort="uptime" aria-sort="none">'
+                "Uptime &#9650;&#9660;</button></th>"
+                if uptime_col else ""
             )
             table = f"""\
       <p id="result-count" aria-live="polite"></p>
@@ -331,7 +342,7 @@ class DashboardBuilder:
           <th><button data-sort="level" aria-sort="none">Level &#9650;&#9660;</button></th>
           <th><button data-sort="score" aria-sort="none">Score &#9650;&#9660;</button></th>
           <th>Status</th>
-          <th><button data-sort="uptime" aria-sort="none">Uptime &#9650;&#9660;</button></th>
+          {uptime_th}
           <th>Translation</th>
           <th>Audited</th>
         </tr></thead>
@@ -362,6 +373,9 @@ class DashboardBuilder:
             f"<li>{html.escape(self._level_name(number))}: "
             f"<strong>{summary['by_level'].get(number, 0)}</strong></li>"
             for number in range(6)
+        )
+        uptime_src = (
+            " and <code>uptime_history/*/checks.jsonl</code>" if uptime_col else ""
         )
         legend = "".join(
             f'<li><span class="dot lv{n}" aria-hidden="true"></span>'
@@ -415,7 +429,7 @@ class DashboardBuilder:
 {problems}
 </section>
 </main>
-<footer class="site"><p>Built from <code>latest_audit_reports/*/audit.json</code> and <code>uptime_history/*/checks.jsonl</code>. Scores match the repository README method. See <a href="https://github.com/nuuuwan/gov_lk_web_auditor">gov_lk_web_auditor</a> for Markdown reports and method docs.</p></footer>
+<footer class="site"><p>Built from <code>latest_audit_reports/*/audit.json</code>{uptime_src}. Scores match the repository README method. See <a href="https://github.com/nuuuwan/gov_lk_web_auditor">gov_lk_web_auditor</a> for Markdown reports and method docs.</p></footer>
 <script src="app.js" defer></script>
 </body>
 </html>
@@ -456,13 +470,14 @@ class DashboardBuilder:
         ordered.sort(key=lambda item: (item[0] == "", item[0]))
         return ordered
 
-    def _group_table(self, ministry: str, sites: list, summary: dict, ministry_info: dict | None = None) -> str:
+    def _group_table(self, ministry: str, sites: list, summary: dict, ministry_info: dict | None = None, uptime_col: bool = True) -> str:
         head = ""
         summary_row = ""
+        span = "7" if uptime_col else "6"
         if ministry:
             count = len(sites)
             head = (
-                f'          <tr class="group-heading-row"><td colspan="7" '
+                f'          <tr class="group-heading-row"><td colspan="{span}" '
                 f'class="group-heading"><button type="button" '
                 f'class="group-toggle" aria-expanded="true">'
                 f"{html.escape(ministry)} ({count} site{'s' if count != 1 else ''})"
@@ -483,13 +498,13 @@ class DashboardBuilder:
                     f"{ministry_info['average_score']:.1f}/{summary['max_score']}</span>"
                 )
             summary_row = (
-                f'          <tr class="group-level-summary"><td colspan="7">'
+                f'          <tr class="group-level-summary"><td colspan="{span}">'
                 f'<div class="level-pills">{pills}</div></td></tr>\n'
             )
-        rows = "\n".join(self._row(site) for site in sites)
+        rows = "\n".join(self._row(site, uptime_col) for site in sites)
         return f"<tbody class=\"group\">\n{head}{summary_row}{rows}\n          </tbody>\n"
 
-    def _row(self, site: dict) -> str:
+    def _row(self, site: dict, uptime_col: bool = True) -> str:
         search = html.escape(
             f"{site['institution']} {site['host']} {site['normalized_url']} "
             f"{site.get('ministry', '')}".lower()
@@ -497,11 +512,13 @@ class DashboardBuilder:
         status = self._status_text(site)
         uptime = self._uptime_text(site)
         uptime_sort = self._uptime_sort(site)
+        uptime_td = f"<td>{uptime}</td>" if uptime_col else ""
+        uptime_attr = f' data-uptime="{uptime_sort}"' if uptime_col else ""
         href = f"sites/{html.escape(site['host'])}/"
         return (
             f'          <tr data-search="{search}" data-level="{site["level"]}" '
             f'data-status="{site["status_group"]}" data-site="{search}" '
-            f'data-score="{site["score"]}" data-uptime="{uptime_sort}">'
+            f'data-score="{site["score"]}"{uptime_attr}>'
             f"<td><a href=\"{href}\">"
             f"{html.escape(site['institution'])}</a><br />"
             f"<small>{html.escape(site['normalized_url'])}</small></td>"
@@ -509,7 +526,7 @@ class DashboardBuilder:
             f"{html.escape(site['level_label'])}</td>"
             f"<td>{site['score']:.1f}/{site['max_score']}</td>"
             f"<td>{status}</td>"
-            f"<td>{uptime}</td>"
+            f"{uptime_td}"
             f"<td>{self._translation_badge(site['translation'])}</td>"
             f"<td>{html.escape(self._short(site['completed_at']))}</td></tr>"
         )
@@ -543,7 +560,17 @@ class DashboardBuilder:
                 '<h2>Evidence (0)</h2>\n<p>No evidence items recorded.</p>'
             )
         translation = self._translation_section(site["translation"])
-        uptime = self._uptime_section(site)
+        has_uptime = bool((site.get("uptime") or {}).get("total_checks"))
+        uptime_meta = (
+            "<div><span>Uptime (30d)</span><strong>"
+            f"{self._uptime_text(site)}</strong></div>"
+            if has_uptime else ""
+        )
+        uptime_section = (
+            f'<section aria-label="Uptime history">\n'
+            f"{self._uptime_section(site)}\n</section>"
+            if has_uptime else ""
+        )
         return f"""\
 <!doctype html>
 <html lang="en">
@@ -568,7 +595,7 @@ class DashboardBuilder:
 <div><span>Score</span><strong>{site['score']:.1f}/{site['max_score']}</strong></div>
 <div><span>Audited</span><strong>{html.escape(self._full_date(site['completed_at']))}</strong></div>
 <div><span>Checks</span><strong>{site['failed_checks']} failed &middot; {site['inconclusive_checks']} inconclusive</strong></div>
-<div><span>Uptime (30d)</span><strong>{self._uptime_text(site)}</strong></div>
+{uptime_meta}
 </div>
 </section>
 <section aria-label="Level progression" id="levels">
@@ -580,9 +607,7 @@ class DashboardBuilder:
 </tbody></table>
 </div>
 </section>
-<section aria-label="Uptime history">
-{uptime}
-</section>
+{uptime_section}
 <section aria-label="Check results">
 <h2>Check results</h2>
 {check_sections or '<p>No individual check results recorded.</p>'}
@@ -672,26 +697,29 @@ class DashboardBuilder:
         noun = "outage" if outages == 1 else "outages"
         dot = "up-good" if pct >= 99 else "up-warn" if pct >= 95 else "up-bad"
         return (
+            f'<span title="{html.escape(self._uptime_title(site))}">'
             f'<span class="up-dot {dot}" aria-hidden="true"></span>'
-            f"{pct:.1f}% &middot; {outages} {noun} (30d)"
+            f"{pct:.1f}% &middot; {outages} {noun} (30d)</span>"
+        )
+
+    def _uptime_title(self, site: dict) -> str:
+        uptime = site.get("uptime") or {}
+        week = self._uptime_window("7d", uptime.get("last_7_days") or {})
+        month = self._uptime_window("30d", uptime.get("last_30_days") or {})
+        last_down = uptime.get("last_down_at")
+        checked = uptime.get("last_checked_at")
+        return (
+            f"{week} · {month} · last checked "
+            f"{self._short(checked) if checked else '—'} · last down "
+            f"{self._short(last_down) if last_down else 'never'}"
         )
 
     def _uptime_section(self, site: dict) -> str:
         uptime = site.get("uptime") or {}
         week = uptime.get("last_7_days") or {}
         month = uptime.get("last_30_days") or {}
-        if not uptime.get("total_checks"):
-            return (
-                "<h2>Uptime history</h2>"
-                "<p>No status checks recorded yet. The daily status check "
-                "appends results to <code>uptime_history/&lt;host&gt;/"
-                "checks.jsonl</code>.</p>"
-            )
         bars = "\n".join(
-            f"<span class=\"up-bar {html.escape(str(item.get('status', '')))}\" "
-            f"title=\"{html.escape(str(item.get('checked_at', '')))}: "
-            f"{html.escape(str(item.get('status', '')))}\"></span>"
-            for item in uptime.get("history", [])
+            self._uptime_bar(item) for item in uptime.get("history", [])
         )
         last_down = uptime.get("last_down_at")
         return f"""\
@@ -699,6 +727,16 @@ class DashboardBuilder:
 <p>{self._uptime_window("7 days", week)} &middot; {self._uptime_window("30 days", month)} &middot; Last down: {html.escape(self._short(last_down) if last_down else "—")}</p>
 <div class="up-chart" role="img" aria-label="Recent daily status checks, oldest to newest">{bars}</div>
 <p class="score-note">Daily lightweight check (DNS + HTTP + TLS) from the scheduled GitHub runner. Each bar is one daily check; bars grow as history accumulates. Comparisons across sites are fairest once every site has a full month of checks.</p>"""
+
+    def _uptime_bar(self, item: dict) -> str:
+        status = str(item.get("status", ""))
+        checked = self._short(str(item.get("checked_at", "")))
+        reason = str(item.get("reason") or "no detail recorded")
+        return (
+            f"<span class=\"up-bar {html.escape(status)}\" "
+            f"title=\"{html.escape(checked)} · {html.escape(status)} · "
+            f"{html.escape(reason)}\"></span>"
+        )
 
     def _uptime_window(self, label: str, window: dict) -> str:
         pct = window.get("uptime_pct")

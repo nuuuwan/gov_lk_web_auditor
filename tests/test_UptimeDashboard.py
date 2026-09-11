@@ -110,7 +110,7 @@ class TestUptimeDashboard(unittest.TestCase):
             self.assertIn("uptime", data["sites"][0])
             self.assertEqual("1.1.0", data["schema_version"])
 
-    def test_index_without_history_says_no_data(self):
+    def test_index_hides_uptime_without_any_history(self):
         with tempfile.TemporaryDirectory() as folder:
             reports = Path(folder) / "reports"
             target = reports / "a.gov.lk"
@@ -123,7 +123,48 @@ class TestUptimeDashboard(unittest.TestCase):
                 reports, output, None, Path(folder) / "missing"
             )
             index = (output / "index.html").read_text(encoding="utf-8")
+            self.assertNotIn("Uptime", index)
+            self.assertNotIn("data-uptime", index)
+            detail = (output / "sites" / "a.gov.lk" / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertNotIn("Uptime history", detail)
+            self.assertNotIn("Uptime (30d)", detail)
+
+    def test_mixed_histories_show_column_with_gap(self):
+        with tempfile.TemporaryDirectory() as folder:
+            reports = Path(folder) / "reports"
+            uptime = Path(folder) / "uptime_history"
+            for host in ("a.gov.lk", "b.gov.lk"):
+                target = reports / host
+                target.mkdir(parents=True)
+                (target / "audit.json").write_text(
+                    json.dumps(_audit(host)), encoding="utf-8"
+                )
+            _history("a.gov.lk", uptime)
+            output = Path(folder) / "site"
+            DashboardBuilder().build(reports, output, None, uptime)
+            index = (output / "index.html").read_text(encoding="utf-8")
+            self.assertIn("Uptime", index)
             self.assertIn("No data yet", index)
+
+    def test_bar_tooltips_carry_check_detail(self):
+        with tempfile.TemporaryDirectory() as folder:
+            reports, uptime = self._roots(folder)
+            host = "a.gov.lk"
+            with (uptime / host / "checks.jsonl").open("w", encoding="utf-8") as handle:
+                handle.write(json.dumps({
+                    "host": host,
+                    "checked_at": SriLankaTime.now().isoformat(),
+                    "status": "down",
+                    "reason": "Server errors: HTTP 503",
+                }) + "\n")
+            output = Path(folder) / "site"
+            DashboardBuilder().build(reports, output, None, uptime)
+            detail = (output / "sites" / host / "index.html").read_text(
+                encoding="utf-8"
+            )
+            self.assertIn("Server errors: HTTP 503", detail)
 
 
 if __name__ == "__main__":

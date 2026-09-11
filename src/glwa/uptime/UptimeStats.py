@@ -21,7 +21,11 @@ class UptimeStats:
             "last_7_days": cls._window(ordered, 7, now),
             "last_30_days": cls._window(ordered, 30, now),
             "history": [
-                {"checked_at": item.get("checked_at"), "status": item.get("status")}
+                {
+                    "checked_at": item.get("checked_at"),
+                    "status": item.get("status"),
+                    "reason": item.get("reason"),
+                }
                 for item in ordered[-30:]
             ],
         }
