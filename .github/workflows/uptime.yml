@@ -1,0 +1,112 @@
+name: Daily website status check
+
+on:
+  schedule:
+    - cron: "0 3 * * *"
+  workflow_dispatch:
+    inputs:
+      max_urls:
+        description: "Maximum number of URLs to check; leave empty for all URLs"
+        required: false
+        type: string
+        default: ""
+      shards:
+        description: "Parallel shards to split URLs across (1 = whole list on one runner)"
+        required: false
+        type: string
+        default: "1"
+      skip_artifacts:
+        description: "Skip artifact upload for local workflow smoke tests"
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: website-status-check
+  cancel-in-progress: false
+
+jobs:
+  setup:
+    runs-on: [self-hosted, linux, sri-lanka]
+    outputs:
+      shards: ${{ steps.set.outputs.shards }}
+      total: ${{ steps.set.outputs.total }}
+    steps:
+      - id: set
+        run: |
+          N="${{ inputs.shards }}"
+          [ -z "$N" ] && N=1
+          IDS=$(seq 0 $((N - 1)) | jq -R . | jq -cs 'map(tonumber)')
+          echo "shards=$IDS" >> "$GITHUB_OUTPUT"
+          echo "total=$N" >> "$GITHUB_OUTPUT"
+
+  uptime:
+    needs: setup
+    runs-on: [self-hosted, linux, sri-lanka]
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: ${{ fromJSON(needs.setup.outputs.shards) }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v6
+
+      - name: Install Python
+        run: uv python install 3.12
+
+      - name: Install locked environment
+        run: uv sync --locked
+
+      - name: Log vantage point
+        run: |
+          curl -s https://api.ipify.org; echo
+          curl -s "http://ip-api.com/json/?fields=country,countryCode,org"; echo
+
+      - name: Run status checks
+        env:
+          MAX_URLS: ${{ inputs.max_urls }}
+        run: |
+          repo_root="$(pwd)"
+          while [[ ! -f "$repo_root/pyproject.toml" && "$repo_root" != "/" ]]; do
+            repo_root="$(dirname "$repo_root")"
+          done
+          cd "$repo_root"
+          args=()
+          if [[ -n "$MAX_URLS" ]]; then
+            args+=(--max-urls "$MAX_URLS")
+          fi
+          args+=(--shard-index "${{ matrix.shard }}")
+          args+=(--shard-total "${{ needs.setup.outputs.total }}")
+          PYTHONPATH=. uv run python workflows/uptime.py "${args[@]}"
+
+      - name: Upload status history
+        if: ${{ always() && !inputs.skip_artifacts }}
+        uses: actions/upload-artifact@v4
+        with:
+          name: uptime-${{ github.run_id }}-shard-${{ matrix.shard }}
+          if-no-files-found: warn
+          path: uptime_history
+
+      - name: Open history pull request
+        if: ${{ success() && needs.setup.outputs.total == '1' && (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: automation/uptime-history
+          delete-branch: true
+          add-paths: uptime_history
+          commit-message: "chore(uptime): refresh uptime history"
+          title: "chore(uptime): refresh uptime history"
+          body: |
+            ## what changed
+
+            Append the daily website status check results from the Sri Lankan self-hosted runner.
+
+            ## verification
+
+            Status run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

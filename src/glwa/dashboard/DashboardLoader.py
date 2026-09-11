@@ -7,6 +7,8 @@ from urllib.parse import urlparse
 from ..classification.LevelEvaluator import LevelEvaluator
 from ..directory.Directory import normalize_url
 from ..reporting.WebsiteScore import WebsiteScore
+from ..uptime.UptimeStats import UptimeStats
+from ..uptime.UptimeStore import UptimeStore
 
 COPIED_FILES = (
     "audit.json",
@@ -20,16 +22,20 @@ COPIED_FILES = (
 
 class DashboardLoader:
     def load(
-        self, reports: Path, directory: Path | None = None
+        self,
+        reports: Path,
+        directory: Path | None = None,
+        uptime_root: Path | None = Path("uptime_history"),
     ) -> tuple[list[dict], list[dict]]:
         names, ministries = self._institutions(directory) if directory else ({}, {})
+        uptime = UptimeStore(uptime_root) if uptime_root else None
         sites: list[dict] = []
         errors: list[dict] = []
         paths = sorted(reports.glob("*/audit.json")) if reports.is_dir() else []
         for path in paths:
             try:
                 audit = json.loads(path.read_text(encoding="utf-8"))
-                sites.append(self._site(path, audit, names, ministries))
+                sites.append(self._site(path, audit, names, ministries, uptime))
             except (OSError, ValueError) as exc:
                 errors.append(
                     {"host": path.parent.name, "message": str(exc)}
@@ -45,7 +51,8 @@ class DashboardLoader:
         return sites, errors
 
     def _site(
-        self, path: Path, audit: dict, names: dict, ministries: dict
+        self, path: Path, audit: dict, names: dict, ministries: dict,
+        uptime: UptimeStore | None = None,
     ) -> dict:
         if not isinstance(audit, dict) or not isinstance(
             audit.get("levels"), list
@@ -85,6 +92,7 @@ class DashboardLoader:
                 check.get("status") == "inconclusive" for check in checks
             ),
             "status_group": self._group(checks),
+            "uptime": self._uptime(host, uptime),
             "translation": self._translation_summary(translation),
             "levels": audit["levels"],
             "evidence": evidence if isinstance(evidence, list) else [],
@@ -151,6 +159,14 @@ class DashboardLoader:
         if any(check.get("status") == "inconclusive" for check in checks):
             return "inconclusive"
         return "clean"
+
+    def _uptime(self, host: str, uptime: UptimeStore | None) -> dict:
+        if uptime is None:
+            return UptimeStats.summarize([])
+        try:
+            return UptimeStats.summarize(uptime.read(host))
+        except OSError:
+            return UptimeStats.summarize([])
 
     def _institution(
         self, normalized: str, url: str, host: str, names: dict
