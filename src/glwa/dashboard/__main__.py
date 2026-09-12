@@ -11,9 +11,12 @@ def main() -> None:
     parser.add_argument("--reports", default="latest_audit_reports")
     parser.add_argument("--output", default="site")
     parser.add_argument("--directory", default="static_data/websites.json")
+    parser.add_argument("--uptime-root", default="uptime_history")
     args = parser.parse_args()
+    uptime_root = Path(args.uptime_root) if args.uptime_root else None
     result = DashboardBuilder().build(
-        Path(args.reports), Path(args.output), Path(args.directory)
+        Path(args.reports), Path(args.output), Path(args.directory),
+        uptime_root,
     )
     summary = result["summary"]
     print(
