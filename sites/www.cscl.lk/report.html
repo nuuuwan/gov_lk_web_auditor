@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Government website audit · http://www.cscl.lk/</title>
+    <style>
+      :root {
+        --ink: #17201d;
+        --paper: #f4f6f2;
+        --line: #cbd2cc;
+        --green: #176b4d;
+        --red: #a33b2b;
+        --amber: #8a5a00;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(120deg, #edf2ed, #f8f7f2);
+        color: var(--ink);
+        font:
+          15px/1.5 Georgia,
+          serif;
+      }
+      header,
+      main {
+        width: min(1100px, calc(100% - 32px));
+        margin: auto;
+      }
+      header {
+        padding: 56px 0 28px;
+        border-bottom: 2px solid var(--ink);
+      }
+      .eyebrow {
+        font:
+          700 12px/1.2 ui-monospace,
+          monospace;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 8px 0;
+        font-size: clamp(28px, 5vw, 54px);
+        overflow-wrap: anywhere;
+        letter-spacing: 0;
+      }
+      .result {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        padding: 24px 0;
+      }
+      .metric strong {
+        display: block;
+        font:
+          700 20px/1.3 ui-monospace,
+          monospace;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 56px;
+        background: #fff;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        background: #e5e9e4;
+        font:
+          700 12px/1.2 ui-monospace,
+          monospace;
+        text-transform: uppercase;
+      }
+      .pass {
+        color: var(--green);
+      }
+      .fail {
+        color: var(--red);
+      }
+      .error,
+      .review {
+        color: var(--amber);
+      }
+      span {
+        font:
+          700 13px/1.3 ui-monospace,
+          monospace;
+      }
+      @media (max-width: 640px) {
+        header {
+          padding-top: 32px;
+        }
+        th:nth-child(1),
+        td:nth-child(1) {
+          display: none;
+        }
+        td {
+          padding: 10px 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">glwa · Website audit</div>
+      <h1>http://www.cscl.lk/</h1>
+    </header>
+    <main>
+      <section class="result">
+        <div class="metric">Finding<strong>fail</strong></div>
+        <div class="metric">Confidence<strong>100%</strong></div>
+        <div class="metric">Completed<strong>2026-09-08T23:58:09.530586+05:30</strong></div>
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Status</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Level 0</td><td><span class='pass'>pass</span></td><td>Baseline website grade</td></tr><tr><td>Level 1</td><td><span class='fail'>fail</span></td><td>Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)</td></tr><tr><td>Level 2</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 1 did not pass</td></tr><tr><td>Level 3</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 2 did not pass</td></tr><tr><td>Level 4</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 3 did not pass</td></tr><tr><td>Level 5</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 4 did not pass</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Check</th>
+            <th>Status</th>
+            <th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>dns</td><td><span class='pass'>pass</span></td><td>Public DNS resolved</td></tr><tr><td>domain_registration</td><td><span class='error'>error</span></td><td>Domain is absent from RDAP</td></tr><tr><td>tls</td><td><span class='pass'>pass</span></td><td>TLS certificate valid</td></tr><tr><td>tls_browser_error</td><td><span class='fail'>fail</span></td><td>Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 2: HTTP 200 at http://www.cscl.lk/</td></tr><tr><td>tls_browser_error</td><td><span class='fail'>fail</span></td><td>Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 4: HTTP 200 at http://www.cscl.lk/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 5: HTTP 200 at http://www.cscl.lk/contactUs.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 6: HTTP 200 at http://www.cscl.lk/index.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 7: HTTP 200 at http://www.cscl.lk/vessel.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 8: HTTP 200 at http://www.cscl.lk/Agency.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 9: HTTP 200 at http://www.cscl.lk/circulars.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 10: HTTP 200 at http://www.cscl.lk/tenders.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 11: HTTP 200 at http://www.cscl.lk/News.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 12: HTTP 200 at http://www.cscl.lk/Gallary.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 13: HTTP 200 at http://www.cscl.lk/Career.html</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 14: HTTP 200 at http://www.cscl.lk/Cadets.html</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0714 468356 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 449 4</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: shanikachamodi479@gmail.com</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ceyloneshippingweb@gmail.com</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 449 486</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0714 468356 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 449 4</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: shanikachamodi479@gmail.com</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ceyloneshippingweb@gmail.com</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 449 486</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2324873 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2 328997 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2421525 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2449486 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 449 4</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215730 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0715656715 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0704869561 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2422807 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0706542990 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0713428317 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2329903 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 11 2497800 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0714468356 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0776680734 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215721 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215977 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215723 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215702 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215725 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215704 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2436268 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +9411 2328772 (</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215712 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215729 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0710215719 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dpa@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ia@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dm-bd@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dm-fin@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: am2-lni@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: cscl@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dm-lni@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: agm-docu@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ao1-admin@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dm-tech@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: agm-bd@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: gm@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: mgr-liner@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dm-logis@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: saman@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dm-docu@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: chairman@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ts@cscl.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 449 486</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0714 468356 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 449 4</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: shanikachamodi479@gmail.com</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ceyloneshippingweb@gmail.com</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 449 486</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: division</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>fees_and_payment</td><td><span class='pass'>pass</span></td><td>Published fees and payment: rs 6</td></tr><tr><td>downloadable_form</td><td><span class='pass'>pass</span></td><td>Published downloadable form: http://www.cscl.lk/tenders/6-18-2026/FORM1-Form for  Submitting of Bids -001B-2026.docx</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: technical_crew@cscl.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: technical@cscl.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800 technical@cscl.lk</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 00 0112 497 8</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0100. 0112 49</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: shanikachamodi479@gmail.com</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ceyloneshippingweb@gmail.com</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: technical@cscl.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: #27, MICH Building, Sir Razik Fareed Mawatha (Bristol Street), Colombo 01, Sri Lanka 0100. 0112 497 800 0112 497 800 technical@cscl.lk</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: department</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: circular</td></tr><tr><td>page_text</td><td><span class='pass'>pass</span></td><td>Substantive page content: 21818 visible characters across 12 pages</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Government website audit · http://www.prisons.gov.lk/</title>
+    <style>
+      :root {
+        --ink: #17201d;
+        --paper: #f4f6f2;
+        --line: #cbd2cc;
+        --green: #176b4d;
+        --red: #a33b2b;
+        --amber: #8a5a00;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(120deg, #edf2ed, #f8f7f2);
+        color: var(--ink);
+        font:
+          15px/1.5 Georgia,
+          serif;
+      }
+      header,
+      main {
+        width: min(1100px, calc(100% - 32px));
+        margin: auto;
+      }
+      header {
+        padding: 56px 0 28px;
+        border-bottom: 2px solid var(--ink);
+      }
+      .eyebrow {
+        font:
+          700 12px/1.2 ui-monospace,
+          monospace;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 8px 0;
+        font-size: clamp(28px, 5vw, 54px);
+        overflow-wrap: anywhere;
+        letter-spacing: 0;
+      }
+      .result {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        padding: 24px 0;
+      }
+      .metric strong {
+        display: block;
+        font:
+          700 20px/1.3 ui-monospace,
+          monospace;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 56px;
+        background: #fff;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        background: #e5e9e4;
+        font:
+          700 12px/1.2 ui-monospace,
+          monospace;
+        text-transform: uppercase;
+      }
+      .pass {
+        color: var(--green);
+      }
+      .fail {
+        color: var(--red);
+      }
+      .error,
+      .review {
+        color: var(--amber);
+      }
+      span {
+        font:
+          700 13px/1.3 ui-monospace,
+          monospace;
+      }
+      @media (max-width: 640px) {
+        header {
+          padding-top: 32px;
+        }
+        th:nth-child(1),
+        td:nth-child(1) {
+          display: none;
+        }
+        td {
+          padding: 10px 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">glwa · Website audit</div>
+      <h1>http://www.prisons.gov.lk/</h1>
+    </header>
+    <main>
+      <section class="result">
+        <div class="metric">Finding<strong>inconclusive</strong></div>
+        <div class="metric">Confidence<strong>50%</strong></div>
+        <div class="metric">Completed<strong>2026-09-08T23:55:04.352082+05:30</strong></div>
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Status</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Level 0</td><td><span class='pass'>pass</span></td><td>Baseline website grade</td></tr><tr><td>Level 1</td><td><span class='inconclusive'>inconclusive</span></td><td>An HTTP probe was transient; [Errno 111] Connection refused; [Errno 111] Connection refused</td></tr><tr><td>Level 2</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 1 did not pass</td></tr><tr><td>Level 3</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 2 did not pass</td></tr><tr><td>Level 4</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 3 did not pass</td></tr><tr><td>Level 5</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 4 did not pass</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Check</th>
+            <th>Status</th>
+            <th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>dns</td><td><span class='pass'>pass</span></td><td>Public DNS resolved</td></tr><tr><td>domain_registration</td><td><span class='error'>error</span></td><td>Domain is absent from RDAP</td></tr><tr><td>tls</td><td><span class='error'>error</span></td><td>[Errno 111] Connection refused</td></tr><tr><td>http</td><td><span class='error'>error</span></td><td>Probe 1: [Errno 111] Connection refused</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 2: HTTP 200 at http://www.prisons.gov.lk/</td></tr><tr><td>http</td><td><span class='error'>error</span></td><td>Probe 3: [Errno 111] Connection refused</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 4: HTTP 200 at http://www.prisons.gov.lk/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 5: HTTP 200 at http://prisons.gov.lk/web/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 6: HTTP 200 at http://prisons.gov.lk/web/ta/home-ta/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 7: HTTP 200 at http://prisons.gov.lk/web/en/home-en/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 8: HTTP 200 at http://prisons.gov.lk/web/contact-us-si/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 9: HTTP 200 at http://prisons.gov.lk/web/about-us-si/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 10: HTTP 200 at http://prisons.gov.lk/web/history-si/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 11: HTTP 200 at http://prisons.gov.lk/web/our-staff-si/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 12: HTTP 200 at http://prisons.gov.lk/web/our-institutions-si/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 13: HTTP 200 at http://prisons.gov.lk/web/news-si/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 14: HTTP 200 at http://prisons.gov.lk/web/exams-results-si/</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: division</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: division</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-7930616 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-7833114 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677104 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 077-7318870 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: infor@prisons.gov.lk</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-7930616 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-7833114 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677104 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 077-7318870 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: infor@prisons.gov.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: Prison Headquarters, No.150, Baseline Road, Colombo 09 Contact No : 011-4677104 Fax No : 011-4677180 Name : Mr. S.L. Wij</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-7930616 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-7833114 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677104 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 077-7318870 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: infor@prisons.gov.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: Prison Headquarters, No.150, Baseline Road, Colombo 09 Contact No : 011-4677104 Fax No : 011-4677180 Name : Mr. S.L. Wij</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: department</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons@sltnet.lk</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677911 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2673978 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677105 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677117 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677151 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677103 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677104 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2695206 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4500452 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2691996 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2694671 .</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677150 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677122 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2691904 .</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677711 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677852 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2467710</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677102 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677106 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677180 .</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2691976 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677993 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677126 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677189 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2696566 .</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4677145 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677 180 .</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677 177 .</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: vavuniya@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: jaffna@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: monaragala@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: batticaloa@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: boossa@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: trinco@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: hangilipola@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: speatforce@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: polonnaruwa@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: kegalle@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: bogambara@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: kundasale@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons@sltnet.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: anuradapura@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: magazine@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: wataraka@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: matara@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: galle@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: crtc@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: wariyapola@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: mahara@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: badulla@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: weerawila@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ambepussa@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: tangalle@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: negombo@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dalupotha@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: thaldena@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: welikada@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: crp@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: kalutara@prisons.gov.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: kuruvita@prisons.gov.lk</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: department</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677180 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0114 677 177 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 013(1) 2017(20</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 114 677177 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: prisons[at]sltnet.lk</td></tr><tr><td>page_text</td><td><span class='pass'>pass</span></td><td>Substantive page content: 16641 visible characters across 12 pages</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
