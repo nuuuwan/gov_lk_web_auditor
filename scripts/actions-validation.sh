@@ -5,7 +5,6 @@ set -euo pipefail
 ROOT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 WORKFLOW="$ROOT_DIR/.github/workflows/audit.yml"
 ACT="${ACT:-$(command -v act || true)}"
-ACT_IMAGE="${ACT_IMAGE:-node:20-bookworm-slim}"
 ACT_PATH="${ACT_PATH:-/usr/local/bin:/usr/bin:/bin}"
 ACT_ARTIFACTS="${ACT_ARTIFACTS:-$ROOT_DIR/.act/artifacts}"
 
@@ -28,7 +27,6 @@ run_smoke_test() {
     mkdir -p "$ACT_ARTIFACTS"
     PATH="$ACT_PATH" GIT_CONFIG_GLOBAL=/dev/null "$ACT" workflow_dispatch \
         -W "$WORKFLOW" \
-        -P "self-hosted=$ACT_IMAGE" \
         --input "max_urls=${MAX_URLS:-0}" \
         --input push_reports=false \
         --input skip_browser=true \
