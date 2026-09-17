@@ -38,9 +38,9 @@ can be regenerated from raw audit data. Each audit performs at
 least two HTTPS and HTTP probes from the local vantage point. Independent
 geographic probes must run the pipeline from separate environments.
 
-The Sri Lankan network workflow and runner operations are documented in
-[GitHub Actions](github-actions.md). The workflow is manually dispatched until
-the self-hosted runner has passed a limited reliability run.
+The Sri Lankan network workflow is documented in
+[GitHub Actions](github-actions.md). The workflow runs on a daily schedule
+on GitHub-hosted runners.
 
 Each website reports `pass`, `fail`, or `inconclusive` for Levels 0–5. A failed
 level prevents all higher-level checks from running. After the pipeline

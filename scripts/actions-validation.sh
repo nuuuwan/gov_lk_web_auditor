@@ -30,7 +30,7 @@ run_smoke_test() {
         -W "$WORKFLOW" \
         -P "self-hosted=$ACT_IMAGE" \
         --input "max_urls=${MAX_URLS:-0}" \
-        --input create_pr=false \
+        --input push_reports=false \
         --input skip_browser=true \
         --input skip_artifacts=true \
         --artifact-server-path "$ACT_ARTIFACTS"
