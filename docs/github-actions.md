@@ -1,48 +1,26 @@
 # GitHub Actions
 
-## Sri Lankan audit runner
+## Audit workflow
 
-The audit workflow runs only on a self-hosted runner with all three labels:
-
-```text
-self-hosted, linux, sri-lanka
-```
-
-The workflow is manually dispatched for now. It does not run on pull requests,
-so code from an untrusted fork is never sent to the Sri Lankan runner. A weekly
-schedule should be enabled only after a limited manual run has proved reliable.
-
-Create the runner from the repository's **Settings > Actions > Runners** page.
-Register it with the `sri-lanka` custom label and use a dedicated machine or
-account with no unrelated credentials. GitHub warns that self-hosted runners
-should be treated as trusted infrastructure, especially for public repositories.
-
-The runner account needs read/write access to its checkout and permission to
-run Docker-free Python and Playwright Chromium. The standard Linux service
-commands are:
-
-```bash
-./svc.sh install
-./svc.sh start
-./svc.sh status
-```
-
-Runner diagnostics are stored in the runner directory under `_diag`. Service
-logs can be inspected with `journalctl` using the service name printed by
-`./svc.sh status`. Keep the runner application current by downloading the
-release offered by the repository's runner settings page and restarting the
-service after the upgrade.
+The audit workflow runs on GitHub-hosted `ubuntu-latest` runners on a daily
+schedule. It does not run on pull requests, so code from an untrusted fork is
+never sent to a trusted runner.
 
 Dispatch a limited run from the Actions page with `max_urls=1` first. The
-workflow installs the locked `uv` environment and Chromium, runs
-`PYTHONPATH=. uv run python workflows/pipeline.py`, uploads `audit.output`, `latest_audit_reports`, and
-`README.md` even when the audit fails, and opens a report pull request only
-after a successful run.
+workflow installs the locked `uv` environment and Chromium, logs the run's
+vantage point, runs `PYTHONPATH=. uv run python workflows/pipeline.py`, and
+uploads `audit.output`, `latest_audit_reports`, and `README.md` even when the
+audit fails.
 
-The workflow grants only `contents: write` and `pull-requests: write`, which
-are required for the report pull request. It has a concurrency lock and a
-120-minute timeout. A failed run does not create a pull request or push report
-changes directly to `main`.
+After a successful run the refreshed `README.md` and `latest_audit_reports`
+are committed to `main` directly, matching the uptime workflow. This keeps the
+published dashboard's `last_audit` date current without a manually merged
+generated report PR. Disable the direct push by dispatching the workflow with
+`push_reports=false` (for example when ran as a local smoke test).
+
+The workflow grants `contents: write` (required for the direct push) and has a
+concurrency lock and a 120-minute timeout. A failed run does not push any
+report changes to `main`.
 
 ## Local workflow execution
 
@@ -58,8 +36,8 @@ scripts/actions-validation.sh list
 The `validate` command uses `actionlint` for GitHub expression and runner-label
 checks, then uses `wrkflw` for a second workflow parser. `wrkflw` is useful for
 quick local validation and emulation, but it does not reproduce GitHub
-permissions or concurrency behavior, so it is not the execution substitute for
-the real self-hosted runner.
+permissions or concurrency behavior, so it is not an execution substitute for
+the real GitHub-hosted runner.
 
 Run the workflow locally against one URL with PR creation disabled:
 
@@ -67,8 +45,9 @@ Run the workflow locally against one URL with PR creation disabled:
 MAX_URLS=1 scripts/actions-validation.sh run
 ```
 
-The script also skips the first-time Chromium download, artifact upload,
-and PR creation; this is a workflow smoke test, not a browser audit. The
+The script also skips the first-time Chromium download and artifact
+upload; this is a workflow smoke test, not a browser audit. It dispatches with
+`push_reports=false` so a local run never pushes to `main`. The
 artifact action's local server is not compatible with this `act` setup. Use
 the direct fallback below to exercise the real browser-based audit locally:
 
@@ -81,11 +60,11 @@ PYTHONPATH=. uv run python workflows/pipeline.py --max-urls "$MAX_URLS"
 
 Omit `--max-urls` for a full audit.
 
-The local command maps the workflow's `self-hosted` runner label to
-`node:20-bookworm-slim` by default and starts a local artifact server. Docker uses the host's network path, so this
-checks workflow wiring and local dependencies; it is only a Sri Lankan vantage
-point when Docker is running on the Sri Lankan machine. It does not reproduce
-GitHub's hosted-runner geography.
+The local command mirrors the workflow's GitHub-hosted runner with a local
+Docker image (`node:20-bookworm-slim` by default) and starts a local artifact
+server. The audit and uptime pipelines run from the runner's vantage point;
+the GitHub-hosted runner is not a Sri Lankan vantage point, and neither is
+a local Docker image unless it is itself running on a Sri Lankan machine.
 
 The script deliberately runs `act` without `gh` on its `PATH`. This avoids
 an `act` authentication bug where a GitHub Enterprise or stale `gh` token is

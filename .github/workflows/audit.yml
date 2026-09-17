@@ -10,8 +10,8 @@ on:
         required: false
         type: string
         default: ""
-      create_pr:
-        description: "Open a report pull request after a successful audit"
+      push_reports:
+        description: "Push refreshed audit reports directly to main after a successful audit"
         required: false
         type: boolean
         default: true
@@ -41,7 +41,7 @@ concurrency:
 
 jobs:
   setup:
-    runs-on: [self-hosted, linux, sri-lanka]
+    runs-on: ubuntu-latest
     outputs:
       shards: ${{ steps.set.outputs.shards }}
       total: ${{ steps.set.outputs.total }}
@@ -56,7 +56,7 @@ jobs:
 
   audit:
     needs: setup
-    runs-on: [self-hosted, linux, sri-lanka]
+    runs-on: ubuntu-latest
     timeout-minutes: 120
     strategy:
       fail-fast: false
@@ -110,22 +110,13 @@ jobs:
             latest_audit_reports
             README.md
 
-      - name: Open report pull request
-        if: ${{ success() && needs.setup.outputs.total == '1' && (github.event_name == 'schedule' || inputs.create_pr) }}
-        uses: peter-evans/create-pull-request@v7
-        with:
-          branch: automation/audit-reports
-          delete-branch: true
-          add-paths: |
-            README.md
-            latest_audit_reports
-          commit-message: "chore(audit): refresh audit reports"
-          title: "chore(audit): refresh audit reports"
-          body: |
-            ## what changed
-
-            Refresh the generated audit reports and README summary from the Sri Lankan self-hosted runner.
-
-            ## verification
-
-            Audit run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      - name: Commit and push report changes
+        if: ${{ success() && needs.setup.outputs.total == '1' && (github.event_name == 'schedule' || inputs.push_reports) }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md latest_audit_reports
+          git diff --cached --quiet \
+            && echo "No report changes." \
+            || git commit -m "chore(audit): refresh audit reports"
+          git push
