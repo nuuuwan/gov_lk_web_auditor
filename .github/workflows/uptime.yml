@@ -101,3 +101,10 @@ jobs:
           git add uptime_history
           git diff --cached --quiet && echo "No history changes." || git commit -m "chore(uptime): refresh uptime history"
           git push
+
+  deploy-dashboard:
+    needs: [setup, uptime]
+    if: ${{ needs.setup.outputs.total == '1' }}
+    permissions:
+      contents: write
+    uses: ./.github/workflows/dashboard-pages.yml
