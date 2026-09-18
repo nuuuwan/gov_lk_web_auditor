@@ -1,7 +1,8 @@
 # Website Audit: https://www.dba.gov.lk/
 
-- Completed: 2026-09-08 23:24
+- Completed: 2026-09-18 06:13
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

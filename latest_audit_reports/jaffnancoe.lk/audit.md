@@ -1,7 +1,8 @@
 # Website Audit: https://jaffnancoe.lk/
 
-- Completed: 2026-09-08 23:33
-- Overall result: ⚫ Level 0
+- Completed: 2026-09-18 06:23
+- Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -9,21 +10,39 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-[Errno -2] Name or service not known
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
-| dns_resolves | ❌ | [Errno -2] Name or service not known |
-| domain_not_parked | ❓ | No usable page was inspected |
-| site_not_defaced | ❓ | No usable page was inspected |
-| content_relevant | ❓ | No usable page was inspected |
-| hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | HTTP checks did not run |
-| redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | TLS expiry check did not run |
-| tls_hostname_matches | ❓ | TLS hostname check did not run |
+| dns_resolves | ✅ | Public DNS resolved |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTP probes did not all fail |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+No passing postal address evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: 0.04.2026 202 (7 phone numbers found); Email: sivagazan@gmail.com (37 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: department |
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

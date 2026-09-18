@@ -1,46 +1,1136 @@
 {
-  "schema_version": "1.2.0",
-  "audit_id": "d173df13-0866-455d-89e7-e74c75076232",
+  "schema_version": "1.3.0",
+  "audit_id": "204da347-5fbb-4d02-8d78-6a06850b2cdd",
   "url": "https://jaffnancoe.lk/",
   "normalized_url": "https://jaffnancoe.lk/",
-  "started_at": "2026-09-08T23:33:10.784762+05:30",
-  "completed_at": "2026-09-08T23:33:12.063492+05:30",
+  "started_at": "2026-09-18T06:23:33.624899+05:30",
+  "completed_at": "2026-09-18T06:23:49.842035+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: [Errno -2] Name or service not known"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
     {
-      "check": "dns_absent",
-      "status": "fail",
-      "detail": "[Errno -2] Name or service not known",
-      "observed_at": "2026-09-08T23:33:12.063367+05:30"
+      "check": "dns",
+      "status": "pass",
+      "detail": "Public DNS resolved",
+      "observed_at": "2026-09-18T06:23:33.832219+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-08T23:33:12.063385+05:30"
+      "observed_at": "2026-09-18T06:23:33.832237+05:30"
+    },
+    {
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-09-18T06:23:33.984336+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://jaffnancoe.lk/",
+      "source": "https://jaffnancoe.lk/",
+      "observed_at": "2026-09-18T06:23:49.528178+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://jaffnancoe.lk/",
+      "source": "http://jaffnancoe.lk/",
+      "observed_at": "2026-09-18T06:23:49.528196+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://jaffnancoe.lk/",
+      "source": "https://jaffnancoe.lk/",
+      "observed_at": "2026-09-18T06:23:49.528200+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://jaffnancoe.lk/",
+      "source": "http://jaffnancoe.lk/",
+      "observed_at": "2026-09-18T06:23:49.528204+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://jaffnancoe.lk/index.php",
+      "source": "https://jaffnancoe.lk/index.php",
+      "observed_at": "2026-09-18T06:23:49.528206+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://jaffnancoe.lk/index.php?id=AboutUS",
+      "source": "https://jaffnancoe.lk/index.php?id=AboutUS",
+      "observed_at": "2026-09-18T06:23:49.528209+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://jaffnancoe.lk/index.php?id=MissionVision",
+      "source": "https://jaffnancoe.lk/index.php?id=MissionVision",
+      "observed_at": "2026-09-18T06:23:49.528212+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://jaffnancoe.lk/index.php?id=CollegeProfile",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeProfile",
+      "observed_at": "2026-09-18T06:23:49.528215+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "source": "https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "observed_at": "2026-09-18T06:23:49.528217+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "observed_at": "2026-09-18T06:23:49.528220+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://jaffnancoe.lk/index.php?id=SeminarTrainings",
+      "source": "https://jaffnancoe.lk/index.php?id=SeminarTrainings",
+      "observed_at": "2026-09-18T06:23:49.528223+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://jaffnancoe.lk/index.php?id=BlockTeaching",
+      "source": "https://jaffnancoe.lk/index.php?id=BlockTeaching",
+      "observed_at": "2026-09-18T06:23:49.528226+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://jaffnancoe.lk/index.php?id=Achievements",
+      "source": "https://jaffnancoe.lk/index.php?id=Achievements",
+      "observed_at": "2026-09-18T06:23:49.528229+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://jaffnancoe.lk/index.php?id=OrganizationStructure",
+      "source": "https://jaffnancoe.lk/index.php?id=OrganizationStructure",
+      "observed_at": "2026-09-18T06:23:49.528231+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.04.2026 202",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0.04.2026 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 223 0036 ",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "021 223 0036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-06-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-06-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-04-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094212230036",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0094212230036"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.04.2026 202",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0.04.2026 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 223 0036 ",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "021 223 0036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-06-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-06-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-04-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094212230036",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0094212230036"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.04.2026 202",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0.04.2026 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 223 0036 ",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "021 223 0036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-06-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-06-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-04-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094212230036",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0094212230036"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.04.2026 202",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0.04.2026 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 223 0036 ",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "021 223 0036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-06-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-06-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-04-1",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "026 2026-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094212230036",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "0094212230036"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://jaffnancoe.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.04.2026 202",
+      "source": "https://jaffnancoe.lk/index.php",
+      "data": {
+        "value": "0.04.2026 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 223 0036 ",
+      "source": "https://jaffnancoe.lk/index.php",
+      "data": {
+        "value": "021 223 0036 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-06-1",
+      "source": "https://jaffnancoe.lk/index.php",
+      "data": {
+        "value": "026 2026-06-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026-04-1",
+      "source": "https://jaffnancoe.lk/index.php",
+      "data": {
+        "value": "026 2026-04-1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094212230036",
+      "source": "https://jaffnancoe.lk/index.php",
+      "data": {
+        "value": "0094212230036"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://jaffnancoe.lk/index.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://jaffnancoe.lk/index.php",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=AboutUS",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=MissionVision",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeProfile",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sivagazan@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "sivagazan@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tinthurega@yahoo.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "tinthurega@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: manoranjithan69@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "manoranjithan69@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sumathyganah@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "sumathyganah@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: kjothiratna@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "kjothiratna@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: telanko@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "telanko@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bmurakavi@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "bmurakavi@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ampiict@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "ampiict@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: thanapalanabi@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "thanapalanabi@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: GaneshShakthy1966@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "GaneshShakthy1966@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ratnesmaaniyoor@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "ratnesmaaniyoor@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: suthavignamohan@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "suthavignamohan@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pvsrrr@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "pvsrrr@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mnireshkumar@yahoo.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "mnireshkumar@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: thilaganathanak@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "thilaganathanak@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: skukan7@yahoo.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "skukan7@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pathmarasa23@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "pathmarasa23@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: spatrickss27@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "spatrickss27@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nanthan.jncoe@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "nanthan.jncoe@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pararajasingamrajeswaran@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "pararajasingamrajeswaran@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: vvelnithi@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "vvelnithi@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cinthujaj@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "cinthujaj@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: muguntthan@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "muguntthan@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pmtharan91@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "pmtharan91@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ilakiya2003@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "ilakiya2003@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: aananththulasi1724@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "aananththulasi1724@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: gajooran@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "gajooran@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: arunachalam.gugan@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "arunachalam.gugan@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: Kamsananthy@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "Kamsananthy@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sasmithansathi@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "sasmithansathi@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: laganesan1972@yahoo.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "laganesan1972@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: jamessoorian@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "jamessoorian@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sathyendra67@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "sathyendra67@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: vagees37@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "vagees37@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tnesan71@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "tnesan71@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bavac99@yahoo.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "bavac99@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: uthayasantherlect1970@gmail.com",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "uthayasantherlect1970@gmail.com"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=SeminarTrainings",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=BlockTeaching",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=Achievements",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jaffnancoe.lk/index.php?id=OrganizationStructure",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 9660 visible characters across 14 pages",
+      "source": "https://jaffnancoe.lk/"
     }
   ],
   "observations": [
     {
       "host": "jaffnancoe.lk",
-      "addresses": [],
-      "status": "absent",
-      "detail": "[Errno -2] Name or service not known"
+      "addresses": [
+        "198.54.116.121"
+      ],
+      "status": "resolved",
+      "detail": "Public DNS resolved"
     },
     {
       "domain": "jaffnancoe.lk",
       "status": "unknown",
       "expires_at": null,
       "detail": "Domain is absent from RDAP"
+    },
+    {
+      "host": "jaffnancoe.lk",
+      "status": "valid",
+      "expires_at": "2026-10-27T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
+    },
+    {
+      "url": "https://jaffnancoe.lk/",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/",
+      "redirects": [],
+      "elapsed_ms": 410,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://jaffnancoe.lk/",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/",
+      "redirects": [
+        "https://jaffnancoe.lk/"
+      ],
+      "elapsed_ms": 443,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/",
+      "redirects": [],
+      "elapsed_ms": 438,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://jaffnancoe.lk/",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/",
+      "redirects": [
+        "https://jaffnancoe.lk/"
+      ],
+      "elapsed_ms": 113,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php",
+      "redirects": [],
+      "elapsed_ms": 265,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=AboutUS",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=AboutUS",
+      "redirects": [],
+      "elapsed_ms": 151,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=MissionVision",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=MissionVision",
+      "redirects": [],
+      "elapsed_ms": 165,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=CollegeProfile",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=CollegeProfile",
+      "redirects": [],
+      "elapsed_ms": 215,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "redirects": [],
+      "elapsed_ms": 170,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "redirects": [],
+      "elapsed_ms": 169,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=SeminarTrainings",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=SeminarTrainings",
+      "redirects": [],
+      "elapsed_ms": 140,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=BlockTeaching",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=BlockTeaching",
+      "redirects": [],
+      "elapsed_ms": 73,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=Achievements",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=Achievements",
+      "redirects": [],
+      "elapsed_ms": 73,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=OrganizationStructure",
+      "status_code": 200,
+      "final_url": "https://jaffnancoe.lk/index.php?id=OrganizationStructure",
+      "redirects": [],
+      "elapsed_ms": 170,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://jaffnancoe.lk/",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-01-2e5deac4d9fe.html",
+      "sha256": "2e5deac4d9fec38f4b1ef05ec08c76acfff6eed6ab3b997cc449a26ba312cb0f",
+      "bytes": 86334
+    },
+    {
+      "url": "https://jaffnancoe.lk/",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-02-2624af5c94fc.html",
+      "sha256": "2624af5c94fcabb0da015456ceb235576d6c2b68cb9c8883213f569e69298c3d",
+      "bytes": 86334
+    },
+    {
+      "url": "https://jaffnancoe.lk/",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-03-3f77a543b8bf.html",
+      "sha256": "3f77a543b8bf9c498530f8a00455f2ab795548f6724067d491e5d9dbbf70cc17",
+      "bytes": 86334
+    },
+    {
+      "url": "https://jaffnancoe.lk/",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-04-9a70088706cd.html",
+      "sha256": "9a70088706cd1efc34a590d3c74871bebe10f4572e14d169ecb3c3281e934ee8",
+      "bytes": 86334
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-05-ca527b1f3e07.html",
+      "sha256": "ca527b1f3e07cb958139dbb30b62737c9798ea99790ff3632e9d96df90e2a52d",
+      "bytes": 86334
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=AboutUS",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-06-0a48373f77c7.html",
+      "sha256": "0a48373f77c7bf40d0241b1b3c9de14846fce197074b91cfba37a52f062384a0",
+      "bytes": 46627
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=MissionVision",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-07-91b5f71e11ca.html",
+      "sha256": "91b5f71e11ca89739059cd6188dcab3ab59cea0c69728a8beff04aea7dc6a67b",
+      "bytes": 48745
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=CollegeProfile",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-08-3f884c761fdf.html",
+      "sha256": "3f884c761fdfeab747254074c5441dd6f5928b3c823ac9cd0ce3ca0bf459ff9f",
+      "bytes": 46766
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=AcademicCalender",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-09-a34d9a2f1c6b.html",
+      "sha256": "a34d9a2f1c6b54c802d0167b1457c52232d6687f0e22a3c60ba3fd5f2e47ec88",
+      "bytes": 48566
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=CollegeStaff",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-10-3edf273269f2.html",
+      "sha256": "3edf273269f2d43ab456e95b6f884cf9b949dbeaea09c93f74b413365e065442",
+      "bytes": 90791
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=SeminarTrainings",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-11-ab5b74bdb957.html",
+      "sha256": "ab5b74bdb95794d3492db220b72ea33718e6edc1d720637a7af0a2ef1c272da6",
+      "bytes": 66230
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=BlockTeaching",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-12-0bb902b9cffe.html",
+      "sha256": "0bb902b9cffe0cce88dd9051a96141ebf208f266d1b67b9462104b68b6b73ef1",
+      "bytes": 46899
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=Achievements",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-13-2e3dd4f377dc.html",
+      "sha256": "2e3dd4f377dc91a0b7633e8106142fc532550186cc1ad357bbaaf0ae44f0fef5",
+      "bytes": 47956
+    },
+    {
+      "url": "https://jaffnancoe.lk/index.php?id=OrganizationStructure",
+      "path": "audit.output/jaffnancoe.lk/20260918.0623/snapshots/page-14-566252b94613.html",
+      "sha256": "566252b94613afbde8b1db46ed6e4d931a2844d7fb0e1116009d6e35bdf5fcb4",
+      "bytes": 46780
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -54,69 +1144,69 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "[Errno -2] Name or service not known",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
           "name": "dns_resolves",
           "level": 1,
-          "status": "fail",
-          "reason": "[Errno -2] Name or service not known"
+          "status": "pass",
+          "reason": "Public DNS resolved"
         },
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -124,9 +1214,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0.04.2026 202 (7 phone numbers found); Email: sivagazan@gmail.com (37 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -152,5 +1261,11 @@
       "executed": false,
       "checks": []
     }
-  ]
+  ],
+  "vantage": {
+    "egress_ip": "52.155.60.177",
+    "country": "US",
+    "runner": "github-actions",
+    "proxy": false
+  }
 }

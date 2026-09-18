@@ -1,7 +1,8 @@
 # Website Audit: https://milco.lk/
 
-- Completed: 2026-09-08 23:23
+- Completed: 2026-09-18 06:12
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

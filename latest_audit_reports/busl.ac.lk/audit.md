@@ -1,7 +1,8 @@
 # Website Audit: https://busl.ac.lk/
 
-- Completed: 2026-09-08 23:32
-- Overall result: 🟠 Level 2
+- Completed: 2026-09-18 06:23
+- Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -28,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to comment Enter your website URL (optional) Save my name, email, and website in this browser for the next time I commen; Phone: +94 252 222 615 (11 phone numbers found); Email: upedec@busl.ac.lk (6 email addresses found); Published named responsibility: director
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: to comment Enter your website URL (optional) Save my name, email, and website in this browser for the next time I commen |
-| reachable_contacts | ✅ | Phone: +94 252 222 615 (11 phone numbers found); Email: upedec@busl.ac.lk (6 email addresses found) |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: +94 714 474 510 (14 phone numbers found); Email: upedec@busl.ac.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

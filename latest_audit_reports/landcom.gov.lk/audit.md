@@ -1,7 +1,8 @@
 # Website Audit: https://landcom.gov.lk/
 
-- Completed: 2026-09-08 23:16
+- Completed: 2026-09-18 06:11
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

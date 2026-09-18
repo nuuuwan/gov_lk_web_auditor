@@ -1,7 +1,8 @@
 # Website Audit: http://www.nhsl.health.gov.lk/
 
-- Completed: 2026-09-08 23:48
+- Completed: 2026-09-18 06:39
 - Overall result: ⚫ Level 0
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -13,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: EE certificate key too weak (_ssl.c:1032); TLS certificate has expired
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: EE certificate key too weak (_ssl.c:1010); TLS certificate has expired
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -24,6 +25,6 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: EE certific
 | hosting_configured | ✅ | No generic-hosting marker found |
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: EE certificate key too weak (_ssl.c:1032) |
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: EE certificate key too weak (_ssl.c:1010) |
 | tls_not_expired | ❌ | TLS certificate has expired |
 | tls_hostname_matches | ❓ | TLS hostname check did not run |

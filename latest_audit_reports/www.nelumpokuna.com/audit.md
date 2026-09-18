@@ -1,7 +1,8 @@
 # Website Audit: https://www.nelumpokuna.com/
 
-- Completed: 2026-09-08 23:25
+- Completed: 2026-09-18 06:14
 - Overall result: ⚫ Level 0
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -13,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-An HTTP probe was transient; [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032); [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032)
+An HTTP probe was transient; [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010); [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,8 +26,8 @@ An HTTP probe was transient; [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert inter
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) |
-| tls_hostname_matches | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1032) |
+| tls_not_expired | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010) |
+| tls_hostname_matches | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010) |
 
 ## 🟠 Level 2: ❓
 

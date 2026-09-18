@@ -1,7 +1,8 @@
 # Website Audit: https://www.labourmin.gov.lk/
 
-- Completed: 2026-09-09 00:06
+- Completed: 2026-09-18 06:57
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Symposium NLAC Contact us 6th floor,Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka; Phone: 0912866999 (675 phone numbers found); Email: info@labourmin.gov.lk (17 email addresses found); Published named responsibility: division
+Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka; Phone: 0112581991 (56 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Symposium NLAC Contact us 6th floor,Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0912866999 (675 phone numbers found); Email: info@labourmin.gov.lk (17 email addresses found) |
+| postal_address | ✅ | Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka |
+| reachable_contacts | ✅ | Phone: 0112581991 (56 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found
+Published published update date: 01 Jan 1970
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://labourmin.gov.lk/wp-content/uploads/2026/06/web_notice_17.06.2026.pdf |
-| published_update_date | ✅ | Published published update date: 31 Dec 2099 |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ✅ | Published processing time: 14 days |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❌ | Published published update date: 01 Jan 1970 |

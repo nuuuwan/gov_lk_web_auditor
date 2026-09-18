@@ -1,7 +1,8 @@
 # Website Audit: https://www.ugc.ac.lk/
 
-- Completed: 2026-09-08 23:37
+- Completed: 2026-09-18 06:28
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

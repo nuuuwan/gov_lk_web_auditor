@@ -1,7 +1,8 @@
 # Website Audit: http://edupub.gov.lk/
 
-- Completed: 2026-09-08 23:33
+- Completed: 2026-09-18 06:23
 - Overall result: ⚫ Level 0
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -25,5 +26,5 @@ Detected generic hosting marker: under construction
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1032) |
-| tls_hostname_matches | ❓ | [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1032) |
+| tls_not_expired | ❓ | [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010) |
+| tls_hostname_matches | ❓ | [SSL: SSLV3_ALERT_HANDSHAKE_FAILURE] ssl/tls alert handshake failure (_ssl.c:1010) |

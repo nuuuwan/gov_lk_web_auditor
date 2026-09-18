@@ -1,7 +1,8 @@
 # Website Audit: https://slpost.gov.lk/
 
-- Completed: 2026-09-08 23:51
+- Completed: 2026-09-18 06:42
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -54,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 2 weeks |
 | downloadable_form | ✅ | Published downloadable form: https://slpost.gov.lk/wp-content/uploads/2019/09/Holiday-home-booking-application-english.pdf |
-| published_update_date | ✅ | Published published update date: 20-08-2026 |
+| published_update_date | ✅ | Published published update date: 17-09-2026 |

@@ -1,7 +1,8 @@
 # Website Audit: https://selacine.lk/
 
-- Completed: 2026-09-08 23:51
+- Completed: 2026-09-18 06:41
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

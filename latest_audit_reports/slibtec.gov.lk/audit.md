@@ -1,7 +1,8 @@
 # Website Audit: https://slibtec.gov.lk/
 
-- Completed: 2026-09-09 00:01
+- Completed: 2026-09-18 06:49
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,7 +1,8 @@
 # Website Audit: https://christian.gov.lk/
 
-- Completed: 2026-09-08 23:24
+- Completed: 2026-09-18 06:13
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 3rd Floor, No. 180, T.B. Jaya Mawatha, Colombo 10. Telephone General : +94 0112 665 584 Directer : +94 0112 671 551 Acco; Phone: +94 0112 688 12 (13 phone numbers found); Email: minchris@sltnet.lk; Published named responsibility: director
+Published postal address: 3rd Floor, No. 180, T.B. Jaya Mawatha, Colombo 10. Telephone General : +94 0112 665 584 Directer : +94 0112 671 551 Acco; Phone: +94 0112 671 55 (13 phone numbers found); Email: minchris@sltnet.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 3rd Floor, No. 180, T.B. Jaya Mawatha, Colombo 10. Telephone General : +94 0112 665 584 Directer : +94 0112 671 551 Acco |
-| reachable_contacts | ✅ | Phone: +94 0112 688 12 (13 phone numbers found); Email: minchris@sltnet.lk |
+| reachable_contacts | ✅ | Phone: +94 0112 671 55 (13 phone numbers found); Email: minchris@sltnet.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

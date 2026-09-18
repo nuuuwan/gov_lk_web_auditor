@@ -1,7 +1,8 @@
 # Website Audit: https://www.fcd.gov.lk/
 
-- Completed: 2026-09-09 00:03
+- Completed: 2026-09-18 06:51
 - Overall result: ⚫ Level 0
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -13,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; timed out; timed out
+Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,8 +26,8 @@ Insufficient substantive page content: Only 134 visible characters across 2 page
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| tls_not_expired | ❓ | [Errno 101] Network is unreachable |
+| tls_hostname_matches | ❓ | [Errno 101] Network is unreachable |
 
 ## 🟠 Level 2: ❓
 

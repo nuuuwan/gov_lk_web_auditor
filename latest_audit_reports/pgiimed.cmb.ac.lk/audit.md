@@ -1,7 +1,8 @@
 # Website Audit: https://pgiimed.cmb.ac.lk/
 
-- Completed: 2026-09-08 23:31
+- Completed: 2026-09-18 06:22
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir; Phone: 0908147563 (6 phone numbers found); Email: director@pgiimed.cmb.ac.lk (5 email addresses found); Published named responsibility: director
+Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir; Phone: 0908147563 (6 phone numbers found); Email: sar@pgiimed.cmb.ac.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir |
-| reachable_contacts | ✅ | Phone: 0908147563 (6 phone numbers found); Email: director@pgiimed.cmb.ac.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0908147563 (6 phone numbers found); Email: sar@pgiimed.cmb.ac.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -53,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://pgiimed.cmb.ac.lk/wp-content/uploads/2020/09/Application-form-for-the-Post-of-Director-PGIIM.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://pgiimed.cmb.ac.lk/wp-content/uploads/2026/09/PGIIM-Application-Form-External.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

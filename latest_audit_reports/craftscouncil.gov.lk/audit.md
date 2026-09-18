@@ -1,7 +1,8 @@
 # Website Audit: https://craftscouncil.gov.lk/
 
-- Completed: 2026-09-08 23:53
+- Completed: 2026-09-18 06:43
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

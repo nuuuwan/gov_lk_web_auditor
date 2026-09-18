@@ -1,7 +1,8 @@
 # Website Audit: https://slada.lk/
 
-- Completed: 2026-09-09 00:05
+- Completed: 2026-09-18 06:54
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

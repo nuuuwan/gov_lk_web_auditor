@@ -1,7 +1,8 @@
 # Website Audit: https://mpclg.gov.lk/
 
-- Completed: 2026-09-09 00:07
+- Completed: 2026-09-18 06:59
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak9ad98863a7734455; Phone: +94 112 347 528 (3701 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: division
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak74a0d47ca2274b10; Phone: +94 112 337 161 (3631 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak9ad98863a7734455 |
-| reachable_contacts | ✅ | Phone: +94 112 347 528 (3701 phone numbers found); Email: K@48G9-.BYBGNPTUT |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak74a0d47ca2274b10 |
+| reachable_contacts | ✅ | Phone: +94 112 337 161 (3631 phone numbers found); Email: K@48G9-.BYBGNPTUT |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌

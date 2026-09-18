@@ -1,7 +1,8 @@
 # Website Audit: https://www.landsurveycouncil.org/
 
-- Completed: 2026-09-08 23:20
+- Completed: 2026-09-18 06:11
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -53,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 30 days |
-| downloadable_form | ✅ | Published downloadable form: https://www.landsurveycouncil.org/pdf/Circular2026.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://www.landsurveycouncil.org/pdf/Circular2027.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

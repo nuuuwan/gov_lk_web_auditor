@@ -1,7 +1,8 @@
 # Website Audit: http://www.vau.ac.lk/
 
-- Completed: 2026-09-08 23:30
+- Completed: 2026-09-18 06:21
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: by the Vice \u2013 Chancellor ,University of Vavuniya"},{"id":4926,"title":"Workshop for Elle Umpires","date":"2022-03-1; Phone: 013 11.01.202 (66 phone numbers found); Email: vc@vau.ac.lk (58 email addresses found); Published named responsibility: director
+Published postal address: by the Vice \u2013 Chancellor ,University of Vavuniya"},{"id":4926,"title":"Workshop for Elle Umpires","date":"2022-03-1; Phone: 013 11.01.202 (21 phone numbers found); Email: vc@vau.ac.lk (15 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: by the Vice \u2013 Chancellor ,University of Vavuniya"},{"id":4926,"title":"Workshop for Elle Umpires","date":"2022-03-1 |
-| reachable_contacts | ✅ | Phone: 013 11.01.202 (66 phone numbers found); Email: vc@vau.ac.lk (58 email addresses found) |
+| reachable_contacts | ✅ | Phone: 013 11.01.202 (21 phone numbers found); Email: vc@vau.ac.lk (15 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

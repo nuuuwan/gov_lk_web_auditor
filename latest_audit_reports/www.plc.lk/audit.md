@@ -1,7 +1,8 @@
 # Website Audit: https://www.plc.lk/
 
-- Completed: 2026-09-08 23:37
+- Completed: 2026-09-18 06:27
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.1161, Maradana Road, Borella, Colombo 08 phone HOT LINE 011 2 206 300 email EMAIL info@plc.lk Your Name Mobile Number; Phone: +94 11 2 206 300 (32 phone numbers found); Email: info@plc.lk (5 email addresses found); Published named responsibility: director
+Published postal address: No.1161, Maradana Road, Borella, Colombo 08 phone HOT LINE 011 2 206 300 email EMAIL info@plc.lk Your Name Mobile Number; Phone: +94 11 2 206 300 (31 phone numbers found); Email: info@plc.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.1161, Maradana Road, Borella, Colombo 08 phone HOT LINE 011 2 206 300 email EMAIL info@plc.lk Your Name Mobile Number |
-| reachable_contacts | ✅ | Phone: +94 11 2 206 300 (32 phone numbers found); Email: info@plc.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2 206 300 (31 phone numbers found); Email: info@plc.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌
@@ -53,5 +54,5 @@ Published published update date: 6 November 2023
 | fees_and_payment | ✅ | Published fees and payment: rs 30 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://www.plc.lk/wp-content/uploads/2026/09/Manager-–-Information-Security.pdf |
 | published_update_date | ❌ | Published published update date: 6 November 2023 |

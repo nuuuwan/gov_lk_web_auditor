@@ -1,7 +1,8 @@
 # Website Audit: https://uovt.ac.lk/
 
-- Completed: 2026-09-08 23:35
+- Completed: 2026-09-18 06:25
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us.; Phone: 0-2.38-1.937-4.3 (143 phone numbers found); Email: ar-administration@uovt.ac.lk (14 email addresses found); Published named responsibility: director
+Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us.; Phone: 0 0 0-4.858-2.24 (143 phone numbers found); Email: director-finance@uovt.ac.lk (14 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us. |
-| reachable_contacts | ✅ | Phone: 0-2.38-1.937-4.3 (143 phone numbers found); Email: ar-administration@uovt.ac.lk (14 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 0 0-4.858-2.24 (143 phone numbers found); Email: director-finance@uovt.ac.lk (14 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -50,7 +51,7 @@ No passing required documents evidence found; No passing downloadable form evide
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs3590 |
+| fees_and_payment | ✅ | Published fees and payment: Rs. 500 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 3 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

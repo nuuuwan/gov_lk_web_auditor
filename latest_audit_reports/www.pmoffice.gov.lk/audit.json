@@ -1,24 +1,16 @@
 {
-  "schema_version": "1.2.0",
-  "audit_id": "6e2fe0ac-575e-4555-b00c-4ea9fe11f575",
+  "schema_version": "1.3.0",
+  "audit_id": "e4953fdc-c85d-4e5c-8f46-98fc2ce55347",
   "url": "https://www.pmoffice.gov.lk/",
   "normalized_url": "https://www.pmoffice.gov.lk/",
-  "started_at": "2026-09-09T00:08:09.449588+05:30",
-  "completed_at": "2026-09-09T00:08:27.041705+05:30",
+  "started_at": "2026-09-18T07:00:09.888721+05:30",
+  "completed_at": "2026-09-18T07:00:40.624931+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "tls_not_expired: [Errno 104] Connection reset by peer",
+      "tls_hostname_matches: [Errno 104] Connection reset by peer"
     ]
   },
   "evidence": [
@@ -26,126 +18,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-09T00:08:09.796273+05:30"
+      "observed_at": "2026-09-18T07:00:10.921842+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-09T00:08:09.796291+05:30"
+      "observed_at": "2026-09-18T07:00:10.921861+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-09-09T00:08:09.935881+05:30"
+      "status": "error",
+      "detail": "[Errno 104] Connection reset by peer",
+      "observed_at": "2026-09-18T07:00:11.905096+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.pmoffice.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 104] Connection reset by peer",
       "source": "https://www.pmoffice.gov.lk/",
-      "observed_at": "2026-09-09T00:08:26.640680+05:30"
+      "observed_at": "2026-09-18T07:00:40.183556+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://www.pmoffice.gov.lk/",
       "source": "http://www.pmoffice.gov.lk/",
-      "observed_at": "2026-09-09T00:08:26.640699+05:30"
+      "observed_at": "2026-09-18T07:00:40.183576+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://www.pmoffice.gov.lk/",
       "source": "https://www.pmoffice.gov.lk/",
-      "observed_at": "2026-09-09T00:08:26.640702+05:30"
+      "observed_at": "2026-09-18T07:00:40.183580+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://www.pmoffice.gov.lk/",
       "source": "http://www.pmoffice.gov.lk/",
-      "observed_at": "2026-09-09T00:08:26.640705+05:30"
+      "observed_at": "2026-09-18T07:00:40.183584+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "source": "https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "observed_at": "2026-09-09T00:08:26.640708+05:30"
+      "observed_at": "2026-09-18T07:00:40.183587+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 6: HTTP 200 at https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "observed_at": "2026-09-09T00:08:26.640711+05:30"
+      "observed_at": "2026-09-18T07:00:40.183589+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 7: HTTP 200 at https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
       "source": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
-      "observed_at": "2026-09-09T00:08:26.640714+05:30"
+      "observed_at": "2026-09-18T07:00:40.183592+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 8: HTTP 200 at https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
       "source": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
-      "observed_at": "2026-09-09T00:08:26.640716+05:30"
+      "observed_at": "2026-09-18T07:00:40.183595+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 9: HTTP 200 at https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
       "source": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
-      "observed_at": "2026-09-09T00:08:26.640719+05:30"
+      "observed_at": "2026-09-18T07:00:40.183598+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 10: HTTP 200 at https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "observed_at": "2026-09-09T00:08:26.640722+05:30"
+      "observed_at": "2026-09-18T07:00:40.183601+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 11: HTTP 200 at https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
       "source": "https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
-      "observed_at": "2026-09-09T00:08:26.640725+05:30"
+      "observed_at": "2026-09-18T07:00:40.183604+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 12: HTTP 200 at https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
       "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
-      "observed_at": "2026-09-09T00:08:26.640728+05:30"
+      "observed_at": "2026-09-18T07:00:40.183608+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 13: HTTP 200 at https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
       "source": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
-      "observed_at": "2026-09-09T00:08:26.640730+05:30"
+      "observed_at": "2026-09-18T07:00:40.183610+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 14: HTTP 200 at https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
       "source": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
-      "observed_at": "2026-09-09T00:08:26.640733+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
+      "observed_at": "2026-09-18T07:00:40.183613+05:30"
     },
     {
       "check": "phone",
@@ -159,19 +142,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -193,6 +185,15 @@
       }
     },
     {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte",
+      "source": "https://www.pmoffice.gov.lk/",
+      "data": {
+        "value": "the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte"
+      }
+    },
+    {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
@@ -211,21 +212,12 @@
       }
     },
     {
-      "check": "published_update_date",
+      "check": "fees_and_payment",
       "status": "pass",
-      "detail": "Published published update date: 04 September 2026",
+      "detail": "Published fees and payment: rs,",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "04 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 575317 "
+        "value": "rs,"
       }
     },
     {
@@ -240,19 +232,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -274,6 +275,15 @@
       }
     },
     {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte",
+      "source": "https://www.pmoffice.gov.lk/",
+      "data": {
+        "value": "the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte"
+      }
+    },
+    {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
@@ -292,21 +302,12 @@
       }
     },
     {
-      "check": "published_update_date",
+      "check": "fees_and_payment",
       "status": "pass",
-      "detail": "Published published update date: 04 September 2026",
+      "detail": "Published fees and payment: rs,",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "04 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 575317 "
+        "value": "rs,"
       }
     },
     {
@@ -321,19 +322,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -355,84 +365,12 @@
       }
     },
     {
-      "check": "named_responsibility",
+      "check": "postal_address",
       "status": "pass",
-      "detail": "Published named responsibility: director",
+      "detail": "Published postal address: the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 04 September 2026",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "04 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575310 ",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 575310 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 574713 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 575310"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 370737 ",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "+94) 112 370737 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/",
-      "data": {
-        "value": "info@pmoffice.gov.lk"
+        "value": "the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte"
       }
     },
     {
@@ -454,21 +392,12 @@
       }
     },
     {
-      "check": "published_update_date",
+      "check": "fees_and_payment",
       "status": "pass",
-      "detail": "Published published update date: 04 September 2026",
+      "detail": "Published fees and payment: rs,",
       "source": "https://www.pmoffice.gov.lk/",
       "data": {
-        "value": "04 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+94) 112 575317 "
+        "value": "rs,"
       }
     },
     {
@@ -483,19 +412,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -555,163 +493,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +9411 2370955 - ",
+      "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+9411 2370955 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354818 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354818 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354731 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354731 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2370737 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2370737 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2575317 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354789 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354789 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2575312 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2575312 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 7124405 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 7124405 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354784 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354784 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+94) 112 575310"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2575310 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2575310 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2393809 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2393809 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354785 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354785 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354701 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354701 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354749 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354749 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 7124408 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 7124408 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354702 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354702 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354854 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354854 "
+        "value": "+94) 112 575310 "
       }
     },
     {
@@ -726,100 +511,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +9411 2575311 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2575311 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 7124416 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 7124416 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2576483 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2576483 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2564033 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2564033 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2564449 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2564449 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2574411 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2574411 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354754 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354754 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +9411 2372736 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
         "value": "+9411 2372736 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2334157 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2334157 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354750 - ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354750 - "
       }
     },
     {
@@ -834,73 +529,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +9411 2370954 ",
+      "detail": "Published phone: +9411 4354731 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+9411 2370954 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2576071 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2576071 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354723 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354723 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2576565 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 2576565 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 370737 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+94) 112 370737 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575310 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+94) 112 575310 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+94) 112 574713 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 4354703 ",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+9411 4354703 "
+        "value": "+9411 4354731 "
       }
     },
     {
@@ -915,37 +547,37 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +9411 4354754",
+      "detail": "Published phone: +9411 4354723 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+9411 4354754"
+        "value": "+9411 4354723 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +9411 2370955 ",
+      "detail": "Published phone: +94) 112 574713 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+9411 2370955 "
+        "value": "+94) 112 574713 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +9411 2577105 ",
+      "detail": "Published phone: +9411 2564033 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+9411 2577105 "
+        "value": "+9411 2564033 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +9411 7124407 ",
+      "detail": "Published phone: +9411 4354784 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+9411 7124407 "
+        "value": "+9411 4354784 "
       }
     },
     {
@@ -960,10 +592,109 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +9411 2564449 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2564449 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +9411 2577478 ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
         "value": "+9411 2577478 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2576483 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2576483 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2334157 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2334157 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2575312 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2575312 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2575317 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 7124416 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 7124416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354754",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354754"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354749 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354749 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 575317 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2575311 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2575311 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2574411 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2574411 "
       }
     },
     {
@@ -976,12 +707,210 @@
       }
     },
     {
-      "check": "email",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published email: ravisinghe@pmoffice.gov.lk",
+      "detail": "Published phone: +9411 2370955 - ",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "ravisinghe@pmoffice.gov.lk"
+        "value": "+9411 2370955 - "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354854 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354854 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 575310",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+94) 112 575310"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354702 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354702 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354785 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354785 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 7124405 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 7124405 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354701 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354701 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2576071 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2576071 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 370737 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+94) 112 370737 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2370955 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2370955 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354703 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354703 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354754 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354754 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 7124407 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 7124407 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2576565 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2576565 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2370737 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2370737 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2575310 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2575310 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354818 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354818 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354750 - ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354750 - "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2370954 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2370954 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2577105 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2577105 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 2393809 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 2393809 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 4354789 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 4354789 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +9411 7124408 ",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+9411 7124408 "
       }
     },
     {
@@ -996,19 +925,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: riflan@pmoffice.gov.lk",
+      "detail": "Published email: sudeera@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "riflan@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: arjunas@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "arjunas@pmoffice.gov.lk"
+        "value": "sudeera@pmoffice.gov.lk"
       }
     },
     {
@@ -1023,64 +943,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: ashraff@pmoffice.gov.lk",
+      "detail": "Published email: rkj@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "ashraff@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: udari@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "udari@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mahesh@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "mahesh@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mihirias.sb@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "mihirias.sb@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nirmani@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "nirmani@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: secpm@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "secpm@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: lakmali@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "lakmali@pmoffice.gov.lk"
+        "value": "rkj@pmoffice.gov.lk"
       }
     },
     {
@@ -1095,78 +961,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: info@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "info@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mediasecretary@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "mediasecretary@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kugan@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "kugan@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: shyamalie961@gmail.com",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "shyamalie961@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: lakshika_ds@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "lakshika_ds@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: atigala@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "atigala@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nilusha@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "nilusha@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: jayanthi@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "jayanthi@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: yasasmi@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
@@ -1176,10 +970,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: ruvinidisna@pmoffice.gov.lk",
+      "detail": "Published email: ashraff@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "ruvinidisna@pmoffice.gov.lk"
+        "value": "ashraff@pmoffice.gov.lk"
       }
     },
     {
@@ -1194,55 +988,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: sudeera@pmoffice.gov.lk",
+      "detail": "Published email: nilusha@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "sudeera@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fathi@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "fathi@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rkj@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "rkj@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: surani@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "surani@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: r_chandana@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "r_chandana@pmoffice.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: piyumee@pmoffice.gov.lk",
-      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "piyumee@pmoffice.gov.lk"
+        "value": "nilusha@pmoffice.gov.lk"
       }
     },
     {
@@ -1257,10 +1006,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: gvdpriyantha@pmoffice.gov.lk",
+      "detail": "Published email: dulanjali@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "gvdpriyantha@pmoffice.gov.lk"
+        "value": "dulanjali@pmoffice.gov.lk"
       }
     },
     {
@@ -1275,10 +1024,28 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: deshini@pmoffice.gov.lk",
+      "detail": "Published email: lakshika_ds@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "deshini@pmoffice.gov.lk"
+        "value": "lakshika_ds@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lakmali@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "lakmali@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secpm@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "secpm@pmoffice.gov.lk"
       }
     },
     {
@@ -1293,10 +1060,91 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: info@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "info@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mahesh@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "mahesh@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: r_chandana@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "r_chandana@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ruvinidisna@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "ruvinidisna@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mediasecretary@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "mediasecretary@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: udari@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "udari@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: piyumee@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "piyumee@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: riflan@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "riflan@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: manjularajapakshe@gmail.com",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
         "value": "manjularajapakshe@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atigala@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "atigala@pmoffice.gov.lk"
       }
     },
     {
@@ -1311,10 +1159,100 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: dulanjali@pmoffice.gov.lk",
+      "detail": "Published email: deshini@pmoffice.gov.lk",
       "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "dulanjali@pmoffice.gov.lk"
+        "value": "deshini@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: surani@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "surani@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ravisinghe@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "ravisinghe@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nirmani@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "nirmani@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: jayanthi@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "jayanthi@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: kugan@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "kugan@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mihirias.sb@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "mihirias.sb@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: arjunas@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "arjunas@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: shyamalie961@gmail.com",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "shyamalie961@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: fathi@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "fathi@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: gvdpriyantha@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "gvdpriyantha@pmoffice.gov.lk"
       }
     },
     {
@@ -1338,15 +1276,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
       "data": {
@@ -1356,19 +1285,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -1428,15 +1366,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
       "data": {
@@ -1446,19 +1375,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -1482,15 +1420,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
       "data": {
@@ -1500,19 +1429,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -1536,15 +1474,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
@@ -1554,19 +1483,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -1585,6 +1523,15 @@
       "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
         "value": "info@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte",
+      "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
+      "data": {
+        "value": "the online safety of children. The Prime Minister expressed appreciation for China’s assistance to Sri Lanka in the afte"
       }
     },
     {
@@ -1606,21 +1553,12 @@
       }
     },
     {
-      "check": "published_update_date",
+      "check": "fees_and_payment",
       "status": "pass",
-      "detail": "Published published update date: 04 September 2026",
+      "detail": "Published fees and payment: rs,",
       "source": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "data": {
-        "value": "04 September 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
-      "data": {
-        "value": "+94) 112 575317 "
+        "value": "rs,"
       }
     },
     {
@@ -1635,19 +1573,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -1698,37 +1645,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
       "data": {
         "value": "+94) 112 575310 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
-      "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
-      "data": {
-        "value": "+94) 112 574713 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2575311 ",
-      "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
-      "data": {
-        "value": "+9411 2575311 "
       }
     },
     {
@@ -1743,6 +1663,24 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94) 112 575317 ",
+      "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
+      "data": {
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
+      "data": {
+        "value": "+94) 112 574713 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94) 112 370737 ",
       "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
       "data": {
@@ -1750,12 +1688,12 @@
       }
     },
     {
-      "check": "email",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published email: info@pmoffice.gov.lk",
+      "detail": "Published phone: +9411 2575311 ",
       "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
       "data": {
-        "value": "info@pmoffice.gov.lk"
+        "value": "+9411 2575311 "
       }
     },
     {
@@ -1765,6 +1703,15 @@
       "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
       "data": {
         "value": "secpm@pmoffice.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@pmoffice.gov.lk",
+      "source": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
+      "data": {
+        "value": "info@pmoffice.gov.lk"
       }
     },
     {
@@ -1797,15 +1744,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
       "data": {
@@ -1815,19 +1753,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -1869,15 +1816,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575317 ",
-      "source": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
-      "data": {
-        "value": "+94) 112 575317 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94) 112 575310 ",
       "source": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
       "data": {
@@ -1887,19 +1825,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 574713 ",
+      "detail": "Published phone: +94) 112 575310",
       "source": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
       "data": {
-        "value": "+94) 112 574713 "
+        "value": "+94) 112 575310"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94) 112 575310",
+      "detail": "Published phone: +94) 112 575317 ",
       "source": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
       "data": {
-        "value": "+94) 112 575310"
+        "value": "+94) 112 575317 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 574713 ",
+      "source": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
+      "data": {
+        "value": "+94) 112 574713 "
       }
     },
     {
@@ -1941,7 +1888,7 @@
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 19200 visible characters across 14 pages",
+      "detail": "Substantive page content: 20754 visible characters across 13 pages",
       "source": "https://www.pmoffice.gov.lk/"
     }
   ],
@@ -1962,17 +1909,37 @@
     },
     {
       "host": "www.pmoffice.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-10-26T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 104] Connection reset by peer"
+    },
+    {
+      "url": "https://www.pmoffice.gov.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 104] Connection reset by peer"
+    },
+    {
+      "url": "http://www.pmoffice.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://www.pmoffice.gov.lk/",
+      "redirects": [
+        "https://www.pmoffice.gov.lk/"
+      ],
+      "elapsed_ms": 2180,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.pmoffice.gov.lk/",
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 695,
+      "elapsed_ms": 1567,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1983,27 +1950,7 @@
       "redirects": [
         "https://www.pmoffice.gov.lk/"
       ],
-      "elapsed_ms": 652,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.pmoffice.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.pmoffice.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 1036,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.pmoffice.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.pmoffice.gov.lk/",
-      "redirects": [
-        "https://www.pmoffice.gov.lk/"
-      ],
-      "elapsed_ms": 740,
+      "elapsed_ms": 2640,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2012,7 +1959,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "redirects": [],
-      "elapsed_ms": 1037,
+      "elapsed_ms": 1833,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2021,7 +1968,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "redirects": [],
-      "elapsed_ms": 690,
+      "elapsed_ms": 1555,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2030,7 +1977,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
       "redirects": [],
-      "elapsed_ms": 618,
+      "elapsed_ms": 1833,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2039,7 +1986,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
       "redirects": [],
-      "elapsed_ms": 1272,
+      "elapsed_ms": 2390,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2048,7 +1995,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
       "redirects": [],
-      "elapsed_ms": 1047,
+      "elapsed_ms": 1851,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2057,7 +2004,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
       "redirects": [],
-      "elapsed_ms": 841,
+      "elapsed_ms": 1611,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2066,7 +2013,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
       "redirects": [],
-      "elapsed_ms": 175,
+      "elapsed_ms": 1085,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2075,7 +2022,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
       "redirects": [],
-      "elapsed_ms": 416,
+      "elapsed_ms": 1519,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2084,7 +2031,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
       "redirects": [],
-      "elapsed_ms": 1362,
+      "elapsed_ms": 1073,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -2093,7 +2040,7 @@
       "status_code": 200,
       "final_url": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
       "redirects": [],
-      "elapsed_ms": 598,
+      "elapsed_ms": 1065,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -2101,85 +2048,79 @@
   "snapshots": [
     {
       "url": "https://www.pmoffice.gov.lk/",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-01-c58358c364f1.html",
-      "sha256": "c58358c364f1ce4bf3da7bc9d31464b00cbb37eb949c20ee27fa11e42bf8b3c6",
-      "bytes": 60714
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-01-fef912f043c0.html",
+      "sha256": "fef912f043c0d4d90c875bf9d1f10e026983769fdf44b5a4bb8e0d51ac243209",
+      "bytes": 64521
     },
     {
       "url": "https://www.pmoffice.gov.lk/",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-02-c58358c364f1.html",
-      "sha256": "c58358c364f1ce4bf3da7bc9d31464b00cbb37eb949c20ee27fa11e42bf8b3c6",
-      "bytes": 60714
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-02-fef912f043c0.html",
+      "sha256": "fef912f043c0d4d90c875bf9d1f10e026983769fdf44b5a4bb8e0d51ac243209",
+      "bytes": 64521
     },
     {
       "url": "https://www.pmoffice.gov.lk/",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-03-c58358c364f1.html",
-      "sha256": "c58358c364f1ce4bf3da7bc9d31464b00cbb37eb949c20ee27fa11e42bf8b3c6",
-      "bytes": 60714
-    },
-    {
-      "url": "https://www.pmoffice.gov.lk/",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-04-c58358c364f1.html",
-      "sha256": "c58358c364f1ce4bf3da7bc9d31464b00cbb37eb949c20ee27fa11e42bf8b3c6",
-      "bytes": 60714
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-03-fef912f043c0.html",
+      "sha256": "fef912f043c0d4d90c875bf9d1f10e026983769fdf44b5a4bb8e0d51ac243209",
+      "bytes": 64521
     },
     {
       "url": "https://www.pmoffice.gov.lk/divisions.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-05-46decbc6dfae.html",
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-04-46decbc6dfae.html",
       "sha256": "46decbc6dfae3fa7e685ce4b101236e5f2fd8fd12e86ffffad282efd0c1c63bb",
       "bytes": 42203
     },
     {
       "url": "https://www.pmoffice.gov.lk/contact_details.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-06-0b9a9442024f.html",
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-05-0b9a9442024f.html",
       "sha256": "0b9a9442024ffb6bc1445c577529c3adf4c690ab1d9e0ce7c0fdcea217afedd1",
       "bytes": 60474
     },
     {
       "url": "https://www.pmoffice.gov.lk/divisions.php?para=bHc4UmJwSWFEVzRGSlZyTXoyS3M2UT09",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-07-46decbc6dfae.html",
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-06-46decbc6dfae.html",
       "sha256": "46decbc6dfae3fa7e685ce4b101236e5f2fd8fd12e86ffffad282efd0c1c63bb",
       "bytes": 42203
     },
     {
       "url": "https://www.pmoffice.gov.lk/index.php?para=Vk5rV1N3UEUrWGd6YTJqa09ZSmVzTEdsdmhOUXgvVVROelhMWjBTeC9Icz0=",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-08-81f06722b293.html",
-      "sha256": "81f06722b2931d940dcdf29585273d55456783cad64636248fe846050f45bfc8",
-      "bytes": 82054
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-07-2b6e3ac6549e.html",
+      "sha256": "2b6e3ac6549e777f1d82c0f6f02df6fa083a3a4e2c05d353044532dbcd7dd4f6",
+      "bytes": 86967
     },
     {
       "url": "https://www.pmoffice.gov.lk/index.php?para=V3FBWEZpWXNKNEhxK3RWYWlrYlBaNjhvZ1d1S25GRnU0NFhGVURFVng3VT0=",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-09-f6e4c9ff4da7.html",
-      "sha256": "f6e4c9ff4da71b65edf7f4c56435d6184fcf74eb8028fc71d7289b50778c5f7f",
-      "bytes": 91819
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-08-38b7c2eee63c.html",
+      "sha256": "38b7c2eee63cb48fe2b924709cd8563746166285eca33e4298da362a8c09a43f",
+      "bytes": 96580
     },
     {
       "url": "https://www.pmoffice.gov.lk/index.php?para=eHQ5b3dyZVVGSWhoamwydjVkbi9nZz09",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-10-c58358c364f1.html",
-      "sha256": "c58358c364f1ce4bf3da7bc9d31464b00cbb37eb949c20ee27fa11e42bf8b3c6",
-      "bytes": 60714
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-09-fef912f043c0.html",
+      "sha256": "fef912f043c0d4d90c875bf9d1f10e026983769fdf44b5a4bb8e0d51ac243209",
+      "bytes": 64521
     },
     {
       "url": "https://www.pmoffice.gov.lk/PMprofile.php?para=UXp2bUt0QzRDemxrZENhc2oyWHVFOHpGL05xWWZROUg1UEVwTnhMSlhIaz0=",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-11-326557b16b79.html",
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-10-326557b16b79.html",
       "sha256": "326557b16b793eab592a55c4ee2246d1c7bb0db0b0bbf366e76407031169b4b0",
       "bytes": 23158
     },
     {
       "url": "https://www.pmoffice.gov.lk/secretary.php?para=Z2NGcEJpMXkrOFFmRHFBNjF4ODRTd2IyQnZNWHA3Wk41NTZ4aG9wYTh1VT0=",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-12-8fba7fa45704.html",
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-11-8fba7fa45704.html",
       "sha256": "8fba7fa45704cfb2d382be0f321f3b1249fc01dc17563970390e1b903e8123ee",
       "bytes": 20628
     },
     {
       "url": "https://www.pmoffice.gov.lk/pmo_duties.php?para=SnpXcTloK3piSURWeHRRVnV2bWp5S0JwNmpyb2N3KzBQc0FKM1RsZ0VoYz0=",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-13-654da8279d10.html",
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-12-654da8279d10.html",
       "sha256": "654da8279d10f55983a50d3179a19a5f338fe811eca5536500faeee06edf47dd",
       "bytes": 18898
     },
     {
       "url": "https://www.pmoffice.gov.lk/vision.php?para=N0xVREh1N3dudzYvcm11bTRsVEdGN1JOT2F2RUZ6RDdtTU51dlMyRW5Dbz0=",
-      "path": "audit.output/www.pmoffice.gov.lk/20260909.0008/snapshots/page-14-df6bfb304860.html",
+      "path": "audit.output/www.pmoffice.gov.lk/20260918.0700/snapshots/page-13-df6bfb304860.html",
       "sha256": "df6bfb3048606ce2207205f6997ce31aa88b477fde20c07b08430b89e23de59c",
       "bytes": 18315
     }
@@ -2197,8 +2138,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "[Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer",
       "executed": true,
       "checks": [
         {
@@ -2235,7 +2176,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "reason": "HTTPS probes passed; failing variants: https://www.pmoffice.gov.lk/: Probe 1: [Errno 104] Connection reset by peer"
         },
         {
           "name": "redirect_related",
@@ -2252,94 +2193,32 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: and coordinating with ministries accordingly. Attending matters related to motions presented during the adjournment of t; Phone: +94) 112 575317 (44 phone numbers found); Email: info@pmoffice.gov.lk (38 email addresses found); Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: and coordinating with ministries accordingly. Attending matters related to motions presented during the adjournment of t"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94) 112 575317 (44 phone numbers found); Email: info@pmoffice.gov.lk (38 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs,"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: circular"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published published update date: 04 September 2026"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -2357,5 +2236,11 @@
       "executed": false,
       "checks": []
     }
-  ]
+  ],
+  "vantage": {
+    "egress_ip": "52.155.60.177",
+    "country": "US",
+    "runner": "github-actions",
+    "proxy": false
+  }
 }

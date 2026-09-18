@@ -1,16 +1,24 @@
 {
-  "schema_version": "1.2.0",
-  "audit_id": "dcb60852-3c26-45b7-a94d-99dbc254c83a",
+  "schema_version": "1.3.0",
+  "audit_id": "4f3aab74-f28e-43b7-8fa9-6a6feb7119bb",
   "url": "https://www.energymin.gov.lk/",
   "normalized_url": "https://www.energymin.gov.lk/",
-  "started_at": "2026-09-09T00:07:14.814138+05:30",
-  "completed_at": "2026-09-09T00:07:21.454607+05:30",
+  "started_at": "2026-09-18T06:58:18.134933+05:30",
+  "completed_at": "2026-09-18T06:59:11.869269+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.energymin.gov.lk'. (_ssl.c:1032)",
-      "tls_hostname_matches: TLS certificate does not match the hostname"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,47 +26,636 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-09T00:07:18.114241+05:30"
+      "observed_at": "2026-09-18T06:58:18.679426+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-09T00:07:18.114259+05:30"
+      "observed_at": "2026-09-18T06:58:18.679441+05:30"
     },
     {
-      "check": "tls_hostname",
-      "status": "fail",
-      "detail": "TLS certificate does not match the hostname",
-      "observed_at": "2026-09-09T00:07:18.295242+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-09-18T06:58:19.444306+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.energymin.gov.lk'. (_ssl.c:1032)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://energymin.gov.lk/",
       "source": "https://www.energymin.gov.lk/",
-      "observed_at": "2026-09-09T00:07:21.454480+05:30"
+      "observed_at": "2026-09-18T06:59:10.414403+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'energymin.gov.lk'. (_ssl.c:1032)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://energymin.gov.lk/",
       "source": "http://www.energymin.gov.lk/",
-      "observed_at": "2026-09-09T00:07:21.454495+05:30"
+      "observed_at": "2026-09-18T06:59:10.414421+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.energymin.gov.lk'. (_ssl.c:1032)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://energymin.gov.lk/",
       "source": "https://www.energymin.gov.lk/",
-      "observed_at": "2026-09-09T00:07:21.454499+05:30"
+      "observed_at": "2026-09-18T06:59:10.414425+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'energymin.gov.lk'. (_ssl.c:1032)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://energymin.gov.lk/",
       "source": "http://www.energymin.gov.lk/",
-      "observed_at": "2026-09-09T00:07:21.454502+05:30"
+      "observed_at": "2026-09-18T06:59:10.414428+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "source": "https://energymin.gov.lk/index.php/si/welcome-sinhala",
+      "observed_at": "2026-09-18T06:59:10.414431+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "source": "https://energymin.gov.lk/index.php/ta/welcome-tamil",
+      "observed_at": "2026-09-18T06:59:10.414434+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://energymin.gov.lk/index.php/main/",
+      "source": "https://energymin.gov.lk/index.php/main",
+      "observed_at": "2026-09-18T06:59:10.414437+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "source": "https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "observed_at": "2026-09-18T06:59:10.414440+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "source": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "observed_at": "2026-09-18T06:59:10.414443+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "source": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "observed_at": "2026-09-18T06:59:10.414446+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://energymin.gov.lk/index.php/si/reports-si/",
+      "source": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "observed_at": "2026-09-18T06:59:10.414449+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "source": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "observed_at": "2026-09-18T06:59:10.414452+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "observed_at": "2026-09-18T06:59:10.414455+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "source": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "observed_at": "2026-09-18T06:59:10.414458+05:30"
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574915 ",
+      "source": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "data": {
+        "value": "+94 11 2 574915 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "data": {
+        "value": "secretary@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574915 ",
+      "source": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "data": {
+        "value": "+94 11 2 574915 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "data": {
+        "value": "secretary@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/main/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574915 ",
+      "source": "https://energymin.gov.lk/index.php/main/",
+      "data": {
+        "value": "+94 11 2 574915 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/main/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/main/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/main/",
+      "data": {
+        "value": "secretary@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/main/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://energymin.gov.lk/index.php/main/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: http://103.1.179.75/power/wp-content/uploads/2023/06/2135-61_S.pdf",
+      "source": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "data": {
+        "value": "http://103.1.179.75/power/wp-content/uploads/2023/06/2135-61_S.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 257 4880 ",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "data": {
+        "value": "011 257 4880 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 257 4883 ",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "data": {
+        "value": "011 257 4883 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: minister@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "data": {
+        "value": "minister@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112574746 ",
+      "source": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "data": {
+        "value": "0112574746 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112574922",
+      "source": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "data": {
+        "value": "+94112574922"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 574922 ",
+      "source": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "data": {
+        "value": "+94 11 2 574922 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dep.minister@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "data": {
+        "value": "dep.minister@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@energymin.gov.lk",
+      "source": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "data": {
+        "value": "info@energymin.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ",
+      "source": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "data": {
+        "value": ".address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 13749 visible characters across 14 pages",
+      "source": "https://www.energymin.gov.lk/"
     }
   ],
   "observations": [
@@ -78,49 +675,238 @@
     },
     {
       "host": "www.energymin.gov.lk",
-      "status": "hostname_error",
-      "expires_at": "2026-11-20T10:03:10+05:30",
-      "hostname_valid": false,
-      "detail": "TLS certificate does not match the hostname"
+      "status": "valid",
+      "expires_at": "2027-04-02T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.energymin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.energymin.gov.lk'. (_ssl.c:1032)"
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/",
+      "redirects": [
+        "https://energymin.gov.lk/"
+      ],
+      "elapsed_ms": 2494,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.energymin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'energymin.gov.lk'. (_ssl.c:1032)"
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/",
+      "redirects": [
+        "https://energymin.gov.lk/"
+      ],
+      "elapsed_ms": 2673,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.energymin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.energymin.gov.lk'. (_ssl.c:1032)"
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/",
+      "redirects": [
+        "https://energymin.gov.lk/"
+      ],
+      "elapsed_ms": 2692,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.energymin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/",
+      "redirects": [
+        "https://energymin.gov.lk/"
+      ],
+      "elapsed_ms": 2445,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/welcome-sinhala",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "redirects": [
+        "https://energymin.gov.lk/index.php/si/welcome-sinhala/"
+      ],
+      "elapsed_ms": 3107,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/ta/welcome-tamil",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "redirects": [
+        "https://energymin.gov.lk/index.php/ta/welcome-tamil/"
+      ],
+      "elapsed_ms": 3301,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/main",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/main/",
+      "redirects": [
+        "https://energymin.gov.lk/index.php/main/"
+      ],
+      "elapsed_ms": 2953,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/contact-us-si/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'energymin.gov.lk'. (_ssl.c:1032)"
+      "elapsed_ms": 3020,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "redirects": [],
+      "elapsed_ms": 2876,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "redirects": [],
+      "elapsed_ms": 2744,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "redirects": [],
+      "elapsed_ms": 3555,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "redirects": [],
+      "elapsed_ms": 2765,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "redirects": [],
+      "elapsed_ms": 2701,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "status_code": 200,
+      "final_url": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "redirects": [],
+      "elapsed_ms": 2678,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://energymin.gov.lk/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-01-29750a662a46.html",
+      "sha256": "29750a662a46f92a062fc0c02cc905d21c7028d8ef66cfc47df0797d6b31e9f8",
+      "bytes": 92958
+    },
+    {
+      "url": "https://energymin.gov.lk/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-02-29750a662a46.html",
+      "sha256": "29750a662a46f92a062fc0c02cc905d21c7028d8ef66cfc47df0797d6b31e9f8",
+      "bytes": 92958
+    },
+    {
+      "url": "https://energymin.gov.lk/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-03-29750a662a46.html",
+      "sha256": "29750a662a46f92a062fc0c02cc905d21c7028d8ef66cfc47df0797d6b31e9f8",
+      "bytes": 92958
+    },
+    {
+      "url": "https://energymin.gov.lk/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-04-29750a662a46.html",
+      "sha256": "29750a662a46f92a062fc0c02cc905d21c7028d8ef66cfc47df0797d6b31e9f8",
+      "bytes": 92958
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/welcome-sinhala/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-05-ae31f2e6abcb.html",
+      "sha256": "ae31f2e6abcbac350b9547fe2e011e697ae26d55683f5a2ce41251eed62ed1e7",
+      "bytes": 291872
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/ta/welcome-tamil/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-06-1f7ce248c733.html",
+      "sha256": "1f7ce248c7338bb5f9bd8a56785a5a8f2cfb54688cd4c7641d1de4c89f56143a",
+      "bytes": 296137
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/main/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-07-120948ad95a6.html",
+      "sha256": "120948ad95a6bd193f0ab1fecdc7792a09dfd4c160311ab7a0c64861a34715b3",
+      "bytes": 298409
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/contact-us-si/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-08-1387237f8a3c.html",
+      "sha256": "1387237f8a3c78a89f2b3e004932c3979236bb47b34edf254e3913036a156814",
+      "bytes": 124803
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/the_ministry_si/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-09-9c5bf24e30f1.html",
+      "sha256": "9c5bf24e30f1ab353f24e93c93e1805cdf77eb63499c4a0ecc9750bce46f1364",
+      "bytes": 134977
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/energy-policy-si/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-10-34c8424c0e33.html",
+      "sha256": "34c8424c0e330de5ae8e12c958918871174869f0ea1606c99f3f5987502a4620",
+      "bytes": 156648
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/reports-si/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-11-7b88f57b8bb3.html",
+      "sha256": "7b88f57b8bb3557c2beb5404b16602639d05f127ed2913f368659fe97d3f6b60",
+      "bytes": 206276
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/vission-and-mission-si/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-12-491a330ba13e.html",
+      "sha256": "491a330ba13ea0dccca8f4cd0d16971b605083d1c895fecd7428e3256f1b3fcb",
+      "bytes": 123105
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/hon-minister-si/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-13-b7c55cf7ff55.html",
+      "sha256": "b7c55cf7ff55c398c322dfa3c00351be4cfbcfda72e53c89778d73207929de4d",
+      "bytes": 134684
+    },
+    {
+      "url": "https://energymin.gov.lk/index.php/si/deputy-minister-si/",
+      "path": "audit.output/www.energymin.gov.lk/20260918.0658/snapshots/page-14-543170a8900b.html",
+      "sha256": "543170a8900b6164c65a7585be1c772504f2ab24c3a4d67991d2017c1f91677b",
+      "bytes": 126677
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -134,8 +920,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.energymin.gov.lk'. (_ssl.c:1032); TLS certificate does not match the hostname",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -147,56 +933,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.energymin.gov.lk'. (_ssl.c:1032)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate does not match the hostname"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -204,9 +990,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing named responsibility evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent "
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94112574922 (6 phone numbers found); Email: info@energymin.gov.lk (4 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing named responsibility evidence found"
+        }
+      ]
     },
     {
       "level": 3,
@@ -232,5 +1037,11 @@
       "executed": false,
       "checks": []
     }
-  ]
+  ],
+  "vantage": {
+    "egress_ip": "52.155.60.177",
+    "country": "US",
+    "runner": "github-actions",
+    "proxy": false
+  }
 }

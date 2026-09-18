@@ -1,7 +1,8 @@
 # Website Audit: https://npc.lk/
 
-- Completed: 2026-09-08 23:54
+- Completed: 2026-09-18 06:43
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 61,Stratford Avenue Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 112 556 465 (6 phone numbers found); Email: sales@npc.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 556 461 ( (6 phone numbers found); Email: sales@npc.lk (3 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

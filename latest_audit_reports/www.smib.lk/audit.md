@@ -1,7 +1,8 @@
 # Website Audit: https://www.smib.lk/
 
-- Completed: 2026-09-08 23:41
+- Completed: 2026-09-18 06:32
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to proceed. This will help us assist you better. Thank you! First Name Last Name Email Address Log In Subscribe us & rec; Phone: 011-2575031 (10 phone numbers found); Email: info@smib.lk; Published named responsibility: director
+Published postal address: to proceed. This will help us assist you better. Thank you! First Name Last Name Email Address Log In Subscribe us & rec; Phone: 1922 (10 phone numbers found); Email: info@smib.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: to proceed. This will help us assist you better. Thank you! First Name Last Name Email Address Log In Subscribe us & rec |
-| reachable_contacts | ✅ | Phone: 011-2575031 (10 phone numbers found); Email: info@smib.lk |
+| reachable_contacts | ✅ | Phone: 1922 (10 phone numbers found); Email: info@smib.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

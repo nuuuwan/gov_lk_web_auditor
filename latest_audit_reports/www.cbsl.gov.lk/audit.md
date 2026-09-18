@@ -1,7 +1,8 @@
 # Website Audit: https://www.cbsl.gov.lk/
 
-- Completed: 2026-09-08 23:38
+- Completed: 2026-09-18 06:29
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A; Phone: 026 01.09.202 (230 phone numbers found); Email: psd@cbsl.lk (4 email addresses found); Published named responsibility: department
+Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A; Phone: 026 23.08.202 (228 phone numbers found); Email: mvts@cbsl.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A |
-| reachable_contacts | ✅ | Phone: 026 01.09.202 (230 phone numbers found); Email: psd@cbsl.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 026 23.08.202 (228 phone numbers found); Email: mvts@cbsl.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -52,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs3 |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 24 hours |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/laws/cdg/psd_mvts_application_form_e.docx |
 | published_update_date | ❓ | No passing published update date evidence found |

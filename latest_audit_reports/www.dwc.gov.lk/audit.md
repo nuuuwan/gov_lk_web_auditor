@@ -1,7 +1,8 @@
 # Website Audit: https://www.dwc.gov.lk/
 
-- Completed: 2026-09-08 23:36
+- Completed: 2026-09-18 06:29
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2 888 585 (2 phone numbers found); Email: dg@dwc.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2 883 355 (2 phone numbers found); Email: dg@dwc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

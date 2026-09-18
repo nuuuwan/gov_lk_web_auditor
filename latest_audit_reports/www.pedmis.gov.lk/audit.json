@@ -1,15 +1,15 @@
 {
-  "schema_version": "1.2.0",
-  "audit_id": "52083561-04ab-49d7-91ed-9390924ea420",
+  "schema_version": "1.3.0",
+  "audit_id": "42988685-89fb-4945-963e-722b39ec7973",
   "url": "https://www.pedmis.gov.lk",
   "normalized_url": "https://www.pedmis.gov.lk/",
-  "started_at": "2026-09-08T23:39:18.756502+05:30",
-  "completed_at": "2026-09-08T23:40:21.238983+05:30",
+  "started_at": "2026-09-18T06:29:55.532690+05:30",
+  "completed_at": "2026-09-18T06:30:59.783587+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     ]
   },
   "evidence": [
@@ -17,47 +17,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-08T23:39:19.132718+05:30"
+      "observed_at": "2026-09-18T06:29:56.160013+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-08T23:39:19.132737+05:30"
+      "observed_at": "2026-09-18T06:29:56.160037+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-08T23:39:19.164131+05:30"
+      "observed_at": "2026-09-18T06:29:57.099296+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "https://www.pedmis.gov.lk/",
-      "observed_at": "2026-09-08T23:40:21.238841+05:30"
+      "observed_at": "2026-09-18T06:30:59.783351+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.pedmis.gov.lk/",
-      "observed_at": "2026-09-08T23:40:21.238863+05:30"
+      "observed_at": "2026-09-18T06:30:59.783376+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "https://www.pedmis.gov.lk/",
-      "observed_at": "2026-09-08T23:40:21.238867+05:30"
+      "observed_at": "2026-09-18T06:30:59.783382+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://www.pedmis.gov.lk/",
-      "observed_at": "2026-09-08T23:40:21.238870+05:30"
+      "observed_at": "2026-09-18T06:30:59.783387+05:30"
     }
   ],
   "observations": [
@@ -89,7 +89,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     },
     {
       "url": "http://www.pedmis.gov.lk/",
@@ -107,7 +107,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
     },
     {
       "url": "http://www.pedmis.gov.lk/",
@@ -134,7 +134,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "executed": true,
       "checks": [
         {
@@ -183,7 +183,7 @@
           "name": "tls_browser_trusted",
           "level": 1,
           "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1032)"
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
@@ -231,5 +231,11 @@
       "executed": false,
       "checks": []
     }
-  ]
+  ],
+  "vantage": {
+    "egress_ip": "52.155.60.177",
+    "country": "US",
+    "runner": "github-actions",
+    "proxy": false
+  }
 }

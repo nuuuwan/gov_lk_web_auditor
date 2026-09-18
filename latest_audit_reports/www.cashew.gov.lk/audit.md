@@ -1,7 +1,8 @@
 # Website Audit: https://www.cashew.gov.lk/
 
-- Completed: 2026-09-08 23:57
+- Completed: 2026-09-18 06:46
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka; Phone: 011-2886685 (54 phone numbers found); Email: cashewco@sltnet.lk (4 email addresses found); Published named responsibility: division
+Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka; Phone: 077 8550439 (54 phone numbers found); Email: slccextension@gmail.com (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 011-2886685 (54 phone numbers found); Email: cashewco@sltnet.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 077 8550439 (54 phone numbers found); Email: slccextension@gmail.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -53,5 +54,5 @@ No passing required documents evidence found; No passing processing time evidenc
 | fees_and_payment | ✅ | Published fees and payment: රු 6,880 |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.cashew.gov.lk/wp-content/uploads/2025/09/RCI-Application-English-2025.09.08-1.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://www.cashew.gov.lk/wp-content/uploads/2026/09/Application-for-the-Importation-of-Raw-Cashew-TIEP.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

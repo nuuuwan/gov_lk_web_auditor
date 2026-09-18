@@ -1,7 +1,8 @@
 # Website Audit: https://pgipbs.kln.ac.lk/
 
-- Completed: 2026-09-08 23:30
+- Completed: 2026-09-18 06:21
 - Overall result: 🟠 Level 2
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -32,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Director, Postgraduate Institute of Pali and Buddhist Studies, 977/5,University Drive, Bulugaha Junction, Kelaniya View ; Phone: 0909090909 (68 phone numbers found); Email: infopgipbs@kln.ac.lk (15 email addresses found); Published named responsibility: director
+Published postal address: Director, Postgraduate Institute of Pali and Buddhist Studies, 977/5,University Drive, Bulugaha Junction, Kelaniya View ; Phone: 0714285714 (54 phone numbers found); Email: arjun@kln.ac.lk (15 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Director, Postgraduate Institute of Pali and Buddhist Studies, 977/5,University Drive, Bulugaha Junction, Kelaniya View  |
-| reachable_contacts | ✅ | Phone: 0909090909 (68 phone numbers found); Email: infopgipbs@kln.ac.lk (15 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0714285714 (54 phone numbers found); Email: arjun@kln.ac.lk (15 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

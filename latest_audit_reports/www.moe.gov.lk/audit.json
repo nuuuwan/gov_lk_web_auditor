@@ -1,24 +1,23 @@
 {
-  "schema_version": "1.2.0",
-  "audit_id": "4a796c3c-9c8e-4868-95b5-9fb8da84612e",
+  "schema_version": "1.3.0",
+  "audit_id": "9a84718a-b4b4-4436-b4ab-25d282a1c511",
   "url": "https://www.moe.gov.lk",
   "normalized_url": "https://www.moe.gov.lk/",
-  "started_at": "2026-09-09T00:04:52.696665+05:30",
-  "completed_at": "2026-09-09T00:05:07.414077+05:30",
+  "started_at": "2026-09-18T06:55:13.582046+05:30",
+  "completed_at": "2026-09-18T06:57:25.196415+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,105 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-09T00:04:53.918969+05:30"
+      "observed_at": "2026-09-18T06:55:14.022111+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-09T00:04:53.918987+05:30"
+      "observed_at": "2026-09-18T06:55:14.022129+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-09-09T00:04:54.028181+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-09-18T06:55:24.034592+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://moe.gov.lk/en/welcome/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.moe.gov.lk/",
-      "observed_at": "2026-09-09T00:05:07.164728+05:30"
+      "observed_at": "2026-09-18T06:57:25.196120+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://moe.gov.lk/en/welcome/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.moe.gov.lk/",
-      "observed_at": "2026-09-09T00:05:07.164750+05:30"
+      "observed_at": "2026-09-18T06:57:25.196150+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://moe.gov.lk/en/welcome/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.moe.gov.lk/",
-      "observed_at": "2026-09-09T00:05:07.164754+05:30"
+      "observed_at": "2026-09-18T06:57:25.196159+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://moe.gov.lk/en/welcome/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.moe.gov.lk/",
-      "observed_at": "2026-09-09T00:05:07.164758+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://moe.gov.lk/en/welcome/",
-      "source": "https://moe.gov.lk/",
-      "observed_at": "2026-09-09T00:05:07.164760+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.720325630",
-      "source": "https://moe.gov.lk/en/welcome/",
-      "data": {
-        "value": "0.720325630"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.720325630",
-      "source": "https://moe.gov.lk/en/welcome/",
-      "data": {
-        "value": "0.720325630"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.720325630",
-      "source": "https://moe.gov.lk/en/welcome/",
-      "data": {
-        "value": "0.720325630"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.720325630",
-      "source": "https://moe.gov.lk/en/welcome/",
-      "data": {
-        "value": "0.720325630"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.720325630",
-      "source": "https://moe.gov.lk/en/welcome/",
-      "data": {
-        "value": "0.720325630"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 203 visible characters across 5 pages",
-      "source": "https://www.moe.gov.lk/"
+      "observed_at": "2026-09-18T06:57:25.196166+05:30"
     }
   ],
   "observations": [
@@ -144,106 +85,49 @@
     },
     {
       "host": "www.moe.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-03-09T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.moe.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://moe.gov.lk/en/welcome/",
-      "redirects": [
-        "https://moe.gov.lk/en/",
-        "https://moe.gov.lk/en/welcome/"
-      ],
-      "elapsed_ms": 564,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.moe.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://moe.gov.lk/en/welcome/",
-      "redirects": [
-        "https://www.moe.gov.lk:443/",
-        "https://moe.gov.lk/en/",
-        "https://moe.gov.lk/en/welcome/"
-      ],
-      "elapsed_ms": 432,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.moe.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://moe.gov.lk/en/welcome/",
-      "redirects": [
-        "https://moe.gov.lk/en/",
-        "https://moe.gov.lk/en/welcome/"
-      ],
-      "elapsed_ms": 778,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.moe.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://moe.gov.lk/en/welcome/",
-      "redirects": [
-        "https://www.moe.gov.lk:443/",
-        "https://moe.gov.lk/en/",
-        "https://moe.gov.lk/en/welcome/"
-      ],
-      "elapsed_ms": 687,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://moe.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://moe.gov.lk/en/welcome/",
-      "redirects": [
-        "https://moe.gov.lk/en/",
-        "https://moe.gov.lk/en/welcome/"
-      ],
-      "elapsed_ms": 340,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://moe.gov.lk/en/welcome/",
-      "path": "audit.output/www.moe.gov.lk/20260909.0004/snapshots/page-01-ae56519b2fc6.html",
-      "sha256": "ae56519b2fc671bf6692aa150e6b38879a27dad8cb678d077a633d873f71722f",
-      "bytes": 79773
-    },
-    {
-      "url": "https://moe.gov.lk/en/welcome/",
-      "path": "audit.output/www.moe.gov.lk/20260909.0004/snapshots/page-02-5960ee950ea3.html",
-      "sha256": "5960ee950ea3ae2b9c619abbcdd501f040b58efda9c9846ff436ddf869e2f202",
-      "bytes": 79773
-    },
-    {
-      "url": "https://moe.gov.lk/en/welcome/",
-      "path": "audit.output/www.moe.gov.lk/20260909.0004/snapshots/page-03-c45abe76e4fe.html",
-      "sha256": "c45abe76e4fed27c06c3b8447e2ddda83580d3ea8dd6dac67b26566d4f313272",
-      "bytes": 79773
-    },
-    {
-      "url": "https://moe.gov.lk/en/welcome/",
-      "path": "audit.output/www.moe.gov.lk/20260909.0004/snapshots/page-04-9557f4900d65.html",
-      "sha256": "9557f4900d651ebafad7dcc877c217f1d1ba4270ef008d52733e01a24027a047",
-      "bytes": 79773
-    },
-    {
-      "url": "https://moe.gov.lk/en/welcome/",
-      "path": "audit.output/www.moe.gov.lk/20260909.0004/snapshots/page-05-4ad810e79ec1.html",
-      "sha256": "4ad810e79ec1b65249a177dead71c9b7d14a1104962ff7f8ed13e5df0f73b74a",
-      "bytes": 79773
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -257,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -270,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -327,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found; No email evidence found; No passing named responsibility evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing named responsibility evidence found"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -374,5 +239,11 @@
       "executed": false,
       "checks": []
     }
-  ]
+  ],
+  "vantage": {
+    "egress_ip": "52.155.60.177",
+    "country": "US",
+    "runner": "github-actions",
+    "proxy": false
+  }
 }

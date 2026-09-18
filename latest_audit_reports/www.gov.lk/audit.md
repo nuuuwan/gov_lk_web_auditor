@@ -1,7 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-09-08 23:28
+- Completed: 2026-09-18 06:18
 - Overall result: 🔴 Level 1
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (179 phone numbers found); Email: rardcnr@yahoo.com (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0951940000 (182 phone numbers found); Email: info@agd.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

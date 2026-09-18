@@ -1,7 +1,8 @@
 # Website Audit: https://www.cida.gov.lk/
 
-- Completed: 2026-09-08 23:52
+- Completed: 2026-09-18 06:42
 - Overall result: ⚫ Level 0
+- Vantage: 52.155.60.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
