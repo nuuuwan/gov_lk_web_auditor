@@ -1,24 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9c25e5e1-ab63-4428-a953-bfd2476256fe",
+  "audit_id": "24a71c21-2fcf-4195-8075-882a6d8d83a2",
   "url": "https://pml.lk/",
   "normalized_url": "https://pml.lk/",
-  "started_at": "2026-09-18T06:27:35.565652+05:30",
-  "completed_at": "2026-09-18T06:28:38.814010+05:30",
+  "started_at": "2026-09-19T06:22:00.864085+05:30",
+  "completed_at": "2026-09-19T06:23:09.156160+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "hosting_configured: Detected generic hosting marker: back soon"
     ]
   },
   "evidence": [
@@ -26,117 +17,135 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-18T06:27:36.306005+05:30"
+      "observed_at": "2026-09-19T06:22:01.393730+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-18T06:27:36.306028+05:30"
+      "observed_at": "2026-09-19T06:22:01.393753+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-18T06:27:36.618027+05:30"
+      "observed_at": "2026-09-19T06:22:01.922280+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 403 at https://pml.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://pml.lk/",
       "source": "https://pml.lk/",
-      "observed_at": "2026-09-18T06:28:35.451231+05:30"
+      "observed_at": "2026-09-19T06:23:05.641240+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://pml.lk/",
       "source": "http://pml.lk/",
-      "observed_at": "2026-09-18T06:28:35.451249+05:30"
+      "observed_at": "2026-09-19T06:23:05.641263+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://pml.lk/",
       "source": "https://pml.lk/",
-      "observed_at": "2026-09-18T06:28:35.451254+05:30"
+      "observed_at": "2026-09-19T06:23:05.641267+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://pml.lk/",
       "source": "http://pml.lk/",
-      "observed_at": "2026-09-18T06:28:35.451257+05:30"
+      "observed_at": "2026-09-19T06:23:05.641270+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://pml.lk/contact-us/",
       "source": "https://pml.lk/contact-us",
-      "observed_at": "2026-09-18T06:28:35.451260+05:30"
+      "observed_at": "2026-09-19T06:23:05.641273+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://pml.lk/branches/",
-      "source": "https://pml.lk/branches",
-      "observed_at": "2026-09-18T06:28:35.451263+05:30"
+      "detail": "Probe 6: HTTP 200 at https://pml.lk/contact-us/",
+      "source": "https://pml.lk/contact",
+      "observed_at": "2026-09-19T06:23:05.641275+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://pml.lk/tender-and-auction/",
-      "source": "https://pml.lk/tender-and-auction",
-      "observed_at": "2026-09-18T06:28:35.451266+05:30"
+      "detail": "Probe 7: HTTP 200 at https://pml.lk/about-us/",
+      "source": "https://pml.lk/about-us",
+      "observed_at": "2026-09-19T06:23:05.641277+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 8: HTTP 200 at https://pml.lk/products/",
+      "source": "https://pml.lk/products",
+      "observed_at": "2026-09-19T06:23:05.641279+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://pml.lk/branches/",
+      "source": "https://pml.lk/branches",
+      "observed_at": "2026-09-19T06:23:05.641282+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://pml.lk/news-events/",
+      "source": "https://pml.lk/news-events",
+      "observed_at": "2026-09-19T06:23:05.641284+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://pml.lk/investor-relations/",
+      "source": "https://pml.lk/investor-relations/",
+      "observed_at": "2026-09-19T06:23:05.641287+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://pml.lk/careers/",
+      "source": "https://pml.lk/careers",
+      "observed_at": "2026-09-19T06:23:05.641289+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://pml.lk/tender-and-auction/",
+      "source": "https://pml.lk/tender-and-auction",
+      "observed_at": "2026-09-19T06:23:05.641292+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://pml.lk/products/",
       "source": "https://pml.lk/products/",
-      "observed_at": "2026-09-18T06:28:35.451268+05:30"
+      "observed_at": "2026-09-19T06:23:05.641294+05:30"
     },
     {
-      "check": "http",
+      "check": "phone",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://pml.lk/stronger-together-growing-beyond-limits/",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "observed_at": "2026-09-18T06:28:35.451271+05:30"
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
     },
     {
-      "check": "http",
+      "check": "phone",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "observed_at": "2026-09-18T06:28:35.451274+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://pml.lk/privacy-policy/",
-      "source": "https://pml.lk/privacy-policy/",
-      "observed_at": "2026-09-18T06:28:35.451277+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://pml.lk/news/",
-      "source": "https://pml.lk/news/",
-      "observed_at": "2026-09-18T06:28:35.451280+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "observed_at": "2026-09-18T06:28:35.451283+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://pml.lk/pml-night-among-the-stars-season-2/",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "observed_at": "2026-09-18T06:28:35.451285+05:30"
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "0112 890 990"
+      }
     },
     {
       "check": "phone",
@@ -163,24 +172,6 @@
       "source": "https://pml.lk/",
       "data": {
         "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/",
-      "data": {
-        "value": "+94 112 890 990 "
       }
     },
     {
@@ -231,6 +222,24 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94112890990",
       "source": "https://pml.lk/",
       "data": {
@@ -253,24 +262,6 @@
       "source": "https://pml.lk/",
       "data": {
         "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/",
-      "data": {
-        "value": "+94 112 890 990 "
       }
     },
     {
@@ -321,6 +312,24 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94112890990",
       "source": "https://pml.lk/",
       "data": {
@@ -343,24 +352,6 @@
       "source": "https://pml.lk/",
       "data": {
         "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/",
-      "data": {
-        "value": "+94 112 890 990 "
       }
     },
     {
@@ -411,10 +402,91 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011-2890990 ",
-      "source": "https://pml.lk/contact-us/",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/",
       "data": {
-        "value": "011-2890990 "
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "+94 112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "0112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025-06-03-105",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microweb.global@gmail.com",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "microweb.global@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.pml@plc.lk",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "info.pml@plc.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 24 hours",
+      "source": "https://pml.lk/",
+      "data": {
+        "value": "24 hours"
       }
     },
     {
@@ -429,10 +501,55 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94112890990",
       "source": "https://pml.lk/contact-us/",
       "data": {
         "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112817653",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "0112817653"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112890990",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "0112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0765328017",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "0765328017"
       }
     },
     {
@@ -456,15 +573,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112890990",
-      "source": "https://pml.lk/contact-us/",
-      "data": {
-        "value": "0112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0112 890 990 ",
       "source": "https://pml.lk/contact-us/",
       "data": {
@@ -474,28 +582,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112 890 990",
+      "detail": "Published phone: 011-2890990 ",
       "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112817653",
-      "source": "https://pml.lk/contact-us/",
-      "data": {
-        "value": "0112817653"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/contact-us/",
-      "data": {
-        "value": "+94 112 890 990 "
+        "value": "011-2890990 "
       }
     },
     {
@@ -505,15 +595,6 @@
       "source": "https://pml.lk/contact-us/",
       "data": {
         "value": "025-06-03-105"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0765328017",
-      "source": "https://pml.lk/contact-us/",
-      "data": {
-        "value": "0765328017"
       }
     },
     {
@@ -528,19 +609,19 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: info.pml@plc.lk",
+      "detail": "Published email: grievances.pmcl@plc.lk",
       "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "info.pml@plc.lk"
+        "value": "grievances.pmcl@plc.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: grievances.pmcl@plc.lk",
+      "detail": "Published email: info.pml@plc.lk",
       "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "grievances.pmcl@plc.lk"
+        "value": "info.pml@plc.lk"
       }
     },
     {
@@ -555,116 +636,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 077-3100450 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-3100450 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-8702758 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-8702758 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112890990",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "+94112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-1755461 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-1755461 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 033-2121064 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "033-2121064 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-8914423 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-8914423 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-1654738 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-1654738 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 055-2018250 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "055-2018250 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-1539924 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-1539924 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "+94 112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2890990 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "011-2890990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 011-2817653 ",
-      "source": "https://pml.lk/branches/",
+      "source": "https://pml.lk/contact-us/",
       "data": {
         "value": "011-2817653 "
       }
@@ -672,26 +645,62 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 076-2379947 ",
-      "source": "https://pml.lk/branches/",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "076-2379947 "
+        "value": "+94 112 890 990 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011-2201230 ",
-      "source": "https://pml.lk/branches/",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "011-2201230 "
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112817653",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "0112817653"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112890990",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "0112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0765328017",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "0765328017"
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 112 890 990",
-      "source": "https://pml.lk/branches/",
+      "source": "https://pml.lk/contact-us/",
       "data": {
         "value": "+94 112 890 990"
       }
@@ -699,46 +708,280 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 074-3855892 ",
-      "source": "https://pml.lk/branches/",
+      "detail": "Published phone: 076-5328017 ",
+      "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "074-3855892 "
+        "value": "076-5328017 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 076-5656712 ",
-      "source": "https://pml.lk/branches/",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "076-5656712 "
+        "value": "0112 890 990 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 077-6230582 ",
-      "source": "https://pml.lk/branches/",
+      "detail": "Published phone: 011-2890990 ",
+      "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "077-6230582 "
+        "value": "011-2890990 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 034-2018510 ",
-      "source": "https://pml.lk/branches/",
+      "detail": "Published phone: 025-06-03-105",
+      "source": "https://pml.lk/contact-us/",
       "data": {
-        "value": "034-2018510 "
+        "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microweb.global@gmail.com",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "microweb.global@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: grievances.pmcl@plc.lk",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "grievances.pmcl@plc.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.pml@plc.lk",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "info.pml@plc.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: * Subject / Title * Message Select your nearest PML branch * Select Branch Nugegoda - Head Office Anuradhapura Kegalle A",
+      "source": "https://pml.lk/contact-us/",
+      "data": {
+        "value": "* Subject / Title * Message Select your nearest PML branch * Select Branch Nugegoda - Head Office Anuradhapura Kegalle A"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 081-2018320 ",
-      "source": "https://pml.lk/branches/",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/about-us/",
       "data": {
-        "value": "081-2018320 "
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "+94 112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "0112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025-06-03-105",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microweb.global@gmail.com",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "microweb.global@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.pml@plc.lk",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "info.pml@plc.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: Rs. 13",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "Rs. 13"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 24 hours",
+      "source": "https://pml.lk/about-us/",
+      "data": {
+        "value": "24 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "+94 112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "0112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025-06-03-105",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microweb.global@gmail.com",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "microweb.global@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.pml@plc.lk",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "info.pml@plc.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 24 hours",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "24 hours"
       }
     },
     {
@@ -753,159 +996,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 074-3473492 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "074-3473492 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 072-9566788 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "072-9566788 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 035-2018240 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "035-2018240 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-5588361 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-5588361 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-1763646 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-1763646 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 051-2018210 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "051-2018210 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 074-1567468 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "074-1567468 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 037-2253020 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "037-2253020 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 027-7645015 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "027-7645015 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-6026065 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-6026065 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 055-2018329 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "055-2018329 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 081-2498026 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "081-2498026 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-3877145 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-3877145 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-8836264 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-8836264 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-1009897 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "071-1009897 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-8061216 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-8061216 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-8269445 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-8269445 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 070-1705054 ",
       "source": "https://pml.lk/branches/",
       "data": {
@@ -915,145 +1005,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 077-1150642 ",
+      "detail": "Published phone: 055-2018250 ",
       "source": "https://pml.lk/branches/",
       "data": {
-        "value": "077-1150642 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-1527689 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-1527689 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-6592773 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-6592773 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-5596407 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-5596407 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-4026747 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-4026747 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-5652308 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-5652308 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-4140100 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-4140100 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-2338853 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-2338853 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-1383306 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-1383306 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 047-2018229 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "047-2018229 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-7467033 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-7467033 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077-0439102 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "077-0439102 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071-6071682 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "071-6071682 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 081-2498062 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "081-2498062 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076-5696481 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "076-5696481 "
+        "value": "055-2018250 "
       }
     },
     {
@@ -1068,15 +1023,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 011-2227660 ",
-      "source": "https://pml.lk/branches/",
-      "data": {
-        "value": "011-2227660 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 011-2107279 ",
       "source": "https://pml.lk/branches/",
       "data": {
@@ -1086,10 +1032,496 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 077-8061216 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-8061216 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-4140100 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-4140100 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "+94 112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 051-2018210 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "051-2018210 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3877145 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-3877145 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "0112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-0439102 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-0439102 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-1150642 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-1150642 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 081-2498062 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "081-2498062 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 025-06-03-105",
       "source": "https://pml.lk/branches/",
       "data": {
         "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-5696481 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-5696481 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-3100450 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-3100450 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 037-2253020 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "037-2253020 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 034-2018510 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "034-2018510 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-4026747 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-4026747 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-6592773 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-6592773 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-2379947 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-2379947 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-8702758 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-8702758 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 072-9566788 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "072-9566788 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-6071682 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "071-6071682 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-8269445 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-8269445 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 081-2498026 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "081-2498026 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-1539924 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-1539924 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-6026065 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-6026065 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-7467033 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-7467033 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2890990 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "011-2890990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-5656712 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-5656712 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 055-2018329 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "055-2018329 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2817653 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "011-2817653 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-1755461 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-1755461 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-5588361 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-5588361 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 074-3473492 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "074-3473492 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-1763646 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-1763646 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 047-2018229 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "047-2018229 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-1527689 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-1527689 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 074-1567468 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "074-1567468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-1009897 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "071-1009897 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2227660 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "011-2227660 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-5596407 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-5596407 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-6230582 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-6230582 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 081-2018320 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "081-2018320 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-5652308 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-5652308 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-2338853 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-2338853 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-1654738 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-1654738 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-8914423 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-8914423 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 035-2018240 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "035-2018240 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033-2121064 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "033-2121064 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2201230 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "011-2201230 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076-8836264 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "076-8836264 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077-1383306 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "077-1383306 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 074-3855892 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "074-3855892 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 027-7645015 ",
+      "source": "https://pml.lk/branches/",
+      "data": {
+        "value": "027-7645015 "
       }
     },
     {
@@ -1122,6 +1554,327 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "+94 112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "0112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025-06-03-105",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microweb.global@gmail.com",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "microweb.global@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.pml@plc.lk",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "info.pml@plc.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 24 hours",
+      "source": "https://pml.lk/news-events/",
+      "data": {
+        "value": "24 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "+94 112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "0112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025-06-03-105",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microweb.global@gmail.com",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "microweb.global@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.pml@plc.lk",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "info.pml@plc.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: investpml@plc.lk",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "investpml@plc.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://pml.lk/wp-content/uploads/2026/02/Information-Memorandom.pdf",
+      "source": "https://pml.lk/investor-relations/",
+      "data": {
+        "value": "https://pml.lk/wp-content/uploads/2026/02/Information-Memorandom.pdf"
+      }
+    },
+    {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: back soon",
+      "source": "https://pml.lk/careers/"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112890990",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "+94112890990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "+94 112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990 ",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "0112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025-06-03-105",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "025-06-03-105"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microweb.global@gmail.com",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "microweb.global@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.pml@plc.lk",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "info.pml@plc.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://pml.lk/careers/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/tender-and-auction/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/tender-and-auction/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94112890990",
       "source": "https://pml.lk/tender-and-auction/",
       "data": {
@@ -1144,24 +1897,6 @@
       "source": "https://pml.lk/tender-and-auction/",
       "data": {
         "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/tender-and-auction/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/tender-and-auction/",
-      "data": {
-        "value": "+94 112 890 990 "
       }
     },
     {
@@ -1203,6 +1938,24 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 890 990 ",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "+94 112 890 990 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 890 990",
+      "source": "https://pml.lk/products/",
+      "data": {
+        "value": "0112 890 990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94112890990",
       "source": "https://pml.lk/products/",
       "data": {
@@ -1225,24 +1978,6 @@
       "source": "https://pml.lk/products/",
       "data": {
         "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/products/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/products/",
-      "data": {
-        "value": "+94 112 890 990 "
       }
     },
     {
@@ -1297,543 +2032,12 @@
       "source": "https://pml.lk/products/",
       "data": {
         "value": "24 hours"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112890990",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "+94112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "+94 112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990 ",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "+94 112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-06-03-105",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "025-06-03-105"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info.pml@plc.lk",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "info.pml@plc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
-      "source": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "data": {
-        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112890990",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "+94112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "+94 112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990 ",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "+94 112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-06-03-105",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "025-06-03-105"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info.pml@plc.lk",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "info.pml@plc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 24 hours",
-      "source": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "data": {
-        "value": "24 hours"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112890990",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "+94112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "+94 112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990 ",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 289 0990 ",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "+94 11 289 0990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "+94 112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-06-03-105",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "025-06-03-105"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: microweb.global@gmail.com",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "microweb.global@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info.pml@plc.lk",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "info.pml@plc.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: grievances.pmcl@plc.lk",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "grievances.pmcl@plc.lk"
-      }
-    },
-    {
-      "check": "eligibility_criteria",
-      "status": "pass",
-      "detail": "Published eligibility criteria: eligibility",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "eligibility"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: legal basis",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "legal basis"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 24 hours",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "24 hours"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 2025-06-03",
-      "source": "https://pml.lk/privacy-policy/",
-      "data": {
-        "value": "2025-06-03"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112890990",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "+94112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "+94 112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990 ",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "+94 112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-06-03-105",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "025-06-03-105"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info.pml@plc.lk",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "info.pml@plc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pml.lk/news/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112890990",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "+94112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "+94 112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 729 6605 ",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "011 729 6605 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990 ",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "+94 112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-06-03-105",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "025-06-03-105"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info.pml@plc.lk",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "info.pml@plc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
-      "source": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "data": {
-        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112890990",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "+94112890990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "+94 112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990 ",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "0112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 890 990",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "0112 890 990"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 890 990 ",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "+94 112 890 990 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-06-03-105",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "025-06-03-105"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info.pml@plc.lk",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "info.pml@plc.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella",
-      "source": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "data": {
-        "value": "Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
       }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 9058 visible characters across 14 pages",
+      "detail": "Substantive page content: 26917 visible characters across 14 pages",
       "source": "https://pml.lk/"
     }
   ],
@@ -1862,11 +2066,11 @@
     },
     {
       "url": "https://pml.lk/",
-      "status_code": 403,
+      "status_code": 200,
       "final_url": "https://pml.lk/",
       "redirects": [],
-      "elapsed_ms": 539,
-      "content_type": "text/html",
+      "elapsed_ms": 3016,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
@@ -1876,7 +2080,7 @@
       "redirects": [
         "https://pml.lk/"
       ],
-      "elapsed_ms": 4378,
+      "elapsed_ms": 2271,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1885,7 +2089,7 @@
       "status_code": 200,
       "final_url": "https://pml.lk/",
       "redirects": [],
-      "elapsed_ms": 2735,
+      "elapsed_ms": 2342,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1896,7 +2100,7 @@
       "redirects": [
         "https://pml.lk/"
       ],
-      "elapsed_ms": 2414,
+      "elapsed_ms": 2449,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1907,7 +2111,40 @@
       "redirects": [
         "https://pml.lk/contact-us/"
       ],
-      "elapsed_ms": 2508,
+      "elapsed_ms": 2206,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pml.lk/contact",
+      "status_code": 200,
+      "final_url": "https://pml.lk/contact-us/",
+      "redirects": [
+        "https://pml.lk/contact-us/"
+      ],
+      "elapsed_ms": 5215,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pml.lk/about-us",
+      "status_code": 200,
+      "final_url": "https://pml.lk/about-us/",
+      "redirects": [
+        "https://pml.lk/about-us/"
+      ],
+      "elapsed_ms": 3891,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pml.lk/products",
+      "status_code": 200,
+      "final_url": "https://pml.lk/products/",
+      "redirects": [
+        "https://pml.lk/products/"
+      ],
+      "elapsed_ms": 2857,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1918,7 +2155,38 @@
       "redirects": [
         "https://pml.lk/branches/"
       ],
-      "elapsed_ms": 1913,
+      "elapsed_ms": 10532,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pml.lk/news-events",
+      "status_code": 200,
+      "final_url": "https://pml.lk/news-events/",
+      "redirects": [
+        "https://pml.lk/news-events/"
+      ],
+      "elapsed_ms": 4138,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pml.lk/investor-relations/",
+      "status_code": 200,
+      "final_url": "https://pml.lk/investor-relations/",
+      "redirects": [],
+      "elapsed_ms": 1992,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://pml.lk/careers",
+      "status_code": 200,
+      "final_url": "https://pml.lk/careers/",
+      "redirects": [
+        "https://pml.lk/careers/"
+      ],
+      "elapsed_ms": 1876,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1929,7 +2197,7 @@
       "redirects": [
         "https://pml.lk/tender-and-auction/"
       ],
-      "elapsed_ms": 2301,
+      "elapsed_ms": 2030,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -1938,61 +2206,7 @@
       "status_code": 200,
       "final_url": "https://pml.lk/products/",
       "redirects": [],
-      "elapsed_ms": 7279,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "status_code": 200,
-      "final_url": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "redirects": [],
-      "elapsed_ms": 5956,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "status_code": 200,
-      "final_url": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "redirects": [],
-      "elapsed_ms": 2184,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pml.lk/privacy-policy/",
-      "status_code": 200,
-      "final_url": "https://pml.lk/privacy-policy/",
-      "redirects": [],
-      "elapsed_ms": 1474,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pml.lk/news/",
-      "status_code": 200,
-      "final_url": "https://pml.lk/news/",
-      "redirects": [],
-      "elapsed_ms": 1118,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "status_code": 200,
-      "final_url": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "redirects": [],
-      "elapsed_ms": 946,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "status_code": 200,
-      "final_url": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "redirects": [],
-      "elapsed_ms": 1270,
+      "elapsed_ms": 2108,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -2000,87 +2214,87 @@
   "snapshots": [
     {
       "url": "https://pml.lk/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-01-d7402ae319be.html",
-      "sha256": "d7402ae319be4a4b482862ef7d22996e1fcf2c880b59824a6ba1dec13e2ed710",
-      "bytes": 920
-    },
-    {
-      "url": "https://pml.lk/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-02-17047cbfcd67.html",
-      "sha256": "17047cbfcd6775c61e1d48e20584e8fab3f8c3bb38ca53096b3b0d953343ba25",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-01-2648d9582732.html",
+      "sha256": "2648d9582732a4ebd57f88e3ec9f7da1020588cc335d838d4abb4a70657a53a7",
       "bytes": 588732
     },
     {
       "url": "https://pml.lk/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-03-80a2315763c7.html",
-      "sha256": "80a2315763c78b9464c9136294e940d29d46a49493716ebe963bb0a37d6a3afe",
-      "bytes": 588730
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-02-91c4dad10ac7.html",
+      "sha256": "91c4dad10ac7d4d824ada3fe40862502435342c8f3b8a1fd89b61f5f6bd9f8a0",
+      "bytes": 588731
     },
     {
       "url": "https://pml.lk/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-04-3401d550db51.html",
-      "sha256": "3401d550db5151d63494f60e3c2eae83d7ce8f397cb401b87a90ca15c981e9a4",
-      "bytes": 588732
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-03-b5b213fb4c47.html",
+      "sha256": "b5b213fb4c47a10dfb095f780b125f69793ad8f042ca27aea2e182c260c4c4d0",
+      "bytes": 588731
+    },
+    {
+      "url": "https://pml.lk/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-04-b79c5c544556.html",
+      "sha256": "b79c5c5445560b22e9d5fa86436d361150222461d21f34929590ab28d43b07c3",
+      "bytes": 588731
     },
     {
       "url": "https://pml.lk/contact-us/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-05-d847e0d1f885.html",
-      "sha256": "d847e0d1f88589088f4742134efdf18982f75ef1eb6dd6e1126c0ae772b09daf",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-05-c58883b770a5.html",
+      "sha256": "c58883b770a5cbfbbd1b14d336e27895c4ba4d1e9dfc5955a57b4ffe1d6085d7",
+      "bytes": 480145
+    },
+    {
+      "url": "https://pml.lk/contact-us/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-06-ed1ee55a3611.html",
+      "sha256": "ed1ee55a36111e32566275ec4cfce2bd3d3792c067808f7fcad1ff4bf1ab76ec",
       "bytes": 480146
     },
     {
-      "url": "https://pml.lk/branches/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-06-f170ab9daccc.html",
-      "sha256": "f170ab9dacccb2cd7b6005cfdd36cd801e001bbc28457e81df04b8237bc9811c",
-      "bytes": 583101
-    },
-    {
-      "url": "https://pml.lk/tender-and-auction/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-07-36fe57db3789.html",
-      "sha256": "36fe57db37898c00243aa337b5b84babd17b97a70c7854c7a9b92c97dbffd22c",
-      "bytes": 461984
+      "url": "https://pml.lk/about-us/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-07-e32528000766.html",
+      "sha256": "e325280007664f16b9acf545f8a37a92c6c3e1baba052af04a1da1f13b674978",
+      "bytes": 530578
     },
     {
       "url": "https://pml.lk/products/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-08-d689a1c0d8ba.html",
-      "sha256": "d689a1c0d8bab05b6fd79fbdae382875806340a31510666a162d973a8f7def26",
-      "bytes": 469825
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-08-4e7c259452fb.html",
+      "sha256": "4e7c259452fb1b53b9f9f9095840640f6e7f2970f870729ab3c2bd905cca8628",
+      "bytes": 469721
     },
     {
-      "url": "https://pml.lk/stronger-together-growing-beyond-limits/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-09-b86cc26d180d.html",
-      "sha256": "b86cc26d180d31f0d0cc2316a59303d9adef1adfe8553e9ec504fb1272010187",
-      "bytes": 567011
+      "url": "https://pml.lk/branches/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-09-d511f69215bb.html",
+      "sha256": "d511f69215bb6520a3c3e395d0774fe81e5997db5ae9bb245ec7181ab497b245",
+      "bytes": 583102
     },
     {
-      "url": "https://pml.lk/empowering-women-entrepreneurs-through-the-power-of-social-media/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-10-f989926ca674.html",
-      "sha256": "f989926ca67431a05fb2d829253f0e47cdba0d8b7f168b46f3979a41e49d4cc3",
-      "bytes": 492460
+      "url": "https://pml.lk/news-events/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-10-2ea025855f0c.html",
+      "sha256": "2ea025855f0c0ceb0408c26c0f7bcb83ffef8ecac4622cc71545500bbb9aa85e",
+      "bytes": 601462
     },
     {
-      "url": "https://pml.lk/privacy-policy/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-11-c57da62c87e8.html",
-      "sha256": "c57da62c87e8abe14f35f25d8025cfc086a0537b1fd0a1bacd5196dcd43d85db",
-      "bytes": 465895
+      "url": "https://pml.lk/investor-relations/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-11-46376807a82c.html",
+      "sha256": "46376807a82c664655956a83b152ae1753cf96175035c34e53ab4f66e5d8a715",
+      "bytes": 458842
     },
     {
-      "url": "https://pml.lk/news/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-12-d67802b18557.html",
-      "sha256": "d67802b1855746f5b758bb2e8010eb45899b55f370fc97cf83dcb2da8aec160c",
-      "bytes": 465849
+      "url": "https://pml.lk/careers/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-12-adf1450a03d9.html",
+      "sha256": "adf1450a03d92424ad7e47dae39133578b9b68eb2377b50a66beb9fc0376970d",
+      "bytes": 458251
     },
     {
-      "url": "https://pml.lk/pml-dehiattakandiya-window-office-officially-declared-open/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-13-1e7d04651bdd.html",
-      "sha256": "1e7d04651bdd942a514fe034d11a7fe436ee12839118527e18c39f00d0cd50ea",
-      "bytes": 512241
+      "url": "https://pml.lk/tender-and-auction/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-13-a6f7c9fd49da.html",
+      "sha256": "a6f7c9fd49da6003bb58c8fec486392d784b88a1d5fe80fde8d9484a57adc6d6",
+      "bytes": 461882
     },
     {
-      "url": "https://pml.lk/pml-night-among-the-stars-season-2/",
-      "path": "audit.output/pml.lk/20260918.0627/snapshots/page-14-fba4f5e584f7.html",
-      "sha256": "fba4f5e584f7404fe26602f674f47c2782171805f61fb0cc31975fef52d6977e",
-      "bytes": 682011
+      "url": "https://pml.lk/products/",
+      "path": "audit.output/pml.lk/20260919.0622/snapshots/page-14-a3ec7af47eec.html",
+      "sha256": "a3ec7af47eec8e2867540d4a61fcb5a182bd4be3e6787448548025b4d7378764",
+      "bytes": 469722
     }
   ],
   "reviewer_decisions": [],
@@ -2096,8 +2310,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Detected generic hosting marker: back soon",
       "executed": true,
       "checks": [
         {
@@ -2127,8 +2341,8 @@
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "fail",
+          "reason": "Detected generic hosting marker: back soon"
         },
         {
           "name": "http_available",
@@ -2165,80 +2379,18 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella; Phone: +94112890990 (64 phone numbers found); Email: microweb.global@gmail.com (3 email addresses found); Published named responsibility: division",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Loan Amount LKR Loan Purpose * Select your nearest PML branch Anuradhapura Kegalle Ampara Batticaloa Badulla Avissawella"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94112890990 (64 phone numbers found); Email: microweb.global@gmail.com (3 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing required documents evidence found; No passing downloadable form evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published eligibility criteria: eligibility"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs,"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: legal basis"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published processing time: 24 hours"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published published update date: 2025-06-03"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -2258,7 +2410,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.155.60.177",
+    "egress_ip": "172.215.217.195",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

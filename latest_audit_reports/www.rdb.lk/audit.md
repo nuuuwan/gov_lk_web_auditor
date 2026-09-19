@@ -1,8 +1,8 @@
 # Website Audit: https://www.rdb.lk/
 
-- Completed: 2026-09-18 06:32
+- Completed: 2026-09-19 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: – No.933,Kandy Road, Wedamulla, Kelaniya Telephone No. – 011-2035468 Mobile No. – 071-0290790 Official Email – serasingh; Phone: +94112035454 (15 phone numbers found); Email: info@rdb.lk (6 email addresses found); Published named responsibility: director
+Published postal address: – No.933,Kandy Road, Wedamulla, Kelaniya Telephone No. – 011-2035468 Mobile No. – 071-0290790 Official Email – serasingh; Phone: +94 11 290 6883 (15 phone numbers found); Email: info@rdb.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: – No.933,Kandy Road, Wedamulla, Kelaniya Telephone No. – 011-2035468 Mobile No. – 071-0290790 Official Email – serasingh |
-| reachable_contacts | ✅ | Phone: +94112035454 (15 phone numbers found); Email: info@rdb.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 290 6883 (15 phone numbers found); Email: info@rdb.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

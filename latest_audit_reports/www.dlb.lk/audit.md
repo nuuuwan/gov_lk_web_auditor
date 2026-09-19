@@ -1,8 +1,8 @@
 # Website Audit: https://www.dlb.lk/
 
-- Completed: 2026-09-18 06:30
+- Completed: 2026-09-19 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 356, Dr Colvin R de Silva Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 4824824 (12 phone numbers found); Email: info@dlb.lk (85 email addresses found); Published named responsibility: director
+Published postal address: No 356, Dr Colvin R de Silva Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 4824824 (11 phone numbers found); Email: info@dlb.lk (85 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 356, Dr Colvin R de Silva Mawatha, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 4824824 (12 phone numbers found); Email: info@dlb.lk (85 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 4824824 (11 phone numbers found); Email: info@dlb.lk (85 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

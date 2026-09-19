@@ -1,8 +1,8 @@
 # Website Audit: https://cg-shanghai.gov.lk/
 
-- Completed: 2026-09-18 06:34
+- Completed: 2026-09-19 06:28
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Room 202, Building A, Shanghai Mixc, 1799 Wuzhong Road, Shanghai, 201103, People's Republic of China Telephone: ( 0086)-; Phone: 0913283265 (12 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: Room 202, Building A, Shanghai Mixc, 1799 Wuzhong Road, Shanghai, 201103, People's Republic of China Telephone: ( 0086)-; Phone: 0086)-21-6237 (12 phone numbers found); Email: slcg.shanghai@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Room 202, Building A, Shanghai Mixc, 1799 Wuzhong Road, Shanghai, 201103, People's Republic of China Telephone: ( 0086)- |
-| reachable_contacts | ✅ | Phone: 0913283265 (12 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0086)-21-6237 (12 phone numbers found); Email: slcg.shanghai@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

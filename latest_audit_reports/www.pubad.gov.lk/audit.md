@@ -1,8 +1,8 @@
 # Website Audit: https://www.pubad.gov.lk/
 
-- Completed: 2026-09-18 06:58
+- Completed: 2026-09-19 06:55
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka; Phone: +94 11 2695279 (416 phone numbers found); Email: info@pubad.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka; Phone: +94 11 2696211- (394 phone numbers found); Email: info@pubad.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2695279 (416 phone numbers found); Email: info@pubad.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2696211- (394 phone numbers found); Email: info@pubad.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 03 days |
-| downloadable_form | ✅ | Published downloadable form: https://pubad.gov.lk/web/images/latest_document/notices/2026/1787296830-slacs-calling-applications-promotion-grade-i-to-sp-grade-01-07-2026-e.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://pubad.gov.lk/web/images/latest_document/RTI/Right_to_Information_Act(e).pdf |
 | published_update_date | ✅ | Published published update date: 2026-09-09 |

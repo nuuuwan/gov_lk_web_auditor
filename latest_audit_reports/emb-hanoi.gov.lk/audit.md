@@ -1,8 +1,8 @@
 # Website Audit: https://emb-hanoi.gov.lk/
 
-- Completed: 2026-09-18 06:35
+- Completed: 2026-09-19 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d; Phone: 0933 296 202 (13 phone numbers found); Email: slemb.hanoi@mfa.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d; Phone: 0310270009 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d |
-| reachable_contacts | ✅ | Phone: 0933 296 202 (13 phone numbers found); Email: slemb.hanoi@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0310270009 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

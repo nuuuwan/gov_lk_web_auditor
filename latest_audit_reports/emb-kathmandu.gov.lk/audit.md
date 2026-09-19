@@ -1,8 +1,8 @@
 # Website Audit: https://emb-kathmandu.gov.lk/
 
-- Completed: 2026-09-18 06:33
+- Completed: 2026-09-19 06:27
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: delivered by Ambassador of Sri Lanka to Nepal Ruwanthi\\nDelpitiya.\"},\"tunes\":{\"alignment\":{\"alignment\":\"left\"}; Phone: 0.271394202 (12 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: division
+Published postal address: delivered by Ambassador of Sri Lanka to Nepal Ruwanthi\\nDelpitiya.\"},\"tunes\":{\"alignment\":{\"alignment\":\"left\"}; Phone: 0097714721 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: delivered by Ambassador of Sri Lanka to Nepal Ruwanthi\\nDelpitiya.\"},\"tunes\":{\"alignment\":{\"alignment\":\"left\"} |
-| reachable_contacts | ✅ | Phone: 0.271394202 (12 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0097714721 (12 phone numbers found); Email: slemb.kathmandu@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

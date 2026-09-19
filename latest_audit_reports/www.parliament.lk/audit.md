@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-09-18 07:00
+- Completed: 2026-09-19 06:56
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,14 +45,14 @@ Published postal address: Sign Up Your Email address Sign Up Parliament of Sri L
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: gazette |
+| legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-09-11 |
+| published_update_date | ✅ | Published published update date: 16 September 2026 |

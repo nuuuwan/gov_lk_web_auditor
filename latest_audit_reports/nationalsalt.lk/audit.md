@@ -1,8 +1,8 @@
 # Website Audit: https://nationalsalt.lk/
 
-- Completed: 2026-09-18 06:43
+- Completed: 2026-09-19 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: GENERAL NUMBER 0112368974 EMAIL info@nationalsalt.lk WEBSITE www.nationalsalt.lk Thank you. Your message has been sent Error, email not sent Sent Now NATIONAL SALT LIMITED Copyright 2023 by Ceylon Cloud Technologies (Pvt) Ltd. $(document).ready(function() { // required elements var imgPopup = $('.img-popup'); var imgCont = $('.s'); var popupImage = $('.img-popup img'); var closeBtn = $('.close-btn'); // handle events imgCont.on('click', function() { var img_src = $(this).children('img').attr('src'); imgPopup.children('img').attr('src', img_src); imgPopup.addClass('opened'); }); $(imgPopup, closeBtn).on('click', function() { imgPopup.removeClass('opened'); imgPopup.children('img').attr('src', ''); }); popupImage.on('click', function(e) { e.stopPropagation(); }); });; Phone: 01.01.2025 14. (2532 phone numbers found); Email: info@nationalsalt.lk (7 email addresses found); Published named responsibility: director
+Published postal address: GENERAL NUMBER 0112368974 EMAIL info@nationalsalt.lk WEBSITE www.nationalsalt.lk Thank you. Your message has been sent Error, email not sent Sent Now NATIONAL SALT LIMITED Copyright 2023 by Ceylon Cloud Technologies (Pvt) Ltd. $(document).ready(function() { // required elements var imgPopup = $('.img-popup'); var imgCont = $('.s'); var popupImage = $('.img-popup img'); var closeBtn = $('.close-btn'); // handle events imgCont.on('click', function() { var img_src = $(this).children('img').attr('src'); imgPopup.children('img').attr('src', img_src); imgPopup.addClass('opened'); }); $(imgPopup, closeBtn).on('click', function() { imgPopup.removeClass('opened'); imgPopup.children('img').attr('src', ''); }); popupImage.on('click', function(e) { e.stopPropagation(); }); });; Phone: 09.2001 05.12. (2532 phone numbers found); Email: mslhogm@gmail.com (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: GENERAL NUMBER 0112368974 EMAIL info@nationalsalt.lk WEBSITE www.nationalsalt.lk Thank you. Your message has been sent Error, email not sent Sent Now NATIONAL SALT LIMITED Copyright 2023 by Ceylon Cloud Technologies (Pvt) Ltd. $(document).ready(function() { // required elements var imgPopup = $('.img-popup'); var imgCont = $('.s'); var popupImage = $('.img-popup img'); var closeBtn = $('.close-btn'); // handle events imgCont.on('click', function() { var img_src = $(this).children('img').attr('src'); imgPopup.children('img').attr('src', img_src); imgPopup.addClass('opened'); }); $(imgPopup, closeBtn).on('click', function() { imgPopup.removeClass('opened'); imgPopup.children('img').attr('src', ''); }); popupImage.on('click', function(e) { e.stopPropagation(); }); }); |
-| reachable_contacts | ✅ | Phone: 01.01.2025 14. (2532 phone numbers found); Email: info@nationalsalt.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 09.2001 05.12. (2532 phone numbers found); Email: mslhogm@gmail.com (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

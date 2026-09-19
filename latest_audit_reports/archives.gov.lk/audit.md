@@ -1,8 +1,8 @@
 # Website Audit: https://archives.gov.lk/
 
-- Completed: 2026-09-18 06:13
+- Completed: 2026-09-19 06:08
 - Overall result: 🔴 Level 1
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

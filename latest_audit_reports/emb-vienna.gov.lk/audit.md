@@ -1,8 +1,8 @@
 # Website Audit: https://emb-vienna.gov.lk/
 
-- Completed: 2026-09-18 06:35
+- Completed: 2026-09-19 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday –; Phone: +381113690245 (12 phone numbers found); Email: srilanka@consulate.cz (11 email addresses found); Published named responsibility: director
+Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday –; Phone: +38631380555 (12 phone numbers found); Email: srilanka@consulate.cz (11 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Weyringergasse 33-35, 1040, Vienna, Austria Tel . +43 1 503 79 88 Email : slemb.vienna@mfa.gov.lk Office Hours: Monday – |
-| reachable_contacts | ✅ | Phone: +381113690245 (12 phone numbers found); Email: srilanka@consulate.cz (11 email addresses found) |
+| reachable_contacts | ✅ | Phone: +38631380555 (12 phone numbers found); Email: srilanka@consulate.cz (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

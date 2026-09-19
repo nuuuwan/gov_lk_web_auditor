@@ -1,8 +1,8 @@
 # Website Audit: https://lankacoal.lk/
 
-- Completed: 2026-09-18 06:25
+- Completed: 2026-09-19 06:20
 - Overall result: 🔴 Level 1
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 015 57.77 59.1 (23 phone numbers found); Email: hemanthaks@gmail.com |
+| reachable_contacts | ✅ | Phone: 025-2026 01.0 (23 phone numbers found); Email: hemanthaks@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

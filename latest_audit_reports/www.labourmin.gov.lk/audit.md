@@ -1,8 +1,8 @@
 # Website Audit: https://www.labourmin.gov.lk/
 
-- Completed: 2026-09-18 06:57
+- Completed: 2026-09-19 06:51
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka; Phone: 0112581991 (56 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found); Published named responsibility: division
+Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka; Phone: +94) 11 2581991 ( (56 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0112581991 (56 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 11 2581991 ( (56 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌

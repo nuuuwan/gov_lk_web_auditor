@@ -1,8 +1,8 @@
 # Website Audit: https://pgie.ou.ac.lk/
 
-- Completed: 2026-09-18 06:21
+- Completed: 2026-09-19 06:15
 - Overall result: 🟠 Level 2
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: P.O. Box 21, Nawala, , Nugegoda, 11250, Sri Lanka Contacts +94 112 825 805 Email sarpgie@ou.ac.lk General Inquires Name ; Phone: +9411 282 5805 (4 phone numbers found); Email: sarpgie@ou.ac.lk (4 email addresses found); Published named responsibility: director
+Published postal address: P.O. Box 21, Nawala, , Nugegoda, 11250, Sri Lanka Contacts +94 112 825 805 Email sarpgie@ou.ac.lk General Inquires Name ; Phone: 0.149019607 (4 phone numbers found); Email: sarpgie@ou.ac.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: P.O. Box 21, Nawala, , Nugegoda, 11250, Sri Lanka Contacts +94 112 825 805 Email sarpgie@ou.ac.lk General Inquires Name  |
-| reachable_contacts | ✅ | Phone: +9411 282 5805 (4 phone numbers found); Email: sarpgie@ou.ac.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.149019607 (4 phone numbers found); Email: sarpgie@ou.ac.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

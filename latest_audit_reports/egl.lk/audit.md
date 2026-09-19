@@ -1,8 +1,8 @@
 # Website Audit: https://egl.lk/
 
-- Completed: 2026-09-18 06:25
+- Completed: 2026-09-19 06:19
 - Overall result: 🔴 Level 1
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: EGL Headquarters +94 11 243 4197 +94 11 214 7201 FAX +94 11 244 5266 20 New Kelanibridge Road, Kolonnawa, 10600 Sri Lank |
+| postal_address | ✅ | Published postal address: EMAIL EGL Headquarters +94 11 243 4197 +94 11 214 7202 FAX +94 11 244 5266 20 New Kelanibridge Road, Kolonnawa, 10600 Sr |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: department |
 

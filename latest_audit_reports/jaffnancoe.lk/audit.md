@@ -1,8 +1,8 @@
 # Website Audit: https://jaffnancoe.lk/
 
-- Completed: 2026-09-18 06:23
+- Completed: 2026-09-19 06:18
 - Overall result: 🔴 Level 1
-- Vantage: 52.155.60.177 (US, github-actions)
+- Vantage: 172.215.217.195 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0.04.2026 202 (7 phone numbers found); Email: sivagazan@gmail.com (37 email addresses found) |
+| reachable_contacts | ✅ | Phone: 026 2026-06-1 (7 phone numbers found); Email: gajooran@gmail.com (37 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
