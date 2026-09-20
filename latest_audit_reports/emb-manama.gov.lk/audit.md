@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manama.gov.lk/
 
-- Completed: 2026-09-19 06:31
+- Completed: 2026-09-20 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: underscored the significance of the initiative as a long-term community welfare programme. It was highlighted that the b; Phone: 04-4392-8411- (3 phone numbers found); Email: slemb.bahrain@mfa.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: underscored the significance of the initiative as a long-term community welfare programme. It was highlighted that the b; Phone: 04-4392-8411- (3 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: underscored the significance of the initiative as a long-term community welfare programme. It was highlighted that the b |
-| reachable_contacts | ✅ | Phone: 04-4392-8411- (3 phone numbers found); Email: slemb.bahrain@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 04-4392-8411- (3 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found
+No passing eligibility criteria evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 30 days |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://www.immigration.gov.lk/content/files/visa/eta_application.pdf |
 | published_update_date | ✅ | Published published update date: 06/11/2026 |

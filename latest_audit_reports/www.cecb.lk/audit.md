@@ -1,8 +1,8 @@
 # Website Audit: https://www.cecb.lk/
 
-- Completed: 2026-09-19 06:05
+- Completed: 2026-09-20 06:10
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 415 Bauddhaloka Mawatha Colombo 00700 Contact: bpu@cecb.lk bpuinternational@cecb.lk +94 11-2668800 Opening Hours: Mo; Phone: +94 11 266 8800 (44 phone numbers found); Email: bpu@cecb.lk (49 email addresses found); Published named responsibility: director
+Published postal address: No. 415 Bauddhaloka Mawatha Colombo 00700 Contact: bpu@cecb.lk bpuinternational@cecb.lk +94 11-2668800 Opening Hours: Mo; Phone: +94 11 266 8800 (44 phone numbers found); Email: bpuinternational@cecb.lk (49 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 415 Bauddhaloka Mawatha Colombo 00700 Contact: bpu@cecb.lk bpuinternational@cecb.lk +94 11-2668800 Opening Hours: Mo |
-| reachable_contacts | ✅ | Phone: +94 11 266 8800 (44 phone numbers found); Email: bpu@cecb.lk (49 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 266 8800 (44 phone numbers found); Email: bpuinternational@cecb.lk (49 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://hc-nairobi.gov.lk/
 
-- Completed: 2026-09-19 06:33
+- Completed: 2026-09-20 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: at the\\nopening ceremony, Ms. De Silva highlighted that climate change in Africa is no\\nlonger a distant projection bu; Phone: +254734387267 (5 phone numbers found); Email: slhc.nairobi@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: at the\\nopening ceremony, Ms. De Silva highlighted that climate change in Africa is no\\nlonger a distant projection bu; Phone: +254734387267 (2 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: at the\\nopening ceremony, Ms. De Silva highlighted that climate change in Africa is no\\nlonger a distant projection bu |
-| reachable_contacts | ✅ | Phone: +254734387267 (5 phone numbers found); Email: slhc.nairobi@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +254734387267 (2 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 6 months |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

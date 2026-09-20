@@ -1,8 +1,8 @@
 # Website Audit: https://emb-tokyo.gov.lk/
 
-- Completed: 2026-09-19 06:29
+- Completed: 2026-09-20 06:34
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: 03-3440- 6911 (13 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (8 email addresses found); Published named responsibility: director
+Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: 0991055784 (9 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m |
-| reachable_contacts | ✅ | Phone: 03-3440- 6911 (13 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0991055784 (9 phone numbers found); Email: slemb.tokyo@mfa.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: required documents |
+| required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 10 weeks |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

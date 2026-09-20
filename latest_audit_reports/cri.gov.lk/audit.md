@@ -1,8 +1,8 @@
 # Website Audit: https://cri.gov.lk/
 
-- Completed: 2026-09-19 06:40
+- Completed: 2026-09-20 06:45
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Bandirippuwa Estate, Lunuwila, Sri Lanka. Time: Mon – Fri ( 8.30am – 4.15pm ) Sat & Sun CLOSED Get Free Estimate 1928 Co; Phone: 1928 (58 phone numbers found); Email: director@cri.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: Bandirippuwa Estate, Lunuwila, Sri Lanka. Time: Mon – Fri ( 8.30am – 4.15pm ) Sat & Sun CLOSED Get Free Estimate 1928 Co; Phone: 0883252469 (58 phone numbers found); Email: director@cri.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Bandirippuwa Estate, Lunuwila, Sri Lanka. Time: Mon – Fri ( 8.30am – 4.15pm ) Sat & Sun CLOSED Get Free Estimate 1928 Co |
-| reachable_contacts | ✅ | Phone: 1928 (58 phone numbers found); Email: director@cri.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0883252469 (58 phone numbers found); Email: director@cri.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

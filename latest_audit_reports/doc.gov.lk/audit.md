@@ -1,8 +1,8 @@
 # Website Audit: https://doc.gov.lk/
 
-- Completed: 2026-09-19 06:47
+- Completed: 2026-09-20 07:05
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: issues emanating from PTAs, FTAs Conducting Joint Commissions with China, Egypt, Russia, Malaysia, Turkey, Kuwait etc Wo; Phone: 071 450 1444 (102 phone numbers found); Email: fortrade@doc.gov.lk; Published named responsibility: department
+Published postal address: specific market entry technical barriers to trade (TBT) in the import markets by formulating requisite technical regulat; Phone: 011 2430233 (104 phone numbers found); Email: fortrade@doc.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: issues emanating from PTAs, FTAs Conducting Joint Commissions with China, Egypt, Russia, Malaysia, Turkey, Kuwait etc Wo |
-| reachable_contacts | ✅ | Phone: 071 450 1444 (102 phone numbers found); Email: fortrade@doc.gov.lk |
+| postal_address | ✅ | Published postal address: specific market entry technical barriers to trade (TBT) in the import markets by formulating requisite technical regulat |
+| reachable_contacts | ✅ | Phone: 011 2430233 (104 phone numbers found); Email: fortrade@doc.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

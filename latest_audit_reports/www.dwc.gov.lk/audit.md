@@ -1,8 +1,8 @@
 # Website Audit: https://www.dwc.gov.lk/
 
-- Completed: 2026-09-19 06:21
+- Completed: 2026-09-20 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in; Phone: +94 11 2 883 355 (2 phone numbers found); Email: dg@dwc.gov.lk; Published named responsibility: department
+Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in; Phone: +94 11 2 883 355 (6 phone numbers found); Email: dg@dwc.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in |
-| reachable_contacts | ✅ | Phone: +94 11 2 883 355 (2 phone numbers found); Email: dg@dwc.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2 883 355 (6 phone numbers found); Email: dg@dwc.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ❓ | No passing legal basis evidence found |
+| legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://cg-nicosia.gov.lk/
 
-- Completed: 2026-09-19 06:32
-- Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Completed: 2026-09-20 06:36
+- Overall result: 🔴 Level 1
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Ayiou Georgiou No 4, Egkomi 2411. Telephone : +357 22720333 Email: consular.cyprus@mfa.gov.lk Opening Hours for Consular; Phone: 0593987158 (55 phone numbers found); Email: consular.cyprus@mfa.gov.lk (37 email addresses found); Published named responsibility: division
+No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Ayiou Georgiou No 4, Egkomi 2411. Telephone : +357 22720333 Email: consular.cyprus@mfa.gov.lk Opening Hours for Consular |
-| reachable_contacts | ✅ | Phone: 0593987158 (55 phone numbers found); Email: consular.cyprus@mfa.gov.lk (37 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: division |
+| reachable_contacts | ✅ | Phone: +911123010201 (29 phone numbers found); Email: john@example.com (3 email addresses found) |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
-| legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 03 months |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

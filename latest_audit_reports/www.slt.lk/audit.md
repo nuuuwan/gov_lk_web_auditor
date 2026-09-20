@@ -1,8 +1,8 @@
 # Website Audit: https://www.slt.lk/
 
-- Completed: 2026-09-19 06:12
+- Completed: 2026-09-20 06:17
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: a large number of people located in your premises through sound amplification and distribution system. Video Door Phone ; Phone: 0953465528 (4 phone numbers found); Email: pr@slt.lk (2 email addresses found); Published named responsibility: director
+Published postal address: a large number of people located in your premises through sound amplification and distribution system. Video Door Phone ; Phone: 0953465528 (4 phone numbers found); Email: 1212@slt.com.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: a large number of people located in your premises through sound amplification and distribution system. Video Door Phone  |
-| reachable_contacts | ✅ | Phone: 0953465528 (4 phone numbers found); Email: pr@slt.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0953465528 (4 phone numbers found); Email: 1212@slt.com.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

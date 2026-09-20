@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "8cd7a8f5-b785-4882-9038-a1cb720977f6",
+  "audit_id": "0327f08c-4da5-4e5c-be00-19690abe31a0",
   "url": "https://ccf.gov.lk/",
   "normalized_url": "https://ccf.gov.lk/",
-  "started_at": "2026-09-19T06:07:30.274979+05:30",
-  "completed_at": "2026-09-19T06:10:18.785594+05:30",
+  "started_at": "2026-09-20T06:11:49.802119+05:30",
+  "completed_at": "2026-09-20T06:12:04.793904+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 104] Connection reset by peer",
+      "tls_hostname_matches: [Errno 104] Connection reset by peer"
     ]
   },
   "evidence": [
@@ -26,897 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-19T06:07:30.780473+05:30"
+      "observed_at": "2026-09-20T06:11:50.173991+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-19T06:07:30.780493+05:30"
+      "observed_at": "2026-09-20T06:11:50.174019+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-09-19T06:07:31.795814+05:30"
+      "status": "error",
+      "detail": "[Errno 104] Connection reset by peer",
+      "observed_at": "2026-09-20T06:11:52.511421+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://ccf.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 104] Connection reset by peer",
       "source": "https://ccf.gov.lk/",
-      "observed_at": "2026-09-19T06:10:17.588184+05:30"
+      "observed_at": "2026-09-20T06:12:04.793741+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://ccf.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 104] Connection reset by peer",
       "source": "http://ccf.gov.lk/",
-      "observed_at": "2026-09-19T06:10:17.588206+05:30"
+      "observed_at": "2026-09-20T06:12:04.793761+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://ccf.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 104] Connection reset by peer",
       "source": "https://ccf.gov.lk/",
-      "observed_at": "2026-09-19T06:10:17.588210+05:30"
+      "observed_at": "2026-09-20T06:12:04.793766+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://ccf.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 104] Connection reset by peer",
       "source": "http://ccf.gov.lk/",
-      "observed_at": "2026-09-19T06:10:17.588213+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://ccf.gov.lk/ccf/",
-      "source": "https://ccf.gov.lk/ccf/",
-      "observed_at": "2026-09-19T06:10:17.588216+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://ccf.gov.lk/our-team/",
-      "source": "https://ccf.gov.lk/our-team/",
-      "observed_at": "2026-09-19T06:10:17.588219+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://ccf.gov.lk/board-members/",
-      "source": "https://ccf.gov.lk/board-members/",
-      "observed_at": "2026-09-19T06:10:17.588221+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://ccf.gov.lk/national-replica-school/",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "observed_at": "2026-09-19T06:10:17.588224+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://ccf.gov.lk/heritage-sites/",
-      "source": "https://ccf.gov.lk/heritage-sites/",
-      "observed_at": "2026-09-19T06:10:17.588226+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://ccf.gov.lk/destinations/",
-      "source": "https://ccf.gov.lk/destinations/",
-      "observed_at": "2026-09-19T06:10:17.588229+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://ccf.gov.lk/category/events/upcoming-events/",
-      "source": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "observed_at": "2026-09-19T06:10:17.588231+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "source": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "observed_at": "2026-09-19T06:10:17.588233+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "source": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "observed_at": "2026-09-19T06:10:17.588236+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "source": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "observed_at": "2026-09-19T06:10:17.588238+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/ccf/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/ccf/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/ccf/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/ccf/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/ccf/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/our-team/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/our-team/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/our-team/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/our-team/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/our-team/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/board-members/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/board-members/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/board-members/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/board-members/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/board-members/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 76 2192901 .",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 76 2192901 ."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 47 2239082 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 47 2239082 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 33 2285230 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 33 2285230 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2679919 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 11 2679919 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2694767 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 11 2694767 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 25 4926462 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 25 4926462 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 66 2286946 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 66 2286946 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 47 4928195 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 47 4928195 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 27 2224850 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 27 2224850 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 91 3786088 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 91 3786088 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 2228075 ",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "+94 81 2228075 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: replicaschoolccf@gmail.com",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "replicaschoolccf@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://ccf.gov.lk/national-replica-school/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/heritage-sites/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/heritage-sites/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/heritage-sites/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/heritage-sites/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/heritage-sites/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://ccf.gov.lk/heritage-sites/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/destinations/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/destinations/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/destinations/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/destinations/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: from mangroves to grasslands. Learn More National Museum Colombo Sri Lanka",
-      "source": "https://ccf.gov.lk/destinations/",
-      "data": {
-        "value": "from mangroves to grasslands. Learn More National Museum Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/destinations/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: officerda147@gmail.com",
-      "source": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "data": {
-        "value": "officerda147@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 552 014 ",
-      "source": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "data": {
-        "value": "+94 112 552 014 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 912 ",
-      "source": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "data": {
-        "value": "+94 112 587 912 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 973 ",
-      "source": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "data": {
-        "value": "+94 112 508 973 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ccfinform@gmail.com",
-      "source": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "data": {
-        "value": "ccfinform@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 6973 visible characters across 14 pages",
-      "source": "https://ccf.gov.lk/"
+      "observed_at": "2026-09-20T06:12:04.793769+05:30"
     }
   ],
   "observations": [
@@ -936,228 +85,49 @@
     },
     {
       "host": "ccf.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-10-29T04:18:00+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "https://ccf.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1795,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "http://ccf.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/",
-      "redirects": [
-        "https://ccf.gov.lk/"
-      ],
-      "elapsed_ms": 1540,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "https://ccf.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1566,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "http://ccf.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/",
-      "redirects": [
-        "https://ccf.gov.lk/"
-      ],
-      "elapsed_ms": 1748,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/ccf/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/ccf/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1576,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/our-team/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/our-team/",
-      "redirects": [],
-      "elapsed_ms": 1566,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/board-members/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/board-members/",
-      "redirects": [],
-      "elapsed_ms": 1625,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/national-replica-school/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/national-replica-school/",
-      "redirects": [],
-      "elapsed_ms": 1584,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/heritage-sites/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/heritage-sites/",
-      "redirects": [],
-      "elapsed_ms": 1605,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/destinations/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/destinations/",
-      "redirects": [],
-      "elapsed_ms": 1907,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "redirects": [],
-      "elapsed_ms": 1756,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "redirects": [],
-      "elapsed_ms": 1678,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "redirects": [],
-      "elapsed_ms": 1692,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "status_code": 200,
-      "final_url": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "redirects": [],
-      "elapsed_ms": 1691,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 104] Connection reset by peer"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://ccf.gov.lk/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-01-11d584ff0aac.html",
-      "sha256": "11d584ff0aac538eaf29f3125769758a4fa8a856b65f632d728b1958a526e3bb",
-      "bytes": 140898
-    },
-    {
-      "url": "https://ccf.gov.lk/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-02-11d584ff0aac.html",
-      "sha256": "11d584ff0aac538eaf29f3125769758a4fa8a856b65f632d728b1958a526e3bb",
-      "bytes": 140898
-    },
-    {
-      "url": "https://ccf.gov.lk/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-03-11d584ff0aac.html",
-      "sha256": "11d584ff0aac538eaf29f3125769758a4fa8a856b65f632d728b1958a526e3bb",
-      "bytes": 140898
-    },
-    {
-      "url": "https://ccf.gov.lk/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-04-11d584ff0aac.html",
-      "sha256": "11d584ff0aac538eaf29f3125769758a4fa8a856b65f632d728b1958a526e3bb",
-      "bytes": 140898
-    },
-    {
-      "url": "https://ccf.gov.lk/ccf/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-05-79df0f09dc44.html",
-      "sha256": "79df0f09dc44519e800a85fb339bc8b9fd13ef2e500552f304d70c0afc3c10e6",
-      "bytes": 126137
-    },
-    {
-      "url": "https://ccf.gov.lk/our-team/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-06-014f6f899847.html",
-      "sha256": "014f6f89984718e1d597f500917b86481372ee9129ce701c71414429bfff5998",
-      "bytes": 96233
-    },
-    {
-      "url": "https://ccf.gov.lk/board-members/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-07-ca9d167ba326.html",
-      "sha256": "ca9d167ba326bb3a7841c8745242325697674c447f6d86aa5d82f2c4166ed55e",
-      "bytes": 108100
-    },
-    {
-      "url": "https://ccf.gov.lk/national-replica-school/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-08-0f8ae2e19bab.html",
-      "sha256": "0f8ae2e19bab59e7a98a1ea042d8430db62f5545a9b0482421e4c559bf4ccecd",
-      "bytes": 118231
-    },
-    {
-      "url": "https://ccf.gov.lk/heritage-sites/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-09-a6ba661b8dd7.html",
-      "sha256": "a6ba661b8dd79a3cf34b4217b7e65d12fcebe1f6b0ea5ee1f718e46a42c2cd77",
-      "bytes": 143257
-    },
-    {
-      "url": "https://ccf.gov.lk/destinations/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-10-2ec0d108ebde.html",
-      "sha256": "2ec0d108ebde24c7f55f2d60eae7b78e4cac052ca6ca81c0a2897e86a46adda5",
-      "bytes": 141408
-    },
-    {
-      "url": "https://ccf.gov.lk/category/events/upcoming-events/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-11-f4e0f2c250f7.html",
-      "sha256": "f4e0f2c250f796bf257ff08e70550deeb0194d50d48d2a6745dfd38cfcd27e04",
-      "bytes": 161773
-    },
-    {
-      "url": "https://ccf.gov.lk/2026/07/04/%e0%b7%83%e0%b7%93%e0%b6%9c%e0%b7%92%e0%b6%bb%e0%b7%92%e0%b6%ba-%e0%b6%9a%e0%b7%90%e0%b6%a7%e0%b6%b4%e0%b6%ad%e0%b7%8a-%e0%b6%b4%e0%b7%80%e0%b7%94%e0%b6%bb-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b6%ad/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-12-3415a4b0bfe0.html",
-      "sha256": "3415a4b0bfe0070f2d497013ed057dcba518329f028a5189e898b122d2410141",
-      "bytes": 150474
-    },
-    {
-      "url": "https://ccf.gov.lk/2026/06/04/%e0%b7%83%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b6%9a-%e0%b7%83%e0%b6%82%e0%b6%bb%e0%b6%9a%e0%b7%8a%e0%b7%82%e0%b6%ab%e0%b6%ba-%e0%b7%83%e0%b6%b3%e0%b7%84%e0%b7%8f-%e0%b7%83%e0%b6%82/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-13-f006291f0d70.html",
-      "sha256": "f006291f0d703d5500831103eb833938886cee5a60a773ce9c3e08a5e5870d24",
-      "bytes": 152592
-    },
-    {
-      "url": "https://ccf.gov.lk/2026/06/01/ministry-of-buddhasasana-religious-cultural-affairs-central-cultural-fund/",
-      "path": "audit.output/ccf.gov.lk/20260919.0607/snapshots/page-14-36cf4fc292ad.html",
-      "sha256": "36cf4fc292adfba4686307bd0e9989eae449920ac9354ed039334d3ef46dd9b8",
-      "bytes": 150792
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1171,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer",
       "executed": true,
       "checks": [
         {
@@ -1184,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: from mangroves to grasslands. Learn More National Museum Colombo Sri Lanka; Phone: +94 112 552 014 (14 phone numbers found); Email: ccfinform@gmail.com (3 email addresses found); Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: from mangroves to grasslands. Learn More National Museum Colombo Sri Lanka"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 112 552 014 (14 phone numbers found); Email: ccfinform@gmail.com (3 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs,"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: regulations"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1333,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.215.217.195",
+    "egress_ip": "20.169.75.64",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,23 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1227a585-2189-40b7-82c6-8412aca5e264",
+  "audit_id": "b8537b1b-3256-4cb6-bd25-63b2bd84dbc3",
   "url": "https://www.mbrc.gov.lk",
   "normalized_url": "https://www.mbrc.gov.lk/",
-  "started_at": "2026-09-19T06:51:19.004142+05:30",
-  "completed_at": "2026-09-19T06:53:30.516238+05:30",
+  "started_at": "2026-09-20T07:01:01.126660+05:30",
+  "completed_at": "2026-09-20T07:01:09.279739+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "hosting_configured: Detected generic hosting marker: back soon"
     ]
   },
   "evidence": [
@@ -25,47 +17,77 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-19T06:51:19.425992+05:30"
+      "observed_at": "2026-09-20T07:01:01.521457+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-19T06:51:19.426012+05:30"
+      "observed_at": "2026-09-20T07:01:01.521479+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-09-19T06:51:29.446688+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-09-20T07:01:01.868778+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.mbrc.gov.lk/maintenance.html",
       "source": "https://www.mbrc.gov.lk/",
-      "observed_at": "2026-09-19T06:53:30.516066+05:30"
+      "observed_at": "2026-09-20T07:01:09.274654+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.mbrc.gov.lk/maintenance.html",
       "source": "http://www.mbrc.gov.lk/",
-      "observed_at": "2026-09-19T06:53:30.516090+05:30"
+      "observed_at": "2026-09-20T07:01:09.274672+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.mbrc.gov.lk/maintenance.html",
       "source": "https://www.mbrc.gov.lk/",
-      "observed_at": "2026-09-19T06:53:30.516093+05:30"
+      "observed_at": "2026-09-20T07:01:09.274676+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.mbrc.gov.lk/maintenance.html",
       "source": "http://www.mbrc.gov.lk/",
-      "observed_at": "2026-09-19T06:53:30.516096+05:30"
+      "observed_at": "2026-09-20T07:01:09.274680+05:30"
+    },
+    {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: back soon",
+      "source": "https://www.mbrc.gov.lk/maintenance.html"
+    },
+    {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: back soon",
+      "source": "http://www.mbrc.gov.lk/maintenance.html"
+    },
+    {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: back soon",
+      "source": "https://www.mbrc.gov.lk/maintenance.html"
+    },
+    {
+      "check": "generic_hosting",
+      "status": "fail",
+      "detail": "Detected generic hosting marker: back soon",
+      "source": "http://www.mbrc.gov.lk/maintenance.html"
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 300 visible characters across 4 pages",
+      "source": "https://www.mbrc.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +107,82 @@
     },
     {
       "host": "www.mbrc.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-08T04:13:58+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.mbrc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.mbrc.gov.lk/maintenance.html",
+      "redirects": [
+        "https://www.mbrc.gov.lk/maintenance.html"
+      ],
+      "elapsed_ms": 165,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://www.mbrc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "http://www.mbrc.gov.lk/maintenance.html",
+      "redirects": [
+        "http://www.mbrc.gov.lk/maintenance.html"
+      ],
+      "elapsed_ms": 107,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "https://www.mbrc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.mbrc.gov.lk/maintenance.html",
+      "redirects": [
+        "https://www.mbrc.gov.lk/maintenance.html"
+      ],
+      "elapsed_ms": 167,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://www.mbrc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "http://www.mbrc.gov.lk/maintenance.html",
+      "redirects": [
+        "http://www.mbrc.gov.lk/maintenance.html"
+      ],
+      "elapsed_ms": 106,
+      "content_type": "text/html",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.mbrc.gov.lk/maintenance.html",
+      "path": "audit.output/www.mbrc.gov.lk/20260920.0701/snapshots/page-01-f0f14d912870.html",
+      "sha256": "f0f14d9128708ac618640a824b02dc9e53b75a90569f93e26e4974ef05b20ac8",
+      "bytes": 1396
+    },
+    {
+      "url": "http://www.mbrc.gov.lk/maintenance.html",
+      "path": "audit.output/www.mbrc.gov.lk/20260920.0701/snapshots/page-02-f0f14d912870.html",
+      "sha256": "f0f14d9128708ac618640a824b02dc9e53b75a90569f93e26e4974ef05b20ac8",
+      "bytes": 1396
+    },
+    {
+      "url": "https://www.mbrc.gov.lk/maintenance.html",
+      "path": "audit.output/www.mbrc.gov.lk/20260920.0701/snapshots/page-03-f0f14d912870.html",
+      "sha256": "f0f14d9128708ac618640a824b02dc9e53b75a90569f93e26e4974ef05b20ac8",
+      "bytes": 1396
+    },
+    {
+      "url": "http://www.mbrc.gov.lk/maintenance.html",
+      "path": "audit.output/www.mbrc.gov.lk/20260920.0701/snapshots/page-04-f0f14d912870.html",
+      "sha256": "f0f14d9128708ac618640a824b02dc9e53b75a90569f93e26e4974ef05b20ac8",
+      "bytes": 1396
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +196,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "fail",
+      "reason": "Detected generic hosting marker: back soon",
       "executed": true,
       "checks": [
         {
@@ -154,56 +209,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "fail",
+          "reason": "Detected generic hosting marker: back soon"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -241,7 +296,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.215.217.195",
+    "egress_ip": "20.169.75.64",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

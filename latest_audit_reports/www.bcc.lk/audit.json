@@ -1,21 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "a328a69a-d7b9-4aa1-a547-2ebcca7379df",
+  "audit_id": "ee967c58-b082-4e38-a609-f13b04aecfec",
   "url": "https://www.bcc.lk/",
   "normalized_url": "https://www.bcc.lk/",
-  "started_at": "2026-09-19T06:37:10.725954+05:30",
-  "completed_at": "2026-09-19T06:38:57.843625+05:30",
+  "started_at": "2026-09-20T06:41:38.971183+05:30",
+  "completed_at": "2026-09-20T06:41:56.853092+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -23,52 +26,1310 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-19T06:37:11.247520+05:30"
+      "observed_at": "2026-09-20T06:41:39.157762+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-19T06:37:11.247538+05:30"
+      "observed_at": "2026-09-20T06:41:39.157781+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-19T06:37:11.299580+05:30"
+      "observed_at": "2026-09-20T06:41:39.253010+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 522 at https://www.bcc.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.bcc.lk/",
       "source": "https://www.bcc.lk/",
-      "observed_at": "2026-09-19T06:38:57.832043+05:30"
+      "observed_at": "2026-09-20T06:41:56.290768+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 522 at https://www.bcc.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://www.bcc.lk/",
       "source": "http://www.bcc.lk/",
-      "observed_at": "2026-09-19T06:38:57.832063+05:30"
+      "observed_at": "2026-09-20T06:41:56.290788+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 522 at https://www.bcc.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.bcc.lk/",
       "source": "https://www.bcc.lk/",
-      "observed_at": "2026-09-19T06:38:57.832067+05:30"
+      "observed_at": "2026-09-20T06:41:56.290793+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: The read operation timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://www.bcc.lk/",
       "source": "http://www.bcc.lk/",
-      "observed_at": "2026-09-19T06:38:57.832070+05:30"
+      "observed_at": "2026-09-20T06:41:56.290797+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.bcc.lk/contact.php",
+      "source": "https://www.bcc.lk/contact.php",
+      "observed_at": "2026-09-20T06:41:56.290800+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://bcc.lk/index.php",
+      "source": "http://bcc.lk/index.php",
+      "observed_at": "2026-09-20T06:41:56.290804+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://bcc.lk/si/index.php",
+      "source": "http://bcc.lk/si/index.php",
+      "observed_at": "2026-09-20T06:41:56.290807+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://bcc.lk/ta/index.php",
+      "source": "http://bcc.lk/ta/index.php",
+      "observed_at": "2026-09-20T06:41:56.290810+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.bcc.lk/index.php",
+      "source": "https://www.bcc.lk/index.php",
+      "observed_at": "2026-09-20T06:41:56.290814+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.bcc.lk/aboutus.php",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "observed_at": "2026-09-20T06:41:56.290817+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.bcc.lk/visionmission.php",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "observed_at": "2026-09-20T06:41:56.290820+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.bcc.lk/history.php",
+      "source": "https://www.bcc.lk/history.php",
+      "observed_at": "2026-09-20T06:41:56.290823+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.bcc.lk/directors.php",
+      "source": "https://www.bcc.lk/directors.php",
+      "observed_at": "2026-09-20T06:41:56.290827+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.bcc.lk/seniormangement.php",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "observed_at": "2026-09-20T06:41:56.290830+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2435195 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "+94) 11 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2324198 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "+94) 11 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2447139 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "+94) 11 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/contact.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bcclankaltd@gmail.com",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "bcclankaltd@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : bcclankaltd@gmail.com phone : 011 24221",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : bcclankaltd@gmail.com phone : 011 24221"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://bcc.lk/index.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bcclankaltd@gmail.com",
+      "source": "https://bcc.lk/si/index.php",
+      "data": {
+        "value": "bcclankaltd@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/index.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 324 198 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "0112 324 198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 422 111 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "0112 422 111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 447 139 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "0112 447 139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 435 195 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "0112 435 195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 2280662 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "033 2280662 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 033 2280740 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "033 2280740 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12. Tel : 0112 435 195 / 0112 422 111 Fax : 0112 447 139 / 0112 ",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12. Tel : 0112 435 195 / 0112 422 111 Fax : 0112 447 139 / 0112 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/aboutus.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/visionmission.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/history.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777076050 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0777076050 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777630324 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0777630324 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0704441937 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0704441937 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777 343013 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0777 343013 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777870622 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0777870622 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777793826 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0777793826 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/directors.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2435195 ",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "011 2435195 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2324198 ",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "011 2324198 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112435195",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "0112435195"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2447139 ",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "011 2447139 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112422111",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "0112422111"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2422111 ",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "011 2422111 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11 2422111 ",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "+94) 11 2422111 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.bcc.lk/seniormangement.php",
+      "data": {
+        "value": "director"
+      }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 925 visible characters across 3 pages",
+      "detail": "Substantive page content: 12071 visible characters across 14 pages",
       "source": "https://www.bcc.lk/"
     }
   ],
@@ -99,61 +1360,225 @@
     },
     {
       "url": "https://www.bcc.lk/",
-      "status_code": 522,
+      "status_code": 200,
       "final_url": "https://www.bcc.lk/",
       "redirects": [],
-      "elapsed_ms": 19487,
+      "elapsed_ms": 789,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.bcc.lk/",
-      "status_code": 522,
+      "status_code": 200,
       "final_url": "https://www.bcc.lk/",
       "redirects": [
         "https://www.bcc.lk/"
       ],
-      "elapsed_ms": 20093,
+      "elapsed_ms": 657,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://www.bcc.lk/",
-      "status_code": 522,
+      "status_code": 200,
       "final_url": "https://www.bcc.lk/",
       "redirects": [],
-      "elapsed_ms": 19851,
+      "elapsed_ms": 798,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.bcc.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/",
+      "redirects": [
+        "https://www.bcc.lk/"
+      ],
+      "elapsed_ms": 665,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.bcc.lk/contact.php",
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/contact.php",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "The read operation timed out"
+      "elapsed_ms": 450,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://bcc.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://bcc.lk/index.php",
+      "redirects": [
+        "https://bcc.lk/index.php"
+      ],
+      "elapsed_ms": 772,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://bcc.lk/si/index.php",
+      "status_code": 200,
+      "final_url": "https://bcc.lk/si/index.php",
+      "redirects": [
+        "https://bcc.lk/si/index.php"
+      ],
+      "elapsed_ms": 499,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://bcc.lk/ta/index.php",
+      "status_code": 200,
+      "final_url": "https://bcc.lk/ta/index.php",
+      "redirects": [
+        "https://bcc.lk/ta/index.php"
+      ],
+      "elapsed_ms": 249,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.bcc.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/index.php",
+      "redirects": [],
+      "elapsed_ms": 589,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.bcc.lk/aboutus.php",
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/aboutus.php",
+      "redirects": [],
+      "elapsed_ms": 601,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.bcc.lk/visionmission.php",
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/visionmission.php",
+      "redirects": [],
+      "elapsed_ms": 505,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.bcc.lk/history.php",
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/history.php",
+      "redirects": [],
+      "elapsed_ms": 497,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.bcc.lk/directors.php",
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/directors.php",
+      "redirects": [],
+      "elapsed_ms": 421,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.bcc.lk/seniormangement.php",
+      "status_code": 200,
+      "final_url": "https://www.bcc.lk/seniormangement.php",
+      "redirects": [],
+      "elapsed_ms": 277,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://www.bcc.lk/",
-      "path": "audit.output/www.bcc.lk/20260919.0637/snapshots/page-01-4611072edee5.html",
-      "sha256": "4611072edee53f1ea349778e050a8b8e3e2193c93827df00523e73a399b1be0e",
-      "bytes": 7210
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-01-8221bb0b6873.html",
+      "sha256": "8221bb0b6873ce1001dcf797a5ac536cf9e3a1efb6867e43cfbb3a5fe919bbc8",
+      "bytes": 178541
     },
     {
       "url": "https://www.bcc.lk/",
-      "path": "audit.output/www.bcc.lk/20260919.0637/snapshots/page-02-dae597293852.html",
-      "sha256": "dae5972938529c675507361313013bf5c6318df4c02115226c25328c2a26faae",
-      "bytes": 7210
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-02-e07b30b17a22.html",
+      "sha256": "e07b30b17a22ce02d15f32175e70b36a21442acd44b9ede95185a65cf0a4d16b",
+      "bytes": 178541
     },
     {
       "url": "https://www.bcc.lk/",
-      "path": "audit.output/www.bcc.lk/20260919.0637/snapshots/page-03-63d692579975.html",
-      "sha256": "63d6925799755b111e162a49127920d3081863d6ec37d6442d6f54bb55207e27",
-      "bytes": 7210
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-03-c5ff32242bee.html",
+      "sha256": "c5ff32242bee9614f76e48284644591f0a2f3ae40e7de51c04cc0905fc3a54e3",
+      "bytes": 178541
+    },
+    {
+      "url": "https://www.bcc.lk/",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-04-e7072d920650.html",
+      "sha256": "e7072d9206502c5dc726f4ca12bc8d4d284a44a233542531f0b6be25e2c974d3",
+      "bytes": 178541
+    },
+    {
+      "url": "https://www.bcc.lk/contact.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-05-bdc6538b2e53.html",
+      "sha256": "bdc6538b2e533fff1dc15854ccf1dd6c75ddfcdfeab2e6ee5540e1a23ea678fa",
+      "bytes": 23662
+    },
+    {
+      "url": "https://bcc.lk/index.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-06-a3dfbd258b27.html",
+      "sha256": "a3dfbd258b27304dfd664a94b2eb11f006f2e3b2e779067f0402572bfc5052dc",
+      "bytes": 178293
+    },
+    {
+      "url": "https://bcc.lk/si/index.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-07-62cb39aaaeb2.html",
+      "sha256": "62cb39aaaeb2a673339d993cb7660bb9bd81098237b29c26eb3d738c00a52f86",
+      "bytes": 205429
+    },
+    {
+      "url": "https://bcc.lk/ta/index.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-08-79624c4f9b69.html",
+      "sha256": "79624c4f9b69436b7703a5e97354ad28ddc702c9398111300fe8048dda2fee0a",
+      "bytes": 1672
+    },
+    {
+      "url": "https://www.bcc.lk/index.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-09-2f669e3d7047.html",
+      "sha256": "2f669e3d70470ab456210e5bfe46f58435bfd9a6458e876f6b9eb5cf0b148435",
+      "bytes": 178541
+    },
+    {
+      "url": "https://www.bcc.lk/aboutus.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-10-790d11d95ac3.html",
+      "sha256": "790d11d95ac39eb9766a8aae787414e233ebd73e2a77a3a412577a3971dd6e2c",
+      "bytes": 28840
+    },
+    {
+      "url": "https://www.bcc.lk/visionmission.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-11-e3f10c68f382.html",
+      "sha256": "e3f10c68f382a0a567bc8d4e1bc751bb017409bc11a3301a4d8d313de13b2603",
+      "bytes": 18969
+    },
+    {
+      "url": "https://www.bcc.lk/history.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-12-20b61f1726c1.html",
+      "sha256": "20b61f1726c199899ca3425d83243cc6d131b8985307ae83d333eee9e9c5e7f4",
+      "bytes": 20799
+    },
+    {
+      "url": "https://www.bcc.lk/directors.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-13-222e461a552c.html",
+      "sha256": "222e461a552ce9451b93c786fd5f76906c4724c3d6fd19823dcbe4694b08a1ea",
+      "bytes": 22685
+    },
+    {
+      "url": "https://www.bcc.lk/seniormangement.php",
+      "path": "audit.output/www.bcc.lk/20260920.0641/snapshots/page-14-a9e463ec111f.html",
+      "sha256": "a9e463ec111fb77b12be84e59be756d7f04ea2a9c68b3a781acf645672e7d82c",
+      "bytes": 19744
     }
   ],
   "reviewer_decisions": [],
@@ -169,8 +1594,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -182,44 +1607,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -238,18 +1663,80 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /; Phone: 011 2435195 (22 phone numbers found); Email: bcclankaltd@gmail.com; Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Hultsdorf Mills, P.O Box 281, Meeraniya Street, Colombo 12, Sri Lanka. mail us : [email protected] phone : 011 2422111 /"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 011 2435195 (22 phone numbers found); Email: bcclankaltd@gmail.com"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -269,7 +1756,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.215.217.195",
+    "egress_ip": "20.169.75.64",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

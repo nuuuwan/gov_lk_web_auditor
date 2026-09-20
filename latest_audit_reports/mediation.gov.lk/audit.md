@@ -1,8 +1,8 @@
 # Website Audit: https://mediation.gov.lk/
 
-- Completed: 2026-09-19 06:39
+- Completed: 2026-09-20 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: tsunami-related disputes, migrant worker grievances, financial disputes as well as land disputes . BENEFITS OF MEDIATION; Phone: 0718390995 (545 phone numbers found); Email: general@mediation.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: tsunami-related disputes, migrant worker grievances, financial disputes as well as land disputes . BENEFITS OF MEDIATION; Phone: 0813999492 (545 phone numbers found); Email: general@mediation.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: tsunami-related disputes, migrant worker grievances, financial disputes as well as land disputes . BENEFITS OF MEDIATION |
-| reachable_contacts | ✅ | Phone: 0718390995 (545 phone numbers found); Email: general@mediation.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0813999492 (545 phone numbers found); Email: general@mediation.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

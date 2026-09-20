@@ -1,8 +1,8 @@
 # Website Audit: https://emb-beijing.gov.lk/
 
-- Completed: 2026-09-19 06:28
+- Completed: 2026-09-20 06:34
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 03, Jian Hua Lu, Beijing, 100600, China Tel: +86 10 65321861 , +86 10 65321862 Fax: +86 10 65325426 Email: slemb.bei; Phone: +861065321861 (15 phone numbers found); Email: cgguangzhou@mfa.gov.lk (10 email addresses found); Published named responsibility: division
+Published postal address: No. 03, Jian Hua Lu, Beijing, 100600, China Tel: +86 10 65321861 , +86 10 65321862 Fax: +86 10 65325426 Email: slemb.bei; Phone: 00-86-208365 (10 phone numbers found); Email: 5@2.com (6 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 03, Jian Hua Lu, Beijing, 100600, China Tel: +86 10 65321861 , +86 10 65321862 Fax: +86 10 65325426 Email: slemb.bei |
-| reachable_contacts | ✅ | Phone: +861065321861 (15 phone numbers found); Email: cgguangzhou@mfa.gov.lk (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: 00-86-208365 (10 phone numbers found); Email: 5@2.com (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: Free of Charge |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 06 months |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ❓ | No passing legal basis evidence found |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ✅ | Published published update date: 17 January 2026 |

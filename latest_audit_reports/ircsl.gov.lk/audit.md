@@ -1,8 +1,8 @@
 # Website Audit: https://ircsl.gov.lk/
 
-- Completed: 2026-09-19 06:25
+- Completed: 2026-09-20 06:32
 - Overall result: 🔴 Level 1
-- Vantage: 172.215.217.195 (US, github-actions)
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 011 2396190 (27 phone numbers found); Email: adamlcft@ircsl.gov.lk (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2335167 ( (27 phone numbers found); Email: admi@ircsl.gov.lk (23 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

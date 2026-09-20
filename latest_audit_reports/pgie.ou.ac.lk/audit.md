@@ -1,8 +1,8 @@
 # Website Audit: https://pgie.ou.ac.lk/
 
-- Completed: 2026-09-19 06:15
-- Overall result: 🟠 Level 2
-- Vantage: 172.215.217.195 (US, github-actions)
+- Completed: 2026-09-20 06:21
+- Overall result: 🔴 Level 1
+- Vantage: 20.169.75.64 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: P.O. Box 21, Nawala, , Nugegoda, 11250, Sri Lanka Contacts +94 112 825 805 Email sarpgie@ou.ac.lk General Inquires Name ; Phone: 0.149019607 (4 phone numbers found); Email: sarpgie@ou.ac.lk (4 email addresses found); Published named responsibility: director
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: P.O. Box 21, Nawala, , Nugegoda, 11250, Sri Lanka Contacts +94 112 825 805 Email sarpgie@ou.ac.lk General Inquires Name  |
-| reachable_contacts | ✅ | Phone: 0.149019607 (4 phone numbers found); Email: sarpgie@ou.ac.lk (4 email addresses found) |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: +9411 282 5805 (2 phone numbers found); Email: sarpgie@ou.ac.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://pgie.ou.ac.lk/wp-content/uploads/2025/11/2025-Application-Form-MOE-N.pdf |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass
