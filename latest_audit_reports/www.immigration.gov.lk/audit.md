@@ -1,8 +1,8 @@
 # Website Audit: https://www.immigration.gov.lk/
 
-- Completed: 2026-09-20 06:49
+- Completed: 2026-09-21 06:47
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: eta@immigration.gov.lk to make inquiries only on ETA. Our Vision To be the best immigration service in the region Our Mi; Phone: +94 112 101 500 (7 phone numbers found); Email: eta@immigration.gov.lk (9 email addresses found); Published named responsibility: department
+Published postal address: eta@immigration.gov.lk to make inquiries only on ETA. Our Vision To be the best immigration service in the region Our Mi; Phone: 011 5749999 (7 phone numbers found); Email: eta@immigration.gov.lk (9 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: eta@immigration.gov.lk to make inquiries only on ETA. Our Vision To be the best immigration service in the region Our Mi |
-| reachable_contacts | ✅ | Phone: +94 112 101 500 (7 phone numbers found); Email: eta@immigration.gov.lk (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 5749999 (7 phone numbers found); Email: eta@immigration.gov.lk (9 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

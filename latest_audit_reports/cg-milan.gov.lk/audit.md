@@ -1,8 +1,8 @@
 # Website Audit: https://cg-milan.gov.lk/
 
-- Completed: 2026-09-20 06:35
+- Completed: 2026-09-21 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: 0289896887 (21 phone numbers found); Email: consular.milan@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: +393275480615 (25 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa. |
-| reachable_contacts | ✅ | Phone: 0289896887 (21 phone numbers found); Email: consular.milan@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +393275480615 (25 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ✅ | Published required documents: required documents |
+| fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 60 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

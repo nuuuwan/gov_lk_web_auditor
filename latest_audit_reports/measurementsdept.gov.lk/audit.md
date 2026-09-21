@@ -1,8 +1,8 @@
 # Website Audit: https://measurementsdept.gov.lk/
 
-- Completed: 2026-09-20 06:59
+- Completed: 2026-09-21 07:04
 - Overall result: ⚫ Level 0
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://measurementsdept.gov.lk/: Probe 2: timed out; https://measurementsdept.gov.lk/: Probe 3: timed out; http://measurementsdept.gov.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://measurementsdept.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

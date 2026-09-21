@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "a88b70a5-aa6c-44e8-ba81-55e6fffc8249",
+  "audit_id": "078213f5-6a5f-4e72-a23e-cec5f534e642",
   "url": "http://www.jfn.ac.lk/",
   "normalized_url": "http://www.jfn.ac.lk/",
-  "started_at": "2026-09-20T06:17:52.613129+05:30",
-  "completed_at": "2026-09-20T06:20:04.328413+05:30",
+  "started_at": "2026-09-21T06:16:16.835961+05:30",
+  "completed_at": "2026-09-21T06:17:20.522495+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,1023 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-20T06:17:52.918911+05:30"
+      "observed_at": "2026-09-21T06:16:17.730993+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-20T06:17:52.918928+05:30"
+      "observed_at": "2026-09-21T06:16:17.731011+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-09-20T06:18:03.166391+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-09-21T06:16:18.839222+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://jfn.ac.lk/",
       "source": "https://www.jfn.ac.lk/",
-      "observed_at": "2026-09-20T06:20:04.328236+05:30"
+      "observed_at": "2026-09-21T06:17:18.164287+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://jfn.ac.lk/",
       "source": "http://www.jfn.ac.lk/",
-      "observed_at": "2026-09-20T06:20:04.328258+05:30"
+      "observed_at": "2026-09-21T06:17:18.164307+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://jfn.ac.lk/",
       "source": "https://www.jfn.ac.lk/",
-      "observed_at": "2026-09-20T06:20:04.328263+05:30"
+      "observed_at": "2026-09-21T06:17:18.164311+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://jfn.ac.lk/",
       "source": "http://www.jfn.ac.lk/",
-      "observed_at": "2026-09-20T06:20:04.328266+05:30"
+      "observed_at": "2026-09-21T06:17:18.164314+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "source": "https://www.jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "observed_at": "2026-09-21T06:17:18.164317+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://jfn.ac.lk/unit/office-of-the-registrar/",
+      "source": "http://www.jfn.ac.lk/index.php/unit/office-of-the-registrar/",
+      "observed_at": "2026-09-21T06:17:18.164320+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://jfn.ac.lk/office-of-the-bursar/",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "observed_at": "2026-09-21T06:17:18.164323+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://jfn.ac.lk/unit/examination-division/",
+      "source": "https://www.jfn.ac.lk/index.php/unit/examination-division/",
+      "observed_at": "2026-09-21T06:17:18.164325+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://jfn.ac.lk/unit/engineering-service-division/",
+      "source": "https://www.jfn.ac.lk/index.php/unit/engineering-service-division/",
+      "observed_at": "2026-09-21T06:17:18.164328+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://jfn.ac.lk/unit/proctor-office/",
+      "source": "http://www.jfn.ac.lk/index.php/unit/senior-student-counsellor-office/",
+      "observed_at": "2026-09-21T06:17:18.164330+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://jfn.ac.lk/contact-us/",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "observed_at": "2026-09-21T06:17:18.164333+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "source": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "observed_at": "2026-09-21T06:17:18.164336+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://jfn.ac.lk/university-logo/",
+      "source": "https://jfn.ac.lk/university-logo/",
+      "observed_at": "2026-09-21T06:17:18.164338+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://jfn.ac.lk/history/",
+      "source": "https://jfn.ac.lk/history/",
+      "observed_at": "2026-09-21T06:17:18.164340+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jfn.ac.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 222 229",
+      "source": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "data": {
+        "value": "+94 021 222 229"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 221 810",
+      "source": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "data": {
+        "value": "+94 021 221 810"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 02242119-21",
+      "source": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "data": {
+        "value": "02242119-21"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: vc-office@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "data": {
+        "value": "vc-office@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: msara@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "data": {
+        "value": "msara@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 221 810",
+      "source": "https://jfn.ac.lk/unit/office-of-the-registrar/",
+      "data": {
+        "value": "+94 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: christyv@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/office-of-the-registrar/",
+      "data": {
+        "value": "christyv@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: regoffice@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/office-of-the-registrar/",
+      "data": {
+        "value": "regoffice@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/unit/office-of-the-registrar/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 222 960",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "+94 021 222 960"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 222 264",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "+94 021 222 264"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bursar@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "bursar@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://jfn.ac.lk/office-of-the-bursar/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 222 360",
+      "source": "https://jfn.ac.lk/unit/examination-division/",
+      "data": {
+        "value": "+94 021 222 360"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 221 810",
+      "source": "https://jfn.ac.lk/unit/examination-division/",
+      "data": {
+        "value": "+94 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sarexam@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/examination-division/",
+      "data": {
+        "value": "sarexam@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: exams@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/examination-division/",
+      "data": {
+        "value": "exams@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: arexam@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/examination-division/",
+      "data": {
+        "value": "arexam@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/unit/examination-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://jfn.ac.lk/unit/examination-division/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 221 812",
+      "source": "https://jfn.ac.lk/unit/engineering-service-division/",
+      "data": {
+        "value": "+94 021 221 812"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 222 651",
+      "source": "https://jfn.ac.lk/unit/engineering-service-division/",
+      "data": {
+        "value": "+94 021 222 651"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: weng@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/unit/engineering-service-division/",
+      "data": {
+        "value": "weng@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/unit/engineering-service-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0779226780 ",
+      "source": "https://jfn.ac.lk/unit/proctor-office/",
+      "data": {
+        "value": "0779226780 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212229668 ",
+      "source": "https://jfn.ac.lk/unit/proctor-office/",
+      "data": {
+        "value": "0212229668 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0772893715 ",
+      "source": "https://jfn.ac.lk/unit/proctor-office/",
+      "data": {
+        "value": "0772893715 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212229668",
+      "source": "https://jfn.ac.lk/unit/proctor-office/",
+      "data": {
+        "value": "0212229668"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/unit/proctor-office/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 222 229",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 021 222 229"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 222 2644 ",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 222 2644 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 222 360",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 021 222 360"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 222 2294 ",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 222 2294 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 221 8102",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 221 8102"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 221 8105",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 221 8105"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 021 222 671",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94 021 222 671"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 222 9603",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 222 9603"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 811",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 021 221 811"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 222 8174 ",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 222 8174 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 222 966",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 021 222 966"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 221 8103 ",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 221 8103 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 222 2970 ",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 222 2970 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 221 8106 ",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 221 8106 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 812",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 021 221 812"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 206 018",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 021 206 018"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 21 222 2006 ",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "+94) 21 222 2006 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: registrar@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "registrar@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: weng@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "weng@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: admissions@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "admissions@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: arexam@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "arexam@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: araca@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "araca@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: drexam@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "drexam@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: library@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "library@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: vc-office@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "vc-office@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: drcw@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "drcw@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: arws@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "arws@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: acest@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "acest@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: bursar@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "bursar@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dradmin@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "dradmin@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: aradmt@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "aradmt@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: drnae@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "drnae@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ssc@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "ssc@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jfn.ac.lk/contact-us/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/university-logo/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/university-logo/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: registrar@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/university-logo/",
+      "data": {
+        "value": "registrar@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/university-logo/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://jfn.ac.lk/university-logo/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 021 221 810",
+      "source": "https://jfn.ac.lk/history/",
+      "data": {
+        "value": "+94) 021 221 810"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@univ.jfn.ac.lk",
+      "source": "https://jfn.ac.lk/history/",
+      "data": {
+        "value": "info@univ.jfn.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://jfn.ac.lk/history/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://jfn.ac.lk/history/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 15732 visible characters across 14 pages",
+      "source": "http://www.jfn.ac.lk/"
     }
   ],
   "observations": [
@@ -85,49 +1062,247 @@
     },
     {
       "host": "www.jfn.ac.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-10-24T15:26:36+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.jfn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/",
+      "redirects": [
+        "https://jfn.ac.lk/"
+      ],
+      "elapsed_ms": 1627,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.jfn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/",
+      "redirects": [
+        "https://www.jfn.ac.lk/",
+        "https://jfn.ac.lk/"
+      ],
+      "elapsed_ms": 12179,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.jfn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/",
+      "redirects": [
+        "https://jfn.ac.lk/"
+      ],
+      "elapsed_ms": 1639,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.jfn.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/",
+      "redirects": [
+        "https://www.jfn.ac.lk/",
+        "https://jfn.ac.lk/"
+      ],
+      "elapsed_ms": 1381,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "redirects": [
+        "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/"
+      ],
+      "elapsed_ms": 1562,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://www.jfn.ac.lk/index.php/unit/office-of-the-registrar/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/unit/office-of-the-registrar/",
+      "redirects": [
+        "https://www.jfn.ac.lk/index.php/unit/office-of-the-registrar/",
+        "https://jfn.ac.lk/unit/office-of-the-registrar/"
+      ],
+      "elapsed_ms": 1581,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jfn.ac.lk/office-of-the-bursar/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/office-of-the-bursar/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1494,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.jfn.ac.lk/index.php/unit/examination-division/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/unit/examination-division/",
+      "redirects": [
+        "https://jfn.ac.lk/unit/examination-division/"
+      ],
+      "elapsed_ms": 1662,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.jfn.ac.lk/index.php/unit/engineering-service-division/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/unit/engineering-service-division/",
+      "redirects": [
+        "https://jfn.ac.lk/unit/engineering-service-division/"
+      ],
+      "elapsed_ms": 1565,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://www.jfn.ac.lk/index.php/unit/senior-student-counsellor-office/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/unit/proctor-office/",
+      "redirects": [
+        "https://www.jfn.ac.lk/index.php/unit/senior-student-counsellor-office/",
+        "https://jfn.ac.lk/unit/senior-student-counsellor-office/",
+        "https://jfn.ac.lk/unit/proctor-office/"
+      ],
+      "elapsed_ms": 1338,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jfn.ac.lk/contact-us/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/contact-us/",
+      "redirects": [],
+      "elapsed_ms": 1461,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "redirects": [],
+      "elapsed_ms": 1572,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jfn.ac.lk/university-logo/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/university-logo/",
+      "redirects": [],
+      "elapsed_ms": 1748,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jfn.ac.lk/history/",
+      "status_code": 200,
+      "final_url": "https://jfn.ac.lk/history/",
+      "redirects": [],
+      "elapsed_ms": 1916,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://jfn.ac.lk/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-01-3347d113659b.html",
+      "sha256": "3347d113659b29c1ab7ac28522d77c304834614fbba2a61b7a92a32a2d488e45",
+      "bytes": 180066
+    },
+    {
+      "url": "https://jfn.ac.lk/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-02-3347d113659b.html",
+      "sha256": "3347d113659b29c1ab7ac28522d77c304834614fbba2a61b7a92a32a2d488e45",
+      "bytes": 180066
+    },
+    {
+      "url": "https://jfn.ac.lk/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-03-3347d113659b.html",
+      "sha256": "3347d113659b29c1ab7ac28522d77c304834614fbba2a61b7a92a32a2d488e45",
+      "bytes": 180066
+    },
+    {
+      "url": "https://jfn.ac.lk/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-04-3347d113659b.html",
+      "sha256": "3347d113659b29c1ab7ac28522d77c304834614fbba2a61b7a92a32a2d488e45",
+      "bytes": 180066
+    },
+    {
+      "url": "https://jfn.ac.lk/unit/office-of-the-vice-chancellor/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-05-e91bae0b3823.html",
+      "sha256": "e91bae0b3823bfae01a73ab924b81b1a348673d89f541d6d6625ece4ff57946e",
+      "bytes": 113523
+    },
+    {
+      "url": "https://jfn.ac.lk/unit/office-of-the-registrar/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-06-07aa10c1d57e.html",
+      "sha256": "07aa10c1d57e2e19b11cd9298404a57e6e1056d058cef1d18d5bd65321ec3a6a",
+      "bytes": 132297
+    },
+    {
+      "url": "https://jfn.ac.lk/office-of-the-bursar/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-07-d89b0b012070.html",
+      "sha256": "d89b0b0120706fac2ce3707db523b6db4a9984ddd0b0328bf4e3e0fff4238a13",
+      "bytes": 172588
+    },
+    {
+      "url": "https://jfn.ac.lk/unit/examination-division/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-08-1b19f2478f03.html",
+      "sha256": "1b19f2478f035d9a490a0e7601f2da6a274d3f8cfa7681a91972ee7b075b1a03",
+      "bytes": 116802
+    },
+    {
+      "url": "https://jfn.ac.lk/unit/engineering-service-division/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-09-f0e7adcc7a49.html",
+      "sha256": "f0e7adcc7a49b62c4895b16d323af6c8a060c7ca27d2b55cf74b99a5b70fee32",
+      "bytes": 115157
+    },
+    {
+      "url": "https://jfn.ac.lk/unit/proctor-office/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-10-294b6731caa9.html",
+      "sha256": "294b6731caa97765aa4932d08f95057d47d502142f6dd2aabea299ea26f7d8e4",
+      "bytes": 111887
+    },
+    {
+      "url": "https://jfn.ac.lk/contact-us/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-11-22b6350002af.html",
+      "sha256": "22b6350002af1111dff81be658a6a4e0ee857429e61082cbfb0b84217a7fd3be",
+      "bytes": 181709
+    },
+    {
+      "url": "https://jfn.ac.lk/vision-mission-and-core-values-of-the-university/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-12-e28982362657.html",
+      "sha256": "e289823626576c04c62d37fe2fd3270ab70273570038e7152159321bd4a5f8b4",
+      "bytes": 170785
+    },
+    {
+      "url": "https://jfn.ac.lk/university-logo/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-13-49ef7ce4f320.html",
+      "sha256": "49ef7ce4f320dd4500ec2b543e5bfc9a27c193371107ba5655e5b3b64fd51d19",
+      "bytes": 177866
+    },
+    {
+      "url": "https://jfn.ac.lk/history/",
+      "path": "audit.output/www.jfn.ac.lk/20260921.0616/snapshots/page-14-6da3246f118f.html",
+      "sha256": "6da3246f118f88c1e9c033a2312437f12f1ab1e0678073aa1ee76e1be9ab5e64",
+      "bytes": 181704
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1316,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +1329,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +1386,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94) 021 221 810 (29 phone numbers found); Email: info@univ.jfn.ac.lk (22 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1435,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.75.64",
+    "egress_ip": "20.186.238.83",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://www.nysc.lk/
 
-- Completed: 2026-09-20 06:58
+- Completed: 2026-09-21 06:54
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

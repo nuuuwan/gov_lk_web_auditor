@@ -1,8 +1,8 @@
 # Website Audit: http://www.rjt.ac.lk/
 
-- Completed: 2026-09-20 06:19
+- Completed: 2026-09-21 06:17
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ; Phone: +94 (25) 2266643 (73 phone numbers found); Email: info@rjt.ac.lk (17 email addresses found); Published named responsibility: director
+Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent ; Phone: +94252266650 (73 phone numbers found); Email: info@rjt.ac.lk (17 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent  |
-| reachable_contacts | ✅ | Phone: +94 (25) 2266643 (73 phone numbers found); Email: info@rjt.ac.lk (17 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94252266650 (73 phone numbers found); Email: info@rjt.ac.lk (17 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

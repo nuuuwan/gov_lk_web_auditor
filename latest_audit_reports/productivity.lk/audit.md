@@ -1,8 +1,8 @@
 # Website Audit: https://productivity.lk/
 
-- Completed: 2026-09-20 06:43
+- Completed: 2026-09-21 06:41
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289; Phone: +94) 112 186 031 ( (19 phone numbers found); Email: info@productivity.gov.lk; Published named responsibility: division
+Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289; Phone: +94) 112 186 025 (18 phone numbers found); Email: info@productivity.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289 |
-| reachable_contacts | ✅ | Phone: +94) 112 186 031 ( (19 phone numbers found); Email: info@productivity.gov.lk |
+| reachable_contacts | ✅ | Phone: +94) 112 186 025 (18 phone numbers found); Email: info@productivity.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

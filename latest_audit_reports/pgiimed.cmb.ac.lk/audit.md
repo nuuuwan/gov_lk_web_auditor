@@ -1,8 +1,8 @@
 # Website Audit: https://pgiimed.cmb.ac.lk/
 
-- Completed: 2026-09-20 06:21
+- Completed: 2026-09-21 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir; Phone: 0908147563 (6 phone numbers found); Email: sar@pgiimed.cmb.ac.lk (5 email addresses found); Published named responsibility: director
+Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir; Phone: 0908147563 (6 phone numbers found); Email: adm@pgiimed.cmb.ac.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Postgraduate institute of Indigenous Medicine, 5th Floor, Ayurveda Teaching Hospital, Cotta Road, Borella. Phone The Dir |
-| reachable_contacts | ✅ | Phone: 0908147563 (6 phone numbers found); Email: sar@pgiimed.cmb.ac.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0908147563 (6 phone numbers found); Email: adm@pgiimed.cmb.ac.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://slic.gov.lk/
 
-- Completed: 2026-09-20 06:50
+- Completed: 2026-09-21 06:48
 - Overall result: ⚫ Level 0
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ No usable page was inspected; No usable page was inspected; No usable page was i
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | [Errno 104] Connection reset by peer |
-| tls_hostname_matches | ❓ | [Errno 104] Connection reset by peer |
+| tls_not_expired | ❓ | _ssl.c:993: The handshake operation timed out |
+| tls_hostname_matches | ❓ | _ssl.c:993: The handshake operation timed out |
 
 ## 🟠 Level 2: ❓
 

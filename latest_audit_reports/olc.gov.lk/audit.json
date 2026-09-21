@@ -1,15 +1,18 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "2fc59a86-86e3-4cde-a1a3-b7937b2334e1",
+  "audit_id": "4070fea3-3d16-4b53-b473-9e34cb96a1c7",
   "url": "https://olc.gov.lk/",
   "normalized_url": "https://olc.gov.lk/",
-  "started_at": "2026-09-20T06:44:31.808971+05:30",
-  "completed_at": "2026-09-20T06:44:38.865450+05:30",
+  "started_at": "2026-09-21T06:42:15.624429+05:30",
+  "completed_at": "2026-09-21T06:42:20.595343+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [503, 503, 503, 503]"
+      "domain_not_parked: Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200"
     ]
   },
   "evidence": [
@@ -17,59 +20,89 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-20T06:44:32.137606+05:30"
+      "observed_at": "2026-09-21T06:42:16.268479+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-20T06:44:32.137624+05:30"
+      "observed_at": "2026-09-21T06:42:16.268499+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-20T06:44:32.790201+05:30"
+      "observed_at": "2026-09-21T06:42:16.857471+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 503 at https://olc.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://olc.gov.lk/",
       "source": "https://olc.gov.lk/",
-      "observed_at": "2026-09-20T06:44:38.858236+05:30"
+      "observed_at": "2026-09-21T06:42:20.575027+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 503 at https://olc.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://olc.gov.lk/",
       "source": "http://olc.gov.lk/",
-      "observed_at": "2026-09-20T06:44:38.858258+05:30"
+      "observed_at": "2026-09-21T06:42:20.575043+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 503 at https://olc.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://olc.gov.lk/",
       "source": "https://olc.gov.lk/",
-      "observed_at": "2026-09-20T06:44:38.858263+05:30"
+      "observed_at": "2026-09-21T06:42:20.575047+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 503 at https://olc.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://olc.gov.lk/",
       "source": "http://olc.gov.lk/",
-      "observed_at": "2026-09-20T06:44:38.858267+05:30"
+      "observed_at": "2026-09-21T06:42:20.575050+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "https://olc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "http://olc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "https://olc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0950635027",
+      "source": "http://olc.gov.lk/",
+      "data": {
+        "value": "0950635027"
+      }
     },
     {
       "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 381 visible characters across 4 pages",
-      "source": "https://olc.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
       "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
-      "observed_at": "2026-09-20T06:44:38.864945+05:30"
+      "detail": "Only 73 visible characters across 4 pages; below substance threshold 200",
+      "source": "https://olc.gov.lk/"
     }
   ],
   "observations": [
@@ -96,41 +129,37 @@
     },
     {
       "url": "https://olc.gov.lk/",
-      "status_code": 503,
+      "status_code": 200,
       "final_url": "https://olc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 818,
+      "elapsed_ms": 686,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://olc.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://olc.gov.lk/",
-      "redirects": [
-        "https://olc.gov.lk/"
-      ],
-      "elapsed_ms": 868,
+      "status_code": 200,
+      "final_url": "http://olc.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 466,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://olc.gov.lk/",
-      "status_code": 503,
+      "status_code": 200,
       "final_url": "https://olc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 795,
+      "elapsed_ms": 771,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://olc.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://olc.gov.lk/",
-      "redirects": [
-        "https://olc.gov.lk/"
-      ],
-      "elapsed_ms": 847,
+      "status_code": 200,
+      "final_url": "http://olc.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 470,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
@@ -138,27 +167,27 @@
   "snapshots": [
     {
       "url": "https://olc.gov.lk/",
-      "path": "audit.output/olc.gov.lk/20260920.0644/snapshots/page-01-dd365dcd42e7.html",
-      "sha256": "dd365dcd42e768b8d7482e4088a3d6cf80d8d09a3b0c7fdd47401e854b4ab18a",
-      "bytes": 2673
+      "path": "audit.output/olc.gov.lk/20260921.0642/snapshots/page-01-93c5a5d6cf44.html",
+      "sha256": "93c5a5d6cf448e7998864885afedec55a1a09547bf2a30c27c8112336d628a45",
+      "bytes": 7277
+    },
+    {
+      "url": "http://olc.gov.lk/",
+      "path": "audit.output/olc.gov.lk/20260921.0642/snapshots/page-02-9a2991ad7ee3.html",
+      "sha256": "9a2991ad7ee388bdf956b3165d22d0890080d3a3e82ca8523784a236011a4791",
+      "bytes": 7134
     },
     {
       "url": "https://olc.gov.lk/",
-      "path": "audit.output/olc.gov.lk/20260920.0644/snapshots/page-02-dd365dcd42e7.html",
-      "sha256": "dd365dcd42e768b8d7482e4088a3d6cf80d8d09a3b0c7fdd47401e854b4ab18a",
-      "bytes": 2673
+      "path": "audit.output/olc.gov.lk/20260921.0642/snapshots/page-03-51b27e37a90b.html",
+      "sha256": "51b27e37a90baf4e8593e88204c82577fb6be8e078cce841993f2e6eaecd73be",
+      "bytes": 7348
     },
     {
-      "url": "https://olc.gov.lk/",
-      "path": "audit.output/olc.gov.lk/20260920.0644/snapshots/page-03-dd365dcd42e7.html",
-      "sha256": "dd365dcd42e768b8d7482e4088a3d6cf80d8d09a3b0c7fdd47401e854b4ab18a",
-      "bytes": 2673
-    },
-    {
-      "url": "https://olc.gov.lk/",
-      "path": "audit.output/olc.gov.lk/20260920.0644/snapshots/page-04-dd365dcd42e7.html",
-      "sha256": "dd365dcd42e768b8d7482e4088a3d6cf80d8d09a3b0c7fdd47401e854b4ab18a",
-      "bytes": 2673
+      "url": "http://olc.gov.lk/",
+      "path": "audit.output/olc.gov.lk/20260921.0642/snapshots/page-04-538c464233f5.html",
+      "sha256": "538c464233f5d2471125c0e0f378584e31fb06b6bb9c211080c28ad79b97f789",
+      "bytes": 7262
     }
   ],
   "reviewer_decisions": [],
@@ -174,8 +203,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
+      "status": "inconclusive",
+      "reason": "Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200",
       "executed": true,
       "checks": [
         {
@@ -188,43 +217,43 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -274,7 +303,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.75.64",
+    "egress_ip": "20.186.238.83",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

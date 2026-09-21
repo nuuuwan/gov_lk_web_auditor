@@ -1,8 +1,8 @@
 # Website Audit: https://rubberdev.gov.lk/
 
-- Completed: 2026-09-20 06:45
+- Completed: 2026-09-21 06:43
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.75.64 (US, github-actions)
+- Vantage: 20.186.238.83 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2 889 479 (2 phone numbers found); Email: rubbdev@gmail.com |
+| reachable_contacts | ✅ | Phone: +94 11 2 889 453 (2 phone numbers found); Email: rubbdev@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
