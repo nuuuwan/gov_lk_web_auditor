@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ea97e5e8-c2ee-467d-ac9a-77112944ff31",
+  "audit_id": "c198f392-6f0c-4efc-9ffe-d63cfa90471f",
   "url": "https://srilankateaboard.lk/",
   "normalized_url": "https://srilankateaboard.lk/",
-  "started_at": "2026-09-21T06:43:48.625169+05:30",
-  "completed_at": "2026-09-21T06:44:03.908189+05:30",
+  "started_at": "2026-09-22T06:41:20.322971+05:30",
+  "completed_at": "2026-09-22T06:41:44.018967+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -16,8 +16,8 @@
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
       "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 104] Connection reset by peer",
-      "tls_hostname_matches: [Errno 104] Connection reset by peer"
+      "tls_not_expired: _ssl.c:993: The handshake operation timed out",
+      "tls_hostname_matches: _ssl.c:993: The handshake operation timed out"
     ]
   },
   "evidence": [
@@ -25,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-21T06:43:48.959166+05:30"
+      "observed_at": "2026-09-22T06:41:20.860961+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-21T06:43:48.959188+05:30"
+      "observed_at": "2026-09-22T06:41:20.860976+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "[Errno 104] Connection reset by peer",
-      "observed_at": "2026-09-21T06:43:51.642169+05:30"
+      "detail": "_ssl.c:993: The handshake operation timed out",
+      "observed_at": "2026-09-22T06:41:31.141564+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: [Errno 104] Connection reset by peer",
       "source": "https://srilankateaboard.lk/",
-      "observed_at": "2026-09-21T06:44:03.908003+05:30"
+      "observed_at": "2026-09-22T06:41:44.018811+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: [Errno 104] Connection reset by peer",
       "source": "http://srilankateaboard.lk/",
-      "observed_at": "2026-09-21T06:44:03.908022+05:30"
+      "observed_at": "2026-09-22T06:41:44.018830+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: [Errno 104] Connection reset by peer",
       "source": "https://srilankateaboard.lk/",
-      "observed_at": "2026-09-21T06:44:03.908028+05:30"
+      "observed_at": "2026-09-22T06:41:44.018835+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: [Errno 104] Connection reset by peer",
       "source": "http://srilankateaboard.lk/",
-      "observed_at": "2026-09-21T06:44:03.908032+05:30"
+      "observed_at": "2026-09-22T06:41:44.018838+05:30"
     }
   ],
   "observations": [
@@ -88,7 +88,7 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "[Errno 104] Connection reset by peer"
+      "detail": "_ssl.c:993: The handshake operation timed out"
     },
     {
       "url": "https://srilankateaboard.lk/",
@@ -142,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out",
       "executed": true,
       "checks": [
         {
@@ -197,13 +197,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "reason": "_ssl.c:993: The handshake operation timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "reason": "_ssl.c:993: The handshake operation timed out"
         }
       ]
     },
@@ -241,8 +241,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.83",
-    "country": "US",
+    "egress_ip": "20.220.110.149",
+    "country": "CA",
     "runner": "github-actions",
     "proxy": false
   }

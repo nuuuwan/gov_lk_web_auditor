@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "47d8b079-990a-476e-860a-3edf1bb5bef1",
+  "audit_id": "ed8a2fc4-f04d-4c16-bdf0-2a6a751d11e6",
   "url": "http://www.ndrsc.gov.lk/",
   "normalized_url": "http://www.ndrsc.gov.lk/",
-  "started_at": "2026-09-21T06:12:59.039501+05:30",
-  "completed_at": "2026-09-21T06:14:42.032301+05:30",
+  "started_at": "2026-09-22T06:10:27.844206+05:30",
+  "completed_at": "2026-09-22T06:12:06.388501+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
@@ -17,47 +17,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-21T06:12:59.461963+05:30"
+      "observed_at": "2026-09-22T06:10:28.284790+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-21T06:12:59.461982+05:30"
+      "observed_at": "2026-09-22T06:10:28.284811+05:30"
     },
     {
       "check": "tls",
       "status": "error",
       "detail": "timed out",
-      "observed_at": "2026-09-21T06:13:09.703116+05:30"
+      "observed_at": "2026-09-22T06:10:38.336376+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)",
       "source": "https://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-21T06:14:42.032119+05:30"
+      "observed_at": "2026-09-22T06:12:06.386347+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-21T06:14:42.032137+05:30"
+      "observed_at": "2026-09-22T06:12:06.386364+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: timed out",
       "source": "https://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-21T06:14:42.032143+05:30"
+      "observed_at": "2026-09-22T06:12:06.386369+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.ndrsc.gov.lk/",
       "source": "http://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-21T06:14:42.032147+05:30"
+      "observed_at": "2026-09-22T06:12:06.386374+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 49 visible characters across 1 pages; below substance threshold 200",
+      "source": "http://www.ndrsc.gov.lk/"
     }
   ],
   "observations": [
@@ -111,15 +117,22 @@
     },
     {
       "url": "http://www.ndrsc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.ndrsc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 20488,
+      "content_type": "text/html",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "http://www.ndrsc.gov.lk/",
+      "path": "audit.output/www.ndrsc.gov.lk/20260922.0610/snapshots/page-01-333dfc8c8fb4.html",
+      "sha256": "333dfc8c8fb49c14e5c3af80fd0f17817917c997d8700679ed4bcb9ad3754efa",
+      "bytes": 3021
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -147,25 +160,25 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
@@ -176,8 +189,8 @@
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
@@ -233,8 +246,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.83",
-    "country": "US",
+    "egress_ip": "20.220.110.149",
+    "country": "CA",
     "runner": "github-actions",
     "proxy": false
   }

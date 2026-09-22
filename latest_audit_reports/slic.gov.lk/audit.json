@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "e16532b9-b41a-443f-a5f7-4079f9331f0f",
+  "audit_id": "836ce8db-9bf9-4281-820f-2dd9df5f22c3",
   "url": "https://slic.gov.lk/",
   "normalized_url": "https://slic.gov.lk/",
-  "started_at": "2026-09-21T06:47:45.350552+05:30",
-  "completed_at": "2026-09-21T06:48:09.669459+05:30",
+  "started_at": "2026-09-22T06:45:17.439933+05:30",
+  "completed_at": "2026-09-22T06:45:34.419933+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -16,8 +16,8 @@
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
       "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: _ssl.c:993: The handshake operation timed out",
-      "tls_hostname_matches: _ssl.c:993: The handshake operation timed out"
+      "tls_not_expired: [Errno 104] Connection reset by peer",
+      "tls_hostname_matches: [Errno 104] Connection reset by peer"
     ]
   },
   "evidence": [
@@ -25,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-21T06:47:46.014583+05:30"
+      "observed_at": "2026-09-22T06:45:17.830031+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-21T06:47:46.014601+05:30"
+      "observed_at": "2026-09-22T06:45:17.830051+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "_ssl.c:993: The handshake operation timed out",
-      "observed_at": "2026-09-21T06:47:56.527194+05:30"
+      "detail": "[Errno 104] Connection reset by peer",
+      "observed_at": "2026-09-22T06:45:22.139840+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: [Errno 104] Connection reset by peer",
       "source": "https://slic.gov.lk/",
-      "observed_at": "2026-09-21T06:48:09.669229+05:30"
+      "observed_at": "2026-09-22T06:45:34.419742+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: [Errno 104] Connection reset by peer",
       "source": "http://slic.gov.lk/",
-      "observed_at": "2026-09-21T06:48:09.669249+05:30"
+      "observed_at": "2026-09-22T06:45:34.419764+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: [Errno 104] Connection reset by peer",
       "source": "https://slic.gov.lk/",
-      "observed_at": "2026-09-21T06:48:09.669254+05:30"
+      "observed_at": "2026-09-22T06:45:34.419770+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: [Errno 104] Connection reset by peer",
       "source": "http://slic.gov.lk/",
-      "observed_at": "2026-09-21T06:48:09.669258+05:30"
+      "observed_at": "2026-09-22T06:45:34.419774+05:30"
     }
   ],
   "observations": [
@@ -88,7 +88,7 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "_ssl.c:993: The handshake operation timed out"
+      "detail": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "https://slic.gov.lk/",
@@ -142,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer",
       "executed": true,
       "checks": [
         {
@@ -197,13 +197,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "reason": "[Errno 104] Connection reset by peer"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "reason": "[Errno 104] Connection reset by peer"
         }
       ]
     },
@@ -241,8 +241,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.83",
-    "country": "US",
+    "egress_ip": "20.220.110.149",
+    "country": "CA",
     "runner": "github-actions",
     "proxy": false
   }

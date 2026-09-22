@@ -1,8 +1,8 @@
 # Website Audit: https://caa.gov.lk/
 
-- Completed: 2026-09-21 06:48
+- Completed: 2026-09-22 07:08
 - Overall result: ⚫ Level 0
-- Vantage: 20.186.238.83 (US, github-actions)
+- Vantage: 20.220.110.149 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ❌
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-timed out; timed out
+Detected generic hosting marker: under construction
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -22,21 +22,9 @@ timed out; timed out
 | domain_not_parked | ✅ | No parked-domain marker found |
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| hosting_configured | ❌ | Detected generic hosting marker: under construction |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://caa.gov.lk/: Probe 2: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
-
-## 🟠 Level 2: ❓
-
-To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
-
-Not run because 🔴 Level 1 did not pass
-
-## 🟢 Level 3: ❓
-
-To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
-
-Not run because 🟠 Level 2 did not pass
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |

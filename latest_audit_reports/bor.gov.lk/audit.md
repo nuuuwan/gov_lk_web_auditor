@@ -1,8 +1,8 @@
 # Website Audit: https://bor.gov.lk/
 
-- Completed: 2026-09-21 06:45
+- Completed: 2026-09-22 06:42
 - Overall result: 🔴 Level 1
-- Vantage: 20.186.238.83 (US, github-actions)
+- Vantage: 20.220.110.149 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0192707879 (52 phone numbers found); Email: bcg.rehabilitation@gmail.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0771234567 (52 phone numbers found); Email: bcgr.rehabb@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

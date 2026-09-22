@@ -1,8 +1,8 @@
 # Website Audit: https://www.dwc.gov.lk/
 
-- Completed: 2026-09-21 06:25
+- Completed: 2026-09-22 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.186.238.83 (US, github-actions)
+- Vantage: 20.220.110.149 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in; Phone: +94 11 2 888 585 (2 phone numbers found); Email: dg@dwc.gov.lk; Published named responsibility: department
+Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in; Phone: +94 11 2 883 355 (2 phone numbers found); Email: dg@dwc.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in |
-| reachable_contacts | ✅ | Phone: +94 11 2 888 585 (2 phone numbers found); Email: dg@dwc.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2 883 355 (2 phone numbers found); Email: dg@dwc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

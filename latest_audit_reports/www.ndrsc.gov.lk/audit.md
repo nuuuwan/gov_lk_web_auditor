@@ -1,8 +1,8 @@
 # Website Audit: http://www.ndrsc.gov.lk/
 
-- Completed: 2026-09-21 06:14
+- Completed: 2026-09-22 06:12
 - Overall result: ⚫ Level 0
-- Vantage: 20.186.238.83 (US, github-actions)
+- Vantage: 20.220.110.149 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -19,12 +19,12 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | No usable page was inspected |
-| site_not_defaced | ❓ | No usable page was inspected |
-| content_relevant | ❓ | No usable page was inspected |
-| hosting_configured | ❓ | No usable page was inspected |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
 | http_available | ❓ | An HTTP probe was transient |
-| redirect_related | ❓ | No redirect result was available |
+| redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010) |
 | tls_not_expired | ❓ | timed out |
 | tls_hostname_matches | ❓ | timed out |

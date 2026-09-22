@@ -1,8 +1,8 @@
 # Website Audit: https://nfc.gov.lk/
 
-- Completed: 2026-09-21 06:12
+- Completed: 2026-09-22 06:09
 - Overall result: 🟠 Level 2
-- Vantage: 20.186.238.83 (US, github-actions)
+- Vantage: 20.220.110.149 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agr; Phone: +94 11 258 5526 (135 phone numbers found); Email: filmcorp@sltnet.lk; Published named responsibility: director
+Published postal address: or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agr; Phone: +94 11 258 4623 (135 phone numbers found); Email: filmcorp@sltnet.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: or username.","give_user_pass":"Enter a password.","give_user_pass_confirm":"Enter the password confirmation.","give_agr |
-| reachable_contacts | ✅ | Phone: +94 11 258 5526 (135 phone numbers found); Email: filmcorp@sltnet.lk |
+| reachable_contacts | ✅ | Phone: +94 11 258 4623 (135 phone numbers found); Email: filmcorp@sltnet.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

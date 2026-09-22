@@ -1,15 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "6fa248d7-dcc3-4fce-949c-be3aa3756715",
+  "audit_id": "2b193051-cabe-4318-b2c4-dbb2443e0cd9",
   "url": "https://tourismmin.gov.lk/",
   "normalized_url": "https://tourismmin.gov.lk/",
-  "started_at": "2026-09-21T06:56:08.730615+05:30",
-  "completed_at": "2026-09-21T06:56:25.682292+05:30",
+  "started_at": "2026-09-22T06:54:39.463855+05:30",
+  "completed_at": "2026-09-22T06:54:46.406645+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "tls_not_expired: TLS certificate has expired"
     ]
   },
   "evidence": [
@@ -17,47 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-21T06:56:09.381077+05:30"
+      "observed_at": "2026-09-22T06:54:39.979702+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-21T06:56:09.381099+05:30"
+      "observed_at": "2026-09-22T06:54:39.979721+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-09-21T06:56:19.623930+05:30"
+      "check": "tls_expired",
+      "status": "fail",
+      "detail": "TLS certificate has expired",
+      "observed_at": "2026-09-22T06:54:40.741643+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "https://tourismmin.gov.lk/",
-      "observed_at": "2026-09-21T06:56:25.682136+05:30"
+      "observed_at": "2026-09-22T06:54:46.406492+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "http://tourismmin.gov.lk/",
-      "observed_at": "2026-09-21T06:56:25.682154+05:30"
+      "observed_at": "2026-09-22T06:54:46.406508+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "https://tourismmin.gov.lk/",
-      "observed_at": "2026-09-21T06:56:25.682159+05:30"
+      "observed_at": "2026-09-22T06:54:46.406513+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
       "source": "http://tourismmin.gov.lk/",
-      "observed_at": "2026-09-21T06:56:25.682163+05:30"
+      "observed_at": "2026-09-22T06:54:46.406516+05:30"
     }
   ],
   "observations": [
@@ -77,10 +78,10 @@
     },
     {
       "host": "tourismmin.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "expired",
+      "expires_at": "2026-09-20T09:45:25+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate has expired"
     },
     {
       "url": "https://tourismmin.gov.lk/",
@@ -134,7 +135,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
       "executed": true,
       "checks": [
         {
@@ -188,14 +189,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "fail",
+          "reason": "TLS certificate has expired"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
@@ -233,8 +234,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.186.238.83",
-    "country": "US",
+    "egress_ip": "20.220.110.149",
+    "country": "CA",
     "runner": "github-actions",
     "proxy": false
   }

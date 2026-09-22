@@ -1,8 +1,8 @@
 # Website Audit: https://publictrustee.gov.lk/
 
-- Completed: 2026-09-21 06:11
+- Completed: 2026-09-22 06:08
 - Overall result: ⚫ Level 0
-- Vantage: 20.186.238.83 (US, github-actions)
+- Vantage: 20.220.110.149 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -19,12 +19,12 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 80 visible characters across 2 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 80 visible characters across 2 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 80 visible characters across 2 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 80 visible characters across 2 pages; below substance threshold 200 |
-| http_available | ✅ | HTTP probes did not all fail |
-| redirect_related | ✅ | No unrelated redirect found |
+| domain_not_parked | ❓ | No usable page was inspected |
+| site_not_defaced | ❓ | No usable page was inspected |
+| content_relevant | ❓ | No usable page was inspected |
+| hosting_configured | ❓ | No usable page was inspected |
+| http_available | ❓ | HTTP checks did not run |
+| redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010) |
 | tls_not_expired | ❌ | TLS certificate has expired |
 | tls_hostname_matches | ❓ | TLS hostname check did not run |
