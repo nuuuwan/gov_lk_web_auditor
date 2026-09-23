@@ -1,8 +1,8 @@
 # Website Audit: http://www.seu.ac.lk/
 
-- Completed: 2026-09-22 06:15
+- Completed: 2026-09-23 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: OUR ADDRESS South Eastern University of Sri Lanka, University Park, Oluvil, #32360, Sri Lanka. University Park, Oluvil, ; Phone: +94 67 2255062 (21 phone numbers found); Email: registrar@seu.ac.lk (4 email addresses found); Published named responsibility: division
+Published postal address: OUR ADDRESS South Eastern University of Sri Lanka, University Park, Oluvil, #32360, Sri Lanka. University Park, Oluvil, ; Phone: +94 67 2255217 (21 phone numbers found); Email: registrar@seu.ac.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: OUR ADDRESS South Eastern University of Sri Lanka, University Park, Oluvil, #32360, Sri Lanka. University Park, Oluvil,  |
-| reachable_contacts | ✅ | Phone: +94 67 2255062 (21 phone numbers found); Email: registrar@seu.ac.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 67 2255217 (21 phone numbers found); Email: registrar@seu.ac.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

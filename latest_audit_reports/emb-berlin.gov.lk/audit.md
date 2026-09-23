@@ -1,8 +1,8 @@
 # Website Audit: https://emb-berlin.gov.lk/
 
-- Completed: 2026-09-22 06:30
+- Completed: 2026-09-23 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)30809749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquires ; Phone: 0140098-496 (39 phone numbers found); Email: slemb.berlin@mfa.gov.lk (15 email addresses found); Published named responsibility: division
+Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)30809749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquires ; Phone: +490300909749 (39 phone numbers found); Email: consular.berlin@mfa.gov.lk (15 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)30809749 For General Inquires: slemb.berlin@mfa.gov.lk For Consular Inquires  |
-| reachable_contacts | ✅ | Phone: 0140098-496 (39 phone numbers found); Email: slemb.berlin@mfa.gov.lk (15 email addresses found) |
+| reachable_contacts | ✅ | Phone: +490300909749 (39 phone numbers found); Email: consular.berlin@mfa.gov.lk (15 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

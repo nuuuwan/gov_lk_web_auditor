@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsf.gov.lk/
 
-- Completed: 2026-09-22 06:45
+- Completed: 2026-09-23 06:47
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: Server disconnected without sending a response.; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: [Errno 104] Connection reset by peer; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: Server disconnected without sending a response. |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: [Errno 104] Connection reset by peer |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: this scenario and propose actionable recommendations to mitigate sudden shocks that would be possible in the future. Rec; Phone: 0008905435 (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found); Published named responsibility: director
+Published postal address: this scenario and propose actionable recommendations to mitigate sudden shocks that would be possible in the future. Rec; Phone: 0960920008 . (100 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: this scenario and propose actionable recommendations to mitigate sudden shocks that would be possible in the future. Rec |
-| reachable_contacts | ✅ | Phone: 0008905435 (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0960920008 . (100 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

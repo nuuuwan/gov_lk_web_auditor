@@ -1,8 +1,8 @@
 # Website Audit: https://emb-bangkok.gov.lk/
 
-- Completed: 2026-09-22 06:29
+- Completed: 2026-09-23 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 13th Floor, 75/6-7 Ocean Tower2 Soi 19, Sukhumvit Rd, Wattana, Bangkok 10110 General Number : +66 2 105 4851 Fax : +66 2; Phone: +6621054851 (4 phone numbers found); Email: slemb.bangkok@mfa.gov.lk (7 email addresses found); Published named responsibility: director
+Published postal address: 13th Floor, 75/6-7 Ocean Tower2 Soi 19, Sukhumvit Rd, Wattana, Bangkok 10110 General Number : +66 2 105 4851 Fax : +66 2; Phone: +6621054851 (4 phone numbers found); Email: john@example.com (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 13th Floor, 75/6-7 Ocean Tower2 Soi 19, Sukhumvit Rd, Wattana, Bangkok 10110 General Number : +66 2 105 4851 Fax : +66 2 |
-| reachable_contacts | ✅ | Phone: +6621054851 (4 phone numbers found); Email: slemb.bangkok@mfa.gov.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: +6621054851 (4 phone numbers found); Email: john@example.com (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

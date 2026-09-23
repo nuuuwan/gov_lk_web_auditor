@@ -1,8 +1,8 @@
 # Website Audit: https://www.defence.lk/
 
-- Completed: 2026-09-22 06:53
+- Completed: 2026-09-23 06:57
 - Overall result: 🔴 Level 1
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2354354 (2 phone numbers found); Email: adlsecadmin@defence.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: i.jayathilake@yahoo.com (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

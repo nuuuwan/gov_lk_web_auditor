@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c228210f-c042-4b1c-a60e-b3736f58e13f",
+  "audit_id": "d45e2c5a-cfcb-4f97-8e9d-92de1547a737",
   "url": "https://analyst.gov.lk/",
   "normalized_url": "https://analyst.gov.lk/",
-  "started_at": "2026-09-22T06:39:01.476444+05:30",
-  "completed_at": "2026-09-22T06:39:06.530437+05:30",
+  "started_at": "2026-09-23T06:38:44.879770+05:30",
+  "completed_at": "2026-09-23T06:39:03.873038+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,1374 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-22T06:39:01.909131+05:30"
+      "observed_at": "2026-09-23T06:38:45.338340+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-22T06:39:01.909152+05:30"
+      "observed_at": "2026-09-23T06:38:45.338368+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-22T06:39:02.213853+05:30"
+      "observed_at": "2026-09-23T06:38:45.729611+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 500 at https://analyst.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://analyst.gov.lk/",
       "source": "https://analyst.gov.lk/",
-      "observed_at": "2026-09-22T06:39:06.239931+05:30"
+      "observed_at": "2026-09-23T06:39:02.919750+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 500 at http://analyst.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://analyst.gov.lk/",
       "source": "http://analyst.gov.lk/",
-      "observed_at": "2026-09-22T06:39:06.239949+05:30"
+      "observed_at": "2026-09-23T06:39:02.919767+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 500 at https://analyst.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://analyst.gov.lk/",
       "source": "https://analyst.gov.lk/",
-      "observed_at": "2026-09-22T06:39:06.239954+05:30"
+      "observed_at": "2026-09-23T06:39:02.919770+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 500 at http://analyst.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://analyst.gov.lk/",
       "source": "http://analyst.gov.lk/",
-      "observed_at": "2026-09-22T06:39:06.239957+05:30"
+      "observed_at": "2026-09-23T06:39:02.919772+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://analyst.gov.lk/services/forensic-section/",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "observed_at": "2026-09-23T06:39:02.919774+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "observed_at": "2026-09-23T06:39:02.919776+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "observed_at": "2026-09-23T06:39:02.919777+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "observed_at": "2026-09-23T06:39:02.919779+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "observed_at": "2026-09-23T06:39:02.919781+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://analyst.gov.lk/services/forensic-document-section/",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "observed_at": "2026-09-23T06:39:02.919782+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "observed_at": "2026-09-23T06:39:02.919784+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "observed_at": "2026-09-23T06:39:02.919786+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://analyst.gov.lk/services/food-laboratory/",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "observed_at": "2026-09-23T06:39:02.919788+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://analyst.gov.lk/services/liquor-laboratory/",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "observed_at": "2026-09-23T06:39:02.919790+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374644017",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374644017"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0178335025",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0178335025"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193344666",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193344666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374347407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374347407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0257038457",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0257038457"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0356649909",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0356649909"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193046407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193046407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0249895639",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0249895639"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193065470",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193065470"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2025-04-22",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "2025-04-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374644017",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374644017"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0178335025",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0178335025"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193344666",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193344666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374347407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374347407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0257038457",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0257038457"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0356649909",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0356649909"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193046407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193046407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0249895639",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0249895639"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193065470",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193065470"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2025-04-22",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "2025-04-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374644017",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374644017"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0178335025",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0178335025"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193344666",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193344666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374347407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374347407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0257038457",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0257038457"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0356649909",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0356649909"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193046407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193046407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0249895639",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0249895639"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193065470",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193065470"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2025-04-22",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "2025-04-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374644017",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374644017"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0178335025",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0178335025"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193344666",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193344666"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0374347407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0374347407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0257038457",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0257038457"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0356649909",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0356649909"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193046407",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193046407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0249895639",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0249895639"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0193065470",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "0193065470"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2025-04-22",
+      "source": "https://analyst.gov.lk/",
+      "data": {
+        "value": "2025-04-22"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/forensic-section/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0980609789",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "0980609789"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/forensic-document-section/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/food-laboratory/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 176 800 ",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "data": {
+        "value": "+94 112 176 800 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 394 ",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "data": {
+        "value": "+94 112 786 394 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 416 ",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "data": {
+        "value": "+94 112 786 416 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 786 395 ",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "data": {
+        "value": "+94 112 786 395 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@analyst.gov.lk",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "data": {
+        "value": "info@analyst.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "data": {
+        "value": "No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "data": {
+        "value": "division"
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 55 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 5413 visible characters across 14 pages",
       "source": "https://analyst.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
-      "observed_at": "2026-09-22T06:39:06.252151+05:30"
     }
   ],
   "observations": [
@@ -96,37 +1420,131 @@
     },
     {
       "url": "https://analyst.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://analyst.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 752,
+      "elapsed_ms": 451,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://analyst.gov.lk/",
-      "status_code": 500,
-      "final_url": "http://analyst.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 321,
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/",
+      "redirects": [
+        "https://analyst.gov.lk/"
+      ],
+      "elapsed_ms": 976,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://analyst.gov.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://analyst.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 607,
+      "elapsed_ms": 490,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://analyst.gov.lk/",
-      "status_code": 500,
-      "final_url": "http://analyst.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/",
+      "redirects": [
+        "https://analyst.gov.lk/"
+      ],
+      "elapsed_ms": 188,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-section/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/forensic-section/",
       "redirects": [],
-      "elapsed_ms": 752,
+      "elapsed_ms": 1143,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "redirects": [],
+      "elapsed_ms": 867,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "redirects": [],
+      "elapsed_ms": 967,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "redirects": [],
+      "elapsed_ms": 821,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "redirects": [],
+      "elapsed_ms": 208,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-document-section/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/forensic-document-section/",
+      "redirects": [],
+      "elapsed_ms": 1080,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "redirects": [],
+      "elapsed_ms": 1019,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "redirects": [],
+      "elapsed_ms": 859,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/food-laboratory/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/food-laboratory/",
+      "redirects": [],
+      "elapsed_ms": 1076,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "status_code": 200,
+      "final_url": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "redirects": [],
+      "elapsed_ms": 1163,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -134,27 +1552,87 @@
   "snapshots": [
     {
       "url": "https://analyst.gov.lk/",
-      "path": "audit.output/analyst.gov.lk/20260922.0639/snapshots/page-01-4b9443d1fac5.html",
-      "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
-      "bytes": 2482
-    },
-    {
-      "url": "http://analyst.gov.lk/",
-      "path": "audit.output/analyst.gov.lk/20260922.0639/snapshots/page-02-4b9443d1fac5.html",
-      "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
-      "bytes": 2482
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-01-f7f9cd6cc41d.html",
+      "sha256": "f7f9cd6cc41d56f4f7cb6dc2c317e99e0c6bacd550ce179d4eedf7ef20f17e44",
+      "bytes": 185229
     },
     {
       "url": "https://analyst.gov.lk/",
-      "path": "audit.output/analyst.gov.lk/20260922.0639/snapshots/page-03-4b9443d1fac5.html",
-      "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
-      "bytes": 2482
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-02-f7f9cd6cc41d.html",
+      "sha256": "f7f9cd6cc41d56f4f7cb6dc2c317e99e0c6bacd550ce179d4eedf7ef20f17e44",
+      "bytes": 185229
     },
     {
-      "url": "http://analyst.gov.lk/",
-      "path": "audit.output/analyst.gov.lk/20260922.0639/snapshots/page-04-4b9443d1fac5.html",
-      "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
-      "bytes": 2482
+      "url": "https://analyst.gov.lk/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-03-f7f9cd6cc41d.html",
+      "sha256": "f7f9cd6cc41d56f4f7cb6dc2c317e99e0c6bacd550ce179d4eedf7ef20f17e44",
+      "bytes": 185229
+    },
+    {
+      "url": "https://analyst.gov.lk/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-04-f7f9cd6cc41d.html",
+      "sha256": "f7f9cd6cc41d56f4f7cb6dc2c317e99e0c6bacd550ce179d4eedf7ef20f17e44",
+      "bytes": 185229
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-section/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-05-44c981df4ad3.html",
+      "sha256": "44c981df4ad30e6a95517953e6b929bb3414f18bcdd43eb4887465fa96f01a7c",
+      "bytes": 112946
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-explosive-and-fire-investigation-division/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-06-ede0226d628b.html",
+      "sha256": "ede0226d628b4c4d149cc935307cdf443058479f685254fc67f18d292e483aff",
+      "bytes": 103735
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-toxicology-section/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-07-c6a182a9d68d.html",
+      "sha256": "c6a182a9d68dd318acef2094aab597f4956ef18228f9607cfd6d63dd0e9c800d",
+      "bytes": 110873
+    },
+    {
+      "url": "https://analyst.gov.lk/services/narcotic-drugs-and-psychotropic-substances-section/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-08-6a06b0f847da.html",
+      "sha256": "6a06b0f847dac8447f7ae58451a5af043e61b34cf9b67ca09e8c2c8359a4899d",
+      "bytes": 113281
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-serology-and-dna-section/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-09-3bf09d1709e2.html",
+      "sha256": "3bf09d1709e208562058f3c1dd016d34ccf42cd8af55e49240b27f5db2cc6ab6",
+      "bytes": 114200
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-document-section/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-10-00109cc7e696.html",
+      "sha256": "00109cc7e696a963e03d6ba2f6a41e8d482501414ef8ea880136f4654bcee86b",
+      "bytes": 107472
+    },
+    {
+      "url": "https://analyst.gov.lk/services/digital-and-computer-forensic-section/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-11-4f93580b77c6.html",
+      "sha256": "4f93580b77c6ff226daf6ec02907d77ab491554fe6fb59b24e47d90b09350662",
+      "bytes": 107379
+    },
+    {
+      "url": "https://analyst.gov.lk/services/forensic-miscellaneous-section/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-12-0ca160ccfc9c.html",
+      "sha256": "0ca160ccfc9cfa5c841c4f69b67f22993d878e72c699cb34a82779437be5cc25",
+      "bytes": 107212
+    },
+    {
+      "url": "https://analyst.gov.lk/services/food-laboratory/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-13-e6bcdad2e0d2.html",
+      "sha256": "e6bcdad2e0d29d32037f5c05d9b1dd0fc736daf5eeb10ae4a6cd72bb8f770f27",
+      "bytes": 107225
+    },
+    {
+      "url": "https://analyst.gov.lk/services/liquor-laboratory/",
+      "path": "audit.output/analyst.gov.lk/20260923.0638/snapshots/page-14-0682312ca12c.html",
+      "sha256": "0682312ca12cf5918c03fe0ad4b0608c8d188c3858ce78b7aedbb4c5c107d957",
+      "bytes": 114108
     }
   ],
   "reviewer_decisions": [],
@@ -170,8 +1648,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -183,44 +1661,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -239,18 +1717,80 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112; Phone: 0374644017 (14 phone numbers found); Email: info@analyst.gov.lk; Published named responsibility: division",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0374644017 (14 phone numbers found); Email: info@analyst.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published published update date: 2025-04-22"
+        }
+      ]
     },
     {
       "level": 4,
@@ -270,8 +1810,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.220.110.149",
-    "country": "CA",
+    "egress_ip": "52.173.11.77",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }

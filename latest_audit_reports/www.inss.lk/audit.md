@@ -1,8 +1,8 @@
 # Website Audit: https://www.inss.lk/
 
-- Completed: 2026-09-22 06:10
+- Completed: 2026-09-23 06:08
 - Overall result: 🔴 Level 1
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2879087 (2 phone numbers found); Email: inss.srilanka@gmail.com |
+| reachable_contacts | ✅ | Phone: +94 11 2879086 (2 phone numbers found); Email: inss.srilanka@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

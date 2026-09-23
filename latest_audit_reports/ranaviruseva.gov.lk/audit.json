@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c2edfe8f-7275-4dd1-aa6e-c02a35afd04f",
+  "audit_id": "d73911cc-aa77-49f5-a590-a60408da8d8c",
   "url": "https://ranaviruseva.gov.lk/",
   "normalized_url": "https://ranaviruseva.gov.lk/",
-  "started_at": "2026-09-22T06:10:52.237613+05:30",
-  "completed_at": "2026-09-22T06:11:15.925419+05:30",
+  "started_at": "2026-09-23T06:09:07.098325+05:30",
+  "completed_at": "2026-09-23T06:09:48.399595+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: _ssl.c:993: The handshake operation timed out",
-      "tls_hostname_matches: _ssl.c:993: The handshake operation timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,528 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-22T06:10:52.625520+05:30"
+      "observed_at": "2026-09-23T06:09:07.527561+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-22T06:10:52.625539+05:30"
+      "observed_at": "2026-09-23T06:09:07.527585+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "_ssl.c:993: The handshake operation timed out",
-      "observed_at": "2026-09-22T06:11:03.181153+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-09-23T06:09:08.500604+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://ranaviruseva.gov.lk/",
       "source": "https://ranaviruseva.gov.lk/",
-      "observed_at": "2026-09-22T06:11:15.925227+05:30"
+      "observed_at": "2026-09-23T06:09:48.348251+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://ranaviruseva.gov.lk/",
       "source": "http://ranaviruseva.gov.lk/",
-      "observed_at": "2026-09-22T06:11:15.925243+05:30"
+      "observed_at": "2026-09-23T06:09:48.348271+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://ranaviruseva.gov.lk/",
       "source": "https://ranaviruseva.gov.lk/",
-      "observed_at": "2026-09-22T06:11:15.925247+05:30"
+      "observed_at": "2026-09-23T06:09:48.348274+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://ranaviruseva.gov.lk/",
       "source": "http://ranaviruseva.gov.lk/",
-      "observed_at": "2026-09-22T06:11:15.925250+05:30"
+      "observed_at": "2026-09-23T06:09:48.348276+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://ranaviruseva.gov.lk/rvsacontact.php",
+      "source": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "observed_at": "2026-09-23T06:09:48.348278+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://ranaviruseva.gov.lk/index.php",
+      "source": "https://ranaviruseva.gov.lk/index.php",
+      "observed_at": "2026-09-23T06:09:48.348279+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://ranaviruseva.gov.lk/ranaviru.php",
+      "source": "https://ranaviruseva.gov.lk/ranaviru.php",
+      "observed_at": "2026-09-23T06:09:48.348281+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://ranaviruseva.gov.lk/history.php",
+      "source": "https://ranaviruseva.gov.lk/history.php",
+      "observed_at": "2026-09-23T06:09:48.348283+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://ranaviruseva.gov.lk/vision.php",
+      "source": "https://ranaviruseva.gov.lk/vision.php",
+      "observed_at": "2026-09-23T06:09:48.348284+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://ranaviruseva.gov.lk/act.php",
+      "source": "https://ranaviruseva.gov.lk/act.php",
+      "observed_at": "2026-09-23T06:09:48.348286+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://ranaviruseva.gov.lk/structure.php",
+      "source": "https://ranaviruseva.gov.lk/structure.php",
+      "observed_at": "2026-09-23T06:09:48.348289+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://ranaviruseva.gov.lk/board.php",
+      "source": "https://ranaviruseva.gov.lk/board.php",
+      "observed_at": "2026-09-23T06:09:48.348290+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "source": "https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "observed_at": "2026-09-23T06:09:48.348292+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "source": "https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "observed_at": "2026-09-23T06:09:48.348294+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2055673 ",
+      "source": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "data": {
+        "value": "011-2055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2055671 ",
+      "source": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "data": {
+        "value": "011-2055671 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2055676 ",
+      "source": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "data": {
+        "value": "011-2055676 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/index.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/index.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/index.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/ranaviru.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/ranaviru.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/ranaviru.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/history.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/history.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/history.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/vision.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/vision.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/vision.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/act.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/act.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/act.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/structure.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/structure.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/structure.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/board.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/board.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/board.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 055673 ",
+      "source": "https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "data": {
+        "value": "011 2 055673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-3212505 ",
+      "source": "https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "data": {
+        "value": "071-3212505 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranaviruseva@gmail.com",
+      "source": "https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "data": {
+        "value": "ranaviruseva@gmail.com"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 7870 visible characters across 14 pages",
+      "source": "https://ranaviruseva.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +567,228 @@
     },
     {
       "host": "ranaviruseva.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "_ssl.c:993: The handshake operation timed out"
+      "status": "valid",
+      "expires_at": "2026-11-09T04:18:09+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://ranaviruseva.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 1327,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://ranaviruseva.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/",
+      "redirects": [
+        "https://ranaviruseva.gov.lk/"
+      ],
+      "elapsed_ms": 1257,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://ranaviruseva.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 1040,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://ranaviruseva.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/",
+      "redirects": [
+        "https://ranaviruseva.gov.lk/"
+      ],
+      "elapsed_ms": 1218,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/rvsacontact.php",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 988,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/index.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/index.php",
+      "redirects": [],
+      "elapsed_ms": 1326,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/ranaviru.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/ranaviru.php",
+      "redirects": [],
+      "elapsed_ms": 972,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/history.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/history.php",
+      "redirects": [],
+      "elapsed_ms": 992,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/vision.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/vision.php",
+      "redirects": [],
+      "elapsed_ms": 1021,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/act.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/act.php",
+      "redirects": [],
+      "elapsed_ms": 970,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/structure.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/structure.php",
+      "redirects": [],
+      "elapsed_ms": 976,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/board.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/board.php",
+      "redirects": [],
+      "elapsed_ms": 20942,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "redirects": [],
+      "elapsed_ms": 1264,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "status_code": 200,
+      "final_url": "https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "redirects": [],
+      "elapsed_ms": 1238,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://ranaviruseva.gov.lk/",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-01-5bb3f787cc7b.html",
+      "sha256": "5bb3f787cc7b77cc2a2243e33ca67f5ac0eb9c17ae8d1bb71f3bece14b44b546",
+      "bytes": 26064
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-02-5bb3f787cc7b.html",
+      "sha256": "5bb3f787cc7b77cc2a2243e33ca67f5ac0eb9c17ae8d1bb71f3bece14b44b546",
+      "bytes": 26064
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-03-5bb3f787cc7b.html",
+      "sha256": "5bb3f787cc7b77cc2a2243e33ca67f5ac0eb9c17ae8d1bb71f3bece14b44b546",
+      "bytes": 26064
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-04-5bb3f787cc7b.html",
+      "sha256": "5bb3f787cc7b77cc2a2243e33ca67f5ac0eb9c17ae8d1bb71f3bece14b44b546",
+      "bytes": 26064
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/rvsacontact.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-05-18565458ab74.html",
+      "sha256": "18565458ab744f5906c66a766ceb7cf0998b27782bbde1c25e45ba85a3864b33",
+      "bytes": 23387
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/index.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-06-5bb3f787cc7b.html",
+      "sha256": "5bb3f787cc7b77cc2a2243e33ca67f5ac0eb9c17ae8d1bb71f3bece14b44b546",
+      "bytes": 26064
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/ranaviru.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-07-b13dfdd5c2a1.html",
+      "sha256": "b13dfdd5c2a16dbfbc784fd194c0ceb64e4e0a393d21987f9d6af78b8e03dc55",
+      "bytes": 23242
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/history.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-08-b60eb440820f.html",
+      "sha256": "b60eb440820fa0bbee99d877e94398443e898687f990fa312ee1456cdf355e61",
+      "bytes": 23875
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/vision.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-09-1d9f86820e63.html",
+      "sha256": "1d9f86820e63c44089aa67f6d9f4fcf800b5ebbf3e7db1373157b357bd17b859",
+      "bytes": 26031
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/act.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-10-9606b558e057.html",
+      "sha256": "9606b558e057192db3818aee8daa8bdfbd8fb102c6d6a85803d5294d7fac5c42",
+      "bytes": 25553
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/structure.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-11-fdf80678908d.html",
+      "sha256": "fdf80678908d508444aefbe43c3a01ad33ca569dbcbf0d8df8beb082f911f86a",
+      "bytes": 17873
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/board.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-12-b3cde282d0d3.html",
+      "sha256": "b3cde282d0d312a7b90ab633d7489acc139d69928faf9753c67c5732a97f8116",
+      "bytes": 21697
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/after_care_rehabilitation_section.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-13-cc4e520e4bd4.html",
+      "sha256": "cc4e520e4bd42f80d0e395bc32d9cfc9f080a1d797a8bdcb27f6d28274c33124",
+      "bytes": 24467
+    },
+    {
+      "url": "https://ranaviruseva.gov.lk/housing_infrastructure_development_section.php",
+      "path": "audit.output/ranaviruseva.gov.lk/20260923.0609/snapshots/page-14-27e4b9bce6c5.html",
+      "sha256": "27e4b9bce6c5da047a36d35072cc43fe5f6f2053f8bb352937a8a5b94b263c8f",
+      "bytes": 37648
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +802,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +815,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +872,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found; No passing named responsibility evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 011 2 055673 (5 phone numbers found); Email: ranaviruseva@gmail.com"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing named responsibility evidence found"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,8 +921,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.220.110.149",
-    "country": "CA",
+    "egress_ip": "52.173.11.77",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }

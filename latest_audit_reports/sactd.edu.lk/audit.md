@@ -1,8 +1,8 @@
 # Website Audit: https://sactd.edu.lk/
 
-- Completed: 2026-09-22 06:20
+- Completed: 2026-09-23 06:18
 - Overall result: 🔴 Level 1
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

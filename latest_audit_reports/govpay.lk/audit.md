@@ -1,8 +1,8 @@
 # Website Audit: https://govpay.lk/
 
-- Completed: 2026-09-22 06:12
+- Completed: 2026-09-23 06:10
 - Overall result: 🔴 Level 1
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0955053271- (60 phone numbers found); Email: your@email.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0955107758- (60 phone numbers found); Email: your@email.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

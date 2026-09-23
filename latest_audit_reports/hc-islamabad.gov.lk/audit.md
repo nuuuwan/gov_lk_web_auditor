@@ -1,8 +1,8 @@
 # Website Audit: https://hc-islamabad.gov.lk/
 
-- Completed: 2026-09-22 06:28
+- Completed: 2026-09-23 06:28
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: House No.24, Street No.89, Sector G-6/3, Islamabad Telephone: +92 512828723 Fax Number : +92 51 2828751 Email: Slhc.isla; Phone: 065-9026-462 (18 phone numbers found); Email: slhc.islamabad@mfa.gov.lk (10 email addresses found); Published named responsibility: director
+Published postal address: House No.24, Street No.89, Sector G-6/3, Islamabad Telephone: +92 512828723 Fax Number : +92 51 2828751 Email: Slhc.isla; Phone: 054.6243227 (18 phone numbers found); Email: slamabad@mfa.gov.lk (10 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: House No.24, Street No.89, Sector G-6/3, Islamabad Telephone: +92 512828723 Fax Number : +92 51 2828751 Email: Slhc.isla |
-| reachable_contacts | ✅ | Phone: 065-9026-462 (18 phone numbers found); Email: slhc.islamabad@mfa.gov.lk (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: 054.6243227 (18 phone numbers found); Email: slamabad@mfa.gov.lk (10 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

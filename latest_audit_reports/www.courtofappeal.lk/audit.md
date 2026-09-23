@@ -1,8 +1,8 @@
 # Website Audit: https://www.courtofappeal.lk/
 
-- Completed: 2026-09-22 07:00
+- Completed: 2026-09-23 07:09
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie; Phone: 0912866999 (33 phone numbers found); Email: scdreg@sltnet.lk (4 email addresses found); Published named responsibility: division
+Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie; Phone: 0000000000 (33 phone numbers found); Email: scdreg@sltnet.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie |
-| reachable_contacts | ✅ | Phone: 0912866999 (33 phone numbers found); Email: scdreg@sltnet.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0000000000 (33 phone numbers found); Email: scdreg@sltnet.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

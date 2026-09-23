@@ -1,8 +1,8 @@
 # Website Audit: https://www.nipo.gov.lk/
 
-- Completed: 2026-09-22 06:49
+- Completed: 2026-09-23 06:51
 - Overall result: ⚫ Level 0
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

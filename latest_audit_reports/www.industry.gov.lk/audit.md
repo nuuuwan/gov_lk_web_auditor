@@ -1,8 +1,8 @@
 # Website Audit: https://www.industry.gov.lk/
 
-- Completed: 2026-09-22 06:55
+- Completed: 2026-09-23 06:59
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk; Phone: +94 112 392149 (22 phone numbers found); Email: info@industry.gov.lk (30 email addresses found); Published named responsibility: division
+Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk; Phone: +94 112 392149 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk |
-| reachable_contacts | ✅ | Phone: +94 112 392149 (22 phone numbers found); Email: info@industry.gov.lk (30 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 392149 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

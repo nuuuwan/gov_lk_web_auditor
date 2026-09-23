@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-09-22 06:10
+- Completed: 2026-09-23 06:08
 - Overall result: 🟠 Level 2
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 023 2023.11.2 (13 phone numbers found); Email: Published email:; Published named responsibility: director
+Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 0000000444 (13 phone numbers found); Email: Published email:; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per  |
-| reachable_contacts | ✅ | Phone: 023 2023.11.2 (13 phone numbers found); Email: Published email: |
+| reachable_contacts | ✅ | Phone: 0000000444 (13 phone numbers found); Email: Published email: |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c198f392-6f0c-4efc-9ffe-d63cfa90471f",
+  "audit_id": "1990b110-bb69-4281-91c9-8fae710e8c39",
   "url": "https://srilankateaboard.lk/",
   "normalized_url": "https://srilankateaboard.lk/",
-  "started_at": "2026-09-22T06:41:20.322971+05:30",
-  "completed_at": "2026-09-22T06:41:44.018967+05:30",
+  "started_at": "2026-09-23T06:41:10.358342+05:30",
+  "completed_at": "2026-09-23T06:47:32.852562+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: _ssl.c:993: The handshake operation timed out",
-      "tls_hostname_matches: _ssl.c:993: The handshake operation timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: http://srilankateaboard.lk/: Probe 2: timed out; https://srilankateaboard.lk/: Probe 3: timed out; http://srilankateaboard.lk/: Probe 4: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,1590 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-22T06:41:20.860961+05:30"
+      "observed_at": "2026-09-23T06:41:10.556985+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-22T06:41:20.860976+05:30"
+      "observed_at": "2026-09-23T06:41:10.557001+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "_ssl.c:993: The handshake operation timed out",
-      "observed_at": "2026-09-22T06:41:31.141564+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-09-23T06:41:11.440740+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://srilankateaboard.lk/",
       "source": "https://srilankateaboard.lk/",
-      "observed_at": "2026-09-22T06:41:44.018811+05:30"
+      "observed_at": "2026-09-23T06:47:32.634448+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 2: [Errno 104] Connection reset by peer",
+      "detail": "Probe 2: timed out",
       "source": "http://srilankateaboard.lk/",
-      "observed_at": "2026-09-22T06:41:44.018830+05:30"
+      "observed_at": "2026-09-23T06:47:32.634466+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: [Errno 104] Connection reset by peer",
+      "detail": "Probe 3: timed out",
       "source": "https://srilankateaboard.lk/",
-      "observed_at": "2026-09-22T06:41:44.018835+05:30"
+      "observed_at": "2026-09-23T06:47:32.634469+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: [Errno 104] Connection reset by peer",
+      "detail": "Probe 4: timed out",
       "source": "http://srilankateaboard.lk/",
-      "observed_at": "2026-09-22T06:41:44.018838+05:30"
+      "observed_at": "2026-09-23T06:47:32.634471+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "observed_at": "2026-09-23T06:47:32.634474+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "observed_at": "2026-09-23T06:47:32.634476+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "observed_at": "2026-09-23T06:47:32.634478+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "observed_at": "2026-09-23T06:47:32.634480+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "observed_at": "2026-09-23T06:47:32.634481+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://srilankateaboard.lk/contact-us/",
+      "source": "https://srilankateaboard.lk/contact-us/",
+      "observed_at": "2026-09-23T06:47:32.634484+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "observed_at": "2026-09-23T06:47:32.634485+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://srilankateaboard.lk/contact-us/contact-officers/",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "observed_at": "2026-09-23T06:47:32.634487+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://srilankateaboard.lk/contact-us/contact-staff/",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "observed_at": "2026-09-23T06:47:32.634488+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "observed_at": "2026-09-23T06:47:32.634490+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "required_documents",
+      "status": "pass",
+      "detail": "Published required documents: required documents",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "required documents"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/contact-us/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/contact-us/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/contact-us/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/contact-us/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094-1121860",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "094-1121860"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094-7177885",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "094-7177885"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0713280729 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "0713280729 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094-1121862",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "094-1121862"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094-0112218",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "094-0112218"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094-7144795",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "094-7144795"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: minister@plantation.gov.lk",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "minister@plantation.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary@plantation.gov.lk",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "secretary@plantation.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2581576 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2581576 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2590968 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2590968 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2585701 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2585701 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2504090 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2504090 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 091-223205",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 091-223205"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 034-224744",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 034-224744"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2587341 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2587341 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 041-222263",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 041-222263"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2584844 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2584844 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2582122 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2582122 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2580161 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2580161 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2583343 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2583343 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 081-235227",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 081-235227"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 045-222213",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 045-222213"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 057-222281",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 057-222281"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2593270 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2593270 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 00-86-10-6532",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "00-86-10-6532"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 0522 234 69",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 0522 234 69"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2508991 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2508991 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2580182 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "+94 11 2580182 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atcrathnapura@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "atcrathnapura@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atcbandarawela@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "atcbandarawela@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tasting@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "tasting@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: exports@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "exports@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: raaj@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "raaj@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atcnuwaraeliya@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "atcnuwaraeliya@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: chairman@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "chairman@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dirprom@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "dirprom@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lab@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "lab@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tcd@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "tcd@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atcgalle@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "atcgalle@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dg@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "dg@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ea@slemb.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "ea@slemb.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atcgampola@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "atcgampola@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: promotion@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "promotion@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atcmatara@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "atcmatara@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tea@srilankaembassy.org",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "tea@srilankaembassy.org"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ATCHatton@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "ATCHatton@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: atcmathugama@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "atcmathugama@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ATCMathugama@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "ATCMathugama@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25801",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25801"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25815",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25815"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25878",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25878"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25040",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25040"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25833",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25833"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25024",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25024"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25909",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25909"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25821",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25821"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25089",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25089"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 094 -11 -25932",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "094 -11 -25932"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: pavithra@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "pavithra@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: jayanath@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "jayanath@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: anushka@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "anushka@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sajini@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "sajini@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: chandi@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "chandi@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tishans@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "tishans@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: jayananda@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "jayananda@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: hiran@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "hiran@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dhanushkak@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "dhanushkak@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: vimasha@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "vimasha@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: raaj@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "raaj@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: manel@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "manel@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dfsltb@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "dfsltb@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dirprom@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "dirprom@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sampath@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "sampath@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lab@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "lab@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: tcd@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "tcd@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nirmani@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "nirmani@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: devika@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "devika@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dg@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "dg@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: geedari@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "geedari@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cashier@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "cashier@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: indrajithtea2018@gmail.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "indrajithtea2018@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: niluka@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "niluka@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: roshan@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "roshan@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: janakaw@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "janakaw@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sandarenu@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "sandarenu@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: samaraweera@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "samaraweera@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nalinda@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "nalinda@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: buddhika@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "buddhika@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: upul@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "upul@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: hansani@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "hansani@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: manojs@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "manojs@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: qmo.lab@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "qmo.lab@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dhanuja@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "dhanuja@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs 094",
+      "source": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "data": {
+        "value": "rs 094"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 58 78 14 (",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "data": {
+        "value": "+94) 112 58 78 14 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 123 456 ",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "data": {
+        "value": "+94) 112 123 456 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sltbhelp@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "data": {
+        "value": "sltbhelp@pureceylontea.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: teaboard@pureceylontea.com",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "data": {
+        "value": "teaboard@pureceylontea.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "data": {
+        "value": "574, Galle Road, Colombo 3, Sri Lanka."
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://srilankateaboard.lk/wp-content/uploads/2021/04/Expoter__Packer_new_registration_Application__Guideline.pdf",
+      "source": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "data": {
+        "value": "https://srilankateaboard.lk/wp-content/uploads/2021/04/Expoter__Packer_new_registration_Application__Guideline.pdf"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 21969 visible characters across 11 pages",
+      "source": "https://srilankateaboard.lk/"
     }
   ],
   "observations": [
@@ -85,19 +1629,19 @@
     },
     {
       "host": "srilankateaboard.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "_ssl.c:993: The handshake operation timed out"
+      "status": "valid",
+      "expires_at": "2026-11-04T04:18:14+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://srilankateaboard.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 21130,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://srilankateaboard.lk/",
@@ -106,7 +1650,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "timed out"
     },
     {
       "url": "https://srilankateaboard.lk/",
@@ -115,7 +1659,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "timed out"
     },
     {
       "url": "http://srilankateaboard.lk/",
@@ -124,10 +1668,167 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "timed out"
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "redirects": [],
+      "elapsed_ms": 2216,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "redirects": [],
+      "elapsed_ms": 20952,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "redirects": [],
+      "elapsed_ms": 1508,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "redirects": [],
+      "elapsed_ms": 20936,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "redirects": [],
+      "elapsed_ms": 20947,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/contact-us/",
+      "redirects": [],
+      "elapsed_ms": 20933,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "redirects": [],
+      "elapsed_ms": 1186,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "redirects": [],
+      "elapsed_ms": 1168,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "redirects": [],
+      "elapsed_ms": 22141,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "status_code": 200,
+      "final_url": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "redirects": [],
+      "elapsed_ms": 2223,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://srilankateaboard.lk/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-01-d0e687d5a390.html",
+      "sha256": "d0e687d5a390702e9c12bf1fec1d161be43faea82828d5387b30bceb97c66cad",
+      "bytes": 223392
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-02-a3dcf16e3ddb.html",
+      "sha256": "a3dcf16e3ddb29027eb5921df2dcfa3407a3995ff9819ef312c629ea96d97453",
+      "bytes": 65932
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/tea-export-division/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-03-a30281f8173c.html",
+      "sha256": "a30281f8173cd51738086c36160d336dda82268f9d3807f737f5ed8debc0963b",
+      "bytes": 64456
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/it-and-statistical-division/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-04-fc97a5e58305.html",
+      "sha256": "fc97a5e58305894ef9f2b63c685b878a9c90cd77c90bc60c71a2f7bf44e55565",
+      "bytes": 56638
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/administration-division/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-05-40c42446c68e.html",
+      "sha256": "40c42446c68e9acc4e19ff9e25a2b5f5eca2fd5629ead8c245374f0f7912550f",
+      "bytes": 55266
+    },
+    {
+      "url": "https://srilankateaboard.lk/sri-lanka-tea-board/divisions-and-units/internal-audit/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-06-825a58f3361c.html",
+      "sha256": "825a58f3361cc3bee8668573465b4b7ab54397c34876032a4cca1767dd3fc81d",
+      "bytes": 56332
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-07-d17287bb1420.html",
+      "sha256": "d17287bb14204e8f2394c144f4177c3db1d3a1f1baa8a81fb3757b9afee49376",
+      "bytes": 59017
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/contact-ministry/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-08-d7581ead1b24.html",
+      "sha256": "d7581ead1b24bdcb5eb43bd195d1ffa3e09da3a70d100316055f91be58a9e704",
+      "bytes": 58755
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/contact-officers/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-09-4e6d4f056d66.html",
+      "sha256": "4e6d4f056d66f8839c73e03694482ec9c7b7d3e6d081b14b08ce3d1dc6c4641a",
+      "bytes": 76100
+    },
+    {
+      "url": "https://srilankateaboard.lk/contact-us/contact-staff/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-10-b705dbc19d3b.html",
+      "sha256": "b705dbc19d3b1a3cc6c6bbc17b535b2121b2f1b76e2d6d55efd62fe9aecb4715",
+      "bytes": 112324
+    },
+    {
+      "url": "https://srilankateaboard.lk/registration/tea-exports-division-registration-documents/",
+      "path": "audit.output/srilankateaboard.lk/20260923.0641/snapshots/page-11-48f5288c9dd9.html",
+      "sha256": "48f5288c9dd9d60b2478eee7e190422a284c5c264c990b959417f46423c88b80",
+      "bytes": 59561
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1842,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://srilankateaboard.lk/: Probe 2: timed out; https://srilankateaboard.lk/: Probe 3: timed out; http://srilankateaboard.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,74 +1855,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://srilankateaboard.lk/: Probe 2: timed out; https://srilankateaboard.lk/: Probe 3: timed out; http://srilankateaboard.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.; Phone: +94) 112 58 78 14 ( (38 phone numbers found); Email: sltbhelp@pureceylontea.com (54 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: 574, Galle Road, Colombo 3, Sri Lanka."
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94) 112 58 78 14 ( (38 phone numbers found); Email: sltbhelp@pureceylontea.com (54 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing processing time evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published required documents: required documents"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs 094"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published downloadable form: https://srilankateaboard.lk/wp-content/uploads/2021/04/Expoter__Packer_new_registration_Application__Guideline.pdf"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -241,8 +2004,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.220.110.149",
-    "country": "CA",
+    "egress_ip": "52.173.11.77",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }

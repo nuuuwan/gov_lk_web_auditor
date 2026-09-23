@@ -1,23 +1,20 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "f4b9d23e-42ad-44d8-b2c6-099c5882c5aa",
+  "audit_id": "fc1a6e36-ea22-4aad-a562-efe5f17e2755",
   "url": "https://mbs.gov.lk/",
   "normalized_url": "https://mbs.gov.lk/",
-  "started_at": "2026-09-22T06:56:00.153826+05:30",
-  "completed_at": "2026-09-22T06:56:22.995042+05:30",
+  "started_at": "2026-09-23T07:00:02.998086+05:30",
+  "completed_at": "2026-09-23T07:03:00.864108+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: _ssl.c:993: The handshake operation timed out",
-      "tls_hostname_matches: _ssl.c:993: The handshake operation timed out"
+      "domain_not_parked: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -25,47 +22,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-22T06:56:00.531625+05:30"
+      "observed_at": "2026-09-23T07:00:03.416594+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-22T06:56:00.531642+05:30"
+      "observed_at": "2026-09-23T07:00:03.416610+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "_ssl.c:993: The handshake operation timed out",
-      "observed_at": "2026-09-22T06:56:11.051450+05:30"
+      "detail": "timed out",
+      "observed_at": "2026-09-23T07:00:13.667518+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://mbs.gov.lk/",
       "source": "https://mbs.gov.lk/",
-      "observed_at": "2026-09-22T06:56:22.994853+05:30"
+      "observed_at": "2026-09-23T07:03:00.861643+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 2: [Errno 104] Connection reset by peer",
+      "detail": "Probe 2: timed out",
       "source": "http://mbs.gov.lk/",
-      "observed_at": "2026-09-22T06:56:22.994872+05:30"
+      "observed_at": "2026-09-23T07:03:00.861670+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: [Errno 104] Connection reset by peer",
+      "detail": "Probe 3: timed out",
       "source": "https://mbs.gov.lk/",
-      "observed_at": "2026-09-22T06:56:22.994877+05:30"
+      "observed_at": "2026-09-23T07:03:00.861673+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: [Errno 104] Connection reset by peer",
+      "detail": "Probe 4: timed out",
       "source": "http://mbs.gov.lk/",
-      "observed_at": "2026-09-22T06:56:22.994881+05:30"
+      "observed_at": "2026-09-23T07:03:00.861675+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 76 visible characters across 1 pages; below substance threshold 200",
+      "source": "https://mbs.gov.lk/"
     }
   ],
   "observations": [
@@ -88,16 +91,16 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "_ssl.c:993: The handshake operation timed out"
+      "detail": "timed out"
     },
     {
       "url": "https://mbs.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://mbs.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 1264,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://mbs.gov.lk/",
@@ -106,7 +109,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "timed out"
     },
     {
       "url": "https://mbs.gov.lk/",
@@ -115,7 +118,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "timed out"
     },
     {
       "url": "http://mbs.gov.lk/",
@@ -124,10 +127,17 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "timed out"
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://mbs.gov.lk/",
+      "path": "audit.output/mbs.gov.lk/20260923.0700/snapshots/page-01-e9317d0a0238.html",
+      "sha256": "e9317d0a02386684cd2f02de7bacf54ab118494facf0927d4d9bc84a32a16c86",
+      "bytes": 5732
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,7 +152,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out",
+      "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -155,55 +165,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://mbs.gov.lk/: Probe 2: timed out; https://mbs.gov.lk/: Probe 3: timed out; http://mbs.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "reason": "timed out"
         }
       ]
     },
@@ -241,8 +251,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.220.110.149",
-    "country": "CA",
+    "egress_ip": "52.173.11.77",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }

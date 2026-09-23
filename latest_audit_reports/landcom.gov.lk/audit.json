@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d9b92fd4-ad1b-461b-887b-97b676fa8a17",
+  "audit_id": "fc29a370-9b72-4c60-8cf8-4a7a03855e2e",
   "url": "https://landcom.gov.lk/",
   "normalized_url": "https://landcom.gov.lk/",
-  "started_at": "2026-09-22T06:06:20.661204+05:30",
-  "completed_at": "2026-09-22T06:06:48.659611+05:30",
+  "started_at": "2026-09-23T06:04:11.162169+05:30",
+  "completed_at": "2026-09-23T06:04:31.889011+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 104] Connection reset by peer",
-      "tls_hostname_matches: [Errno 104] Connection reset by peer"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,330 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-22T06:06:21.083454+05:30"
+      "observed_at": "2026-09-23T06:04:11.578073+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-22T06:06:21.083471+05:30"
+      "observed_at": "2026-09-23T06:04:11.578091+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 104] Connection reset by peer",
-      "observed_at": "2026-09-22T06:06:24.085145+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-09-23T06:04:12.554605+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://landcom.gov.lk/",
       "source": "https://landcom.gov.lk/",
-      "observed_at": "2026-09-22T06:06:48.659454+05:30"
+      "observed_at": "2026-09-23T06:04:31.819986+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://landcom.gov.lk/",
       "source": "http://landcom.gov.lk/",
-      "observed_at": "2026-09-22T06:06:48.659472+05:30"
+      "observed_at": "2026-09-23T06:04:31.820007+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://landcom.gov.lk/",
       "source": "https://landcom.gov.lk/",
-      "observed_at": "2026-09-22T06:06:48.659476+05:30"
+      "observed_at": "2026-09-23T06:04:31.820009+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://landcom.gov.lk/",
       "source": "http://landcom.gov.lk/",
-      "observed_at": "2026-09-22T06:06:48.659479+05:30"
+      "observed_at": "2026-09-23T06:04:31.820010+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/home_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/home_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820012+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://landcom.gov.lk/englishDoc/home_en.php",
+      "source": "https://landcom.gov.lk/englishDoc/home_en.php",
+      "observed_at": "2026-09-23T06:04:31.820013+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/depServices_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/depServices_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820017+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820019+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820020+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/intro_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/intro_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820022+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/history_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/history_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820023+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820025+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820027+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "source": "https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "observed_at": "2026-09-23T06:04:31.820028+05:30"
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/home_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://landcom.gov.lk/englishDoc/home_en.php",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://landcom.gov.lk/englishDoc/home_en.php",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 11 September 2026",
+      "source": "https://landcom.gov.lk/englishDoc/home_en.php",
+      "data": {
+        "value": "11 September 2026"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/depServices_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112864051 ",
+      "source": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "data": {
+        "value": "0112864051 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112797400 ",
+      "source": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "data": {
+        "value": "0112797400 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lcglandcom@gmail.com",
+      "source": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "data": {
+        "value": "lcglandcom@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/intro_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/history_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2797401 ",
+      "source": "https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "data": {
+        "value": "011-2797401 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lcglandcom@gmail.com",
+      "source": "https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "data": {
+        "value": "lcglandcom@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-287 3033 ",
+      "source": "https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "data": {
+        "value": "011-287 3033 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: additionallandcommissioner@gmail.com",
+      "source": "https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "data": {
+        "value": "additionallandcommissioner@gmail.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 8928 visible characters across 14 pages",
+      "source": "https://landcom.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +369,228 @@
     },
     {
       "host": "landcom.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 104] Connection reset by peer"
+      "status": "valid",
+      "expires_at": "2026-11-02T04:18:02+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://landcom.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 1214,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://landcom.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/",
+      "redirects": [
+        "https://landcom.gov.lk/"
+      ],
+      "elapsed_ms": 984,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://landcom.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 1242,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://landcom.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/",
+      "redirects": [
+        "https://landcom.gov.lk/"
+      ],
+      "elapsed_ms": 1249,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/home_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/home_sin.php",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "elapsed_ms": 1251,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/englishDoc/home_en.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/englishDoc/home_en.php",
+      "redirects": [],
+      "elapsed_ms": 1000,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/depServices_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/depServices_sin.php",
+      "redirects": [],
+      "elapsed_ms": 1021,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "redirects": [],
+      "elapsed_ms": 1253,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php",
+      "redirects": [],
+      "elapsed_ms": 1044,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/intro_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/intro_sin.php",
+      "redirects": [],
+      "elapsed_ms": 983,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/history_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/history_sin.php",
+      "redirects": [],
+      "elapsed_ms": 1198,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php",
+      "redirects": [],
+      "elapsed_ms": 1015,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "redirects": [],
+      "elapsed_ms": 978,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "status_code": 200,
+      "final_url": "https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "redirects": [],
+      "elapsed_ms": 1010,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://landcom.gov.lk/",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-01-df246b3f5d3b.html",
+      "sha256": "df246b3f5d3bef0ff9c1496eb2fcd3d9b5ff20b17b08290e325ef4c2eaf911ef",
+      "bytes": 7809
+    },
+    {
+      "url": "https://landcom.gov.lk/",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-02-df246b3f5d3b.html",
+      "sha256": "df246b3f5d3bef0ff9c1496eb2fcd3d9b5ff20b17b08290e325ef4c2eaf911ef",
+      "bytes": 7809
+    },
+    {
+      "url": "https://landcom.gov.lk/",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-03-df246b3f5d3b.html",
+      "sha256": "df246b3f5d3bef0ff9c1496eb2fcd3d9b5ff20b17b08290e325ef4c2eaf911ef",
+      "bytes": 7809
+    },
+    {
+      "url": "https://landcom.gov.lk/",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-04-df246b3f5d3b.html",
+      "sha256": "df246b3f5d3bef0ff9c1496eb2fcd3d9b5ff20b17b08290e325ef4c2eaf911ef",
+      "bytes": 7809
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/home_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-05-fcce7b3adbb4.html",
+      "sha256": "fcce7b3adbb4ef9dd8e989b995c1b310fdee3af3d1f2d2eb342bd038953a3421",
+      "bytes": 63918
+    },
+    {
+      "url": "https://landcom.gov.lk/englishDoc/home_en.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-06-4f5e7484a1a7.html",
+      "sha256": "4f5e7484a1a7b1cd416566ec87b800417849301d9340dffb22204f69ff819be8",
+      "bytes": 56208
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/depServices_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-07-96fc11cd70cd.html",
+      "sha256": "96fc11cd70cd578da143148e6cc16c1031114116183072d477a69e8a7d91e0b9",
+      "bytes": 65205
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/contactUs_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-08-f4d125c67c68.html",
+      "sha256": "f4d125c67c68490a9ac9aea26177198434ea42df95a72d02cda31cb35654bf23",
+      "bytes": 25278
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/mobileServiceInfo_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-09-75eea78bd12c.html",
+      "sha256": "75eea78bd12ce530ba44db5a1e8faaa3dc061ea3b058493d3a03d3660472fb37",
+      "bytes": 69105
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/intro_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-10-ea3cf973802f.html",
+      "sha256": "ea3cf973802f687306f6f8c231f8045ccb528f090fc917248bbfe4e210f75bf2",
+      "bytes": 42165
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/history_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-11-4ebe1565e882.html",
+      "sha256": "4ebe1565e8820063a74321f94ec7b6ba86c09755b9b40ad7477b5c00409048c2",
+      "bytes": 33865
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/depStructure_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-12-fc1297a3b446.html",
+      "sha256": "fc1297a3b44679aaea032a6a15a4d7990256df22ef7ad3b134b3cd7cf79cb7eb",
+      "bytes": 14685
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/lcg_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-13-ca9373e28232.html",
+      "sha256": "ca9373e282328b7202036a66f66789e87344b5416cb5547cd7c351aefa264ad5",
+      "bytes": 26088
+    },
+    {
+      "url": "https://landcom.gov.lk/sinhalaDoc/alcg_sin.php",
+      "path": "audit.output/landcom.gov.lk/20260923.0604/snapshots/page-14-a430987998d0.html",
+      "sha256": "a430987998d06b1c9b0b4cdfa5b16b9d8c43a7e207fb7647d04a8360b2420bfd",
+      "bytes": 26155
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +604,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +617,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +674,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0112864051 (4 phone numbers found); Email: lcglandcom@gmail.com (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,8 +723,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.220.110.149",
-    "country": "CA",
+    "egress_ip": "52.173.11.77",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }

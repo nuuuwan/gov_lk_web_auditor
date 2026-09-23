@@ -1,8 +1,8 @@
 # Website Audit: http://www.ndrsc.gov.lk/
 
-- Completed: 2026-09-22 06:12
+- Completed: 2026-09-23 06:09
 - Overall result: ⚫ Level 0
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,17 +14,17 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 49 visible characters across 1 pages; below substance threshold 200 |
-| http_available | ❓ | An HTTP probe was transient |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 49 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 49 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 49 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 49 visible characters across 2 pages; below substance threshold 200 |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010) |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| tls_not_expired | ❓ | TLS expiry check did not run |
+| tls_hostname_matches | ❌ | TLS certificate does not match the hostname |

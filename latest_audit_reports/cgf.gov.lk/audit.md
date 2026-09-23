@@ -1,8 +1,8 @@
 # Website Audit: https://cgf.gov.lk/
 
-- Completed: 2026-09-22 06:37
+- Completed: 2026-09-23 06:37
 - Overall result: ⚫ Level 0
-- Vantage: 20.220.110.149 (CA, github-actions)
+- Vantage: 52.173.11.77 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ❌
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010); TLS certificate has expired
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,20 +23,8 @@ No usable page was inspected; No usable page was inspected; No usable page was i
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | An HTTP probe was transient |
+| http_available | ❓ | HTTP checks did not run |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | [Errno 104] Connection reset by peer |
-| tls_hostname_matches | ❓ | [Errno 104] Connection reset by peer |
-
-## 🟠 Level 2: ❓
-
-To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
-
-Not run because 🔴 Level 1 did not pass
-
-## 🟢 Level 3: ❓
-
-To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
-
-Not run because 🟠 Level 2 did not pass
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010) |
+| tls_not_expired | ❌ | TLS certificate has expired |
+| tls_hostname_matches | ❓ | TLS hostname check did not run |

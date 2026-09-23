@@ -1,23 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "51b7eac4-33a7-46a9-9743-588590ac0f5a",
+  "audit_id": "2869c3d3-dc94-4ffe-9e85-e13f9781085e",
   "url": "https://cgf.gov.lk/",
   "normalized_url": "https://cgf.gov.lk/",
-  "started_at": "2026-09-22T06:36:36.819558+05:30",
-  "completed_at": "2026-09-22T06:37:01.395533+05:30",
+  "started_at": "2026-09-23T06:36:37.255099+05:30",
+  "completed_at": "2026-09-23T06:37:03.967818+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 104] Connection reset by peer",
-      "tls_hostname_matches: [Errno 104] Connection reset by peer"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
+      "tls_not_expired: TLS certificate has expired"
     ]
   },
   "evidence": [
@@ -25,47 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-22T06:36:37.285518+05:30"
+      "observed_at": "2026-09-23T06:36:37.811910+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-22T06:36:37.285542+05:30"
+      "observed_at": "2026-09-23T06:36:37.811927+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "[Errno 104] Connection reset by peer",
-      "observed_at": "2026-09-22T06:36:39.891332+05:30"
+      "check": "tls_expired",
+      "status": "fail",
+      "detail": "TLS certificate has expired",
+      "observed_at": "2026-09-23T06:36:38.803091+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 104] Connection reset by peer",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "https://cgf.gov.lk/",
-      "observed_at": "2026-09-22T06:37:01.395358+05:30"
+      "observed_at": "2026-09-23T06:37:03.967677+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 104] Connection reset by peer",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "http://cgf.gov.lk/",
-      "observed_at": "2026-09-22T06:37:01.395377+05:30"
+      "observed_at": "2026-09-23T06:37:03.967693+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 104] Connection reset by peer",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "https://cgf.gov.lk/",
-      "observed_at": "2026-09-22T06:37:01.395382+05:30"
+      "observed_at": "2026-09-23T06:37:03.967696+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 104] Connection reset by peer",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "http://cgf.gov.lk/",
-      "observed_at": "2026-09-22T06:37:01.395385+05:30"
+      "observed_at": "2026-09-23T06:37:03.967698+05:30"
     }
   ],
   "observations": [
@@ -85,10 +78,10 @@
     },
     {
       "host": "cgf.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 104] Connection reset by peer"
+      "status": "expired",
+      "expires_at": "2026-01-16T22:24:42+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate has expired"
     },
     {
       "url": "https://cgf.gov.lk/",
@@ -97,7 +90,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
     },
     {
       "url": "http://cgf.gov.lk/",
@@ -106,7 +99,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
     },
     {
       "url": "https://cgf.gov.lk/",
@@ -115,7 +108,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
     },
     {
       "url": "http://cgf.gov.lk/",
@@ -124,7 +117,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 104] Connection reset by peer"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
     }
   ],
   "snapshots": [],
@@ -141,8 +134,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010); TLS certificate has expired",
       "executed": true,
       "checks": [
         {
@@ -179,7 +172,7 @@
           "name": "http_available",
           "level": 1,
           "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "reason": "HTTP checks did not run"
         },
         {
           "name": "redirect_related",
@@ -190,20 +183,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "status": "fail",
+          "reason": "TLS certificate has expired"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 104] Connection reset by peer"
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
@@ -241,8 +234,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.220.110.149",
-    "country": "CA",
+    "egress_ip": "52.173.11.77",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }
