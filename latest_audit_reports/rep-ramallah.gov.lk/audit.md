@@ -1,8 +1,8 @@
 # Website Audit: https://rep-ramallah.gov.lk/
 
-- Completed: 2026-09-23 06:32
+- Completed: 2026-09-24 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Villa Azzam Al-Ajjoully H.E. Mahinda Rajapaksa Road, Ain Arik Crossing/ Beitunia Ramallah & Al-Bireh Governorate Palesti; Phone: +97222904271 (10 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: Villa Azzam Al-Ajjoully H.E. Mahinda Rajapaksa Road, Ain Arik Crossing/ Beitunia Ramallah & Al-Bireh Governorate Palesti; Phone: 0097222902 (10 phone numbers found); Email: slrep.palestine@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Villa Azzam Al-Ajjoully H.E. Mahinda Rajapaksa Road, Ain Arik Crossing/ Beitunia Ramallah & Al-Bireh Governorate Palesti |
-| reachable_contacts | ✅ | Phone: +97222904271 (10 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0097222902 (10 phone numbers found); Email: slrep.palestine@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing legal basis evidence found; No passing downloadable form evidence fou
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 2026-08-05 |

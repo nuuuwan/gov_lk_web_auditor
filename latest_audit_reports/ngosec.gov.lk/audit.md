@@ -1,8 +1,8 @@
 # Website Audit: https://ngosec.gov.lk/
 
-- Completed: 2026-09-23 06:45
-- Overall result: 🔴 Level 1
-- Vantage: 52.173.11.77 (US, github-actions)
+- Completed: 2026-09-24 06:51
+- Overall result: 🟠 Level 2
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. 'OUR address' 14th Floor, Suhurupaya, Battaram; Phone: +94) 112877376 (3861 phone numbers found); Email: ngosecretariat.gov@gmail.com/ (1545 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ❓ | No phone or email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. 'OUR address' 14th Floor, Suhurupaya, Battaram |
+| reachable_contacts | ✅ | Phone: +94) 112877376 (3861 phone numbers found); Email: ngosecretariat.gov@gmail.com/ (1545 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+Published published update date: 22 August 2024
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ✅ | Published processing time: 12 hours |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❌ | Published published update date: 22 August 2024 |

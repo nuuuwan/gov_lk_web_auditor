@@ -1,8 +1,8 @@
 # Website Audit: https://peradeniya-hospital.health.gov.lk/
 
-- Completed: 2026-09-23 06:35
+- Completed: 2026-09-24 06:38
 - Overall result: 🔴 Level 1
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,8 +1,8 @@
 # Website Audit: https://germantec.lk/
 
-- Completed: 2026-09-23 06:16
+- Completed: 2026-09-24 06:19
 - Overall result: 🔴 Level 1
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -39,7 +39,7 @@ No phone evidence found
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the specific requirements of each customer. Whether you represent Sri Lanka Army, Sri Lanka Air Force, Sri Lanka Navy, S |
 | reachable_contacts | ❓ | No phone evidence found |
-| named_responsibility | ✅ | Published named responsibility: director |
+| named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 

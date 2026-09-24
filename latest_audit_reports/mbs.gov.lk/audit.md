@@ -1,8 +1,8 @@
 # Website Audit: https://mbs.gov.lk/
 
-- Completed: 2026-09-23 07:03
+- Completed: 2026-09-24 07:08
 - Overall result: ⚫ Level 0
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,33 +10,21 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ❌
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200; timed out; timed out
+Detected generic hosting marker: under construction
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 76 visible characters across 1 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://mbs.gov.lk/: Probe 2: timed out; https://mbs.gov.lk/: Probe 3: timed out; http://mbs.gov.lk/: Probe 4: timed out |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ❌ | Detected generic hosting marker: under construction |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
-
-## 🟠 Level 2: ❓
-
-To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
-
-Not run because 🔴 Level 1 did not pass
-
-## 🟢 Level 3: ❓
-
-To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
-
-Not run because 🟠 Level 2 did not pass
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.tc.esn.ac.lk/
 
-- Completed: 2026-09-23 06:13
+- Completed: 2026-09-24 06:16
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Rector, Trincomalee Campus, Eastern University, Sri Lanka, Konesapuri, Nilaveli-31010 Sri Lanka. Office: 026-2227410 Fax; Phone: 0262227410 (42 phone numbers found); Email: rector@esn.ac.lk (29 email addresses found); Published named responsibility: division
+Published postal address: Rector, Trincomalee Campus, Eastern University, Sri Lanka, Konesapuri, Nilaveli-31010 Sri Lanka. Office: 026-2227410 Fax; Phone: 0262227411 (42 phone numbers found); Email: studentaffairs.tc@esn.ac.lk (29 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Rector, Trincomalee Campus, Eastern University, Sri Lanka, Konesapuri, Nilaveli-31010 Sri Lanka. Office: 026-2227410 Fax |
-| reachable_contacts | ✅ | Phone: 0262227410 (42 phone numbers found); Email: rector@esn.ac.lk (29 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0262227411 (42 phone numbers found); Email: studentaffairs.tc@esn.ac.lk (29 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

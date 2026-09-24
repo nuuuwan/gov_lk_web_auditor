@@ -1,8 +1,8 @@
 # Website Audit: https://slic.gov.lk/
 
-- Completed: 2026-09-23 06:58
+- Completed: 2026-09-24 07:02
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://slic.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://slic.gov.lk/: Probe 2: timed out; https://slic.gov.lk/: Probe 3: timed out; http://slic.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://slic.gov.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://slic.gov.lk/: Probe 2: timed out; https://slic.gov.lk/: Probe 3: timed out; http://slic.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,23 +33,23 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Read More Uncategorized Sahasak Nimavum 2021 Award Ceremony ජාතික නව නිපැයුම්කරුවන්ගේ දිනය පාදක කර ගනිමින්, ශ්‍රී ලංකා න; Phone: 0112676650 (14 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found); Published named responsibility: division
+Published postal address: Read More Uncategorized Sahasak Nimavum 2021 Award Ceremony ජාතික නව නිපැයුම්කරුවන්ගේ දිනය පාදක කර ගනිමින්, ශ්‍රී ලංකා න; Phone: 0281624194 (17 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Read More Uncategorized Sahasak Nimavum 2021 Award Ceremony ජාතික නව නිපැයුම්කරුවන්ගේ දිනය පාදක කර ගනිමින්, ශ්‍රී ලංකා න |
-| reachable_contacts | ✅ | Phone: 0112676650 (14 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0281624194 (17 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing legal basis evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ❓ | No passing legal basis evidence found |

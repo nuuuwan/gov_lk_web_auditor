@@ -1,8 +1,8 @@
 # Website Audit: https://emb-brussels.gov.lk/
 
-- Completed: 2026-09-23 06:30
+- Completed: 2026-09-24 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 27, Rue Jules Lejeune, 1050 Brussels, Belgium Telephone: +32 2 344 53 94 , +32 2 344 55 85 Email: slemb.brussels@mfa.gov; Phone: 042.6108159 (10 phone numbers found); Email: consular@srilankaembassy.be (4 email addresses found); Published named responsibility: director
+Published postal address: 27, Rue Jules Lejeune, 1050 Brussels, Belgium Telephone: +32 2 344 53 94 , +32 2 344 55 85 Email: slemb.brussels@mfa.gov; Phone: 04-7264-4494- (10 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 27, Rue Jules Lejeune, 1050 Brussels, Belgium Telephone: +32 2 344 53 94 , +32 2 344 55 85 Email: slemb.brussels@mfa.gov |
-| reachable_contacts | ✅ | Phone: 042.6108159 (10 phone numbers found); Email: consular@srilankaembassy.be (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 04-7264-4494- (10 phone numbers found); Email: john@example.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

@@ -1,8 +1,8 @@
 # Website Audit: https://meteo.gov.lk/
 
-- Completed: 2026-09-23 06:08
+- Completed: 2026-09-24 06:10
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.77 (US, github-actions)
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Contact Us Department of Meteorology 383, Bauddhaloka Mawatha, Colombo 7, Sri Lanka; Phone: +94 11 2 686 686 (74 phone numbers found); Email: computermeteo@gmail.com (2 email addresses found); Published named responsibility: department
+Published postal address: Contact Us Department of Meteorology 383, Bauddhaloka Mawatha, Colombo 7, Sri Lanka; Phone: 0710688872( (74 phone numbers found); Email: computermeteo@gmail.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Contact Us Department of Meteorology 383, Bauddhaloka Mawatha, Colombo 7, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2 686 686 (74 phone numbers found); Email: computermeteo@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0710688872( (74 phone numbers found); Email: computermeteo@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

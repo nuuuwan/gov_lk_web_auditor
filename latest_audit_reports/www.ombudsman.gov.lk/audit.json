@@ -1,24 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "58f5fe97-9605-43b4-95f0-08ad614ae5cf",
+  "audit_id": "2620ce0e-6d6e-4263-86dc-a5e9fa55747c",
   "url": "https://www.ombudsman.gov.lk/",
   "normalized_url": "https://www.ombudsman.gov.lk/",
-  "started_at": "2026-09-23T07:08:53.171019+05:30",
-  "completed_at": "2026-09-23T07:09:41.695093+05:30",
+  "started_at": "2026-09-24T07:13:19.483044+05:30",
+  "completed_at": "2026-09-24T07:14:11.229034+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -26,1059 +23,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-23T07:08:53.823275+05:30"
+      "observed_at": "2026-09-24T07:13:19.886132+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-23T07:08:53.823288+05:30"
+      "observed_at": "2026-09-24T07:13:19.886151+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-23T07:08:54.548912+05:30"
+      "observed_at": "2026-09-24T07:13:20.678603+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.ombudsman.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: The read operation timed out",
       "source": "https://www.ombudsman.gov.lk/",
-      "observed_at": "2026-09-23T07:09:41.272416+05:30"
+      "observed_at": "2026-09-24T07:14:11.228853+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.ombudsman.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: Server disconnected without sending a response.",
       "source": "http://www.ombudsman.gov.lk/",
-      "observed_at": "2026-09-23T07:09:41.272434+05:30"
+      "observed_at": "2026-09-24T07:14:11.228872+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.ombudsman.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: Server disconnected without sending a response.",
       "source": "https://www.ombudsman.gov.lk/",
-      "observed_at": "2026-09-23T07:09:41.272436+05:30"
+      "observed_at": "2026-09-24T07:14:11.228878+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.ombudsman.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: Server disconnected without sending a response.",
       "source": "http://www.ombudsman.gov.lk/",
-      "observed_at": "2026-09-23T07:09:41.272438+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.ombudsman.gov.lk/",
-      "source": "https://www.ombudsman.gov.lk/?lang=en",
-      "observed_at": "2026-09-23T07:09:41.272440+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.ombudsman.gov.lk/?lang=si",
-      "source": "https://www.ombudsman.gov.lk/?lang=si",
-      "observed_at": "2026-09-23T07:09:41.272441+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.ombudsman.gov.lk/?lang=ti",
-      "source": "https://www.ombudsman.gov.lk/?lang=ti",
-      "observed_at": "2026-09-23T07:09:41.272443+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "observed_at": "2026-09-23T07:09:41.272445+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "observed_at": "2026-09-23T07:09:41.272447+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "observed_at": "2026-09-23T07:09:41.272449+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.ombudsman.gov.lk/index.php/messages/",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "observed_at": "2026-09-23T07:09:41.272451+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "observed_at": "2026-09-23T07:09:41.272453+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "observed_at": "2026-09-23T07:09:41.272455+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "observed_at": "2026-09-23T07:09:41.272457+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.ombudsman.gov.lk/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2585896 (",
-      "source": "https://www.ombudsman.gov.lk/?lang=si",
-      "data": {
-        "value": "011-2585896 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 (",
-      "source": "https://www.ombudsman.gov.lk/?lang=si",
-      "data": {
-        "value": "011-2501126 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/?lang=si",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/?lang=si",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 (",
-      "source": "https://www.ombudsman.gov.lk/?lang=ti",
-      "data": {
-        "value": "011-2588798 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2585896 (",
-      "source": "https://www.ombudsman.gov.lk/?lang=ti",
-      "data": {
-        "value": "011-2585896 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 (",
-      "source": "https://www.ombudsman.gov.lk/?lang=ti",
-      "data": {
-        "value": "011-2501126 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/?lang=ti",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/?lang=ti",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.01.2019 -31.0",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "0.01.2019 -31.0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "data": {
-        "value": "1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 011-25011",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "04. 011-25011"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "+9411 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "011-2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2501126 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "+9411 2501126 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411 2501115 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "+9411 2501115 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2585896 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "011 2585896 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2588798 ",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "011-2588798 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudsao@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "ombudsao@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ombudssl@gmail.com",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "ombudssl@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Office of the Parliamentary Commissioner for Administration (Ombudsman) First Floor, No.14, R.A.De Mel Mawatha, Colombo ",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "Office of the Parliamentary Commissioner for Administration (Ombudsman) First Floor, No.14, R.A.De Mel Mawatha, Colombo "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 8696 visible characters across 14 pages",
-      "source": "https://www.ombudsman.gov.lk/"
+      "observed_at": "2026-09-24T07:14:11.228882+05:30"
     }
   ],
   "observations": [
@@ -1105,223 +90,42 @@
     },
     {
       "url": "https://www.ombudsman.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 3416,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "The read operation timed out"
     },
     {
       "url": "http://www.ombudsman.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/",
-      "redirects": [
-        "https://www.ombudsman.gov.lk/"
-      ],
-      "elapsed_ms": 2836,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Server disconnected without sending a response."
     },
     {
       "url": "https://www.ombudsman.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 4121,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Server disconnected without sending a response."
     },
     {
       "url": "http://www.ombudsman.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/",
-      "redirects": [
-        "https://www.ombudsman.gov.lk/"
-      ],
-      "elapsed_ms": 2851,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/?lang=en",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/",
-      "redirects": [
-        "https://www.ombudsman.gov.lk/"
-      ],
-      "elapsed_ms": 2686,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/?lang=si",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 2985,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/?lang=ti",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/?lang=ti",
-      "redirects": [],
-      "elapsed_ms": 2735,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "redirects": [],
-      "elapsed_ms": 2523,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "redirects": [],
-      "elapsed_ms": 2343,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "redirects": [],
-      "elapsed_ms": 2341,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "redirects": [],
-      "elapsed_ms": 2413,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "redirects": [],
-      "elapsed_ms": 2956,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "redirects": [],
-      "elapsed_ms": 2393,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "status_code": 200,
-      "final_url": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "redirects": [],
-      "elapsed_ms": 2491,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Server disconnected without sending a response."
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.ombudsman.gov.lk/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-01-37efe0eb33e7.html",
-      "sha256": "37efe0eb33e70c1476fbb7d1849ffeff33fc49de6a4d3027d27364045333d820",
-      "bytes": 94771
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-02-37efe0eb33e7.html",
-      "sha256": "37efe0eb33e70c1476fbb7d1849ffeff33fc49de6a4d3027d27364045333d820",
-      "bytes": 94771
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-03-37efe0eb33e7.html",
-      "sha256": "37efe0eb33e70c1476fbb7d1849ffeff33fc49de6a4d3027d27364045333d820",
-      "bytes": 94771
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-04-37efe0eb33e7.html",
-      "sha256": "37efe0eb33e70c1476fbb7d1849ffeff33fc49de6a4d3027d27364045333d820",
-      "bytes": 94771
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-05-37efe0eb33e7.html",
-      "sha256": "37efe0eb33e70c1476fbb7d1849ffeff33fc49de6a4d3027d27364045333d820",
-      "bytes": 94771
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/?lang=si",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-06-7223aa474448.html",
-      "sha256": "7223aa4744481d4cb0456cd25e87c03633e6eeb91b612f57d069f2439a4af006",
-      "bytes": 105177
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/?lang=ti",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-07-448c02c0ae7c.html",
-      "sha256": "448c02c0ae7cb149f3f487321bc9fb1b536f9edce609a2b5e6a4219e5e836e02",
-      "bytes": 105558
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/about-us-1-2/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-08-00e9ec54f33f.html",
-      "sha256": "00e9ec54f33fb9bf6a14758a614bbbe22e556c4e17ca995660e1c8bbf3a61fb3",
-      "bytes": 56329
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/present-ombudsman/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-09-49b1a0e52d3c.html",
-      "sha256": "49b1a0e52d3c9c8b57ffb9b63e220a46ae787b0aa5fcd22d2f6dda0d1ef4a9b3",
-      "bytes": 51143
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/history-past-ombudsmen/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-10-cc039bd73bcc.html",
-      "sha256": "cc039bd73bcc135c4867e11f04d35087f41dbcc0d83b70dde05df31f94e81eff",
-      "bytes": 58609
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/messages/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-11-d3fb117dff89.html",
-      "sha256": "d3fb117dff890ea052af6125d360ae9e7620d08cb7b5c2fe956a863cfeea0440",
-      "bytes": 55993
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/our-acts/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-12-58b592dec188.html",
-      "sha256": "58b592dec188b4d7438e945cba66a431f587287f01407664c5827f639e64307b",
-      "bytes": 57084
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/organization-chart/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-13-7922a5206d0d.html",
-      "sha256": "7922a5206d0d2852a51f3192b0f4926a81243e917e8fa9eeb246b72e78d6c6e8",
-      "bytes": 51543
-    },
-    {
-      "url": "https://www.ombudsman.gov.lk/index.php/right-to-information/",
-      "path": "audit.output/www.ombudsman.gov.lk/20260923.0708/snapshots/page-14-17d21fe2ad79.html",
-      "sha256": "17d21fe2ad7926fac0d449ab32e6de873dde7807e16b0de7a24d156c5c8e5f8a",
-      "bytes": 52386
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1335,8 +139,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -1348,44 +152,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1404,80 +208,18 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman; Phone: 011-2501126 (11 phone numbers found); Email: ombudssl@gmail.com (2 email addresses found); Published named responsibility: division",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 011-2501126 (11 phone numbers found); Email: ombudssl@gmail.com (2 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: regulations"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1497,7 +239,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.173.11.77",
+    "egress_ip": "52.186.174.178",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

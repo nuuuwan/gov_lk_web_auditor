@@ -1,8 +1,8 @@
 # Website Audit: https://www.pubad.gov.lk/
 
-- Completed: 2026-09-23 07:06
-- Overall result: ⚫ Level 0
-- Vantage: 52.173.11.77 (US, github-actions)
+- Completed: 2026-09-24 07:09
+- Overall result: 🟠 Level 2
+- Vantage: 52.186.174.178 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,33 +10,49 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 101 visible characters across 1 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.pubad.gov.lk/: Probe 2: timed out; https://www.pubad.gov.lk/: Probe 3: timed out; http://www.pubad.gov.lk/: Probe 4: timed out |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Not run because 🔴 Level 1 did not pass
+Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka; Phone: +94 11 2695279 (572 phone numbers found); Email: info@pubad.gov.lk; Published named responsibility: director
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ✅ | Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka |
+| reachable_contacts | ✅ | Phone: +94 11 2695279 (572 phone numbers found); Email: info@pubad.gov.lk |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ✅ | Published processing time: 03 days |
+| downloadable_form | ✅ | Published downloadable form: https://pubad.gov.lk/web/images/latest_document/RTI/Right_to_Information_Act(e).pdf |
+| published_update_date | ✅ | Published published update date: 2026-09-09 |
