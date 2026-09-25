@@ -1,8 +1,8 @@
 # Website Audit: https://doc.gov.lk/
 
-- Completed: 2026-09-24 07:11
+- Completed: 2026-09-25 07:11
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 2: timed out; https://doc.gov.lk/: Probe 3: timed out; http://doc.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 2: timed out; https://doc.gov.lk/: Probe 3: timed out; http://doc.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak32356b4bcaeec936; Phone: 071 450 1444 (92 phone numbers found); Email: fortrade@doc.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: specific market entry technical barriers to trade (TBT) in the import markets by formulating requisite technical regulat; Phone: 071 450 1444 (2 phone numbers found); Email: fortrade@doc.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak32356b4bcaeec936 |
-| reachable_contacts | ✅ | Phone: 071 450 1444 (92 phone numbers found); Email: fortrade@doc.gov.lk (3 email addresses found) |
+| postal_address | ✅ | Published postal address: specific market entry technical barriers to trade (TBT) in the import markets by formulating requisite technical regulat |
+| reachable_contacts | ✅ | Phone: 071 450 1444 (2 phone numbers found); Email: fortrade@doc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing processing time evidence found
+Published published update date: 02 September 2019
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ✅ | Published fees and payment: Rs. 15,000 |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://doc.gov.lk/images/pdf/RTI/Right_to_Information_Acte.pdf |
-| published_update_date | ✅ | Published published update date: 04 September 2026 |
+| published_update_date | ❌ | Published published update date: 02 September 2019 |

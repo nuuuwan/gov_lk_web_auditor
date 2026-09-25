@@ -1,8 +1,8 @@
 # Website Audit: https://nimh.health.gov.lk/
 
-- Completed: 2026-09-24 06:39
+- Completed: 2026-09-25 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: NIMH, Mulleriyawa New Town Telephone: +94112578234 - 7 National Mental Health Helpline: 1926 Day Treatment Centre: +9411; Phone: +94113140844 (10 phone numbers found); Email: info@nimh.health.gov.lk; Published named responsibility: director
+Published postal address: NIMH, Mulleriyawa New Town Telephone: +94112578234 - 7 National Mental Health Helpline: 1926 Day Treatment Centre: +9411; Phone: +94112578234 - (10 phone numbers found); Email: info@nimh.health.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: NIMH, Mulleriyawa New Town Telephone: +94112578234 - 7 National Mental Health Helpline: 1926 Day Treatment Centre: +9411 |
-| reachable_contacts | ✅ | Phone: +94113140844 (10 phone numbers found); Email: info@nimh.health.gov.lk |
+| reachable_contacts | ✅ | Phone: +94112578234 - (10 phone numbers found); Email: info@nimh.health.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

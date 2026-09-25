@@ -1,8 +1,8 @@
 # Website Audit: https://jrjc.lk/
 
-- Completed: 2026-09-24 06:09
+- Completed: 2026-09-25 06:12
 - Overall result: 🔴 Level 1
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -39,7 +39,7 @@ No email evidence found
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: here Request Type * I need to access Books I need to access Periodicals and Journals I need to access Manuscripts Collec |
 | reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ✅ | Published named responsibility: department |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

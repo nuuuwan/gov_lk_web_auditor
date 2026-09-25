@@ -1,8 +1,8 @@
 # Website Audit: https://artscouncil.lk/
 
-- Completed: 2026-09-24 06:09
+- Completed: 2026-09-25 06:10
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to; Phone: 026.07.14 202 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found); Published named responsibility: director
+Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to; Phone: +94 11 2177627 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to |
-| reachable_contacts | ✅ | Phone: 026.07.14 202 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2177627 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-08-10 |
+| published_update_date | ✅ | Published published update date: 2026-09-25 |

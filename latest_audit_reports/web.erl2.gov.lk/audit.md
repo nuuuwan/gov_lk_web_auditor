@@ -1,8 +1,8 @@
 # Website Audit: https://web.erl2.gov.lk/
 
-- Completed: 2026-09-24 06:12
+- Completed: 2026-09-25 06:13
 - Overall result: ⚫ Level 0
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

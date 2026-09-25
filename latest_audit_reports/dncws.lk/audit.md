@@ -1,8 +1,8 @@
 # Website Audit: https://dncws.lk/
 
-- Completed: 2026-09-24 06:41
+- Completed: 2026-09-25 06:41
 - Overall result: 🔴 Level 1
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

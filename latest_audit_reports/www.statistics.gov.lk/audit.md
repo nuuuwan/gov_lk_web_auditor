@@ -1,8 +1,8 @@
 # Website Audit: https://www.statistics.gov.lk/
 
-- Completed: 2026-09-24 06:26
+- Completed: 2026-09-25 06:27
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati; Phone: 0.3333 0 0 0 0 0 (835 phone numbers found); Email: dgcensus@statistics.gov.lk (244 email addresses found); Published named responsibility: director
+Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati; Phone: 0.3333 0 0 0.33 (835 phone numbers found); Email: data.requests@statistics.gov.lk (244 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati |
-| reachable_contacts | ✅ | Phone: 0.3333 0 0 0 0 0 (835 phone numbers found); Email: dgcensus@statistics.gov.lk (244 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.3333 0 0 0.33 (835 phone numbers found); Email: data.requests@statistics.gov.lk (244 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

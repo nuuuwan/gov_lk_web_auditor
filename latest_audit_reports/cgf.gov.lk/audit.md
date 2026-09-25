@@ -1,8 +1,8 @@
 # Website Audit: https://cgf.gov.lk/
 
-- Completed: 2026-09-24 06:42
+- Completed: 2026-09-25 06:41
 - Overall result: ⚫ Level 0
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010); TLS certificate has expired
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010); TLS certificate has expired
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,6 @@ Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed
 | hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010) |
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010) |
 | tls_not_expired | ❌ | TLS certificate has expired |
 | tls_hostname_matches | ❓ | TLS hostname check did not run |

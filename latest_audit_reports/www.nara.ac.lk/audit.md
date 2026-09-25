@@ -1,8 +1,8 @@
 # Website Audit: http://www.nara.ac.lk/
 
-- Completed: 2026-09-24 06:30
+- Completed: 2026-09-25 06:31
 - Overall result: ⚫ Level 0
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-An HTTP probe was transient; [Errno 111] Connection refused; [Errno 111] Connection refused
+An HTTP probe was transient; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ An HTTP probe was transient; [Errno 111] Connection refused; [Errno 111] Connect
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | [Errno 111] Connection refused |
-| tls_hostname_matches | ❓ | [Errno 111] Connection refused |
+| tls_not_expired | ❓ | _ssl.c:993: The handshake operation timed out |
+| tls_hostname_matches | ❓ | _ssl.c:993: The handshake operation timed out |
 
 ## 🟠 Level 2: ❓
 

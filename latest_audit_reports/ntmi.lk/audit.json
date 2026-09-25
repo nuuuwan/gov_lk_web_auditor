@@ -1,24 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "5c83ee66-9c74-41f8-82b9-1ec09fdf5781",
+  "audit_id": "53b5906a-d459-4a62-a253-be2f4a21da1e",
   "url": "https://ntmi.lk/",
   "normalized_url": "https://ntmi.lk/",
-  "started_at": "2026-09-24T06:59:16.289777+05:30",
-  "completed_at": "2026-09-24T06:59:36.263528+05:30",
+  "started_at": "2026-09-25T06:54:55.127571+05:30",
+  "completed_at": "2026-09-25T06:55:01.071406+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
     ]
   },
   "evidence": [
@@ -26,1419 +17,59 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-24T06:59:16.790214+05:30"
+      "observed_at": "2026-09-25T06:54:55.429188+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-24T06:59:16.790230+05:30"
+      "observed_at": "2026-09-25T06:54:55.429207+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-24T06:59:16.821656+05:30"
+      "observed_at": "2026-09-25T06:54:55.605371+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://ntmi.lk/",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 500 at https://ntmi.lk/",
       "source": "https://ntmi.lk/",
-      "observed_at": "2026-09-24T06:59:34.294890+05:30"
+      "observed_at": "2026-09-25T06:55:01.064197+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://ntmi.lk/",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 500 at https://ntmi.lk/",
       "source": "http://ntmi.lk/",
-      "observed_at": "2026-09-24T06:59:34.294909+05:30"
+      "observed_at": "2026-09-25T06:55:01.064214+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://ntmi.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 500 at https://ntmi.lk/",
       "source": "https://ntmi.lk/",
-      "observed_at": "2026-09-24T06:59:34.294914+05:30"
+      "observed_at": "2026-09-25T06:55:01.064218+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://ntmi.lk/",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 500 at https://ntmi.lk/",
       "source": "http://ntmi.lk/",
-      "observed_at": "2026-09-24T06:59:34.294918+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://ntmi.lk/services/",
-      "source": "https://ntmi.lk/services/",
-      "observed_at": "2026-09-24T06:59:34.294921+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://ntmi.lk/contact/",
-      "source": "https://ntmi.lk/contact/",
-      "observed_at": "2026-09-24T06:59:34.294923+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://ntmi.lk/about/",
-      "source": "https://ntmi.lk/about/",
-      "observed_at": "2026-09-24T06:59:34.294926+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://ntmi.lk/latestnews/",
-      "source": "https://ntmi.lk/latestnews/",
-      "observed_at": "2026-09-24T06:59:34.294929+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://ntmi.lk/category/vacancies/",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "observed_at": "2026-09-24T06:59:34.294932+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://ntmi.lk/category/procurements/",
-      "source": "https://ntmi.lk/category/procurements/",
-      "observed_at": "2026-09-24T06:59:34.294935+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "observed_at": "2026-09-24T06:59:34.294938+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "observed_at": "2026-09-24T06:59:34.294941+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "observed_at": "2026-09-24T06:59:34.294943+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "observed_at": "2026-09-24T06:59:34.294946+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-(112) 852-868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94-(112) 852-868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112852868",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94112852868"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 12 months",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "12 months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-(112) 852-868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94-(112) 852-868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112852868",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94112852868"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 12 months",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "12 months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-(112) 852-868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94-(112) 852-868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112852868",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94112852868"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 12 months",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "12 months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-(112) 852-868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94-(112) 852-868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112852868",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94112852868"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 12 months",
-      "source": "https://ntmi.lk/",
-      "data": {
-        "value": "12 months"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Free of Charge",
-      "source": "https://ntmi.lk/services/",
-      "data": {
-        "value": "Free of Charge"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 032 - 2266385 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "032 - 2266385 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091- 2226868 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "091- 2226868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 021-2290202 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "021-2290202 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94-(112) 852-868 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "+94-(112) 852-868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 052 - 2235370 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "052 - 2235370 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 033 - 2248861 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "033 - 2248861 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 055 - 2225680 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "055 - 2225680 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 035 - 2051957 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "035 - 2051957 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011- 2517432 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "011- 2517432 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 021- 2219752 ",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "021- 2219752 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/contact/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://ntmi.lk/about/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025 2025-03-1",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "025 2025-03-1"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/latestnews/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://ntmi.lk/category/vacancies/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 026 2025-12-0",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "026 2025-12-0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 025-2026 202",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "025-2026 202"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/category/procurements/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 852 868 ",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "+94 112 852 868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +9411) 285 2868 ",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "+9411) 285 2868 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-2.648-0.8",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "0.883-2.648-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.883-3.531-0.8",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "0.883-3.531-0.8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 007-5.297-65.3",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "007-5.297-65.3"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-86.51-14.124-",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "0-86.51-14.124-"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ntmi@sltnet.lk",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "ntmi@sltnet.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka",
-      "source": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "data": {
-        "value": "NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka"
-      }
+      "observed_at": "2026-09-25T06:55:01.064221+05:30"
     },
     {
       "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 5714 visible characters across 14 pages",
+      "status": "fail",
+      "detail": "Only 110 visible characters across 4 pages; below substance threshold 200",
       "source": "https://ntmi.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "observed_at": "2026-09-25T06:55:01.070746+05:30"
     }
   ],
   "observations": [
@@ -1465,131 +96,41 @@
     },
     {
       "url": "https://ntmi.lk/",
-      "status_code": 200,
+      "status_code": 500,
       "final_url": "https://ntmi.lk/",
       "redirects": [],
-      "elapsed_ms": 47,
+      "elapsed_ms": 402,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://ntmi.lk/",
-      "status_code": 200,
+      "status_code": 500,
       "final_url": "https://ntmi.lk/",
       "redirects": [
         "https://ntmi.lk/"
       ],
-      "elapsed_ms": 59,
+      "elapsed_ms": 416,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://ntmi.lk/",
-      "status_code": 200,
+      "status_code": 500,
       "final_url": "https://ntmi.lk/",
       "redirects": [],
-      "elapsed_ms": 63,
+      "elapsed_ms": 385,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://ntmi.lk/",
-      "status_code": 200,
+      "status_code": 500,
       "final_url": "https://ntmi.lk/",
       "redirects": [
         "https://ntmi.lk/"
       ],
-      "elapsed_ms": 45,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/services/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/services/",
-      "redirects": [],
-      "elapsed_ms": 777,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/contact/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/contact/",
-      "redirects": [],
-      "elapsed_ms": 199,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/about/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/about/",
-      "redirects": [],
-      "elapsed_ms": 739,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/latestnews/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/latestnews/",
-      "redirects": [],
-      "elapsed_ms": 261,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/category/vacancies/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/category/vacancies/",
-      "redirects": [],
-      "elapsed_ms": 129,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/category/procurements/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/category/procurements/",
-      "redirects": [],
-      "elapsed_ms": 199,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "redirects": [],
-      "elapsed_ms": 789,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "redirects": [],
-      "elapsed_ms": 765,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "redirects": [],
-      "elapsed_ms": 800,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "status_code": 200,
-      "final_url": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "redirects": [],
-      "elapsed_ms": 825,
+      "elapsed_ms": 392,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -1597,87 +138,27 @@
   "snapshots": [
     {
       "url": "https://ntmi.lk/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-01-50669d4ff193.html",
-      "sha256": "50669d4ff19395b43c9e144ae582446d7f9d6484c5c3ca907c78847aaa4a3696",
-      "bytes": 281763
+      "path": "audit.output/ntmi.lk/20260925.0654/snapshots/page-01-4ccf02aef305.html",
+      "sha256": "4ccf02aef3056969c144d9a497fd7961105d23f73a422da5bb59ff4284a4c586",
+      "bytes": 2653
     },
     {
       "url": "https://ntmi.lk/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-02-50669d4ff193.html",
-      "sha256": "50669d4ff19395b43c9e144ae582446d7f9d6484c5c3ca907c78847aaa4a3696",
-      "bytes": 281763
+      "path": "audit.output/ntmi.lk/20260925.0654/snapshots/page-02-4ccf02aef305.html",
+      "sha256": "4ccf02aef3056969c144d9a497fd7961105d23f73a422da5bb59ff4284a4c586",
+      "bytes": 2653
     },
     {
       "url": "https://ntmi.lk/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-03-50669d4ff193.html",
-      "sha256": "50669d4ff19395b43c9e144ae582446d7f9d6484c5c3ca907c78847aaa4a3696",
-      "bytes": 281763
+      "path": "audit.output/ntmi.lk/20260925.0654/snapshots/page-03-4ccf02aef305.html",
+      "sha256": "4ccf02aef3056969c144d9a497fd7961105d23f73a422da5bb59ff4284a4c586",
+      "bytes": 2653
     },
     {
       "url": "https://ntmi.lk/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-04-50669d4ff193.html",
-      "sha256": "50669d4ff19395b43c9e144ae582446d7f9d6484c5c3ca907c78847aaa4a3696",
-      "bytes": 281763
-    },
-    {
-      "url": "https://ntmi.lk/services/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-05-29a4201eef33.html",
-      "sha256": "29a4201eef33a18b23eea75414d4cbec5bca52addd6398b4ad2524be00dcec29",
-      "bytes": 164836
-    },
-    {
-      "url": "https://ntmi.lk/contact/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-06-9a8de2357224.html",
-      "sha256": "9a8de235722454c038ddaf431c48cd82a80415549d24225f8825cda4b76063d6",
-      "bytes": 225694
-    },
-    {
-      "url": "https://ntmi.lk/about/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-07-f777567ae7a6.html",
-      "sha256": "f777567ae7a6522a6cca01712d17195d083bc11d5c3cee5279de41ddbccd325b",
-      "bytes": 188889
-    },
-    {
-      "url": "https://ntmi.lk/latestnews/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-08-de1360b5e2cd.html",
-      "sha256": "de1360b5e2cdf27e11ce521338026995720af80150f4e96261e2b1566f2f4440",
-      "bytes": 200579
-    },
-    {
-      "url": "https://ntmi.lk/category/vacancies/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-09-701de6e8f1d2.html",
-      "sha256": "701de6e8f1d2f5af889d12616a63f029ecd804a394db561958384804f0c820ea",
-      "bytes": 207476
-    },
-    {
-      "url": "https://ntmi.lk/category/procurements/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-10-53c1fb7d7871.html",
-      "sha256": "53c1fb7d7871cad0f8dfda6dffd59ea09aaaca8e527137b60b20915c3b88a967",
-      "bytes": 197898
-    },
-    {
-      "url": "https://ntmi.lk/e-channeling-service-for-efficient-service-delivery/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-11-0acce4b6e2c8.html",
-      "sha256": "0acce4b6e2c816fc6295f9dcf01e267a3874277b9bbc7b67de89c6f3b05ce74e",
-      "bytes": 156462
-    },
-    {
-      "url": "https://ntmi.lk/%e0%b6%bb%e0%b7%8f%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b7%83%e0%b7%9a%e0%b7%80%e0%b6%ba%e0%b7%9a-%e0%b7%83%e0%b7%94%e0%b6%b4%e0%b7%92%e0%b6%bd%e0%b7%92%e0%b6%b4%e0%b6%b1%e0%b7%8a%e0%b6%b7%e0%b7%8f/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-12-159e8e9668bc.html",
-      "sha256": "159e8e9668bcfdff9fc62bf4bf7fd4e2b31a3f007bf3fe7809b815aac8ea8521",
-      "bytes": 162074
-    },
-    {
-      "url": "https://ntmi.lk/%e0%b7%83%e0%b7%91%e0%b6%b8-%e0%b6%b6%e0%b6%af%e0%b7%8f%e0%b6%af%e0%b7%8f-%e0%b6%af%e0%b7%92%e0%b6%b1%e0%b6%ba%e0%b6%9a%e0%b7%8a%e0%b6%b8-%e0%b6%bb%e0%b6%a2%e0%b6%ba%e0%b7%9a-%e0%b6%b1%e0%b7%92/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-13-474759c033ff.html",
-      "sha256": "474759c033ff877083427bb4071f34a52f3246e6d401291339e589524d5df311",
-      "bytes": 156574
-    },
-    {
-      "url": "https://ntmi.lk/%e0%b6%b8%e0%b7%8f%e0%b6%bb%e0%b7%8a%e0%b6%9c%e0%b6%9c%e0%b6%ad-%e0%b6%9a%e0%b7%8a%e0%b6%bb%e0%b6%b8%e0%b6%ba-%e0%b6%b8%e0%b6%9c%e0%b7%92%e0%b6%b1%e0%b7%8a-%e0%b7%80%e0%b7%9b%e0%b6%af/",
-      "path": "audit.output/ntmi.lk/20260924.0659/snapshots/page-14-41db48e54466.html",
-      "sha256": "41db48e54466131d8e22ab87ad874d8ca5d023b318fdef833c17c328ed4f3ba0",
-      "bytes": 156207
+      "path": "audit.output/ntmi.lk/20260925.0654/snapshots/page-04-4ccf02aef305.html",
+      "sha256": "4ccf02aef3056969c144d9a497fd7961105d23f73a422da5bb59ff4284a4c586",
+      "bytes": 2653
     }
   ],
   "reviewer_decisions": [],
@@ -1693,8 +174,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
       "executed": true,
       "checks": [
         {
@@ -1706,44 +187,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 110 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 110 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 110 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "Insufficient substantive page content: Only 110 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -1762,80 +243,18 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr; Phone: +94-(112) 852-868 (20 phone numbers found); Email: ntmi@sltnet.lk; Published named responsibility: division",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: is not valid! Please provide a valid email.\"],\"stop_words\":\"a,able,about,above,abst,accordance,according,accordingly,acr"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94-(112) 852-868 (20 phone numbers found); Email: ntmi@sltnet.lk"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs,"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing legal basis evidence found"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published processing time: 12 months"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1855,7 +274,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.186.174.178",
+    "egress_ip": "20.171.51.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

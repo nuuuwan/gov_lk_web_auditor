@@ -1,8 +1,8 @@
 # Website Audit: https://slcarp.lk/
 
-- Completed: 2026-09-24 06:08
+- Completed: 2026-09-25 06:09
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

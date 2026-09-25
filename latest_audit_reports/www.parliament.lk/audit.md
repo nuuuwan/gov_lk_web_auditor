@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-09-24 07:12
+- Completed: 2026-09-25 07:05
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Salary Disparities in the Principals’ Service The Sectoral Oversight Committee on Education, Manpower and Human Capital ; Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
+Published postal address: the difficulties faced by persons with disabilities in obtaining drivin... Quick Access Addendums Order Papers Constitut; Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Salary Disparities in the Principals’ Service The Sectoral Oversight Committee on Education, Manpower and Human Capital  |
+| postal_address | ✅ | Published postal address: the difficulties faced by persons with disabilities in obtaining drivin... Quick Access Addendums Order Papers Constitut |
 | reachable_contacts | ✅ | Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
@@ -45,7 +45,7 @@ Published postal address: Salary Disparities in the Principals’ Service The Se
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-09-23 |
+| published_update_date | ❓ | No passing published update date evidence found |

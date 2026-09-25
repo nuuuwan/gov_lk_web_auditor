@@ -1,8 +1,8 @@
 # Website Audit: https://ceypetco.gov.lk/
 
-- Completed: 2026-09-24 06:26
+- Completed: 2026-09-25 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2; Phone: +94117296100 (65 phone numbers found); Email: # (36 email addresses found); Published named responsibility: director
+Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2; Phone: 0 25 11 13 12 1 (73 phone numbers found); Email: # (45 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 609, Dr. Danister de Silvea Mawatha, Colombo 09, Sri Lanka E-mail secretariat[at]ceypetco.gov.lk Telephone +94 117 2 |
-| reachable_contacts | ✅ | Phone: +94117296100 (65 phone numbers found); Email: # (36 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 25 11 13 12 1 (73 phone numbers found); Email: # (45 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://ceypetco.gov.lk/wp-content/uploads/2026/07/Annex-1-Application-Form1.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://ceypetco.gov.lk/wp-content/uploads/2025/08/SPECIMEN-APPLICATION.docx |
 | published_update_date | ❓ | No passing published update date evidence found |

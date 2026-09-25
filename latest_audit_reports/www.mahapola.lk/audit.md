@@ -1,8 +1,8 @@
 # Website Audit: https://www.mahapola.lk/
 
-- Completed: 2026-09-24 06:54
+- Completed: 2026-09-25 06:51
 - Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 8th Floor, CWE Secretariat Building 27, Vauxhall Street, Colombo 02, Sri Lanka; Phone: 011 268 5011 (11 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found); Published named responsibility: department
+Published postal address: 8th Floor, CWE Secretariat Building 27, Vauxhall Street, Colombo 02, Sri Lanka; Phone: 011 268 5548 (11 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 8th Floor, CWE Secretariat Building 27, Vauxhall Street, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 011 268 5011 (11 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 268 5548 (11 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

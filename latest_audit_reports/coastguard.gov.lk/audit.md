@@ -1,8 +1,8 @@
 # Website Audit: https://coastguard.gov.lk/
 
-- Completed: 2026-09-24 06:13
-- Overall result: 🟠 Level 2
-- Vantage: 52.186.174.178 (US, github-actions)
+- Completed: 2026-09-25 06:12
+- Overall result: ⚫ Level 0
+- Vantage: 20.171.51.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,49 +10,33 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ✅
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://coastguard.gov.lk/: Probe 2: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://coastguard.gov.lk/: Probe 2: timed out |
-| redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| domain_not_parked | ❓ | No usable page was inspected |
+| site_not_defaced | ❓ | No usable page was inspected |
+| content_relevant | ❓ | No usable page was inspected |
+| hosting_configured | ❓ | No usable page was inspected |
+| http_available | ❓ | An HTTP probe was transient |
+| redirect_related | ❓ | No redirect result was available |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the growing need for effective enforcement of fisheries laws at sea. At the time, the Hon. Mahinda Rajapaksa, Minister o; Phone: +94 412 260 312 (2 phone numbers found); Email: dgsecretariat@coastguard.gov.lk; Published named responsibility: director
-
-| Test | Result | Details |
-| --- | --- | --- |
-| postal_address | ✅ | Published postal address: the growing need for effective enforcement of fisheries laws at sea. At the time, the Hon. Mahinda Rajapaksa, Minister o |
-| reachable_contacts | ✅ | Phone: +94 412 260 312 (2 phone numbers found); Email: dgsecretariat@coastguard.gov.lk |
-| named_responsibility | ✅ | Published named responsibility: director |
+Not run because 🔴 Level 1 did not pass
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

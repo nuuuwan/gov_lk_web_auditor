@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c30b0dab-59da-4411-a146-b74295e05c65",
+  "audit_id": "40d4bd2f-5ac4-4772-8207-4c1ce882bfe9",
   "url": "https://www.jsc.gov.lk/",
   "normalized_url": "https://www.jsc.gov.lk/",
-  "started_at": "2026-09-24T07:13:01.791029+05:30",
-  "completed_at": "2026-09-24T07:14:56.332065+05:30",
+  "started_at": "2026-09-25T07:05:36.632417+05:30",
+  "completed_at": "2026-09-25T07:07:50.858791+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "tls_hostname_matches: TLS certificate does not match the hostname"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -17,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-24T07:13:02.472639+05:30"
+      "observed_at": "2026-09-25T07:05:37.019759+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-24T07:13:02.472687+05:30"
+      "observed_at": "2026-09-25T07:05:37.019776+05:30"
     },
     {
-      "check": "tls_hostname",
-      "status": "fail",
-      "detail": "TLS certificate does not match the hostname",
-      "observed_at": "2026-09-24T07:13:03.208946+05:30"
+      "check": "tls",
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-09-25T07:05:47.246744+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: timed out",
       "source": "https://www.jsc.gov.lk/",
-      "observed_at": "2026-09-24T07:14:56.331876+05:30"
+      "observed_at": "2026-09-25T07:07:50.858590+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.jsc.gov.lk/",
-      "observed_at": "2026-09-24T07:14:56.331898+05:30"
+      "observed_at": "2026-09-25T07:07:50.858613+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: timed out",
       "source": "https://www.jsc.gov.lk/",
-      "observed_at": "2026-09-24T07:14:56.331904+05:30"
+      "observed_at": "2026-09-25T07:07:50.858618+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "detail": "Probe 4: timed out",
       "source": "http://www.jsc.gov.lk/",
-      "observed_at": "2026-09-24T07:14:56.331908+05:30"
+      "observed_at": "2026-09-25T07:07:50.858622+05:30"
     }
   ],
   "observations": [
@@ -77,10 +85,10 @@
     },
     {
       "host": "www.jsc.gov.lk",
-      "status": "hostname_error",
-      "expires_at": "2026-11-07T13:06:17+05:30",
-      "hostname_valid": false,
-      "detail": "TLS certificate does not match the hostname"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.jsc.gov.lk/",
@@ -116,7 +124,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     }
   ],
   "snapshots": [],
@@ -133,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "TLS certificate does not match the hostname",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -189,13 +197,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate does not match the hostname"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -233,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.186.174.178",
+    "egress_ip": "20.171.51.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
