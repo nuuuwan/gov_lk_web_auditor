@@ -1,8 +1,8 @@
 # Website Audit: https://emb-stockholm.gov.lk/
 
-- Completed: 2026-09-25 06:34
+- Completed: 2026-09-26 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov.; Phone: 035.0554656 (11 phone numbers found); Email: consular.stockholm@mfa.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov.; Phone: 0277999999 (11 phone numbers found); Email: slemb.stockholm@mfa.gov.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: PO BOX 24055 SE- 114 56 , Stockholm Phone Numbers: +46 (8) 663 65 23 , +46 (8) 663 65 25 Email: slemb.stockholm@mfa.gov. |
-| reachable_contacts | ✅ | Phone: 035.0554656 (11 phone numbers found); Email: consular.stockholm@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0277999999 (11 phone numbers found); Email: slemb.stockholm@mfa.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

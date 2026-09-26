@@ -1,8 +1,8 @@
 # Website Audit: https://neda.gov.lk/
 
-- Completed: 2026-09-25 06:42
+- Completed: 2026-09-26 06:46
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co; Phone: 0122359855 (338 phone numbers found); Email: info@neda.gov.lk (268 email addresses found); Published named responsibility: director
+Published postal address: the challenges faced by MSMEs, who are often isolated and struggling to scale up due to individual funding limitations. ; Phone: 0398746850 (5 phone numbers found); Email: info@neda.gov.lk (13 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co |
-| reachable_contacts | ✅ | Phone: 0122359855 (338 phone numbers found); Email: info@neda.gov.lk (268 email addresses found) |
+| postal_address | ✅ | Published postal address: the challenges faced by MSMEs, who are often isolated and struggling to scale up due to individual funding limitations.  |
+| reachable_contacts | ✅ | Phone: 0398746850 (5 phone numbers found); Email: info@neda.gov.lk (13 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 26-05-2024
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ Published published update date: 26-05-2024
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 26-05-2024 |
+| downloadable_form | ✅ | Published downloadable form: https://neda.gov.lk/wp-content/uploads/2024/10/MISL-Trade-Fair-2024-Application-form.pdf |
+| published_update_date | ❓ | No passing published update date evidence found |

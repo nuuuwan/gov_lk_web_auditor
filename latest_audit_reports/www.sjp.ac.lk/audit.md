@@ -1,8 +1,8 @@
 # Website Audit: http://www.sjp.ac.lk/
 
-- Completed: 2026-09-25 06:16
+- Completed: 2026-09-26 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: University of Sri Jayewardenepura Gangodawila, Nugegoda, Sri Lanka. Location Map Tele: +94 11 2758000 +94 11 2802022 +94; Phone: +94 11 2802022 (23 phone numbers found); Email: registrar@sjp.ac.lk (40 email addresses found); Published named responsibility: division
+Published postal address: University of Sri Jayewardenepura Gangodawila, Nugegoda, Sri Lanka. Location Map Tele: +94 11 2758000 +94 11 2802022 +94; Phone: +94 11 2802022 (23 phone numbers found); Email: rti@sjp.ac.lk (40 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: University of Sri Jayewardenepura Gangodawila, Nugegoda, Sri Lanka. Location Map Tele: +94 11 2758000 +94 11 2802022 +94 |
-| reachable_contacts | ✅ | Phone: +94 11 2802022 (23 phone numbers found); Email: registrar@sjp.ac.lk (40 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2802022 (23 phone numbers found); Email: rti@sjp.ac.lk (40 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

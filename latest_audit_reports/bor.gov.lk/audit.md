@@ -1,8 +1,8 @@
 # Website Audit: https://bor.gov.lk/
 
-- Completed: 2026-09-25 06:47
+- Completed: 2026-09-26 06:49
 - Overall result: 🔴 Level 1
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0192707879 (52 phone numbers found); Email: email@gmail.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0192707879 (53 phone numbers found); Email: email@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

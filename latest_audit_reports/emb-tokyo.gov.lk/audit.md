@@ -1,8 +1,8 @@
 # Website Audit: https://emb-tokyo.gov.lk/
 
-- Completed: 2026-09-25 06:32
+- Completed: 2026-09-26 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: 0990945263 (13 phone numbers found); Email: john@example.com (8 email addresses found); Published named responsibility: director
+Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m; Phone: 0304093868 (20 phone numbers found); Email: john@example.com (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2-1-54, Takanawa, Minato-ku, Tokyo 108-0074 Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you m |
-| reachable_contacts | ✅ | Phone: 0990945263 (13 phone numbers found); Email: john@example.com (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0304093868 (20 phone numbers found); Email: john@example.com (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 10 weeks |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 26 July 2026 |

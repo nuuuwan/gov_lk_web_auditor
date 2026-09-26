@@ -1,8 +1,8 @@
 # Website Audit: https://emb-amman.gov.lk/
 
-- Completed: 2026-09-25 06:36
+- Completed: 2026-09-26 06:35
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: +962777313323 (8 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: +96265820611 (8 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777 |
-| reachable_contacts | ✅ | Phone: +962777313323 (8 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +96265820611 (8 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

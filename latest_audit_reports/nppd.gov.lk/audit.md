@@ -1,8 +1,8 @@
 # Website Audit: https://nppd.gov.lk/
 
-- Completed: 2026-09-25 06:54
+- Completed: 2026-09-26 06:56
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic; Phone: +94 11 207 7180; Email: info@nppd.gov.lk; Published named responsibility: department
+Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic; Phone: +94 11 207 7180 (2 phone numbers found); Email: info@nppd.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic |
-| reachable_contacts | ✅ | Phone: +94 11 207 7180; Email: info@nppd.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 207 7180 (2 phone numbers found); Email: info@nppd.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

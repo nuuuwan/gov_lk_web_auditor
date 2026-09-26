@@ -1,8 +1,8 @@
 # Website Audit: https://emb-berlin.gov.lk/
 
-- Completed: 2026-09-25 06:33
+- Completed: 2026-09-26 06:32
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -41,11 +41,11 @@ Published postal address: Niklasstrasse 19, 14163 Berlin Tel: +49 (0)30809749 Fo
 | reachable_contacts | ✅ | Phone: +49030809749 (40 phone numbers found); Email: consular.berlin@mfa.gov.lk (15 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
+Published published update date: 1 January 2018
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing downloadable form evidence found; No passing published update date ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 03 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ❌ | Published published update date: 1 January 2018 |

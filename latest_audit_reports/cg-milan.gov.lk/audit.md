@@ -1,8 +1,8 @@
 # Website Audit: https://cg-milan.gov.lk/
 
-- Completed: 2026-09-25 06:34
+- Completed: 2026-09-26 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://cg-milan.gov.lk/: Probe 1: The read operation timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://cg-milan.gov.lk/: Probe 1: The read operation timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: 0475972438 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: +393275480615 (25 phone numbers found); Email: consular.milan@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa. |
-| reachable_contacts | ✅ | Phone: 0475972438 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +393275480615 (25 phone numbers found); Email: consular.milan@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

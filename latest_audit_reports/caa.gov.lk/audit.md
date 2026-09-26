@@ -1,8 +1,8 @@
 # Website Audit: https://caa.gov.lk/
 
-- Completed: 2026-09-25 07:03
+- Completed: 2026-09-26 06:54
 - Overall result: ⚫ Level 0
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,16 +14,16 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-timed out; timed out
+Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200 |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://caa.gov.lk/: Probe 2: timed out; http://caa.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

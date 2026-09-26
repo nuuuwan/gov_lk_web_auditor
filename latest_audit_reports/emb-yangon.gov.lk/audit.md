@@ -1,8 +1,8 @@
 # Website Audit: https://emb-yangon.gov.lk/
 
-- Completed: 2026-09-25 06:32
+- Completed: 2026-09-26 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi; Phone: 00951 23143 (12 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi; Phone: 00951 23143 (12 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi |
-| reachable_contacts | ✅ | Phone: 00951 23143 (12 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 00951 23143 (12 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://napvcw.gov.lk/
 
-- Completed: 2026-09-25 06:43
+- Completed: 2026-09-26 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and Mail Address First Floor No. 428/11 A Denzil Kobbakaduwa Mawatha, Battaramulla Email witness.protection.srilanka@gma; Phone: +94112779879 (12 phone numbers found); Email: mail@example.com (20 email addresses found); Published named responsibility: officer in charge
+Published postal address: and Mail Address First Floor No. 428/11 A Denzil Kobbakaduwa Mawatha, Battaramulla Email witness.protection.srilanka@gma; Phone: 0112326317 (12 phone numbers found); Email: mail@example.com (20 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and Mail Address First Floor No. 428/11 A Denzil Kobbakaduwa Mawatha, Battaramulla Email witness.protection.srilanka@gma |
-| reachable_contacts | ✅ | Phone: +94112779879 (12 phone numbers found); Email: mail@example.com (20 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112326317 (12 phone numbers found); Email: mail@example.com (20 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓

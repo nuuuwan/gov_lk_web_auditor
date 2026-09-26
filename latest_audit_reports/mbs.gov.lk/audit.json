@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9bee741f-3437-4bcf-971f-8055007730d3",
+  "audit_id": "dbb6f095-e8d1-4f05-b846-17a4b8271bc4",
   "url": "https://mbs.gov.lk/",
   "normalized_url": "https://mbs.gov.lk/",
-  "started_at": "2026-09-25T07:00:44.338340+05:30",
-  "completed_at": "2026-09-25T07:01:08.514159+05:30",
+  "started_at": "2026-09-26T07:04:34.509465+05:30",
+  "completed_at": "2026-09-26T07:41:47.804629+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "hosting_configured: Detected generic hosting marker: under construction"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: http://mbs.gov.lk/: Probe 2: timed out; http://mbs.gov.lk/: Probe 4: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,207 +26,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-25T07:00:44.728034+05:30"
+      "observed_at": "2026-09-26T07:04:35.183493+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-25T07:00:44.728053+05:30"
+      "observed_at": "2026-09-26T07:04:35.183519+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-25T07:00:45.465357+05:30"
+      "observed_at": "2026-09-26T07:04:36.302874+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://mbs.gov.lk/",
       "source": "https://mbs.gov.lk/",
-      "observed_at": "2026-09-25T07:01:07.879821+05:30"
+      "observed_at": "2026-09-26T07:41:47.475733+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://mbs.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://mbs.gov.lk/",
-      "observed_at": "2026-09-25T07:01:07.879834+05:30"
+      "observed_at": "2026-09-26T07:41:47.475754+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://mbs.gov.lk/",
       "source": "https://mbs.gov.lk/",
-      "observed_at": "2026-09-25T07:01:07.879838+05:30"
+      "observed_at": "2026-09-26T07:41:47.475757+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://mbs.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://mbs.gov.lk/",
-      "observed_at": "2026-09-25T07:01:07.879842+05:30"
+      "observed_at": "2026-09-26T07:41:47.475760+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://mbs.gov.lk/web/",
-      "source": "https://mbs.gov.lk/web/",
-      "observed_at": "2026-09-25T07:01:07.879844+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://mbs.gov.lk/web/?page_id=1513&lang=si",
+      "detail": "Probe 5: HTTP 200 at https://mbs.gov.lk/web/?page_id=1513&lang=si",
       "source": "https://mbs.gov.lk/web/?page_id=1513&lang=si",
-      "observed_at": "2026-09-25T07:01:07.879847+05:30"
+      "observed_at": "2026-09-26T07:41:47.475763+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://mbs.gov.lk/web/?page_id=120&lang=ta",
+      "detail": "Probe 6: HTTP 200 at https://mbs.gov.lk/web/?page_id=120&lang=ta",
       "source": "https://mbs.gov.lk/web/?page_id=120&lang=ta",
-      "observed_at": "2026-09-25T07:01:07.879849+05:30"
+      "observed_at": "2026-09-26T07:41:47.475765+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://mbs.gov.lk/web/?page_id=1273",
-      "source": "https://mbs.gov.lk/web/?page_id=1273",
-      "observed_at": "2026-09-25T07:01:07.879852+05:30"
+      "detail": "Probe 7: HTTP 200 at https://mbs.gov.lk/web/?page_id=407&lang=si",
+      "source": "https://mbs.gov.lk/web/?page_id=407&lang=si",
+      "observed_at": "2026-09-26T07:41:47.475768+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://mbs.gov.lk/web/?page_id=263",
-      "source": "https://mbs.gov.lk/web/?page_id=263",
-      "observed_at": "2026-09-25T07:01:07.879855+05:30"
+      "detail": "Probe 8: HTTP 200 at https://mbs.gov.lk/web/?page_id=355&lang=si",
+      "source": "https://mbs.gov.lk/web/?page_id=355&lang=si",
+      "observed_at": "2026-09-26T07:41:47.475770+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://mbs.gov.lk/web/?page_id=155",
-      "source": "https://mbs.gov.lk/web/?page_id=155",
-      "observed_at": "2026-09-25T07:01:07.879857+05:30"
+      "detail": "Probe 9: HTTP 200 at https://mbs.gov.lk/web/?page_id=357&lang=si",
+      "source": "https://mbs.gov.lk/web/?page_id=357&lang=si",
+      "observed_at": "2026-09-26T07:41:47.475773+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://mbs.gov.lk/web/?page_id=179",
-      "source": "https://mbs.gov.lk/web/?page_id=179",
-      "observed_at": "2026-09-25T07:01:07.879860+05:30"
+      "detail": "Probe 10: HTTP 200 at https://mbs.gov.lk/web/?page_id=382&lang=si",
+      "source": "https://mbs.gov.lk/web/?page_id=382&lang=si",
+      "observed_at": "2026-09-26T07:41:47.475775+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://mbs.gov.lk/web/?page_id=181",
-      "source": "https://mbs.gov.lk/web/?page_id=181",
-      "observed_at": "2026-09-25T07:01:07.879862+05:30"
+      "detail": "Probe 11: HTTP 200 at https://mbs.gov.lk/web/?page_id=387&lang=si",
+      "source": "https://mbs.gov.lk/web/?page_id=387&lang=si",
+      "observed_at": "2026-09-26T07:41:47.475777+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://mbs.gov.lk/web/?page_id=183",
-      "source": "https://mbs.gov.lk/web/?page_id=183",
-      "observed_at": "2026-09-25T07:01:07.879865+05:30"
+      "detail": "Probe 12: HTTP 200 at https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "observed_at": "2026-09-26T07:41:47.475779+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://mbs.gov.lk/web/?page_id=185",
-      "source": "https://mbs.gov.lk/web/?page_id=185",
-      "observed_at": "2026-09-25T07:01:07.879867+05:30"
+      "detail": "Probe 13: HTTP 200 at https://mbs.gov.lk/web/?page_id=1277&lang=ta",
+      "source": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
+      "observed_at": "2026-09-26T07:41:47.475782+05:30"
     },
     {
-      "check": "phone",
+      "check": "http",
       "status": "pass",
-      "detail": "Published phone: 025 2026-03-0",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "025 2026-03-0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2307335",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "+94 11 2307335"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112307674",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "+94112307674"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 230 7674 ",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "+94 11 230 7674 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 026 2026-02-2",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "026 2026-02-2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 230 7335 ",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "+94 11 230 7335 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mbsecoffice@gmail.com",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "mbsecoffice@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs 10",
-      "source": "https://mbs.gov.lk/web/",
-      "data": {
-        "value": "rs 10"
-      }
+      "detail": "Probe 14: HTTP 200 at https://mbs.gov.lk/web/?p=3623&lang=ta",
+      "source": "https://mbs.gov.lk/web/?p=3623&lang=ta",
+      "observed_at": "2026-09-26T07:41:47.475783+05:30"
     },
     {
       "check": "phone",
@@ -285,10 +204,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 025 2026-03-0",
+      "detail": "Published phone: 026 2026-02-2",
       "source": "https://mbs.gov.lk/web/?page_id=120&lang=ta",
       "data": {
-        "value": "025 2026-03-0"
+        "value": "026 2026-02-2"
       }
     },
     {
@@ -321,19 +240,19 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 026 2026-02-2",
+      "detail": "Published phone: +94 11 230 7335 ",
       "source": "https://mbs.gov.lk/web/?page_id=120&lang=ta",
       "data": {
-        "value": "026 2026-02-2"
+        "value": "+94 11 230 7335 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 11 230 7335 ",
+      "detail": "Published phone: 025 2026-03-0",
       "source": "https://mbs.gov.lk/web/?page_id=120&lang=ta",
       "data": {
-        "value": "+94 11 230 7335 "
+        "value": "025 2026-03-0"
       }
     },
     {
@@ -367,7 +286,259 @@
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/?page_id=1273",
+      "source": "https://mbs.gov.lk/web/?page_id=407&lang=si",
+      "data": {
+        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
+      "source": "https://mbs.gov.lk/web/?page_id=355&lang=si",
+      "data": {
+        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
+      "source": "https://mbs.gov.lk/web/?page_id=357&lang=si",
+      "data": {
+        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
+      "source": "https://mbs.gov.lk/web/?page_id=382&lang=si",
+      "data": {
+        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
+      "source": "https://mbs.gov.lk/web/?page_id=387&lang=si",
+      "data": {
+        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2303296 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2303296 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2875408 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "011 2875408 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2307693 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2307693 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11-2872267 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11-2872267 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2307699 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2307699 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2307690 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2307690 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2303297 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2303297 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2307409 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2307409 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2872029 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2872029 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 3119876 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 3119876 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2879080 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "011 2879080 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2307399 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2307399 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2877120 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2877120 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2307673 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2307673 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2307403 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2307403 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2888505 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2888505 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2187117 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2187117 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2885970 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2885970 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2679969 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 2679969 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 3560943 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 11 3560943 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 71 3073915 ",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "+94 71 3073915 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
+      "source": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
       "data": {
         "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
       }
@@ -376,7 +547,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/?page_id=1273",
+      "source": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
       "data": {
         "value": "division"
       }
@@ -385,7 +556,7 @@
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: regulations",
-      "source": "https://mbs.gov.lk/web/?page_id=1273",
+      "source": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
       "data": {
         "value": "regulations"
       }
@@ -394,7 +565,7 @@
       "check": "fees_and_payment",
       "status": "pass",
       "detail": "Published fees and payment: rs,",
-      "source": "https://mbs.gov.lk/web/?page_id=1273",
+      "source": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
       "data": {
         "value": "rs,"
       }
@@ -403,7 +574,7 @@
       "check": "postal_address",
       "status": "pass",
       "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/?page_id=263",
+      "source": "https://mbs.gov.lk/web/?p=3623&lang=ta",
       "data": {
         "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
       }
@@ -412,118 +583,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/?page_id=263",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/?page_id=155",
-      "data": {
-        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/?page_id=155",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/?page_id=179",
-      "data": {
-        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/?page_id=179",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://mbs.gov.lk/web/?page_id=179",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/?page_id=181",
-      "data": {
-        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/?page_id=181",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://mbs.gov.lk/web/?page_id=183"
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/?page_id=183",
-      "data": {
-        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/?page_id=183",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://mbs.gov.lk/web/?page_id=185"
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;",
-      "source": "https://mbs.gov.lk/web/?page_id=185",
-      "data": {
-        "value": "li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://mbs.gov.lk/web/?page_id=185",
+      "source": "https://mbs.gov.lk/web/?p=3623&lang=ta",
       "data": {
         "value": "division"
       }
@@ -531,7 +591,7 @@
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 13306 visible characters across 14 pages",
+      "detail": "Substantive page content: 13311 visible characters across 12 pages",
       "source": "https://mbs.gov.lk/"
     }
   ],
@@ -562,56 +622,43 @@
       "status_code": 200,
       "final_url": "https://mbs.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 1259,
+      "elapsed_ms": 21150,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://mbs.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://mbs.gov.lk/",
-      "redirects": [
-        "https://mbs.gov.lk/"
-      ],
-      "elapsed_ms": 1280,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://mbs.gov.lk/",
       "status_code": 200,
       "final_url": "https://mbs.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 1014,
+      "elapsed_ms": 1273,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://mbs.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://mbs.gov.lk/",
-      "redirects": [
-        "https://mbs.gov.lk/"
-      ],
-      "elapsed_ms": 968,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mbs.gov.lk/web/",
-      "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1255,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://mbs.gov.lk/web/?page_id=1513&lang=si",
       "status_code": 200,
       "final_url": "https://mbs.gov.lk/web/?page_id=1513&lang=si",
       "redirects": [],
-      "elapsed_ms": 2355,
+      "elapsed_ms": 1596,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -620,70 +667,79 @@
       "status_code": 200,
       "final_url": "https://mbs.gov.lk/web/?page_id=120&lang=ta",
       "redirects": [],
-      "elapsed_ms": 1770,
+      "elapsed_ms": 21272,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=1273",
+      "url": "https://mbs.gov.lk/web/?page_id=407&lang=si",
       "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/?page_id=1273",
+      "final_url": "https://mbs.gov.lk/web/?page_id=407&lang=si",
       "redirects": [],
-      "elapsed_ms": 1230,
+      "elapsed_ms": 20970,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=263",
+      "url": "https://mbs.gov.lk/web/?page_id=355&lang=si",
       "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/?page_id=263",
+      "final_url": "https://mbs.gov.lk/web/?page_id=355&lang=si",
       "redirects": [],
-      "elapsed_ms": 1039,
+      "elapsed_ms": 21005,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=155",
+      "url": "https://mbs.gov.lk/web/?page_id=357&lang=si",
       "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/?page_id=155",
+      "final_url": "https://mbs.gov.lk/web/?page_id=357&lang=si",
       "redirects": [],
-      "elapsed_ms": 1231,
+      "elapsed_ms": 20872,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=179",
+      "url": "https://mbs.gov.lk/web/?page_id=382&lang=si",
       "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/?page_id=179",
+      "final_url": "https://mbs.gov.lk/web/?page_id=382&lang=si",
       "redirects": [],
-      "elapsed_ms": 1026,
+      "elapsed_ms": 20756,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=181",
+      "url": "https://mbs.gov.lk/web/?page_id=387&lang=si",
       "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/?page_id=181",
+      "final_url": "https://mbs.gov.lk/web/?page_id=387&lang=si",
       "redirects": [],
-      "elapsed_ms": 1517,
+      "elapsed_ms": 1007,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=183",
+      "url": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
       "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/?page_id=183",
+      "final_url": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
       "redirects": [],
-      "elapsed_ms": 1315,
+      "elapsed_ms": 1207,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=185",
+      "url": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
       "status_code": 200,
-      "final_url": "https://mbs.gov.lk/web/?page_id=185",
+      "final_url": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
       "redirects": [],
-      "elapsed_ms": 1035,
+      "elapsed_ms": 21162,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://mbs.gov.lk/web/?p=3623&lang=ta",
+      "status_code": 200,
+      "final_url": "https://mbs.gov.lk/web/?p=3623&lang=ta",
+      "redirects": [],
+      "elapsed_ms": 1422,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -691,87 +747,75 @@
   "snapshots": [
     {
       "url": "https://mbs.gov.lk/",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-01-e9317d0a0238.html",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-01-e9317d0a0238.html",
       "sha256": "e9317d0a02386684cd2f02de7bacf54ab118494facf0927d4d9bc84a32a16c86",
       "bytes": 5732
     },
     {
       "url": "https://mbs.gov.lk/",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-02-e9317d0a0238.html",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-02-e9317d0a0238.html",
       "sha256": "e9317d0a02386684cd2f02de7bacf54ab118494facf0927d4d9bc84a32a16c86",
       "bytes": 5732
-    },
-    {
-      "url": "https://mbs.gov.lk/",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-03-e9317d0a0238.html",
-      "sha256": "e9317d0a02386684cd2f02de7bacf54ab118494facf0927d4d9bc84a32a16c86",
-      "bytes": 5732
-    },
-    {
-      "url": "https://mbs.gov.lk/",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-04-e9317d0a0238.html",
-      "sha256": "e9317d0a02386684cd2f02de7bacf54ab118494facf0927d4d9bc84a32a16c86",
-      "bytes": 5732
-    },
-    {
-      "url": "https://mbs.gov.lk/web/",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-05-c1281c6cc443.html",
-      "sha256": "c1281c6cc443497ee5794006ad1a705bfc1c9c8585fe1ef197d57bd3e3eb24ee",
-      "bytes": 120199
     },
     {
       "url": "https://mbs.gov.lk/web/?page_id=1513&lang=si",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-06-2f7bee483105.html",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-03-2f7bee483105.html",
       "sha256": "2f7bee483105a335415fb2c90742d529371c60b8d34feb8d9af57b6ff24af9ca",
       "bytes": 134337
     },
     {
       "url": "https://mbs.gov.lk/web/?page_id=120&lang=ta",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-07-4a5602c47f74.html",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-04-4a5602c47f74.html",
       "sha256": "4a5602c47f74fca8973272d4acedb3ad7b95052b87384f77c4bddf40157a2f10",
       "bytes": 125385
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=1273",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-08-e4423af2e700.html",
-      "sha256": "e4423af2e700ea5bbea2bd4d00cf9b6950bbdd1a68996b3ddf4aabff03dc437f",
-      "bytes": 72241
+      "url": "https://mbs.gov.lk/web/?page_id=407&lang=si",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-05-502530434451.html",
+      "sha256": "5025304344514235ce1fdb4572038c44c2c5f0ba5ca6d8db3dfd63dfdfb024d0",
+      "bytes": 68054
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=263",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-09-128e62a9ad7d.html",
-      "sha256": "128e62a9ad7d48d63476be04a70b3a9c412033fd5c89864e876414115e5efd04",
-      "bytes": 59897
+      "url": "https://mbs.gov.lk/web/?page_id=355&lang=si",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-06-bece86b22893.html",
+      "sha256": "bece86b228937c7782e82802c8813d20246a3e5e842655635a2e97dc2118941f",
+      "bytes": 61330
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=155",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-10-f8add8db4b02.html",
-      "sha256": "f8add8db4b02a4baacbd9b01c83733fc2ba6f37a0ccf03623228628124baa93c",
-      "bytes": 57237
+      "url": "https://mbs.gov.lk/web/?page_id=357&lang=si",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-07-68a64b298f03.html",
+      "sha256": "68a64b298f0373d00b1c5fdc7d348ded62a4dc7a295ca12841e7e1ad02ed3c5b",
+      "bytes": 63320
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=179",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-11-3d7ef0924b07.html",
-      "sha256": "3d7ef0924b07ad919738cef67814f6389d7ff030c81485d61a3c4b09ade37835",
-      "bytes": 57495
+      "url": "https://mbs.gov.lk/web/?page_id=382&lang=si",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-08-461b2045c5ad.html",
+      "sha256": "461b2045c5ad172b1815eddbefb64957c7acc16280b2de74e9e3d4d0cf7e2afd",
+      "bytes": 58478
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=181",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-12-b8f4a1323eac.html",
-      "sha256": "b8f4a1323eac8bdf11d3596427b4630b224767e6b01fc4e6a54474bee9acbf3c",
-      "bytes": 56279
+      "url": "https://mbs.gov.lk/web/?page_id=387&lang=si",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-09-8a06a5ca1666.html",
+      "sha256": "8a06a5ca16661c619c32fab3026090b717d278c0e5f09ec1adb3079028ba21d5",
+      "bytes": 60221
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=183",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-13-4f6169ddfbba.html",
-      "sha256": "4f6169ddfbba7c16da278a4ed9a043c94d432880019ff9b6762ecb42869cd723",
-      "bytes": 55811
+      "url": "https://mbs.gov.lk/web/?page_id=587&lang=ta",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-10-8dae33e6cf27.html",
+      "sha256": "8dae33e6cf27051c33a0cab338527bae488f872c9ee7b788051b250826415466",
+      "bytes": 68661
     },
     {
-      "url": "https://mbs.gov.lk/web/?page_id=185",
-      "path": "audit.output/mbs.gov.lk/20260925.0700/snapshots/page-14-f83a18e49790.html",
-      "sha256": "f83a18e497906577947ed74b71319e526e3de8f48aeacd39e64580e4db3c1eb0",
-      "bytes": 55810
+      "url": "https://mbs.gov.lk/web/?page_id=1277&lang=ta",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-11-0343ed64cf9e.html",
+      "sha256": "0343ed64cf9e4b63e632251794e6da38c23617405f27328a58999d531732b45d",
+      "bytes": 74786
+    },
+    {
+      "url": "https://mbs.gov.lk/web/?p=3623&lang=ta",
+      "path": "audit.output/mbs.gov.lk/20260926.0704/snapshots/page-12-dabd2734aa93.html",
+      "sha256": "dabd2734aa93fa7f0b33d071dd85a6cca800103349fc1ebba4deabeafc36e58a",
+      "bytes": 61613
     }
   ],
   "reviewer_decisions": [],
@@ -787,8 +831,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Detected generic hosting marker: under construction",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://mbs.gov.lk/: Probe 2: timed out; http://mbs.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -818,14 +862,14 @@
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "fail",
-          "reason": "Detected generic hosting marker: under construction"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "reason": "HTTPS probes passed; failing variants: http://mbs.gov.lk/: Probe 2: timed out; http://mbs.gov.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
@@ -856,18 +900,80 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;; Phone: +94 11 2307335 (28 phone numbers found); Email: mbsecoffice@gmail.com; Published named responsibility: division",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: li { list-style: none; } .contact-address li { list-style: none; } .contact-address-info { float: left; font-size: 14px;"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 11 2307335 (28 phone numbers found); Email: mbsecoffice@gmail.com"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -887,7 +993,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.171.51.213",
+    "egress_ip": "134.33.77.208",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

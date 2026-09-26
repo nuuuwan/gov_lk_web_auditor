@@ -1,23 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "198dd8a5-abed-4565-bbb0-05cc3f505c23",
+  "audit_id": "73b41619-5a84-4136-a2d2-12ba3d65bbff",
   "url": "https://pmb.gov.lk/",
   "normalized_url": "https://pmb.gov.lk/",
-  "started_at": "2026-09-25T06:08:47.015196+05:30",
-  "completed_at": "2026-09-25T06:10:58.939793+05:30",
+  "started_at": "2026-09-26T06:07:38.777442+05:30",
+  "completed_at": "2026-09-26T06:07:45.886175+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)",
+      "tls_hostname_matches: TLS certificate does not match the hostname"
     ]
   },
   "evidence": [
@@ -25,47 +18,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-25T06:08:47.374074+05:30"
+      "observed_at": "2026-09-26T06:07:40.376303+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-25T06:08:47.374093+05:30"
+      "observed_at": "2026-09-26T06:07:40.376323+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-09-25T06:08:57.638254+05:30"
+      "check": "tls_hostname",
+      "status": "fail",
+      "detail": "TLS certificate does not match the hostname",
+      "observed_at": "2026-09-26T06:07:40.496223+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)",
       "source": "https://pmb.gov.lk/",
-      "observed_at": "2026-09-25T06:10:58.939593+05:30"
+      "observed_at": "2026-09-26T06:07:45.885154+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 404 at http://pmb.gov.lk/404.html",
       "source": "http://pmb.gov.lk/",
-      "observed_at": "2026-09-25T06:10:58.939613+05:30"
+      "observed_at": "2026-09-26T06:07:45.885175+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)",
       "source": "https://pmb.gov.lk/",
-      "observed_at": "2026-09-25T06:10:58.939619+05:30"
+      "observed_at": "2026-09-26T06:07:45.885180+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 404 at http://pmb.gov.lk/404.html",
       "source": "http://pmb.gov.lk/",
-      "observed_at": "2026-09-25T06:10:58.939625+05:30"
+      "observed_at": "2026-09-26T06:07:45.885182+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 0 visible characters across 2 pages; below substance threshold 200",
+      "source": "https://pmb.gov.lk/"
     }
   ],
   "observations": [
@@ -85,10 +84,10 @@
     },
     {
       "host": "pmb.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "hostname_error",
+      "expires_at": "2026-10-26T05:29:59+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate does not match the hostname"
     },
     {
       "url": "https://pmb.gov.lk/",
@@ -97,16 +96,18 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)"
     },
     {
       "url": "http://pmb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 404,
+      "final_url": "http://pmb.gov.lk/404.html",
+      "redirects": [
+        "http://pmb.gov.lk/404.html"
+      ],
+      "elapsed_ms": 108,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "https://pmb.gov.lk/",
@@ -115,19 +116,34 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)"
     },
     {
       "url": "http://pmb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 404,
+      "final_url": "http://pmb.gov.lk/404.html",
+      "redirects": [
+        "http://pmb.gov.lk/404.html"
+      ],
+      "elapsed_ms": 120,
+      "content_type": "text/html",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "http://pmb.gov.lk/404.html",
+      "path": "audit.output/pmb.gov.lk/20260926.0607/snapshots/page-01-0b41f69e6564.html",
+      "sha256": "0b41f69e6564b9c89b1b344744c5b06eb4adc0e584028909286d2b936e1afed5",
+      "bytes": 583
+    },
+    {
+      "url": "http://pmb.gov.lk/404.html",
+      "path": "audit.output/pmb.gov.lk/20260926.0607/snapshots/page-02-0b41f69e6564.html",
+      "sha256": "0b41f69e6564b9c89b1b344744c5b06eb4adc0e584028909286d2b936e1afed5",
+      "bytes": 583
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +157,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname",
       "executed": true,
       "checks": [
         {
@@ -155,31 +171,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -190,20 +206,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "fail",
+          "reason": "TLS certificate does not match the hostname"
         }
       ]
     },
@@ -241,7 +257,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.171.51.213",
+    "egress_ip": "134.33.77.208",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

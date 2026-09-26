@@ -1,8 +1,8 @@
 # Website Audit: https://most.gov.lk/
 
-- Completed: 2026-09-25 07:19
+- Completed: 2026-09-26 07:58
 - Overall result: ⚫ Level 0
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -26,5 +26,5 @@ Detected generic hosting marker: under construction
 | http_available | ✅ | HTTPS probes passed; failing variants: http://most.gov.lk/: Probe 2: timed out; https://most.gov.lk/: Probe 3: timed out; http://most.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |

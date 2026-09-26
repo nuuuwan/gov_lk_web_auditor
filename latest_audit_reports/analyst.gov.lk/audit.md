@@ -1,8 +1,8 @@
 # Website Audit: https://analyst.gov.lk/
 
-- Completed: 2026-09-25 06:43
+- Completed: 2026-09-26 06:41
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112; Phone: +94 112 786 394 (14 phone numbers found); Email: info@analyst.gov.lk; Published named responsibility: division
+Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112; Phone: 0178335025 (14 phone numbers found); Email: info@analyst.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 31, Isuru Mawatha, Pelawatta, Battaramulla. Phone : +94 112 176 800 , +94 112 786 395 Fax : +94 112 786 394 , +94 112 |
-| reachable_contacts | ✅ | Phone: +94 112 786 394 (14 phone numbers found); Email: info@analyst.gov.lk |
+| reachable_contacts | ✅ | Phone: 0178335025 (14 phone numbers found); Email: info@analyst.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

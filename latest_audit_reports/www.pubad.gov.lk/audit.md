@@ -1,8 +1,8 @@
 # Website Audit: https://www.pubad.gov.lk/
 
-- Completed: 2026-09-25 07:01
+- Completed: 2026-09-26 07:07
 - Overall result: 🟠 Level 2
-- Vantage: 20.171.51.213 (US, github-actions)
+- Vantage: 134.33.77.208 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka; Phone: +94 11 2696211- (572 phone numbers found); Email: info@pubad.gov.lk; Published named responsibility: director
+Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka; Phone: +94 11 2695279 (560 phone numbers found); Email: info@pubad.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Council of Sri Lanka Contact Us Independance Square, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2696211- (572 phone numbers found); Email: info@pubad.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2695279 (560 phone numbers found); Email: info@pubad.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
