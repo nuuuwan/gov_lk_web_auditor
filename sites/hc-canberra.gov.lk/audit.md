@@ -1,0 +1,58 @@
+# Website Audit: https://hc-canberra.gov.lk/
+
+- Completed: 2026-09-26 06:30
+- Overall result: 🟠 Level 2
+- Vantage: 134.33.77.208 (US, github-actions)
+
+## ⚫ Level 0: ✅
+
+A site is classified as `⚫ Level 0` when it is unavailable or unusable, or when there is not enough evidence to establish that it meets `🔴 Level 1`.
+
+Baseline website grade
+
+## 🔴 Level 1: ✅
+
+To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
+
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+
+| Test | Result | Details |
+| --- | --- | --- |
+| dns_resolves | ✅ | Public DNS resolved |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTP probes did not all fail |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |
+
+## 🟠 Level 2: ✅
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em; Phone: 01473-5160-4 (22 phone numbers found); Email: slhc.canberra@mfa.gov.lk (8 email addresses found); Published named responsibility: director
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ✅ | Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em |
+| reachable_contacts | ✅ | Phone: 01473-5160-4 (22 phone numbers found); Email: slhc.canberra@mfa.gov.lk (8 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ✅ | Published required documents: supporting documents |
+| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| legal_basis | ✅ | Published legal basis: legal basis |
+| processing_time | ✅ | Published processing time: 8 weeks |
+| downloadable_form | ✅ | Published downloadable form: https://www.slhcaust.org/wp-content/uploads/2024/06/Dual-Citizenship-application-2024.pdf |
+| published_update_date | ❓ | No passing published update date evidence found |
