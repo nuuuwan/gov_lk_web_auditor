@@ -1,35 +1,22 @@
-# We built a tool to grade Sri Lanka's government websites 🇱🇰
+# Introducing `glwa`: An Open-Source Auditor for Sri Lanka’s Government Websites 🇱🇰
 
-At the Lanka Data Foundation's citizen-led Government Website Scorecard
-Hackathon on September 5th, a few of us started **Grading Government
-Websites (`glwa`)**. It was a sub-project to automate checks that software could
-run reliably.
+At the Lanka Data Foundation’s citizen-led Government Website Scorecard Hackathon on September 5, a group of us built `glwa` (`gov_lk_web_auditor`).
 
-`glwa` grades sites from Level 0, where a site does not work, to Level 5, where
-public services are connected and proactive. Levels 0-3 are implemented so
-far.
+`glwa` audits Sri Lanka’s government web directory, preserves supporting evidence, and classifies each check as pass, fail, or inconclusive. It generates a report for every website, together with JSON datasets.
 
-It audits the government web directory, saves the evidence, and marks checks as
-pass, fail, or inconclusive. Each site gets a report, plus JSON and CSV data.
+Websites are graded from Level 0, where the site is not functional, to Level 5, where public services are connected and proactive. Levels 0–3 are currently implemented.
 
-The dashboard 📊 lets you search and sort results, browse by ministry, and open
-the evidence behind each grade. It uses saved reports, so browsing it makes no
-live requests to government websites.
+The dashboard 📊 lets users search and sort results, browse by ministry, and examine the evidence behind each grade. Because it works from saved reports, browsing makes no live requests to government websites.
 
-One important caveat: the hackathon was much bigger. Participants also looked
-at things that need human judgement. `glwa` covers the automatable slice, not
-the full hackathon scorecard (See Report below).
+The wider hackathon also assessed criteria requiring human judgement. `glwa` covers ONLY the automatable portion, not the complete scorecard described in the LDF audit report.
 
-Built by Ranuga Disansa, Dushmilan Jeyanathan, Malin Ruwanpathirana and Nuwan Senaratna.
+Built by Ranuga Disansa, Dushmilan Jeyanathan, Malin Ruwanpathirana, and Nuwan Senaratna, with valuable support from Zaeema Nashath of the #LDF. 🙌
 
-A big thank you 🙌 to Zaeema Nashath of the #LDF who helped us.
+This project remains a work in progress 🛠️. Ideas and contributions are welcome—feel free to fork the repository and build on it.
 
-This is still very much a work in progress 🛠️, so ideas and contributions are
-welcome. Feel free to fork the repo and build on it too.
-
-REPO: <https://github.com/nuuuwan/gov_lk_web_auditor>
-DASHBOARD: <https://nuuuwan.github.io/gov_lk_web_auditor>
-LDF HACKATHON: <https://www.linkedin.com/posts/lankadata_ldf-government-website-scorecard-ugcPost-7509307084316827649-iZGF>
-LDF AUDIT REPORT: <https://drive.google.com/file/d/1HnHyltlOsA7Wvh9BIB1VN6s07yQTcxEH/view>
+REPO: <[https://github.com/nuuuwan/gov_lk_web_auditor](https://github.com/nuuuwan/gov_lk_web_auditor)>  
+DASHBOARD: <[https://nuuuwan.github.io/gov_lk_web_auditor](https://nuuuwan.github.io/gov_lk_web_auditor)>  
+LDF HACKATHON: <[https://www.linkedin.com/posts/lankadata_ldf-government-website-scorecard-ugcPost-7509307084316827649-iZGF](https://www.linkedin.com/posts/lankadata_ldf-government-website-scorecard-ugcPost-7509307084316827649-iZGF)>  
+LDF AUDIT REPORT: <[https://drive.google.com/file/d/1HnHyltlOsA7Wvh9BIB1VN6s07yQTcxEH/view](https://drive.google.com/file/d/1HnHyltlOsA7Wvh9BIB1VN6s07yQTcxEH/view)>
 
 # SriLanka #CivicTech #DigitalGovernment #OpenSource
