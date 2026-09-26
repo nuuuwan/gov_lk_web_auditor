@@ -14,6 +14,8 @@ class TestReadMe(unittest.TestCase):
             self.assertIn("# Grading Government Websites (`glwa`)", content)
             self.assertIn("img.shields.io/github/license", content)
             self.assertIn("img.shields.io/badge/author-nuuuwan", content)
+            self.assertIn("https://github.com/prdai", content)
+            self.assertIn("https://github.com/dushmilan", content)
             self.assertIn("img.shields.io/badge/last_updated-", content)
             self.assertNotIn("github/last-commit", content)
             self.assertIn(
