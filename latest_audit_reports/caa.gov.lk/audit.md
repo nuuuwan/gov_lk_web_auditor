@@ -1,8 +1,8 @@
 # Website Audit: https://caa.gov.lk/
 
-- Completed: 2026-09-27 06:57
+- Completed: 2026-09-28 07:06
 - Overall result: 🔴 Level 1
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa |
+| postal_address | ✅ | Published postal address: should be clearly mentioned 2022.11.01 Direction 87 2023.04.12 2327/36 Regarding any lubricant or grease 2023.04.12 Dire |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: division |
 

@@ -1,8 +1,8 @@
 # Website Audit: https://www.ird.gov.lk/
 
-- Completed: 2026-09-27 06:32
+- Completed: 2026-09-28 06:32
 - Overall result: 🔴 Level 1
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 00-0000-0000- (93 phone numbers found); Email: thusithanjali.vka@ird.gov.lk (47 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.20326.2013 (89 phone numbers found); Email: napana.nmakb@ird.gov.lk (47 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

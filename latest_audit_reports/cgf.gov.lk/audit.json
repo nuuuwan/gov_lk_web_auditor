@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "53c94e51-3c12-4e97-a598-8024970c1779",
+  "audit_id": "9629302a-4d20-43e3-8807-38d07803008d",
   "url": "https://cgf.gov.lk/",
   "normalized_url": "https://cgf.gov.lk/",
-  "started_at": "2026-09-27T06:44:19.713715+05:30",
-  "completed_at": "2026-09-27T06:45:26.435637+05:30",
+  "started_at": "2026-09-28T06:43:58.219639+05:30",
+  "completed_at": "2026-09-28T06:44:05.347101+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
@@ -18,47 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-27T06:44:20.108564+05:30"
+      "observed_at": "2026-09-28T06:43:58.625625+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-27T06:44:20.108584+05:30"
+      "observed_at": "2026-09-28T06:43:58.625643+05:30"
     },
     {
       "check": "tls_expired",
       "status": "fail",
       "detail": "TLS certificate has expired",
-      "observed_at": "2026-09-27T06:44:21.103014+05:30"
+      "observed_at": "2026-09-28T06:43:59.595503+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "https://cgf.gov.lk/",
-      "observed_at": "2026-09-27T06:45:26.435283+05:30"
+      "observed_at": "2026-09-28T06:44:05.346960+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "http://cgf.gov.lk/",
-      "observed_at": "2026-09-27T06:45:26.435436+05:30"
+      "observed_at": "2026-09-28T06:44:05.346977+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "https://cgf.gov.lk/",
-      "observed_at": "2026-09-27T06:45:26.435445+05:30"
+      "observed_at": "2026-09-28T06:44:05.346980+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)",
       "source": "http://cgf.gov.lk/",
-      "observed_at": "2026-09-27T06:45:26.435450+05:30"
+      "observed_at": "2026-09-28T06:44:05.346982+05:30"
     }
   ],
   "observations": [
@@ -99,7 +99,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
     },
     {
       "url": "https://cgf.gov.lk/",
@@ -117,7 +117,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010)"
     }
   ],
   "snapshots": [],
@@ -172,7 +172,7 @@
           "name": "http_available",
           "level": 1,
           "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "reason": "HTTP checks did not run"
         },
         {
           "name": "redirect_related",
@@ -234,7 +234,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.55.47.112",
+    "egress_ip": "52.173.11.67",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

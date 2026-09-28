@@ -1,15 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d8d63274-9aa6-4f51-a7b1-fde1893b5223",
+  "audit_id": "74e61764-dd28-4f39-b3b1-b008c289d1c2",
   "url": "http://www.ndrsc.gov.lk/",
   "normalized_url": "http://www.ndrsc.gov.lk/",
-  "started_at": "2026-09-27T06:16:13.565910+05:30",
-  "completed_at": "2026-09-27T06:17:32.401496+05:30",
+  "started_at": "2026-09-28T06:17:16.070919+05:30",
+  "completed_at": "2026-09-28T06:17:28.424158+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)",
+      "tls_hostname_matches: TLS certificate does not match the hostname"
     ]
   },
   "evidence": [
@@ -17,47 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-27T06:16:13.970036+05:30"
+      "observed_at": "2026-09-28T06:17:16.521752+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-27T06:16:13.970054+05:30"
+      "observed_at": "2026-09-28T06:17:16.521779+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-09-27T06:16:24.252412+05:30"
+      "check": "tls_hostname",
+      "status": "fail",
+      "detail": "TLS certificate does not match the hostname",
+      "observed_at": "2026-09-28T06:17:17.245727+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)",
       "source": "https://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-27T06:17:32.397903+05:30"
+      "observed_at": "2026-09-28T06:17:28.422005+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://www.ndrsc.gov.lk/",
       "source": "http://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-27T06:17:32.397921+05:30"
+      "observed_at": "2026-09-28T06:17:28.422027+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)",
       "source": "https://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-27T06:17:32.397926+05:30"
+      "observed_at": "2026-09-28T06:17:28.422030+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://www.ndrsc.gov.lk/",
       "source": "http://www.ndrsc.gov.lk/",
-      "observed_at": "2026-09-27T06:17:32.397930+05:30"
+      "observed_at": "2026-09-28T06:17:28.422033+05:30"
     },
     {
       "check": "page_text",
@@ -83,10 +84,10 @@
     },
     {
       "host": "www.ndrsc.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "hostname_error",
+      "expires_at": "2026-11-07T13:08:15+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate does not match the hostname"
     },
     {
       "url": "https://www.ndrsc.gov.lk/",
@@ -102,7 +103,7 @@
       "status_code": 200,
       "final_url": "http://www.ndrsc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 756,
+      "elapsed_ms": 728,
       "content_type": "text/html",
       "error": null
     },
@@ -113,14 +114,14 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)"
     },
     {
       "url": "http://www.ndrsc.gov.lk/",
       "status_code": 200,
       "final_url": "http://www.ndrsc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 832,
+      "elapsed_ms": 724,
       "content_type": "text/html",
       "error": null
     }
@@ -128,13 +129,13 @@
   "snapshots": [
     {
       "url": "http://www.ndrsc.gov.lk/",
-      "path": "audit.output/www.ndrsc.gov.lk/20260927.0616/snapshots/page-01-333dfc8c8fb4.html",
+      "path": "audit.output/www.ndrsc.gov.lk/20260928.0617/snapshots/page-01-333dfc8c8fb4.html",
       "sha256": "333dfc8c8fb49c14e5c3af80fd0f17817917c997d8700679ed4bcb9ad3754efa",
       "bytes": 3021
     },
     {
       "url": "http://www.ndrsc.gov.lk/",
-      "path": "audit.output/www.ndrsc.gov.lk/20260927.0616/snapshots/page-02-333dfc8c8fb4.html",
+      "path": "audit.output/www.ndrsc.gov.lk/20260928.0617/snapshots/page-02-333dfc8c8fb4.html",
       "sha256": "333dfc8c8fb49c14e5c3af80fd0f17817917c997d8700679ed4bcb9ad3754efa",
       "bytes": 3021
     }
@@ -153,7 +154,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010)",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ndrsc.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname",
       "executed": true,
       "checks": [
         {
@@ -189,8 +190,8 @@
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -208,13 +209,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "fail",
+          "reason": "TLS certificate does not match the hostname"
         }
       ]
     },
@@ -252,7 +253,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.55.47.112",
+    "egress_ip": "52.173.11.67",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

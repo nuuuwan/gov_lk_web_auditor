@@ -1,8 +1,8 @@
 # Website Audit: https://www.defence.lk/
 
-- Completed: 2026-09-27 07:00
+- Completed: 2026-09-28 07:02
 - Overall result: 🔴 Level 1
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,8 +38,8 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: dgplanningdmd@defence.lk (18 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: +94 11 2354354 (2 phone numbers found); Email: adlsecds@defence.lk (18 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 

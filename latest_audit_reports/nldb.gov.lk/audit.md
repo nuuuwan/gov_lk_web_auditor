@@ -1,8 +1,8 @@
 # Website Audit: https://nldb.gov.lk/
 
-- Completed: 2026-09-27 06:13
+- Completed: 2026-09-28 06:13
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: :P.O.Box 1748,No.40,Nawala Road,Narahenpita Bungalow Address :Nikaweratiya Farm, Nikaweratiya Bungalow Phone :+94 372 26; Phone: +94112501701 (38 phone numbers found); Email: nldbgmanager@gmail.com (36 email addresses found); Published named responsibility: director
+Published postal address: :P.O.Box 1748,No.40,Nawala Road,Narahenpita Bungalow Address :Nikaweratiya Farm, Nikaweratiya Bungalow Phone :+94 372 26; Phone: +94112501701 (38 phone numbers found); Email: narangallanldb@gmail.com (36 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: :P.O.Box 1748,No.40,Nawala Road,Narahenpita Bungalow Address :Nikaweratiya Farm, Nikaweratiya Bungalow Phone :+94 372 26 |
-| reachable_contacts | ✅ | Phone: +94112501701 (38 phone numbers found); Email: nldbgmanager@gmail.com (36 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112501701 (38 phone numbers found); Email: narangallanldb@gmail.com (36 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

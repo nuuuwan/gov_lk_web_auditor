@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-09-27 06:38
+- Completed: 2026-09-28 06:39
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De; Phone: 0850899999 (7 phone numbers found); Email: trade@lankamission.org (4 email addresses found); Published named responsibility: division
+Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De; Phone: +41229191250 (7 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De |
-| reachable_contacts | ✅ | Phone: 0850899999 (7 phone numbers found); Email: trade@lankamission.org (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +41229191250 (7 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -50,9 +50,9 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: required documents |
+| required_documents | ✅ | Published required documents: documents required |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ✅ | Published processing time: 30 days |
+| processing_time | ✅ | Published processing time: 3 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

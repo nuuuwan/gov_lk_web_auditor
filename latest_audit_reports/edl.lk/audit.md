@@ -1,8 +1,8 @@
 # Website Audit: https://edl.lk/
 
-- Completed: 2026-09-27 06:27
+- Completed: 2026-09-28 06:26
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Dehiwala, Mathugama 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: +94 11 232 3232 (399 phone numbers found); Email: dgmcp2@ceb.lk (88 email addresses found); Published named responsibility: division
+Published postal address: Dehiwala, Mathugama 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: 0.035971223 (399 phone numbers found); Email: eebandaragama@ceb.lk (88 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Dehiwala, Mathugama 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 232 3232 (399 phone numbers found); Email: dgmcp2@ceb.lk (88 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.035971223 (399 phone numbers found); Email: eebandaragama@ceb.lk (88 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

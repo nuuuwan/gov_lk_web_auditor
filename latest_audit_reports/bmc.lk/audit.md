@@ -1,8 +1,8 @@
 # Website Audit: https://bmc.lk/en
 
-- Completed: 2026-09-27 06:44
+- Completed: 2026-09-28 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Procurement Contact Info No.541 Sri Sangaraja Mawatha, Colombo 10, Sri Lanka; Phone: +94 11 2 326 701 (14 phone numbers found); Email: info@bmc.lk; Published named responsibility: director
+Published postal address: Procurement Contact Info No.541 Sri Sangaraja Mawatha, Colombo 10, Sri Lanka; Phone: 0484562807 (14 phone numbers found); Email: info@bmc.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Procurement Contact Info No.541 Sri Sangaraja Mawatha, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2 326 701 (14 phone numbers found); Email: info@bmc.lk |
+| reachable_contacts | ✅ | Phone: 0484562807 (14 phone numbers found); Email: info@bmc.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

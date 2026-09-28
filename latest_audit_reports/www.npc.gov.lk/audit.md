@@ -1,8 +1,8 @@
 # Website Audit: https://www.npc.gov.lk/
 
-- Completed: 2026-09-27 07:12
+- Completed: 2026-09-28 07:13
 - Overall result: ⚫ Level 0
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,16 +14,16 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-timed out; timed out
+Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200; An HTTP probe was transient; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://www.npc.gov.lk/: Probe 1: timed out; https://www.npc.gov.lk/: Probe 3: timed out |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 25 visible characters across 1 pages; below substance threshold 200 |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

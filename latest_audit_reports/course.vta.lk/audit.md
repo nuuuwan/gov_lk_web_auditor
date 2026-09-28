@@ -1,8 +1,8 @@
 # Website Audit: https://course.vta.lk/
 
-- Completed: 2026-09-27 06:26
+- Completed: 2026-09-28 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: E-mail Contact Number Ampara Ampara DO District Office, Main Street, Ninthavur, Ampara dvtampara@vtasl.gov.lk 0672251155; Phone: 0117 277 888 (27 phone numbers found); Email: cgjp@vtasl.gov.lk (52 email addresses found); Published named responsibility: director
+Published postal address: E-mail Contact Number Ampara Ampara DO District Office, Main Street, Ninthavur, Ampara dvtampara@vtasl.gov.lk 0672251155; Phone: 0117-270270 (27 phone numbers found); Email: cgjp@vtasl.gov.lk (52 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: E-mail Contact Number Ampara Ampara DO District Office, Main Street, Ninthavur, Ampara dvtampara@vtasl.gov.lk 0672251155 |
-| reachable_contacts | ✅ | Phone: 0117 277 888 (27 phone numbers found); Email: cgjp@vtasl.gov.lk (52 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0117-270270 (27 phone numbers found); Email: cgjp@vtasl.gov.lk (52 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

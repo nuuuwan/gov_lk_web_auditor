@@ -1,8 +1,8 @@
 # Website Audit: https://www.railway.gov.lk/
 
-- Completed: 2026-09-27 06:59
+- Completed: 2026-09-28 06:58
 - Overall result: ⚫ Level 0
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; timed out; timed out
+Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; An HTTP probe was transient; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Insufficient substantive page content: Only 32 visible characters across 1 pages
 | site_not_defaced | ❓ | Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200 |
 | content_relevant | ❓ | Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200 |
 | hosting_configured | ❓ | Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.railway.gov.lk/: Probe 2: timed out; https://www.railway.gov.lk/: Probe 3: timed out; http://www.railway.gov.lk/: Probe 4: timed out |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

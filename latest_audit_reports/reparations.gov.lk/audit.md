@@ -1,8 +1,8 @@
 # Website Audit: https://reparations.gov.lk/
 
-- Completed: 2026-09-27 06:48
+- Completed: 2026-09-28 06:47
 - Overall result: 🔴 Level 1
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94) 11 288 6797 (5 phone numbers found); Email: info@reparations.gov.lk |
+| reachable_contacts | ✅ | Phone: +94) 11 288 3939 (5 phone numbers found); Email: info@reparations.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://airforce.lk/
 
-- Completed: 2026-09-27 06:17
+- Completed: 2026-09-28 06:17
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: of the No. 174-A Intake Fire Fighter Basic Trade Training Course (01/2026) was held on 24 September 2026 at the Fire Sch; Phone: +94112441044 (29 phone numbers found); Email: info@example.com (17 email addresses found); Published named responsibility: director
+Published postal address: of the No. 174-A Intake Fire Fighter Basic Trade Training Course (01/2026) was held on 24 September 2026 at the Fire Sch; Phone: +94 11 2441044 (29 phone numbers found); Email: info@example.com (17 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: of the No. 174-A Intake Fire Fighter Basic Trade Training Course (01/2026) was held on 24 September 2026 at the Fire Sch |
-| reachable_contacts | ✅ | Phone: +94112441044 (29 phone numbers found); Email: info@example.com (17 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2441044 (29 phone numbers found); Email: info@example.com (17 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

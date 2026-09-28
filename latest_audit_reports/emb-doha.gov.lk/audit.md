@@ -1,8 +1,8 @@
 # Website Audit: https://emb-doha.gov.lk/
 
-- Completed: 2026-09-27 06:40
+- Completed: 2026-09-28 06:40
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: P.O. Box: 19075,Building No. 21, Street No: 860, Zone 47,Doha, State of Qatar Email: slemb.doha@mfa.gov.lk Contact Numbe; Phone: +97444998660 (7 phone numbers found); Email: slemb.doha@mfa.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: P.O. Box: 19075,Building No. 21, Street No: 860, Zone 47,Doha, State of Qatar Email: slemb.doha@mfa.gov.lk Contact Numbe; Phone: +97430451601 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: P.O. Box: 19075,Building No. 21, Street No: 860, Zone 47,Doha, State of Qatar Email: slemb.doha@mfa.gov.lk Contact Numbe |
-| reachable_contacts | ✅ | Phone: +97444998660 (7 phone numbers found); Email: slemb.doha@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +97430451601 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❌

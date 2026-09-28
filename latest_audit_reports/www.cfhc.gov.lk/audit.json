@@ -1,18 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "4f9395b4-f3a7-4600-a19e-3f2368fdad69",
+  "audit_id": "6a6fffa1-3dc0-46e4-8a8d-d93b7822456a",
   "url": "https://www.cfhc.gov.lk/",
   "normalized_url": "https://www.cfhc.gov.lk/",
-  "started_at": "2026-09-27T06:34:19.121365+05:30",
-  "completed_at": "2026-09-27T06:34:24.368460+05:30",
+  "started_at": "2026-09-28T06:34:08.393015+05:30",
+  "completed_at": "2026-09-28T06:34:12.559293+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -20,88 +23,52 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-27T06:34:19.841714+05:30"
+      "observed_at": "2026-09-28T06:34:08.819278+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-27T06:34:19.841737+05:30"
+      "observed_at": "2026-09-28T06:34:08.819301+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-09-27T06:34:20.576749+05:30"
+      "observed_at": "2026-09-28T06:34:09.176308+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.cfhc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 403 at https://www.cfhc.gov.lk/",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-09-27T06:34:24.346836+05:30"
+      "observed_at": "2026-09-28T06:34:12.557245+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://www.cfhc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: Unsafe redirect blocked: [Errno -2] Name or service not known",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-09-27T06:34:24.346855+05:30"
+      "observed_at": "2026-09-28T06:34:12.557264+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.cfhc.gov.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 403 at https://www.cfhc.gov.lk/",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-09-27T06:34:24.346859+05:30"
+      "observed_at": "2026-09-28T06:34:12.557268+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://www.cfhc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: Unsafe redirect blocked: [Errno -2] Name or service not known",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-09-27T06:34:24.346862+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://www.cfhc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://www.cfhc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://www.cfhc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://www.cfhc.gov.lk/",
-      "data": {
-        "value": "0950635027"
-      }
+      "observed_at": "2026-09-28T06:34:12.557270+05:30"
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 258 visible characters across 2 pages",
       "source": "https://www.cfhc.gov.lk/"
     }
   ],
@@ -129,65 +96,53 @@
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.cfhc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 867,
+      "elapsed_ms": 409,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.cfhc.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.cfhc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 170,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Unsafe redirect blocked: [Errno -2] Name or service not known"
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": 200,
+      "status_code": 403,
       "final_url": "https://www.cfhc.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 327,
+      "elapsed_ms": 501,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "http://www.cfhc.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.cfhc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 399,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Unsafe redirect blocked: [Errno -2] Name or service not known"
     }
   ],
   "snapshots": [
     {
       "url": "https://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20260927.0634/snapshots/page-01-f77f2718a446.html",
-      "sha256": "f77f2718a446e47cd72955b48631deca6209f98a3bfefb0b9fcc2ad26f569b0a",
-      "bytes": 11812
-    },
-    {
-      "url": "http://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20260927.0634/snapshots/page-02-9decdeaa87c7.html",
-      "sha256": "9decdeaa87c71c342586027a33560f746517232f50b6c7a8423c1db1d4adabda",
-      "bytes": 11829
+      "path": "audit.output/www.cfhc.gov.lk/20260928.0634/snapshots/page-01-7271dd5c11fb.html",
+      "sha256": "7271dd5c11fb9a1052a5e91a09afbe7d148fd3388dc51c338df62a0a16f06739",
+      "bytes": 1242
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20260927.0634/snapshots/page-03-6cdf929ee042.html",
-      "sha256": "6cdf929ee0428caea0c73eea7dd4fbdf3ff96c92ce4a1762e38d8732560c2902",
-      "bytes": 11963
-    },
-    {
-      "url": "http://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20260927.0634/snapshots/page-04-d32b5e3d4708.html",
-      "sha256": "d32b5e3d4708a6722aed85662203328e09e0f844f078fa7e5a36e6251d83dead",
-      "bytes": 11896
+      "path": "audit.output/www.cfhc.gov.lk/20260928.0634/snapshots/page-02-7271dd5c11fb.html",
+      "sha256": "7271dd5c11fb9a1052a5e91a09afbe7d148fd3388dc51c338df62a0a16f06739",
+      "bytes": 1242
     }
   ],
   "reviewer_decisions": [],
@@ -204,7 +159,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -217,43 +172,43 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -303,7 +258,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.55.47.112",
+    "egress_ip": "52.173.11.67",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

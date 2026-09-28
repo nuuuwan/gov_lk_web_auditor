@@ -1,8 +1,8 @@
 # Website Audit: https://landmin.gov.lk/
 
-- Completed: 2026-09-27 07:04
-- Overall result: 🔴 Level 1
-- Vantage: 20.55.47.112 (US, github-actions)
+- Completed: 2026-09-28 07:08
+- Overall result: ⚫ Level 0
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,20 +10,20 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ✅
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 91 visible characters across 2 pages; below substance threshold 200 |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://landmin.gov.lk/: Probe 3: timed out; http://landmin.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,13 +33,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0.875050709 (57 phone numbers found); Email: dir_landacq@landmin.gov.lk (44 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: division |
+Not run because 🔴 Level 1 did not pass
 
 ## 🟢 Level 3: ❓
 

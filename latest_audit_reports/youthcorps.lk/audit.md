@@ -1,8 +1,8 @@
 # Website Audit: https://youthcorps.lk/
 
-- Completed: 2026-09-27 06:59
+- Completed: 2026-09-28 07:01
 - Overall result: 🔴 Level 1
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

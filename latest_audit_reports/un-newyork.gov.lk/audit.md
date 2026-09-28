@@ -1,8 +1,8 @@
 # Website Audit: https://un-newyork.gov.lk/
 
-- Completed: 2026-09-27 06:39
+- Completed: 2026-09-28 06:39
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.47.112 (US, github-actions)
+- Vantage: 52.173.11.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: 0266550959 (29 phone numbers found); Email: mail@slmission.com (9 email addresses found); Published named responsibility: director
+Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: 0151995494 (15 phone numbers found); Email: prun.newyork@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov. |
-| reachable_contacts | ✅ | Phone: 0266550959 (29 phone numbers found); Email: mail@slmission.com (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0151995494 (15 phone numbers found); Email: prun.newyork@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 24 hours |
+| legal_basis | ❓ | No passing legal basis evidence found |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |
