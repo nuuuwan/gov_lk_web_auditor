@@ -1,8 +1,8 @@
 # Website Audit: https://www.pmoffice.gov.lk/
 
-- Completed: 2026-09-28 07:11
+- Completed: 2026-09-29 07:13
 - Overall result: ⚫ Level 0
-- Vantage: 52.173.11.67 (US, github-actions)
+- Vantage: 135.119.239.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,15 +14,15 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-[Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer
+Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200 |
 | http_available | ✅ | HTTPS probes passed; failing variants: https://www.pmoffice.gov.lk/: Probe 1: [Errno 104] Connection reset by peer |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |

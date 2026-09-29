@@ -1,8 +1,8 @@
 # Website Audit: https://mpclg.gov.lk/
 
-- Completed: 2026-09-28 07:09
-- Overall result: 🔴 Level 1
-- Vantage: 52.173.11.67 (US, github-actions)
+- Completed: 2026-09-29 07:11
+- Overall result: 🟠 Level 2
+- Vantage: 135.119.239.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing named responsibility evidence found
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak713a23f00a5c80e0; Phone: +94 112 347 528 (3701 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakba3a2e10f7078eed |
-| reachable_contacts | ✅ | Phone: +94 112 337 161 (3752 phone numbers found); Email: K@48G9-.BYBGNPTUT |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak713a23f00a5c80e0 |
+| reachable_contacts | ✅ | Phone: +94 112 347 528 (3701 phone numbers found); Email: K@48G9-.BYBGNPTUT |
+| named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+Published published update date: 10/01/2022
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ✅ | Published legal basis: gazette |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❌ | Published published update date: 10/01/2022 |

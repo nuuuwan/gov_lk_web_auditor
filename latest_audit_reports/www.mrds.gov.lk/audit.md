@@ -1,8 +1,8 @@
 # Website Audit: https://www.mrds.gov.lk/
 
-- Completed: 2026-09-28 07:08
+- Completed: 2026-09-29 07:09
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.67 (US, github-actions)
+- Vantage: 135.119.239.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 001 Designated officer Radha Nanayakkara Additional Secatary, (Administration) 0112877377 011877125 mseadmin@sltnet.lk 0; Phone: 0112-187039. (72 phone numbers found); Email: contact@example.com (35 email addresses found); Published named responsibility: director
+Published postal address: 001 Designated officer Radha Nanayakkara Additional Secatary, (Administration) 0112877377 011877125 mseadmin@sltnet.lk 0; Phone: 011 287 7125 (72 phone numbers found); Email: contact@example.com (35 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 001 Designated officer Radha Nanayakkara Additional Secatary, (Administration) 0112877377 011877125 mseadmin@sltnet.lk 0 |
-| reachable_contacts | ✅ | Phone: 0112-187039. (72 phone numbers found); Email: contact@example.com (35 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 287 7125 (72 phone numbers found); Email: contact@example.com (35 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

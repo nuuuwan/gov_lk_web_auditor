@@ -1,8 +1,8 @@
 # Website Audit: https://hc-dhaka.gov.lk/
 
-- Completed: 2026-09-28 06:35
+- Completed: 2026-09-29 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.67 (US, github-actions)
+- Vantage: 135.119.239.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: House No.10, Rd No 62, Gulshan 2, Dhaka 1212 Email: slhc.dhaka@mfa.gov.lk Tel: +8802222296353 Register as a Sri Lankan A; Phone: 0.518939103 (19 phone numbers found); Email: slhc.dhaka@mfa.gov.lk (7 email addresses found); Published named responsibility: director
+Published postal address: House No.10, Rd No 62, Gulshan 2, Dhaka 1212 Email: slhc.dhaka@mfa.gov.lk Tel: +8802222296353 Register as a Sri Lankan A; Phone: 0222229635 (23 phone numbers found); Email: slhc.dhaka@mfa.gov.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: House No.10, Rd No 62, Gulshan 2, Dhaka 1212 Email: slhc.dhaka@mfa.gov.lk Tel: +8802222296353 Register as a Sri Lankan A |
-| reachable_contacts | ✅ | Phone: 0.518939103 (19 phone numbers found); Email: slhc.dhaka@mfa.gov.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0222229635 (23 phone numbers found); Email: slhc.dhaka@mfa.gov.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌
@@ -51,7 +51,7 @@ Published published update date: 1 January 2022
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 3 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.courtofappeal.lk/
 
-- Completed: 2026-09-28 07:12
+- Completed: 2026-09-29 07:15
 - Overall result: 🟠 Level 2
-- Vantage: 52.173.11.67 (US, github-actions)
+- Vantage: 135.119.239.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie; Phone: 0852956771 (33 phone numbers found); Email: registrarofca@gmail.com (4 email addresses found); Published named responsibility: division
+Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie; Phone: 0686492919 (33 phone numbers found); Email: registrarofca@gmail.com (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie |
-| reachable_contacts | ✅ | Phone: 0852956771 (33 phone numbers found); Email: registrarofca@gmail.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0686492919 (33 phone numbers found); Email: registrarofca@gmail.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

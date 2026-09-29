@@ -1,8 +1,8 @@
 # Website Audit: https://productivity.lk/
 
-- Completed: 2026-09-28 06:50
-- Overall result: 🟠 Level 2
-- Vantage: 52.173.11.67 (US, github-actions)
+- Completed: 2026-09-29 06:47
+- Overall result: ⚫ Level 0
+- Vantage: 135.119.239.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ✅
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://productivity.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,33 +26,17 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | http_available | ✅ | HTTPS probes passed; failing variants: http://productivity.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289; Phone: +94) 112 186 025 (20 phone numbers found); Email: info@productivity.gov.lk (2 email addresses found); Published named responsibility: division
-
-| Test | Result | Details |
-| --- | --- | --- |
-| postal_address | ✅ | Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289 |
-| reachable_contacts | ✅ | Phone: +94) 112 186 025 (20 phone numbers found); Email: info@productivity.gov.lk (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: division |
+Not run because 🔴 Level 1 did not pass
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: supporting documents |
-| fees_and_payment | ✅ | Published fees and payment: Free of Charge |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 5 Days |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

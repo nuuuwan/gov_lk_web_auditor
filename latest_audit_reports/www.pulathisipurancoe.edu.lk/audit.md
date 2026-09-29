@@ -1,8 +1,8 @@
 # Website Audit: https://www.pulathisipurancoe.edu.lk/
 
-- Completed: 2026-09-28 06:24
+- Completed: 2026-09-29 06:22
 - Overall result: 🔴 Level 1
-- Vantage: 52.173.11.67 (US, github-actions)
+- Vantage: 135.119.239.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
