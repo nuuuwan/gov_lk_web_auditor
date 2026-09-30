@@ -1,8 +1,8 @@
 # Website Audit: https://valuationdept.gov.lk/
 
-- Completed: 2026-09-29 06:32
+- Completed: 2026-09-30 06:32
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka; Phone: +94 11 269 4381 (7 phone numbers found); Email: cv@valuationdept.gov.lk; Published named responsibility: department
+Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka; Phone: 0 11 12 13 14 1 (7 phone numbers found); Email: cv@valuationdept.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 269 4381 (7 phone numbers found); Email: cv@valuationdept.gov.lk |
+| reachable_contacts | ✅ | Phone: 0 11 12 13 14 1 (7 phone numbers found); Email: cv@valuationdept.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs , |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

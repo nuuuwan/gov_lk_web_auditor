@@ -1,8 +1,8 @@
 # Website Audit: https://www.auditorgeneral.gov.lk/
 
-- Completed: 2026-09-29 07:15
+- Completed: 2026-09-30 07:04
 - Overall result: ⚫ Level 0
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ❌
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; timed out; timed out
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.auditorgeneral.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,20 +23,8 @@ Insufficient substantive page content: Only 173 visible characters across 2 page
 | site_not_defaced | ❓ | Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200 |
 | content_relevant | ❓ | Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200 |
 | hosting_configured | ❓ | Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200 |
-| http_available | ❓ | An HTTP probe was transient |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
-
-## 🟠 Level 2: ❓
-
-To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
-
-Not run because 🔴 Level 1 did not pass
-
-## 🟢 Level 3: ❓
-
-To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
-
-Not run because 🟠 Level 2 did not pass
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.auditorgeneral.gov.lk'. (_ssl.c:1010) |
+| tls_not_expired | ❓ | TLS expiry check did not run |
+| tls_hostname_matches | ❌ | TLS certificate does not match the hostname |

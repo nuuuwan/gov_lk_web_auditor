@@ -1,8 +1,8 @@
 # Website Audit: https://cg-toronto.gov.lk/
 
-- Completed: 2026-09-29 06:38
+- Completed: 2026-09-30 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 1 Eglinton Avenue East - Suite 501, Toronto, Ontario M4P 3A1 Tel: +1 (416) 323-9133 Email: slcg.toronto@mfa.gov.lk Regis; Phone: 0623465317 (15 phone numbers found); Email: slcg.toronto@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: 1 Eglinton Avenue East - Suite 501, Toronto, Ontario M4P 3A1 Tel: +1 (416) 323-9133 Email: slcg.toronto@mfa.gov.lk Regis; Phone: +14163239133 (15 phone numbers found); Email: slcg.toronto@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 1 Eglinton Avenue East - Suite 501, Toronto, Ontario M4P 3A1 Tel: +1 (416) 323-9133 Email: slcg.toronto@mfa.gov.lk Regis |
-| reachable_contacts | ✅ | Phone: 0623465317 (15 phone numbers found); Email: slcg.toronto@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +14163239133 (15 phone numbers found); Email: slcg.toronto@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

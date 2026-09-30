@@ -1,8 +1,8 @@
 # Website Audit: https://ccf.gov.lk/
 
-- Completed: 2026-09-29 06:11
+- Completed: 2026-09-30 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973; Phone: +94 112 587 912 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found); Published named responsibility: director
+Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973; Phone: +94 112 508 973 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973 |
-| reachable_contacts | ✅ | Phone: +94 112 587 912 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 508 973 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

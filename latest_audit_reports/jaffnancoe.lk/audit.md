@@ -1,8 +1,8 @@
 # Website Audit: https://jaffnancoe.lk/
 
-- Completed: 2026-09-29 06:22
+- Completed: 2026-09-30 06:23
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0.04.2026 202 (7 phone numbers found); Email: cinthujaj@gmail.com (37 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0094212230036 (7 phone numbers found); Email: Kamsananthy@gmail.com (37 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

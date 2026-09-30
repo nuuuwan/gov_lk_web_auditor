@@ -1,8 +1,8 @@
 # Website Audit: https://hc-singapore.gov.lk/
 
-- Completed: 2026-09-29 06:34
+- Completed: 2026-09-30 06:35
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: +6562544596 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: department
+Published postal address: Line 2\",\"appointment_date\":\"Appointment Date\",\"validation_other_name_format\":\"Other name should contain only let; Phone: 054-9847-457 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: +6562544596 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
+| postal_address | ✅ | Published postal address: Line 2\",\"appointment_date\":\"Appointment Date\",\"validation_other_name_format\":\"Other name should contain only let |
+| reachable_contacts | ✅ | Phone: 054-9847-457 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

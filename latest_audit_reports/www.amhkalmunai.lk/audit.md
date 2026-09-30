@@ -1,8 +1,8 @@
 # Website Audit: https://www.amhkalmunai.lk/
 
-- Completed: 2026-09-29 06:42
+- Completed: 2026-09-30 06:40
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

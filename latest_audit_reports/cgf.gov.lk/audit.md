@@ -1,8 +1,8 @@
 # Website Audit: https://cgf.gov.lk/
 
-- Completed: 2026-09-29 06:44
+- Completed: 2026-09-30 06:42
 - Overall result: ⚫ Level 0
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | HTTP checks did not run |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1010) |
 | tls_not_expired | ❌ | TLS certificate has expired |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.fincom.gov.lk/
 
-- Completed: 2026-09-29 07:13
+- Completed: 2026-09-30 07:16
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

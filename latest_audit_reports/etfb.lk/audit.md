@@ -1,8 +1,8 @@
 # Website Audit: https://etfb.lk/
 
-- Completed: 2026-09-29 06:30
+- Completed: 2026-09-30 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: with effect from 01st July 2025. Lake House Building (the rear access road) No. 35, D.R. Wijewardena Mawatha, Colombo 10; Phone: +94-11-7747200 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found); Published named responsibility: director
+Published postal address: with effect from 01st July 2025. Lake House Building (the rear access road) No. 35, D.R. Wijewardena Mawatha, Colombo 10; Phone: 0 17.67 14.33 3 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: with effect from 01st July 2025. Lake House Building (the rear access road) No. 35, D.R. Wijewardena Mawatha, Colombo 10 |
-| reachable_contacts | ✅ | Phone: +94-11-7747200 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 17.67 14.33 3 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

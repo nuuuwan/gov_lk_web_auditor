@@ -1,8 +1,8 @@
 # Website Audit: https://emb-telaviv.gov.lk/
 
-- Completed: 2026-09-29 06:39
+- Completed: 2026-09-30 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"pagination_next\":\"Next\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"appoin; Phone: +97235277635 (4 phone numbers found); Email: slemb.telaviv@mfa.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: in Sri Lanka\",\"validation_other_name_required\":\"Other Name is required\",\"validation_nic_format\":\"Invalid NIC for; Phone: +97235277635 (4 phone numbers found); Email: slemb.telaviv@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Line 2\",\"pagination_next\":\"Next\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"appoin |
+| postal_address | ✅ | Published postal address: in Sri Lanka\",\"validation_other_name_required\":\"Other Name is required\",\"validation_nic_format\":\"Invalid NIC for |
 | reachable_contacts | ✅ | Phone: +97235277635 (4 phone numbers found); Email: slemb.telaviv@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 

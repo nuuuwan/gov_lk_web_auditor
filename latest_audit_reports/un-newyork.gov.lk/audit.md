@@ -1,8 +1,8 @@
 # Website Audit: https://un-newyork.gov.lk/
 
-- Completed: 2026-09-29 06:39
+- Completed: 2026-09-30 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: 0161995494 (30 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found); Published named responsibility: director
+Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: +12129867040 (31 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov. |
-| reachable_contacts | ✅ | Phone: 0161995494 (30 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: +12129867040 (31 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing downloadable form evidence found; No passing published update date ev
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: RS, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

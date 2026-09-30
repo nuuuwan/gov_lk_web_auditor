@@ -1,8 +1,8 @@
 # Website Audit: https://emb-rome.gov.lk/
 
-- Completed: 2026-09-29 06:36
+- Completed: 2026-09-30 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

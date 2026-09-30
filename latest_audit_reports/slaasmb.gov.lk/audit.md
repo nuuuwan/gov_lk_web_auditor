@@ -1,8 +1,8 @@
 # Website Audit: https://slaasmb.gov.lk/
 
-- Completed: 2026-09-29 06:33
+- Completed: 2026-09-30 06:32
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka; Phone: 01210 94-11-2 (6 phone numbers found); Email: agrad@slaasmb.gov.lk (8 email addresses found); Published named responsibility: director
+Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka; Phone: 01210 94-11-2 (6 phone numbers found); Email: ashaahamath@slaasmb.gov.lk (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 01210 94-11-2 (6 phone numbers found); Email: agrad@slaasmb.gov.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 01210 94-11-2 (6 phone numbers found); Email: ashaahamath@slaasmb.gov.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

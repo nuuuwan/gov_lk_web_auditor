@@ -1,8 +1,8 @@
 # Website Audit: https://www.nie.ac.lk/
 
-- Completed: 2026-09-29 06:23
+- Completed: 2026-09-30 06:24
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

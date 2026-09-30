@@ -1,8 +1,8 @@
 # Website Audit: https://drc.gov.lk/
 
-- Completed: 2026-09-29 06:56
+- Completed: 2026-09-30 06:52
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka; Phone: 011 2222 950 (41 phone numbers found); Email: info@drc.gov.lk (18 email addresses found); Published named responsibility: department
+Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka; Phone: 0.666666666 (41 phone numbers found); Email: tenders@drc.gov.lk (18 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 011 2222 950 (41 phone numbers found); Email: info@drc.gov.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.666666666 (41 phone numbers found); Email: tenders@drc.gov.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-havana.gov.lk/
 
-- Completed: 2026-09-29 06:38
+- Completed: 2026-09-30 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://emb-havana.gov.lk/: Probe 1: The read operation timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://emb-havana.gov.lk/: Probe 1: The read operation timed out |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 5ta Avenida, e/30 y 32 # 3004, Miramar, Havana, Cuba. Tel: +53 72042562 , +53 72141125 Email: slemb.havana@mfa.gov.lk Re; Phone: 0247472946 (8 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
+Published postal address: 5ta Avenida, e/30 y 32 # 3004, Miramar, Havana, Cuba. Tel: +53 72042562 , +53 72141125 Email: slemb.havana@mfa.gov.lk Re; Phone: +5372042562 (8 phone numbers found); Email: slemb.havana@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 5ta Avenida, e/30 y 32 # 3004, Miramar, Havana, Cuba. Tel: +53 72042562 , +53 72141125 Email: slemb.havana@mfa.gov.lk Re |
-| reachable_contacts | ✅ | Phone: 0247472946 (8 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +5372042562 (8 phone numbers found); Email: slemb.havana@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

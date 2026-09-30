@@ -1,8 +1,8 @@
 # Website Audit: https://www.pubsec.gov.lk/
 
-- Completed: 2026-09-29 07:05
+- Completed: 2026-09-30 06:59
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0112 786948 (11 phone numbers found); Email: info@pubsec.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112 786947 (11 phone numbers found); Email: info@pubsec.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

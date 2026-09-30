@@ -1,8 +1,8 @@
 # Website Audit: https://mbs.gov.lk/
 
-- Completed: 2026-09-29 07:08
+- Completed: 2026-09-30 07:00
 - Overall result: ⚫ Level 0
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -26,5 +26,5 @@ Detected generic hosting marker: under construction
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |

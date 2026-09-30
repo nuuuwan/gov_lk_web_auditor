@@ -1,8 +1,8 @@
 # Website Audit: https://cg-mumbai.gov.lk/
 
-- Completed: 2026-09-29 06:33
+- Completed: 2026-09-30 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m; Phone: 00-91-22) 2204 (11 phone numbers found); Email: mbai@mfa.gov.lk (6 email addresses found); Published named responsibility: director
+Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m; Phone: 0389671451 (11 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m |
-| reachable_contacts | ✅ | Phone: 00-91-22) 2204 (11 phone numbers found); Email: mbai@mfa.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0389671451 (11 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 28 July 2026 |
+| published_update_date | ✅ | Published published update date: 28 July 2025 |

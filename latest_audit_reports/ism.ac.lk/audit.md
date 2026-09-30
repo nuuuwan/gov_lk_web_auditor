@@ -1,8 +1,8 @@
 # Website Audit: https://ism.ac.lk/
 
-- Completed: 2026-09-29 06:09
+- Completed: 2026-09-30 06:11
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Telephone Extention Mobile No Mrs. M.A.M. Somalatha Director(ISM)/Senior DSG(Training) snrdsgtr@survey.gov.lk 057-222900; Phone: 0572229001 (42 phone numbers found); Email: snrdsgtr@survey.gov.lk (26 email addresses found); Published named responsibility: director
+Published postal address: Telephone Extention Mobile No Mrs. M.A.M. Somalatha Director(ISM)/Senior DSG(Training) snrdsgtr@survey.gov.lk 057-222900; Phone: +94 57-2229001 (41 phone numbers found); Email: snrdsgtr@survey.gov.lk (26 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Telephone Extention Mobile No Mrs. M.A.M. Somalatha Director(ISM)/Senior DSG(Training) snrdsgtr@survey.gov.lk 057-222900 |
-| reachable_contacts | ✅ | Phone: 0572229001 (42 phone numbers found); Email: snrdsgtr@survey.gov.lk (26 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 57-2229001 (41 phone numbers found); Email: snrdsgtr@survey.gov.lk (26 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -52,7 +52,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: circular |
+| legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://ism.ac.lk/pdf/Application Form for Detail Certificate.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

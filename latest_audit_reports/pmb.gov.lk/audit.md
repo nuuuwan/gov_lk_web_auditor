@@ -1,8 +1,8 @@
 # Website Audit: https://pmb.gov.lk/
 
-- Completed: 2026-09-29 06:10
+- Completed: 2026-09-30 06:12
 - Overall result: ⚫ Level 0
-- Vantage: 135.119.239.35 (US, github-actions)
+- Vantage: 52.225.96.35 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,5 +26,5 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010) |
-| tls_not_expired | ❓ | TLS expiry check did not run |
-| tls_hostname_matches | ❌ | TLS certificate does not match the hostname |
+| tls_not_expired | ❓ | _ssl.c:993: The handshake operation timed out |
+| tls_hostname_matches | ❓ | _ssl.c:993: The handshake operation timed out |
