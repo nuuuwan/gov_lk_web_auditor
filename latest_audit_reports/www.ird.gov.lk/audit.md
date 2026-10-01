@@ -1,8 +1,8 @@
 # Website Audit: https://www.ird.gov.lk/
 
-- Completed: 2026-09-30 06:31
+- Completed: 2026-10-01 06:38
 - Overall result: 🔴 Level 1
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0000000000 (90 phone numbers found); Email: ranasinghe.sp@ird.gov.lk (47 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0000000000 (87 phone numbers found); Email: dharmawardene.kgpk@ird.gov.lk (47 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

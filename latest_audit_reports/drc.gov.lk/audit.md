@@ -1,8 +1,8 @@
 # Website Audit: https://drc.gov.lk/
 
-- Completed: 2026-09-30 06:52
+- Completed: 2026-10-01 07:02
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka; Phone: 0.666666666 (41 phone numbers found); Email: tenders@drc.gov.lk (18 email addresses found); Published named responsibility: department
+Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka; Phone: 011 2222 950 (37 phone numbers found); Email: societies@drc.gov.lk (19 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 011 2222 950 400, D R Wijewardena Mawatha, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0.666666666 (41 phone numbers found); Email: tenders@drc.gov.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2222 950 (37 phone numbers found); Email: societies@drc.gov.lk (19 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: RS 22 |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://drc.gov.lk/en/wp-content/uploads/2026/08/%E0%B6%9A%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%BA%E0%B7%83%E0%B7%8F%E0%B6%B0%E0%B6%B1%20%E0%B7%80%E0%B7%8F%E0%B6%BB%E0%B7%8A%E0%B6%AD%E0%B7%8F%E0%B7%80%202024%20(Scanned)_compressed.pdf |

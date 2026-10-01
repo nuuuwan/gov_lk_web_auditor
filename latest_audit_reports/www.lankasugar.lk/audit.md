@@ -1,8 +1,8 @@
 # Website Audit: https://www.lankasugar.lk/
 
-- Completed: 2026-09-30 06:43
+- Completed: 2026-10-01 06:50
 - Overall result: 🔴 Level 1
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No email evidence found
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
+| postal_address | ✅ | Published postal address: 100 Innovation Way, Suite 400, Wilmington, DE 19801, United States Corporate Headquarters 500 Tech Parkway, San Francisc |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

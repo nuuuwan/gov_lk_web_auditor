@@ -1,8 +1,8 @@
 # Website Audit: https://www.irrigation.gov.lk/
 
-- Completed: 2026-09-30 06:10
+- Completed: 2026-10-01 06:15
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie; Phone: +94 11 2581 162 (29 phone numbers found); Email: info@irrigation.gov.lk; Published named responsibility: department
+Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie; Phone: +94 11 2581 162 (30 phone numbers found); Email: info@irrigation.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: PO Box 1138, 230, Bauddhaloka Mawatha, Colombo 07, E-Mail info@irrigation.gov.lk Social Media - Quick Links Home Overvie |
-| reachable_contacts | ✅ | Phone: +94 11 2581 162 (29 phone numbers found); Email: info@irrigation.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2581 162 (30 phone numbers found); Email: info@irrigation.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://www.irrigation.gov.lk/web/images/RTI/Information_Officers_-_2024.pdf |
-| published_update_date | ✅ | Published published update date: 29 September 2026 |
+| published_update_date | ✅ | Published published update date: 30 September 2026 |

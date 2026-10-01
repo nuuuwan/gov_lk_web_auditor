@@ -1,8 +1,8 @@
 # Website Audit: https://www.harti.gov.lk/
 
-- Completed: 2026-09-30 06:10
+- Completed: 2026-10-01 06:16
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: this problem by creating a hub that can capture data up streaming from the grassroots as well as managing and optimizing; Phone: +94 112698539 - (82 phone numbers found); Email: info@harti.gov.lk (42 email addresses found); Published named responsibility: division
+Published postal address: this problem by creating a hub that can capture data up streaming from the grassroots as well as managing and optimizing; Phone: 071-8000360 (82 phone numbers found); Email: librarian@harti.gov.lk (42 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: this problem by creating a hub that can capture data up streaming from the grassroots as well as managing and optimizing |
-| reachable_contacts | ✅ | Phone: +94 112698539 - (82 phone numbers found); Email: info@harti.gov.lk (42 email addresses found) |
+| reachable_contacts | ✅ | Phone: 071-8000360 (82 phone numbers found); Email: librarian@harti.gov.lk (42 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

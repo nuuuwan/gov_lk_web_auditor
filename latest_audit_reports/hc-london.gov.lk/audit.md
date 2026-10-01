@@ -1,8 +1,8 @@
 # Website Audit: https://hc-london.gov.lk/
 
-- Completed: 2026-09-30 06:37
+- Completed: 2026-10-01 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,24 +33,24 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 1\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"address_label\":\"Address (Optional; Phone: 0963990599 (8 phone numbers found); Email: contact_us@lorem.gov.ds (11 email addresses found); Published named responsibility: director
+Published postal address: Line 1\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"address_label\":\"Address (Optional; Phone: 093-7231-427 (8 phone numbers found); Email: mail@slhc-london.co.uk (11 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 1\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"address_label\":\"Address (Optional |
-| reachable_contacts | ✅ | Phone: 0963990599 (8 phone numbers found); Email: contact_us@lorem.gov.ds (11 email addresses found) |
+| reachable_contacts | ✅ | Phone: 093-7231-427 (8 phone numbers found); Email: mail@slhc-london.co.uk (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: documents required |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ✅ | Published required documents: supporting documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 03 months |

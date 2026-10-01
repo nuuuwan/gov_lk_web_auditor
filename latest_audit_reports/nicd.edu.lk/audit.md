@@ -1,8 +1,8 @@
 # Website Audit: https://nicd.edu.lk/
 
-- Completed: 2026-09-30 06:53
+- Completed: 2026-10-01 06:59
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is required","url":"Please enter a valid URL","date":"Please enter a valid date","dateISO":"Please enter a valid date (I; Phone: 021 2026-09-0 (18 phone numbers found); Email: procurement@nicd.edu.lk (28 email addresses found); Published named responsibility: director
+Published postal address: is required","url":"Please enter a valid URL","date":"Please enter a valid date","dateISO":"Please enter a valid date (I; Phone: 021 2026-09-0 (18 phone numbers found); Email: hostel@nicd.edu.lk (28 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is required","url":"Please enter a valid URL","date":"Please enter a valid date","dateISO":"Please enter a valid date (I |
-| reachable_contacts | ✅ | Phone: 021 2026-09-0 (18 phone numbers found); Email: procurement@nicd.edu.lk (28 email addresses found) |
+| reachable_contacts | ✅ | Phone: 021 2026-09-0 (18 phone numbers found); Email: hostel@nicd.edu.lk (28 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

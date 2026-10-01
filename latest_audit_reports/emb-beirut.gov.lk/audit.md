@@ -1,8 +1,8 @@
 # Website Audit: https://emb-beirut.gov.lk/
 
-- Completed: 2026-09-30 06:38
+- Completed: 2026-10-01 06:45
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,7 +45,7 @@ Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a v
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-09-15 |
+| published_update_date | ❓ | No passing published update date evidence found |

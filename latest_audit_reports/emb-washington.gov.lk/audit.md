@@ -1,8 +1,8 @@
 # Website Audit: https://emb-washington.gov.lk/
 
-- Completed: 2026-09-30 06:37
+- Completed: 2026-10-01 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 0643586879 (32 phone numbers found); Email: slemb.washington@mfa.gov.lk (3 email addresses found); Published named responsibility: division
+Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 0-8981-01277 (30 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 \| +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle |
-| reachable_contacts | ✅ | Phone: 0643586879 (32 phone numbers found); Email: slemb.washington@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0-8981-01277 (30 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+Published published update date: 1 January 2023
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ❓ | No passing legal basis evidence found |
+| legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ✅ | Published processing time: 77 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ❌ | Published published update date: 1 January 2023 |

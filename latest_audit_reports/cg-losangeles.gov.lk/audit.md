@@ -1,8 +1,8 @@
 # Website Audit: https://cg-losangeles.gov.lk/
 
-- Completed: 2026-09-30 06:37
+- Completed: 2026-10-01 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Consulate General of Sri Lanka 3250 Wilshire Blvd., Suite #2180 Los Angeles, CA 90010 USA General : +1(213)3870210 Emerg; Phone: 01-3776-4949- (25 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: 01-3776-4949- (7 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Consulate General of Sri Lanka 3250 Wilshire Blvd., Suite #2180 Los Angeles, CA 90010 USA General : +1(213)3870210 Emerg |
-| reachable_contacts | ✅ | Phone: 01-3776-4949- (25 phone numbers found); Email: john@example.com (4 email addresses found) |
+| postal_address | ✅ | Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a |
+| reachable_contacts | ✅ | Phone: 01-3776-4949- (7 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ✅ | Published processing time: 6 months |
+| legal_basis | ❓ | No passing legal basis evidence found |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

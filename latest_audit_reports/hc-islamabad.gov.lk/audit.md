@@ -1,8 +1,8 @@
 # Website Audit: https://hc-islamabad.gov.lk/
 
-- Completed: 2026-09-30 06:34
+- Completed: 2026-10-01 06:41
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: House No.24, Street No.89, Sector G-6/3, Islamabad Telephone: +92 512828723 Fax Number : +92 51 2828751 Email: Slhc.isla; Phone: 054.6243227 (18 phone numbers found); Email: Slhc.islamabad@mfa.gov.lk (10 email addresses found); Published named responsibility: director
+Published postal address: House No.24, Street No.89, Sector G-6/3, Islamabad Telephone: +92 512828723 Fax Number : +92 51 2828751 Email: Slhc.isla; Phone: 065-9026-462 (18 phone numbers found); Email: Slhc.islamabad@mfa.gov.lk (10 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: House No.24, Street No.89, Sector G-6/3, Islamabad Telephone: +92 512828723 Fax Number : +92 51 2828751 Email: Slhc.isla |
-| reachable_contacts | ✅ | Phone: 054.6243227 (18 phone numbers found); Email: Slhc.islamabad@mfa.gov.lk (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: 065-9026-462 (18 phone numbers found); Email: Slhc.islamabad@mfa.gov.lk (10 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 09/01/2026 |
+| published_update_date | ✅ | Published published update date: 12/09/2026 |

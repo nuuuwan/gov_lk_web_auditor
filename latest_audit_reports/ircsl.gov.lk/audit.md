@@ -1,8 +1,8 @@
 # Website Audit: https://ircsl.gov.lk/
 
-- Completed: 2026-09-30 06:31
-- Overall result: ⚫ Level 0
-- Vantage: 52.225.96.35 (US, github-actions)
+- Completed: 2026-10-01 06:38
+- Overall result: 🔴 Level 1
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,19 +10,19 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200 |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
@@ -33,7 +33,13 @@ Insufficient substantive page content: Only 80 visible characters across 4 pages
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Not run because 🔴 Level 1 did not pass
+No passing postal address evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: 011 2335167 ( (27 phone numbers found); Email: da@ircsl.gov.lk (23 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

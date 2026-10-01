@@ -1,8 +1,8 @@
 # Website Audit: http://www.esn.ac.lk/
 
-- Completed: 2026-09-30 06:19
+- Completed: 2026-10-01 06:26
 - Overall result: 🔴 Level 1
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 65-2240490 (33 phone numbers found); Email: vc@esn.ac.lk (20 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 65-2240490 (33 phone numbers found); Email: receptions@esn.ac.lk (20 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

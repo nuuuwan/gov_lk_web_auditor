@@ -1,8 +1,8 @@
 # Website Audit: https://nfc.gov.lk/
 
-- Completed: 2026-09-30 06:14
+- Completed: 2026-10-01 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

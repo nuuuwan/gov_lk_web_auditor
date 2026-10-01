@@ -1,8 +1,8 @@
 # Website Audit: https://hc-singapore.gov.lk/
 
-- Completed: 2026-09-30 06:35
+- Completed: 2026-10-01 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"appointment_date\":\"Appointment Date\",\"validation_other_name_format\":\"Other name should contain only let; Phone: 054-9847-457 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: department
+Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: +6562544596 (16 phone numbers found); Email: slemb.singapore@mfa.gov.lk (5 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Line 2\",\"appointment_date\":\"Appointment Date\",\"validation_other_name_format\":\"Other name should contain only let |
-| reachable_contacts | ✅ | Phone: 054-9847-457 (13 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: department |
+| postal_address | ✅ | Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu |
+| reachable_contacts | ✅ | Phone: +6562544596 (16 phone numbers found); Email: slemb.singapore@mfa.gov.lk (5 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs , |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 1300 Hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

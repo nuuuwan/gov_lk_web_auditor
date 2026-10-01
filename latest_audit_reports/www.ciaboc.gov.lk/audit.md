@@ -1,8 +1,8 @@
 # Website Audit: https://www.ciaboc.gov.lk/
 
-- Completed: 2026-09-30 07:03
+- Completed: 2026-10-01 07:13
 - Overall result: 🔴 Level 1
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: on or before 16 October 2026. Applications received after this date will be rejected. The specimen application is given  |
+| postal_address | ✅ | Published postal address: 2.2 District 2.3 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone No./WhatsApp No. 4.2 |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: division |
 

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-abudhabi.gov.lk/
 
-- Completed: 2026-09-30 06:38
+- Completed: 2026-10-01 06:46
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Embassy of Sri Lanka Villa No. 42, Sector E 18/3, Salam Street, P.O. Box: 46534, Abu Dhabi, United Arab Emirates. Teleph; Phone: 0827192046 (5 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"appointment_on\":\"on\",\"cannot_submit_review_heading\":\"Cannot Submit Review\",\"unknown_date\":\"Unknown ; Phone: +97126346481 (5 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Embassy of Sri Lanka Villa No. 42, Sector E 18/3, Salam Street, P.O. Box: 46534, Abu Dhabi, United Arab Emirates. Teleph |
-| reachable_contacts | ✅ | Phone: 0827192046 (5 phone numbers found); Email: john@example.com (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| postal_address | ✅ | Published postal address: Line 2\",\"appointment_on\":\"on\",\"cannot_submit_review_heading\":\"Cannot Submit Review\",\"unknown_date\":\"Unknown  |
+| reachable_contacts | ✅ | Phone: +97126346481 (5 phone numbers found); Email: john@example.com (2 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 

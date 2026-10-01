@@ -1,8 +1,8 @@
 # Website Audit: https://dscsc.lk/
 
-- Completed: 2026-09-30 06:14
+- Completed: 2026-10-01 06:20
 - Overall result: ⚫ Level 0
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,16 +14,16 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200
+Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200 |
-| http_available | ✅ | HTTP probes did not all fail |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 27 visible characters across 2 pages; below substance threshold 200 |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://dscsc.lk/: Probe 1: [Errno 104] Connection reset by peer; http://dscsc.lk/: Probe 2: [Errno 104] Connection reset by peer |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

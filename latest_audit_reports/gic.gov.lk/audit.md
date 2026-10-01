@@ -1,8 +1,8 @@
 # Website Audit: https://gic.gov.lk/
 
-- Completed: 2026-09-30 06:16
+- Completed: 2026-10-01 06:23
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,8 +1,8 @@
 # Website Audit: https://www.mfa.gov.lk/
 
-- Completed: 2026-09-30 06:58
+- Completed: 2026-10-01 07:06
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 1, Sri Lanka; Phone: +94112325373 (110 phone numbers found); Email: secretary@tourismmin.gov.lk (51 email addresses found); Published named responsibility: director
+Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 1, Sri Lanka; Phone: +94112381798 (110 phone numbers found); Email: secretary@tourismmin.gov.lk (51 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Foreign Affairs Republic Building, Sir Baron Jayathilake Mawatha, Colombo 1, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94112325373 (110 phone numbers found); Email: secretary@tourismmin.gov.lk (51 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112381798 (110 phone numbers found); Email: secretary@tourismmin.gov.lk (51 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

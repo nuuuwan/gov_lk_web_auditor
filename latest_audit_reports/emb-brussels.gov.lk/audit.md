@@ -1,8 +1,8 @@
 # Website Audit: https://emb-brussels.gov.lk/
 
-- Completed: 2026-09-30 06:36
+- Completed: 2026-10-01 06:43
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 27, Rue Jules Lejeune, 1050 Brussels, Belgium Telephone: +32 2 344 53 94 , +32 2 344 55 85 Email: slemb.brussels@mfa.gov; Phone: 0641690837 (10 phone numbers found); Email: consular@srilankaembassy.be (4 email addresses found); Published named responsibility: director
+Published postal address: 27, Rue Jules Lejeune, 1050 Brussels, Belgium Telephone: +32 2 344 53 94 , +32 2 344 55 85 Email: slemb.brussels@mfa.gov; Phone: +3223445394 (7 phone numbers found); Email: consular@srilankaembassy.be (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 27, Rue Jules Lejeune, 1050 Brussels, Belgium Telephone: +32 2 344 53 94 , +32 2 344 55 85 Email: slemb.brussels@mfa.gov |
-| reachable_contacts | ✅ | Phone: 0641690837 (10 phone numbers found); Email: consular@srilankaembassy.be (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +3223445394 (7 phone numbers found); Email: consular@srilankaembassy.be (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 01 January 2018
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 03 months |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 01 January 2018 |
+| published_update_date | ❓ | No passing published update date evidence found |

@@ -1,15 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c5ceb862-b75f-4107-b828-08d3b95c68c9",
+  "audit_id": "53886748-0f65-4865-bc8f-721bf6509204",
   "url": "https://pmb.gov.lk/",
   "normalized_url": "https://pmb.gov.lk/",
-  "started_at": "2026-09-30T06:11:44.489612+05:30",
-  "completed_at": "2026-09-30T06:12:04.714780+05:30",
+  "started_at": "2026-10-01T06:17:16.446841+05:30",
+  "completed_at": "2026-10-01T06:17:22.987641+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)",
+      "tls_hostname_matches: TLS certificate does not match the hostname"
     ]
   },
   "evidence": [
@@ -17,47 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-09-30T06:11:44.800402+05:30"
+      "observed_at": "2026-10-01T06:17:16.881064+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-09-30T06:11:44.800423+05:30"
+      "observed_at": "2026-10-01T06:17:16.881085+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "_ssl.c:993: The handshake operation timed out",
-      "observed_at": "2026-09-30T06:11:55.067454+05:30"
+      "check": "tls_hostname",
+      "status": "fail",
+      "detail": "TLS certificate does not match the hostname",
+      "observed_at": "2026-10-01T06:17:17.312077+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)",
       "source": "https://pmb.gov.lk/",
-      "observed_at": "2026-09-30T06:12:04.713284+05:30"
+      "observed_at": "2026-10-01T06:17:22.983501+05:30"
     },
     {
       "check": "http",
       "status": "fail",
       "detail": "Probe 2: HTTP 404 at http://pmb.gov.lk/404.html",
       "source": "http://pmb.gov.lk/",
-      "observed_at": "2026-09-30T06:12:04.713303+05:30"
+      "observed_at": "2026-10-01T06:17:22.983525+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)",
       "source": "https://pmb.gov.lk/",
-      "observed_at": "2026-09-30T06:12:04.713308+05:30"
+      "observed_at": "2026-10-01T06:17:22.983531+05:30"
     },
     {
       "check": "http",
       "status": "fail",
       "detail": "Probe 4: HTTP 404 at http://pmb.gov.lk/404.html",
       "source": "http://pmb.gov.lk/",
-      "observed_at": "2026-09-30T06:12:04.713312+05:30"
+      "observed_at": "2026-10-01T06:17:22.983536+05:30"
     },
     {
       "check": "page_text",
@@ -83,10 +84,10 @@
     },
     {
       "host": "pmb.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "_ssl.c:993: The handshake operation timed out"
+      "status": "hostname_error",
+      "expires_at": "2026-10-26T05:29:59+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate does not match the hostname"
     },
     {
       "url": "https://pmb.gov.lk/",
@@ -104,7 +105,7 @@
       "redirects": [
         "http://pmb.gov.lk/404.html"
       ],
-      "elapsed_ms": 190,
+      "elapsed_ms": 739,
       "content_type": "text/html",
       "error": null
     },
@@ -124,7 +125,7 @@
       "redirects": [
         "http://pmb.gov.lk/404.html"
       ],
-      "elapsed_ms": 2036,
+      "elapsed_ms": 133,
       "content_type": "text/html",
       "error": null
     }
@@ -132,13 +133,13 @@
   "snapshots": [
     {
       "url": "http://pmb.gov.lk/404.html",
-      "path": "audit.output/pmb.gov.lk/20260930.0611/snapshots/page-01-0b41f69e6564.html",
+      "path": "audit.output/pmb.gov.lk/20261001.0617/snapshots/page-01-0b41f69e6564.html",
       "sha256": "0b41f69e6564b9c89b1b344744c5b06eb4adc0e584028909286d2b936e1afed5",
       "bytes": 583
     },
     {
       "url": "http://pmb.gov.lk/404.html",
-      "path": "audit.output/pmb.gov.lk/20260930.0611/snapshots/page-02-0b41f69e6564.html",
+      "path": "audit.output/pmb.gov.lk/20261001.0617/snapshots/page-02-0b41f69e6564.html",
       "sha256": "0b41f69e6564b9c89b1b344744c5b06eb4adc0e584028909286d2b936e1afed5",
       "bytes": 583
     }
@@ -157,7 +158,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010)",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'pmb.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname",
       "executed": true,
       "checks": [
         {
@@ -212,13 +213,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "_ssl.c:993: The handshake operation timed out"
+          "status": "fail",
+          "reason": "TLS certificate does not match the hostname"
         }
       ]
     },
@@ -256,7 +257,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.225.96.35",
+    "egress_ip": "172.183.89.40",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://govtech.lk/
 
-- Completed: 2026-09-30 06:17
+- Completed: 2026-10-01 06:24
 - Overall result: 🔴 Level 1
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No phone evidence found; No passing named responsibility evidence found
+No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Full-time C-Suite View Job Details Head - Commercial Colombo, Sri Lanka |
-| reachable_contacts | ❓ | No phone evidence found |
+| postal_address | ✅ | Published postal address: may be mistyped, or the page may have moved. These will get you back on track.\"}],[\"$\",\"nav\",null,{\"aria-label\":\ |
+| reachable_contacts | ✅ | Phone: 0-1.33-.03-3.04-1. (24 phone numbers found); Email: info@govtech.lk (3 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

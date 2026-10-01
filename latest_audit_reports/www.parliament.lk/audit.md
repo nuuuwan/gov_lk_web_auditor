@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-09-30 07:05
+- Completed: 2026-10-01 07:14
 - Overall result: 🟠 Level 2
-- Vantage: 52.225.96.35 (US, github-actions)
+- Vantage: 172.183.89.40 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; }; Phone: 0112862365 (8 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
+Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; }; Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; } |
-| reachable_contacts | ✅ | Phone: 0112862365 (8 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ❓ | No passing legal basis evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-09-25 |
+| published_update_date | ❓ | No passing published update date evidence found |
