@@ -1,8 +1,8 @@
 # Website Audit: https://emb-hanoi.gov.lk/
 
-- Completed: 2026-10-01 06:42
+- Completed: 2026-10-02 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0310270009 (10 phone numbers found); Email: slemb.hanoi@mfa.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0283535329 (13 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 0310270009 (10 phone numbers found); Email: slemb.hanoi@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0283535329 (13 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ✅ | Published required documents: required documents |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 10 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

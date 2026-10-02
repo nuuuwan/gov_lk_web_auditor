@@ -1,8 +1,8 @@
 # Website Audit: https://emb-yangon.gov.lk/
 
-- Completed: 2026-10-01 06:42
+- Completed: 2026-10-02 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi; Phone: 00951 23143 (12 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi; Phone: 0844929544 (17 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi |
-| reachable_contacts | ✅ | Phone: 00951 23143 (12 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0844929544 (17 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,8 +51,8 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: RS, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 08/11/2026 |
+| published_update_date | ✅ | Published published update date: 28 September 2026 |

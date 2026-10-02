@@ -1,8 +1,8 @@
 # Website Audit: https://hc-canberra.gov.lk/
 
-- Completed: 2026-10-01 06:41
+- Completed: 2026-10-02 06:35
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em; Phone: +61-2-6198-3756 (24 phone numbers found); Email: slhccbracct@gmail.com (8 email addresses found); Published named responsibility: director
+Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em; Phone: 0108-7120-45 (24 phone numbers found); Email: slhc.canberra@mfa.gov.lk (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em |
-| reachable_contacts | ✅ | Phone: +61-2-6198-3756 (24 phone numbers found); Email: slhccbracct@gmail.com (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0108-7120-45 (24 phone numbers found); Email: slhc.canberra@mfa.gov.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing published update date evidence found
+No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing published update date evidence found
 | fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ✅ | Published legal basis: legal basis |
 | processing_time | ✅ | Published processing time: 8 weeks |
-| downloadable_form | ✅ | Published downloadable form: https://www.slhcaust.org/wp-content/uploads/2024/06/Dual-Citizenship-application-2024.pdf |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

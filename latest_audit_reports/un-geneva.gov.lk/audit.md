@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-10-01 06:44
+- Completed: 2026-10-02 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De; Phone: 022 919 12 50 (8 phone numbers found); Email: prun.geneva@mfa.gov.lk (4 email addresses found); Published named responsibility: division
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"validation_surname_format\":\"Surname should contain on; Phone: 0797173552 (11 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De |
-| reachable_contacts | ✅ | Phone: 022 919 12 50 (8 phone numbers found); Email: prun.geneva@mfa.gov.lk (4 email addresses found) |
+| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"validation_surname_format\":\"Surname should contain on |
+| reachable_contacts | ✅ | Phone: 0797173552 (11 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ✅ | Published processing time: 14 weeks |
+| processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

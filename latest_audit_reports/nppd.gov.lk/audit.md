@@ -1,8 +1,8 @@
 # Website Audit: https://nppd.gov.lk/
 
-- Completed: 2026-10-01 07:05
+- Completed: 2026-10-02 07:00
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

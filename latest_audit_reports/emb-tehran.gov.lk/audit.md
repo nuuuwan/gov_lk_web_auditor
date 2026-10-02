@@ -1,8 +1,8 @@
 # Website Audit: https://emb-tehran.gov.lk/
 
-- Completed: 2026-10-01 06:45
+- Completed: 2026-10-02 06:40
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Embassy of the Democratic Socialist Republic of Sri Lanka, No.72, Dr.Yadolah Samareh St., Africa Blvd., Tehran, Iran. Te; Phone: +982188656253 (5 phone numbers found); Email: slembiran@yahoo.com (2 email addresses found); Published named responsibility: director
+Published postal address: Embassy of the Democratic Socialist Republic of Sri Lanka, No.72, Dr.Yadolah Samareh St., Africa Blvd., Tehran, Iran. Te; Phone: 02.33721349 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Embassy of the Democratic Socialist Republic of Sri Lanka, No.72, Dr.Yadolah Samareh St., Africa Blvd., Tehran, Iran. Te |
-| reachable_contacts | ✅ | Phone: +982188656253 (5 phone numbers found); Email: slembiran@yahoo.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 02.33721349 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
+| required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: free of charge |
-| legal_basis | ❓ | No passing legal basis evidence found |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

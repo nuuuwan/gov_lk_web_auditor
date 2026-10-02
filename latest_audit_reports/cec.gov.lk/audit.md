@@ -1,8 +1,8 @@
 # Website Audit: https://cec.gov.lk/
 
-- Completed: 2026-10-01 06:58
+- Completed: 2026-10-02 06:56
 - Overall result: 🔴 Level 1
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
+No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 022 162969 1 (14 phone numbers found); Email: cec.gov1@gmail.com |
-| named_responsibility | ✅ | Published named responsibility: department |
+| reachable_contacts | ❓ | No phone or email evidence found |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 

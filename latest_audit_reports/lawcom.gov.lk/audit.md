@@ -1,8 +1,8 @@
 # Website Audit: https://lawcom.gov.lk/
 
-- Completed: 2026-10-01 06:51
-- Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Completed: 2026-10-02 06:47
+- Overall result: ⚫ Level 0
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,49 +10,21 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ✅
+## 🔴 Level 1: ❌
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Every repeated HTTP probe failed: [409, 409, 409, 409]
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
-| redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200 |
+| http_available | ❌ | Every repeated HTTP probe failed: [409, 409, 409, 409] |
+| redirect_related | ❓ | No redirect result was available |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
-
-## 🟠 Level 2: ✅
-
-To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
-
-Published postal address: the above issues with relevant stakeholders and to submit a proposal. Present Status The Law Commission appointed a Subc; Phone: +94 112 333 884 (10 phone numbers found); Email: depoflawcommission@gmail.com (2 email addresses found); Published named responsibility: department
-
-| Test | Result | Details |
-| --- | --- | --- |
-| postal_address | ✅ | Published postal address: the above issues with relevant stakeholders and to submit a proposal. Present Status The Law Commission appointed a Subc |
-| reachable_contacts | ✅ | Phone: +94 112 333 884 (10 phone numbers found); Email: depoflawcommission@gmail.com (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: department |
-
-## 🟢 Level 3: ❌
-
-To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
-
-Published published update date: 16 February 2024
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 16 February 2024 |

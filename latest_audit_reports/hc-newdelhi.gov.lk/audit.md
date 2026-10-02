@@ -1,8 +1,8 @@
 # Website Audit: https://hc-newdelhi.gov.lk/
 
-- Completed: 2026-10-01 06:40
+- Completed: 2026-10-02 06:34
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 27, Kautilya Marg, Chanakyapuri, New Delhi 110021. Telephone : +91 11 2301 0201 , +91 11 2301 0203 Fax : +91 011 2379 36; Phone: 0091 11 2301 (20 phone numbers found); Email: john@example.com (6 email addresses found); Published named responsibility: director
+Published postal address: 27, Kautilya Marg, Chanakyapuri, New Delhi 110021. Telephone : +91 11 2301 0201 , +91 11 2301 0203 Fax : +91 011 2379 36; Phone: +911123010201 (20 phone numbers found); Email: john@example.com (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 27, Kautilya Marg, Chanakyapuri, New Delhi 110021. Telephone : +91 11 2301 0201 , +91 11 2301 0203 Fax : +91 011 2379 36 |
-| reachable_contacts | ✅ | Phone: 0091 11 2301 (20 phone numbers found); Email: john@example.com (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +911123010201 (20 phone numbers found); Email: john@example.com (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

@@ -1,8 +1,8 @@
 # Website Audit: https://www.energymin.gov.lk/
 
-- Completed: 2026-10-01 07:11
+- Completed: 2026-10-02 07:10
 - Overall result: 🔴 Level 1
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: .address-item .address-icon::before, .team-slider-style4 .team-carousel .team-item:hover, #rs-header.header-transparent  |
-| reachable_contacts | ✅ | Phone: +94 11 2 574915 (6 phone numbers found); Email: info@energymin.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2 574922 (6 phone numbers found); Email: secretary@energymin.gov.lk (4 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

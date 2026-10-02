@@ -1,8 +1,8 @@
 # Website Audit: https://emb-brasilia.gov.lk/
 
-- Completed: 2026-10-01 06:44
+- Completed: 2026-10-02 06:39
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to the staff, Ambassador Chaminda Colonne highlighted on the current situation in Sri Lanka, aftermath of Cyclone Ditwah; Phone: 035-9847-452 (10 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: (Optional)\",\"validation_surname_format\":\"Surname should contain only letters, spaces and hyphens\",\"address_line_1_; Phone: +55 61 3541 3488 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: to the staff, Ambassador Chaminda Colonne highlighted on the current situation in Sri Lanka, aftermath of Cyclone Ditwah |
-| reachable_contacts | ✅ | Phone: 035-9847-452 (10 phone numbers found); Email: john@example.com (2 email addresses found) |
+| postal_address | ✅ | Published postal address: (Optional)\",\"validation_surname_format\":\"Surname should contain only letters, spaces and hyphens\",\"address_line_1_ |
+| reachable_contacts | ✅ | Phone: +55 61 3541 3488 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -53,6 +53,6 @@ No passing downloadable form evidence found; No passing published update date ev
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 90 days |
+| processing_time | ✅ | Published processing time: 03 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-doha.gov.lk/
 
-- Completed: 2026-10-01 06:45
+- Completed: 2026-10-02 06:40
 - Overall result: 🟠 Level 2
-- Vantage: 172.183.89.40 (US, github-actions)
+- Vantage: 52.150.29.100 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: P.O. Box: 19075,Building No. 21, Street No: 860, Zone 47,Doha, State of Qatar Email: slemb.doha@mfa.gov.lk Contact Numbe; Phone: 01-4511-8488- (8 phone numbers found); Email: slemb.doha@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: P.O. Box: 19075,Building No. 21, Street No: 860, Zone 47,Doha, State of Qatar Email: slemb.doha@mfa.gov.lk Contact Numbe; Phone: 09.11167093 (8 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: P.O. Box: 19075,Building No. 21, Street No: 860, Zone 47,Doha, State of Qatar Email: slemb.doha@mfa.gov.lk Contact Numbe |
-| reachable_contacts | ✅ | Phone: 01-4511-8488- (8 phone numbers found); Email: slemb.doha@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 09.11167093 (8 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+Published published update date: 12 June 1976
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ❌ | Published published update date: 12 June 1976 |
