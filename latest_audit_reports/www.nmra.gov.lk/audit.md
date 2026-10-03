@@ -1,8 +1,8 @@
 # Website Audit: https://www.nmra.gov.lk/
 
-- Completed: 2026-10-02 06:43
+- Completed: 2026-10-03 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found); Published named responsibility: division
+Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2698896 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2698896 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing published update date
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 6 months |
-| downloadable_form | ✅ | Published downloadable form: https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/6788ae933b4fafc59d2053ba_2025.1.16-20250116115407.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/6abf21aca21719d7221b9894_F-MDR-036%20%20Form%201-adverse%20events%20related%20to%20medical%20devices%20including%20in%20vitro%20diagnostics.docx |
 | published_update_date | ❓ | No passing published update date evidence found |

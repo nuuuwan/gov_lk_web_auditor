@@ -1,8 +1,8 @@
 # Website Audit: https://phsrc.lk/
 
-- Completed: 2026-10-02 06:44
+- Completed: 2026-10-03 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Registrar Sri Lanka Medical Council, Norris Canal Road, Colombo 10 Sri Lanka; Phone: 02 11 2023 - 14 (4 phone numbers found); Email: phsrc2015@gmail.com; Published named responsibility: director
+Published postal address: Registrar Sri Lanka Medical Council, Norris Canal Road, Colombo 10 Sri Lanka; Phone: 06 08 2025 - 08 (4 phone numbers found); Email: phsrc2015@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Registrar Sri Lanka Medical Council, Norris Canal Road, Colombo 10 Sri Lanka |
-| reachable_contacts | ✅ | Phone: 02 11 2023 - 14 (4 phone numbers found); Email: phsrc2015@gmail.com |
+| reachable_contacts | ✅ | Phone: 06 08 2025 - 08 (4 phone numbers found); Email: phsrc2015@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

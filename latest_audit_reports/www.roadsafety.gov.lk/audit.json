@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1c84d049-cad9-417a-a1f5-ac0aa1f031cc",
+  "audit_id": "2c276667-3039-417b-a557-3a3d726efd4d",
   "url": "https://www.roadsafety.gov.lk/",
   "normalized_url": "https://www.roadsafety.gov.lk/",
-  "started_at": "2026-10-02T06:59:33.160063+05:30",
-  "completed_at": "2026-10-02T06:59:41.070114+05:30",
+  "started_at": "2026-10-03T06:49:02.941505+05:30",
+  "completed_at": "2026-10-03T06:51:14.971335+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [409, 409, 409, 409]"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -17,59 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-02T06:59:33.534358+05:30"
+      "observed_at": "2026-10-03T06:49:03.629460+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-02T06:59:33.534377+05:30"
+      "observed_at": "2026-10-03T06:49:03.629479+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-02T06:59:33.792771+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-03T06:49:13.927395+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 409 at https://www.roadsafety.gov.lk/index.php/si/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.roadsafety.gov.lk/",
-      "observed_at": "2026-10-02T06:59:41.068497+05:30"
+      "observed_at": "2026-10-03T06:51:14.971172+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 409 at http://www.roadsafety.gov.lk/index.php/si/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.roadsafety.gov.lk/",
-      "observed_at": "2026-10-02T06:59:41.068522+05:30"
+      "observed_at": "2026-10-03T06:51:14.971192+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 409 at https://www.roadsafety.gov.lk/index.php/si/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.roadsafety.gov.lk/",
-      "observed_at": "2026-10-02T06:59:41.068529+05:30"
+      "observed_at": "2026-10-03T06:51:14.971196+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 409 at http://www.roadsafety.gov.lk/index.php/si/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.roadsafety.gov.lk/",
-      "observed_at": "2026-10-02T06:59:41.068534+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 0 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://www.roadsafety.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [409, 409, 409, 409]",
-      "observed_at": "2026-10-02T06:59:41.069207+05:30"
+      "observed_at": "2026-10-03T06:51:14.971199+05:30"
     }
   ],
   "observations": [
@@ -89,82 +85,49 @@
     },
     {
       "host": "www.roadsafety.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-25T00:47:51+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.roadsafety.gov.lk/",
-      "status_code": 409,
-      "final_url": "https://www.roadsafety.gov.lk/index.php/si/",
-      "redirects": [
-        "https://www.roadsafety.gov.lk/index.php/si/"
-      ],
-      "elapsed_ms": 282,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.roadsafety.gov.lk/",
-      "status_code": 409,
-      "final_url": "http://www.roadsafety.gov.lk/index.php/si/",
-      "redirects": [
-        "http://www.roadsafety.gov.lk/index.php/si/"
-      ],
-      "elapsed_ms": 265,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.roadsafety.gov.lk/",
-      "status_code": 409,
-      "final_url": "https://www.roadsafety.gov.lk/index.php/si/",
-      "redirects": [
-        "https://www.roadsafety.gov.lk/index.php/si/"
-      ],
-      "elapsed_ms": 254,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.roadsafety.gov.lk/",
-      "status_code": 409,
-      "final_url": "http://www.roadsafety.gov.lk/index.php/si/",
-      "redirects": [
-        "http://www.roadsafety.gov.lk/index.php/si/"
-      ],
-      "elapsed_ms": 266,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.roadsafety.gov.lk/index.php/si/",
-      "path": "audit.output/www.roadsafety.gov.lk/20261002.0659/snapshots/page-01-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
-    },
-    {
-      "url": "http://www.roadsafety.gov.lk/index.php/si/",
-      "path": "audit.output/www.roadsafety.gov.lk/20261002.0659/snapshots/page-02-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
-    },
-    {
-      "url": "https://www.roadsafety.gov.lk/index.php/si/",
-      "path": "audit.output/www.roadsafety.gov.lk/20261002.0659/snapshots/page-03-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
-    },
-    {
-      "url": "http://www.roadsafety.gov.lk/index.php/si/",
-      "path": "audit.output/www.roadsafety.gov.lk/20261002.0659/snapshots/page-04-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -178,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [409, 409, 409, 409]",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -192,31 +155,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [409, 409, 409, 409]"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -233,14 +196,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -278,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.150.29.100",
+    "egress_ip": "172.215.218.17",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

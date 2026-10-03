@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "0de98631-2d9d-4449-9910-f5f044ae2dab",
+  "audit_id": "04a003ab-5c44-4bfe-8f10-178b4f4d035b",
   "url": "https://www.socialservices.gov.lk/",
   "normalized_url": "https://www.socialservices.gov.lk/",
-  "started_at": "2026-10-02T06:54:20.371791+05:30",
-  "completed_at": "2026-10-02T06:54:29.638339+05:30",
+  "started_at": "2026-10-03T06:44:52.820342+05:30",
+  "completed_at": "2026-10-03T06:47:03.986271+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,89 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-02T06:54:20.857732+05:30"
+      "observed_at": "2026-10-03T06:44:53.315980+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-02T06:54:20.857750+05:30"
+      "observed_at": "2026-10-03T06:44:53.316000+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-02T06:54:21.125641+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-03T06:45:03.550117+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.socialservices.gov.lk/",
-      "observed_at": "2026-10-02T06:54:29.631829+05:30"
+      "observed_at": "2026-10-03T06:47:03.986119+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.socialservices.gov.lk/",
-      "observed_at": "2026-10-02T06:54:29.631846+05:30"
+      "observed_at": "2026-10-03T06:47:03.986138+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.socialservices.gov.lk/",
-      "observed_at": "2026-10-02T06:54:29.631850+05:30"
+      "observed_at": "2026-10-03T06:47:03.986142+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.socialservices.gov.lk/",
-      "observed_at": "2026-10-02T06:54:29.631854+05:30"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 269 visible characters across 4 pages",
-      "source": "https://www.socialservices.gov.lk/"
+      "observed_at": "2026-10-03T06:47:03.986145+05:30"
     }
   ],
   "observations": [
@@ -128,78 +85,49 @@
     },
     {
       "host": "www.socialservices.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-11-04T00:39:42+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 260,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
-      "redirects": [
-        "https://www.socialservices.gov.lk/"
-      ],
-      "elapsed_ms": 256,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 15,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
-      "redirects": [
-        "https://www.socialservices.gov.lk/"
-      ],
-      "elapsed_ms": 269,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261002.0654/snapshots/page-01-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261002.0654/snapshots/page-02-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261002.0654/snapshots/page-03-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261002.0654/snapshots/page-04-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -213,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -226,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -283,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found; No phone or email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No phone or email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -332,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.150.29.100",
+    "egress_ip": "172.215.218.17",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://www.ciaboc.gov.lk/
 
-- Completed: 2026-10-02 07:12
+- Completed: 2026-10-03 06:58
 - Overall result: 🔴 Level 1
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ❓ | No phone or email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| postal_address | ✅ | Published postal address: 2.2 District 2.3 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone No./WhatsApp No. 4.2 |
+| reachable_contacts | ❓ | No email evidence found |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 

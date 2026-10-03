@@ -1,8 +1,8 @@
 # Website Audit: https://www.lankasugar.lk/
 
-- Completed: 2026-10-02 06:46
+- Completed: 2026-10-03 06:39
 - Overall result: 🔴 Level 1
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: 100 Innovation Way, Suite 400, Wilmington, DE 19801, United States Corporate Headquarters 500 Tech Parkway, San Francisc |
+| postal_address | ✅ | Published postal address: No 327, Ekamuthu Mawatha, Thalangama North, Battaramulla Corporate Headquarters No 327, Ekamuthu Mawatha, Thalangama Nor |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-10-02 06:38
+- Completed: 2026-10-03 06:32
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"validation_surname_format\":\"Surname should contain on; Phone: 0797173552 (11 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found); Published named responsibility: division
+Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De; Phone: 03.12424167 (11 phone numbers found); Email: trade@lankamission.org (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"validation_surname_format\":\"Surname should contain on |
-| reachable_contacts | ✅ | Phone: 0797173552 (11 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found) |
+| postal_address | ✅ | Published postal address: was in response to the written update on ‘the situation of human rights in Sri Lanka’ presented by the United Nations De |
+| reachable_contacts | ✅ | Phone: 03.12424167 (11 phone numbers found); Email: trade@lankamission.org (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.dlcsrilanka.org/
 
-- Completed: 2026-10-02 06:51
+- Completed: 2026-10-03 06:43
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to get the latest University news, special events and student activities delivered right to your inbox. Your e-mail Subs; Phone: 0094 11 255 4 (4 phone numbers found); Email: info@dlcsrilanka.org (2 email addresses found); Published named responsibility: director
+Published postal address: to get the latest University news, special events and student activities delivered right to your inbox. Your e-mail Subs; Phone: =94112554966 (4 phone numbers found); Email: info@dlcsrilanka.org (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: to get the latest University news, special events and student activities delivered right to your inbox. Your e-mail Subs |
-| reachable_contacts | ✅ | Phone: 0094 11 255 4 (4 phone numbers found); Email: info@dlcsrilanka.org (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: =94112554966 (4 phone numbers found); Email: info@dlcsrilanka.org (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

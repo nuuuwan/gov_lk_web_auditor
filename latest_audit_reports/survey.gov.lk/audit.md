@@ -1,8 +1,8 @@
 # Website Audit: https://survey.gov.lk/
 
-- Completed: 2026-10-02 06:11
+- Completed: 2026-10-03 06:08
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: survey.gov.lk No 150, Bernad Soysa Road, Narahenpita, Colombo 05, Sri Lanka; Phone: 011) 2 36 9011 (4 phone numbers found); Email: sureydepartment.csc.@gmail.com (4 email addresses found); Published named responsibility: department
+Published postal address: survey.gov.lk No 150, Bernad Soysa Road, Narahenpita, Colombo 05, Sri Lanka; Phone: 011 2369015 (4 phone numbers found); Email: sg@survey.gov.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: survey.gov.lk No 150, Bernad Soysa Road, Narahenpita, Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 011) 2 36 9011 (4 phone numbers found); Email: sureydepartment.csc.@gmail.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2369015 (4 phone numbers found); Email: sg@survey.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://survey.gov.lk/sdweb/pdf/id.pdf |

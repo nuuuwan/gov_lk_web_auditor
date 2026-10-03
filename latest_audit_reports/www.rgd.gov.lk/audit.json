@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "694eac2a-7993-4297-b708-0be8a711fc25",
+  "audit_id": "f7f241e4-f70a-41c2-a8de-e7f35553dc81",
   "url": "https://www.rgd.gov.lk/",
   "normalized_url": "https://www.rgd.gov.lk/",
-  "started_at": "2026-10-02T06:51:18.872571+05:30",
-  "completed_at": "2026-10-02T06:53:56.242617+05:30",
+  "started_at": "2026-10-03T06:43:24.008914+05:30",
+  "completed_at": "2026-10-03T06:43:44.038327+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,47 +26,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-02T06:51:19.548467+05:30"
+      "observed_at": "2026-10-03T06:43:24.435803+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-02T06:51:19.548489+05:30"
+      "observed_at": "2026-10-03T06:43:24.435820+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-02T06:51:29.800519+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-03T06:43:25.174678+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://www.rgd.gov.lk/",
       "source": "https://www.rgd.gov.lk/",
-      "observed_at": "2026-10-02T06:53:56.229649+05:30"
+      "observed_at": "2026-10-03T06:43:43.427701+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://www.rgd.gov.lk/",
       "source": "http://www.rgd.gov.lk/",
-      "observed_at": "2026-10-02T06:53:56.229672+05:30"
+      "observed_at": "2026-10-03T06:43:43.427722+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 3: HTTP 200 at https://www.rgd.gov.lk/",
       "source": "https://www.rgd.gov.lk/",
-      "observed_at": "2026-10-02T06:53:56.229678+05:30"
+      "observed_at": "2026-10-03T06:43:43.427726+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://www.rgd.gov.lk/",
       "source": "http://www.rgd.gov.lk/",
-      "observed_at": "2026-10-02T06:53:56.229683+05:30"
+      "observed_at": "2026-10-03T06:43:43.427729+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.rgd.gov.lk/web/index.php?lang=si",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "observed_at": "2026-10-03T06:43:43.427732+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "observed_at": "2026-10-03T06:43:43.427735+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.rgd.gov.lk/web/index.php?lang=en",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "observed_at": "2026-10-03T06:43:43.427738+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/head-office",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/head-office",
+      "observed_at": "2026-10-03T06:43:43.427741+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/branch-office",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/branch-office",
+      "observed_at": "2026-10-03T06:43:43.427743+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/birth",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/birth",
+      "observed_at": "2026-10-03T06:43:43.427746+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/marriage",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/marriage",
+      "observed_at": "2026-10-03T06:43:43.427749+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/death",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/death",
+      "observed_at": "2026-10-03T06:43:43.427751+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/translation",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/translation",
+      "observed_at": "2026-10-03T06:43:43.427754+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.rgd.gov.lk/web/index.php/si/services/document-land-registration/movable-and-immovable-properties",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/document-land-registration/movable-and-immovable-properties",
+      "observed_at": "2026-10-03T06:43:43.427756+05:30"
     },
     {
       "check": "named_responsibility",
@@ -85,12 +163,399 @@
       "source": "https://www.rgd.gov.lk/",
       "data": {
         "value": "department"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.rgd.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 889 488 ",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "+94 112 889 488 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0959593742",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "0959593742"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 889 489 ",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "+94 112 889 489 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-05-05 202",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "026-05-05 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112889488",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "+94112889488"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 94112889489",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "94112889489"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@rgd.gov.lk",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "info@rgd.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 889 488 ",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "+94 112 889 488 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0959593742",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "0959593742"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026-04-20 202",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "026-04-20 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 889 489 ",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "+94 112 889 489 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112889488",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "+94112889488"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 94112889489",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "94112889489"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@rgd.gov.lk",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "info@rgd.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 889 488 ",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "+94 112 889 488 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0959593742",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "0959593742"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 889 489 ",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "+94 112 889 489 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112889488",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "+94112889488"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 94112889489",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "94112889489"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@rgd.gov.lk",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "info@rgd.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-07-27",
+      "source": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "data": {
+        "value": "2026-07-27"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/head-office",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/head-office",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/branch-office",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/branch-office",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/birth",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/birth",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/marriage",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/marriage",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/death",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/death",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/translation",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/translation",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1930",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/document-land-registration/movable-and-immovable-properties",
+      "data": {
+        "value": "1930"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.rgd.gov.lk/web/index.php/si/services/document-land-registration/movable-and-immovable-properties",
+      "data": {
+        "value": "director"
       }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 719 visible characters across 3 pages",
+      "detail": "Substantive page content: 3061 visible characters across 14 pages",
       "source": "https://www.rgd.gov.lk/"
     }
   ],
@@ -111,17 +576,17 @@
     },
     {
       "host": "www.rgd.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-02T20:52:27+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.rgd.gov.lk/",
       "status_code": 200,
       "final_url": "https://www.rgd.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 21484,
+      "elapsed_ms": 782,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -132,7 +597,7 @@
       "redirects": [
         "https://www.rgd.gov.lk/"
       ],
-      "elapsed_ms": 1070,
+      "elapsed_ms": 997,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -141,38 +606,196 @@
       "status_code": 200,
       "final_url": "https://www.rgd.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 1033,
+      "elapsed_ms": 766,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.rgd.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/",
+      "redirects": [
+        "https://www.rgd.gov.lk/"
+      ],
+      "elapsed_ms": 760,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php?lang=si",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1207,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "redirects": [],
+      "elapsed_ms": 1169,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "redirects": [],
+      "elapsed_ms": 1170,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/head-office",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/head-office",
+      "redirects": [],
+      "elapsed_ms": 1168,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/branch-office",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/branch-office",
+      "redirects": [],
+      "elapsed_ms": 1186,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/birth",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/birth",
+      "redirects": [],
+      "elapsed_ms": 1244,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/marriage",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/marriage",
+      "redirects": [],
+      "elapsed_ms": 1290,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/death",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/death",
+      "redirects": [],
+      "elapsed_ms": 1159,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/translation",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/translation",
+      "redirects": [],
+      "elapsed_ms": 1148,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/document-land-registration/movable-and-immovable-properties",
+      "status_code": 200,
+      "final_url": "https://www.rgd.gov.lk/web/index.php/si/services/document-land-registration/movable-and-immovable-properties",
+      "redirects": [],
+      "elapsed_ms": 1176,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://www.rgd.gov.lk/",
-      "path": "audit.output/www.rgd.gov.lk/20261002.0651/snapshots/page-01-5eca46ba6839.html",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-01-5eca46ba6839.html",
       "sha256": "5eca46ba6839d1c9dba2ab1b036c95d32e05c463803cdb31a5d2bfad55ba062c",
       "bytes": 7745
     },
     {
       "url": "https://www.rgd.gov.lk/",
-      "path": "audit.output/www.rgd.gov.lk/20261002.0651/snapshots/page-02-5eca46ba6839.html",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-02-5eca46ba6839.html",
       "sha256": "5eca46ba6839d1c9dba2ab1b036c95d32e05c463803cdb31a5d2bfad55ba062c",
       "bytes": 7745
     },
     {
       "url": "https://www.rgd.gov.lk/",
-      "path": "audit.output/www.rgd.gov.lk/20261002.0651/snapshots/page-03-5eca46ba6839.html",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-03-5eca46ba6839.html",
       "sha256": "5eca46ba6839d1c9dba2ab1b036c95d32e05c463803cdb31a5d2bfad55ba062c",
       "bytes": 7745
+    },
+    {
+      "url": "https://www.rgd.gov.lk/",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-04-5eca46ba6839.html",
+      "sha256": "5eca46ba6839d1c9dba2ab1b036c95d32e05c463803cdb31a5d2bfad55ba062c",
+      "bytes": 7745
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php?lang=si",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-05-057a19e3ff8f.html",
+      "sha256": "057a19e3ff8fbda00bfe3e7bf71d5fc8736503a10b4ee2312cee17cd44b3ea40",
+      "bytes": 144237
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php?lang=ta",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-06-1786a3b97427.html",
+      "sha256": "1786a3b974278202ea386ad20b788cfe19d4abc82a746d0c89a2c303d71eed08",
+      "bytes": 145103
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php?lang=en",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-07-18d9a9710781.html",
+      "sha256": "18d9a9710781d8c340d62cc41ce2457d57045cb8cf333a752471cec8b842f737",
+      "bytes": 139189
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/head-office",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-08-34dfa3d51f90.html",
+      "sha256": "34dfa3d51f90edd136c5553ece9dba8fba841f65f66a872dee2932185a422469",
+      "bytes": 106117
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/about-us/structure1/branch-office",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-09-d335de4ce918.html",
+      "sha256": "d335de4ce91876922bf74e83fee7815b1e82b1ab946b7100fb8585d3d30f934a",
+      "bytes": 102856
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/birth",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-10-3df2b55e3f69.html",
+      "sha256": "3df2b55e3f69e6dcfe53233b485470c9692b0884def58bae4b65d1946af1fb69",
+      "bytes": 108304
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/marriage",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-11-cb46328b19b5.html",
+      "sha256": "cb46328b19b59404c99bc981a284acf94664f276521d5a030c2db1ec3e6e72b5",
+      "bytes": 109451
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/death",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-12-52acc8a2583e.html",
+      "sha256": "52acc8a2583e2f0ad747ed5a750b4010269d4f6263459ecd3f90f225ae5c3ae1",
+      "bytes": 107965
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/civil-registration/translation",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-13-62ed8ae18bcb.html",
+      "sha256": "62ed8ae18bcb28a908e50caea4785603b25b3d41a2546a7372af49e58d545aeb",
+      "bytes": 102885
+    },
+    {
+      "url": "https://www.rgd.gov.lk/web/index.php/si/services/document-land-registration/movable-and-immovable-properties",
+      "path": "audit.output/www.rgd.gov.lk/20261003.0643/snapshots/page-14-63982dbd6b6d.html",
+      "sha256": "63982dbd6b6d16b333db99a8a4b85c8d481abdda90524d8ee1af6113efde2cd1",
+      "bytes": 108507
     }
   ],
   "reviewer_decisions": [],
@@ -188,8 +811,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -226,7 +849,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://www.rgd.gov.lk/: Probe 4: timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -243,14 +866,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -258,9 +881,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 112 889 488 (8 phone numbers found); Email: info@rgd.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -288,7 +930,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.150.29.100",
+    "egress_ip": "172.215.218.17",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

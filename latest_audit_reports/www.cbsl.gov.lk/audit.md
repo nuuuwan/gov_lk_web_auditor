@@ -1,8 +1,8 @@
 # Website Audit: https://www.cbsl.gov.lk/
 
-- Completed: 2026-10-02 06:29
+- Completed: 2026-10-03 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A; Phone: 026 30.09.202 (112 phone numbers found); Email: psd@cbsl.lk (4 email addresses found); Published named responsibility: department
+Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A; Phone: 026 30.09.202 (114 phone numbers found); Email: psd@cbsl.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A |
-| reachable_contacts | ✅ | Phone: 026 30.09.202 (112 phone numbers found); Email: psd@cbsl.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 026 30.09.202 (114 phone numbers found); Email: psd@cbsl.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

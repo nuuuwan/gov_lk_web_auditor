@@ -1,8 +1,8 @@
 # Website Audit: https://landcom.gov.lk/
 
-- Completed: 2026-10-02 06:09
+- Completed: 2026-10-03 06:06
 - Overall result: 🔴 Level 1
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0112864051 (4 phone numbers found); Email: lcglandcom@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112864051 (3 phone numbers found); Email: lcglandcom@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

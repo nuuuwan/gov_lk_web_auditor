@@ -1,8 +1,8 @@
 # Website Audit: https://www.pim.sjp.ac.lk/
 
-- Completed: 2026-10-02 06:23
-- Overall result: 🔴 Level 1
-- Vantage: 52.150.29.100 (US, github-actions)
+- Completed: 2026-10-03 06:17
+- Overall result: 🟠 Level 2
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
+Published postal address: Postgraduate Institute of Management 28, Lesley Ranagala Mawatha Colombo 08 Western Province Sri Lanka body,html { /* he; Phone: 0112689639 (5 phone numbers found); Email: sar@pim.sjp.ac.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94112689639 (3 phone numbers found); Email: director@pim.sjp.ac.lk (3 email addresses found) |
+| postal_address | ✅ | Published postal address: Postgraduate Institute of Management 28, Lesley Ranagala Mawatha Colombo 08 Western Province Sri Lanka body,html { /* he |
+| reachable_contacts | ✅ | Phone: 0112689639 (5 phone numbers found); Email: sar@pim.sjp.ac.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs 0 |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ✅ | Published processing time: 60 hours |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❓ | No passing published update date evidence found |

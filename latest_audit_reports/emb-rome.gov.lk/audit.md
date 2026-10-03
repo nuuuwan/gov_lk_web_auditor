@@ -1,8 +1,8 @@
 # Website Audit: https://emb-rome.gov.lk/
 
-- Completed: 2026-10-02 06:37
+- Completed: 2026-10-03 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340 ; Phone: +393403718117 (4 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340 ; Phone: +39068840801 (4 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340  |
-| reachable_contacts | ✅ | Phone: +393403718117 (4 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +39068840801 (4 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

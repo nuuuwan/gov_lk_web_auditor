@@ -1,8 +1,8 @@
 # Website Audit: http://www.mri.gov.lk/
 
-- Completed: 2026-10-02 06:43
+- Completed: 2026-10-03 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 52.150.29.100 (US, github-actions)
+- Vantage: 172.215.218.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: , Colombo 08, Sri Lanka; Phone: 0112-693 532- (12 phone numbers found); Email: info.mri@health.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: , Colombo 08, Sri Lanka; Phone: 0 21 22 23 24 2 (12 phone numbers found); Email: info.mri@health.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: , Colombo 08, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0112-693 532- (12 phone numbers found); Email: info.mri@health.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 21 22 23 24 2 (12 phone numbers found); Email: info.mri@health.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
