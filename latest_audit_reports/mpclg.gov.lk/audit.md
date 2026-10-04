@@ -1,8 +1,8 @@
 # Website Audit: https://mpclg.gov.lk/
 
-- Completed: 2026-10-03 06:58
-- Overall result: 🔴 Level 1
-- Vantage: 172.215.218.17 (US, github-actions)
+- Completed: 2026-10-04 07:44
+- Overall result: 🟠 Level 2
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://mpclg.gov.lk/: Probe 2: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,26 +23,36 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://mpclg.gov.lk/: Probe 2: [Errno 111] Connection refused |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No email evidence found; No passing named responsibility evidence found
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakb7e9e5fafa4adb43; Phone: +94 112 347 529 (3622 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakb7e9e5fafa4adb43 |
+| reachable_contacts | ✅ | Phone: +94 112 347 529 (3622 phone numbers found); Email: K@48G9-.BYBGNPTUT |
+| named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+Published published update date: 10/01/2022
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ✅ | Published legal basis: gazette |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❌ | Published published update date: 10/01/2022 |

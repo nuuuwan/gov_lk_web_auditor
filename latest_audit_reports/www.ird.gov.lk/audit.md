@@ -1,8 +1,8 @@
 # Website Audit: https://www.ird.gov.lk/
 
-- Completed: 2026-10-03 06:25
+- Completed: 2026-10-04 07:05
 - Overall result: 🔴 Level 1
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0000000000 (90 phone numbers found); Email: fernando.rph@ird.gov.lk (47 email addresses found) |
+| reachable_contacts | ✅ | Phone: 00-0000-0000- (89 phone numbers found); Email: dharmawardene.kgpk@ird.gov.lk (47 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://rda.gov.lk/
 
-- Completed: 2026-10-03 06:50
+- Completed: 2026-10-04 07:34
 - Overall result: 🔴 Level 1
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

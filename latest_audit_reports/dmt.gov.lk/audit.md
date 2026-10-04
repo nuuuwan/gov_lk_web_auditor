@@ -1,8 +1,8 @@
 # Website Audit: https://dmt.gov.lk/
 
-- Completed: 2026-10-03 06:49
+- Completed: 2026-10-04 07:33
 - Overall result: ⚫ Level 0
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -26,5 +26,5 @@ Detected generic hosting marker: under construction
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |

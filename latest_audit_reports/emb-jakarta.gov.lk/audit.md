@@ -1,8 +1,8 @@
 # Website Audit: https://emb-jakarta.gov.lk/
 
-- Completed: 2026-10-03 06:29
+- Completed: 2026-10-04 07:11
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Jl. Putri Hijau Dalam No. 4 C-G, Medan 20111 - Indonesia Tel: +62 (61) - 4144777 Embassy of Sri Lanka in Indonesia Regis; Phone: 0159344885 (14 phone numbers found); Email: slemb.jakarta@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: Jl. Putri Hijau Dalam No. 4 C-G, Medan 20111 - Indonesia Tel: +62 (61) - 4144777 Embassy of Sri Lanka in Indonesia Regis; Phone: 0735755205 (23 phone numbers found); Email: slemb.jakarta@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Jl. Putri Hijau Dalam No. 4 C-G, Medan 20111 - Indonesia Tel: +62 (61) - 4144777 Embassy of Sri Lanka in Indonesia Regis |
-| reachable_contacts | ✅ | Phone: 0159344885 (14 phone numbers found); Email: slemb.jakarta@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0735755205 (23 phone numbers found); Email: slemb.jakarta@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

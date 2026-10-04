@@ -1,8 +1,8 @@
 # Website Audit: https://www.auditorgeneral.gov.lk/
 
-- Completed: 2026-10-03 06:59
+- Completed: 2026-10-04 07:47
 - Overall result: ⚫ Level 0
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | site_not_defaced | ❓ | Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200 |
 | content_relevant | ❓ | Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200 |
 | hosting_configured | ❓ | Insufficient substantive page content: Only 173 visible characters across 2 pages; below substance threshold 200 |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.auditorgeneral.gov.lk'. (_ssl.c:1010) |
 | tls_not_expired | ❓ | TLS expiry check did not run |

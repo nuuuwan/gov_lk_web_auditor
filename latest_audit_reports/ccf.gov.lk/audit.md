@@ -1,8 +1,8 @@
 # Website Audit: https://ccf.gov.lk/
 
-- Completed: 2026-10-03 06:08
+- Completed: 2026-10-04 06:47
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://ccf.gov.lk/: Probe 1: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://ccf.gov.lk/: Probe 1: [Errno 111] Connection refused |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973; Phone: +94 112 552 014 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found); Published named responsibility: director
+Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973; Phone: +94 112 587 912 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973 |
-| reachable_contacts | ✅ | Phone: +94 112 552 014 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 587 912 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

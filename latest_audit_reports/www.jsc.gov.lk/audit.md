@@ -1,8 +1,8 @@
 # Website Audit: https://www.jsc.gov.lk/
 
-- Completed: 2026-10-03 06:59
+- Completed: 2026-10-04 07:48
 - Overall result: ⚫ Level 0
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname
+TLS certificate does not match the hostname
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,8 +23,8 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | HTTP checks did not run |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.jsc.gov.lk'. (_ssl.c:1010) |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
 | tls_not_expired | ❓ | TLS expiry check did not run |
 | tls_hostname_matches | ❌ | TLS certificate does not match the hostname |

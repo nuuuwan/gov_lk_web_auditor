@@ -1,8 +1,8 @@
 # Website Audit: https://sugarres.lk/
 
-- Completed: 2026-10-03 06:40
+- Completed: 2026-10-04 07:22
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to enhance productivity of sugarcane to improve sugarcane varieties with disease resistance and to improve quality of th; Phone: +94) 47 22 33 281 (26 phone numbers found); Email: info@sugarres.lk (34 email addresses found); Published named responsibility: division
+Published postal address: to enhance productivity of sugarcane to improve sugarcane varieties with disease resistance and to improve quality of th; Phone: 0.066666666 (26 phone numbers found); Email: info@sugarres.lk (34 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: to enhance productivity of sugarcane to improve sugarcane varieties with disease resistance and to improve quality of th |
-| reachable_contacts | ✅ | Phone: +94) 47 22 33 281 (26 phone numbers found); Email: info@sugarres.lk (34 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.066666666 (26 phone numbers found); Email: info@sugarres.lk (34 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌

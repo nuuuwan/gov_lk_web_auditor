@@ -1,8 +1,8 @@
 # Website Audit: http://www.dcbc.gov.lk/
 
-- Completed: 2026-10-03 06:40
-- Overall result: 🔴 Level 1
-- Vantage: 172.215.218.17 (US, github-actions)
+- Completed: 2026-10-04 07:22
+- Overall result: ⚫ Level 0
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ✅
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.dcbc.gov.lk/: Probe 4: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,23 +23,17 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.dcbc.gov.lk/: Probe 4: [Errno 111] Connection refused |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ❓ | No phone or email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+Not run because 🔴 Level 1 did not pass
 
 ## 🟢 Level 3: ❓
 

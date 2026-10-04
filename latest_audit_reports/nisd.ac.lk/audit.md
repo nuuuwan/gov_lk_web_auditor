@@ -1,8 +1,8 @@
 # Website Audit: https://nisd.ac.lk/
 
-- Completed: 2026-10-03 06:45
+- Completed: 2026-10-04 07:28
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.218.17 (US, github-actions)
+- Vantage: 64.236.169.116 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Liyanagemulla, Seeduwa, Sri Lanka Contact info Telephone :+94 112 882 506 / 07 Fax: +94 112 882 502 Mail: info@nisd.ac.l; Phone: 0 10 10 10-4.47 (41 phone numbers found); Email: info@nisd.ac.lk (23 email addresses found); Published named responsibility: director
+Published postal address: Liyanagemulla, Seeduwa, Sri Lanka Contact info Telephone :+94 112 882 506 / 07 Fax: +94 112 882 502 Mail: info@nisd.ac.l; Phone: +94 112 882 506 (41 phone numbers found); Email: info@nisd.ac.lk (23 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Liyanagemulla, Seeduwa, Sri Lanka Contact info Telephone :+94 112 882 506 / 07 Fax: +94 112 882 502 Mail: info@nisd.ac.l |
-| reachable_contacts | ✅ | Phone: 0 10 10 10-4.47 (41 phone numbers found); Email: info@nisd.ac.lk (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 882 506 (41 phone numbers found); Email: info@nisd.ac.lk (23 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
