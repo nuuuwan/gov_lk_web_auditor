@@ -1,8 +1,8 @@
 # Website Audit: https://cfc.gov.lk/
 
-- Completed: 2026-10-04 07:07
+- Completed: 2026-10-05 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: P.O. Box.1384, Rock House Lane, Mutwal, Colombo 15 Sri Lanka. CALL US Tel : +94 11 2523227 - 8 EMAIL US info@cfc.gov.lk ; Phone: +94 11 2523227 -; Email: info@cfc.gov.lk; Published named responsibility: division
+Published postal address: P.O. Box.1384, Rock House Lane, Mutwal, Colombo 15 Sri Lanka. CALL US Tel : +94 11 2523227 - 8 EMAIL US info@cfc.gov.lk ; Phone: +94 11 2523227 - (2 phone numbers found); Email: info@cfc.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: P.O. Box.1384, Rock House Lane, Mutwal, Colombo 15 Sri Lanka. CALL US Tel : +94 11 2523227 - 8 EMAIL US info@cfc.gov.lk  |
-| reachable_contacts | ✅ | Phone: +94 11 2523227 -; Email: info@cfc.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2523227 - (2 phone numbers found); Email: info@cfc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.nfpb.lk/
 
-- Completed: 2026-10-04 06:46
+- Completed: 2026-10-05 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

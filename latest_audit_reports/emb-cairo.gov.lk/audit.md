@@ -1,8 +1,8 @@
 # Website Audit: https://emb-cairo.gov.lk/
 
-- Completed: 2026-10-04 07:16
+- Completed: 2026-10-05 06:43
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la; Phone: 0164890604 (14 phone numbers found); Email: slemb.cairo@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la; Phone: 00 202 2735 0 (14 phone numbers found); Email: slemb.cairo@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la |
-| reachable_contacts | ✅ | Phone: 0164890604 (14 phone numbers found); Email: slemb.cairo@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 00 202 2735 0 (14 phone numbers found); Email: slemb.cairo@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

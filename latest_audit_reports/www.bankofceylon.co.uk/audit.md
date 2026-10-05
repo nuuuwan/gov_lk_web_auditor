@@ -1,8 +1,8 @@
 # Website Audit: https://www.bankofceylon.co.uk/
 
-- Completed: 2026-10-04 07:02
+- Completed: 2026-10-05 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and Head Office: 1 Devonshire Square, London EC2M 4WD Our Products Deposits Treasury Trade Services Loan & Advances Mone; Phone: +44207 377 1888 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found); Published named responsibility: department
+Published postal address: and Head Office: 1 Devonshire Square, London EC2M 4WD Our Products Deposits Treasury Trade Services Loan & Advances Mone; Phone: 0207 377 188 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and Head Office: 1 Devonshire Square, London EC2M 4WD Our Products Deposits Treasury Trade Services Loan & Advances Mone |
-| reachable_contacts | ✅ | Phone: +44207 377 1888 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0207 377 188 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

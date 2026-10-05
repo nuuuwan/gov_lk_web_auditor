@@ -1,8 +1,8 @@
 # Website Audit: https://srilankateaboard.lk/
 
-- Completed: 2026-10-04 07:30
+- Completed: 2026-10-05 07:00
 - Overall result: ⚫ Level 0
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://srilankateaboard.lk/: Probe 2: timed out; https://srilankateaboard.lk/: Probe 3: timed out; http://srilankateaboard.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://srilankateaboard.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

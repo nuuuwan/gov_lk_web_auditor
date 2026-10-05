@@ -1,8 +1,8 @@
 # Website Audit: https://www.climatefund.lk/
 
-- Completed: 2026-10-04 07:01
+- Completed: 2026-10-05 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

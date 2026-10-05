@@ -1,8 +1,8 @@
 # Website Audit: https://www.slita.lk/
 
-- Completed: 2026-10-04 07:21
+- Completed: 2026-10-05 06:49
 - Overall result: ⚫ Level 0
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200
+Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 4 pages; below substance threshold 200; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ Insufficient substantive page content: Only 0 visible characters across 4 pages;
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | [Errno 104] Connection reset by peer |
+| tls_hostname_matches | ❓ | [Errno 104] Connection reset by peer |
 
 ## 🟠 Level 2: ❓
 

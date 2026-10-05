@@ -1,8 +1,8 @@
 # Website Audit: https://mpclg.gov.lk/
 
-- Completed: 2026-10-04 07:44
+- Completed: 2026-10-05 07:12
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakb7e9e5fafa4adb43; Phone: +94 112 347 529 (3622 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: division
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak97d9c8b9c6ecbb75; Phone: +94 112 302 720 (1467 phone numbers found); Email: K@48G9-.BYBGNPTUT; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakb7e9e5fafa4adb43 |
-| reachable_contacts | ✅ | Phone: +94 112 347 529 (3622 phone numbers found); Email: K@48G9-.BYBGNPTUT |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak97d9c8b9c6ecbb75 |
+| reachable_contacts | ✅ | Phone: +94 112 302 720 (1467 phone numbers found); Email: K@48G9-.BYBGNPTUT |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌

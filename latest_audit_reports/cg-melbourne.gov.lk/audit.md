@@ -1,8 +1,8 @@
 # Website Audit: https://cg-melbourne.gov.lk/
 
-- Completed: 2026-10-04 07:10
+- Completed: 2026-10-05 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.169.116 (US, github-actions)
+- Vantage: 172.184.220.145 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://cg-melbourne.gov.lk/: Probe 1: The read operation timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://cg-melbourne.gov.lk/: Probe 1: The read operation timed out |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 432, Level 9, St Kilda Road, Melbourne VIC 3004 Telephone: +61 3 9290 4200 Email: mail@slcgmel.org Website: www.cg-melbo; Phone: 0664301305 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found); Published named responsibility: director
+Published postal address: 432, Level 9, St Kilda Road, Melbourne VIC 3004 Telephone: +61 3 9290 4200 Email: mail@slcgmel.org Website: www.cg-melbo; Phone: +61392904200 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 432, Level 9, St Kilda Road, Melbourne VIC 3004 Telephone: +61 3 9290 4200 Email: mail@slcgmel.org Website: www.cg-melbo |
-| reachable_contacts | ✅ | Phone: 0664301305 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: +61392904200 (44 phone numbers found); Email: mail@slcgmel.org (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
