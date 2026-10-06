@@ -1,8 +1,8 @@
 # Website Audit: https://slibtec.gov.lk/
 
-- Completed: 2026-10-05 06:58
+- Completed: 2026-10-06 06:57
 - Overall result: 🔴 Level 1
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Email Contact Number Detailed Service / Equipment Requirement: Number of Samples / Hours (If Relevant) Description of Sa |
-| reachable_contacts | ✅ | Phone: +94 11 343 1844; Email: slibtec@gmail.com (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 343 1844; Email: info@slibtec.gov.lk (5 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

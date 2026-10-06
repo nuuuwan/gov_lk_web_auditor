@@ -1,8 +1,8 @@
 # Website Audit: https://rti.gov.lk/
 
-- Completed: 2026-10-05 07:14
+- Completed: 2026-10-06 07:10
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 163, Asidisi Medura, Kirulapone Mawatha, Polhengoda, Colombo 05, Sri Lanka RTI 10 Steps Process New Email Please copy (C; Phone: 0 -80 34 0 48 6 7 (4608 phone numbers found); Email: rti@media.gov.lk (1782 email addresses found); Published named responsibility: officer in charge
+Published postal address: 163, Asidisi Medura, Kirulapone Mawatha, Polhengoda, Colombo 05, Sri Lanka RTI 10 Steps Process New Email Please copy (C; Phone: 0 30 -99 39 -137 (4608 phone numbers found); Email: rti@media.gov.lk (1782 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 163, Asidisi Medura, Kirulapone Mawatha, Polhengoda, Colombo 05, Sri Lanka RTI 10 Steps Process New Email Please copy (C |
-| reachable_contacts | ✅ | Phone: 0 -80 34 0 48 6 7 (4608 phone numbers found); Email: rti@media.gov.lk (1782 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 30 -99 39 -137 (4608 phone numbers found); Email: rti@media.gov.lk (1782 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❌

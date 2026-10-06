@@ -1,8 +1,8 @@
 # Website Audit: https://peoplestravels.com/
 
-- Completed: 2026-10-05 06:32
+- Completed: 2026-10-06 06:29
 - Overall result: 🔴 Level 1
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie |
-| reachable_contacts | ✅ | Phone: +94 112 434 530 (22 phone numbers found); Email: info@peoplestravels.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0000000000 (22 phone numbers found); Email: info@peoplestravels.com (2 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

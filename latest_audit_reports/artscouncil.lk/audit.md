@@ -1,8 +1,8 @@
 # Website Audit: https://artscouncil.lk/
 
-- Completed: 2026-10-05 06:16
+- Completed: 2026-10-06 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to; Phone: +94112177627 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found); Published named responsibility: division
+Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to; Phone: 026.10.02 202 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Arts Council of Sri Lanka ‘B’ Wing, 4th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Opening Hours : Monday to |
-| reachable_contacts | ✅ | Phone: +94112177627 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 026.10.02 202 (16 phone numbers found); Email: artscouncilsl@yahoo.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

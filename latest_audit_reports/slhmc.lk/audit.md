@@ -1,8 +1,8 @@
 # Website Audit: https://slhmc.lk/
 
-- Completed: 2026-10-05 06:45
+- Completed: 2026-10-06 06:46
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 94, Shelton Jayasinghe Mawatha, Welisara, Ragama Phone : +94 11 2958175 Email : President : president@slhmc.lk Registrar; Phone: 011 2958175 (4 phone numbers found); Email: homosri.mcouncil@gmail.com (6 email addresses found); Published named responsibility: director
+Published postal address: 94, Shelton Jayasinghe Mawatha, Welisara, Ragama Phone : +94 11 2958175 Email : President : president@slhmc.lk Registrar; Phone: 011 2958175 (5 phone numbers found); Email: homosri.mcouncil@gmail.com (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 94, Shelton Jayasinghe Mawatha, Welisara, Ragama Phone : +94 11 2958175 Email : President : president@slhmc.lk Registrar |
-| reachable_contacts | ✅ | Phone: 011 2958175 (4 phone numbers found); Email: homosri.mcouncil@gmail.com (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 2958175 (5 phone numbers found); Email: homosri.mcouncil@gmail.com (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

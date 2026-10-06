@@ -1,8 +1,8 @@
 # Website Audit: https://rep-ramallah.gov.lk/
 
-- Completed: 2026-10-05 06:42
+- Completed: 2026-10-06 06:43
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,7 +45,7 @@ Published postal address: Villa Azzam Al-Ajjoully H.E. Mahinda Rajapaksa Road, A
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing legal basis evidence found; No passing downloadable form evidence fou
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 2026-08-05 |

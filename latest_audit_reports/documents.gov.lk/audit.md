@@ -1,8 +1,8 @@
 # Website Audit: https://documents.gov.lk/
 
-- Completed: 2026-10-05 06:45
+- Completed: 2026-10-06 06:46
 - Overall result: ⚫ Level 0
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,15 +14,15 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200
+Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 128 visible characters across 4 pages; below substance threshold 200 |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200 |
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |

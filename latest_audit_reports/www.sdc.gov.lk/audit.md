@@ -1,8 +1,8 @@
 # Website Audit: https://www.sdc.gov.lk/
 
-- Completed: 2026-10-05 06:39
+- Completed: 2026-10-06 06:51
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2nd Floor, Lake House Building, D.R Wijayawardana MW, Colombo 10, Sri Lanka; Phone: +94112885241 (4 phone numbers found); Email: info@sdcsl.lk (2 email addresses found); Published named responsibility: director
+Published postal address: 2nd Floor, Lake House Building, D.R Wijayawardana MW, Colombo 10, Sri Lanka; Phone: +94112885164 (25 phone numbers found); Email: info@sdcsl.lk (20 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2nd Floor, Lake House Building, D.R Wijayawardana MW, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94112885241 (4 phone numbers found); Email: info@sdcsl.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112885164 (25 phone numbers found); Email: info@sdcsl.lk (20 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: regulations |
+| legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.sdc.gov.lk/sites/default/files/2024-09/Circular%20on%20SDG%20Based%20Budget%20Formulation.pdf |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

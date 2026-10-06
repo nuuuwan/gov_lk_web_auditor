@@ -1,8 +1,8 @@
 # Website Audit: https://cg-dubai.gov.lk/
 
-- Completed: 2026-10-05 06:43
+- Completed: 2026-10-06 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Villa No 2, Plot B-44, Street 322-B, 8C Street, Al Mankhool Road, Al Hudhaiba, Satwa, Dubai. Phone: (+971) 04 611 5555 ,; Phone: +971046115555 (21 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
+Published postal address: Villa No 2, Plot B-44, Street 322-B, 8C Street, Al Mankhool Road, Al Hudhaiba, Satwa, Dubai. Phone: (+971) 04 611 5555 ,; Phone: 089-4792-807 (21 phone numbers found); Email: slcg.dubai@mfa.gov.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Villa No 2, Plot B-44, Street 322-B, 8C Street, Al Mankhool Road, Al Hudhaiba, Satwa, Dubai. Phone: (+971) 04 611 5555 , |
-| reachable_contacts | ✅ | Phone: +971046115555 (21 phone numbers found); Email: john@example.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 089-4792-807 (21 phone numbers found); Email: slcg.dubai@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

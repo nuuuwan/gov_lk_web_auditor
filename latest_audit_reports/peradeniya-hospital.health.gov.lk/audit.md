@@ -1,8 +1,8 @@
 # Website Audit: https://peradeniya-hospital.health.gov.lk/
 
-- Completed: 2026-10-05 06:44
+- Completed: 2026-10-06 06:46
 - Overall result: 🔴 Level 1
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0812388001 (11 phone numbers found); Email: perahospital@gmail.com (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0812388001 (12 phone numbers found); Email: perahospital@gmail.com (10 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.cbsl.gov.lk/
 
-- Completed: 2026-10-05 06:32
+- Completed: 2026-10-06 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A; Phone: 026 30.09.202 (114 phone numbers found); Email: psd@cbsl.lk (4 email addresses found); Published named responsibility: department
+Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A; Phone: 026 01.10.202 (116 phone numbers found); Email: psd@cbsl.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: identified gaps Ensure the timely implementation of the National Financial Inclusion Strategy (NFIS), in line with its A |
-| reachable_contacts | ✅ | Phone: 026 30.09.202 (114 phone numbers found); Email: psd@cbsl.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 026 01.10.202 (116 phone numbers found); Email: psd@cbsl.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ✅ | Published fees and payment: rs3 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/press/pr/press_20260930_external_sector_performance_august_2026_e.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://www.cbsl.gov.lk/sites/default/files/cbslweb_documents/press/notices/notices_20260930_information_technology_specialists_e.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

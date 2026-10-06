@@ -1,8 +1,8 @@
 # Website Audit: https://www.childwomenmin.gov.lk/
 
-- Completed: 2026-10-05 07:07
+- Completed: 2026-10-06 07:04
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa; Phone: 0112186145 (16 phone numbers found); Email: sarojasavithrip@gmail.com (6 email addresses found); Published named responsibility: department
+Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa; Phone: 0112186145 (16 phone numbers found); Email: secycdwa@gmail.com (6 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa |
-| reachable_contacts | ✅ | Phone: 0112186145 (16 phone numbers found); Email: sarojasavithrip@gmail.com (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112186145 (16 phone numbers found); Email: secycdwa@gmail.com (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2026-10-03 |
+| published_update_date | ✅ | Published published update date: 2026-10-05 |

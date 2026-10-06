@@ -1,8 +1,8 @@
 # Website Audit: http://www.wyb.ac.lk/
 
-- Completed: 2026-10-05 06:24
+- Completed: 2026-10-06 06:20
 - Overall result: 🟠 Level 2
-- Vantage: 172.184.220.145 (US, github-actions)
+- Vantage: 4.155.69.67 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Lional Jayathilake Mawatha, Kanadulla, Kuliyapitiya, 60200,Sri Lanka. Telephone +(94) 37 22 81412, +(94) 37 22 81414, +(; Phone: 0776986928 (40 phone numbers found); Email: psvc@wyb.ac.lk (28 email addresses found); Published named responsibility: director
+Published postal address: Lional Jayathilake Mawatha, Kanadulla, Kuliyapitiya, 60200,Sri Lanka. Telephone +(94) 37 22 81412, +(94) 37 22 81414, +(; Phone: 070 556 1870 (58 phone numbers found); Email: psvc@wyb.ac.lk (42 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Lional Jayathilake Mawatha, Kanadulla, Kuliyapitiya, 60200,Sri Lanka. Telephone +(94) 37 22 81412, +(94) 37 22 81414, +( |
-| reachable_contacts | ✅ | Phone: 0776986928 (40 phone numbers found); Email: psvc@wyb.ac.lk (28 email addresses found) |
+| reachable_contacts | ✅ | Phone: 070 556 1870 (58 phone numbers found); Email: psvc@wyb.ac.lk (42 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
