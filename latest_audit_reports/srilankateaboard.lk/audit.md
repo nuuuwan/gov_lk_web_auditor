@@ -1,8 +1,8 @@
 # Website Audit: https://srilankateaboard.lk/
 
-- Completed: 2026-10-06 06:57
+- Completed: 2026-10-07 06:50
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.69.67 (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.; Phone: +94) 112 123 456 (2 phone numbers found); Email: teaboard@pureceylontea.com (2 email addresses found); Published named responsibility: director
+Published postal address: 574, Galle Road, Colombo 3, Sri Lanka.; Phone: +94) 112 58 78 14 ( (38 phone numbers found); Email: sltbhelp@pureceylontea.com (54 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 574, Galle Road, Colombo 3, Sri Lanka. |
-| reachable_contacts | ✅ | Phone: +94) 112 123 456 (2 phone numbers found); Email: teaboard@pureceylontea.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 112 58 78 14 ( (38 phone numbers found); Email: sltbhelp@pureceylontea.com (54 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

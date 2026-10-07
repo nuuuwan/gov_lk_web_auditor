@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3d11e317-c94a-4dfb-a1df-2f8576d0f407",
+  "audit_id": "97e11dc2-ef90-4465-8ef7-64ff05db2796",
   "url": "https://www.plantation.gov.lk/",
   "normalized_url": "https://www.plantation.gov.lk/",
-  "started_at": "2026-10-06T07:05:21.267566+05:30",
-  "completed_at": "2026-10-06T07:09:32.356284+05:30",
+  "started_at": "2026-10-07T07:03:44.905416+05:30",
+  "completed_at": "2026-10-07T07:36:04.246457+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "hosting_configured: Detected generic hosting marker: under construction"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: https://www.plantation.gov.lk/: Probe 3: timed out; http://www.plantation.gov.lk/: Probe 4: [Errno 111] Connection refused",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,117 +26,117 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-06T07:05:21.854566+05:30"
+      "observed_at": "2026-10-07T07:03:45.364781+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-06T07:05:21.854586+05:30"
+      "observed_at": "2026-10-07T07:03:45.364803+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-06T07:05:22.800309+05:30"
+      "observed_at": "2026-10-07T07:03:46.365393+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://plantation.gov.lk/index.php?lang=en",
       "source": "https://www.plantation.gov.lk/",
-      "observed_at": "2026-10-06T07:09:31.889112+05:30"
+      "observed_at": "2026-10-07T07:36:04.134733+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://plantation.gov.lk/index.php?lang=en",
       "source": "http://www.plantation.gov.lk/",
-      "observed_at": "2026-10-06T07:09:31.889128+05:30"
+      "observed_at": "2026-10-07T07:36:04.134754+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://plantation.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.plantation.gov.lk/",
-      "observed_at": "2026-10-06T07:09:31.889133+05:30"
+      "observed_at": "2026-10-07T07:36:04.134758+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://plantation.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://www.plantation.gov.lk/",
-      "observed_at": "2026-10-06T07:09:31.889136+05:30"
+      "observed_at": "2026-10-07T07:36:04.134761+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889139+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=154&Itemid=255&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=154&Itemid=255&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889142+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=en",
+      "detail": "Probe 5: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=en",
       "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889146+05:30"
+      "observed_at": "2026-10-07T07:36:04.134764+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889149+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889151+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889154+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=158&Itemid=259&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=158&Itemid=259&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889158+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889161+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://plantation.gov.lk/index.php?option=com_phocagallery&view=categories&Itemid=216&lang=en",
+      "detail": "Probe 6: HTTP 200 at https://plantation.gov.lk/index.php?option=com_phocagallery&view=categories&Itemid=216&lang=en",
       "source": "https://plantation.gov.lk/index.php?option=com_phocagallery&view=categories&Itemid=216&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889163+05:30"
+      "observed_at": "2026-10-07T07:36:04.134766+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=61&Itemid=217&lang=en",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=61&Itemid=217&lang=en",
-      "observed_at": "2026-10-06T07:09:31.889166+05:30"
+      "detail": "Probe 7: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=256:environment-and-social-risk-management-guidelines-esg&catid=30:news-highlight&lang=en&Itemid=281",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=256:environment-and-social-risk-management-guidelines-esg&catid=30:news-highlight&lang=en&Itemid=281",
+      "observed_at": "2026-10-07T07:36:04.134769+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=233:icc-bidding-document&catid=30:news-highlight&lang=en&Itemid=281",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=233:icc-bidding-document&catid=30:news-highlight&lang=en&Itemid=281",
+      "observed_at": "2026-10-07T07:36:04.134772+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=238:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties-3&catid=24:news-events&lang=en&Itemid=209",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=238:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties-3&catid=24:news-events&lang=en&Itemid=209",
+      "observed_at": "2026-10-07T07:36:04.134774+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=236:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties&catid=24:news-events&lang=en&Itemid=209",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=236:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties&catid=24:news-events&lang=en&Itemid=209",
+      "observed_at": "2026-10-07T07:36:04.134776+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=203:opening-of-the-new-regional-office-of-the-tea-small-holdings-development-authority-in-kegalle&catid=24:news-events&lang=en&Itemid=209",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=203:opening-of-the-new-regional-office-of-the-tea-small-holdings-development-authority-in-kegalle&catid=24:news-events&lang=en&Itemid=209",
+      "observed_at": "2026-10-07T07:36:04.134779+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=170&Itemid=278&lang=en",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=170&Itemid=278&lang=en",
+      "observed_at": "2026-10-07T07:36:04.134781+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "source": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "observed_at": "2026-10-07T07:36:04.134783+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=si",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=si",
+      "observed_at": "2026-10-07T07:36:04.134785+05:30"
     },
     {
       "check": "phone",
@@ -197,132 +206,6 @@
       "status": "pass",
       "detail": "Published named responsibility: division",
       "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 160 ",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 160 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 076 ",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 076 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@plantation.gov.lk",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@plantation.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 160 ",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 160 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 076 ",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 076 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@plantation.gov.lk",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "info@plantation.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 160 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 186 160 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 076 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 186 076 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@plantation.gov.lk",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "info@plantation.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0486749261",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=154&Itemid=255&lang=en",
-      "data": {
-        "value": "0486749261"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=154&Itemid=255&lang=en",
       "data": {
         "value": "division"
       }
@@ -348,678 +231,6 @@
     {
       "check": "named_responsibility",
       "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://plantation.gov.lk/images/pdf/Statistical_Information/Stat_2020.pdf",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "data": {
-        "value": "https://plantation.gov.lk/images/pdf/Statistical_Information/Stat_2020.pdf"
-      }
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://plantation.gov.lk/images/pdf/preformance_report/2021/Performance_Report_English_2021.pdf",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "data": {
-        "value": "https://plantation.gov.lk/images/pdf/preformance_report/2021/Performance_Report_English_2021.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 325 741 312 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 325 741 312 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 869 843 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 869 843 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 441 849 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 441 849 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 635 852 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 635 852 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 117 909 021",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 117 909 021"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2798 790",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 11 2798 790"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 342 247 426 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 342 247 426 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 312 262 000 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 312 262 000 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 446 577 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 446 577 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 583 687 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 583 687 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 312 255 300 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 312 255 300 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 589 132 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 589 132 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 312 257 391 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 312 257 391 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 502 502-",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 502 502-"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 342 248 459 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 342 248 459 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 327 088 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 327 088 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 798 772",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 798 772"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 114 645 279 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 114 645 279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 372 223 133 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 372 223 133 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 115 549 507 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 115 549 507 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 312 262 001 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 312 262 001 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 114 194 877 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 114 194 877 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 179 596 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 179 596 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 522 258 201 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 522 258 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 322 222 162 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 322 222 162 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 522 258 229 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 522 258 229 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 582 121 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 582 121 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 587 814 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 587 814 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 160 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 186 160 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 212 224 154 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 212 224 154 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 144 737 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 144 737 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 889 447 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 889 447 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 887 476 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 887 476 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 502 501",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 502 501"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 789 734",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 789 734"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 200 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 186 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 342 247 427 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 342 247 427 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 730",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 508 730"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 698 059 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 698 059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 438 530 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 438 530 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 605 171 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 605 171 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 342 295 540 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 342 295 540 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 508 729 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 508 729 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 438 635 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 438 635 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 698 057 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 698 057 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 446 873 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 446 873 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 312 255 583 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 312 255 583 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 786 713 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 786 713 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 312 262 111 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 312 262 111 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 635 851 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 635 851 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 798 780 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 798 780 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 770 232",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 770 232"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 861 331 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 861 331 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 212 222 034 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 212 222 034 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 372 229 618 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 372 229 618 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 342 247 383 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 342 247 383 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 115 549 502 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 115 549 502 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 886 855 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "+94 112 886 855 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: 7th Floor, No 45, St. Michael Rd, Colombo 03 General Numbers +94 112 446 873 Fax Email This email address is being prote",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "7th Floor, No 45, St. Michael Rd, Colombo 03 General Numbers +94 112 446 873 Fax Email This email address is being prote"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=158&Itemid=259&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://plantation.gov.lk/images/2025/procuments/Expression Of Interest (EOI) – Submission Form.pdf",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=158&Itemid=259&lang=en",
-      "data": {
-        "value": "https://plantation.gov.lk/images/2025/procuments/Expression Of Interest (EOI) – Submission Form.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2186093. ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "data": {
-        "value": "011-2186093. "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94765279968",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "data": {
-        "value": "+94765279968"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 76 527 99 68 ",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "data": {
-        "value": "+94 76 527 99 68 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak542cb4eec81867d2",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak542cb4eec81867d2"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
       "detail": "Published named responsibility: division",
       "source": "https://plantation.gov.lk/index.php?option=com_phocagallery&view=categories&Itemid=216&lang=en",
       "data": {
@@ -1030,7 +241,106 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: division",
-      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=61&Itemid=217&lang=en",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=256:environment-and-social-risk-management-guidelines-esg&catid=30:news-highlight&lang=en&Itemid=281",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=233:icc-bidding-document&catid=30:news-highlight&lang=en&Itemid=281",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=238:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties-3&catid=24:news-events&lang=en&Itemid=209",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=236:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties&catid=24:news-events&lang=en&Itemid=209",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=203:opening-of-the-new-regional-office-of-the-tea-small-holdings-development-authority-in-kegalle&catid=24:news-events&lang=en&Itemid=209",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 06 October 2026",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=203:opening-of-the-new-regional-office-of-the-tea-small-holdings-development-authority-in-kegalle&catid=24:news-events&lang=en&Itemid=209",
+      "data": {
+        "value": "06 October 2026"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=170&Itemid=278&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://plantation.gov.lk/images/pdf/downloads/Fagmentation/Application_English.pdf",
+      "source": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=170&Itemid=278&lang=en",
+      "data": {
+        "value": "https://plantation.gov.lk/images/pdf/downloads/Fagmentation/Application_English.pdf"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 186 160 ",
+      "source": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "data": {
+        "value": "+94 112 186 160 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 186 076 ",
+      "source": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "data": {
+        "value": "+94 112 186 076 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: plantationit2020@gamil.com",
+      "source": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "data": {
+        "value": "plantationit2020@gamil.com"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
       "data": {
         "value": "division"
       }
@@ -1038,7 +348,7 @@
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 14044 visible characters across 14 pages",
+      "detail": "Substantive page content: 6153 visible characters across 12 pages",
       "source": "https://www.plantation.gov.lk/"
     }
   ],
@@ -1072,31 +382,7 @@
         "https://plantation.gov.lk/",
         "https://plantation.gov.lk/index.php?lang=en"
       ],
-      "elapsed_ms": 3784,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://www.plantation.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://plantation.gov.lk/",
-        "https://plantation.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 3594,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://www.plantation.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://plantation.gov.lk/",
-        "https://plantation.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 3757,
+      "elapsed_ms": 3718,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1113,74 +399,29 @@
       "error": null
     },
     {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "url": "https://www.plantation.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 3457,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=154&Itemid=255&lang=en",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=154&Itemid=255&lang=en",
+      "url": "http://www.plantation.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 20512,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=en",
       "status_code": 200,
       "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=en",
       "redirects": [],
-      "elapsed_ms": 1044,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1072,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1054,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1483,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=158&Itemid=259&lang=en",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=158&Itemid=259&lang=en",
-      "redirects": [],
-      "elapsed_ms": 19918,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1422,
+      "elapsed_ms": 21340,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1189,16 +430,79 @@
       "status_code": 200,
       "final_url": "https://plantation.gov.lk/index.php?option=com_phocagallery&view=categories&Itemid=216&lang=en",
       "redirects": [],
-      "elapsed_ms": 1287,
+      "elapsed_ms": 20921,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=61&Itemid=217&lang=en",
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=256:environment-and-social-risk-management-guidelines-esg&catid=30:news-highlight&lang=en&Itemid=281",
       "status_code": 200,
-      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=61&Itemid=217&lang=en",
+      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=256:environment-and-social-risk-management-guidelines-esg&catid=30:news-highlight&lang=en&Itemid=281",
       "redirects": [],
-      "elapsed_ms": 1075,
+      "elapsed_ms": 1283,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=233:icc-bidding-document&catid=30:news-highlight&lang=en&Itemid=281",
+      "status_code": 200,
+      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=233:icc-bidding-document&catid=30:news-highlight&lang=en&Itemid=281",
+      "redirects": [],
+      "elapsed_ms": 21183,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=238:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties-3&catid=24:news-events&lang=en&Itemid=209",
+      "status_code": 200,
+      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=238:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties-3&catid=24:news-events&lang=en&Itemid=209",
+      "redirects": [],
+      "elapsed_ms": 21173,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=236:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties&catid=24:news-events&lang=en&Itemid=209",
+      "status_code": 200,
+      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=236:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties&catid=24:news-events&lang=en&Itemid=209",
+      "redirects": [],
+      "elapsed_ms": 21008,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=203:opening-of-the-new-regional-office-of-the-tea-small-holdings-development-authority-in-kegalle&catid=24:news-events&lang=en&Itemid=209",
+      "status_code": 200,
+      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=203:opening-of-the-new-regional-office-of-the-tea-small-holdings-development-authority-in-kegalle&catid=24:news-events&lang=en&Itemid=209",
+      "redirects": [],
+      "elapsed_ms": 21224,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=170&Itemid=278&lang=en",
+      "status_code": 200,
+      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=170&Itemid=278&lang=en",
+      "redirects": [],
+      "elapsed_ms": 20980,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "status_code": 200,
+      "final_url": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "redirects": [],
+      "elapsed_ms": 21259,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=si",
+      "status_code": 200,
+      "final_url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=si",
+      "redirects": [],
+      "elapsed_ms": 20778,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
@@ -1206,87 +510,75 @@
   "snapshots": [
     {
       "url": "https://plantation.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-01-57df02eb5d41.html",
-      "sha256": "57df02eb5d4128a621aff674514265237971c199faabe8e9d9295d5679e4c104",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-01-10ee4013b74c.html",
+      "sha256": "10ee4013b74c180ac1ff14a5ee89498196416688d6a40c523100077dc388c4e1",
       "bytes": 115118
     },
     {
       "url": "https://plantation.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-02-57df02eb5d41.html",
-      "sha256": "57df02eb5d4128a621aff674514265237971c199faabe8e9d9295d5679e4c104",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-02-10ee4013b74c.html",
+      "sha256": "10ee4013b74c180ac1ff14a5ee89498196416688d6a40c523100077dc388c4e1",
       "bytes": 115118
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-03-57df02eb5d41.html",
-      "sha256": "57df02eb5d4128a621aff674514265237971c199faabe8e9d9295d5679e4c104",
-      "bytes": 115118
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-04-57df02eb5d41.html",
-      "sha256": "57df02eb5d4128a621aff674514265237971c199faabe8e9d9295d5679e4c104",
-      "bytes": 115118
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-05-dff857274e46.html",
-      "sha256": "dff857274e461d377e88d19367bd7a54d6204e467034e4369ca01726c7256edf",
-      "bytes": 115494
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=154&Itemid=255&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-06-d6633367d73a.html",
-      "sha256": "d6633367d73ad5ee1ce0efd63daedcab2b73f8850d9ffa33dc91156b51cd7085",
-      "bytes": 383496
     },
     {
       "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-07-01027dfb4654.html",
-      "sha256": "01027dfb465437d60892733c17145119f6334d8fc7c65b1cae43e5afa847b9da",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-03-badf768c8ad7.html",
+      "sha256": "badf768c8ad7243c7ef997039e6a68ba244a06763fca31f948881083fe625ff7",
       "bytes": 19011
     },
     {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=53&Itemid=207&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-08-abd2d73a4ca0.html",
-      "sha256": "abd2d73a4ca0f2a050e027d72425b873f0631849814be058f4269dc42bcc80a2",
-      "bytes": 36172
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=159&Itemid=260&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-09-41c71dd42c15.html",
-      "sha256": "41c71dd42c159486b1fe10344d776b4c4c42b50f20550d281af87508839ec62a",
-      "bytes": 49592
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=155&Itemid=206&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-10-44ed0c685fda.html",
-      "sha256": "44ed0c685fdad0a38d7559e22922491d136e40d985d679d511fec77e7be3be2b",
-      "bytes": 111198
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=158&Itemid=259&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-11-87b434c0748f.html",
-      "sha256": "87b434c0748fa3489a64dbc357c592dd6475443a6ef9f266881ae4f36b008fba",
-      "bytes": 23335
-    },
-    {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=category&layout=blog&id=24&Itemid=209&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-12-18fdd41d48b5.html",
-      "sha256": "18fdd41d48b57fe497fdb58dcf3894da7d579bdf63b594c91d02b6e6cf59c1ff",
-      "bytes": 42623
-    },
-    {
       "url": "https://plantation.gov.lk/index.php?option=com_phocagallery&view=categories&Itemid=216&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-13-037273e65031.html",
-      "sha256": "037273e650319111d857f75853669b0ff9fc44bace754ccfdbee827dc50726fa",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-04-acf31ef30540.html",
+      "sha256": "acf31ef30540c34e65a4799a1a70506d05c20d8c9893781ff30c178cb261a142",
       "bytes": 23372
     },
     {
-      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=61&Itemid=217&lang=en",
-      "path": "audit.output/www.plantation.gov.lk/20261006.0705/snapshots/page-14-e8063ff67318.html",
-      "sha256": "e8063ff67318dccc664ae64e293d82063af7ed2a4ccbde39d29bff69fca898ea",
-      "bytes": 19676
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=256:environment-and-social-risk-management-guidelines-esg&catid=30:news-highlight&lang=en&Itemid=281",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-05-4666cb0c2845.html",
+      "sha256": "4666cb0c284585b3d65c9bd7f1d7f6b54c1c2091ac628abab30bd8470accda89",
+      "bytes": 17790
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=233:icc-bidding-document&catid=30:news-highlight&lang=en&Itemid=281",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-06-d0453eb67d4e.html",
+      "sha256": "d0453eb67d4e09a5a0ec3ce05d37b3d9a6c6fd9eb53aafe5203a2e4c9483e6dc",
+      "bytes": 17667
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=238:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties-3&catid=24:news-events&lang=en&Itemid=209",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-07-9af2a8fba02f.html",
+      "sha256": "9af2a8fba02fdc185342dcdc3c0abc9e58928afacea7f243167f066e51b41da4",
+      "bytes": 18951
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=236:hon-minister-plantation-and-community-infrastructure-mr-k-v-samantha-vidyarathne-assumes-duties&catid=24:news-events&lang=en&Itemid=209",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-08-028f394af964.html",
+      "sha256": "028f394af964af73e5ec1ce8d72ceb7751f1a0ab38689a63c47089e2a02ada60",
+      "bytes": 18934
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=203:opening-of-the-new-regional-office-of-the-tea-small-holdings-development-authority-in-kegalle&catid=24:news-events&lang=en&Itemid=209",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-09-4bfbcdb11504.html",
+      "sha256": "4bfbcdb115049ae2836b181354a9e0be114b4696ab43c024d633a2cfae0da31b",
+      "bytes": 21226
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=170&Itemid=278&lang=en",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-10-b9f958f7e16f.html",
+      "sha256": "b9f958f7e16fa17a9d5cbdcab6c5a9a2f1bb973620e5e24aee7ee95bbbca2ee7",
+      "bytes": 17580
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_contact&view=contact&id=1&lang=en&Itemid=213",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-11-0ad35d472c2a.html",
+      "sha256": "0ad35d472c2a1236d01989445bbd6c00d1847fcae26caaf9ac0cb0074677f76c",
+      "bytes": 29284
+    },
+    {
+      "url": "https://plantation.gov.lk/index.php?option=com_content&view=article&id=209&Itemid=266&lang=si",
+      "path": "audit.output/www.plantation.gov.lk/20261007.0703/snapshots/page-12-7f05ffc75d09.html",
+      "sha256": "7f05ffc75d094b6266f2c8ab0dca01ee597b3032162cec799a2029625ae01f5c",
+      "bytes": 21446
     }
   ],
   "reviewer_decisions": [],
@@ -1302,8 +594,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Detected generic hosting marker: under construction",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://www.plantation.gov.lk/: Probe 3: timed out; http://www.plantation.gov.lk/: Probe 4: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -1333,14 +625,14 @@
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "fail",
-          "reason": "Detected generic hosting marker: under construction"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "reason": "HTTPS probes passed; failing variants: https://www.plantation.gov.lk/: Probe 3: timed out; http://www.plantation.gov.lk/: Probe 4: [Errno 111] Connection refused"
         },
         {
           "name": "redirect_related",
@@ -1372,9 +664,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 112 186 160 (2 phone numbers found); Email: info@plantation.gov.lk (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -1402,7 +713,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.155.69.67",
+    "egress_ip": "40.78.177.103",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

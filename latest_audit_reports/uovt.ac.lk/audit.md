@@ -1,8 +1,8 @@
 # Website Audit: https://uovt.ac.lk/
 
-- Completed: 2026-10-06 06:25
+- Completed: 2026-10-07 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.69.67 (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us.; Phone: 04 1.547.515 2. (165 phone numbers found); Email: ucj@uovt.ac.lk (14 email addresses found); Published named responsibility: director
+Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us.; Phone: 0938455081 (165 phone numbers found); Email: ucb@uovt.ac.lk (14 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: University of Vocational Technology, No.100, Kandawala, Ratmalana Get in Touch Choose how you'd like to connect with us. |
-| reachable_contacts | ✅ | Phone: 04 1.547.515 2. (165 phone numbers found); Email: ucj@uovt.ac.lk (14 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0938455081 (165 phone numbers found); Email: ucb@uovt.ac.lk (14 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

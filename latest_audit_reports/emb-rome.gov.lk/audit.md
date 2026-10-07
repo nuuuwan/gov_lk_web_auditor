@@ -1,8 +1,8 @@
 # Website Audit: https://emb-rome.gov.lk/
 
-- Completed: 2026-10-06 06:40
+- Completed: 2026-10-07 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.69.67 (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340 ; Phone: +39068840801 (4 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340 ; Phone: +39068840801 (4 phone numbers found); Email: slemb.rome@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Via Adige, 2 - 00198 Rome, Italy City/country: Rome, Italy Contact number: Telephone: +39 06 884 0801 WhatsApp: +39 340  |
-| reachable_contacts | ✅ | Phone: +39068840801 (4 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +39068840801 (4 phone numbers found); Email: slemb.rome@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing downloadable form evidence found
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10 April 2026 |
+| published_update_date | ✅ | Published published update date: 10/05/2026 |

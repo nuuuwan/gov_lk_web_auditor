@@ -1,8 +1,8 @@
 # Website Audit: https://www.ombudsman.gov.lk/
 
-- Completed: 2026-10-06 07:12
+- Completed: 2026-10-07 07:14
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.69.67 (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman; Phone: 011-2588798 (11 phone numbers found); Email: ombudssl@gmail.com (2 email addresses found); Published named responsibility: division
+Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman; Phone: 011-2501126 (11 phone numbers found); Email: ombudssl@gmail.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 1st Floor, No.14, R.A.De Mel Mawatha, Colombo 04. 011-2501115 – Parliamentary Commissioner for Administration (Ombudsman |
-| reachable_contacts | ✅ | Phone: 011-2588798 (11 phone numbers found); Email: ombudssl@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011-2501126 (11 phone numbers found); Email: ombudssl@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

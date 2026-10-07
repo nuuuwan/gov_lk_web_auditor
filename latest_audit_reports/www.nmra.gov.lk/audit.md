@@ -1,8 +1,8 @@
 # Website Audit: https://www.nmra.gov.lk/
 
-- Completed: 2026-10-06 06:47
+- Completed: 2026-10-07 06:41
 - Overall result: 🟠 Level 2
-- Vantage: 4.155.69.67 (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2698896 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found); Published named responsibility: division
+Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2687744 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2698896 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2687744 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -50,9 +50,9 @@ No passing eligibility criteria evidence found; No passing published update date
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: documents required |
+| required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 6 months |
-| downloadable_form | ✅ | Published downloadable form: https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/6abf21aca21719d7221b9894_F-MDR-036%20%20Form%201-adverse%20events%20related%20to%20medical%20devices%20including%20in%20vitro%20diagnostics.docx |
+| downloadable_form | ✅ | Published downloadable form: https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/6ac4ca28a0241416aef2f81d_F-MR-037-short%20shelf%20life%20check%20list%20finalized%20after%20CEO%20recommendation.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

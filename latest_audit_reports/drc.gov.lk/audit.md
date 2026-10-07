@@ -1,8 +1,8 @@
 # Website Audit: https://drc.gov.lk/
 
-- Completed: 2026-10-06 07:00
+- Completed: 2026-10-07 06:55
 - Overall result: ⚫ Level 0
-- Vantage: 4.155.69.67 (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,20 +14,20 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-timed out; timed out
+Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://drc.gov.lk/: Probe 1: timed out; http://drc.gov.lk/: Probe 2: timed out; https://drc.gov.lk/: Probe 3: timed out |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 56 visible characters across 2 pages; below substance threshold 200 |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://drc.gov.lk/: Probe 3: timed out; http://drc.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |
 
 ## 🟠 Level 2: ❓
 

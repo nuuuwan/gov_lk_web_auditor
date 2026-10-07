@@ -1,8 +1,8 @@
 # Website Audit: https://www.nproccom.gov.lk/
 
-- Completed: 2026-10-06 07:10
+- Completed: 2026-10-07 07:12
 - Overall result: ⚫ Level 0
-- Vantage: unknown (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

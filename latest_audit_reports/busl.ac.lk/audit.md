@@ -1,8 +1,8 @@
 # Website Audit: https://busl.ac.lk/
 
-- Completed: 2026-10-06 06:23
+- Completed: 2026-10-07 06:23
 - Overall result: 🔴 Level 1
-- Vantage: 4.155.69.67 (US, github-actions)
+- Vantage: 40.78.177.103 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 252 057 978 (14 phone numbers found); Email: upedec@busl.ac.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 252 222 615 (14 phone numbers found); Email: registrar@busl.ac.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
