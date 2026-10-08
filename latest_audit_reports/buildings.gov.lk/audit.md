@@ -1,8 +1,8 @@
 # Website Audit: https://buildings.gov.lk/
 
-- Completed: 2026-10-07 06:43
+- Completed: 2026-10-08 06:47
 - Overall result: 🔴 Level 1
-- Vantage: 40.78.177.103 (US, github-actions)
+- Vantage: 128.203.199.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2861489 (2 phone numbers found); Email: info@buildingsdept.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2861489; Email: info@buildingsdept.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

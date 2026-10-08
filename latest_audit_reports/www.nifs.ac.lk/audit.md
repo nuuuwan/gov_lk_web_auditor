@@ -1,8 +1,8 @@
 # Website Audit: https://www.nifs.ac.lk/
 
-- Completed: 2026-10-07 06:51
+- Completed: 2026-10-08 06:55
 - Overall result: 🟠 Level 2
-- Vantage: 40.78.177.103 (US, github-actions)
+- Vantage: 128.203.199.82 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: service in Sri Lanka. Contact NIFS English Hantana, Kandy, Sri Lanka; Phone: 0 1 1 185 188.0 (35 phone numbers found); Email: info@nifs.ac.lk (21 email addresses found); Published named responsibility: director
+Published postal address: service in Sri Lanka. Contact NIFS English Hantana, Kandy, Sri Lanka; Phone: 0-3 1.85-5.36 5.0 (35 phone numbers found); Email: info@nifs.ac.lk (21 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: service in Sri Lanka. Contact NIFS English Hantana, Kandy, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0 1 1 185 188.0 (35 phone numbers found); Email: info@nifs.ac.lk (21 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0-3 1.85-5.36 5.0 (35 phone numbers found); Email: info@nifs.ac.lk (21 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

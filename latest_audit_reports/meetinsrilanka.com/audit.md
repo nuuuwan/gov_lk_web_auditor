@@ -1,8 +1,8 @@
 # Website Audit: https://meetinsrilanka.com/
 
-- Completed: 2026-10-07 06:41
+- Completed: 2026-10-08 06:44
 - Overall result: ⚫ Level 0
-- Vantage: 40.78.177.103 (US, github-actions)
+- Vantage: 128.203.199.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Detected unrelated marker: online casino
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ❌ | Detected unrelated marker: online casino |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://meetinsrilanka.com/: Probe 1: The read operation timed out |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

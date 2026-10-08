@@ -1,8 +1,8 @@
 # Website Audit: https://mepa.gov.lk/
 
-- Completed: 2026-10-07 06:26
+- Completed: 2026-10-08 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 40.78.177.103 (US, github-actions)
+- Vantage: 128.203.199.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: environmental risks, clearance will be granted. The approval may include specific conditions that the applicant must ful; Phone: +94 11 2554373 (31 phone numbers found); Email: info@mepa.gov.lk (30 email addresses found); Published named responsibility: department
+Published postal address: environmental risks, clearance will be granted. The approval may include specific conditions that the applicant must ful; Phone: 002-345-6789 (31 phone numbers found); Email: info@mepa.gov.lk (30 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: environmental risks, clearance will be granted. The approval may include specific conditions that the applicant must ful |
-| reachable_contacts | ✅ | Phone: +94 11 2554373 (31 phone numbers found); Email: info@mepa.gov.lk (30 email addresses found) |
+| reachable_contacts | ✅ | Phone: 002-345-6789 (31 phone numbers found); Email: info@mepa.gov.lk (30 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

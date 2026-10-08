@@ -1,8 +1,8 @@
 # Website Audit: http://edupub.gov.lk/
 
-- Completed: 2026-10-07 06:23
+- Completed: 2026-10-08 06:22
 - Overall result: ⚫ Level 0
-- Vantage: 40.78.177.103 (US, github-actions)
+- Vantage: 128.203.199.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,8 +1,8 @@
 # Website Audit: https://cg-mumbai.gov.lk/
 
-- Completed: 2026-10-07 06:33
+- Completed: 2026-10-08 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 40.78.177.103 (US, github-actions)
+- Vantage: 128.203.199.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
