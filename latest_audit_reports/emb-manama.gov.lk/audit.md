@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manama.gov.lk/
 
-- Completed: 2026-10-08 06:42
+- Completed: 2026-10-09 06:36
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.81 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[; Phone: +97317008410 (3 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
+Published postal address: underscored the significance of the initiative as a long-term community welfare programme. It was highlighted that the b; Phone: +97317008410 (3 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[ |
+| postal_address | ✅ | Published postal address: underscored the significance of the initiative as a long-term community welfare programme. It was highlighted that the b |
 | reachable_contacts | ✅ | Phone: +97317008410 (3 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
@@ -45,14 +45,14 @@ Published postal address: and Contact Information\",\"page\":\"/address-and-cont
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing legal basis evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| processing_time | ✅ | Published processing time: 30 days |
+| downloadable_form | ✅ | Published downloadable form: https://www.immigration.gov.lk/content/files/visa/eta_application.pdf |
 | published_update_date | ✅ | Published published update date: 06/11/2026 |

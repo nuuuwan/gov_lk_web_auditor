@@ -1,8 +1,8 @@
 # Website Audit: https://www.ceybankholidayhomes.com/
 
-- Completed: 2026-10-08 06:26
+- Completed: 2026-10-09 06:26
 - Overall result: ⚫ Level 0
-- Vantage: 128.203.199.81 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-An HTTP probe was transient; _ssl.c:993: The handshake operation timed out; _ssl.c:993: The handshake operation timed out
+An HTTP probe was transient; [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010); [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ An HTTP probe was transient; _ssl.c:993: The handshake operation timed out; _ssl
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | _ssl.c:993: The handshake operation timed out |
-| tls_hostname_matches | ❓ | _ssl.c:993: The handshake operation timed out |
+| tls_not_expired | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010) |
+| tls_hostname_matches | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010) |
 
 ## 🟠 Level 2: ❓
 

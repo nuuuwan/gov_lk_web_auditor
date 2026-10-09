@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b288bfd2-a566-44b4-89ce-336f7a20a3d7",
+  "audit_id": "fc522a9b-83d8-43e9-9f99-838c336d6473",
   "url": "https://jrjc.lk/",
   "normalized_url": "https://jrjc.lk/",
-  "started_at": "2026-10-08T06:12:22.964694+05:30",
-  "completed_at": "2026-10-08T06:12:26.371367+05:30",
+  "started_at": "2026-10-09T06:14:11.724340+05:30",
+  "completed_at": "2026-10-09T06:15:24.010564+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,1032 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-08T06:12:23.187974+05:30"
+      "observed_at": "2026-10-09T06:14:12.350922+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-08T06:12:23.187987+05:30"
+      "observed_at": "2026-10-09T06:14:12.350943+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-08T06:12:23.250183+05:30"
+      "observed_at": "2026-10-09T06:14:12.404557+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 403 at https://jrjc.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://jrjc.lk/",
       "source": "https://jrjc.lk/",
-      "observed_at": "2026-10-08T06:12:26.370448+05:30"
+      "observed_at": "2026-10-09T06:15:23.603183+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 403 at http://jrjc.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://jrjc.lk/",
       "source": "http://jrjc.lk/",
-      "observed_at": "2026-10-08T06:12:26.370463+05:30"
+      "observed_at": "2026-10-09T06:15:23.603198+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 403 at https://jrjc.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://jrjc.lk/",
       "source": "https://jrjc.lk/",
-      "observed_at": "2026-10-08T06:12:26.370466+05:30"
+      "observed_at": "2026-10-09T06:15:23.603201+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 403 at http://jrjc.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://jrjc.lk/",
       "source": "http://jrjc.lk/",
-      "observed_at": "2026-10-08T06:12:26.370468+05:30"
+      "observed_at": "2026-10-09T06:15:23.603203+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://jrjc.lk/cart/",
+      "source": "https://jrjc.lk/cart/",
+      "observed_at": "2026-10-09T06:15:23.603205+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://jrjc.lk/biography/",
+      "source": "https://jrjc.lk/biography/",
+      "observed_at": "2026-10-09T06:15:23.603207+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://jrjc.lk/about-j-r-jayewardene/",
+      "source": "https://jrjc.lk/about-j-r-jayewardene/",
+      "observed_at": "2026-10-09T06:15:23.603208+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://jrjc.lk/library/",
+      "source": "https://jrjc.lk/library/",
+      "observed_at": "2026-10-09T06:15:23.603210+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://jrjc.lk/library-book-list/",
+      "source": "https://jrjc.lk/library-book-list/",
+      "observed_at": "2026-10-09T06:15:23.603212+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://jrjc.lk/publications/",
+      "source": "https://jrjc.lk/publications/",
+      "observed_at": "2026-10-09T06:15:23.603214+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://jrjc.lk/museum/",
+      "source": "https://jrjc.lk/museum/",
+      "observed_at": "2026-10-09T06:15:23.603216+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://jrjc.lk/japanese-museum/",
+      "source": "https://jrjc.lk/japanese-museum/",
+      "observed_at": "2026-10-09T06:15:23.603217+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://jrjc.lk/ryugen-garden/",
+      "source": "https://jrjc.lk/ryugen-garden/",
+      "observed_at": "2026-10-09T06:15:23.603219+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://jrjc.lk/event-booking/",
+      "source": "https://jrjc.lk/event-booking/",
+      "observed_at": "2026-10-09T06:15:23.603221+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: රු 250",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "රු 250"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: රු 250",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "රු 250"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: රු 250",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "රු 250"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: රු 250",
+      "source": "https://jrjc.lk/",
+      "data": {
+        "value": "රු 250"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/cart/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/cart/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/cart/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/cart/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/cart/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://jrjc.lk/cart/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: RS00",
+      "source": "https://jrjc.lk/cart/",
+      "data": {
+        "value": "RS00"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/biography/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/biography/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/biography/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/biography/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/biography/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs. 1989",
+      "source": "https://jrjc.lk/biography/",
+      "data": {
+        "value": "rs. 1989"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/about-j-r-jayewardene/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/about-j-r-jayewardene/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/about-j-r-jayewardene/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/about-j-r-jayewardene/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/about-j-r-jayewardene/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 001 2000 199",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "001 2000 199"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1939 1938 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 1939 1938 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1959 1958 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 1959 1958 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 015 2014 201",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "015 2014 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2020 201",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "021 2020 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 004 2003 200",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "004 2003 200"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1929 1928 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 1929 1928 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1949 1948 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 1949 1948 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1969 1968 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 1969 1968 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 012 2011 201",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "012 2011 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024 2023 202",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "024 2023 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 2009 2008 2",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 2009 2008 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 027 2026 202",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "027 2026 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1979 1978 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 1979 1978 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 1989 1988 1",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0 1989 1988 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 007 2006 200",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "007 2006 200"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: here Request Type * I need to access Books I need to access Periodicals and Journals I need to access Manuscripts Collec",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "here Request Type * I need to access Books I need to access Periodicals and Journals I need to access Manuscripts Collec"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://jrjc.lk/library/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/library-book-list/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/library-book-list/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/library-book-list/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/library-book-list/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/library-book-list/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/publications/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/publications/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0948851418",
+      "source": "https://jrjc.lk/publications/",
+      "data": {
+        "value": "0948851418"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/publications/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/publications/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/publications/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/museum/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/museum/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/museum/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/museum/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/museum/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/japanese-museum/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/japanese-museum/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/japanese-museum/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/japanese-museum/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/japanese-museum/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/ryugen-garden/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/ryugen-garden/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/ryugen-garden/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/ryugen-garden/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/ryugen-garden/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0539140313",
+      "source": "https://jrjc.lk/event-booking/",
+      "data": {
+        "value": "0539140313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212707519",
+      "source": "https://jrjc.lk/event-booking/",
+      "data": {
+        "value": "0212707519"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000008180",
+      "source": "https://jrjc.lk/event-booking/",
+      "data": {
+        "value": "0000008180"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0000000000",
+      "source": "https://jrjc.lk/event-booking/",
+      "data": {
+        "value": "0000000000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0954586231",
+      "source": "https://jrjc.lk/event-booking/",
+      "data": {
+        "value": "0954586231"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: Rs.61",
+      "source": "https://jrjc.lk/event-booking/",
+      "data": {
+        "value": "Rs.61"
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 46 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 16585 visible characters across 14 pages",
       "source": "https://jrjc.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
-      "observed_at": "2026-10-08T06:12:26.370941+05:30"
     }
   ],
   "observations": [
@@ -99,65 +1081,219 @@
     },
     {
       "url": "https://jrjc.lk/",
-      "status_code": 403,
+      "status_code": 200,
       "final_url": "https://jrjc.lk/",
       "redirects": [],
-      "elapsed_ms": 457,
-      "content_type": "text/html",
+      "elapsed_ms": 1982,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://jrjc.lk/",
-      "status_code": 403,
-      "final_url": "http://jrjc.lk/",
-      "redirects": [],
-      "elapsed_ms": 99,
-      "content_type": "text/html",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/",
+      "redirects": [
+        "https://jrjc.lk/"
+      ],
+      "elapsed_ms": 1901,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://jrjc.lk/",
-      "status_code": 403,
+      "status_code": 200,
       "final_url": "https://jrjc.lk/",
       "redirects": [],
-      "elapsed_ms": 185,
-      "content_type": "text/html",
+      "elapsed_ms": 315,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://jrjc.lk/",
-      "status_code": 403,
-      "final_url": "http://jrjc.lk/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/",
+      "redirects": [
+        "https://jrjc.lk/"
+      ],
+      "elapsed_ms": 3176,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/cart/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/cart/",
       "redirects": [],
-      "elapsed_ms": 116,
-      "content_type": "text/html",
+      "elapsed_ms": 1812,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/biography/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/biography/",
+      "redirects": [],
+      "elapsed_ms": 1707,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/about-j-r-jayewardene/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/about-j-r-jayewardene/",
+      "redirects": [],
+      "elapsed_ms": 1533,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/library/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/library/",
+      "redirects": [],
+      "elapsed_ms": 182,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/library-book-list/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/library-book-list/",
+      "redirects": [],
+      "elapsed_ms": 1742,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/publications/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/publications/",
+      "redirects": [],
+      "elapsed_ms": 1531,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/museum/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/museum/",
+      "redirects": [],
+      "elapsed_ms": 1546,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/japanese-museum/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/japanese-museum/",
+      "redirects": [],
+      "elapsed_ms": 2182,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/ryugen-garden/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/ryugen-garden/",
+      "redirects": [],
+      "elapsed_ms": 1559,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://jrjc.lk/event-booking/",
+      "status_code": 200,
+      "final_url": "https://jrjc.lk/event-booking/",
+      "redirects": [],
+      "elapsed_ms": 1514,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://jrjc.lk/",
-      "path": "audit.output/jrjc.lk/20261008.0612/snapshots/page-01-d9d5a2f63667.html",
-      "sha256": "d9d5a2f63667ef67b1f7c36a3db8832201a3dbe7ea0be77494cf3c817cf7452a",
-      "bytes": 159
-    },
-    {
-      "url": "http://jrjc.lk/",
-      "path": "audit.output/jrjc.lk/20261008.0612/snapshots/page-02-d9d5a2f63667.html",
-      "sha256": "d9d5a2f63667ef67b1f7c36a3db8832201a3dbe7ea0be77494cf3c817cf7452a",
-      "bytes": 159
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-01-9bccc5fc9710.html",
+      "sha256": "9bccc5fc9710c1aa58b9b8b62ccc901a4adc663cd767cccaeee338c3d9dd2ea5",
+      "bytes": 192185
     },
     {
       "url": "https://jrjc.lk/",
-      "path": "audit.output/jrjc.lk/20261008.0612/snapshots/page-03-d9d5a2f63667.html",
-      "sha256": "d9d5a2f63667ef67b1f7c36a3db8832201a3dbe7ea0be77494cf3c817cf7452a",
-      "bytes": 159
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-02-e1cf7aeae7a3.html",
+      "sha256": "e1cf7aeae7a3d08ae9863820ead43e01d0a7d0854e4cb5a416458c9c3612681e",
+      "bytes": 192185
     },
     {
-      "url": "http://jrjc.lk/",
-      "path": "audit.output/jrjc.lk/20261008.0612/snapshots/page-04-d9d5a2f63667.html",
-      "sha256": "d9d5a2f63667ef67b1f7c36a3db8832201a3dbe7ea0be77494cf3c817cf7452a",
-      "bytes": 159
+      "url": "https://jrjc.lk/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-03-e1cf7aeae7a3.html",
+      "sha256": "e1cf7aeae7a3d08ae9863820ead43e01d0a7d0854e4cb5a416458c9c3612681e",
+      "bytes": 192185
+    },
+    {
+      "url": "https://jrjc.lk/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-04-8e5557d96bc1.html",
+      "sha256": "8e5557d96bc102f53701d6edcc82a876d3a72eed5e9aa5ecf4caaf2cc7fced78",
+      "bytes": 192185
+    },
+    {
+      "url": "https://jrjc.lk/cart/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-05-f3a72f76f59e.html",
+      "sha256": "f3a72f76f59ef2501f8cb38e7c9acf90f81358ee49ed8eb6747ff016d00870a8",
+      "bytes": 137290
+    },
+    {
+      "url": "https://jrjc.lk/biography/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-06-7f6969222d9a.html",
+      "sha256": "7f6969222d9aad84d0acc1824c7d38f41b285186a22ba3faffef2531f496396d",
+      "bytes": 118158
+    },
+    {
+      "url": "https://jrjc.lk/about-j-r-jayewardene/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-07-b09d8be94089.html",
+      "sha256": "b09d8be94089f2ede3e80af2c7b20e5428e7d24a030a6777f38fcd1044d4db47",
+      "bytes": 119654
+    },
+    {
+      "url": "https://jrjc.lk/library/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-08-be9beb2250e4.html",
+      "sha256": "be9beb2250e40a15dabe744dc41b26816159ad035316486308a0de6c74695de0",
+      "bytes": 159013
+    },
+    {
+      "url": "https://jrjc.lk/library-book-list/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-09-d13e1e9370d7.html",
+      "sha256": "d13e1e9370d77f016a437d828ac1f532d75b25667da09e4b5eb53979486129be",
+      "bytes": 73333
+    },
+    {
+      "url": "https://jrjc.lk/publications/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-10-5f68b5b3973b.html",
+      "sha256": "5f68b5b3973ba3425a953937b8a4b403623ee97f3479d670abe423ed2a9fca6d",
+      "bytes": 79030
+    },
+    {
+      "url": "https://jrjc.lk/museum/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-11-f62f0dce764c.html",
+      "sha256": "f62f0dce764c148d331991f83faddbfdde9b76cedf150fbe73bec4d09c0a7188",
+      "bytes": 106635
+    },
+    {
+      "url": "https://jrjc.lk/japanese-museum/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-12-05c9e6a36071.html",
+      "sha256": "05c9e6a360712364c81e9347e709e0ba1d20ab1fc736d3982b642a2e45d4eba4",
+      "bytes": 102705
+    },
+    {
+      "url": "https://jrjc.lk/ryugen-garden/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-13-b9c51cecdf80.html",
+      "sha256": "b9c51cecdf806cc0ba6bb380cfade62249eebfa16d53d7c3c35364ba7735b2e5",
+      "bytes": 79953
+    },
+    {
+      "url": "https://jrjc.lk/event-booking/",
+      "path": "audit.output/jrjc.lk/20261009.0614/snapshots/page-14-7ac615fd0bb0.html",
+      "sha256": "7ac615fd0bb043d86c2be664ae6e3a7c73dda0af9f51642efa79a667fe2657cd",
+      "bytes": 130421
     }
   ],
   "reviewer_decisions": [],
@@ -173,8 +1309,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -186,44 +1322,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 46 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 46 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 46 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 46 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -243,9 +1379,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: here Request Type * I need to access Books I need to access Periodicals and Journals I need to access Manuscripts Collec"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -273,7 +1428,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.199.81",
+    "egress_ip": "13.86.110.39",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

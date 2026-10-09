@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d5f96a02-2569-4d71-bb84-8b6617771f0c",
+  "audit_id": "206b18cd-4632-43f0-b353-da60709a0ee6",
   "url": "https://www.auditorgeneral.gov.lk/",
   "normalized_url": "https://www.auditorgeneral.gov.lk/",
-  "started_at": "2026-10-08T07:13:34.347493+05:30",
-  "completed_at": "2026-10-08T07:13:45.062144+05:30",
+  "started_at": "2026-10-09T07:06:55.186172+05:30",
+  "completed_at": "2026-10-09T07:08:08.585347+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
@@ -18,47 +18,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-08T07:13:34.782957+05:30"
+      "observed_at": "2026-10-09T07:06:55.589012+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-08T07:13:34.782978+05:30"
+      "observed_at": "2026-10-09T07:06:55.589034+05:30"
     },
     {
       "check": "tls_hostname",
       "status": "fail",
       "detail": "TLS certificate does not match the hostname",
-      "observed_at": "2026-10-08T07:13:35.501153+05:30"
+      "observed_at": "2026-10-09T07:06:56.327335+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.auditorgeneral.gov.lk'. (_ssl.c:1010)",
       "source": "https://www.auditorgeneral.gov.lk/",
-      "observed_at": "2026-10-08T07:13:45.059584+05:30"
+      "observed_at": "2026-10-09T07:08:08.582554+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://www.auditorgeneral.gov.lk/",
       "source": "http://www.auditorgeneral.gov.lk/",
-      "observed_at": "2026-10-08T07:13:45.059603+05:30"
+      "observed_at": "2026-10-09T07:08:08.582579+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.auditorgeneral.gov.lk'. (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://www.auditorgeneral.gov.lk/",
-      "observed_at": "2026-10-08T07:13:45.059606+05:30"
+      "observed_at": "2026-10-09T07:08:08.582583+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://www.auditorgeneral.gov.lk/",
       "source": "http://www.auditorgeneral.gov.lk/",
-      "observed_at": "2026-10-08T07:13:45.059609+05:30"
+      "observed_at": "2026-10-09T07:08:08.582585+05:30"
     },
     {
       "check": "named_responsibility",
@@ -121,7 +121,7 @@
       "status_code": 200,
       "final_url": "http://www.auditorgeneral.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 719,
+      "elapsed_ms": 749,
       "content_type": "text/html",
       "error": null
     },
@@ -132,14 +132,14 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.auditorgeneral.gov.lk'. (_ssl.c:1010)"
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.auditorgeneral.gov.lk/",
       "status_code": 200,
       "final_url": "http://www.auditorgeneral.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 743,
+      "elapsed_ms": 762,
       "content_type": "text/html",
       "error": null
     }
@@ -147,13 +147,13 @@
   "snapshots": [
     {
       "url": "http://www.auditorgeneral.gov.lk/",
-      "path": "audit.output/www.auditorgeneral.gov.lk/20261008.0713/snapshots/page-01-cf44df53d3cb.html",
+      "path": "audit.output/www.auditorgeneral.gov.lk/20261009.0706/snapshots/page-01-cf44df53d3cb.html",
       "sha256": "cf44df53d3cb337d24afa04e729d8c9ed97810bbc12a5f6643aed07dbc882f50",
       "bytes": 3975
     },
     {
       "url": "http://www.auditorgeneral.gov.lk/",
-      "path": "audit.output/www.auditorgeneral.gov.lk/20261008.0713/snapshots/page-02-cf44df53d3cb.html",
+      "path": "audit.output/www.auditorgeneral.gov.lk/20261009.0706/snapshots/page-02-cf44df53d3cb.html",
       "sha256": "cf44df53d3cb337d24afa04e729d8c9ed97810bbc12a5f6643aed07dbc882f50",
       "bytes": 3975
     }
@@ -208,8 +208,8 @@
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -271,7 +271,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.199.82",
+    "egress_ip": "13.86.110.39",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

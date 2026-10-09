@@ -1,8 +1,8 @@
 # Website Audit: https://ceypetco.gov.lk/
 
-- Completed: 2026-10-08 06:25
+- Completed: 2026-10-09 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.81 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

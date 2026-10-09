@@ -1,8 +1,8 @@
 # Website Audit: https://www.ird.gov.lk/
 
-- Completed: 2026-10-08 06:31
+- Completed: 2026-10-09 06:29
 - Overall result: 🔴 Level 1
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 06) 13-08-2026 (85 phone numbers found); Email: cgir@ird.gov.lk (44 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.20326.2013 (84 phone numbers found); Email: bandara.wmr@ird.gov.lk (44 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

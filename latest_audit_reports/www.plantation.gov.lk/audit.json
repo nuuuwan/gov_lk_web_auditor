@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3691d545-57d5-44b2-8597-6941a4ffa07e",
+  "audit_id": "a904ef79-c235-4e0a-932b-3132dc73131a",
   "url": "https://www.plantation.gov.lk/",
   "normalized_url": "https://www.plantation.gov.lk/",
-  "started_at": "2026-10-08T07:08:00.536223+05:30",
-  "completed_at": "2026-10-08T07:10:24.353164+05:30",
+  "started_at": "2026-10-09T07:01:37.566593+05:30",
+  "completed_at": "2026-10-09T07:03:44.632250+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -15,9 +15,7 @@
       "hosting_configured: No usable page was inspected",
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "tls_browser_trusted: Browser TLS check did not complete"
     ]
   },
   "evidence": [
@@ -25,47 +23,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-08T07:08:01.214254+05:30"
+      "observed_at": "2026-10-09T07:01:37.924732+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-08T07:08:01.214268+05:30"
+      "observed_at": "2026-10-09T07:01:37.924751+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-08T07:08:11.462405+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-09T07:01:38.892694+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: timed out",
       "source": "https://www.plantation.gov.lk/",
-      "observed_at": "2026-10-08T07:10:24.353053+05:30"
+      "observed_at": "2026-10-09T07:03:44.632100+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.plantation.gov.lk/",
-      "observed_at": "2026-10-08T07:10:24.353061+05:30"
+      "observed_at": "2026-10-09T07:03:44.632123+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "detail": "Probe 3: timed out",
       "source": "https://www.plantation.gov.lk/",
-      "observed_at": "2026-10-08T07:10:24.353063+05:30"
+      "observed_at": "2026-10-09T07:03:44.632126+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://www.plantation.gov.lk/",
-      "observed_at": "2026-10-08T07:10:24.353065+05:30"
+      "observed_at": "2026-10-09T07:03:44.632128+05:30"
     }
   ],
   "observations": [
@@ -85,10 +83,10 @@
     },
     {
       "host": "www.plantation.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-25T04:17:37+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.plantation.gov.lk/",
@@ -115,7 +113,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     },
     {
       "url": "http://www.plantation.gov.lk/",
@@ -142,7 +140,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
       "executed": true,
       "checks": [
         {
@@ -196,14 +194,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -241,7 +239,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.199.82",
+    "egress_ip": "13.86.110.39",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

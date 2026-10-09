@@ -1,8 +1,8 @@
 # Website Audit: https://www.defence.lk/
 
-- Completed: 2026-10-08 07:05
+- Completed: 2026-10-09 07:00
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Cyber Scam Operations and Trafficking for Forced Criminality October 06, 2026 Defence Secretary Attends Reception to Mar; Phone: +94 11 2354354 (2 phone numbers found); Email: modmlobranch@defence.lk (18 email addresses found); Published named responsibility: director
+Published postal address: Cyber Scam Operations and Trafficking for Forced Criminality October 06, 2026 The National Anti-Human Trafficking Task F; Phone: +94 11 2340340 (2 phone numbers found); Email: cfo1@defence.lk (18 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Cyber Scam Operations and Trafficking for Forced Criminality October 06, 2026 Defence Secretary Attends Reception to Mar |
-| reachable_contacts | ✅ | Phone: +94 11 2354354 (2 phone numbers found); Email: modmlobranch@defence.lk (18 email addresses found) |
+| postal_address | ✅ | Published postal address: Cyber Scam Operations and Trafficking for Forced Criminality October 06, 2026 The National Anti-Human Trafficking Task F |
+| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: cfo1@defence.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

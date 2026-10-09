@@ -1,8 +1,8 @@
 # Website Audit: https://nils.gov.lk/
 
-- Completed: 2026-10-08 06:50
+- Completed: 2026-10-09 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the specific challenges faced by our clients. Our Services We provide the following consultancy services: Preparation of; Phone: 024-.112.011.0 (214 phone numbers found); Email: info@nils.lk; Published named responsibility: director
+Published postal address: the specific challenges faced by our clients. Our Services We provide the following consultancy services: Preparation of; Phone: 063.111-.124.1 (214 phone numbers found); Email: info@nils.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the specific challenges faced by our clients. Our Services We provide the following consultancy services: Preparation of |
-| reachable_contacts | ✅ | Phone: 024-.112.011.0 (214 phone numbers found); Email: info@nils.lk |
+| reachable_contacts | ✅ | Phone: 063.111-.124.1 (214 phone numbers found); Email: info@nils.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

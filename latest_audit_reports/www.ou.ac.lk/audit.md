@@ -1,8 +1,8 @@
 # Website Audit: http://www.ou.ac.lk/
 
-- Completed: 2026-10-08 06:17
+- Completed: 2026-10-09 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.81 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport; Phone: 0702067029 ( (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found); Published named responsibility: director
+Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport; Phone: +94 11 288 1000 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport |
-| reachable_contacts | ✅ | Phone: 0702067029 ( (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: +94 11 288 1000 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 

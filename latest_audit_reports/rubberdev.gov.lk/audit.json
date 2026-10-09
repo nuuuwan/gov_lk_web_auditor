@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "63d8798d-817a-42ab-a29c-7af11aa0fe00",
+  "audit_id": "d854ecda-4679-40b8-88ef-2b22f42eed5e",
   "url": "https://rubberdev.gov.lk/",
   "normalized_url": "https://rubberdev.gov.lk/",
-  "started_at": "2026-10-08T06:50:11.216105+05:30",
-  "completed_at": "2026-10-08T06:50:16.899979+05:30",
+  "started_at": "2026-10-09T06:45:02.576826+05:30",
+  "completed_at": "2026-10-09T06:47:14.923521+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "hosting_configured: Detected generic hosting marker: apache2 ubuntu default page"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -17,83 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-08T06:50:11.671601+05:30"
+      "observed_at": "2026-10-09T06:45:03.088638+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-08T06:50:11.671624+05:30"
+      "observed_at": "2026-10-09T06:45:03.088647+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-10-08T06:50:12.149190+05:30"
+      "detail": "timed out",
+      "observed_at": "2026-10-09T06:45:13.358532+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "detail": "Probe 1: timed out",
       "source": "https://rubberdev.gov.lk/",
-      "observed_at": "2026-10-08T06:50:16.889360+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://rubberdev.gov.lk/",
-      "source": "http://rubberdev.gov.lk/",
-      "observed_at": "2026-10-08T06:50:16.889377+05:30"
+      "observed_at": "2026-10-09T06:47:14.923382+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
-      "source": "https://rubberdev.gov.lk/",
-      "observed_at": "2026-10-08T06:50:16.889381+05:30"
+      "detail": "Probe 2: timed out",
+      "source": "http://rubberdev.gov.lk/",
+      "observed_at": "2026-10-09T06:47:14.923399+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://rubberdev.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
+      "source": "https://rubberdev.gov.lk/",
+      "observed_at": "2026-10-09T06:47:14.923402+05:30"
+    },
+    {
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://rubberdev.gov.lk/",
-      "observed_at": "2026-10-08T06:50:16.889384+05:30"
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: apache2 ubuntu default page",
-      "source": "http://rubberdev.gov.lk/"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://rubberdev.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: apache2 ubuntu default page",
-      "source": "http://rubberdev.gov.lk/"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://rubberdev.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 3428 visible characters across 2 pages",
-      "source": "https://rubberdev.gov.lk/"
+      "observed_at": "2026-10-09T06:47:14.923404+05:30"
     }
   ],
   "observations": [
@@ -116,7 +88,7 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "detail": "timed out"
     },
     {
       "url": "https://rubberdev.gov.lk/",
@@ -125,16 +97,16 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     },
     {
       "url": "http://rubberdev.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://rubberdev.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 730,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://rubberdev.gov.lk/",
@@ -143,32 +115,19 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     },
     {
       "url": "http://rubberdev.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://rubberdev.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 498,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "http://rubberdev.gov.lk/",
-      "path": "audit.output/rubberdev.gov.lk/20261008.0650/snapshots/page-01-6faef4d5d777.html",
-      "sha256": "6faef4d5d777fdcaa653766b0ac8b9ed32d0fd87f7dcd79f02ff524dd1b0eb69",
-      "bytes": 10671
-    },
-    {
-      "url": "http://rubberdev.gov.lk/",
-      "path": "audit.output/rubberdev.gov.lk/20261008.0650/snapshots/page-02-6faef4d5d777.html",
-      "sha256": "6faef4d5d777fdcaa653766b0ac8b9ed32d0fd87f7dcd79f02ff524dd1b0eb69",
-      "bytes": 10671
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -182,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Detected generic hosting marker: apache2 ubuntu default page",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -195,26 +154,26 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "fail",
-          "reason": "Detected generic hosting marker: apache2 ubuntu default page"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
@@ -225,26 +184,26 @@
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "reason": "timed out"
         }
       ]
     },
@@ -282,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.199.81",
+    "egress_ip": "13.86.110.39",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

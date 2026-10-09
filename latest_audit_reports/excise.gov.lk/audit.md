@@ -1,8 +1,8 @@
 # Website Audit: https://excise.gov.lk/
 
-- Completed: 2026-10-08 06:29
+- Completed: 2026-10-09 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353, කෝට්ටේ පාර, රාජගිරිය, ශ්‍රී ලංකාව. 📞 General Line සාමාන්‍ය ද; Phone: 0113888022 (480 phone numbers found); Email: excisen@slt.lk (2 email addresses found); Published named responsibility: department
+Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353, කෝට්ටේ පාර, රාජගිරිය, ශ්‍රී ලංකාව. 📞 General Line සාමාන්‍ය ද; Phone: 0113888022 (635 phone numbers found); Email: excisen@slt.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353, කෝට්ටේ පාර, රාජගිරිය, ශ්‍රී ලංකාව. 📞 General Line සාමාන්‍ය ද |
-| reachable_contacts | ✅ | Phone: 0113888022 (480 phone numbers found); Email: excisen@slt.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0113888022 (635 phone numbers found); Email: excisen@slt.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing published update date evidence found
+No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing published update date evidence found
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 24 hours |
-| downloadable_form | ✅ | Published downloadable form: https://excise.gov.lk/Documents/RI.pdf |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://excise.gov.lk/Documents/Right_to_Information_Act.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

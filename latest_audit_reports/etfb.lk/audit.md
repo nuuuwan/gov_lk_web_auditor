@@ -1,8 +1,8 @@
 # Website Audit: https://etfb.lk/
 
-- Completed: 2026-10-08 06:31
+- Completed: 2026-10-09 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: with effect from 01st July 2025. Lake House Building (the rear access road) No. 35, D.R. Wijewardena Mawatha, Colombo 10; Phone: 0-12.8 6.4-12.8 1 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found); Published named responsibility: director
+Published postal address: with effect from 01st July 2025. Lake House Building (the rear access road) No. 35, D.R. Wijewardena Mawatha, Colombo 10; Phone: 0 1 1 12 0 6 6 0 0 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: with effect from 01st July 2025. Lake House Building (the rear access road) No. 35, D.R. Wijewardena Mawatha, Colombo 10 |
-| reachable_contacts | ✅ | Phone: 0-12.8 6.4-12.8 1 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 1 1 12 0 6 6 0 0 (171 phone numbers found); Email: info@etfb.lk (73 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: RS2 |
+| fees_and_payment | ✅ | Published fees and payment: Rs. 637 |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://etfb.lk/wp-content/uploads/2026/05/Application-of-Empoyer-For-ETF-Service.pdf |

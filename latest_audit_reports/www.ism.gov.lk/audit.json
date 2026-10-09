@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ff2679b4-95fd-4d4d-b2c2-3765852546a7",
+  "audit_id": "5f058ecc-b320-4fba-898b-19bd2c70bd63",
   "url": "https://www.ism.gov.lk",
   "normalized_url": "https://www.ism.gov.lk/",
-  "started_at": "2026-10-08T07:02:03.033739+05:30",
-  "completed_at": "2026-10-08T07:13:00.270051+05:30",
+  "started_at": "2026-10-09T06:57:54.446909+05:30",
+  "completed_at": "2026-10-09T06:58:14.385497+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,89 +26,126 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-08T07:02:03.525005+05:30"
+      "observed_at": "2026-10-09T06:57:54.884376+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-08T07:02:03.525018+05:30"
+      "observed_at": "2026-10-09T06:57:54.884396+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-08T07:02:13.767863+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-09T06:57:55.263605+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 1: HTTP 200 at https://ism.gov.lk/",
       "source": "https://www.ism.gov.lk/",
-      "observed_at": "2026-10-08T07:12:59.659734+05:30"
+      "observed_at": "2026-10-09T06:58:13.323663+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://ism.gov.lk/",
       "source": "http://www.ism.gov.lk/",
-      "observed_at": "2026-10-08T07:12:59.659753+05:30"
+      "observed_at": "2026-10-09T06:58:13.323681+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://ism.gov.lk/",
       "source": "https://www.ism.gov.lk/",
-      "observed_at": "2026-10-08T07:12:59.659756+05:30"
+      "observed_at": "2026-10-09T06:58:13.323684+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://ism.gov.lk/",
       "source": "http://www.ism.gov.lk/",
-      "observed_at": "2026-10-08T07:12:59.659757+05:30"
+      "observed_at": "2026-10-09T06:58:13.323686+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://ism.gov.lk/human-performance/",
+      "detail": "Probe 5: HTTP 200 at https://ism.gov.lk/radiology-service/",
+      "source": "https://ism.gov.lk/radiology-service/",
+      "observed_at": "2026-10-09T06:58:13.323687+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://ism.gov.lk/pharmacy-service/",
+      "source": "https://ism.gov.lk/pharmacy-service/",
+      "observed_at": "2026-10-09T06:58:13.323689+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://ism.gov.lk/laboratory-service/",
+      "source": "https://ism.gov.lk/laboratory-service/",
+      "observed_at": "2026-10-09T06:58:13.323691+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://ism.gov.lk/outreach-services/",
+      "source": "https://ism.gov.lk/outreach-services/",
+      "observed_at": "2026-10-09T06:58:13.323693+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://ism.gov.lk/emergency-services/",
+      "source": "https://ism.gov.lk/emergency-services/",
+      "observed_at": "2026-10-09T06:58:13.323695+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://ism.gov.lk/contact-2/",
+      "source": "https://ism.gov.lk/contact-2/",
+      "observed_at": "2026-10-09T06:58:13.323696+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "source": "https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "observed_at": "2026-10-09T06:58:13.323698+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://ism.gov.lk/about-us/",
+      "source": "https://ism.gov.lk/about-us/",
+      "observed_at": "2026-10-09T06:58:13.323700+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://ism.gov.lk/human-performance/",
       "source": "https://ism.gov.lk/human-performance/",
-      "observed_at": "2026-10-08T07:12:59.659759+05:30"
+      "observed_at": "2026-10-09T06:58:13.323702+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://ism.gov.lk/physiotherapy/",
+      "detail": "Probe 14: HTTP 200 at https://ism.gov.lk/physiotherapy/",
       "source": "https://ism.gov.lk/physiotherapy/",
-      "observed_at": "2026-10-08T07:12:59.659761+05:30"
+      "observed_at": "2026-10-09T06:58:13.323704+05:30"
     },
     {
-      "check": "http",
+      "check": "phone",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://ism.gov.lk/performance-health/",
-      "source": "https://ism.gov.lk/performance-health/",
-      "observed_at": "2026-10-08T07:12:59.659763+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://ism.gov.lk/performance-nutrition/",
-      "source": "https://ism.gov.lk/performance-nutrition/",
-      "observed_at": "2026-10-08T07:12:59.659764+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://ism.gov.lk/news/",
-      "source": "https://ism.gov.lk/news/",
-      "observed_at": "2026-10-08T07:12:59.659766+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://ism.gov.lk/notice/",
-      "source": "https://ism.gov.lk/notice/",
-      "observed_at": "2026-10-08T07:12:59.659768+05:30"
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/",
+      "data": {
+        "value": "0555555555"
+      }
     },
     {
       "check": "phone",
@@ -124,9 +169,288 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.833333333",
-      "source": "https://ism.gov.lk/human-performance/",
+      "source": "https://ism.gov.lk/",
       "data": {
         "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/radiology-service/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112695953 ",
+      "source": "https://ism.gov.lk/radiology-service/",
+      "data": {
+        "value": "0112695953 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0770169169 ",
+      "source": "https://ism.gov.lk/radiology-service/",
+      "data": {
+        "value": "0770169169 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/radiology-service/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/pharmacy-service/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112695953 ",
+      "source": "https://ism.gov.lk/pharmacy-service/",
+      "data": {
+        "value": "0112695953 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0770169169 ",
+      "source": "https://ism.gov.lk/pharmacy-service/",
+      "data": {
+        "value": "0770169169 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/pharmacy-service/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/laboratory-service/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112695953 ",
+      "source": "https://ism.gov.lk/laboratory-service/",
+      "data": {
+        "value": "0112695953 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0770169169 ",
+      "source": "https://ism.gov.lk/laboratory-service/",
+      "data": {
+        "value": "0770169169 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/laboratory-service/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/outreach-services/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/outreach-services/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/emergency-services/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/emergency-services/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/contact-2/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 695 953 ",
+      "source": "https://ism.gov.lk/contact-2/",
+      "data": {
+        "value": "+94 112 695 953 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/contact-2/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ism_medicine@yahoo.com",
+      "source": "https://ism.gov.lk/contact-2/",
+      "data": {
+        "value": "ism_medicine@yahoo.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: is not allowed.\",\"val_number\":\"Please enter a valid number.\",\"val_number_positive\":\"Please enter a valid positive number",
+      "source": "https://ism.gov.lk/contact-2/",
+      "data": {
+        "value": "is not allowed.\",\"val_number\":\"Please enter a valid number.\",\"val_number_positive\":\"Please enter a valid positive number"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 697 934. ",
+      "source": "https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "data": {
+        "value": "+94 112 697 934. "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0555555555",
+      "source": "https://ism.gov.lk/about-us/",
+      "data": {
+        "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/about-us/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ism.gov.lk/about-us/",
+      "data": {
+        "value": "director"
       }
     },
     {
@@ -142,7 +466,7 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.833333333",
-      "source": "https://ism.gov.lk/physiotherapy/",
+      "source": "https://ism.gov.lk/human-performance/",
       "data": {
         "value": "0.833333333"
       }
@@ -154,6 +478,15 @@
       "source": "https://ism.gov.lk/physiotherapy/",
       "data": {
         "value": "0555555555"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://ism.gov.lk/physiotherapy/",
+      "data": {
+        "value": "0.833333333"
       }
     },
     {
@@ -166,99 +499,9 @@
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://ism.gov.lk/performance-health/",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0555555555",
-      "source": "https://ism.gov.lk/performance-health/",
-      "data": {
-        "value": "0555555555"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://ism.gov.lk/performance-nutrition/",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0555555555",
-      "source": "https://ism.gov.lk/performance-nutrition/",
-      "data": {
-        "value": "0555555555"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://ism.gov.lk/performance-nutrition/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://ism.gov.lk/performance-nutrition/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://ism.gov.lk/news/",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0555555555",
-      "source": "https://ism.gov.lk/news/",
-      "data": {
-        "value": "0555555555"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.833333333",
-      "source": "https://ism.gov.lk/notice/",
-      "data": {
-        "value": "0.833333333"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0555555555",
-      "source": "https://ism.gov.lk/notice/",
-      "data": {
-        "value": "0555555555"
-      }
-    },
-    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 5167 visible characters across 7 pages",
+      "detail": "Substantive page content: 7980 visible characters across 14 pages",
       "source": "https://www.ism.gov.lk/"
     }
   ],
@@ -279,10 +522,10 @@
     },
     {
       "host": "www.ism.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-08T00:37:33+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.ism.gov.lk/",
@@ -291,43 +534,121 @@
       "redirects": [
         "https://ism.gov.lk/"
       ],
-      "elapsed_ms": 932,
+      "elapsed_ms": 944,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.ism.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/",
+      "redirects": [
+        "https://ism.gov.lk/"
+      ],
+      "elapsed_ms": 900,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.ism.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/",
+      "redirects": [
+        "https://ism.gov.lk/"
+      ],
+      "elapsed_ms": 730,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ism.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/",
+      "redirects": [
+        "https://ism.gov.lk/"
+      ],
+      "elapsed_ms": 927,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/radiology-service/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/radiology-service/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 708,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/pharmacy-service/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/pharmacy-service/",
+      "redirects": [],
+      "elapsed_ms": 889,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/laboratory-service/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/laboratory-service/",
+      "redirects": [],
+      "elapsed_ms": 779,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/outreach-services/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/outreach-services/",
+      "redirects": [],
+      "elapsed_ms": 555,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/emergency-services/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/emergency-services/",
+      "redirects": [],
+      "elapsed_ms": 603,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/contact-2/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/contact-2/",
+      "redirects": [],
+      "elapsed_ms": 874,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "redirects": [],
+      "elapsed_ms": 591,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ism.gov.lk/about-us/",
+      "status_code": 200,
+      "final_url": "https://ism.gov.lk/about-us/",
+      "redirects": [],
+      "elapsed_ms": 617,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://ism.gov.lk/human-performance/",
       "status_code": 200,
       "final_url": "https://ism.gov.lk/human-performance/",
       "redirects": [],
-      "elapsed_ms": 866,
+      "elapsed_ms": 873,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -336,43 +657,7 @@
       "status_code": 200,
       "final_url": "https://ism.gov.lk/physiotherapy/",
       "redirects": [],
-      "elapsed_ms": 869,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ism.gov.lk/performance-health/",
-      "status_code": 200,
-      "final_url": "https://ism.gov.lk/performance-health/",
-      "redirects": [],
-      "elapsed_ms": 882,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ism.gov.lk/performance-nutrition/",
-      "status_code": 200,
-      "final_url": "https://ism.gov.lk/performance-nutrition/",
-      "redirects": [],
-      "elapsed_ms": 630,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ism.gov.lk/news/",
-      "status_code": 200,
-      "final_url": "https://ism.gov.lk/news/",
-      "redirects": [],
-      "elapsed_ms": 894,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://ism.gov.lk/notice/",
-      "status_code": 200,
-      "final_url": "https://ism.gov.lk/notice/",
-      "redirects": [],
-      "elapsed_ms": 663,
+      "elapsed_ms": 592,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -380,45 +665,87 @@
   "snapshots": [
     {
       "url": "https://ism.gov.lk/",
-      "path": "audit.output/www.ism.gov.lk/20261008.0702/snapshots/page-01-484ee863d0dc.html",
-      "sha256": "484ee863d0dcf4b9e27dc8f61338e658dbe09e77f950114e0a9c6b1fc5b08da2",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-01-422fa2eb0d13.html",
+      "sha256": "422fa2eb0d135d5479c510e48891814ac2066513ecf2bae9a587eea92c7bcdc2",
       "bytes": 172072
     },
     {
+      "url": "https://ism.gov.lk/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-02-757526d0f0fa.html",
+      "sha256": "757526d0f0fa319700611e291558503ef8dd7075804ce22f4e17fbd7ab9e3c4e",
+      "bytes": 172072
+    },
+    {
+      "url": "https://ism.gov.lk/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-03-ac178cd23d04.html",
+      "sha256": "ac178cd23d04d737846e28cca288bae530a1ab80776c38c23c4a074fac2229db",
+      "bytes": 172072
+    },
+    {
+      "url": "https://ism.gov.lk/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-04-5dfd0503052e.html",
+      "sha256": "5dfd0503052ef3279dbc4c2070e04bc573a011da9eb7380331de334dabc8d63e",
+      "bytes": 172072
+    },
+    {
+      "url": "https://ism.gov.lk/radiology-service/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-05-29abc8ec964a.html",
+      "sha256": "29abc8ec964a05e21ab092c1cfe16bc5f3b308a92340173a710559ed0ca4874a",
+      "bytes": 130550
+    },
+    {
+      "url": "https://ism.gov.lk/pharmacy-service/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-06-5c4a852daea6.html",
+      "sha256": "5c4a852daea684c2e49cda787b319c5b2dd933659fc3b3f4abd721007bc369b0",
+      "bytes": 127686
+    },
+    {
+      "url": "https://ism.gov.lk/laboratory-service/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-07-a885ba960100.html",
+      "sha256": "a885ba960100d2179c049493a96124ad80dad34a030572d39c814eaaed9a297d",
+      "bytes": 130193
+    },
+    {
+      "url": "https://ism.gov.lk/outreach-services/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-08-7cf63b35d10d.html",
+      "sha256": "7cf63b35d10dff6a4ab1c1a6f71304d1ea4a22aa4fcb4a17c7bebb1636dcef33",
+      "bytes": 135890
+    },
+    {
+      "url": "https://ism.gov.lk/emergency-services/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-09-6f1f4cd9762b.html",
+      "sha256": "6f1f4cd9762bc7448bd274ce037f208980fbd4d264b7bad3fee548fae945a775",
+      "bytes": 128520
+    },
+    {
+      "url": "https://ism.gov.lk/contact-2/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-10-9d9bcd0a769c.html",
+      "sha256": "9d9bcd0a769c87bcac531be9e07bdb945b5bd06f80751db7677029fd7603eb47",
+      "bytes": 140213
+    },
+    {
+      "url": "https://ism.gov.lk/2024/10/22/institute-of-sports-medicine-launches-comprehensive-new-services-for-athletes/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-11-356fef1da8d9.html",
+      "sha256": "356fef1da8d949b15cb2652473e5181b4725a47dac1908ba64834abc17fe03ca",
+      "bytes": 137470
+    },
+    {
+      "url": "https://ism.gov.lk/about-us/",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-12-fba47a662ab4.html",
+      "sha256": "fba47a662ab45342ab58b05ab860b471907e31adbe26563a232156f0fed7e1eb",
+      "bytes": 147298
+    },
+    {
       "url": "https://ism.gov.lk/human-performance/",
-      "path": "audit.output/www.ism.gov.lk/20261008.0702/snapshots/page-02-8d35fb22a2fc.html",
-      "sha256": "8d35fb22a2fc8f6a7aafbc8b1b46d598e455a3366537de30e242ecca9c835a98",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-13-9fd3f78c83f5.html",
+      "sha256": "9fd3f78c83f5a3b9d04b258a6a2510d6236487649a3b226288d6b8841aa60273",
       "bytes": 131157
     },
     {
       "url": "https://ism.gov.lk/physiotherapy/",
-      "path": "audit.output/www.ism.gov.lk/20261008.0702/snapshots/page-03-b15cf1f80927.html",
-      "sha256": "b15cf1f809276a0b91babf820d8f144ae4a1c9916a989d2175238c4227f1e6ba",
+      "path": "audit.output/www.ism.gov.lk/20261009.0657/snapshots/page-14-035e58635ba5.html",
+      "sha256": "035e58635ba5859ab1b2da18ad8508451a4c21b4cbbc268d396f178e48759c51",
       "bytes": 138968
-    },
-    {
-      "url": "https://ism.gov.lk/performance-health/",
-      "path": "audit.output/www.ism.gov.lk/20261008.0702/snapshots/page-04-f1ed7c7842da.html",
-      "sha256": "f1ed7c7842da00e7732465577a618524f398f228e6bb84afa51a41e3ebbc9f1f",
-      "bytes": 129529
-    },
-    {
-      "url": "https://ism.gov.lk/performance-nutrition/",
-      "path": "audit.output/www.ism.gov.lk/20261008.0702/snapshots/page-05-197ade73d612.html",
-      "sha256": "197ade73d612d85c29864684a1c7927e5ec47ed3a64a77953a561556ac9483cc",
-      "bytes": 154639
-    },
-    {
-      "url": "https://ism.gov.lk/news/",
-      "path": "audit.output/www.ism.gov.lk/20261008.0702/snapshots/page-06-c35c47445d42.html",
-      "sha256": "c35c47445d42e8b31cc6f51957a06368213788d4aadaaf314b4238200e8dcd70",
-      "bytes": 154121
-    },
-    {
-      "url": "https://ism.gov.lk/notice/",
-      "path": "audit.output/www.ism.gov.lk/20261008.0702/snapshots/page-07-2b1bbd12d9bc.html",
-      "sha256": "2b1bbd12d9bc59e099cf239213932bd46ee72f5fa58b631c2464dc6baba6a84a",
-      "bytes": 129812
     }
   ],
   "reviewer_decisions": [],
@@ -434,8 +761,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -472,7 +799,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://www.ism.gov.lk/: Probe 2: timed out; https://www.ism.gov.lk/: Probe 3: timed out; http://www.ism.gov.lk/: Probe 4: timed out"
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -489,32 +816,94 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: is not allowed.\",\"val_number\":\"Please enter a valid number.\",\"val_number_positive\":\"Please enter a valid positive number; Phone: 0555555555 (6 phone numbers found); Email: ism_medicine@yahoo.com; Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: is not allowed.\",\"val_number\":\"Please enter a valid number.\",\"val_number_positive\":\"Please enter a valid positive number"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0555555555 (6 phone numbers found); Email: ism_medicine@yahoo.com"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -534,7 +923,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.199.82",
+    "egress_ip": "13.86.110.39",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

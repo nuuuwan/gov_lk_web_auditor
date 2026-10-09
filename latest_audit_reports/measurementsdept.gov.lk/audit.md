@@ -1,8 +1,8 @@
 # Website Audit: https://measurementsdept.gov.lk/
 
-- Completed: 2026-10-08 06:56
+- Completed: 2026-10-09 06:51
 - Overall result: 🔴 Level 1
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94-11-2182259 (3 phone numbers found); Email: info@measurementsdept.gov.lk |
+| reachable_contacts | ✅ | Phone: +94-11-2182250 (2 phone numbers found); Email: info@measurementsdept.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

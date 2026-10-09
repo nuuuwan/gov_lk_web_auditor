@@ -1,8 +1,8 @@
 # Website Audit: https://www.industry.gov.lk/
 
-- Completed: 2026-10-08 07:08
+- Completed: 2026-10-09 07:01
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk; Phone: 112392150 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found); Published named responsibility: division
+Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk; Phone: +94 112 392149 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk |
-| reachable_contacts | ✅ | Phone: 112392150 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 392149 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://www.industry.gov.lk/web/wp-content/uploads/2026/10/cdn-10-07-070250-25x5-dng.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

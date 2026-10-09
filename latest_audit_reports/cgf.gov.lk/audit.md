@@ -1,8 +1,8 @@
 # Website Audit: https://cgf.gov.lk/
 
-- Completed: 2026-10-08 06:46
+- Completed: 2026-10-09 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 123, Wijerama Mawatha, Colombo 07, Sri Lanka; Phone: +94 70 156 0646 (11 phone numbers found); Email: cgf@cgf.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: No. 123, Wijerama Mawatha, Colombo 07, Sri Lanka; Phone: +94 70 1585880 (11 phone numbers found); Email: cgf@cgf.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 123, Wijerama Mawatha, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 70 156 0646 (11 phone numbers found); Email: cgf@cgf.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 70 1585880 (11 phone numbers found); Email: cgf@cgf.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing required documents evidence found; No passing processing time evidenc
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://cgf.gov.lk/cgfresouce/recgf/CGF_Bond_Application_Form_BB_2026_v01.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://cgf.gov.lk/cgfresouce/recgf/CGF-100-BB.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

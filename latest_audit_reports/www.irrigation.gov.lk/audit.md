@@ -1,8 +1,8 @@
 # Website Audit: https://www.irrigation.gov.lk/
 
-- Completed: 2026-10-08 06:09
+- Completed: 2026-10-09 06:11
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.81 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://www.irrigation.gov.lk/web/images/RTI/20261001_infromation_officers.pdf |
-| published_update_date | ✅ | Published published update date: 07 October 2026 |
+| published_update_date | ✅ | Published published update date: 08 October 2026 |

@@ -1,8 +1,8 @@
 # Website Audit: https://hc-victoria.gov.lk/
 
-- Completed: 2026-10-08 06:43
+- Completed: 2026-10-09 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.81 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"passport_issued_date_label\":\"Issued Date of the passport (Optional)\",\"retype_email_label\":\"Re-type Emai; Phone: 0888474738 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: Line 2\",\"passport_issued_date_label\":\"Issued Date of the passport (Optional)\",\"retype_email_label\":\"Re-type Emai; Phone: 0037736842 (4 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 2\",\"passport_issued_date_label\":\"Issued Date of the passport (Optional)\",\"retype_email_label\":\"Re-type Emai |
-| reachable_contacts | ✅ | Phone: 0888474738 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0037736842 (4 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
+| required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ❓ | No passing processing time evidence found |
+| processing_time | ✅ | Published processing time: 6 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://pdb.gov.lk/
 
-- Completed: 2026-10-08 06:52
+- Completed: 2026-10-09 06:47
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.199.82 (US, github-actions)
+- Vantage: 13.86.110.39 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Mr. R. Raveenthiran Chairman, PDB +94 77 386 8588 / rasar60@gmail.com Mr. K.B.S.Fernando Board of Director suradewa@gmai; Phone: +94 21 222 2034 (61 phone numbers found); Email: slpdbho@yahoo.com (23 email addresses found); Published named responsibility: division
+Published postal address: Mr. R. Raveenthiran Chairman, PDB +94 77 386 8588 / rasar60@gmail.com Mr. K.B.S.Fernando Board of Director suradewa@gmai; Phone: +94 21 222 4134 (61 phone numbers found); Email: slpdbho@yahoo.com (23 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Mr. R. Raveenthiran Chairman, PDB +94 77 386 8588 / rasar60@gmail.com Mr. K.B.S.Fernando Board of Director suradewa@gmai |
-| reachable_contacts | ✅ | Phone: +94 21 222 2034 (61 phone numbers found); Email: slpdbho@yahoo.com (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 21 222 4134 (61 phone numbers found); Email: slpdbho@yahoo.com (23 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
