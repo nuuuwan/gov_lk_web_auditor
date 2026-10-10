@@ -1,8 +1,8 @@
 # Website Audit: https://www.ac.lk/
 
-- Completed: 2026-10-09 06:24
+- Completed: 2026-10-10 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 13.86.110.39 (US, github-actions)
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 167 Vihara Mawatha, Mulgampola, Kandy 20000 Sri Lanka Network Operation Center Phone : +94 81 200 3035 Email : noc@le; Phone: +94 77 691 1510 (15 phone numbers found); Email: learn@learn.ac.lk (5 email addresses found); Published named responsibility: director
+Published postal address: No 167 Vihara Mawatha, Mulgampola, Kandy 20000 Sri Lanka Network Operation Center Phone : +94 81 200 3035 Email : noc@le; Phone: +94 77 948 6819 (15 phone numbers found); Email: learn@learn.ac.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 167 Vihara Mawatha, Mulgampola, Kandy 20000 Sri Lanka Network Operation Center Phone : +94 81 200 3035 Email : noc@le |
-| reachable_contacts | ✅ | Phone: +94 77 691 1510 (15 phone numbers found); Email: learn@learn.ac.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 77 948 6819 (15 phone numbers found); Email: learn@learn.ac.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

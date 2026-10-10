@@ -1,8 +1,8 @@
 # Website Audit: https://hc-nairobi.gov.lk/
 
-- Completed: 2026-10-09 06:38
+- Completed: 2026-10-10 06:39
 - Overall result: 🟠 Level 2
-- Vantage: 13.86.110.39 (US, github-actions)
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"no_button\":\"No\",\"booking_details\":\"Booking Details\",\"appointment_on\":\"on\",\"cannot_submit_review_h; Phone: 0006714358 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"no_button\":\"No\",\"booking_details\":\"Booking Details\",\"appointment_on\":\"on\",\"cannot_submit_review_h; Phone: +254734387267 (7 phone numbers found); Email: slhc.nairobi@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 2\",\"no_button\":\"No\",\"booking_details\":\"Booking Details\",\"appointment_on\":\"on\",\"cannot_submit_review_h |
-| reachable_contacts | ✅ | Phone: 0006714358 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +254734387267 (7 phone numbers found); Email: slhc.nairobi@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 6 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 10/08/2026 |

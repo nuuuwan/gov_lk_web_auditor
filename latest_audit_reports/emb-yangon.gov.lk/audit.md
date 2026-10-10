@@ -1,8 +1,8 @@
 # Website Audit: https://emb-yangon.gov.lk/
 
-- Completed: 2026-10-09 06:34
+- Completed: 2026-10-10 06:35
 - Overall result: 🟠 Level 2
-- Vantage: 13.86.110.39 (US, github-actions)
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi; Phone: 00951 23143 (17 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi; Phone: 00951 82228 (17 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 34 Taw Win Street, Dagon Township Yangon, Myanmar Tel: 00951 8222812 , 00951 2314325 Email: slemb.yangon@mfa.gov.lk Regi |
-| reachable_contacts | ✅ | Phone: 00951 23143 (17 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 00951 82228 (17 phone numbers found); Email: slemb.yangon@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 28 September 2026 |

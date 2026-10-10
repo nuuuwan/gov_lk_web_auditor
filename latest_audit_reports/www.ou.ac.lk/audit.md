@@ -1,8 +1,8 @@
 # Website Audit: http://www.ou.ac.lk/
 
-- Completed: 2026-10-09 06:19
-- Overall result: 🟠 Level 2
-- Vantage: 13.86.110.39 (US, github-actions)
+- Completed: 2026-10-10 06:20
+- Overall result: 🔴 Level 1
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport; Phone: +94 11 288 1000 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found); Published named responsibility: division
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport |
-| reachable_contacts | ✅ | Phone: +94 11 288 1000 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found) |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: 025-02-23-21.5 (62 phone numbers found); Email: pio@ou.ac.lk (17 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

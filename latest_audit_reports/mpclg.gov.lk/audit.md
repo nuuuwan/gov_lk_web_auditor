@@ -1,8 +1,8 @@
 # Website Audit: https://mpclg.gov.lk/
 
-- Completed: 2026-10-09 07:15
-- Overall result: ⚫ Level 0
-- Vantage: 13.86.110.39 (US, github-actions)
+- Completed: 2026-10-10 07:05
+- Overall result: 🔴 Level 1
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-timed out; timed out
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://mpclg.gov.lk/: Probe 3: timed out; http://mpclg.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,14 +26,20 @@ timed out; timed out
 | http_available | ✅ | HTTPS probes passed; failing variants: https://mpclg.gov.lk/: Probe 3: timed out; http://mpclg.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |
 
 ## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Not run because 🔴 Level 1 did not pass
+No email evidence found; No passing named responsibility evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloake6d5f3910c0c6ea2 |
+| reachable_contacts | ❓ | No email evidence found |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 

@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-10-09 07:08
+- Completed: 2026-10-10 07:06
 - Overall result: 🟠 Level 2
-- Vantage: 13.86.110.39 (US, github-actions)
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: legal, interpretational, administrative and... October 08, 2026 Anti-Corruption (Amendment) Bill Passed in Parliament wi; Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
+Published postal address: legal, interpretational, administrative and... October 08, 2026 Committee on Public Finance Inquires into Financial Irre; Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: legal, interpretational, administrative and... October 08, 2026 Anti-Corruption (Amendment) Bill Passed in Parliament wi |
+| postal_address | ✅ | Published postal address: legal, interpretational, administrative and... October 08, 2026 Committee on Public Finance Inquires into Financial Irre |
 | reachable_contacts | ✅ | Phone: 0112862365 (6 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2 October 2026 |
+| published_update_date | ✅ | Published published update date: 2026-10-09 |

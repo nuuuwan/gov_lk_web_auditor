@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-10-09 06:18
+- Completed: 2026-10-10 06:18
 - Overall result: 🔴 Level 1
-- Vantage: 13.86.110.39 (US, github-actions)
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (182 phone numbers found); Email: dgna@archives.gov.lk (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (180 phone numbers found); Email: info@agd.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.spicelk.com/
 
-- Completed: 2026-10-09 06:45
+- Completed: 2026-10-10 06:47
 - Overall result: 🔴 Level 1
-- Vantage: 13.86.110.39 (US, github-actions)
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ❓ | No phone or email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| postal_address | ✅ | Published postal address: Telephone: Email: Hours: View store map Select another store window.initHeaderDrawerAria = function() { document.querySe |
+| reachable_contacts | ❓ | No email evidence found |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

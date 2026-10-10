@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b4e63dff-3e1f-4a3d-a602-20c4b0842a60",
+  "audit_id": "3c7cf311-548d-4682-9fc7-5ae2e4f31edf",
   "url": "https://doc.gov.lk/",
   "normalized_url": "https://doc.gov.lk/",
-  "started_at": "2026-10-09T06:50:53.007444+05:30",
-  "completed_at": "2026-10-09T07:05:40.100922+05:30",
+  "started_at": "2026-10-10T06:53:50.866940+05:30",
+  "completed_at": "2026-10-10T06:56:02.824670+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 2: [Errno 111] Connection refused; https://doc.gov.lk/: Probe 3: timed out; http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,1554 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-09T06:50:53.457139+05:30"
+      "observed_at": "2026-10-10T06:53:51.276694+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-09T06:50:53.457151+05:30"
+      "observed_at": "2026-10-10T06:53:51.276712+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-09T06:50:54.172388+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://doc.gov.lk/index.php?lang=en",
-      "source": "https://doc.gov.lk/",
-      "observed_at": "2026-10-09T07:05:39.907848+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-10T06:54:01.583486+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "detail": "Probe 1: timed out",
+      "source": "https://doc.gov.lk/",
+      "observed_at": "2026-10-10T06:56:02.824484+05:30"
+    },
+    {
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://doc.gov.lk/",
-      "observed_at": "2026-10-09T07:05:39.907877+05:30"
+      "observed_at": "2026-10-10T06:56:02.824506+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: timed out",
       "source": "https://doc.gov.lk/",
-      "observed_at": "2026-10-09T07:05:39.907880+05:30"
+      "observed_at": "2026-10-10T06:56:02.824511+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "detail": "Probe 4: timed out",
       "source": "http://doc.gov.lk/",
-      "observed_at": "2026-10-09T07:05:39.907883+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907885+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907886+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907888+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907889+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907891+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907892+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907894+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907896+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "observed_at": "2026-10-09T07:05:39.907897+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "observed_at": "2026-10-09T07:05:39.907899+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 450 1444 ",
-      "source": "https://doc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "071 450 1444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://doc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://doc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://doc.gov.lk/images/pdf/RTI/Right_to_Information_Acte.pdf",
-      "source": "https://doc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "https://doc.gov.lk/images/pdf/RTI/Right_to_Information_Acte.pdf"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.20 0.93 10.84 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.20 0.93 10.84 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.02 2.96 0.42 1.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.02 2.96 0.42 1."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 02 132.35 49.2",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "02 132.35 49.2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.27 - 0.31 0.00 0.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.27 - 0.31 0.00 0."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.70 - 0.10 - 0.25 - 0.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.70 - 0.10 - 0.25 - 0."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04 5.36 10.73 1",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "04 5.36 10.73 1"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0.71 1.62 4.09 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0 0.71 1.62 4.09 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01.64 7.65 72.7",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "01.64 7.65 72.7"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.87 2.40 15.93 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.87 2.40 15.93 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01.64 72.78 92.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "01.64 72.78 92."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 021 2022 202",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "021 2022 202"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 09 11.62 11.53",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "09 11.62 11.53"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.73 100.76 15.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.73 100.76 15."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.29 - 0.64 - 2.18 - 2.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.29 - 0.64 - 2.18 - 2."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 11.39 17.05 2",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0 11.39 17.05 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04 92.67 5.36 1",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "04 92.67 5.36 1"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 5.69 2.15 4.25 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0 5.69 2.15 4.25 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.73 0.87 0.98 1.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.73 0.87 0.98 1."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.06 1.21 0.19 0.",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "0.06 1.21 0.19 0."
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 1 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "data": {
-        "value": "1 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://doc.gov.lk/images/2026/Application_for_Registration_as_an_importer_of_Basmati_Rice_2026.pdf",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "data": {
-        "value": "https://doc.gov.lk/images/2026/Application_for_Registration_as_an_importer_of_Basmati_Rice_2026.pdf"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 118 8647 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "077 118 8647 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 07 077 722 53",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "07 077 722 53"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 03 078 837 55",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "03 078 837 55"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 07 076 616 55",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "07 076 616 55"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 074 413 4758 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "074 413 4758 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 229 3700 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "077 229 3700 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 071 201 821",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "0 071 201 821"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 921 4515 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "076 921 4515 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 921 4357 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "076 921 4357 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 442 4363 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "071 442 4363 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 755 8512 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "077 755 8512 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 074 030 623",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "0 074 030 623"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 077 263 258",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "0 077 263 258"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 603 1991 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "071 603 1991 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0716031992 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "0716031992 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 038 1134 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "076 038 1134 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 820 6417 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "071 820 6417 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 867 6957 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "077 867 6957 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 09 070 665 59",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "09 070 665 59"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dgunit.commerce@gmail.com",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "dgunit.commerce@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak2cb4628ce91a56f9",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak2cb4628ce91a56f9"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0713 71 11 42 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "0713 71 11 42 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 921 4357 (",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "076 921 4357 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 078 837 5502 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "078 837 5502 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 371 1142 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "071 371 1142 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 005 6261 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "077 005 6261 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0776 32 18 10 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "0776 32 18 10 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0769 214 216 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "0769 214 216 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 468 8336 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "071 468 8336 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0714 45 65 41 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "0714 45 65 41 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 722 5331 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "077 722 5331 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 632 1810 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "077 632 1810 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0766 16 55 19 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "0766 16 55 19 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 688 6852 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "076 688 6852 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 445 6541 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "071 445 6541 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 616 5519 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "076 616 5519 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 921 4515 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "076 921 4515 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 818 1409 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "077 818 1409 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0778 18 14 09 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "0778 18 14 09 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 070 286 1461 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "070 286 1461 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 688 7781 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "071 688 7781 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 038 1134 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "076 038 1134 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: vireshika@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "vireshika@doc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: revathee@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "revathee@doc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Department of Commerce LHP Building No.492, Duplication Road Colombo 03 Email: This email address is being protected fro",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "Department of Commerce LHP Building No.492, Duplication Road Colombo 03 Email: This email address is being protected fro"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 118 8647 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "077 118 8647 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 07 077 722 53",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "07 077 722 53"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 03 078 837 55",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "03 078 837 55"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 07 076 616 55",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "07 076 616 55"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 074 413 4758 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "074 413 4758 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 229 3700 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "077 229 3700 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 071 201 821",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "0 071 201 821"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 921 4515 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "076 921 4515 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 921 4357 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "076 921 4357 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 442 4363 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "071 442 4363 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 755 8512 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "077 755 8512 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 074 030 623",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "0 074 030 623"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 077 263 258",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "0 077 263 258"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 603 1991 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "071 603 1991 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0716031992 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "0716031992 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 038 1134 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "076 038 1134 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 820 6417 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "071 820 6417 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 867 6957 - ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "077 867 6957 - "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 09 070 665 59",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "09 070 665 59"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dgunit.commerce@gmail.com",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "dgunit.commerce@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak7ced0731080e7b98",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak7ced0731080e7b98"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 155 73 18 49 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "0 155 73 18 49 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0)11 460 8240 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "0)11 460 8240 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 312 427 102",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "0 312 427 102"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 312 427 10 2",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "0 312 427 10 2"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Telephone Fax Email Website Belgium / Brussels Ms. Thavishya Mullegamgoda Minister (Commercial) Embassy of Sri Lanka, Ru",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "Telephone Fax Email Website Belgium / Brussels Ms. Thavishya Mullegamgoda Minister (Commercial) Embassy of Sri Lanka, Ru"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 4501444 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "071 4501444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 070 6655920 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "070 6655920 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 7245453 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "077 7245453 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 6628224 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "077 6628224 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 2435494 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "076 2435494 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 6887981 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "071 6887981 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0699001159",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "0699001159"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 1858170 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "077 1858170 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 072 0635368 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "072 0635368 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 5151623 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "071 5151623 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 8851315 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "071 8851315 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 8485913 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "077 8485913 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 2632581 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "077 2632581 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 8676957 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "077 8676957 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 077 1188647 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "077 1188647 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 078 3366577 (",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "078 3366577 ("
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: This email address is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cl",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "This email address is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cl"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 18 Feb 2025",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "data": {
-        "value": "18 Feb 2025"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2430233 ",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "data": {
-        "value": "011 2430233 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: fortrade@doc.gov.lk",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "data": {
-        "value": "fortrade@doc.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "required_documents",
-      "status": "pass",
-      "detail": "Published required documents: documents required",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "data": {
-        "value": "documents required"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 15,000",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "data": {
-        "value": "Rs. 15,000"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 07 October 2026",
-      "source": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "data": {
-        "value": "07 October 2026"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 14388 visible characters across 11 pages",
-      "source": "https://doc.gov.lk/"
+      "observed_at": "2026-10-10T06:56:02.824515+05:30"
     }
   ],
   "observations": [
@@ -1593,30 +85,10 @@
     },
     {
       "host": "doc.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-06T18:52:54+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
-    },
-    {
-      "url": "https://doc.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://doc.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1191,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://doc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://doc.gov.lk/",
@@ -1634,167 +106,28 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     },
     {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
+      "url": "https://doc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1203,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
+      "url": "http://doc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 21333,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1250,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "redirects": [],
-      "elapsed_ms": 996,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1223,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1208,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "redirects": [],
-      "elapsed_ms": 981,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1007,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "redirects": [],
-      "elapsed_ms": 988,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "status_code": 200,
-      "final_url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "redirects": [],
-      "elapsed_ms": 20824,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://doc.gov.lk/index.php?lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-01-61ef297010ca.html",
-      "sha256": "61ef297010ca6d2a7213ec0aa531be3601a0f8a1d230f3efeda5364a9b75b9c2",
-      "bytes": 66927
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=32&Itemid=250&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-02-37a476143342.html",
-      "sha256": "37a47614334223ba91672ce396f399b35d0e0f21991280d3c2eae798815b5c92",
-      "bytes": 60481
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=category&layout=blog&id=10&Itemid=167&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-03-ada0bcb6e4de.html",
-      "sha256": "ada0bcb6e4ded69186335208708b7f167de9fd2e4cf9551e6a569a6932bcd303",
-      "bytes": 52700
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=37&Itemid=126&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-04-e966c973abe6.html",
-      "sha256": "e966c973abe60d2257149c2e258a9e9bb365b0617ade77c4373255faf870fdc4",
-      "bytes": 56156
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=227&Itemid=231&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-05-a8c238878b9e.html",
-      "sha256": "a8c238878b9e4f7441f5291eb7c104fac5966e152516b49cc000d0d412dcdc3e",
-      "bytes": 47964
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=128&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-06-b20558236e88.html",
-      "sha256": "b20558236e88e61d9c169b12360e3ea56991574e5fd5f7c2ac8f4ba305ad5d10",
-      "bytes": 73698
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=180&Itemid=221&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-07-9d84fe7398f8.html",
-      "sha256": "9d84fe7398f814e380edf60f3d8f1486c675b8b602c0c3518f1e5a3767eb7830",
-      "bytes": 78838
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=133&Itemid=219&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-08-40999090c89c.html",
-      "sha256": "40999090c89c76b1276ad5d5f0ed1086ebe549a4fc3948d6f49fdd24670df645",
-      "bytes": 74424
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=181&Itemid=220&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-09-ec388c4cb860.html",
-      "sha256": "ec388c4cb8605a44e8946769085306708af762536eb9def3f9104476fa96b4f6",
-      "bytes": 83791
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=356&Itemid=253&lang=en",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-10-e20a61dfd2cb.html",
-      "sha256": "e20a61dfd2cb1a28a9f97a2c2cc95f014011f3e644ed0ae93ecda948cfe1c825",
-      "bytes": 57565
-    },
-    {
-      "url": "https://doc.gov.lk/index.php?option=com_content&view=article&id=23&catid=9&lang=en&Itemid=145",
-      "path": "audit.output/doc.gov.lk/20261009.0650/snapshots/page-11-3fda5504dc64.html",
-      "sha256": "3fda5504dc6414917eab6cbccd0ee3ee8c3f4a491cb7ac07c46648f32a5a9b71",
-      "bytes": 46704
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1808,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 2: [Errno 111] Connection refused; https://doc.gov.lk/: Probe 3: timed out; http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1821,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 2: [Errno 111] Connection refused; https://doc.gov.lk/: Probe 3: timed out; http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak2cb4628ce91a56f9; Phone: 071 450 1444 (80 phone numbers found); Email: fortrade@doc.gov.lk (4 email addresses found); Published named responsibility: department",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak2cb4628ce91a56f9"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 071 450 1444 (80 phone numbers found); Email: fortrade@doc.gov.lk (4 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing processing time evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published required documents: documents required"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: Rs. 15,000"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: regulations"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published downloadable form: https://doc.gov.lk/images/pdf/RTI/Right_to_Information_Acte.pdf"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published published update date: 07 October 2026"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1970,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "13.86.110.39",
+    "egress_ip": "20.55.15.1",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

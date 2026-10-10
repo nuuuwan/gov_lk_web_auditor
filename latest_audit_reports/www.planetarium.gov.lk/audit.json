@@ -1,23 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "dfaba761-981f-49d7-b378-a950ce3c5007",
+  "audit_id": "ae779182-3e87-4fe5-ae08-04464aca0f9c",
   "url": "https://www.planetarium.gov.lk/",
   "normalized_url": "https://www.planetarium.gov.lk/",
-  "started_at": "2026-10-09T06:49:53.317109+05:30",
-  "completed_at": "2026-10-09T06:49:58.237063+05:30",
+  "started_at": "2026-10-10T06:52:41.636667+05:30",
+  "completed_at": "2026-10-10T06:52:46.828254+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)",
+      "tls_hostname_matches: TLS certificate does not match the hostname"
     ]
   },
   "evidence": [
@@ -25,70 +18,52 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-09T06:49:53.783622+05:30"
+      "observed_at": "2026-10-10T06:52:42.028721+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-09T06:49:53.783632+05:30"
+      "observed_at": "2026-10-10T06:52:42.028738+05:30"
     },
     {
-      "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-10-09T06:49:54.279050+05:30"
+      "check": "tls_hostname",
+      "status": "fail",
+      "detail": "TLS certificate does not match the hostname",
+      "observed_at": "2026-10-10T06:52:42.772560+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)",
       "source": "https://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-09T06:49:58.236375+05:30"
+      "observed_at": "2026-10-10T06:52:46.827006+05:30"
     },
     {
       "check": "http",
       "status": "fail",
-      "detail": "Probe 2: HTTP 404 at http://www.planetarium.gov.lk/",
+      "detail": "Probe 2: HTTP 500 at http://www.planetarium.gov.lk/",
       "source": "http://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-09T06:49:58.236393+05:30"
+      "observed_at": "2026-10-10T06:52:46.827026+05:30"
     },
     {
-      "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)",
       "source": "https://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-09T06:49:58.236397+05:30"
+      "observed_at": "2026-10-10T06:52:46.827033+05:30"
     },
     {
       "check": "http",
       "status": "fail",
-      "detail": "Probe 4: HTTP 404 at http://www.planetarium.gov.lk/",
+      "detail": "Probe 4: HTTP 500 at http://www.planetarium.gov.lk/",
       "source": "http://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-09T06:49:58.236400+05:30"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://www.planetarium.gov.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://www.planetarium.gov.lk/",
-      "data": {
-        "value": "director"
-      }
+      "observed_at": "2026-10-10T06:52:46.827037+05:30"
     },
     {
       "check": "page_text",
       "status": "fail",
-      "detail": "Only 34 visible characters across 2 pages; below substance threshold 200",
+      "detail": "Only 73 visible characters across 2 pages; below substance threshold 200",
       "source": "https://www.planetarium.gov.lk/"
     }
   ],
@@ -109,10 +84,10 @@
     },
     {
       "host": "www.planetarium.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "hostname_error",
+      "expires_at": "2027-01-07T22:33:28+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate does not match the hostname"
     },
     {
       "url": "https://www.planetarium.gov.lk/",
@@ -121,15 +96,15 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)"
     },
     {
       "url": "http://www.planetarium.gov.lk/",
-      "status_code": 404,
+      "status_code": 500,
       "final_url": "http://www.planetarium.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 501,
-      "content_type": "text/plain; charset=utf-8",
+      "elapsed_ms": 752,
+      "content_type": "text/html",
       "error": null
     },
     {
@@ -139,30 +114,30 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)"
     },
     {
       "url": "http://www.planetarium.gov.lk/",
-      "status_code": 404,
+      "status_code": 500,
       "final_url": "http://www.planetarium.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 712,
-      "content_type": "text/plain; charset=utf-8",
+      "elapsed_ms": 755,
+      "content_type": "text/html",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "http://www.planetarium.gov.lk/",
-      "path": "audit.output/www.planetarium.gov.lk/20261009.0649/snapshots/page-01-0cd70ad3ed9d.html",
-      "sha256": "0cd70ad3ed9d251b9422477a6b867e33c0430ff65df2d8d8b4cf37f8f19a85e2",
-      "bytes": 34
+      "path": "audit.output/www.planetarium.gov.lk/20261010.0652/snapshots/page-01-d3af065b1a97.html",
+      "sha256": "d3af065b1a979140769859a3464a3dc0f167dee16085068f13a63e12b1e6ab0d",
+      "bytes": 186
     },
     {
       "url": "http://www.planetarium.gov.lk/",
-      "path": "audit.output/www.planetarium.gov.lk/20261009.0649/snapshots/page-02-0cd70ad3ed9d.html",
-      "sha256": "0cd70ad3ed9d251b9422477a6b867e33c0430ff65df2d8d8b4cf37f8f19a85e2",
-      "bytes": 34
+      "path": "audit.output/www.planetarium.gov.lk/20261010.0652/snapshots/page-02-d3af065b1a97.html",
+      "sha256": "d3af065b1a979140769859a3464a3dc0f167dee16085068f13a63e12b1e6ab0d",
+      "bytes": 186
     }
   ],
   "reviewer_decisions": [],
@@ -178,8 +153,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname",
       "executed": true,
       "checks": [
         {
@@ -192,31 +167,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 34 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
@@ -227,20 +202,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "fail",
+          "reason": "TLS certificate does not match the hostname"
         }
       ]
     },
@@ -278,7 +253,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "13.86.110.39",
+    "egress_ip": "20.55.15.1",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

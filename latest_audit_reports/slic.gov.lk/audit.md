@@ -1,8 +1,8 @@
 # Website Audit: https://slic.gov.lk/
 
-- Completed: 2026-10-09 07:01
+- Completed: 2026-10-10 06:54
 - Overall result: 🟠 Level 2
-- Vantage: 13.86.110.39 (US, github-actions)
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,23 +33,23 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Read More Uncategorized Sahasak Nimavum 2021 Award Ceremony ජාතික නව නිපැයුම්කරුවන්ගේ දිනය පාදක කර ගනිමින්, ශ්‍රී ලංකා න; Phone: 024-03-12 9.00 (853 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found); Published named responsibility: division
+Published postal address: Read More Uncategorized Sahasak Nimavum 2021 Award Ceremony ජාතික නව නිපැයුම්කරුවන්ගේ දිනය පාදක කර ගනිමින්, ශ්‍රී ලංකා න; Phone: 0112676646 (18 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Read More Uncategorized Sahasak Nimavum 2021 Award Ceremony ජාතික නව නිපැයුම්කරුවන්ගේ දිනය පාදක කර ගනිමින්, ශ්‍රී ලංකා න |
-| reachable_contacts | ✅ | Phone: 024-03-12 9.00 (853 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112676646 (18 phone numbers found); Email: sahasaknimavum@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing legal basis evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ❓ | No passing legal basis evidence found |

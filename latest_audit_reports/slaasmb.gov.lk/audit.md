@@ -1,8 +1,8 @@
 # Website Audit: https://slaasmb.gov.lk/
 
-- Completed: 2026-10-09 06:31
-- Overall result: 🟠 Level 2
-- Vantage: 13.86.110.39 (US, github-actions)
+- Completed: 2026-10-10 06:35
+- Overall result: 🔴 Level 1
+- Vantage: 20.55.15.1 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://slaasmb.gov.lk/: Probe 1: timed out; https://slaasmb.gov.lk/: Probe 3: timed out; http://slaasmb.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,36 +23,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://slaasmb.gov.lk/: Probe 1: timed out; https://slaasmb.gov.lk/: Probe 3: timed out; http://slaasmb.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka; Phone: 01210 94-11-2 (6 phone numbers found); Email: ashaahamath@slaasmb.gov.lk (8 email addresses found); Published named responsibility: director
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 3rd floor Bible House Building, 293 Galle Road, Colombo 3, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 01210 94-11-2 (6 phone numbers found); Email: ashaahamath@slaasmb.gov.lk (8 email addresses found) |
+| reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: RS 9, |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass
