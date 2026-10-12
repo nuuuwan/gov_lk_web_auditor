@@ -1,8 +1,8 @@
 # Website Audit: https://www.plantation.gov.lk/
 
-- Completed: 2026-10-10 07:02
+- Completed: 2026-10-12 07:19
 - Overall result: ⚫ Level 0
-- Vantage: 20.55.15.1 (US, github-actions)
+- Vantage: 20.161.28.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Detected generic hosting marker: under construction
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ❌ | Detected generic hosting marker: under construction |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://www.plantation.gov.lk/: Probe 1: timed out; https://www.plantation.gov.lk/: Probe 3: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

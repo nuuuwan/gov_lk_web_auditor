@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "37007c65-b449-46d8-88e6-a9f3f5c38bd5",
+  "audit_id": "67087bcf-9e13-4135-99f6-e4561c74a4bb",
   "url": "https://vncoe.edu.lk/",
   "normalized_url": "https://vncoe.edu.lk/",
-  "started_at": "2026-10-10T06:24:22.374488+05:30",
-  "completed_at": "2026-10-10T06:24:25.785091+05:30",
+  "started_at": "2026-10-12T06:29:49.800421+05:30",
+  "completed_at": "2026-10-12T06:34:10.660977+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 101] Network is unreachable",
+      "tls_hostname_matches: [Errno 101] Network is unreachable"
     ]
   },
   "evidence": [
@@ -17,69 +25,57 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-10T06:24:22.674121+05:30"
+      "observed_at": "2026-10-12T06:29:49.979401+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-10T06:24:22.674142+05:30"
+      "observed_at": "2026-10-12T06:29:49.979417+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-10T06:24:22.722030+05:30"
+      "status": "error",
+      "detail": "[Errno 101] Network is unreachable",
+      "observed_at": "2026-10-12T06:30:10.000659+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 403 at https://vncoe.edu.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 101] Network is unreachable",
       "source": "https://vncoe.edu.lk/",
-      "observed_at": "2026-10-10T06:24:25.772899+05:30"
+      "observed_at": "2026-10-12T06:34:10.660789+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 403 at http://vncoe.edu.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 101] Network is unreachable",
       "source": "http://vncoe.edu.lk/",
-      "observed_at": "2026-10-10T06:24:25.772915+05:30"
+      "observed_at": "2026-10-12T06:34:10.660807+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 403 at https://vncoe.edu.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 101] Network is unreachable",
       "source": "https://vncoe.edu.lk/",
-      "observed_at": "2026-10-10T06:24:25.772920+05:30"
+      "observed_at": "2026-10-12T06:34:10.660812+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 403 at http://vncoe.edu.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 101] Network is unreachable",
       "source": "http://vncoe.edu.lk/",
-      "observed_at": "2026-10-10T06:24:25.772923+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 130 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://vncoe.edu.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
-      "observed_at": "2026-10-10T06:24:25.784428+05:30"
+      "observed_at": "2026-10-12T06:34:10.660816+05:30"
     }
   ],
   "observations": [
     {
       "host": "vncoe.edu.lk",
       "addresses": [
-        "191.96.144.235",
-        "212.1.212.168",
-        "2a02:4780:1d:3b06:dc8d:abc3:e86e:513b",
-        "2a02:4780:21:6dd6:df39:2ccd:1f7f:5e6"
+        "191.101.104.224",
+        "195.35.60.191",
+        "2a02:4780:1d:4ba9:4063:4e6a:d604:b5a9",
+        "2a02:4780:21:b6f1:2e9f:c6b5:1686:42e1"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -92,74 +88,49 @@
     },
     {
       "host": "vncoe.edu.lk",
-      "status": "valid",
-      "expires_at": "2026-12-13T01:49:31+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 101] Network is unreachable"
     },
     {
       "url": "https://vncoe.edu.lk/",
-      "status_code": 403,
-      "final_url": "https://vncoe.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 75,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "http://vncoe.edu.lk/",
-      "status_code": 403,
-      "final_url": "http://vncoe.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 46,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "https://vncoe.edu.lk/",
-      "status_code": 403,
-      "final_url": "https://vncoe.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 69,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "http://vncoe.edu.lk/",
-      "status_code": 403,
-      "final_url": "http://vncoe.edu.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 38,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://vncoe.edu.lk/",
-      "path": "audit.output/vncoe.edu.lk/20261010.0624/snapshots/page-01-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "http://vncoe.edu.lk/",
-      "path": "audit.output/vncoe.edu.lk/20261010.0624/snapshots/page-02-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "https://vncoe.edu.lk/",
-      "path": "audit.output/vncoe.edu.lk/20261010.0624/snapshots/page-03-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "http://vncoe.edu.lk/",
-      "path": "audit.output/vncoe.edu.lk/20261010.0624/snapshots/page-04-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -173,8 +144,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
       "executed": true,
       "checks": [
         {
@@ -187,31 +158,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -228,14 +199,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 101] Network is unreachable"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 101] Network is unreachable"
         }
       ]
     },
@@ -273,7 +244,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.55.15.1",
+    "egress_ip": "20.161.28.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

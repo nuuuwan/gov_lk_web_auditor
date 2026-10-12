@@ -1,8 +1,8 @@
 # Website Audit: https://www.slbfe.lk/
 
-- Completed: 2026-10-10 06:41
+- Completed: 2026-10-12 06:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.15.1 (US, github-actions)
+- Vantage: 20.161.28.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: { flex-direction: column; display: flex; width: 90%; margin: auto; text-align: center; justify-content: space-between; a; Phone: +94)11 2 880 500 (113 phone numbers found); Email: info_center@slbfe.lk (42 email addresses found); Published named responsibility: department
+Published postal address: { flex-direction: column; display: flex; width: 90%; margin: auto; text-align: center; justify-content: space-between; a; Phone: +94) 71 9 802 822 - (113 phone numbers found); Email: info_center@slbfe.lk (42 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: { flex-direction: column; display: flex; width: 90%; margin: auto; text-align: center; justify-content: space-between; a |
-| reachable_contacts | ✅ | Phone: +94)11 2 880 500 (113 phone numbers found); Email: info_center@slbfe.lk (42 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 71 9 802 822 - (113 phone numbers found); Email: info_center@slbfe.lk (42 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

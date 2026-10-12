@@ -1,8 +1,8 @@
 # Website Audit: https://hc-dhaka.gov.lk/
 
-- Completed: 2026-10-10 06:33
+- Completed: 2026-10-12 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.15.1 (US, github-actions)
+- Vantage: 20.161.28.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: House No.10, Rd No 62, Gulshan 2, Dhaka 1212 Email: slhc.dhaka@mfa.gov.lk Tel: +8802222296353 Register as a Sri Lankan A; Phone: 0-8374-10425 (23 phone numbers found); Email: slhc.dhaka@mfa.gov.lk (7 email addresses found); Published named responsibility: director
+Published postal address: House No.10, Rd No 62, Gulshan 2, Dhaka 1212 Email: slhc.dhaka@mfa.gov.lk Tel: +8802222296353 Register as a Sri Lankan A; Phone: 0576596289 (23 phone numbers found); Email: john@example.com (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: House No.10, Rd No 62, Gulshan 2, Dhaka 1212 Email: slhc.dhaka@mfa.gov.lk Tel: +8802222296353 Register as a Sri Lankan A |
-| reachable_contacts | ✅ | Phone: 0-8374-10425 (23 phone numbers found); Email: slhc.dhaka@mfa.gov.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0576596289 (23 phone numbers found); Email: john@example.com (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

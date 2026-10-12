@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "80ec0016-eeec-40c5-872e-fecd1d008e93",
+  "audit_id": "616dc982-99b8-40d2-836a-a56ce513b160",
   "url": "https://ovdc.lk/",
   "normalized_url": "https://ovdc.lk/",
-  "started_at": "2026-10-10T06:43:27.911048+05:30",
-  "completed_at": "2026-10-10T06:43:31.548000+05:30",
+  "started_at": "2026-10-12T06:53:15.384171+05:30",
+  "completed_at": "2026-10-12T06:57:35.994212+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 101] Network is unreachable",
+      "tls_hostname_matches: [Errno 101] Network is unreachable"
     ]
   },
   "evidence": [
@@ -17,69 +25,57 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-10T06:43:28.158590+05:30"
+      "observed_at": "2026-10-12T06:53:15.581471+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-10T06:43:28.158608+05:30"
+      "observed_at": "2026-10-12T06:53:15.581491+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-10T06:43:28.342608+05:30"
+      "status": "error",
+      "detail": "[Errno 101] Network is unreachable",
+      "observed_at": "2026-10-12T06:53:35.594223+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 403 at https://ovdc.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 101] Network is unreachable",
       "source": "https://ovdc.lk/",
-      "observed_at": "2026-10-10T06:43:31.535698+05:30"
+      "observed_at": "2026-10-12T06:57:35.994018+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 403 at http://ovdc.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 101] Network is unreachable",
       "source": "http://ovdc.lk/",
-      "observed_at": "2026-10-10T06:43:31.535714+05:30"
+      "observed_at": "2026-10-12T06:57:35.994038+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 403 at https://ovdc.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 101] Network is unreachable",
       "source": "https://ovdc.lk/",
-      "observed_at": "2026-10-10T06:43:31.535718+05:30"
+      "observed_at": "2026-10-12T06:57:35.994044+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 403 at http://ovdc.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 101] Network is unreachable",
       "source": "http://ovdc.lk/",
-      "observed_at": "2026-10-10T06:43:31.535722+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 130 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://ovdc.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
-      "observed_at": "2026-10-10T06:43:31.547332+05:30"
+      "observed_at": "2026-10-12T06:57:35.994048+05:30"
     }
   ],
   "observations": [
     {
       "host": "ovdc.lk",
       "addresses": [
-        "2a02:4780:42:4c42:f1b:17f2:22e3:fa0f",
-        "2a02:4780:45:8563:651e:e77b:ab08:158",
-        "92.113.16.114",
-        "92.113.23.234"
+        "2a02:4780:43:7bed:bd46:5a98:3d98:2a96",
+        "2a02:4780:45:955e:5512:dde:f660:4fd",
+        "92.113.16.13",
+        "92.113.23.2"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -92,74 +88,49 @@
     },
     {
       "host": "ovdc.lk",
-      "status": "valid",
-      "expires_at": "2026-11-15T14:55:09+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 101] Network is unreachable"
     },
     {
       "url": "https://ovdc.lk/",
-      "status_code": 403,
-      "final_url": "https://ovdc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 321,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "http://ovdc.lk/",
-      "status_code": 403,
-      "final_url": "http://ovdc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 190,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "https://ovdc.lk/",
-      "status_code": 403,
-      "final_url": "https://ovdc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 299,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "http://ovdc.lk/",
-      "status_code": 403,
-      "final_url": "http://ovdc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 185,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://ovdc.lk/",
-      "path": "audit.output/ovdc.lk/20261010.0643/snapshots/page-01-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "http://ovdc.lk/",
-      "path": "audit.output/ovdc.lk/20261010.0643/snapshots/page-02-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "https://ovdc.lk/",
-      "path": "audit.output/ovdc.lk/20261010.0643/snapshots/page-03-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "http://ovdc.lk/",
-      "path": "audit.output/ovdc.lk/20261010.0643/snapshots/page-04-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -173,8 +144,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
       "executed": true,
       "checks": [
         {
@@ -187,31 +158,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -228,14 +199,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 101] Network is unreachable"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 101] Network is unreachable"
         }
       ]
     },
@@ -273,7 +244,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.55.15.1",
+    "egress_ip": "20.161.28.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

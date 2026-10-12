@@ -1,8 +1,8 @@
 # Website Audit: https://www.ciaboc.gov.lk/
 
-- Completed: 2026-10-10 07:06
-- Overall result: 🔴 Level 1
-- Vantage: 20.55.15.1 (US, github-actions)
+- Completed: 2026-10-12 07:22
+- Overall result: 🟠 Level 2
+- Vantage: 20.161.28.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No email evidence found
+Published postal address: 2.2 District 2.3 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone No./WhatsApp No. 4.2; Phone: 0112 596365 (9 phone numbers found); Email: da@ciaboc.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2.2 District 2.3 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone No./WhatsApp No. 4.2 |
-| reachable_contacts | ❓ | No email evidence found |
+| reachable_contacts | ✅ | Phone: 0112 596365 (9 phone numbers found); Email: da@ciaboc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❓ | No passing published update date evidence found |

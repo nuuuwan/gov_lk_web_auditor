@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "97aa519b-20e0-4f31-9583-84eafa055e42",
+  "audit_id": "a1a5acf4-9d2e-472e-976a-9095c0bb954e",
   "url": "https://slnc.lk/",
   "normalized_url": "https://slnc.lk/",
-  "started_at": "2026-10-10T06:42:28.523271+05:30",
-  "completed_at": "2026-10-10T06:42:32.194235+05:30",
+  "started_at": "2026-10-12T06:51:43.284963+05:30",
+  "completed_at": "2026-10-12T06:56:04.131257+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 101] Network is unreachable",
+      "tls_hostname_matches: [Errno 101] Network is unreachable"
     ]
   },
   "evidence": [
@@ -17,69 +25,57 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-10T06:42:28.818934+05:30"
+      "observed_at": "2026-10-12T06:51:43.672213+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-10T06:42:28.818957+05:30"
+      "observed_at": "2026-10-12T06:51:43.672230+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-10T06:42:28.865738+05:30"
+      "status": "error",
+      "detail": "[Errno 101] Network is unreachable",
+      "observed_at": "2026-10-12T06:52:03.682778+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 403 at https://slnc.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 101] Network is unreachable",
       "source": "https://slnc.lk/",
-      "observed_at": "2026-10-10T06:42:31.966293+05:30"
+      "observed_at": "2026-10-12T06:56:04.131098+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 403 at http://slnc.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 101] Network is unreachable",
       "source": "http://slnc.lk/",
-      "observed_at": "2026-10-10T06:42:31.966310+05:30"
+      "observed_at": "2026-10-12T06:56:04.131116+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 403 at https://slnc.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 101] Network is unreachable",
       "source": "https://slnc.lk/",
-      "observed_at": "2026-10-10T06:42:31.966315+05:30"
+      "observed_at": "2026-10-12T06:56:04.131120+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 403 at http://slnc.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 101] Network is unreachable",
       "source": "http://slnc.lk/",
-      "observed_at": "2026-10-10T06:42:31.966318+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 130 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://slnc.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
-      "observed_at": "2026-10-10T06:42:31.983567+05:30"
+      "observed_at": "2026-10-12T06:56:04.131123+05:30"
     }
   ],
   "observations": [
     {
       "host": "slnc.lk",
       "addresses": [
-        "191.101.104.197",
-        "191.96.144.228",
-        "2a02:4780:1e:fd4a:e22e:df8e:6625:3de4",
-        "2a02:4780:22:5e43:1f73:7987:ff57:eab2"
+        "191.101.104.27",
+        "195.35.60.213",
+        "2a02:4780:1d:f1a7:24e0:f00f:90e1:bebd",
+        "2a02:4780:1e:7fbb:e8cb:dce0:5b67:b785"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -92,74 +88,49 @@
     },
     {
       "host": "slnc.lk",
-      "status": "valid",
-      "expires_at": "2026-12-18T13:00:11+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 101] Network is unreachable"
     },
     {
       "url": "https://slnc.lk/",
-      "status_code": 403,
-      "final_url": "https://slnc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 61,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "http://slnc.lk/",
-      "status_code": 403,
-      "final_url": "http://slnc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 43,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "https://slnc.lk/",
-      "status_code": 403,
-      "final_url": "https://slnc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 148,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     },
     {
       "url": "http://slnc.lk/",
-      "status_code": 403,
-      "final_url": "http://slnc.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 72,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 101] Network is unreachable"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://slnc.lk/",
-      "path": "audit.output/slnc.lk/20261010.0642/snapshots/page-01-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "http://slnc.lk/",
-      "path": "audit.output/slnc.lk/20261010.0642/snapshots/page-02-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "https://slnc.lk/",
-      "path": "audit.output/slnc.lk/20261010.0642/snapshots/page-03-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    },
-    {
-      "url": "http://slnc.lk/",
-      "path": "audit.output/slnc.lk/20261010.0642/snapshots/page-04-69eacef2f355.html",
-      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
-      "bytes": 5768
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -173,8 +144,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
       "executed": true,
       "checks": [
         {
@@ -187,31 +158,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -228,14 +199,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 101] Network is unreachable"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 101] Network is unreachable"
         }
       ]
     },
@@ -273,7 +244,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.55.15.1",
+    "egress_ip": "20.161.28.177",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

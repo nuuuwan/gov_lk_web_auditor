@@ -1,8 +1,8 @@
 # Website Audit: https://www.doenets.lk/
 
-- Completed: 2026-10-10 06:23
+- Completed: 2026-10-12 06:28
 - Overall result: ⚫ Level 0
-- Vantage: 20.55.15.1 (US, github-actions)
+- Vantage: 20.161.28.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

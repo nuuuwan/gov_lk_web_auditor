@@ -1,8 +1,8 @@
 # Website Audit: https://slnc.lk/
 
-- Completed: 2026-10-10 06:42
+- Completed: 2026-10-12 06:56
 - Overall result: ⚫ Level 0
-- Vantage: 20.55.15.1 (US, github-actions)
+- Vantage: 20.161.28.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,21 +10,33 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Every repeated HTTP probe failed: [403, 403, 403, 403]
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200 |
-| http_available | ❌ | Every repeated HTTP probe failed: [403, 403, 403, 403] |
+| domain_not_parked | ❓ | No usable page was inspected |
+| site_not_defaced | ❓ | No usable page was inspected |
+| content_relevant | ❓ | No usable page was inspected |
+| hosting_configured | ❓ | No usable page was inspected |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | [Errno 101] Network is unreachable |
+| tls_hostname_matches | ❓ | [Errno 101] Network is unreachable |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+Not run because 🔴 Level 1 did not pass
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

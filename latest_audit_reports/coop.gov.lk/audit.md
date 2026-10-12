@@ -1,8 +1,8 @@
 # Website Audit: https://coop.gov.lk/
 
-- Completed: 2026-10-10 06:54
+- Completed: 2026-10-12 07:06
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.15.1 (US, github-actions)
+- Vantage: 20.161.28.177 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Department of Cooperative Development, 330, Union Place, Colombo 02 Email info@coop.gov.lk / depcoopdev@gmail.com Web ww; Phone: +94)11 2478 373 (6 phone numbers found); Email: depcoopdev@gmail.com (2 email addresses found); Published named responsibility: division
+Published postal address: Department of Cooperative Development, 330, Union Place, Colombo 02 Email info@coop.gov.lk / depcoopdev@gmail.com Web ww; Phone: +94) 11 2478 373 (6 phone numbers found); Email: depcoopdev@gmail.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Department of Cooperative Development, 330, Union Place, Colombo 02 Email info@coop.gov.lk / depcoopdev@gmail.com Web ww |
-| reachable_contacts | ✅ | Phone: +94)11 2478 373 (6 phone numbers found); Email: depcoopdev@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 11 2478 373 (6 phone numbers found); Email: depcoopdev@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
