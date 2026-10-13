@@ -1,8 +1,8 @@
 # Website Audit: https://www.prajashakthi.gov.lk/
 
-- Completed: 2026-10-12 07:24
+- Completed: 2026-10-13 07:17
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

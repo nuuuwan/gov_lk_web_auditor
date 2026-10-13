@@ -1,23 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "f44311fb-bd1d-46a2-9ffb-eb3fc39fec95",
+  "audit_id": "96e45104-cf22-466d-b57f-2fe7e27384a7",
   "url": "https://thjaffna.lk/",
   "normalized_url": "https://thjaffna.lk/",
-  "started_at": "2026-10-12T06:49:40.280039+05:30",
-  "completed_at": "2026-10-12T06:54:05.066606+05:30",
+  "started_at": "2026-10-13T06:45:16.247189+05:30",
+  "completed_at": "2026-10-13T06:45:24.604741+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 101] Network is unreachable",
-      "tls_hostname_matches: [Errno 101] Network is unreachable"
+      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
     ]
   },
   "evidence": [
@@ -25,57 +17,69 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-12T06:49:43.390454+05:30"
+      "observed_at": "2026-10-13T06:45:16.647349+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-12T06:49:43.390468+05:30"
+      "observed_at": "2026-10-13T06:45:16.647368+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 101] Network is unreachable",
-      "observed_at": "2026-10-12T06:50:04.427672+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-13T06:45:16.749936+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 101] Network is unreachable",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 403 at https://thjaffna.lk/",
       "source": "https://thjaffna.lk/",
-      "observed_at": "2026-10-12T06:54:05.066347+05:30"
+      "observed_at": "2026-10-13T06:45:22.599591+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 101] Network is unreachable",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 403 at http://thjaffna.lk/",
       "source": "http://thjaffna.lk/",
-      "observed_at": "2026-10-12T06:54:05.066371+05:30"
+      "observed_at": "2026-10-13T06:45:22.599625+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 101] Network is unreachable",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 403 at https://thjaffna.lk/",
       "source": "https://thjaffna.lk/",
-      "observed_at": "2026-10-12T06:54:05.066376+05:30"
+      "observed_at": "2026-10-13T06:45:22.599630+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 101] Network is unreachable",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 403 at http://thjaffna.lk/",
       "source": "http://thjaffna.lk/",
-      "observed_at": "2026-10-12T06:54:05.066381+05:30"
+      "observed_at": "2026-10-13T06:45:22.599633+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 130 visible characters across 4 pages; below substance threshold 200",
+      "source": "https://thjaffna.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "observed_at": "2026-10-13T06:45:22.618221+05:30"
     }
   ],
   "observations": [
     {
       "host": "thjaffna.lk",
       "addresses": [
-        "191.101.104.66",
-        "195.35.60.117",
-        "2a02:4780:1d:dfbe:f61a:72e0:ae00:dec9",
-        "2a02:4780:21:4711:4893:5a01:edc4:c0f1"
+        "147.79.120.29",
+        "148.135.128.105",
+        "2a02:4780:4e:e800:88db:23ba:e19d:dd10",
+        "2a02:4780:4f:a7b1:b553:2b97:6209:854c"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -88,49 +92,74 @@
     },
     {
       "host": "thjaffna.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 101] Network is unreachable"
+      "status": "valid",
+      "expires_at": "2026-12-18T12:13:01+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://thjaffna.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "https://thjaffna.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 156,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://thjaffna.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "http://thjaffna.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 217,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "https://thjaffna.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "https://thjaffna.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 341,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://thjaffna.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "http://thjaffna.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 2045,
+      "content_type": "text/html",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://thjaffna.lk/",
+      "path": "audit.output/thjaffna.lk/20261013.0645/snapshots/page-01-69eacef2f355.html",
+      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
+      "bytes": 5768
+    },
+    {
+      "url": "http://thjaffna.lk/",
+      "path": "audit.output/thjaffna.lk/20261013.0645/snapshots/page-02-69eacef2f355.html",
+      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
+      "bytes": 5768
+    },
+    {
+      "url": "https://thjaffna.lk/",
+      "path": "audit.output/thjaffna.lk/20261013.0645/snapshots/page-03-69eacef2f355.html",
+      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
+      "bytes": 5768
+    },
+    {
+      "url": "http://thjaffna.lk/",
+      "path": "audit.output/thjaffna.lk/20261013.0645/snapshots/page-04-69eacef2f355.html",
+      "sha256": "69eacef2f355c22ff53745adb39ff0076d2093a767a72e38070ca83c7c5569df",
+      "bytes": 5768
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -144,8 +173,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
       "executed": true,
       "checks": [
         {
@@ -158,31 +187,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 130 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
         },
         {
           "name": "redirect_related",
@@ -199,14 +228,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 101] Network is unreachable"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 101] Network is unreachable"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -244,7 +273,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.28.177",
+    "egress_ip": "20.118.214.17",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

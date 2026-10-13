@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsf.gov.lk/
 
-- Completed: 2026-10-12 07:05
+- Completed: 2026-10-13 07:00
 - Overall result: 🔴 Level 1
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0008905445 (105 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0960920008 . (104 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

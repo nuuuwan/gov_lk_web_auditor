@@ -1,8 +1,8 @@
 # Website Audit: https://cea.lk/
 
-- Completed: 2026-10-12 06:33
+- Completed: 2026-10-13 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,10 +37,10 @@ Published postal address: is being protected from spambots. You need JavaScript 
  <!--
  var prefix = 'ma' + 'il' + 'to';
  var path = 'hr' + 'ef' + '=';
- var addy71331 = 'wmpg' + '@';
- addy71331 = addy71331 + 'cea' + '.' + 'lk';
- document.write('<a ' + path + '\'' + prefix + ':' + addy71331 + '\'>');
- document.write(addy71331);
+ var addy10764 = 'wmpg' + '@';
+ addy10764 = addy10764 + 'cea' + '.' + 'lk';
+ document.write('<a ' + path + '\'' + prefix + ':' + addy10764 + '\'>');
+ document.write(addy10764);
  document.write('<\/a>');
  //-->\n </script><script type='text/javascript'>
  <!--
@@ -57,7 +57,7 @@ Published postal address: is being protected from spambots. You need JavaScript 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa |
-| reachable_contacts | ✅ | Phone: 011-2872419 (9 phone numbers found); Email: <script type='text/javascript'>  <!--  var prefix = 'ma' + 'il' + 'to';  var path = 'hr' + 'ef' + '=';  var addy71331 = 'wmpg' + '@';  addy71331 = addy71331 + 'cea' + '.' + 'lk';  document.write('<a ' + path + '\'' + prefix + ':' + addy71331 + '\'>');  document.write(addy71331);  document.write('<\/a>');  //-->\n </script><script type='text/javascript'>  <!--  document.write('<span style=\'display: none;\'>');  //-->  </script>This email address is being protected from spambots. You need JavaScript enabled to view it.  <script type='text/javascript'>  <!--  document.write('</');  document.write('span>');  //-->  </script> |
+| reachable_contacts | ✅ | Phone: 011-2872419 (9 phone numbers found); Email: <script type='text/javascript'>  <!--  var prefix = 'ma' + 'il' + 'to';  var path = 'hr' + 'ef' + '=';  var addy10764 = 'wmpg' + '@';  addy10764 = addy10764 + 'cea' + '.' + 'lk';  document.write('<a ' + path + '\'' + prefix + ':' + addy10764 + '\'>');  document.write(addy10764);  document.write('<\/a>');  //-->\n </script><script type='text/javascript'>  <!--  document.write('<span style=\'display: none;\'>');  //-->  </script>This email address is being protected from spambots. You need JavaScript enabled to view it.  <script type='text/javascript'>  <!--  document.write('</');  document.write('span>');  //-->  </script> |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

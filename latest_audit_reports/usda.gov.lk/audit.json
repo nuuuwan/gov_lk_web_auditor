@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "5291fbc9-775c-448e-aa7e-9db09946df6b",
+  "audit_id": "be4a023b-0c27-4f65-97c4-98c1ad32fced",
   "url": "https://usda.gov.lk/",
   "normalized_url": "https://usda.gov.lk/",
-  "started_at": "2026-10-12T07:11:57.389726+05:30",
-  "completed_at": "2026-10-12T07:14:09.980525+05:30",
+  "started_at": "2026-10-13T07:05:47.544504+05:30",
+  "completed_at": "2026-10-13T07:06:11.717837+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,465 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-12T07:11:57.816094+05:30"
+      "observed_at": "2026-10-13T07:05:48.211389+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-12T07:11:57.816114+05:30"
+      "observed_at": "2026-10-13T07:05:48.211408+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-12T07:12:08.068027+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-13T07:05:48.904967+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://usda.gov.lk/",
       "source": "https://usda.gov.lk/",
-      "observed_at": "2026-10-12T07:14:09.980336+05:30"
+      "observed_at": "2026-10-13T07:06:09.519082+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://usda.gov.lk/",
       "source": "http://usda.gov.lk/",
-      "observed_at": "2026-10-12T07:14:09.980358+05:30"
+      "observed_at": "2026-10-13T07:06:09.519102+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://usda.gov.lk/",
       "source": "https://usda.gov.lk/",
-      "observed_at": "2026-10-12T07:14:09.980363+05:30"
+      "observed_at": "2026-10-13T07:06:09.519106+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://usda.gov.lk/",
       "source": "http://usda.gov.lk/",
-      "observed_at": "2026-10-12T07:14:09.980367+05:30"
+      "observed_at": "2026-10-13T07:06:09.519110+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://usda.gov.lk/home-2/",
+      "source": "https://usda.gov.lk/index.php/home-2/",
+      "observed_at": "2026-10-13T07:06:09.519112+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://usda.gov.lk/contact-us-2/",
+      "source": "https://usda.gov.lk/contact-us-2/",
+      "observed_at": "2026-10-13T07:06:09.519115+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://usda.gov.lk/who-we-are/",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "observed_at": "2026-10-13T07:06:09.519118+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://usda.gov.lk/project/",
+      "source": "https://usda.gov.lk/project/",
+      "observed_at": "2026-10-13T07:06:09.519121+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://usda.gov.lk/social-development-programme/",
+      "source": "https://usda.gov.lk/social-development-programme/",
+      "observed_at": "2026-10-13T07:06:09.519123+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://usda.gov.lk/news-release/",
+      "source": "https://usda.gov.lk/news-release/",
+      "observed_at": "2026-10-13T07:06:09.519126+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://usda.gov.lk/photos-gallery/",
+      "source": "https://usda.gov.lk/photos-gallery/",
+      "observed_at": "2026-10-13T07:06:09.519128+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://usda.gov.lk/video-gallery/",
+      "source": "https://usda.gov.lk/video-gallery/",
+      "observed_at": "2026-10-13T07:06:09.519131+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://usda.gov.lk/events/",
+      "source": "https://usda.gov.lk/events/",
+      "observed_at": "2026-10-13T07:06:09.519133+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://usda.gov.lk/registration-of-suppliers/",
+      "source": "https://usda.gov.lk/registration-of-suppliers/",
+      "observed_at": "2026-10-13T07:06:09.519136+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112865215 ",
+      "source": "https://usda.gov.lk/home-2/",
+      "data": {
+        "value": "+94112865215 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: CONTACT US 9th Floor, Stage I, Sethsiripaya, Battaramulla, Colombo, Sri Lanka",
+      "source": "https://usda.gov.lk/home-2/",
+      "data": {
+        "value": "CONTACT US 9th Floor, Stage I, Sethsiripaya, Battaramulla, Colombo, Sri Lanka"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/contact-us-2/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 4972245 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "077 4972245 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-872282 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "0112-872282 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 4445981 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "071 4445981 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 3037950 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "071 3037950 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 (",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "0112-865215 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 3201841 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "076 3201841 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 5040798 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "077 5040798 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 6037427 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "071 6037427 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 4485637 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "071 4485637 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 0707809 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "071 0707809 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 6774901 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "071 6774901 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 078 9742149 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "078 9742149 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 0101997 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "077 0101997 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 0102001 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "077 0102001 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 8608486 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "077 8608486 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 3749367 ",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "071 3749367 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 865215 (",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "0112 865215 ("
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://usda.gov.lk/who-we-are/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112865215 ",
+      "source": "https://usda.gov.lk/project/",
+      "data": {
+        "value": "+94112865215 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Development Authority, 9th Floor, Stage I, Sethsiripaya, Battaramulla, Colombo, Sri Lanka",
+      "source": "https://usda.gov.lk/project/",
+      "data": {
+        "value": "Development Authority, 9th Floor, Stage I, Sethsiripaya, Battaramulla, Colombo, Sri Lanka"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 2 71 2 71 71 1",
+      "source": "https://usda.gov.lk/social-development-programme/",
+      "data": {
+        "value": "0 2 71 2 71 71 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/social-development-programme/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://usda.gov.lk/social-development-programme/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://usda.gov.lk/social-development-programme/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://usda.gov.lk/social-development-programme/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/news-release/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://usda.gov.lk/news-release/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/photos-gallery/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/video-gallery/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/events/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0679295232",
+      "source": "https://usda.gov.lk/events/",
+      "data": {
+        "value": "0679295232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0281336553",
+      "source": "https://usda.gov.lk/events/",
+      "data": {
+        "value": "0281336553"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://usda.gov.lk/events/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-865215 ",
+      "source": "https://usda.gov.lk/registration-of-suppliers/",
+      "data": {
+        "value": "0112-865215 "
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 48015 visible characters across 14 pages",
+      "source": "https://usda.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +504,230 @@
     },
     {
       "host": "usda.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-28T18:25:05+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://usda.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1198,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://usda.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/",
+      "redirects": [
+        "https://usda.gov.lk/"
+      ],
+      "elapsed_ms": 1199,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://usda.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 942,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://usda.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/",
+      "redirects": [
+        "https://usda.gov.lk/"
+      ],
+      "elapsed_ms": 1203,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/index.php/home-2/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/home-2/",
+      "redirects": [
+        "https://usda.gov.lk/home-2/"
+      ],
+      "elapsed_ms": 1016,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/contact-us-2/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/contact-us-2/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1193,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/who-we-are/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/who-we-are/",
+      "redirects": [],
+      "elapsed_ms": 1252,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/project/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/project/",
+      "redirects": [],
+      "elapsed_ms": 1019,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/social-development-programme/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/social-development-programme/",
+      "redirects": [],
+      "elapsed_ms": 1112,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/news-release/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/news-release/",
+      "redirects": [],
+      "elapsed_ms": 1041,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/photos-gallery/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/photos-gallery/",
+      "redirects": [],
+      "elapsed_ms": 993,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/video-gallery/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/video-gallery/",
+      "redirects": [],
+      "elapsed_ms": 981,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/events/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/events/",
+      "redirects": [],
+      "elapsed_ms": 1482,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://usda.gov.lk/registration-of-suppliers/",
+      "status_code": 200,
+      "final_url": "https://usda.gov.lk/registration-of-suppliers/",
+      "redirects": [],
+      "elapsed_ms": 1214,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://usda.gov.lk/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-01-d67df4d0737a.html",
+      "sha256": "d67df4d0737a9b8eb11ad53d50dfb4e17102d8a2b8b2df0394459b1396e4e3a9",
+      "bytes": 168751
+    },
+    {
+      "url": "https://usda.gov.lk/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-02-d67df4d0737a.html",
+      "sha256": "d67df4d0737a9b8eb11ad53d50dfb4e17102d8a2b8b2df0394459b1396e4e3a9",
+      "bytes": 168751
+    },
+    {
+      "url": "https://usda.gov.lk/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-03-d67df4d0737a.html",
+      "sha256": "d67df4d0737a9b8eb11ad53d50dfb4e17102d8a2b8b2df0394459b1396e4e3a9",
+      "bytes": 168751
+    },
+    {
+      "url": "https://usda.gov.lk/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-04-d67df4d0737a.html",
+      "sha256": "d67df4d0737a9b8eb11ad53d50dfb4e17102d8a2b8b2df0394459b1396e4e3a9",
+      "bytes": 168751
+    },
+    {
+      "url": "https://usda.gov.lk/home-2/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-05-04d30996dcad.html",
+      "sha256": "04d30996dcad608868ed8f965ed11f20193ac1970aaed40b12f10705741fd8f0",
+      "bytes": 226078
+    },
+    {
+      "url": "https://usda.gov.lk/contact-us-2/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-06-c5599d2c9c28.html",
+      "sha256": "c5599d2c9c2837d7b6e61a07aac15bbedb53c83eb40c3756a93f39f31993a79e",
+      "bytes": 190835
+    },
+    {
+      "url": "https://usda.gov.lk/who-we-are/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-07-aceb59c8f7d3.html",
+      "sha256": "aceb59c8f7d340e8b62ed617b823f1b6c1afad6bcdadb5826aab7ef37c0c47bb",
+      "bytes": 217714
+    },
+    {
+      "url": "https://usda.gov.lk/project/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-08-18de5eb02507.html",
+      "sha256": "18de5eb025072d8c6d070a27efe54822eb14ebe0d05a98a1e1816f98e2511863",
+      "bytes": 243238
+    },
+    {
+      "url": "https://usda.gov.lk/social-development-programme/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-09-7fe306b0e8bc.html",
+      "sha256": "7fe306b0e8bca1836c444e6261363c7c9e9449940b6b7533d836c15ea6681caa",
+      "bytes": 330634
+    },
+    {
+      "url": "https://usda.gov.lk/news-release/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-10-3db86a2e0806.html",
+      "sha256": "3db86a2e08069189f6d2e457d099fccd02a6acb6c9f8657f819ff4a6abfe96c6",
+      "bytes": 246391
+    },
+    {
+      "url": "https://usda.gov.lk/photos-gallery/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-11-b5dfd5c2613f.html",
+      "sha256": "b5dfd5c2613fdb7ca8d3ac51468220699c45bfe933216bace23d950df62554c4",
+      "bytes": 200397
+    },
+    {
+      "url": "https://usda.gov.lk/video-gallery/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-12-f72d2e65247e.html",
+      "sha256": "f72d2e65247ee20b56434b0a5a63f75f77e674a1d36e234f693dc775b610a492",
+      "bytes": 197076
+    },
+    {
+      "url": "https://usda.gov.lk/events/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-13-7b93a40ddf08.html",
+      "sha256": "7b93a40ddf0857d8645f3a1904af18a027bb5ef0017cab7449e489ff27dcbea1",
+      "bytes": 759739
+    },
+    {
+      "url": "https://usda.gov.lk/registration-of-suppliers/",
+      "path": "audit.output/usda.gov.lk/20261013.0705/snapshots/page-14-8be1bd921ff7.html",
+      "sha256": "8be1bd921ff71c32c5503e83098895a785808ecaf86d1bd8c0df196338a66704",
+      "bytes": 191706
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +741,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +754,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +811,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: CONTACT US 9th Floor, Stage I, Sethsiripaya, Battaramulla, Colombo, Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +860,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.28.177",
+    "egress_ip": "20.118.214.17",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

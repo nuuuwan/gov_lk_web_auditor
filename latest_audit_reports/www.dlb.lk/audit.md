@@ -1,8 +1,8 @@
 # Website Audit: https://www.dlb.lk/
 
-- Completed: 2026-10-12 06:38
+- Completed: 2026-10-13 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: Rs.200,000 |
+| fees_and_payment | ✅ | Published fees and payment: Rs.1,000,000 |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

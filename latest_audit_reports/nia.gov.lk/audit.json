@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1dac363f-6ad3-4403-9d91-ab1450f3f991",
+  "audit_id": "7ed87eb7-b346-4007-af28-672983449790",
   "url": "https://nia.gov.lk/",
   "normalized_url": "https://nia.gov.lk/",
-  "started_at": "2026-10-12T07:04:39.930265+05:30",
-  "completed_at": "2026-10-12T07:04:59.554092+05:30",
+  "started_at": "2026-10-13T06:59:14.414817+05:30",
+  "completed_at": "2026-10-13T07:01:29.894033+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,1050 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-12T07:04:40.364018+05:30"
+      "observed_at": "2026-10-13T06:59:15.120926+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-12T07:04:40.364036+05:30"
+      "observed_at": "2026-10-13T06:59:15.120945+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-12T07:04:40.760641+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-13T06:59:25.362200+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://nia.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://nia.gov.lk/",
-      "observed_at": "2026-10-12T07:04:58.527913+05:30"
+      "observed_at": "2026-10-13T07:01:29.893842+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://nia.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://nia.gov.lk/",
-      "observed_at": "2026-10-12T07:04:58.527930+05:30"
+      "observed_at": "2026-10-13T07:01:29.893865+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://nia.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://nia.gov.lk/",
-      "observed_at": "2026-10-12T07:04:58.527934+05:30"
+      "observed_at": "2026-10-13T07:01:29.893870+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://nia.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://nia.gov.lk/",
-      "observed_at": "2026-10-12T07:04:58.527938+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://nia.gov.lk/services/",
-      "source": "https://nia.gov.lk/services/",
-      "observed_at": "2026-10-12T07:04:58.527941+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://nia.gov.lk/contact/",
-      "source": "https://nia.gov.lk/contact/",
-      "observed_at": "2026-10-12T07:04:58.527943+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://nia.gov.lk/nia-act/",
-      "source": "https://nia.gov.lk/nia-act/",
-      "observed_at": "2026-10-12T07:04:58.527946+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://nia.gov.lk/nia-pledge/",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "observed_at": "2026-10-12T07:04:58.527949+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://nia.gov.lk/about/",
-      "source": "https://nia.gov.lk/about/",
-      "observed_at": "2026-10-12T07:04:58.527951+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://nia.gov.lk/tisc/",
-      "source": "https://nia.gov.lk/tisc/",
-      "observed_at": "2026-10-12T07:04:58.527954+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://nia.gov.lk/news-media/",
-      "source": "https://nia.gov.lk/news-media/",
-      "observed_at": "2026-10-12T07:04:58.527956+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://nia.gov.lk/gallery/",
-      "source": "https://nia.gov.lk/gallery/",
-      "observed_at": "2026-10-12T07:04:58.527959+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://nia.gov.lk/reports-publications/",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "observed_at": "2026-10-12T07:04:58.527961+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://nia.gov.lk/articles/",
-      "source": "https://nia.gov.lk/articles/",
-      "observed_at": "2026-10-12T07:04:58.527964+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://nia.gov.lk/services/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0113-661-201",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "0113-661-201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0113661 2 05 ",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "0113661 2 05 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nia.sl.web@gmail.com",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "nia.sl.web@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/contact/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/nia-act/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/nia-act/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/nia-act/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/nia-act/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/nia-act/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/nia-act/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/nia-act/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/nia-pledge/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/about/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/about/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/about/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/about/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/about/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/about/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/about/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/tisc/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/tisc/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/tisc/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/tisc/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/tisc/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/tisc/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/tisc/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/news-media/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/news-media/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/news-media/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/news-media/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/news-media/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/news-media/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/news-media/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 024 2023 202",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "024 2023 202"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/gallery/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/reports-publications/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112879254",
-      "source": "https://nia.gov.lk/articles/",
-      "data": {
-        "value": "+94112879254"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661205",
-      "source": "https://nia.gov.lk/articles/",
-      "data": {
-        "value": "+94113661205"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94) 11 2875935 ",
-      "source": "https://nia.gov.lk/articles/",
-      "data": {
-        "value": "+94) 11 2875935 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94113661201",
-      "source": "https://nia.gov.lk/articles/",
-      "data": {
-        "value": "+94113661201"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 (0) 11366120",
-      "source": "https://nia.gov.lk/articles/",
-      "data": {
-        "value": "+94 (0) 11366120"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabhathhemasiri@gmail.com",
-      "source": "https://nia.gov.lk/articles/",
-      "data": {
-        "value": "prabhathhemasiri@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: contact@nia.gov.lk",
-      "source": "https://nia.gov.lk/articles/",
-      "data": {
-        "value": "contact@nia.gov.lk"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 5714 visible characters across 14 pages",
-      "source": "https://nia.gov.lk/"
+      "observed_at": "2026-10-13T07:01:29.893874+05:30"
     }
   ],
   "observations": [
@@ -1089,228 +85,49 @@
     },
     {
       "host": "nia.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-08T13:11:29+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://nia.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1054,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://nia.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/",
-      "redirects": [
-        "https://nia.gov.lk/"
-      ],
-      "elapsed_ms": 1032,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://nia.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 783,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://nia.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/",
-      "redirects": [
-        "https://nia.gov.lk/"
-      ],
-      "elapsed_ms": 799,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/services/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/services/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1016,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/contact/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/contact/",
-      "redirects": [],
-      "elapsed_ms": 782,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/nia-act/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/nia-act/",
-      "redirects": [],
-      "elapsed_ms": 823,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/nia-pledge/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/nia-pledge/",
-      "redirects": [],
-      "elapsed_ms": 1030,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/about/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/about/",
-      "redirects": [],
-      "elapsed_ms": 1017,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/tisc/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/tisc/",
-      "redirects": [],
-      "elapsed_ms": 1053,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/news-media/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/news-media/",
-      "redirects": [],
-      "elapsed_ms": 865,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/gallery/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/gallery/",
-      "redirects": [],
-      "elapsed_ms": 789,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/reports-publications/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/reports-publications/",
-      "redirects": [],
-      "elapsed_ms": 782,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://nia.gov.lk/articles/",
-      "status_code": 200,
-      "final_url": "https://nia.gov.lk/articles/",
-      "redirects": [],
-      "elapsed_ms": 798,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://nia.gov.lk/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-01-f91ac632ea2d.html",
-      "sha256": "f91ac632ea2de51fcbb35abfab5e7e366d4cb6a28b29c6da1b4884d30f41dd75",
-      "bytes": 119718
-    },
-    {
-      "url": "https://nia.gov.lk/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-02-f91ac632ea2d.html",
-      "sha256": "f91ac632ea2de51fcbb35abfab5e7e366d4cb6a28b29c6da1b4884d30f41dd75",
-      "bytes": 119718
-    },
-    {
-      "url": "https://nia.gov.lk/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-03-f91ac632ea2d.html",
-      "sha256": "f91ac632ea2de51fcbb35abfab5e7e366d4cb6a28b29c6da1b4884d30f41dd75",
-      "bytes": 119718
-    },
-    {
-      "url": "https://nia.gov.lk/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-04-f91ac632ea2d.html",
-      "sha256": "f91ac632ea2de51fcbb35abfab5e7e366d4cb6a28b29c6da1b4884d30f41dd75",
-      "bytes": 119718
-    },
-    {
-      "url": "https://nia.gov.lk/services/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-05-cf190200571a.html",
-      "sha256": "cf190200571a9ca7cdec0ed7adffecf21d09706ca578a396a54a685fa4768117",
-      "bytes": 146552
-    },
-    {
-      "url": "https://nia.gov.lk/contact/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-06-8e5efa556706.html",
-      "sha256": "8e5efa5567061c016f17c344bce3ae7de1d353276c8d045950d342d2116b9767",
-      "bytes": 104099
-    },
-    {
-      "url": "https://nia.gov.lk/nia-act/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-07-4ce58aeccb03.html",
-      "sha256": "4ce58aeccb03207b72308d6efcfe03db8d24a1b2ed8c4dba25df60c8e5217d61",
-      "bytes": 105721
-    },
-    {
-      "url": "https://nia.gov.lk/nia-pledge/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-08-e8307529a172.html",
-      "sha256": "e8307529a1725aaea9702b18ad0941ca4e8351a635d570d76669fdc17e670007",
-      "bytes": 92337
-    },
-    {
-      "url": "https://nia.gov.lk/about/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-09-901e6d300343.html",
-      "sha256": "901e6d30034364127bce53d16e54f8d1273facd54de237776d096e430b104704",
-      "bytes": 98210
-    },
-    {
-      "url": "https://nia.gov.lk/tisc/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-10-7a2a6def6683.html",
-      "sha256": "7a2a6def6683dc3da42f3439e28b9bf10c6177bc66b05e6adcc260c06219756e",
-      "bytes": 149740
-    },
-    {
-      "url": "https://nia.gov.lk/news-media/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-11-d2aae06832ba.html",
-      "sha256": "d2aae06832ba6c2e6e0e44f6045365cd3498d8d271edbe81b1a72060a272cd55",
-      "bytes": 96768
-    },
-    {
-      "url": "https://nia.gov.lk/gallery/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-12-ef2fa46fdcf1.html",
-      "sha256": "ef2fa46fdcf1da7518d479bb6af4a853062cb8f6fcbd400b69a2f3780bcd007c",
-      "bytes": 113534
-    },
-    {
-      "url": "https://nia.gov.lk/reports-publications/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-13-becdb6c912ec.html",
-      "sha256": "becdb6c912ecd1397e259ad83c9d19591c1d8673e412894c70825b31203eb6f4",
-      "bytes": 187984
-    },
-    {
-      "url": "https://nia.gov.lk/articles/",
-      "path": "audit.output/nia.gov.lk/20261012.0704/snapshots/page-14-67d2fa802276.html",
-      "sha256": "67d2fa8022769bd24a7e553dd969766c5081425c68ead2b7328c91eda8550699",
-      "bytes": 95492
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1324,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1337,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -1394,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94112879254 (8 phone numbers found); Email: prabhathhemasiri@gmail.com (3 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1443,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.28.177",
+    "egress_ip": "20.118.214.17",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

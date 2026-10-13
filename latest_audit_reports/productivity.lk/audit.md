@@ -1,8 +1,8 @@
 # Website Audit: https://productivity.lk/
 
-- Completed: 2026-10-12 06:57
+- Completed: 2026-10-13 06:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://productivity.lk/: Probe 1: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://productivity.lk/: Probe 1: timed out |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289; Phone: +94) 112 186 031 ( (19 phone numbers found); Email: info@productivity.gov.lk; Published named responsibility: division
+Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289; Phone: +94) 112 186 031 ( (18 phone numbers found); Email: info@productivity.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: +94 112 186 026 (Ext:202) +94 71 4520 545 +94 112 186 030 (Ext:203) +94 71 4392 946 +94 112186030 (Ext:208) +94 76 0119 411 +94 112 187 099‍ (Ext:216) +94 71 4437 912 +94 112 186 030 (Ext:285) +94 705320052 +94 112 186 031 ( Ext:282 ) +94 76 8188 851 +94 711384027 +94 112 187 101 (Ext:205) +94 71 7859 625 +94 112 186 031 (Ext:207) +94 711242703 +94 112 186 031 (Ext:223) +94 71 2827 289 |
-| reachable_contacts | ✅ | Phone: +94) 112 186 031 ( (19 phone numbers found); Email: info@productivity.gov.lk |
+| reachable_contacts | ✅ | Phone: +94) 112 186 031 ( (18 phone numbers found); Email: info@productivity.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

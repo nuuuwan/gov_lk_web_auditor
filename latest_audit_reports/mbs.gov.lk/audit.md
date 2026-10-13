@@ -1,8 +1,8 @@
 # Website Audit: https://mbs.gov.lk/
 
-- Completed: 2026-10-12 07:22
+- Completed: 2026-10-13 07:12
 - Overall result: ⚫ Level 0
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -26,5 +26,5 @@ Detected generic hosting marker: under construction
 | http_available | ✅ | HTTPS probes passed; failing variants: http://mbs.gov.lk/: Probe 2: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |

@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-10-12 06:45
+- Completed: 2026-10-13 06:41
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: 0533490504 (10 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: division
+Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: 0533574848 (10 phone numbers found); Email: prun.geneva@mfa.gov.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu |
-| reachable_contacts | ✅ | Phone: 0533490504 (10 phone numbers found); Email: john@example.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0533574848 (10 phone numbers found); Email: prun.geneva@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

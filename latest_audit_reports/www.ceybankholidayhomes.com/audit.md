@@ -1,8 +1,8 @@
 # Website Audit: https://www.ceybankholidayhomes.com/
 
-- Completed: 2026-10-12 06:35
+- Completed: 2026-10-13 06:30
 - Overall result: ⚫ Level 0
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

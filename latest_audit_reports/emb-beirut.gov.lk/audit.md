@@ -1,8 +1,8 @@
 # Website Audit: https://emb-beirut.gov.lk/
 
-- Completed: 2026-10-12 06:47
+- Completed: 2026-10-13 06:43
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: 0153685518 (7 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
+Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: 0156973230 (7 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a |
-| reachable_contacts | ✅ | Phone: 0153685518 (7 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0156973230 (7 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

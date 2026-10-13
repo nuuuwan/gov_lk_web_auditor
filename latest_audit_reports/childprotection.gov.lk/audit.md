@@ -1,8 +1,8 @@
 # Website Audit: https://childprotection.gov.lk/
 
-- Completed: 2026-10-12 07:13
+- Completed: 2026-10-13 07:06
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.28.177 (US, github-actions)
+- Vantage: 20.118.214.17 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
