@@ -1,8 +1,8 @@
 # Website Audit: https://www.exway.rda.gov.lk/exway/index.php
 
-- Completed: 2026-10-13 07:05
+- Completed: 2026-10-14 06:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.214.17 (US, github-actions)
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

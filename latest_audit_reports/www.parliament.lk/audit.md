@@ -1,8 +1,8 @@
 # Website Audit: https://www.parliament.lk/
 
-- Completed: 2026-10-13 07:16
-- Overall result: 🔴 Level 1
-- Vantage: 20.118.214.17 (US, github-actions)
+- Completed: 2026-10-14 07:02
+- Overall result: 🟠 Level 2
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
+Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; }; Phone: 0112862365 (7 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ❓ | No phone or email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| postal_address | ✅ | Published postal address: Sign Up Your Email address Sign Up Parliament of Sri Lanka Ok .hints_tips_link { height: 10px; width: auto !important; } |
+| reachable_contacts | ✅ | Phone: 0112862365 (7 phone numbers found); Email: kushani_r@parliament.lk (7 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ❓ | No passing legal basis evidence found |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ✅ | Published published update date: 2026-10-09 |

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-washington.gov.lk/
 
-- Completed: 2026-10-13 06:42
+- Completed: 2026-10-14 06:27
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.214.17 (US, github-actions)
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 029-8502-484 (36 phone numbers found); Email: slemb.washington@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 0-8981-01277 (36 phone numbers found); Email: consular.washington@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 \| +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle |
-| reachable_contacts | ✅ | Phone: 029-8502-484 (36 phone numbers found); Email: slemb.washington@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0-8981-01277 (36 phone numbers found); Email: consular.washington@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
+No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing required documents evidence found; No passing legal basis evidence fo
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10/02/2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

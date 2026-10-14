@@ -1,8 +1,8 @@
 # Website Audit: https://spc.cmb.ac.lk/
 
-- Completed: 2026-10-13 06:24
+- Completed: 2026-10-14 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.214.17 (US, github-actions)
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265; Phone: +94)34-2265527 (11 phone numbers found); Email: pujitha@spc.cmb.ac.lk (12 email addresses found); Published named responsibility: division
+Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265; Phone: +94)34-2261358 (11 phone numbers found); Email: rector@spc.cmb.ac.lk (12 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265 |
-| reachable_contacts | ✅ | Phone: +94)34-2265527 (11 phone numbers found); Email: pujitha@spc.cmb.ac.lk (12 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94)34-2261358 (11 phone numbers found); Email: rector@spc.cmb.ac.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 28 February 2025 |
+| published_update_date | ❓ | No passing published update date evidence found |

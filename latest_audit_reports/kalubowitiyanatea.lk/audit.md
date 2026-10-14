@@ -1,8 +1,8 @@
 # Website Audit: https://kalubowitiyanatea.lk/
 
-- Completed: 2026-10-13 06:53
+- Completed: 2026-10-14 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 20.118.214.17 (US, github-actions)
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Phone Number Subject Message Send Message We typically respond within 24 hours Contact Information Multiple ways to reac; Phone: 0 55.52 4.84 55. (38 phone numbers found); Email: office.gen@kalubowitiyanatea.lk; Published named responsibility: director
+Published postal address: Phone Number Subject Message Send Message We typically respond within 24 hours Contact Information Multiple ways to reac; Phone: +94 417 201 222 (38 phone numbers found); Email: office.gen@kalubowitiyanatea.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Phone Number Subject Message Send Message We typically respond within 24 hours Contact Information Multiple ways to reac |
-| reachable_contacts | ✅ | Phone: 0 55.52 4.84 55. (38 phone numbers found); Email: office.gen@kalubowitiyanatea.lk |
+| reachable_contacts | ✅ | Phone: +94 417 201 222 (38 phone numbers found); Email: office.gen@kalubowitiyanatea.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

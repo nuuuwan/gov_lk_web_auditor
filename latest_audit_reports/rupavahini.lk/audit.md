@@ -1,8 +1,8 @@
 # Website Audit: https://rupavahini.lk/
 
-- Completed: 2026-10-13 06:47
+- Completed: 2026-10-14 06:31
 - Overall result: 🔴 Level 1
-- Vantage: 20.118.214.17 (US, github-actions)
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No email evidence found
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
+| postal_address | ✅ | Published postal address: Internal Affairs Unit, Sri Lanka Rupavahini Corporation, No.15, Independence Square , Colombo – 07 Telephone: 0112698187 |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

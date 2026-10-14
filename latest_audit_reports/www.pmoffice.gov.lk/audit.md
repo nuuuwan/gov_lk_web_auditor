@@ -1,8 +1,8 @@
 # Website Audit: https://www.pmoffice.gov.lk/
 
-- Completed: 2026-10-13 07:16
+- Completed: 2026-10-14 07:02
 - Overall result: ⚫ Level 0
-- Vantage: 20.118.214.17 (US, github-actions)
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Insufficient substantive page content: Only 34 visible characters across 3 pages
 | site_not_defaced | ❓ | Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200 |
 | content_relevant | ❓ | Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200 |
 | hosting_configured | ❓ | Insufficient substantive page content: Only 34 visible characters across 3 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.pmoffice.gov.lk/: Probe 2: [Errno 104] Connection reset by peer |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://www.pmoffice.gov.lk/: Probe 1: [Errno 104] Connection reset by peer |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | [Errno 104] Connection reset by peer |

@@ -1,8 +1,8 @@
 # Website Audit: http://nse.gov.lk/
 
-- Completed: 2026-10-13 06:58
-- Overall result: 🔴 Level 1
-- Vantage: 20.118.214.17 (US, github-actions)
+- Completed: 2026-10-14 06:42
+- Overall result: 🟠 Level 2
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
+Published postal address: National Secretariat for Elders, Block D, 2ndFloor, Sethsiripaya Stage(II), Battaramulla, Sri Lanka. Phone:1890 Fax: +94; Phone: 0112187045 (19 phone numbers found); Email: info@nse.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0112187045 (18 phone numbers found); Email: info@nse.gov.lk |
+| postal_address | ✅ | Published postal address: National Secretariat for Elders, Block D, 2ndFloor, Sethsiripaya Stage(II), Battaramulla, Sri Lanka. Phone:1890 Fax: +94 |
+| reachable_contacts | ✅ | Phone: 0112187045 (19 phone numbers found); Email: info@nse.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://doc.gov.lk/
 
-- Completed: 2026-10-13 07:03
-- Overall result: ⚫ Level 0
-- Vantage: 20.118.214.17 (US, github-actions)
+- Completed: 2026-10-14 06:49
+- Overall result: 🟠 Level 2
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,33 +10,49 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 2: timed out; https://doc.gov.lk/: Probe 3: [Errno 111] Connection refused; http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | No usable page was inspected |
-| site_not_defaced | ❓ | No usable page was inspected |
-| content_relevant | ❓ | No usable page was inspected |
-| hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | An HTTP probe was transient |
-| redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://doc.gov.lk/: Probe 2: timed out; https://doc.gov.lk/: Probe 3: [Errno 111] Connection refused; http://doc.gov.lk/: Probe 4: [Errno 111] Connection refused |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Not run because 🔴 Level 1 did not pass
+Published postal address: specific market entry barriers in the import markets Initiate coordinated actions to address specific market entry barri; Phone: 071 450 1444 (103 phone numbers found); Email: fortrade@doc.gov.lk; Published named responsibility: department
 
-## 🟢 Level 3: ❓
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ✅ | Published postal address: specific market entry barriers in the import markets Initiate coordinated actions to address specific market entry barri |
+| reachable_contacts | ✅ | Phone: 071 450 1444 (103 phone numbers found); Email: fortrade@doc.gov.lk |
+| named_responsibility | ✅ | Published named responsibility: department |
+
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+Published published update date: 01 January 2018
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ✅ | Published required documents: supporting documents |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ✅ | Published processing time: 12 months |
+| downloadable_form | ✅ | Published downloadable form: https://doc.gov.lk/images/pdf/RTI/Right_to_Information_Acte.pdf |
+| published_update_date | ❌ | Published published update date: 01 January 2018 |

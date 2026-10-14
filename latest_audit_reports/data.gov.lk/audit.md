@@ -1,8 +1,8 @@
 # Website Audit: https://data.gov.lk/
 
-- Completed: 2026-10-13 06:20
+- Completed: 2026-10-14 06:09
 - Overall result: ⚫ Level 0
-- Vantage: 20.118.214.17 (US, github-actions)
+- Vantage: 52.161.56.68 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -19,12 +19,12 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | No usable page was inspected |
-| site_not_defaced | ❓ | No usable page was inspected |
-| content_relevant | ❓ | No usable page was inspected |
-| hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | HTTP checks did not run |
-| redirect_related | ❓ | No redirect result was available |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTP probes did not all fail |
+| redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010) |
 | tls_not_expired | ❌ | TLS certificate has expired |
 | tls_hostname_matches | ❓ | TLS hostname check did not run |
