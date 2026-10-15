@@ -1,8 +1,8 @@
 # Website Audit: https://www.railway.gov.lk/
 
-- Completed: 2026-10-14 06:56
+- Completed: 2026-10-15 06:52
 - Overall result: ⚫ Level 0
-- Vantage: 52.161.56.68 (US, github-actions)
+- Vantage: 4.149.236.250 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.railway.gov.lk/: Probe 2: [Errno 111] Connection refused |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://www.railway.gov.lk/: Probe 1: timed out; http://www.railway.gov.lk/: Probe 2: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

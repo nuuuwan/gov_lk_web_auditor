@@ -1,8 +1,8 @@
 # Website Audit: https://www.slida.lk/
 
-- Completed: 2026-10-14 06:40
+- Completed: 2026-10-15 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 52.161.56.68 (US, github-actions)
+- Vantage: 4.149.236.250 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No: 28/10, Malalasekara Mawatha, Colombo 07, Sri Lanka. Email dg@slida.gov.lk Phone +94-11-5980200 © 2026 Sri Lanka Inst; Phone: 0 1 0 .252 -5.555 (23 phone numbers found); Email: hostel@slida.gov.lk (25 email addresses found); Published named responsibility: division
+Published postal address: No: 28/10, Malalasekara Mawatha, Colombo 07, Sri Lanka. Email dg@slida.gov.lk Phone +94-11-5980200 © 2026 Sri Lanka Inst; Phone: 011-5980293 (23 phone numbers found); Email: hostel@slida.gov.lk (25 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No: 28/10, Malalasekara Mawatha, Colombo 07, Sri Lanka. Email dg@slida.gov.lk Phone +94-11-5980200 © 2026 Sri Lanka Inst |
-| reachable_contacts | ✅ | Phone: 0 1 0 .252 -5.555 (23 phone numbers found); Email: hostel@slida.gov.lk (25 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011-5980293 (23 phone numbers found); Email: hostel@slida.gov.lk (25 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9c053837-0961-497d-ab08-91a1d4a24814",
+  "audit_id": "720f61be-8a57-4d34-969e-19477f441655",
   "url": "https://www.gjrti.gov.lk/",
   "normalized_url": "https://www.gjrti.gov.lk/",
-  "started_at": "2026-10-14T06:32:53.595547+05:30",
-  "completed_at": "2026-10-14T06:33:03.836809+05:30",
+  "started_at": "2026-10-15T06:36:31.744965+05:30",
+  "completed_at": "2026-10-15T06:38:43.695615+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -17,59 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-14T06:32:54.092618+05:30"
+      "observed_at": "2026-10-15T06:36:32.195282+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-14T06:32:54.092637+05:30"
+      "observed_at": "2026-10-15T06:36:32.195300+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-14T06:32:54.806372+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-15T06:36:42.413613+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 500 at https://www.gjrti.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.gjrti.gov.lk/",
-      "observed_at": "2026-10-14T06:33:03.830214+05:30"
+      "observed_at": "2026-10-15T06:38:43.695416+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 500 at https://www.gjrti.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.gjrti.gov.lk/",
-      "observed_at": "2026-10-14T06:33:03.830250+05:30"
+      "observed_at": "2026-10-15T06:38:43.695444+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 500 at https://www.gjrti.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.gjrti.gov.lk/",
-      "observed_at": "2026-10-14T06:33:03.830254+05:30"
+      "observed_at": "2026-10-15T06:38:43.695451+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 500 at https://www.gjrti.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.gjrti.gov.lk/",
-      "observed_at": "2026-10-14T06:33:03.830257+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 165 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://www.gjrti.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
-      "observed_at": "2026-10-14T06:33:03.836291+05:30"
+      "observed_at": "2026-10-15T06:38:43.695457+05:30"
     }
   ],
   "observations": [
@@ -89,78 +85,49 @@
     },
     {
       "host": "www.gjrti.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-11-17T10:03:32+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.gjrti.gov.lk/",
-      "status_code": 500,
-      "final_url": "https://www.gjrti.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1694,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.gjrti.gov.lk/",
-      "status_code": 500,
-      "final_url": "https://www.gjrti.gov.lk/",
-      "redirects": [
-        "https://www.gjrti.gov.lk/"
-      ],
-      "elapsed_ms": 1874,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.gjrti.gov.lk/",
-      "status_code": 500,
-      "final_url": "https://www.gjrti.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1857,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.gjrti.gov.lk/",
-      "status_code": 500,
-      "final_url": "https://www.gjrti.gov.lk/",
-      "redirects": [
-        "https://www.gjrti.gov.lk/"
-      ],
-      "elapsed_ms": 1306,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.gjrti.gov.lk/",
-      "path": "audit.output/www.gjrti.gov.lk/20261014.0632/snapshots/page-01-1708b5eff76e.html",
-      "sha256": "1708b5eff76e26c70833f602c23706e6e56625833b627de5e7a118b73e1e63f9",
-      "bytes": 3136
-    },
-    {
-      "url": "https://www.gjrti.gov.lk/",
-      "path": "audit.output/www.gjrti.gov.lk/20261014.0632/snapshots/page-02-1708b5eff76e.html",
-      "sha256": "1708b5eff76e26c70833f602c23706e6e56625833b627de5e7a118b73e1e63f9",
-      "bytes": 3136
-    },
-    {
-      "url": "https://www.gjrti.gov.lk/",
-      "path": "audit.output/www.gjrti.gov.lk/20261014.0632/snapshots/page-03-1708b5eff76e.html",
-      "sha256": "1708b5eff76e26c70833f602c23706e6e56625833b627de5e7a118b73e1e63f9",
-      "bytes": 3136
-    },
-    {
-      "url": "https://www.gjrti.gov.lk/",
-      "path": "audit.output/www.gjrti.gov.lk/20261014.0632/snapshots/page-04-1708b5eff76e.html",
-      "sha256": "1708b5eff76e26c70833f602c23706e6e56625833b627de5e7a118b73e1e63f9",
-      "bytes": 3136
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -174,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -188,31 +155,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 165 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 165 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 165 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 165 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -229,14 +196,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -274,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.161.56.68",
+    "egress_ip": "4.149.236.250",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

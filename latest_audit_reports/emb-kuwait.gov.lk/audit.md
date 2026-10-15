@@ -1,8 +1,8 @@
 # Website Audit: https://emb-kuwait.gov.lk/
 
-- Completed: 2026-10-14 06:27
+- Completed: 2026-10-15 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 52.161.56.68 (US, github-actions)
+- Vantage: 4.149.236.250 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Building No. 01,Block No. 10 Street No. 107, Al-Jabriya Kuwait Telephone: 00965 25354611 Fax: 00965 25354634 Email: slem; Phone: +96525354611 (12 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
+Published postal address: Building No. 01,Block No. 10 Street No. 107, Al-Jabriya Kuwait Telephone: 00965 25354611 Fax: 00965 25354634 Email: slem; Phone: 0673111782 (12 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Building No. 01,Block No. 10 Street No. 107, Al-Jabriya Kuwait Telephone: 00965 25354611 Fax: 00965 25354634 Email: slem |
-| reachable_contacts | ✅ | Phone: +96525354611 (12 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0673111782 (12 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

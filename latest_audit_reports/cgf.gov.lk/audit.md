@@ -1,8 +1,8 @@
 # Website Audit: https://cgf.gov.lk/
 
-- Completed: 2026-10-14 06:35
-- Overall result: 🔴 Level 1
-- Vantage: 52.161.56.68 (US, github-actions)
+- Completed: 2026-10-15 06:37
+- Overall result: 🟠 Level 2
+- Vantage: 4.149.236.250 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing named responsibility evidence found
+Published postal address: No. 123, Wijerama Mawatha, Colombo 07, Sri Lanka; Phone: +94 112 673087 (11 phone numbers found); Email: cgf@cgf.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 123, Wijerama Mawatha, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 70 156 0646 (11 phone numbers found); Email: cgf@cgf.lk (2 email addresses found) |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| reachable_contacts | ✅ | Phone: +94 112 673087 (11 phone numbers found); Email: cgf@cgf.lk (2 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ✅ | Published legal basis: gazette |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://cgf.gov.lk/cgfresouce/recgf/CGF-100-BB.pdf |
+| published_update_date | ❓ | No passing published update date evidence found |
