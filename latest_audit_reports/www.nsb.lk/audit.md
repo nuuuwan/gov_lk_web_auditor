@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsb.lk/
 
-- Completed: 2026-10-15 06:20
+- Completed: 2026-10-16 06:21
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.250 (US, github-actions)
+- Vantage: 128.203.190.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 7 th Floor, “Savings House” National Savings Bank, No.255, Galle Road, Colombo-3. Direct -0112 576 730 General - 0112 37; Phone: 0595629304 (23 phone numbers found); Email: callcentre@nsb.lk (8 email addresses found); Published named responsibility: officer in charge
+Published postal address: 7 th Floor, “Savings House” National Savings Bank, No.255, Galle Road, Colombo-3. Direct -0112 576 730 General - 0112 37; Phone: 0112 379 379 (22 phone numbers found); Email: callcentre@nsb.lk (7 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 7 th Floor, “Savings House” National Savings Bank, No.255, Galle Road, Colombo-3. Direct -0112 576 730 General - 0112 37 |
-| reachable_contacts | ✅ | Phone: 0595629304 (23 phone numbers found); Email: callcentre@nsb.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112 379 379 (22 phone numbers found); Email: callcentre@nsb.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing legal basis evidence found; No passing published update date evidence found
+No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: LKR 25 |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 4 weeks |
-| downloadable_form | ✅ | Published downloadable form: https://www.nsb.lk/wp-content/uploads/2026/08/APPLICATION-E-PATA-PATA-HAPANKAM.pdf |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

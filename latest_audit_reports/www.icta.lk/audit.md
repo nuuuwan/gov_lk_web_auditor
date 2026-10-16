@@ -1,8 +1,8 @@
 # Website Audit: https://www.icta.lk/
 
-- Completed: 2026-10-15 06:09
+- Completed: 2026-10-16 06:09
 - Overall result: ⚫ Level 0
-- Vantage: 4.149.236.250 (US, github-actions)
+- Vantage: 128.203.190.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,6 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate
 | hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❓ | HTTP checks did not run |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010) |
-| tls_not_expired | ❌ | TLS certificate has expired |
-| tls_hostname_matches | ❓ | TLS hostname check did not run |
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010) |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |

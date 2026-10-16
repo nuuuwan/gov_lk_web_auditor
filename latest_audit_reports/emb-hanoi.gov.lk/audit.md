@@ -1,8 +1,8 @@
 # Website Audit: https://emb-hanoi.gov.lk/
 
-- Completed: 2026-10-15 06:28
+- Completed: 2026-10-16 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.250 (US, github-actions)
+- Vantage: 128.203.190.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d; Phone: 02835353292 (13 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: department
+Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d; Phone: +842437341894 (13 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d |
-| reachable_contacts | ✅ | Phone: 02835353292 (13 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +842437341894 (13 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

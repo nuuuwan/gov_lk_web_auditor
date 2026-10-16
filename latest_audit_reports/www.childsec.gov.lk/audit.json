@@ -1,16 +1,18 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9e37be13-6d6a-4d48-bbdc-150e7096f00b",
+  "audit_id": "ece33216-f417-46d1-84c8-b3f3663cc92d",
   "url": "https://www.childsec.gov.lk",
   "normalized_url": "https://www.childsec.gov.lk/",
-  "started_at": "2026-10-15T06:50:08.348367+05:30",
-  "completed_at": "2026-10-15T06:50:12.742504+05:30",
+  "started_at": "2026-10-16T07:00:41.013066+05:30",
+  "completed_at": "2026-10-16T07:00:52.176070+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "domain_not_parked: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
     ]
   },
   "evidence": [
@@ -18,52 +20,52 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-15T06:50:09.039817+05:30"
+      "observed_at": "2026-10-16T07:00:41.715606+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-15T06:50:09.039839+05:30"
+      "observed_at": "2026-10-16T07:00:41.715621+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-10-15T06:50:09.387597+05:30"
-    },
-    {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "source": "https://www.childsec.gov.lk/",
-      "observed_at": "2026-10-15T06:50:12.741601+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-16T07:00:42.064919+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 409 at http://www.childsec.gov.lk/",
-      "source": "http://www.childsec.gov.lk/",
-      "observed_at": "2026-10-15T06:50:12.741621+05:30"
-    },
-    {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.childsec.gov.lk/",
       "source": "https://www.childsec.gov.lk/",
-      "observed_at": "2026-10-15T06:50:12.741626+05:30"
+      "observed_at": "2026-10-16T07:00:52.004108+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 409 at http://www.childsec.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.childsec.gov.lk/",
       "source": "http://www.childsec.gov.lk/",
-      "observed_at": "2026-10-15T06:50:12.741630+05:30"
+      "observed_at": "2026-10-16T07:00:52.004122+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.childsec.gov.lk/",
+      "source": "https://www.childsec.gov.lk/",
+      "observed_at": "2026-10-16T07:00:52.004126+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.childsec.gov.lk/",
+      "source": "http://www.childsec.gov.lk/",
+      "observed_at": "2026-10-16T07:00:52.004130+05:30"
     },
     {
       "check": "page_text",
       "status": "fail",
-      "detail": "Only 0 visible characters across 2 pages; below substance threshold 200",
+      "detail": "Only 85 visible characters across 4 pages; below substance threshold 200",
       "source": "https://www.childsec.gov.lk/"
     }
   ],
@@ -84,60 +86,72 @@
     },
     {
       "host": "www.childsec.gov.lk",
-      "status": "expired",
-      "expires_at": "2024-04-02T04:44:45+05:30",
+      "status": "valid",
+      "expires_at": "2027-01-14T04:08:29+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.childsec.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.childsec.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 1041,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.childsec.gov.lk/",
-      "status_code": 409,
+      "status_code": 200,
       "final_url": "http://www.childsec.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 115,
-      "content_type": "text/html; charset=iso-8859-1",
+      "elapsed_ms": 423,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://www.childsec.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.childsec.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 463,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.childsec.gov.lk/",
-      "status_code": 409,
+      "status_code": 200,
       "final_url": "http://www.childsec.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 112,
-      "content_type": "text/html; charset=iso-8859-1",
+      "elapsed_ms": 431,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "http://www.childsec.gov.lk/",
-      "path": "audit.output/www.childsec.gov.lk/20261015.0650/snapshots/page-01-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
+      "url": "https://www.childsec.gov.lk/",
+      "path": "audit.output/www.childsec.gov.lk/20261016.0700/snapshots/page-01-4c0f574cc15c.html",
+      "sha256": "4c0f574cc15ccdbecc165e5af79378e3767c982ca914a898e9dfab9ea77a4ae4",
+      "bytes": 46838
     },
     {
       "url": "http://www.childsec.gov.lk/",
-      "path": "audit.output/www.childsec.gov.lk/20261015.0650/snapshots/page-02-769e8ab745a0.html",
-      "sha256": "769e8ab745a0fe4bf811036e75a8630e38c50a18cb3e24d539ce4a0722c7c85e",
-      "bytes": 83
+      "path": "audit.output/www.childsec.gov.lk/20261016.0700/snapshots/page-02-8e324cb3fdf1.html",
+      "sha256": "8e324cb3fdf1ed3599469c46e64608db6c3d71bac9f8a72cd2b9aaa9167708dc",
+      "bytes": 46829
+    },
+    {
+      "url": "https://www.childsec.gov.lk/",
+      "path": "audit.output/www.childsec.gov.lk/20261016.0700/snapshots/page-03-4c0f574cc15c.html",
+      "sha256": "4c0f574cc15ccdbecc165e5af79378e3767c982ca914a898e9dfab9ea77a4ae4",
+      "bytes": 46838
+    },
+    {
+      "url": "http://www.childsec.gov.lk/",
+      "path": "audit.output/www.childsec.gov.lk/20261016.0700/snapshots/page-04-8e324cb3fdf1.html",
+      "sha256": "8e324cb3fdf1ed3599469c46e64608db6c3d71bac9f8a72cd2b9aaa9167708dc",
+      "bytes": 46829
     }
   ],
   "reviewer_decisions": [],
@@ -153,8 +167,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
+      "status": "inconclusive",
+      "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200",
       "executed": true,
       "checks": [
         {
@@ -167,25 +181,25 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
@@ -196,26 +210,26 @@
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -253,7 +267,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.149.236.250",
+    "egress_ip": "128.203.190.81",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

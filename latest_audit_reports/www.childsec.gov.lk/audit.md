@@ -1,8 +1,8 @@
 # Website Audit: https://www.childsec.gov.lk/
 
-- Completed: 2026-10-15 06:50
+- Completed: 2026-10-16 07:00
 - Overall result: ⚫ Level 0
-- Vantage: 4.149.236.250 (US, github-actions)
+- Vantage: 128.203.190.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,21 +10,33 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired
+Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 85 visible characters across 4 pages; below substance threshold 200 |
 | http_available | ✅ | HTTP probes did not all fail |
-| redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010) |
-| tls_not_expired | ❌ | TLS certificate has expired |
-| tls_hostname_matches | ❓ | TLS hostname check did not run |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+Not run because 🔴 Level 1 did not pass
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

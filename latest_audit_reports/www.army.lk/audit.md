@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-10-15 06:09
+- Completed: 2026-10-16 06:09
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.250 (US, github-actions)
+- Vantage: 128.203.190.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Needs of Perehettiya Ranaviru Village ◆ Sri Lanka Army Supports the Continuity of Health Services at Thambuththegama Bas; Phone: 026 2026-10-1 (19 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Needs of Perehettiya Ranaviru Village ◆ Commander of the Army Lieutenant General Nilantha Premaratne RSP VSV USP nps psc; Phone: +94 11 207 6967 (20 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Needs of Perehettiya Ranaviru Village ◆ Sri Lanka Army Supports the Continuity of Health Services at Thambuththegama Bas |
-| reachable_contacts | ✅ | Phone: 026 2026-10-1 (19 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| postal_address | ✅ | Published postal address: Needs of Perehettiya Ranaviru Village ◆ Commander of the Army Lieutenant General Nilantha Premaratne RSP VSV USP nps psc |
+| reachable_contacts | ✅ | Phone: +94 11 207 6967 (20 phone numbers found); Email: info@army.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://excise.gov.lk/
 
-- Completed: 2026-10-15 06:22
+- Completed: 2026-10-16 06:26
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.250 (US, github-actions)
+- Vantage: 128.203.190.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://excise.gov.lk/: Probe 2: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://excise.gov.lk/: Probe 2: timed out |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353,; Phone: 011-2877890 (478 phone numbers found); Email: excisen@slt.lk (2 email addresses found); Published named responsibility: department
+Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353,; Phone: 011-2877890 (589 phone numbers found); Email: excisen@slt.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353, |
-| reachable_contacts | ✅ | Phone: 011-2877890 (478 phone numbers found); Email: excisen@slt.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011-2877890 (589 phone numbers found); Email: excisen@slt.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
