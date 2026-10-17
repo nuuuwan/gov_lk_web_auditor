@@ -1,8 +1,8 @@
 # Website Audit: https://ccf.gov.lk/
 
-- Completed: 2026-10-16 06:06
+- Completed: 2026-10-17 06:09
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973; Phone: +94 112 587 912 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found); Published named responsibility: director
+Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973; Phone: +94 112 552 014 (28 phone numbers found); Email: ccfinform@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 212/1, Bauddhaloka Mawatha, Colombo Email: ccfinform@gmail.com Phone: +94 112 587 912 +94 112 552 014 +94 112 508 973 |
-| reachable_contacts | ✅ | Phone: +94 112 587 912 (39 phone numbers found); Email: ccfinform@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 552 014 (28 phone numbers found); Email: ccfinform@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 15 working days |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

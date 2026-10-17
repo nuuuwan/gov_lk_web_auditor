@@ -1,8 +1,8 @@
 # Website Audit: http://www.uwu.ac.lk/
 
-- Completed: 2026-10-16 06:14
+- Completed: 2026-10-17 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Badulla 90 000 Sri Lanka Telephone Telephone: +94 55 2226622 Fax: +94 55 2226633 Vice Chancellor Telephone: +94 55 22264; Phone: +94 55 2226622 (105 phone numbers found); Email: ansar.ja@uwu.ac.lk (33 email addresses found); Published named responsibility: department
+Published postal address: Badulla 90 000 Sri Lanka Telephone Telephone: +94 55 2226622 Fax: +94 55 2226633 Vice Chancellor Telephone: +94 55 22264; Phone: 0 11 12 13 14 1 (105 phone numbers found); Email: dirpe@uwu.ac.lk (33 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Badulla 90 000 Sri Lanka Telephone Telephone: +94 55 2226622 Fax: +94 55 2226633 Vice Chancellor Telephone: +94 55 22264 |
-| reachable_contacts | ✅ | Phone: +94 55 2226622 (105 phone numbers found); Email: ansar.ja@uwu.ac.lk (33 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 11 12 13 14 1 (105 phone numbers found); Email: dirpe@uwu.ac.lk (33 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

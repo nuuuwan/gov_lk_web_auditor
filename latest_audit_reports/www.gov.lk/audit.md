@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-10-16 06:10
+- Completed: 2026-10-17 06:11
 - Overall result: 🔴 Level 1
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0670396207 (182 phone numbers found); Email: departmentofayurveda@gmail.com (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (180 phone numbers found); Email: edb@edb.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

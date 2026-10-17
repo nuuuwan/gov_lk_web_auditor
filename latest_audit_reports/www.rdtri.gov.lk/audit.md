@@ -1,8 +1,8 @@
 # Website Audit: https://www.rdtri.gov.lk/
 
-- Completed: 2026-10-16 06:55
+- Completed: 2026-10-17 06:49
 - Overall result: ⚫ Level 0
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

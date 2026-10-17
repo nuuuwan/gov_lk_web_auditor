@@ -1,8 +1,8 @@
 # Website Audit: https://itum.mrt.ac.lk/
 
-- Completed: 2026-10-16 06:15
+- Completed: 2026-10-17 06:15
 - Overall result: 🔴 Level 1
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94) 112 117 040 (4 phone numbers found); Email: ar-welfare@itum.mrt.ac.lk (12 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 113 460 406 (4 phone numbers found); Email: info@itum.mrt.ac.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

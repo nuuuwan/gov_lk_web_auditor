@@ -1,8 +1,8 @@
 # Website Audit: https://www.rncoe.lk/
 
-- Completed: 2026-10-16 06:17
+- Completed: 2026-10-17 06:16
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Ruwanpura National College of Education Wellandura, Kahawatta, Sri Lanka. EMAIL info@rncoe.lk TELEPHONE 045 227 3019 Men; Phone: 0.59 15.59 7 17 (13 phone numbers found); Email: info.rncoe@gmail.com (3 email addresses found); Published named responsibility: department
+Published postal address: Ruwanpura National College of Education Wellandura, Kahawatta, Sri Lanka. EMAIL info@rncoe.lk TELEPHONE 045 227 3019 Men; Phone: +94452273019 (13 phone numbers found); Email: info.rncoe@gmail.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Ruwanpura National College of Education Wellandura, Kahawatta, Sri Lanka. EMAIL info@rncoe.lk TELEPHONE 045 227 3019 Men |
-| reachable_contacts | ✅ | Phone: 0.59 15.59 7 17 (13 phone numbers found); Email: info.rncoe@gmail.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94452273019 (13 phone numbers found); Email: info.rncoe@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

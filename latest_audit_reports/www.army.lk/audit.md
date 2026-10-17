@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-10-16 06:09
+- Completed: 2026-10-17 06:10
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Needs of Perehettiya Ranaviru Village ◆ Commander of the Army Lieutenant General Nilantha Premaratne RSP VSV USP nps psc; Phone: +94 11 207 6967 (20 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Needs of Perehettiya Ranaviru Village 2026-10-14 Under the guidance and directives of the Commander of the Army, Lieuten; Phone: +94 11 207 6967 (5 phone numbers found); Email: info@army.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Needs of Perehettiya Ranaviru Village ◆ Commander of the Army Lieutenant General Nilantha Premaratne RSP VSV USP nps psc |
-| reachable_contacts | ✅ | Phone: +94 11 207 6967 (20 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| postal_address | ✅ | Published postal address: Needs of Perehettiya Ranaviru Village 2026-10-14 Under the guidance and directives of the Commander of the Army, Lieuten |
+| reachable_contacts | ✅ | Phone: +94 11 207 6967 (5 phone numbers found); Email: info@army.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing required documents evidence found
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: rs 2026 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 9 DAYS |
 | downloadable_form | ✅ | Published downloadable form: https://www.army.lk/themes/custom/web_tailwind/images/pdf/join_us/officer/app_other_officer_application_4_28.pdf |

@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "46b9c99f-124e-4ff0-866d-b4706062d9f5",
+  "audit_id": "c1fa781e-3664-4a80-b459-0d71363839fb",
   "url": "https://lrh.health.gov.lk/",
   "normalized_url": "https://lrh.health.gov.lk/",
-  "started_at": "2026-10-16T06:35:29.952044+05:30",
-  "completed_at": "2026-10-16T06:37:41.950979+05:30",
+  "started_at": "2026-10-17T06:34:38.502097+05:30",
+  "completed_at": "2026-10-17T06:35:11.531029+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,609 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-16T06:35:30.525364+05:30"
+      "observed_at": "2026-10-17T06:34:39.873373+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-16T06:35:30.525381+05:30"
+      "observed_at": "2026-10-17T06:34:39.873396+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-16T06:35:40.870192+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-17T06:34:42.116501+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://lrh.health.gov.lk/",
       "source": "https://lrh.health.gov.lk/",
-      "observed_at": "2026-10-16T06:37:41.950784+05:30"
+      "observed_at": "2026-10-17T06:35:10.660070+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://lrh.health.gov.lk/",
       "source": "http://lrh.health.gov.lk/",
-      "observed_at": "2026-10-16T06:37:41.950808+05:30"
+      "observed_at": "2026-10-17T06:35:10.660098+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://lrh.health.gov.lk/",
       "source": "https://lrh.health.gov.lk/",
-      "observed_at": "2026-10-16T06:37:41.950814+05:30"
+      "observed_at": "2026-10-17T06:35:10.660106+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://lrh.health.gov.lk/",
       "source": "http://lrh.health.gov.lk/",
-      "observed_at": "2026-10-16T06:37:41.950818+05:30"
+      "observed_at": "2026-10-17T06:35:10.660112+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://lrh.health.gov.lk/autism-services/",
+      "source": "https://lrh.health.gov.lk/autism-services/",
+      "observed_at": "2026-10-17T06:35:10.660117+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://lrh.health.gov.lk/departments/",
+      "source": "https://lrh.health.gov.lk/departments/",
+      "observed_at": "2026-10-17T06:35:10.660123+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "source": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "observed_at": "2026-10-17T06:35:10.660128+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://lrh.health.gov.lk/departments4/clinic-section/",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "observed_at": "2026-10-17T06:35:10.660133+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://lrh.health.gov.lk/departments4/special-services-2/",
+      "source": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "observed_at": "2026-10-17T06:35:10.660143+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "source": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "observed_at": "2026-10-17T06:35:10.660149+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "source": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "observed_at": "2026-10-17T06:35:10.660155+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "source": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "observed_at": "2026-10-17T06:35:10.660160+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "source": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "observed_at": "2026-10-17T06:35:10.660166+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://lrh.health.gov.lk/departments4/blood-bank/",
+      "source": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "observed_at": "2026-10-17T06:35:10.660171+05:30"
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/autism-services/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/autism-services/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Autism Services Home / Autism Services Autism Services Home / Autism Services What is Autis",
+      "source": "https://lrh.health.gov.lk/autism-services/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Autism Services Home / Autism Services Autism Services Home / Autism Services What is Autis"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/autism-services/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://lrh.health.gov.lk/autism-services/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Departments Home / Departments Departments Home / Departments Outpatient Department Clinic ",
+      "source": "https://lrh.health.gov.lk/departments/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Departments Home / Departments Departments Home / Departments Outpatient Department Clinic "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Outpatient Department Home / Departments / Outpatient Department Outpatient Department Home",
+      "source": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Outpatient Department Home / Departments / Outpatient Department Outpatient Department Home"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0703316163 ",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "data": {
+        "value": "0703316163 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0703105985 ",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "data": {
+        "value": "0703105985 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Day in day out an average of 1000 patients and their bystanders and a total of 350530 patie",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Day in day out an average of 1000 patients and their bystanders and a total of 350530 patie"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Special Services Home / Departments / Special Services Special Services Home / Departments ",
+      "source": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Special Services Home / Departments / Special Services Special Services Home / Departments "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Specialist Services Home / Departments / Specialist Services Specialist Services Home / Dep",
+      "source": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Specialist Services Home / Departments / Specialist Services Specialist Services Home / Dep"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Operating Theatres and Intensive Care Units Home / Departments / Operating Theatres and Int",
+      "source": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Operating Theatres and Intensive Care Units Home / Departments / Operating Theatres and Int"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare Laboratory Services Home / Departments / Laboratory Services Laboratory Services Home / Dep",
+      "source": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare Laboratory Services Home / Departments / Laboratory Services Laboratory Services Home / Dep"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare The Department of Radiology offers a comprehensive range of diagnostic and interventional p",
+      "source": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare The Department of Radiology offers a comprehensive range of diagnostic and interventional p"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693711",
+      "source": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "data": {
+        "value": "+94 11 2693711"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2693712 ",
+      "source": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "data": {
+        "value": "+94 11 2693712 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: HHIMS Training Staff Welfare The blood bank of LRH plays an important role in patient care. Blood storing, crossmatching",
+      "source": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "data": {
+        "value": "HHIMS Training Staff Welfare The blood bank of LRH plays an important role in patient care. Blood storing, crossmatching"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 12964 visible characters across 14 pages",
+      "source": "https://lrh.health.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +648,228 @@
     },
     {
       "host": "lrh.health.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-22T08:17:38+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://lrh.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1837,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lrh.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/",
+      "redirects": [
+        "https://lrh.health.gov.lk/"
+      ],
+      "elapsed_ms": 1684,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://lrh.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1793,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lrh.health.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/",
+      "redirects": [
+        "https://lrh.health.gov.lk/"
+      ],
+      "elapsed_ms": 1671,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/autism-services/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/autism-services/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1718,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments/",
+      "redirects": [],
+      "elapsed_ms": 1602,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "redirects": [],
+      "elapsed_ms": 1692,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "redirects": [],
+      "elapsed_ms": 1552,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "redirects": [],
+      "elapsed_ms": 1521,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "redirects": [],
+      "elapsed_ms": 1962,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "redirects": [],
+      "elapsed_ms": 1784,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "redirects": [],
+      "elapsed_ms": 1519,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "redirects": [],
+      "elapsed_ms": 1727,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "status_code": 200,
+      "final_url": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "redirects": [],
+      "elapsed_ms": 1727,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://lrh.health.gov.lk/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-01-da3c6e70ee7b.html",
+      "sha256": "da3c6e70ee7b0631053e7cd9072e3e4a2c068ddeeda764e98be51700e7496963",
+      "bytes": 65039
+    },
+    {
+      "url": "https://lrh.health.gov.lk/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-02-da3c6e70ee7b.html",
+      "sha256": "da3c6e70ee7b0631053e7cd9072e3e4a2c068ddeeda764e98be51700e7496963",
+      "bytes": 65039
+    },
+    {
+      "url": "https://lrh.health.gov.lk/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-03-da3c6e70ee7b.html",
+      "sha256": "da3c6e70ee7b0631053e7cd9072e3e4a2c068ddeeda764e98be51700e7496963",
+      "bytes": 65039
+    },
+    {
+      "url": "https://lrh.health.gov.lk/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-04-da3c6e70ee7b.html",
+      "sha256": "da3c6e70ee7b0631053e7cd9072e3e4a2c068ddeeda764e98be51700e7496963",
+      "bytes": 65039
+    },
+    {
+      "url": "https://lrh.health.gov.lk/autism-services/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-05-82c1d2973747.html",
+      "sha256": "82c1d2973747ad45cf0f7f43e2101f1bae740b9a2bfa7f2e39806eb4dfe05c67",
+      "bytes": 70232
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-06-3b60c26b0fc2.html",
+      "sha256": "3b60c26b0fc2eec0347d6dcc6ec1ed70da1d9a4f1be55df37dd6f2aca35a1fab",
+      "bytes": 75974
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/outpatientdepartment/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-07-d5090e0b289f.html",
+      "sha256": "d5090e0b289f2146840c04129383d6094809a7ec7a22e0f76e87c53c2a79a20b",
+      "bytes": 67797
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/clinic-section/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-08-620e243bd516.html",
+      "sha256": "620e243bd516ed00be0551801731c8c7026e8dd8546afa98569b56ef46844027",
+      "bytes": 99463
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/special-services-2/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-09-b8e124102606.html",
+      "sha256": "b8e12410260605cf386e1dfc9eab0757b15928ea434ae929538ffbb1c2bc0aaa",
+      "bytes": 71371
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/specialist-services-2/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-10-c68658c4ecea.html",
+      "sha256": "c68658c4eceab3b5dbaa07eb2c2b5e94bf5207f5f85ff3c4b38736445edd722d",
+      "bytes": 79678
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/operating-theatres-and-intensive-care-units-2/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-11-6f98d4c61a4a.html",
+      "sha256": "6f98d4c61a4a8a78f3e7eee4d759650157769f5ff0c61a1e0e7fdfafd770c390",
+      "bytes": 68970
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/laboratory-services-2/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-12-6e881c4cbcdd.html",
+      "sha256": "6e881c4cbcdde8110d087085cc8de85b0f8f719621a32cd3831966e862637a91",
+      "bytes": 67623
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/paediatric-radiology/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-13-871dee7893e6.html",
+      "sha256": "871dee7893e600f93626f64db78246aa3d8fa11f98926481fa35472dc1bad87f",
+      "bytes": 74386
+    },
+    {
+      "url": "https://lrh.health.gov.lk/departments4/blood-bank/",
+      "path": "audit.output/lrh.health.gov.lk/20261017.0634/snapshots/page-14-57a71851fb56.html",
+      "sha256": "57a71851fb561f78b465a86b48d7bb76766ad82ed3ffc2e5da901655f4318c59",
+      "bytes": 72425
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +883,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +896,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +953,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: HHIMS Training Staff Welfare {\"prefetch\":[{\"source\":\"document\",\"where\":{\"and\":[{\"href_matches\":\"/*\"},{\"not\":{\"href_match"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1002,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.190.81",
+    "egress_ip": "48.217.69.98",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

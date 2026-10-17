@@ -1,21 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "614340eb-29dc-4f34-8899-348f8216a5c2",
+  "audit_id": "a9b72da7-870c-4f5e-84fb-9ff373d96a3b",
   "url": "https://lakehouse.lk/",
   "normalized_url": "https://lakehouse.lk/",
-  "started_at": "2026-10-16T06:35:45.530164+05:30",
-  "completed_at": "2026-10-16T06:37:47.616791+05:30",
+  "started_at": "2026-10-17T06:34:56.364197+05:30",
+  "completed_at": "2026-10-17T06:34:59.892474+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete"
+      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
     ]
   },
   "evidence": [
@@ -23,47 +17,68 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-16T06:35:46.816536+05:30"
+      "observed_at": "2026-10-17T06:34:56.669052+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-16T06:35:46.816550+05:30"
+      "observed_at": "2026-10-17T06:34:56.669072+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-16T06:35:46.976004+05:30"
+      "observed_at": "2026-10-17T06:34:56.679203+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: The read operation timed out",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 403 at https://lakehouse.lk/",
       "source": "https://lakehouse.lk/",
-      "observed_at": "2026-10-16T06:37:47.616599+05:30"
+      "observed_at": "2026-10-17T06:34:59.719754+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 403 at http://lakehouse.lk/",
       "source": "http://lakehouse.lk/",
-      "observed_at": "2026-10-16T06:37:47.616617+05:30"
+      "observed_at": "2026-10-17T06:34:59.719774+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: The read operation timed out",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 403 at https://lakehouse.lk/",
       "source": "https://lakehouse.lk/",
-      "observed_at": "2026-10-16T06:37:47.616623+05:30"
+      "observed_at": "2026-10-17T06:34:59.719779+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 403 at http://lakehouse.lk/",
       "source": "http://lakehouse.lk/",
-      "observed_at": "2026-10-16T06:37:47.616626+05:30"
+      "observed_at": "2026-10-17T06:34:59.719783+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-179219909",
+      "source": "https://lakehouse.lk/",
+      "data": {
+        "value": "0-179219909"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 16 visible characters across 4 pages; below substance threshold 200",
+      "source": "https://lakehouse.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "observed_at": "2026-10-17T06:34:59.891056+05:30"
     }
   ],
   "observations": [
@@ -93,42 +108,67 @@
     },
     {
       "url": "https://lakehouse.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "https://lakehouse.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "The read operation timed out"
+      "elapsed_ms": 42,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lakehouse.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "http://lakehouse.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 25,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://lakehouse.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "https://lakehouse.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "The read operation timed out"
+      "elapsed_ms": 33,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lakehouse.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 403,
+      "final_url": "http://lakehouse.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 27,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://lakehouse.lk/",
+      "path": "audit.output/lakehouse.lk/20261017.0634/snapshots/page-01-2fda7fdfeb57.html",
+      "sha256": "2fda7fdfeb572cc198ed949f0355d2ded5fb85db1509b67d186bc38a6c63ee07",
+      "bytes": 5379
+    },
+    {
+      "url": "http://lakehouse.lk/",
+      "path": "audit.output/lakehouse.lk/20261017.0634/snapshots/page-02-b4c846cd5883.html",
+      "sha256": "b4c846cd5883f84ec89f91b326403951a82e3a65c6bfa28d9b3b5dec40b479ff",
+      "bytes": 5336
+    },
+    {
+      "url": "https://lakehouse.lk/",
+      "path": "audit.output/lakehouse.lk/20261017.0634/snapshots/page-03-d15441a7b25e.html",
+      "sha256": "d15441a7b25e1853ba7795e68b333d56c20252ad33ad022dfa089b7bdab4eb8e",
+      "bytes": 5379
+    },
+    {
+      "url": "http://lakehouse.lk/",
+      "path": "audit.output/lakehouse.lk/20261017.0634/snapshots/page-04-79b853f6e94e.html",
+      "sha256": "79b853f6e94e202567fee7678722e74b5ec6a99c0158056738279c846d7cd793",
+      "bytes": 5336
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,8 +182,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
       "executed": true,
       "checks": [
         {
@@ -156,31 +196,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
         },
         {
           "name": "redirect_related",
@@ -242,7 +282,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.190.81",
+    "egress_ip": "48.217.69.98",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

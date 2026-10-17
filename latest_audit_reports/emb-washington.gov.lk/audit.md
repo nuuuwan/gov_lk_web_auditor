@@ -1,8 +1,8 @@
 # Website Audit: https://emb-washington.gov.lk/
 
-- Completed: 2026-10-16 06:32
+- Completed: 2026-10-17 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 0700065243 (36 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 0976614638 (36 phone numbers found); Email: slemb.washington@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 \| +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle |
-| reachable_contacts | ✅ | Phone: 0700065243 (36 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0976614638 (36 phone numbers found); Email: slemb.washington@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://legalaid.gov.lk/
 
-- Completed: 2026-10-16 06:42
+- Completed: 2026-10-17 06:40
 - Overall result: 🔴 Level 1
-- Vantage: 128.203.190.81 (US, github-actions)
+- Vantage: 48.217.69.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
