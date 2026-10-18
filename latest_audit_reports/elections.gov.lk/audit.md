@@ -1,8 +1,8 @@
 # Website Audit: https://elections.gov.lk/
 
-- Completed: 2026-10-17 07:04
+- Completed: 2026-10-18 07:06
 - Overall result: 🔴 Level 1
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 023.09.01 202 (12 phone numbers found); Email: pa.chairman@elections.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 023.09.01 202 (12 phone numbers found); Email: secretary.ec@elections.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

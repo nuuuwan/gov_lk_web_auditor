@@ -1,8 +1,8 @@
 # Website Audit: https://www.moha.gov.lk/
 
-- Completed: 2026-10-17 07:01
+- Completed: 2026-10-18 07:01
 - Overall result: ⚫ Level 0
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

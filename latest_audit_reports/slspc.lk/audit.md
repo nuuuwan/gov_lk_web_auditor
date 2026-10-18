@@ -1,8 +1,8 @@
 # Website Audit: https://slspc.lk/
 
-- Completed: 2026-10-17 06:43
+- Completed: 2026-10-18 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Password Remember Me Forgot Password? Log In Username or Email Address Get New Password ← Back to login Search Login Sho; Phone: 011-2438530 (64 phone numbers found); Email: slspc@sltnet.lk (19 email addresses found); Published named responsibility: division
+Published postal address: Password Remember Me Forgot Password? Log In Username or Email Address Get New Password ← Back to login Search Login Sho; Phone: 011-2438635 (66 phone numbers found); Email: slspc@sltnet.lk (19 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Password Remember Me Forgot Password? Log In Username or Email Address Get New Password ← Back to login Search Login Sho |
-| reachable_contacts | ✅ | Phone: 011-2438530 (64 phone numbers found); Email: slspc@sltnet.lk (19 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011-2438635 (66 phone numbers found); Email: slspc@sltnet.lk (19 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs 2027 |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsdi.gov.lk/
 
-- Completed: 2026-10-17 06:10
+- Completed: 2026-10-18 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl; Phone: 011 236 9099 (35 phone numbers found); Email: NSDISupport@icta.lk (19 email addresses found); Published named responsibility: department
+Published postal address: Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl; Phone: +94 11 236 9091 (35 phone numbers found); Email: NSDISupport@icta.lk (19 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl |
-| reachable_contacts | ✅ | Phone: 011 236 9099 (35 phone numbers found); Email: NSDISupport@icta.lk (19 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 236 9091 (35 phone numbers found); Email: NSDISupport@icta.lk (19 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❌

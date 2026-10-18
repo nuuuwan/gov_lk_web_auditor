@@ -1,8 +1,8 @@
 # Website Audit: https://hc-male.gov.lk/
 
-- Completed: 2026-10-17 06:27
+- Completed: 2026-10-18 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you ; Phone: +9603322845 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found); Published named responsibility: director
+Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you ; Phone: +96 (0) 33 22 845 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you  |
-| reachable_contacts | ✅ | Phone: +9603322845 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +96 (0) 33 22 845 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
+| processing_time | ✅ | Published processing time: 6 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

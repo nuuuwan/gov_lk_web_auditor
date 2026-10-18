@@ -1,8 +1,8 @@
 # Website Audit: https://ceypetco.gov.lk/
 
-- Completed: 2026-10-17 06:18
+- Completed: 2026-10-18 06:22
 - Overall result: ⚫ Level 0
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200
+Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 3 pages; below substance threshold 200; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ Insufficient substantive page content: Only 39 visible characters across 3 pages
 | http_available | ✅ | HTTPS probes passed; failing variants: https://ceypetco.gov.lk/: Probe 3: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 

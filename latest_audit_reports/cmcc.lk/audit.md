@@ -1,8 +1,8 @@
 # Website Audit: https://cmcc.lk/
 
-- Completed: 2026-10-17 06:36
+- Completed: 2026-10-18 06:37
 - Overall result: 🔴 Level 1
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -39,7 +39,7 @@ No passing postal address evidence found
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
 | reachable_contacts | ✅ | Phone: 2342355678 (2 phone numbers found); Email: demo@wenthemes.com (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: department |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

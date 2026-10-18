@@ -1,8 +1,8 @@
 # Website Audit: https://mpclg.gov.lk/
 
-- Completed: 2026-10-17 07:03
+- Completed: 2026-10-18 07:07
 - Overall result: ⚫ Level 0
-- Vantage: 48.217.69.98 (US, github-actions)
+- Vantage: 172.215.147.161 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,20 +14,20 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200
+timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 97 visible characters across 4 pages; below substance threshold 200 |
-| http_available | ✅ | HTTP probes did not all fail |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://mpclg.gov.lk/: Probe 1: timed out; http://mpclg.gov.lk/: Probe 2: timed out; http://mpclg.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 
