@@ -1,8 +1,8 @@
 # Website Audit: https://hc-canberra.gov.lk/
 
-- Completed: 2026-10-18 06:29
+- Completed: 2026-10-19 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.147.161 (US, github-actions)
+- Vantage: 135.119.23.5 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em; Phone: 02-6198-3760 (26 phone numbers found); Email: consular.canberra@mfa.gov.lk (8 email addresses found); Published named responsibility: director
+Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em; Phone: 01473-5160-4 (26 phone numbers found); Email: slhccbracct@gmail.com (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sri Lanka High Commission 61, Hampton Circuit, Yarralumla, ACT 2600 Tel No: +61 02-6198-3756 Fax No: +61 02-6198-3760 Em |
-| reachable_contacts | ✅ | Phone: 02-6198-3760 (26 phone numbers found); Email: consular.canberra@mfa.gov.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: 01473-5160-4 (26 phone numbers found); Email: slhccbracct@gmail.com (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

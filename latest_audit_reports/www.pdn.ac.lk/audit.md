@@ -1,8 +1,8 @@
 # Website Audit: https://www.pdn.ac.lk/
 
-- Completed: 2026-10-18 06:16
+- Completed: 2026-10-19 06:16
 - Overall result: 🔴 Level 1
-- Vantage: 172.215.147.161 (US, github-actions)
+- Vantage: 135.119.23.5 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No phone or email evidence found; No passing named responsibility evidence found
+No email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80 |
-| reachable_contacts | ❓ | No phone or email evidence found |
+| reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

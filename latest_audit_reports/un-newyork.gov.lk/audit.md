@@ -1,8 +1,8 @@
 # Website Audit: https://un-newyork.gov.lk/
 
-- Completed: 2026-10-18 06:33
+- Completed: 2026-10-19 06:34
 - Overall result: 🟠 Level 2
-- Vantage: 172.215.147.161 (US, github-actions)
+- Vantage: 135.119.23.5 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: 0-8733-78741 (31 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found); Published named responsibility: director
+Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov.; Phone: 0-8733-78741 (31 phone numbers found); Email: john@example.com (9 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone: (212) 986-7040 Fax : (212) 986-1838 Email: prun.newyork@mfa.gov. |
-| reachable_contacts | ✅ | Phone: 0-8733-78741 (31 phone numbers found); Email: prun.newyork@mfa.gov.lk (9 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0-8733-78741 (31 phone numbers found); Email: john@example.com (9 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing downloadable form evidence found
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10/12/2026 |
+| published_update_date | ✅ | Published published update date: 12 October 2026 |
