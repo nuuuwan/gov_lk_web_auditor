@@ -1,8 +1,8 @@
 # Website Audit: https://nhda.gov.lk/
 
-- Completed: 2026-10-19 06:39
+- Completed: 2026-10-20 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.23.5 (US, github-actions)
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

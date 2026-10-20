@@ -1,8 +1,8 @@
 # Website Audit: https://pgiar.kln.ac.lk/
 
-- Completed: 2026-10-19 06:18
+- Completed: 2026-10-20 06:16
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.23.5 (US, github-actions)
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: . Dr. Thantilage emphasized the institute’s commitment to evolving with modern technological advancements while remainin; Phone: 0264900662 (52 phone numbers found); Email: libpgiar@kln.ac.lk (11 email addresses found); Published named responsibility: director
+Published postal address: . Dr. Thantilage emphasized the institute’s commitment to evolving with modern technological advancements while remainin; Phone: +94) 112 667 885 (38 phone numbers found); Email: libpgiar@kln.ac.lk (11 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: . Dr. Thantilage emphasized the institute’s commitment to evolving with modern technological advancements while remainin |
-| reachable_contacts | ✅ | Phone: 0264900662 (52 phone numbers found); Email: libpgiar@kln.ac.lk (11 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 112 667 885 (38 phone numbers found); Email: libpgiar@kln.ac.lk (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

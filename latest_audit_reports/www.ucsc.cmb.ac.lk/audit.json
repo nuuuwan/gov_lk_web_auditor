@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c7ec7497-4afb-4262-8279-bbd6ffe7afd7",
+  "audit_id": "c80bf152-2d2d-4a25-a537-dac14893438e",
   "url": "http://www.ucsc.cmb.ac.lk/",
   "normalized_url": "http://www.ucsc.cmb.ac.lk/",
-  "started_at": "2026-10-19T06:17:39.749692+05:30",
-  "completed_at": "2026-10-19T06:19:52.549886+05:30",
+  "started_at": "2026-10-20T06:15:18.874562+05:30",
+  "completed_at": "2026-10-20T06:15:49.619420+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 101] Network is unreachable",
-      "tls_hostname_matches: [Errno 101] Network is unreachable"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,1059 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-19T06:17:42.424422+05:30"
+      "observed_at": "2026-10-20T06:15:21.051282+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-19T06:17:42.424438+05:30"
+      "observed_at": "2026-10-20T06:15:21.051300+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 101] Network is unreachable",
-      "observed_at": "2026-10-19T06:17:52.435034+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-20T06:15:21.553377+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://ucsc.cmb.ac.lk/",
       "source": "https://www.ucsc.cmb.ac.lk/",
-      "observed_at": "2026-10-19T06:19:52.549718+05:30"
+      "observed_at": "2026-10-20T06:15:48.758828+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://ucsc.cmb.ac.lk/",
       "source": "http://www.ucsc.cmb.ac.lk/",
-      "observed_at": "2026-10-19T06:19:52.549738+05:30"
+      "observed_at": "2026-10-20T06:15:48.758848+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://ucsc.cmb.ac.lk/",
       "source": "https://www.ucsc.cmb.ac.lk/",
-      "observed_at": "2026-10-19T06:19:52.549741+05:30"
+      "observed_at": "2026-10-20T06:15:48.758852+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://ucsc.cmb.ac.lk/",
       "source": "http://www.ucsc.cmb.ac.lk/",
-      "observed_at": "2026-10-19T06:19:52.549743+05:30"
+      "observed_at": "2026-10-20T06:15:48.758855+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "observed_at": "2026-10-20T06:15:48.758858+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://ucsc.cmb.ac.lk/contact/",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "observed_at": "2026-10-20T06:15:48.758860+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "source": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "observed_at": "2026-10-20T06:15:48.758863+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "source": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "observed_at": "2026-10-20T06:15:48.758866+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "source": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "observed_at": "2026-10-20T06:15:48.758868+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "source": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "observed_at": "2026-10-20T06:15:48.758870+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "source": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "observed_at": "2026-10-20T06:15:48.758873+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://ucsc.cmb.ac.lk/establishment-division/",
+      "source": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "observed_at": "2026-10-20T06:15:48.758875+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://ucsc.cmb.ac.lk/general-administration-division/",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "observed_at": "2026-10-20T06:15:48.758878+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://ucsc.cmb.ac.lk/finance-division/",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "observed_at": "2026-10-20T06:15:48.758880+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568152808",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568152808"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568065351",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568065351"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0571143163",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0571143163"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568152808",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568152808"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568065351",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568065351"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0571143163",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0571143163"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568152808",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568152808"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568065351",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568065351"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0571143163",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0571143163"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568152808",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568152808"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0568065351",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0568065351"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0571143163",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "0571143163"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: exam@ucsc.cmb.ac.lk",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "exam@ucsc.cmb.ac.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Examinations & Registration Division University of Colombo School of Computing UCSC Building Complex, 35, Reid Avenue, C",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "Examinations & Registration Division University of Colombo School of Computing UCSC Building Complex, 35, Reid Avenue, C"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 7 working days",
+      "source": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "data": {
+        "value": "7 working days"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2581248 ",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94-11-2581248 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0389962391",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "0389962391"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0389616238",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "0389616238"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA Telephone +94 -11-",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA Telephone +94 -11-"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/contact/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: under the act",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "data": {
+        "value": "under the act"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112581245",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "+94112581245"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94-11-2587239 ",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "+94-11-2587239 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 -11- 2581245",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "+94 -11- 2581245"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "University of Colombo School of Computing UCSC Building Complex, 35 ,Reid Avenue, Colombo 7 SRI LANKA T: +94 -11- 258124"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 60 days",
+      "source": "https://ucsc.cmb.ac.lk/finance-division/",
+      "data": {
+        "value": "60 days"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 10927 visible characters across 14 pages",
+      "source": "http://www.ucsc.cmb.ac.lk/"
     }
   ],
   "observations": [
@@ -86,49 +1099,234 @@
     },
     {
       "host": "www.ucsc.cmb.ac.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 101] Network is unreachable"
+      "status": "valid",
+      "expires_at": "2027-01-05T16:19:28+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.ucsc.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/",
+      "redirects": [
+        "https://ucsc.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1553,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ucsc.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/",
+      "redirects": [
+        "https://www.ucsc.cmb.ac.lk/",
+        "https://ucsc.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1572,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.ucsc.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/",
+      "redirects": [
+        "https://ucsc.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 1568,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ucsc.cmb.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/",
+      "redirects": [
+        "https://www.ucsc.cmb.ac.lk/",
+        "https://ucsc.cmb.ac.lk/"
+      ],
+      "elapsed_ms": 3192,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 1435,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/contact/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/contact/",
+      "redirects": [],
+      "elapsed_ms": 1364,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "redirects": [],
+      "elapsed_ms": 1346,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "redirects": [],
+      "elapsed_ms": 1720,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "redirects": [],
+      "elapsed_ms": 1325,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "redirects": [],
+      "elapsed_ms": 1370,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "redirects": [],
+      "elapsed_ms": 1361,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "redirects": [],
+      "elapsed_ms": 1464,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "redirects": [],
+      "elapsed_ms": 1300,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/finance-division/",
+      "status_code": 200,
+      "final_url": "https://ucsc.cmb.ac.lk/finance-division/",
+      "redirects": [],
+      "elapsed_ms": 1320,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://ucsc.cmb.ac.lk/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-01-4de555bc9ece.html",
+      "sha256": "4de555bc9ece9bfc1b558627dab1273762318f7ea2f7c8593275c08e950c3981",
+      "bytes": 730647
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-02-49f6f5202132.html",
+      "sha256": "49f6f52021328d5da3875160fa8788835314793dfe343eacad8ebfa15c718e94",
+      "bytes": 730646
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-03-7d7568c4cafa.html",
+      "sha256": "7d7568c4cafa714bfae5ace440e69bebe82db01871a3bf8fcfa547b769b50799",
+      "bytes": 730647
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-04-fb40f2194430.html",
+      "sha256": "fb40f2194430de214c5f6cdedf4f6c4cafb52885efb6ebbbcfd99065e24fc308",
+      "bytes": 730647
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/examination-and-registration-division-examination-services/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-05-35ac38b05c2f.html",
+      "sha256": "35ac38b05c2f1affbd56cffaa61df7204f4d79c1630895e445ddc1e272a181da",
+      "bytes": 113905
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/contact/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-06-3d8f315f8507.html",
+      "sha256": "3d8f315f8507212f67b7401d60e714a5ccce3e906f1a042f023e5995c6d24b51",
+      "bytes": 110889
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/about/academic-departments/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-07-5e480b123282.html",
+      "sha256": "5e480b1232824f7fb5ee185a40df271caefe05e224e200080cd534c204ccaf9c",
+      "bytes": 109355
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/department-of-computation-and-intelligent-systems/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-08-06897252ad06.html",
+      "sha256": "06897252ad06fb76c5c4fa9502b953e0e00a214c98074586f5c1e585e2a43067",
+      "bytes": 111758
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/department-of-information-systems-engineering/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-09-5e5e6a78ed57.html",
+      "sha256": "5e5e6a78ed574029b59e3c3050ea0043bc03f0a84c182b623e59cf4311496ede",
+      "bytes": 111735
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/department-of-communication-and-media-technologies/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-10-a01679058af4.html",
+      "sha256": "a01679058af45e584b4a55b7fc17bf9c44ca62a336700245b1788fbe5b38e730",
+      "bytes": 111326
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/postgraduate-division/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-11-89b32d823850.html",
+      "sha256": "89b32d8238507fd6e8217be14b7d8f337668e629887070dfa0bcc1b3188243d6",
+      "bytes": 114391
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/establishment-division/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-12-6fed911a5d18.html",
+      "sha256": "6fed911a5d180ca74f18cfde8c05d1feaba656c1877fecc962036e1f2a755c9a",
+      "bytes": 115141
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/general-administration-division/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-13-23382e4753f6.html",
+      "sha256": "23382e4753f6a18b1050809e8d42b8d3e970b3f16ed1b3c267b49f1042a15461",
+      "bytes": 116702
+    },
+    {
+      "url": "https://ucsc.cmb.ac.lk/finance-division/",
+      "path": "audit.output/www.ucsc.cmb.ac.lk/20261020.0615/snapshots/page-14-01c9c29dab76.html",
+      "sha256": "01c9c29dab76ff04135f297d7097f1c5ab9665c4fa71c80e962903cea0a04d02",
+      "bytes": 114559
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,8 +1340,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -155,74 +1353,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 101] Network is unreachable"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 101] Network is unreachable"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev; Phone: 0568152808 (9 phone numbers found); Email: exam@ucsc.cmb.ac.lk; Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0568152808 (9 phone numbers found); Email: exam@ucsc.cmb.ac.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published processing time: 7 working days"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -242,7 +1502,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "135.119.23.5",
+    "egress_ip": "20.169.56.52",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

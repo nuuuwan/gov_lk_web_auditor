@@ -1,8 +1,8 @@
 # Website Audit: https://nppd.gov.lk/
 
-- Completed: 2026-10-19 07:00
+- Completed: 2026-10-20 07:13
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.23.5 (US, github-actions)
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://nppd.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://nppd.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic; Phone: +94 11 207 7180; Email: info@nppd.gov.lk; Published named responsibility: department
+Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic; Phone: +94 11 207 7180 (19 phone numbers found); Email: info@nppd.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 5th Floor, Sethsiripaya, Battaramulla, Sri Lanka. E-Mail info@nppd.gov.lk Social Media - Related Links President's Offic |
-| reachable_contacts | ✅ | Phone: +94 11 207 7180; Email: info@nppd.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 207 7180 (19 phone numbers found); Email: info@nppd.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

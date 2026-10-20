@@ -1,8 +1,8 @@
 # Website Audit: https://www.srilankan.com/
 
-- Completed: 2026-10-19 06:45
+- Completed: 2026-10-20 06:44
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.23.5 (US, github-actions)
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found; No passing named responsibility eviden
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0 0 16.666667 (24 phone numbers found); Email: reservations@srilankan.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 0 66.666667 (24 phone numbers found); Email: reservations@srilankan.com (2 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

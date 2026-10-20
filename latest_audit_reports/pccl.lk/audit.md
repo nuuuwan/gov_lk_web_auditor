@@ -1,8 +1,8 @@
 # Website Audit: https://pccl.lk/
 
-- Completed: 2026-10-19 06:41
-- Overall result: 🔴 Level 1
-- Vantage: 135.119.23.5 (US, github-actions)
+- Completed: 2026-10-20 06:39
+- Overall result: 🟠 Level 2
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,15 +29,15 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
+Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the; Phone: +94 76 195 2077 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
+| postal_address | ✅ | Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the |
 | reachable_contacts | ✅ | Phone: +94 76 195 2077 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
@@ -45,4 +45,14 @@ No passing postal address evidence found
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing fees and payment evidence found; No passing downloadable form evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ✅ | Published required documents: supporting documents |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| legal_basis | ✅ | Published legal basis: circular |
+| processing_time | ✅ | Published processing time: 2026 Days |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ✅ | Published published update date: 02 November 2026 |

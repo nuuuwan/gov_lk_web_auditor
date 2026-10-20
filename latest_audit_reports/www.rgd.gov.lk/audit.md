@@ -1,8 +1,8 @@
 # Website Audit: https://www.rgd.gov.lk/
 
-- Completed: 2026-10-19 06:46
+- Completed: 2026-10-20 06:45
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.23.5 (US, github-actions)
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 94112889489 (8 phone numbers found); Email: info@rgd.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 112 889 488 (8 phone numbers found); Email: info@rgd.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

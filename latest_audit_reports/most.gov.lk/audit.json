@@ -1,18 +1,21 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "050c033d-ca87-45e6-9177-e5e7055bfc40",
+  "audit_id": "da687a05-e691-4bce-b32e-9a36a42f6595",
   "url": "https://most.gov.lk/",
   "normalized_url": "https://most.gov.lk/",
-  "started_at": "2026-10-19T07:07:24.422381+05:30",
-  "completed_at": "2026-10-19T07:11:00.054195+05:30",
+  "started_at": "2026-10-20T07:12:54.371297+05:30",
+  "completed_at": "2026-10-20T07:15:07.862169+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200",
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
       "tls_not_expired: timed out",
       "tls_hostname_matches: timed out"
     ]
@@ -22,53 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-19T07:07:24.843367+05:30"
+      "observed_at": "2026-10-20T07:12:54.689504+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-19T07:07:24.843379+05:30"
+      "observed_at": "2026-10-20T07:12:54.689525+05:30"
     },
     {
       "check": "tls",
       "status": "error",
       "detail": "timed out",
-      "observed_at": "2026-10-19T07:07:35.105229+05:30"
+      "observed_at": "2026-10-20T07:13:04.910557+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: timed out",
       "source": "https://most.gov.lk/",
-      "observed_at": "2026-10-19T07:11:00.052079+05:30"
+      "observed_at": "2026-10-20T07:15:07.862001+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://most.gov.lk/",
-      "observed_at": "2026-10-19T07:11:00.052102+05:30"
+      "observed_at": "2026-10-20T07:15:07.862021+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://most.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://most.gov.lk/",
-      "observed_at": "2026-10-19T07:11:00.052106+05:30"
+      "observed_at": "2026-10-20T07:15:07.862025+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://most.gov.lk/",
-      "observed_at": "2026-10-19T07:11:00.052108+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 67 visible characters across 1 pages; below substance threshold 200",
-      "source": "https://most.gov.lk/"
+      "observed_at": "2026-10-20T07:15:07.862028+05:30"
     }
   ],
   "observations": [
@@ -113,12 +110,12 @@
     },
     {
       "url": "https://most.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://most.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 21109,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://most.gov.lk/",
@@ -130,14 +127,7 @@
       "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://most.gov.lk/",
-      "path": "audit.output/most.gov.lk/20261019.0707/snapshots/page-01-4b41ca67005f.html",
-      "sha256": "4b41ca67005f24c837a082d4af8026e15d29a76893e2396c1e72b4e54e5dbf3d",
-      "bytes": 4621
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -152,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200; timed out; timed out",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -165,43 +155,43 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 67 visible characters across 1 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: https://most.gov.lk/: Probe 1: timed out; http://most.gov.lk/: Probe 2: timed out; http://most.gov.lk/: Probe 4: timed out"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
@@ -251,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "135.119.23.5",
+    "egress_ip": "20.169.56.52",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

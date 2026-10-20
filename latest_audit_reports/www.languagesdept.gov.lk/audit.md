@@ -1,8 +1,8 @@
 # Website Audit: https://www.languagesdept.gov.lk/
 
-- Completed: 2026-10-19 06:42
+- Completed: 2026-10-20 06:40
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.23.5 (US, github-actions)
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

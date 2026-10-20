@@ -1,8 +1,8 @@
 # Website Audit: https://www.nddcb.gov.lk/
 
-- Completed: 2026-10-19 06:47
+- Completed: 2026-10-20 06:47
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.23.5 (US, github-actions)
+- Vantage: 20.169.56.52 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: above issue effectively PET Unit conducted a considerable number of drug awareness programmes in larger work place islan; Phone: +94 91 2224443 (69 phone numbers found); Email: methsevana@nddcb.gov.lk (27 email addresses found); Published named responsibility: division
+Published postal address: above issue effectively PET Unit conducted a considerable number of drug awareness programmes in larger work place islan; Phone: +94 33 2283060 (69 phone numbers found); Email: methsevana@nddcb.gov.lk (27 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: above issue effectively PET Unit conducted a considerable number of drug awareness programmes in larger work place islan |
-| reachable_contacts | ✅ | Phone: +94 91 2224443 (69 phone numbers found); Email: methsevana@nddcb.gov.lk (27 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 33 2283060 (69 phone numbers found); Email: methsevana@nddcb.gov.lk (27 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
