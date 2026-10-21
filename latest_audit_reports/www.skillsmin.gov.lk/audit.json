@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c9e3cd33-c3e5-49c1-99cc-85e4e9dca263",
+  "audit_id": "827401f0-1633-483b-b03f-d183c93142d7",
   "url": "https://www.skillsmin.gov.lk/",
   "normalized_url": "https://www.skillsmin.gov.lk/",
-  "started_at": "2026-10-20T07:05:51.213490+05:30",
-  "completed_at": "2026-10-20T07:05:55.311956+05:30",
+  "started_at": "2026-10-21T06:49:16.757878+05:30",
+  "completed_at": "2026-10-21T06:49:43.685464+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,54 +26,652 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-20T07:05:51.789226+05:30"
+      "observed_at": "2026-10-21T06:49:17.299734+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-20T07:05:51.789244+05:30"
+      "observed_at": "2026-10-21T06:49:17.299757+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-10-20T07:05:51.798169+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-21T06:49:17.935607+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://skillsmin.gov.lk/",
       "source": "https://www.skillsmin.gov.lk/",
-      "observed_at": "2026-10-20T07:05:55.311785+05:30"
+      "observed_at": "2026-10-21T06:49:42.476739+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://skillsmin.gov.lk/",
       "source": "http://www.skillsmin.gov.lk/",
-      "observed_at": "2026-10-20T07:05:55.311804+05:30"
+      "observed_at": "2026-10-21T06:49:42.476760+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://skillsmin.gov.lk/",
       "source": "https://www.skillsmin.gov.lk/",
-      "observed_at": "2026-10-20T07:05:55.311809+05:30"
+      "observed_at": "2026-10-21T06:49:42.476763+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://skillsmin.gov.lk/",
       "source": "http://www.skillsmin.gov.lk/",
-      "observed_at": "2026-10-20T07:05:55.311812+05:30"
+      "observed_at": "2026-10-21T06:49:42.476766+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://skillsmin.gov.lk/services/",
+      "source": "https://skillsmin.gov.lk/services/",
+      "observed_at": "2026-10-21T06:49:42.476768+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://skillsmin.gov.lk/contact-us-2/",
+      "source": "https://skillsmin.gov.lk/contact-us-2/",
+      "observed_at": "2026-10-21T06:49:42.476770+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "source": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "observed_at": "2026-10-21T06:49:42.476772+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "source": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "observed_at": "2026-10-21T06:49:42.476782+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://skillsmin.gov.lk/institutes/",
+      "source": "https://skillsmin.gov.lk/institutes/",
+      "observed_at": "2026-10-21T06:49:42.476785+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://skillsmin.gov.lk/downloads/",
+      "source": "https://skillsmin.gov.lk/downloads/",
+      "observed_at": "2026-10-21T06:49:42.476787+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://skillsmin.gov.lk/vacancy/",
+      "source": "https://skillsmin.gov.lk/vacancy/",
+      "observed_at": "2026-10-21T06:49:42.476789+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://skillsmin.gov.lk/circulars/",
+      "source": "https://skillsmin.gov.lk/circulars/",
+      "observed_at": "2026-10-21T06:49:42.476791+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://skillsmin.gov.lk/publications/",
+      "source": "https://skillsmin.gov.lk/publications/",
+      "observed_at": "2026-10-21T06:49:42.476793+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://skillsmin.gov.lk/procurement-notices/",
+      "source": "https://skillsmin.gov.lk/procurement-notices/",
+      "observed_at": "2026-10-21T06:49:42.476796+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/services/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/services/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/services/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/services/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/contact-us-2/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/contact-us-2/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/contact-us-2/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/contact-us-2/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/institutes/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/institutes/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/institutes/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/institutes/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/downloads/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/downloads/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/downloads/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/downloads/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/vacancy/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/vacancy/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/vacancy/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/vacancy/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/circulars/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/circulars/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/circulars/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/circulars/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/publications/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/publications/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/publications/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/publications/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026.09.2",
+      "source": "https://skillsmin.gov.lk/procurement-notices/",
+      "data": {
+        "value": "026 2026.09.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 136500 ",
+      "source": "https://skillsmin.gov.lk/procurement-notices/",
+      "data": {
+        "value": "+94 112 136500 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2026.02.2",
+      "source": "https://skillsmin.gov.lk/procurement-notices/",
+      "data": {
+        "value": "026 2026.02.2"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@skillsmin.gov.lk",
+      "source": "https://skillsmin.gov.lk/procurement-notices/",
+      "data": {
+        "value": "info@skillsmin.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://skillsmin.gov.lk/procurement-notices/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://skillsmin.gov.lk/procurement-notices/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 4478 visible characters across 14 pages",
+      "source": "https://www.skillsmin.gov.lk/"
     }
   ],
   "observations": [
     {
       "host": "www.skillsmin.gov.lk",
       "addresses": [
-        "162.214.98.236"
+        "23.106.66.81"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -85,49 +684,232 @@
     },
     {
       "host": "www.skillsmin.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "valid",
+      "expires_at": "2027-01-05T22:24:18+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.skillsmin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/",
+      "redirects": [
+        "https://skillsmin.gov.lk/"
+      ],
+      "elapsed_ms": 1278,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.skillsmin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/",
+      "redirects": [
+        "https://skillsmin.gov.lk/"
+      ],
+      "elapsed_ms": 1240,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.skillsmin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/",
+      "redirects": [
+        "https://skillsmin.gov.lk/"
+      ],
+      "elapsed_ms": 1241,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.skillsmin.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/",
+      "redirects": [
+        "https://skillsmin.gov.lk/"
+      ],
+      "elapsed_ms": 1263,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/services/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/services/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1246,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/contact-us-2/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/contact-us-2/",
+      "redirects": [],
+      "elapsed_ms": 1264,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "redirects": [],
+      "elapsed_ms": 1016,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "redirects": [],
+      "elapsed_ms": 1012,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/institutes/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/institutes/",
+      "redirects": [],
+      "elapsed_ms": 990,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/downloads/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/downloads/",
+      "redirects": [],
+      "elapsed_ms": 1274,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/vacancy/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/vacancy/",
+      "redirects": [],
+      "elapsed_ms": 1024,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/circulars/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/circulars/",
+      "redirects": [],
+      "elapsed_ms": 1032,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/publications/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/publications/",
+      "redirects": [],
+      "elapsed_ms": 1025,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://skillsmin.gov.lk/procurement-notices/",
+      "status_code": 200,
+      "final_url": "https://skillsmin.gov.lk/procurement-notices/",
+      "redirects": [],
+      "elapsed_ms": 1030,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://skillsmin.gov.lk/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-01-d1b4027fba07.html",
+      "sha256": "d1b4027fba072d3b7e676dfb7a7490d0d4fe1b0a47f3cca0e9b68a63836b8a8d",
+      "bytes": 186573
+    },
+    {
+      "url": "https://skillsmin.gov.lk/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-02-6f9d8f0b0e39.html",
+      "sha256": "6f9d8f0b0e398d7c2644b643444f19c44f3ffccdfd0998c50178ef98d0d7a237",
+      "bytes": 186573
+    },
+    {
+      "url": "https://skillsmin.gov.lk/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-03-250c25221045.html",
+      "sha256": "250c2522104567338f1792941f45d9b107b8762bcdb61f4bc96cc61566569113",
+      "bytes": 186573
+    },
+    {
+      "url": "https://skillsmin.gov.lk/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-04-ea61a9c93e4b.html",
+      "sha256": "ea61a9c93e4b543eb12b07f76cfce01aa344c9b2f365b3c8e38f11671f22251f",
+      "bytes": 186573
+    },
+    {
+      "url": "https://skillsmin.gov.lk/services/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-05-0c5fbfcf0884.html",
+      "sha256": "0c5fbfcf08841b54d171c2a2d45a0d0b4180b6fc5bac1b8967b3b4b6f3e1878e",
+      "bytes": 134355
+    },
+    {
+      "url": "https://skillsmin.gov.lk/contact-us-2/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-06-dc4d6a695224.html",
+      "sha256": "dc4d6a6952246e8a0a5247322e20a2635c896a1da4e3f6b12e3bcb4e46c7e0bb",
+      "bytes": 166618
+    },
+    {
+      "url": "https://skillsmin.gov.lk/blog/2026/08/17/empowering-skills-development-officers-with-digital-technology-to-guide-youth-towards-vocational-education/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-07-c43181f4c2f3.html",
+      "sha256": "c43181f4c2f3f3e5e6ee7681e528e0f7750586cdb177e83c59274c8de040950d",
+      "bytes": 143477
+    },
+    {
+      "url": "https://skillsmin.gov.lk/blog/2025/11/06/launch-of-sri-lankas-first-fully-ai-based-government-service-delivery-web-chatbot/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-08-04a349f867d6.html",
+      "sha256": "04a349f867d6beaeb8cbda58a54a2bc4d71240b9303b94b8cf9cb571c46c1526",
+      "bytes": 144599
+    },
+    {
+      "url": "https://skillsmin.gov.lk/institutes/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-09-573e50b74d44.html",
+      "sha256": "573e50b74d448c4f4fa98b1aebedd83350dc6fe2743fa3630d771a05faf5164d",
+      "bytes": 134362
+    },
+    {
+      "url": "https://skillsmin.gov.lk/downloads/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-10-dc3607eca31f.html",
+      "sha256": "dc3607eca31f48fce1feb6b6e865f521f9f504becdc011b6cccc886cf56bdb13",
+      "bytes": 148640
+    },
+    {
+      "url": "https://skillsmin.gov.lk/vacancy/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-11-98851c1e6e91.html",
+      "sha256": "98851c1e6e91d583770d1dad92ac119bb3f86891c108613e97de3cf89c512e25",
+      "bytes": 143482
+    },
+    {
+      "url": "https://skillsmin.gov.lk/circulars/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-12-ba7808699002.html",
+      "sha256": "ba780869900242269b1b4e3a47808b60a5e4781fcba2df288915a7b5c8d75f9e",
+      "bytes": 142717
+    },
+    {
+      "url": "https://skillsmin.gov.lk/publications/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-13-0c4ff4614475.html",
+      "sha256": "0c4ff46144752752f1dc377364d74c3f0d6bdf54d37d7488cf3205fd05bf3b3e",
+      "bytes": 154889
+    },
+    {
+      "url": "https://skillsmin.gov.lk/procurement-notices/",
+      "path": "audit.output/www.skillsmin.gov.lk/20261021.0649/snapshots/page-14-c684876fd89f.html",
+      "sha256": "c684876fd89fefa87bf518d2b66815d6e1b446a5ba059da2f871ed629c378afa",
+      "bytes": 145080
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +923,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +936,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +993,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 112 136500 (3 phone numbers found); Email: info@skillsmin.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1042,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.56.52",
+    "egress_ip": "135.119.39.211",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

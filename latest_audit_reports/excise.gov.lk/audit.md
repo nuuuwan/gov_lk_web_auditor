@@ -1,8 +1,8 @@
 # Website Audit: https://excise.gov.lk/
 
-- Completed: 2026-10-20 06:22
-- Overall result: 🟠 Level 2
-- Vantage: 20.169.56.52 (US, github-actions)
+- Completed: 2026-10-21 06:22
+- Overall result: 🔴 Level 1
+- Vantage: 135.119.39.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,15 +29,15 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353,; Phone: 0112-045000 (478 phone numbers found); Email: excisen@slt.lk (2 email addresses found); Published named responsibility: department
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sri Lanka. අංක 353, |
+| postal_address | ❓ | No passing postal address evidence found |
 | reachable_contacts | ✅ | Phone: 0112-045000 (478 phone numbers found); Email: excisen@slt.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
@@ -45,14 +45,4 @@ Published postal address: ලිපිනය No. 353, Kotte Road, Rajagiriya, Sr
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing processing time evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://excise.gov.lk/Documents/Right_to_Information_Act.pdf |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

@@ -1,21 +1,19 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "e97a65d5-fb31-4625-b934-43c4028c53ae",
+  "audit_id": "b2041a3c-5138-4254-9b10-fbab44761ecb",
   "url": "https://www.fcd.gov.lk",
   "normalized_url": "https://www.fcd.gov.lk/",
-  "started_at": "2026-10-20T06:52:03.153390+05:30",
-  "completed_at": "2026-10-20T06:54:14.012258+05:30",
+  "started_at": "2026-10-21T06:44:25.246418+05:30",
+  "completed_at": "2026-10-21T06:45:37.194699+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
+      "domain_not_parked: Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200",
+      "site_not_defaced: Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200",
+      "content_relevant: Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200",
+      "hosting_configured: Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200",
       "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
       "tls_not_expired: [Errno 101] Network is unreachable",
       "tls_hostname_matches: [Errno 101] Network is unreachable"
     ]
@@ -25,47 +23,53 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-20T06:52:03.869237+05:30"
+      "observed_at": "2026-10-21T06:44:25.965999+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-20T06:52:03.869256+05:30"
+      "observed_at": "2026-10-21T06:44:25.966018+05:30"
     },
     {
       "check": "tls",
       "status": "error",
       "detail": "[Errno 101] Network is unreachable",
-      "observed_at": "2026-10-20T06:52:13.879796+05:30"
+      "observed_at": "2026-10-21T06:44:35.975964+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: [Errno 101] Network is unreachable",
       "source": "https://www.fcd.gov.lk/",
-      "observed_at": "2026-10-20T06:54:14.012086+05:30"
+      "observed_at": "2026-10-21T06:45:37.191718+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.fcd.gov.lk/",
       "source": "http://www.fcd.gov.lk/",
-      "observed_at": "2026-10-20T06:54:14.012106+05:30"
+      "observed_at": "2026-10-21T06:45:37.191738+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 3: [Errno 101] Network is unreachable",
       "source": "https://www.fcd.gov.lk/",
-      "observed_at": "2026-10-20T06:54:14.012110+05:30"
+      "observed_at": "2026-10-21T06:45:37.191744+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 101] Network is unreachable",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.fcd.gov.lk/",
       "source": "http://www.fcd.gov.lk/",
-      "observed_at": "2026-10-20T06:54:14.012114+05:30"
+      "observed_at": "2026-10-21T06:45:37.191748+05:30"
+    },
+    {
+      "check": "page_text",
+      "status": "fail",
+      "detail": "Only 134 visible characters across 2 pages; below substance threshold 200",
+      "source": "https://www.fcd.gov.lk/"
     }
   ],
   "observations": [
@@ -102,12 +106,12 @@
     },
     {
       "url": "http://www.fcd.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.fcd.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 139,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "https://www.fcd.gov.lk/",
@@ -120,15 +124,28 @@
     },
     {
       "url": "http://www.fcd.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.fcd.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 101] Network is unreachable"
+      "elapsed_ms": 137,
+      "content_type": "text/html",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "http://www.fcd.gov.lk/",
+      "path": "audit.output/www.fcd.gov.lk/20261021.0644/snapshots/page-01-baf027ffe8c5.html",
+      "sha256": "baf027ffe8c5ca5069d90a85d003660a74ed5e6b068404be5cd8ec7dfa8134cd",
+      "bytes": 766
+    },
+    {
+      "url": "http://www.fcd.gov.lk/",
+      "path": "audit.output/www.fcd.gov.lk/20261021.0644/snapshots/page-02-baf027ffe8c5.html",
+      "sha256": "baf027ffe8c5ca5069d90a85d003660a74ed5e6b068404be5cd8ec7dfa8134cd",
+      "bytes": 766
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -143,7 +160,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
+      "reason": "Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable",
       "executed": true,
       "checks": [
         {
@@ -156,25 +173,25 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "reason": "Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
@@ -185,14 +202,14 @@
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -242,7 +259,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.56.52",
+    "egress_ip": "135.119.39.211",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

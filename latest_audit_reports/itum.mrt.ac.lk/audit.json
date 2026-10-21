@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "a3e434cc-8182-4881-b711-43125e8ff7e1",
+  "audit_id": "78beb06b-f61e-48f6-a061-a29c64e292f2",
   "url": "https://itum.mrt.ac.lk/",
   "normalized_url": "https://itum.mrt.ac.lk/",
-  "started_at": "2026-10-20T06:15:56.241585+05:30",
-  "completed_at": "2026-10-20T06:16:02.770887+05:30",
+  "started_at": "2026-10-21T06:15:18.820452+05:30",
+  "completed_at": "2026-10-21T06:15:46.924410+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [502, 502, 502, 502]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,1221 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-20T06:15:56.570782+05:30"
+      "observed_at": "2026-10-21T06:15:19.170276+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-20T06:15:56.570799+05:30"
+      "observed_at": "2026-10-21T06:15:19.170294+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-20T06:15:57.552760+05:30"
+      "observed_at": "2026-10-21T06:15:20.139404+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 502 at https://itum.mrt.ac.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://itum.mrt.ac.lk/",
       "source": "https://itum.mrt.ac.lk/",
-      "observed_at": "2026-10-20T06:16:02.769587+05:30"
+      "observed_at": "2026-10-21T06:15:46.709424+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 502 at http://itum.mrt.ac.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://itum.mrt.ac.lk/",
       "source": "http://itum.mrt.ac.lk/",
-      "observed_at": "2026-10-20T06:16:02.769606+05:30"
+      "observed_at": "2026-10-21T06:15:46.709447+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 502 at https://itum.mrt.ac.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://itum.mrt.ac.lk/",
       "source": "https://itum.mrt.ac.lk/",
-      "observed_at": "2026-10-20T06:16:02.769609+05:30"
+      "observed_at": "2026-10-21T06:15:46.709451+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 502 at http://itum.mrt.ac.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://itum.mrt.ac.lk/",
       "source": "http://itum.mrt.ac.lk/",
-      "observed_at": "2026-10-20T06:16:02.769612+05:30"
+      "observed_at": "2026-10-21T06:15:46.709453+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://itum.mrt.ac.lk/officers-of-the-itum",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "observed_at": "2026-10-21T06:15:46.709455+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://itum.mrt.ac.lk/heads-of-divisions",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "observed_at": "2026-10-21T06:15:46.709457+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://itum.mrt.ac.lk/research-news",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "observed_at": "2026-10-21T06:15:46.709459+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://itum.mrt.ac.lk/research/itum-research-grants",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "observed_at": "2026-10-21T06:15:46.709462+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://itum.mrt.ac.lk/research-gallery",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "observed_at": "2026-10-21T06:15:46.709464+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://itum.mrt.ac.lk/student-counsellors",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "observed_at": "2026-10-21T06:15:46.709466+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://itum.mrt.ac.lk/events",
+      "source": "https://itum.mrt.ac.lk/events",
+      "observed_at": "2026-10-21T06:15:46.709468+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://itum.mrt.ac.lk/university-life/student-activity",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "observed_at": "2026-10-21T06:15:46.709470+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://itum.mrt.ac.lk/short-courses",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "observed_at": "2026-10-21T06:15:46.709472+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://itum.mrt.ac.lk/policies",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "observed_at": "2026-10-21T06:15:46.709474+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://itum.mrt.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://itum.mrt.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dr@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "dr@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: supply@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "supply@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sab@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "sab@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: director@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "director@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: head-met@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "head-met@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: head-tt@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "head-tt@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: head-pc@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "head-pc@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: buddhikaw@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "buddhikaw@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mmmafroos@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "mmmafroos@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/research-news",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/research-gallery",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/student-counsellors",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://itum.mrt.ac.lk/events",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/short-courses",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 117 040 ",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "+94) 112 117 040 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 004 ",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "+94) 112 124 004 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 112 124 000 ",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "+94) 112 124 000 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 113 460 406 ",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "+94) 113 460 406 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "info@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar-exam@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "sar-exam@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ar-welfare@itum.mrt.ac.lk",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "ar-welfare@itum.mrt.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://itum.mrt.ac.lk/sites/default/files/inline-files/Performance%20criteria%20Final.pdf",
+      "source": "https://itum.mrt.ac.lk/policies",
+      "data": {
+        "value": "https://itum.mrt.ac.lk/sites/default/files/inline-files/Performance%20criteria%20Final.pdf"
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 44 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 6646 visible characters across 14 pages",
       "source": "https://itum.mrt.ac.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [502, 502, 502, 502]",
-      "observed_at": "2026-10-20T06:16:02.770389+05:30"
     }
   ],
   "observations": [
@@ -96,65 +1267,215 @@
     },
     {
       "url": "https://itum.mrt.ac.lk/",
-      "status_code": 502,
+      "status_code": 200,
       "final_url": "https://itum.mrt.ac.lk/",
       "redirects": [],
-      "elapsed_ms": 1248,
-      "content_type": "text/html",
+      "elapsed_ms": 1257,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://itum.mrt.ac.lk/",
-      "status_code": 502,
+      "status_code": 200,
       "final_url": "http://itum.mrt.ac.lk/",
       "redirects": [],
-      "elapsed_ms": 971,
-      "content_type": "text/html",
+      "elapsed_ms": 514,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://itum.mrt.ac.lk/",
-      "status_code": 502,
+      "status_code": 200,
       "final_url": "https://itum.mrt.ac.lk/",
       "redirects": [],
-      "elapsed_ms": 1484,
-      "content_type": "text/html",
+      "elapsed_ms": 1216,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://itum.mrt.ac.lk/",
-      "status_code": 502,
+      "status_code": 200,
       "final_url": "http://itum.mrt.ac.lk/",
       "redirects": [],
-      "elapsed_ms": 980,
-      "content_type": "text/html",
+      "elapsed_ms": 509,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "redirects": [],
+      "elapsed_ms": 1185,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "redirects": [],
+      "elapsed_ms": 1228,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/research-news",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/research-news",
+      "redirects": [],
+      "elapsed_ms": 1045,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "redirects": [],
+      "elapsed_ms": 3522,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/research-gallery",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/research-gallery",
+      "redirects": [],
+      "elapsed_ms": 3123,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/student-counsellors",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/student-counsellors",
+      "redirects": [],
+      "elapsed_ms": 1854,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/events",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/events",
+      "redirects": [],
+      "elapsed_ms": 1703,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "redirects": [],
+      "elapsed_ms": 993,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/short-courses",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/short-courses",
+      "redirects": [],
+      "elapsed_ms": 995,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/policies",
+      "status_code": 200,
+      "final_url": "https://itum.mrt.ac.lk/policies",
+      "redirects": [],
+      "elapsed_ms": 1234,
+      "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://itum.mrt.ac.lk/",
-      "path": "audit.output/itum.mrt.ac.lk/20261020.0615/snapshots/page-01-26b7f44ec736.html",
-      "sha256": "26b7f44ec73683b762a0dbf9b471b3967eb02e6773be2bc485f23b265d596823",
-      "bytes": 157
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-01-715816881c30.html",
+      "sha256": "715816881c306c04f420b6c5d9443ee25c8716b5a59a2444497f816b342f8325",
+      "bytes": 106864
     },
     {
       "url": "http://itum.mrt.ac.lk/",
-      "path": "audit.output/itum.mrt.ac.lk/20261020.0615/snapshots/page-02-26b7f44ec736.html",
-      "sha256": "26b7f44ec73683b762a0dbf9b471b3967eb02e6773be2bc485f23b265d596823",
-      "bytes": 157
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-02-69d88a79bc60.html",
+      "sha256": "69d88a79bc60cfbe0f90cd52af1111df00f09b9ac4e64b566ce78676b613ffb4",
+      "bytes": 106861
     },
     {
       "url": "https://itum.mrt.ac.lk/",
-      "path": "audit.output/itum.mrt.ac.lk/20261020.0615/snapshots/page-03-26b7f44ec736.html",
-      "sha256": "26b7f44ec73683b762a0dbf9b471b3967eb02e6773be2bc485f23b265d596823",
-      "bytes": 157
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-03-715816881c30.html",
+      "sha256": "715816881c306c04f420b6c5d9443ee25c8716b5a59a2444497f816b342f8325",
+      "bytes": 106864
     },
     {
       "url": "http://itum.mrt.ac.lk/",
-      "path": "audit.output/itum.mrt.ac.lk/20261020.0615/snapshots/page-04-26b7f44ec736.html",
-      "sha256": "26b7f44ec73683b762a0dbf9b471b3967eb02e6773be2bc485f23b265d596823",
-      "bytes": 157
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-04-69d88a79bc60.html",
+      "sha256": "69d88a79bc60cfbe0f90cd52af1111df00f09b9ac4e64b566ce78676b613ffb4",
+      "bytes": 106861
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/officers-of-the-itum",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-05-9ae10749dd7c.html",
+      "sha256": "9ae10749dd7ccc22b4c0af62aed78e9ccceb19007a553e1f4b68077d29b2eea0",
+      "bytes": 24830
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/heads-of-divisions",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-06-7a58b6ec8d90.html",
+      "sha256": "7a58b6ec8d90028747e753882f525f28a92d1f40b77ec9ab40e76bde446b46fc",
+      "bytes": 28372
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/research-news",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-07-5ce41240d7ef.html",
+      "sha256": "5ce41240d7ef597909c87f03e41dd6c243b77af7d77cffe6760c0aa0da480c66",
+      "bytes": 25277
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/research/itum-research-grants",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-08-17678784c908.html",
+      "sha256": "17678784c908fc9856612fcfae849bc72e9a21b9f174b2bfca0bde688b507d28",
+      "bytes": 24261
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/research-gallery",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-09-4f1ef5d75671.html",
+      "sha256": "4f1ef5d756719f37f5500c0b67d48901b53780a36ee4326582b91e18b8872650",
+      "bytes": 22835
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/student-counsellors",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-10-00bc863e22d9.html",
+      "sha256": "00bc863e22d94d45aeb1f6074fd4d7658d374b03d18a493f353c3dfaa59a8007",
+      "bytes": 23862
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/events",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-11-b542e8045353.html",
+      "sha256": "b542e8045353e950c47dc0ae110182469da7d832a14bbf2a5a79ef8e01582afc",
+      "bytes": 32227
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/university-life/student-activity",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-12-e1bb2708c8dc.html",
+      "sha256": "e1bb2708c8dcdbdedf13f5edf21ae35ef8d3c585eaf7f967f758851e66a0a921",
+      "bytes": 23007
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/short-courses",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-13-3f3e21772546.html",
+      "sha256": "3f3e217725466e4cd53c739be421f36aa0f1d53019ad31c42200333bb309c846",
+      "bytes": 22773
+    },
+    {
+      "url": "https://itum.mrt.ac.lk/policies",
+      "path": "audit.output/itum.mrt.ac.lk/20261021.0615/snapshots/page-14-10b13401afa0.html",
+      "sha256": "10b13401afa0b92eb00a6c4b3a21ff15dfe418f51dfc7ada06a2174ace110e97",
+      "bytes": 24139
     }
   ],
   "reviewer_decisions": [],
@@ -170,8 +1491,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [502, 502, 502, 502]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -183,44 +1504,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 44 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 44 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 44 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 44 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [502, 502, 502, 502]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -240,9 +1561,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94) 112 117 040 (4 phone numbers found); Email: info@itum.mrt.ac.lk (12 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -270,7 +1610,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.56.52",
+    "egress_ip": "135.119.39.211",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

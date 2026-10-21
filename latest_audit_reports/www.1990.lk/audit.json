@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "5974122c-b002-4e70-9cf0-f467bed5e833",
+  "audit_id": "ef274a54-3d63-450b-a07d-2e6a5b5b2e0d",
   "url": "https://www.1990.lk/",
   "normalized_url": "https://www.1990.lk/",
-  "started_at": "2026-10-20T06:33:11.766940+05:30",
-  "completed_at": "2026-10-20T06:35:23.073593+05:30",
+  "started_at": "2026-10-21T06:31:56.790186+05:30",
+  "completed_at": "2026-10-21T06:32:16.556911+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,438 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-20T06:33:12.335505+05:30"
+      "observed_at": "2026-10-21T06:31:57.512339+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-20T06:33:12.335524+05:30"
+      "observed_at": "2026-10-21T06:31:57.512355+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-20T06:33:22.348484+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-21T06:31:58.161411+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.1990.lk/",
       "source": "https://www.1990.lk/",
-      "observed_at": "2026-10-20T06:35:23.073439+05:30"
+      "observed_at": "2026-10-21T06:32:16.132188+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://www.1990.lk/",
       "source": "http://www.1990.lk/",
-      "observed_at": "2026-10-20T06:35:23.073456+05:30"
+      "observed_at": "2026-10-21T06:32:16.132205+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.1990.lk/",
       "source": "https://www.1990.lk/",
-      "observed_at": "2026-10-20T06:35:23.073460+05:30"
+      "observed_at": "2026-10-21T06:32:16.132209+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://www.1990.lk/",
       "source": "http://www.1990.lk/",
-      "observed_at": "2026-10-20T06:35:23.073464+05:30"
+      "observed_at": "2026-10-21T06:32:16.132212+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.1990.lk/contact-us/",
+      "source": "https://www.1990.lk/contact-us/",
+      "observed_at": "2026-10-21T06:32:16.132214+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.1990.lk/news/1990-suwa-seriya-pre-hospital-ambulance-service-signed-an-mou-with-the-sri-lanka-college-of-cardiology/",
+      "source": "https://www.1990.lk/news/1990-suwa-seriya-pre-hospital-ambulance-service-signed-an-mou-with-the-sri-lanka-college-of-cardiology/",
+      "observed_at": "2026-10-21T06:32:16.132217+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.1990.lk/news/suwa-sariya-establishes-the-first-substation-of-the-ambulance-service/",
+      "source": "https://www.1990.lk/news/suwa-sariya-establishes-the-first-substation-of-the-ambulance-service/",
+      "observed_at": "2026-10-21T06:32:16.132219+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.1990.lk/news/pm-modi-flags-off-emergency-ambulance-service-in-sri-lanka-via-video-conferencing/",
+      "source": "https://www.1990.lk/news/pm-modi-flags-off-emergency-ambulance-service-in-sri-lanka-via-video-conferencing/",
+      "observed_at": "2026-10-21T06:32:16.132221+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.1990.lk/news/1990-celebrate-2-years-of-service/",
+      "source": "https://www.1990.lk/news/1990-celebrate-2-years-of-service/",
+      "observed_at": "2026-10-21T06:32:16.132223+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.1990.lk",
+      "source": "https://www.1990.lk",
+      "observed_at": "2026-10-21T06:32:16.132225+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.1990.lk/about-us/",
+      "source": "https://www.1990.lk/about-us/",
+      "observed_at": "2026-10-21T06:32:16.132227+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.1990.lk/emergency-procedure/",
+      "source": "https://www.1990.lk/emergency-procedure/",
+      "observed_at": "2026-10-21T06:32:16.132230+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.1990.lk/our-team/",
+      "source": "https://www.1990.lk/our-team/",
+      "observed_at": "2026-10-21T06:32:16.132232+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.1990.lk/faq/",
+      "source": "https://www.1990.lk/faq/",
+      "observed_at": "2026-10-21T06:32:16.132234+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 48 hours",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "48 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 48 hours",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "48 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 48 hours",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "48 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 48 hours",
+      "source": "https://www.1990.lk/",
+      "data": {
+        "value": "48 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 1990",
+      "source": "https://www.1990.lk/contact-us/",
+      "data": {
+        "value": "1990"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 045 801 ",
+      "source": "https://www.1990.lk/contact-us/",
+      "data": {
+        "value": "011 2 045 801 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/contact-us/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 045 801",
+      "source": "https://www.1990.lk/contact-us/",
+      "data": {
+        "value": "011 2 045 801"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@1990.lk",
+      "source": "https://www.1990.lk/contact-us/",
+      "data": {
+        "value": "info@1990.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/news/1990-suwa-seriya-pre-hospital-ambulance-service-signed-an-mou-with-the-sri-lanka-college-of-cardiology/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/news/suwa-sariya-establishes-the-first-substation-of-the-ambulance-service/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/news/pm-modi-flags-off-emergency-ambulance-service-in-sri-lanka-via-video-conferencing/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/news/1990-celebrate-2-years-of-service/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.1990.lk",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.1990.lk",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 48 hours",
+      "source": "https://www.1990.lk",
+      "data": {
+        "value": "48 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/about-us/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 48 hours",
+      "source": "https://www.1990.lk/about-us/",
+      "data": {
+        "value": "48 hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/emergency-procedure/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/our-team/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.1990.lk/our-team/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112045801",
+      "source": "https://www.1990.lk/faq/",
+      "data": {
+        "value": "+94112045801"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 21263 visible characters across 14 pages",
+      "source": "https://www.1990.lk/"
     }
   ],
   "observations": [
@@ -85,49 +477,228 @@
     },
     {
       "host": "www.1990.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-11-24T00:53:35+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.1990.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 3409,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.1990.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/",
+      "redirects": [
+        "https://www.1990.lk/"
+      ],
+      "elapsed_ms": 825,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.1990.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 740,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.1990.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/",
+      "redirects": [
+        "https://www.1990.lk/"
+      ],
+      "elapsed_ms": 1202,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/contact-us/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/contact-us/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 248,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/news/1990-suwa-seriya-pre-hospital-ambulance-service-signed-an-mou-with-the-sri-lanka-college-of-cardiology/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/news/1990-suwa-seriya-pre-hospital-ambulance-service-signed-an-mou-with-the-sri-lanka-college-of-cardiology/",
+      "redirects": [],
+      "elapsed_ms": 182,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/news/suwa-sariya-establishes-the-first-substation-of-the-ambulance-service/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/news/suwa-sariya-establishes-the-first-substation-of-the-ambulance-service/",
+      "redirects": [],
+      "elapsed_ms": 193,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/news/pm-modi-flags-off-emergency-ambulance-service-in-sri-lanka-via-video-conferencing/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/news/pm-modi-flags-off-emergency-ambulance-service-in-sri-lanka-via-video-conferencing/",
+      "redirects": [],
+      "elapsed_ms": 213,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/news/1990-celebrate-2-years-of-service/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/news/1990-celebrate-2-years-of-service/",
+      "redirects": [],
+      "elapsed_ms": 178,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk",
+      "redirects": [],
+      "elapsed_ms": 950,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/about-us/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/about-us/",
+      "redirects": [],
+      "elapsed_ms": 193,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/emergency-procedure/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/emergency-procedure/",
+      "redirects": [],
+      "elapsed_ms": 156,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/our-team/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/our-team/",
+      "redirects": [],
+      "elapsed_ms": 211,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.1990.lk/faq/",
+      "status_code": 200,
+      "final_url": "https://www.1990.lk/faq/",
+      "redirects": [],
+      "elapsed_ms": 215,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.1990.lk/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-01-a7a8b64712ad.html",
+      "sha256": "a7a8b64712ad859e0e37770791c21bd8512f21ede848f795455d120f11319582",
+      "bytes": 119701
+    },
+    {
+      "url": "https://www.1990.lk/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-02-a7a8b64712ad.html",
+      "sha256": "a7a8b64712ad859e0e37770791c21bd8512f21ede848f795455d120f11319582",
+      "bytes": 119701
+    },
+    {
+      "url": "https://www.1990.lk/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-03-a7a8b64712ad.html",
+      "sha256": "a7a8b64712ad859e0e37770791c21bd8512f21ede848f795455d120f11319582",
+      "bytes": 119701
+    },
+    {
+      "url": "https://www.1990.lk/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-04-a7a8b64712ad.html",
+      "sha256": "a7a8b64712ad859e0e37770791c21bd8512f21ede848f795455d120f11319582",
+      "bytes": 119701
+    },
+    {
+      "url": "https://www.1990.lk/contact-us/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-05-45a88c1edf0c.html",
+      "sha256": "45a88c1edf0cb8730a7d5b2bd953748f8359681052cb6ea2fee3339f20cc366a",
+      "bytes": 44140
+    },
+    {
+      "url": "https://www.1990.lk/news/1990-suwa-seriya-pre-hospital-ambulance-service-signed-an-mou-with-the-sri-lanka-college-of-cardiology/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-06-55c54e21d807.html",
+      "sha256": "55c54e21d8072cefc807ebd5cfa3b1d334202ddb884ee23cf0a16f8001ca5e4b",
+      "bytes": 43411
+    },
+    {
+      "url": "https://www.1990.lk/news/suwa-sariya-establishes-the-first-substation-of-the-ambulance-service/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-07-d6fe6c85d347.html",
+      "sha256": "d6fe6c85d3471e6c034802d33e9be76aa53e1928bebb54e13e5ea8aa4075d17c",
+      "bytes": 39495
+    },
+    {
+      "url": "https://www.1990.lk/news/pm-modi-flags-off-emergency-ambulance-service-in-sri-lanka-via-video-conferencing/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-08-2be0a56cdd05.html",
+      "sha256": "2be0a56cdd0508d1f018058192b10d53767e689e1faa34a6a1502ae34940f78f",
+      "bytes": 41506
+    },
+    {
+      "url": "https://www.1990.lk/news/1990-celebrate-2-years-of-service/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-09-88958d8c7f35.html",
+      "sha256": "88958d8c7f359789768334b7081152176665d0c1ef96d58bbd8953f0fd8c49b0",
+      "bytes": 39555
+    },
+    {
+      "url": "https://www.1990.lk",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-10-a7a8b64712ad.html",
+      "sha256": "a7a8b64712ad859e0e37770791c21bd8512f21ede848f795455d120f11319582",
+      "bytes": 119701
+    },
+    {
+      "url": "https://www.1990.lk/about-us/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-11-5fb36a6c738b.html",
+      "sha256": "5fb36a6c738b2d0cf17b0e2e62f5fa278dee36f1220cba46b04d5d3e725e424b",
+      "bytes": 49325
+    },
+    {
+      "url": "https://www.1990.lk/emergency-procedure/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-12-5c1c1a48baa2.html",
+      "sha256": "5c1c1a48baa24bbe44a9ae962599ea8b8062d223ca4b4737fe3c0713b5a31d7e",
+      "bytes": 37776
+    },
+    {
+      "url": "https://www.1990.lk/our-team/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-13-3dd67da74115.html",
+      "sha256": "3dd67da74115e22bbeac01a5fd3ac71226fc89b2c6ce3e5b1b3914cad8c9da09",
+      "bytes": 50978
+    },
+    {
+      "url": "https://www.1990.lk/faq/",
+      "path": "audit.output/www.1990.lk/20261021.0631/snapshots/page-14-4c61da910573.html",
+      "sha256": "4c61da91057385d862bde896feb0aed05c009271b1810404025e2b15afa7e2c7",
+      "bytes": 78061
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +712,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +725,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +782,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94112045801 (3 phone numbers found); Email: info@1990.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +831,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.56.52",
+    "egress_ip": "135.119.39.211",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

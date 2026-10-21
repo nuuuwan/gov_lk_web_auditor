@@ -1,8 +1,8 @@
 # Website Audit: https://www.pubad.gov.lk/
 
-- Completed: 2026-10-20 07:12
-- Overall result: ⚫ Level 0
-- Vantage: 20.169.56.52 (US, github-actions)
+- Completed: 2026-10-21 06:57
+- Overall result: 🔴 Level 1
+- Vantage: 135.119.39.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,20 +10,20 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❓
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200; Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 101 visible characters across 3 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://www.pubad.gov.lk/: Probe 1: timed out |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,7 +33,13 @@ Insufficient substantive page content: Only 101 visible characters across 3 page
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Not run because 🔴 Level 1 did not pass
+No passing named responsibility evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak70bb7a3ed879daca |
+| reachable_contacts | ✅ | Phone: +94 11 2695279 (395 phone numbers found); Email: info@pubad.gov.lk (3 email addresses found) |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 

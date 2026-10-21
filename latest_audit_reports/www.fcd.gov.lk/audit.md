@@ -1,8 +1,8 @@
 # Website Audit: https://www.fcd.gov.lk/
 
-- Completed: 2026-10-20 06:54
+- Completed: 2026-10-21 06:45
 - Overall result: ⚫ Level 0
-- Vantage: 20.169.56.52 (US, github-actions)
+- Vantage: 135.119.39.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,18 +14,18 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable
+Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [Errno 101] Network is unreachable; [Errno 101] Network is unreachable
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | No usable page was inspected |
-| site_not_defaced | ❓ | No usable page was inspected |
-| content_relevant | ❓ | No usable page was inspected |
-| hosting_configured | ❓ | No usable page was inspected |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 134 visible characters across 2 pages; below substance threshold 200 |
 | http_available | ❓ | An HTTP probe was transient |
-| redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | [Errno 101] Network is unreachable |
 | tls_hostname_matches | ❓ | [Errno 101] Network is unreachable |
 

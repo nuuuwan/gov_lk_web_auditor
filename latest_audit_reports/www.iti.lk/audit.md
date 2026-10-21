@@ -1,8 +1,8 @@
 # Website Audit: https://www.iti.lk/
 
-- Completed: 2026-10-20 06:50
+- Completed: 2026-10-21 06:43
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.56.52 (US, github-actions)
+- Vantage: 135.119.39.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

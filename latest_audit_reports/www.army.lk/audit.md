@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-10-20 06:10
+- Completed: 2026-10-21 06:09
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.56.52 (US, github-actions)
+- Vantage: 135.119.39.211 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the welfare, infrastructure and administrative requirements of residents at Parakumgama Ranaviru Village in Diyabeduma, ; Phone: +94 11 207 6967 (18 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
+Published postal address: the welfare, infrastructure and administrative requirements of residents at Parakumgama Ranaviru Village in Diyabeduma, ; Phone: +94 76 690 7749 (18 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the welfare, infrastructure and administrative requirements of residents at Parakumgama Ranaviru Village in Diyabeduma,  |
-| reachable_contacts | ✅ | Phone: +94 11 207 6967 (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 76 690 7749 (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found
+No passing required documents evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing required documents evidence found
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 9 DAYS |
 | downloadable_form | ✅ | Published downloadable form: https://www.army.lk/themes/custom/web_tailwind/images/pdf/join_us/officer/app_other_officer_application_4_28.pdf |
-| published_update_date | ✅ | Published published update date: 2026-10-14 |
+| published_update_date | ❓ | No passing published update date evidence found |
