@@ -1,8 +1,8 @@
 # Website Audit: https://www.ips.lk/
 
-- Completed: 2026-10-21 06:23
+- Completed: 2026-10-22 06:25
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.39.211 (US, github-actions)
+- Vantage: 40.76.239.97 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

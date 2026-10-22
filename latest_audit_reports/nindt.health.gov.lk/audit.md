@@ -1,8 +1,8 @@
 # Website Audit: https://nindt.health.gov.lk/
 
-- Completed: 2026-10-21 06:33
+- Completed: 2026-10-22 06:36
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.39.211 (US, github-actions)
+- Vantage: 40.76.239.97 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

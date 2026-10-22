@@ -1,8 +1,8 @@
 # Website Audit: https://neda.gov.lk/
 
-- Completed: 2026-10-21 06:36
+- Completed: 2026-10-22 06:39
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.39.211 (US, github-actions)
+- Vantage: 40.76.239.97 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co; Phone: 0398746850 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found); Published named responsibility: director
+Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co; Phone: 0112370092 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Western Colombo Colombo District Secretariat Ms. C T J Jayaweera Chathya 0714491914 0714491914 chathyajayamanne@gmail.co |
-| reachable_contacts | ✅ | Phone: 0398746850 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112370092 (338 phone numbers found); Email: info@neda.gov.lk (267 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌

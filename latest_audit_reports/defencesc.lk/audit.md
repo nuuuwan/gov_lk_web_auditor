@@ -1,8 +1,8 @@
 # Website Audit: https://defencesc.lk/
 
-- Completed: 2026-10-21 06:08
+- Completed: 2026-10-22 06:09
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.39.211 (US, github-actions)
+- Vantage: 40.76.239.97 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.34, Malay Street, Colombo 2 Call 011-247-8575 Email info@defencesc.lk EMAIL US Please enable JavaScript in your brows; Phone: 011-247-8575 (4 phone numbers found); Email: info@defencesc.lk; Published named responsibility: division
+Published postal address: No.34, Malay Street, Colombo 2 Call 011-247-8575 Email info@defencesc.lk EMAIL US Please enable JavaScript in your brows; Phone: 011-247-8575 (4 phone numbers found); Email: info@defencesc.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.34, Malay Street, Colombo 2 Call 011-247-8575 Email info@defencesc.lk EMAIL US Please enable JavaScript in your brows |
 | reachable_contacts | ✅ | Phone: 011-247-8575 (4 phone numbers found); Email: info@defencesc.lk |
-| named_responsibility | ✅ | Published named responsibility: division |
+| named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 

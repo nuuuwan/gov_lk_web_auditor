@@ -1,8 +1,8 @@
 # Website Audit: https://www.mahapola.lk/
 
-- Completed: 2026-10-21 06:45
+- Completed: 2026-10-22 06:49
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.39.211 (US, github-actions)
+- Vantage: 40.76.239.97 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: a search engine that has an out-of-date listing for this site you have no access to this page If difficulties persist, p; Phone: 011 268 5011 (11 phone numbers found); Email: anujamtf@gmail.com (2 email addresses found); Published named responsibility: department
+Published postal address: a search engine that has an out-of-date listing for this site you have no access to this page If difficulties persist, p; Phone: 011 268 5548 (12 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: a search engine that has an out-of-date listing for this site you have no access to this page If difficulties persist, p |
-| reachable_contacts | ✅ | Phone: 011 268 5011 (11 phone numbers found); Email: anujamtf@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 268 5548 (12 phone numbers found); Email: mahapola@mahapola.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

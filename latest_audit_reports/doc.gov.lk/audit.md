@@ -1,8 +1,8 @@
 # Website Audit: https://doc.gov.lk/
 
-- Completed: 2026-10-21 06:53
+- Completed: 2026-10-22 06:49
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.39.211 (US, github-actions)
+- Vantage: 40.76.239.97 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak25725f37cb8bdc88; Phone: 011 2430233 (4 phone numbers found); Email: fortrade@doc.gov.lk; Published named responsibility: department
+Published postal address: issues emanating from PTAs, FTAs Conducting Joint Commissions with China, Egypt, Russia, Malaysia, Turkey, Kuwait etc Wo; Phone: 011 2430233 (86 phone numbers found); Email: fortrade@doc.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak25725f37cb8bdc88 |
-| reachable_contacts | ✅ | Phone: 011 2430233 (4 phone numbers found); Email: fortrade@doc.gov.lk |
+| postal_address | ✅ | Published postal address: issues emanating from PTAs, FTAs Conducting Joint Commissions with China, Egypt, Russia, Malaysia, Turkey, Kuwait etc Wo |
+| reachable_contacts | ✅ | Phone: 011 2430233 (86 phone numbers found); Email: fortrade@doc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 01 January 2018
+Published published update date: 01/01/2014
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: supporting documents |
-| fees_and_payment | ✅ | Published fees and payment: Rs. 15,000 |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 12 months |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://doc.gov.lk/images/pdf/RTI/Right_to_Information_Acte.pdf |
-| published_update_date | ❌ | Published published update date: 01 January 2018 |
+| published_update_date | ❌ | Published published update date: 01/01/2014 |
