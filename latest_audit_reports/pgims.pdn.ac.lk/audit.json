@@ -1,686 +1,46 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3831df8b-3626-49e9-b658-6eae2023dbb7",
+  "audit_id": "01261f9d-c785-4187-90f3-41f3c94a510c",
   "url": "https://pgims.pdn.ac.lk/",
   "normalized_url": "https://pgims.pdn.ac.lk/",
-  "started_at": "2026-10-22T06:15:41.703297+05:30",
-  "completed_at": "2026-10-22T06:16:13.483748+05:30",
+  "started_at": "2026-10-23T06:16:37.110018+05:30",
+  "completed_at": "2026-10-23T06:16:37.833192+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "dns_resolves: [Errno -5] No address associated with hostname"
     ]
   },
   "evidence": [
     {
-      "check": "dns",
-      "status": "pass",
-      "detail": "Public DNS resolved",
-      "observed_at": "2026-10-22T06:15:42.169921+05:30"
+      "check": "dns_absent",
+      "status": "fail",
+      "detail": "[Errno -5] No address associated with hostname",
+      "observed_at": "2026-10-23T06:16:37.832984+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-22T06:15:42.169941+05:30"
-    },
-    {
-      "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-22T06:15:43.934969+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://pgims.pdn.ac.lk/",
-      "source": "https://pgims.pdn.ac.lk/",
-      "observed_at": "2026-10-22T06:16:13.119831+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://pgims.pdn.ac.lk/",
-      "source": "http://pgims.pdn.ac.lk/",
-      "observed_at": "2026-10-22T06:16:13.119850+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://pgims.pdn.ac.lk/",
-      "source": "https://pgims.pdn.ac.lk/",
-      "observed_at": "2026-10-22T06:16:13.119854+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://pgims.pdn.ac.lk/",
-      "source": "http://pgims.pdn.ac.lk/",
-      "observed_at": "2026-10-22T06:16:13.119857+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://pgims.pdn.ac.lk/index.php",
-      "source": "https://pgims.pdn.ac.lk/index.php",
-      "observed_at": "2026-10-22T06:16:13.119860+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://pgims.pdn.ac.lk/bom.php",
-      "source": "https://pgims.pdn.ac.lk/bom.php",
-      "observed_at": "2026-10-22T06:16:13.119863+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://pgims.pdn.ac.lk/health.php",
-      "source": "https://pgims.pdn.ac.lk/health.php",
-      "observed_at": "2026-10-22T06:16:13.119866+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://pgims.pdn.ac.lk/clinical.php",
-      "source": "https://pgims.pdn.ac.lk/clinical.php",
-      "observed_at": "2026-10-22T06:16:13.119869+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://pgims.pdn.ac.lk/medical.php",
-      "source": "https://pgims.pdn.ac.lk/medical.php",
-      "observed_at": "2026-10-22T06:16:13.119872+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://pgims.pdn.ac.lk/applied.php",
-      "source": "https://pgims.pdn.ac.lk/applied.php",
-      "observed_at": "2026-10-22T06:16:13.119875+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://pgims.pdn.ac.lk/staff.php",
-      "source": "https://pgims.pdn.ac.lk/staff.php",
-      "observed_at": "2026-10-22T06:16:13.119878+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://pgims.pdn.ac.lk/history.php",
-      "source": "https://pgims.pdn.ac.lk/history.php",
-      "observed_at": "2026-10-22T06:16:13.119881+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://pgims.pdn.ac.lk/courses.php",
-      "source": "https://pgims.pdn.ac.lk/courses.php",
-      "observed_at": "2026-10-22T06:16:13.119883+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://pgims.pdn.ac.lk/careers.php",
-      "source": "https://pgims.pdn.ac.lk/careers.php",
-      "observed_at": "2026-10-22T06:16:13.119886+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/index.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/index.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/bom.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/bom.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://pgims.pdn.ac.lk/bom.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/health.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/health.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/clinical.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/clinical.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/medical.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/medical.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/applied.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/applied.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/staff.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/staff.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://pgims.pdn.ac.lk/staff.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/history.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/history.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/courses.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/courses.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://pgims.pdn.ac.lk/assets/docs/Application - Masters 2026.pdf",
-      "source": "https://pgims.pdn.ac.lk/courses.php",
-      "data": {
-        "value": "https://pgims.pdn.ac.lk/assets/docs/Application - Masters 2026.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 81 238 9757 ",
-      "source": "https://pgims.pdn.ac.lk/careers.php",
-      "data": {
-        "value": "+94 81 238 9757 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pgimsoffice@pgims.pdn.ac.lk",
-      "source": "https://pgims.pdn.ac.lk/careers.php",
-      "data": {
-        "value": "pgimsoffice@pgims.pdn.ac.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://pgims.pdn.ac.lk/careers.php",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://pgims.pdn.ac.lk/careers.php",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 3554 visible characters across 14 pages",
-      "source": "https://pgims.pdn.ac.lk/"
+      "observed_at": "2026-10-23T06:16:37.833004+05:30"
     }
   ],
   "observations": [
     {
       "host": "pgims.pdn.ac.lk",
-      "addresses": [
-        "192.248.40.230"
-      ],
-      "status": "resolved",
-      "detail": "Public DNS resolved"
+      "addresses": [],
+      "status": "absent",
+      "detail": "[Errno -5] No address associated with hostname"
     },
     {
       "domain": "ac.lk",
       "status": "unknown",
       "expires_at": null,
       "detail": "Domain is absent from RDAP"
-    },
-    {
-      "host": "pgims.pdn.ac.lk",
-      "status": "valid",
-      "expires_at": "2027-01-03T01:09:43+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/",
-      "redirects": [],
-      "elapsed_ms": 1213,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://pgims.pdn.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/",
-      "redirects": [
-        "https://pgims.pdn.ac.lk/"
-      ],
-      "elapsed_ms": 2585,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/",
-      "redirects": [],
-      "elapsed_ms": 2050,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://pgims.pdn.ac.lk/",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/",
-      "redirects": [
-        "https://pgims.pdn.ac.lk/"
-      ],
-      "elapsed_ms": 1230,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/index.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/index.php",
-      "redirects": [],
-      "elapsed_ms": 1697,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/bom.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/bom.php",
-      "redirects": [],
-      "elapsed_ms": 1859,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/health.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/health.php",
-      "redirects": [],
-      "elapsed_ms": 984,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/clinical.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/clinical.php",
-      "redirects": [],
-      "elapsed_ms": 2241,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/medical.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/medical.php",
-      "redirects": [],
-      "elapsed_ms": 1230,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/applied.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/applied.php",
-      "redirects": [],
-      "elapsed_ms": 2205,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/staff.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/staff.php",
-      "redirects": [],
-      "elapsed_ms": 974,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/history.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/history.php",
-      "redirects": [],
-      "elapsed_ms": 2138,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/courses.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/courses.php",
-      "redirects": [],
-      "elapsed_ms": 1748,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/careers.php",
-      "status_code": 200,
-      "final_url": "https://pgims.pdn.ac.lk/careers.php",
-      "redirects": [],
-      "elapsed_ms": 2250,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://pgims.pdn.ac.lk/",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-01-f010bdacb4b2.html",
-      "sha256": "f010bdacb4b2f0f44a62406093205c7a3c8843b052bc0305106f5109c7d090a5",
-      "bytes": 15239
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-02-f010bdacb4b2.html",
-      "sha256": "f010bdacb4b2f0f44a62406093205c7a3c8843b052bc0305106f5109c7d090a5",
-      "bytes": 15239
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-03-f010bdacb4b2.html",
-      "sha256": "f010bdacb4b2f0f44a62406093205c7a3c8843b052bc0305106f5109c7d090a5",
-      "bytes": 15239
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-04-f010bdacb4b2.html",
-      "sha256": "f010bdacb4b2f0f44a62406093205c7a3c8843b052bc0305106f5109c7d090a5",
-      "bytes": 15239
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/index.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-05-f010bdacb4b2.html",
-      "sha256": "f010bdacb4b2f0f44a62406093205c7a3c8843b052bc0305106f5109c7d090a5",
-      "bytes": 15239
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/bom.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-06-9094f17dbbf1.html",
-      "sha256": "9094f17dbbf190d19133dcd0a8f6d41a08f1452a902f37e9b06f1889f6dd39cb",
-      "bytes": 13281
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/health.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-07-d5f3394ea0e0.html",
-      "sha256": "d5f3394ea0e0d37e35c7696e6d5bfe1f8ce54e1c090448d56bc0d4a7ed890823",
-      "bytes": 9858
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/clinical.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-08-c7c541451365.html",
-      "sha256": "c7c5414513654fc14bde1af23026a126146c4fe57ed49877023f92f5a3455560",
-      "bytes": 10049
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/medical.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-09-1a7b4ce34086.html",
-      "sha256": "1a7b4ce340862e36682ea2992f3401a3b646fcae94331c6ae4acf8cc41b52f6d",
-      "bytes": 9654
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/applied.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-10-9901ab3d120d.html",
-      "sha256": "9901ab3d120d5f471cc564d61ea5478100187b9d3d75a1df4bef0ef14d98ae41",
-      "bytes": 9649
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/staff.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-11-ce4e472bd791.html",
-      "sha256": "ce4e472bd791826651d08d3c78970225c2d66ce6c9c1d342e8480aac64aad865",
-      "bytes": 14001
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/history.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-12-0ccfd959d949.html",
-      "sha256": "0ccfd959d949dfab74ce2fc1c963bcbef2d45d990ce407158028e4e135105c74",
-      "bytes": 15624
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/courses.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-13-3890fed6f7bf.html",
-      "sha256": "3890fed6f7bfd6860a2f1fbfdb7df2eb184953df953f201eda4dfa2f50fe2d20",
-      "bytes": 13278
-    },
-    {
-      "url": "https://pgims.pdn.ac.lk/careers.php",
-      "path": "audit.output/pgims.pdn.ac.lk/20261022.0615/snapshots/page-14-f5fc875444b9.html",
-      "sha256": "f5fc875444b9a2755e6fbac51c9dd7445294da376064dd032be4c465382f553a",
-      "bytes": 10458
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -694,69 +54,69 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "[Errno -5] No address associated with hostname",
       "executed": true,
       "checks": [
         {
           "name": "dns_resolves",
           "level": 1,
-          "status": "pass",
-          "reason": "Public DNS resolved"
+          "status": "fail",
+          "reason": "[Errno -5] No address associated with hostname"
         },
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "HTTP checks did not run"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
@@ -764,28 +124,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 81 238 9757; Email: pgimsoffice@pgims.pdn.ac.lk"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -813,7 +154,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "40.76.239.97",
+    "egress_ip": "172.185.47.216",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

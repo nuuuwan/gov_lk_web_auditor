@@ -1,8 +1,8 @@
 # Website Audit: https://www.deckeppetipola.com/
 
-- Completed: 2026-10-22 06:50
+- Completed: 2026-10-23 06:52
 - Overall result: 🔴 Level 1
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Business Category: Select Category ddd/Vegetable Wholesale Supplier සිල්ලර බඩු /Groceries Search document.addEventListen |
-| reachable_contacts | ✅ | Phone: 057 228 0208 (14 phone numbers found); Email: Info@deckeppetipola.com |
+| reachable_contacts | ✅ | Phone: 057 2280208. (14 phone numbers found); Email: Info@deckeppetipola.com |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

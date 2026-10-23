@@ -1,8 +1,8 @@
 # Website Audit: https://airport.lk/
 
-- Completed: 2026-10-22 06:44
+- Completed: 2026-10-23 06:46
 - Overall result: ⚫ Level 0
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)
+Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,6 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to g
 | hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010) |
+| tls_browser_trusted | ❌ | Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010) |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |

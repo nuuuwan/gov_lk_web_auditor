@@ -1,8 +1,8 @@
 # Website Audit: https://www.presidentsoffice.gov.lk/
 
-- Completed: 2026-10-22 07:00
+- Completed: 2026-10-23 07:05
 - Overall result: 🟠 Level 2
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,23 +1,15 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "0d5fe953-cd91-4f39-b01e-35d43e708e97",
+  "audit_id": "f053d1e7-8b0b-4edb-af3f-8542b8830208",
   "url": "https://kdb.gov.lk/",
   "normalized_url": "https://kdb.gov.lk/",
-  "started_at": "2026-10-22T06:41:51.905016+05:30",
-  "completed_at": "2026-10-22T06:43:37.323786+05:30",
+  "started_at": "2026-10-23T06:44:12.432960+05:30",
+  "completed_at": "2026-10-23T06:44:29.173887+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
     ]
   },
   "evidence": [
@@ -25,53 +17,59 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-22T06:41:52.341261+05:30"
+      "observed_at": "2026-10-23T06:44:12.724997+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-22T06:41:52.341282+05:30"
+      "observed_at": "2026-10-23T06:44:12.725018+05:30"
     },
     {
       "check": "tls",
       "status": "error",
       "detail": "timed out",
-      "observed_at": "2026-10-22T06:42:02.615196+05:30"
+      "observed_at": "2026-10-23T06:44:22.943572+05:30"
     },
     {
       "check": "http",
       "status": "fail",
       "detail": "Probe 1: HTTP 500 at https://kdb.gov.lk/",
       "source": "https://kdb.gov.lk/",
-      "observed_at": "2026-10-22T06:43:37.322035+05:30"
+      "observed_at": "2026-10-23T06:44:29.168560+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 500 at https://kdb.gov.lk/",
       "source": "http://kdb.gov.lk/",
-      "observed_at": "2026-10-22T06:43:37.322055+05:30"
+      "observed_at": "2026-10-23T06:44:29.168575+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 500 at https://kdb.gov.lk/",
       "source": "https://kdb.gov.lk/",
-      "observed_at": "2026-10-22T06:43:37.322060+05:30"
+      "observed_at": "2026-10-23T06:44:29.168579+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 500 at https://kdb.gov.lk/",
       "source": "http://kdb.gov.lk/",
-      "observed_at": "2026-10-22T06:43:37.322063+05:30"
+      "observed_at": "2026-10-23T06:44:29.168582+05:30"
     },
     {
       "check": "page_text",
       "status": "fail",
-      "detail": "Only 55 visible characters across 1 pages; below substance threshold 200",
+      "detail": "Only 55 visible characters across 4 pages; below substance threshold 200",
       "source": "https://kdb.gov.lk/"
+    },
+    {
+      "check": "persistent_http_failure",
+      "status": "fail",
+      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "observed_at": "2026-10-23T06:44:29.173247+05:30"
     }
   ],
   "observations": [
@@ -101,42 +99,64 @@
       "status_code": 500,
       "final_url": "https://kdb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 731,
+      "elapsed_ms": 943,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://kdb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 500,
+      "final_url": "https://kdb.gov.lk/",
+      "redirects": [
+        "https://kdb.gov.lk/"
+      ],
+      "elapsed_ms": 965,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://kdb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 500,
+      "final_url": "https://kdb.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1025,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://kdb.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 500,
+      "final_url": "https://kdb.gov.lk/",
+      "redirects": [
+        "https://kdb.gov.lk/"
+      ],
+      "elapsed_ms": 761,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://kdb.gov.lk/",
-      "path": "audit.output/kdb.gov.lk/20261022.0641/snapshots/page-01-4b9443d1fac5.html",
+      "path": "audit.output/kdb.gov.lk/20261023.0644/snapshots/page-01-4b9443d1fac5.html",
+      "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
+      "bytes": 2482
+    },
+    {
+      "url": "https://kdb.gov.lk/",
+      "path": "audit.output/kdb.gov.lk/20261023.0644/snapshots/page-02-4b9443d1fac5.html",
+      "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
+      "bytes": 2482
+    },
+    {
+      "url": "https://kdb.gov.lk/",
+      "path": "audit.output/kdb.gov.lk/20261023.0644/snapshots/page-03-4b9443d1fac5.html",
+      "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
+      "bytes": 2482
+    },
+    {
+      "url": "https://kdb.gov.lk/",
+      "path": "audit.output/kdb.gov.lk/20261023.0644/snapshots/page-04-4b9443d1fac5.html",
       "sha256": "4b9443d1fac58409ab0efe11dba4dbcd7b18b65f8de36412511c5edeaad0332a",
       "bytes": 2482
     }
@@ -154,8 +174,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "fail",
+      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
       "executed": true,
       "checks": [
         {
@@ -168,31 +188,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 55 visible characters across 1 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 55 visible characters across 4 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "fail",
+          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
         },
         {
           "name": "redirect_related",
@@ -254,7 +274,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "40.76.239.97",
+    "egress_ip": "172.185.47.216",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: http://www.ou.ac.lk/
 
-- Completed: 2026-10-22 06:14
+- Completed: 2026-10-23 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport; Phone: +94 11 288 1000 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found); Published named responsibility: division
+Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport; Phone: 0112881466 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: personal or emotional problems which may impact your academic, professional, or daily life. Groups can provide an opport |
-| reachable_contacts | ✅ | Phone: +94 11 288 1000 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112881466 (64 phone numbers found); Email: pio@ou.ac.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing processing time evide
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ✅ | Published fees and payment: LKR 660,000 |
+| fees_and_payment | ✅ | Published fees and payment: Rs 50,000 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

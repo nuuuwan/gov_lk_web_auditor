@@ -1,8 +1,8 @@
 # Website Audit: https://elkaduwaplantations.lk/
 
-- Completed: 2026-10-22 06:42
+- Completed: 2026-10-23 06:44
 - Overall result: 🔴 Level 1
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No email evidence found
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
+| postal_address | ✅ | Published postal address: Elkaduwa Plantations Ltd. Ratwatte, Ukuwela, Matale +94 66 224 2522 Facebook Twitter Youtube Envelope Send us a message  |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

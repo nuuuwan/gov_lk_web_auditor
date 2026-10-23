@@ -1,8 +1,8 @@
 # Website Audit: https://emb-telaviv.gov.lk/
 
-- Completed: 2026-10-22 06:33
+- Completed: 2026-10-23 06:34
 - Overall result: 🟠 Level 2
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: in Sri Lanka\",\"validation_other_name_required\":\"Other Name is required\",\"validation_nic_format\":\"Invalid NIC for; Phone: +97235277635 (4 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
+Published postal address: in Sri Lanka\",\"validation_other_name_required\":\"Other Name is required\",\"validation_nic_format\":\"Invalid NIC for; Phone: 0.014025811 (4 phone numbers found); Email: slemb.telaviv@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: in Sri Lanka\",\"validation_other_name_required\":\"Other Name is required\",\"validation_nic_format\":\"Invalid NIC for |
-| reachable_contacts | ✅ | Phone: +97235277635 (4 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.014025811 (4 phone numbers found); Email: slemb.telaviv@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

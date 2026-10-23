@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "227e31b0-6049-4c6b-bee5-2e5325ea383a",
+  "audit_id": "d9e7dc98-8cc1-4399-a9e8-a35e16732f5d",
   "url": "https://selacine.lk/",
   "normalized_url": "https://selacine.lk/",
-  "started_at": "2026-10-22T06:36:11.937234+05:30",
-  "completed_at": "2026-10-22T06:36:22.944079+05:30",
+  "started_at": "2026-10-23T06:38:21.412170+05:30",
+  "completed_at": "2026-10-23T06:38:45.523753+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,312 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-22T06:36:12.551823+05:30"
+      "observed_at": "2026-10-23T06:38:21.572841+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-22T06:36:12.551845+05:30"
+      "observed_at": "2026-10-23T06:38:21.572850+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-10-22T06:36:12.563653+05:30"
+      "observed_at": "2026-10-23T06:38:21.589301+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 500 at https://selacine.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://selacine.lk/",
       "source": "https://selacine.lk/",
-      "observed_at": "2026-10-22T06:36:22.934966+05:30"
+      "observed_at": "2026-10-23T06:38:44.584082+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 500 at https://selacine.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://selacine.lk/",
       "source": "http://selacine.lk/",
-      "observed_at": "2026-10-22T06:36:22.934990+05:30"
+      "observed_at": "2026-10-23T06:38:44.584094+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 500 at https://selacine.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://selacine.lk/",
       "source": "https://selacine.lk/",
-      "observed_at": "2026-10-22T06:36:22.934997+05:30"
+      "observed_at": "2026-10-23T06:38:44.584099+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 500 at https://selacine.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://selacine.lk/",
       "source": "http://selacine.lk/",
-      "observed_at": "2026-10-22T06:36:22.935004+05:30"
+      "observed_at": "2026-10-23T06:38:44.584102+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://selacine.lk/contact/",
+      "source": "https://selacine.lk/contact/",
+      "observed_at": "2026-10-23T06:38:44.584104+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://selacine.lk/wp-content/uploads/2022/03/Department-Of-Government-Information_625-x-80-Pix-Banner-English.jpg",
+      "source": "https://selacine.lk/wp-content/uploads/2022/03/Department-Of-Government-Information_625-x-80-Pix-Banner-English.jpg",
+      "observed_at": "2026-10-23T06:38:44.584107+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://selacine.lk",
+      "source": "https://selacine.lk",
+      "observed_at": "2026-10-23T06:38:44.584110+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://selacine.lk/who-we-are-2/",
+      "source": "https://selacine.lk/who-we-are-2/",
+      "observed_at": "2026-10-23T06:38:44.584112+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://selacine.lk/category/career/",
+      "source": "https://selacine.lk/category/career/",
+      "observed_at": "2026-10-23T06:38:44.584115+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://selacine.lk/career/",
+      "source": "https://selacine.lk/career/",
+      "observed_at": "2026-10-23T06:38:44.584118+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://selacine.lk/wp-content/uploads/2022/03/320x50-web-banner.jpg",
+      "source": "https://selacine.lk/wp-content/uploads/2022/03/320x50-web-banner.jpg",
+      "observed_at": "2026-10-23T06:38:44.584121+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_7_fb.jpeg",
+      "source": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_7_fb.jpeg",
+      "observed_at": "2026-10-23T06:38:44.584123+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_6_fb.jpeg",
+      "source": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_6_fb.jpeg",
+      "observed_at": "2026-10-23T06:38:44.584126+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_5_fb.jpeg",
+      "source": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_5_fb.jpeg",
+      "observed_at": "2026-10-23T06:38:44.584129+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://selacine.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 406 1584 ",
+      "source": "https://selacine.lk/contact/",
+      "data": {
+        "value": "+94 11 406 1584 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 432 0777 ",
+      "source": "https://selacine.lk/contact/",
+      "data": {
+        "value": "+94 11 432 0777 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/contact/",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 058 229 ",
+      "source": "https://selacine.lk/contact/",
+      "data": {
+        "value": "+94 112 058 229 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://selacine.lk",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/who-we-are-2/",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://selacine.lk/who-we-are-2/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://selacine.lk/who-we-are-2/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/category/career/",
+      "data": {
+        "value": "0773721100 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: 123 Main Street New York, NY 10001 Hours Monday—Friday: 9:00AM–5:00PM Saturday & Sunday: 11:00AM–3:00PM The Selacine tea",
+      "source": "https://selacine.lk/category/career/",
+      "data": {
+        "value": "123 Main Street New York, NY 10001 Hours Monday—Friday: 9:00AM–5:00PM Saturday & Sunday: 11:00AM–3:00PM The Selacine tea"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 10001 Hours",
+      "source": "https://selacine.lk/category/career/",
+      "data": {
+        "value": "10001 Hours"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773721100 ",
+      "source": "https://selacine.lk/career/",
+      "data": {
+        "value": "0773721100 "
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 162 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 91465 visible characters across 14 pages",
       "source": "https://selacine.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
-      "observed_at": "2026-10-22T06:36:22.942860+05:30"
     }
   ],
   "observations": [
@@ -99,69 +361,219 @@
     },
     {
       "url": "https://selacine.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://selacine.lk/",
       "redirects": [],
-      "elapsed_ms": 3891,
+      "elapsed_ms": 4734,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://selacine.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://selacine.lk/",
       "redirects": [
         "https://selacine.lk/"
       ],
-      "elapsed_ms": 1144,
+      "elapsed_ms": 1815,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://selacine.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://selacine.lk/",
       "redirects": [],
-      "elapsed_ms": 762,
+      "elapsed_ms": 1549,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://selacine.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://selacine.lk/",
       "redirects": [
         "https://selacine.lk/"
       ],
-      "elapsed_ms": 649,
+      "elapsed_ms": 1681,
       "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/contact/",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/contact/",
+      "redirects": [],
+      "elapsed_ms": 773,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/Department-Of-Government-Information_625-x-80-Pix-Banner-English.jpg",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/wp-content/uploads/2022/03/Department-Of-Government-Information_625-x-80-Pix-Banner-English.jpg",
+      "redirects": [],
+      "elapsed_ms": 440,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk",
+      "status_code": 200,
+      "final_url": "https://selacine.lk",
+      "redirects": [],
+      "elapsed_ms": 1853,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/who-we-are-2/",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/who-we-are-2/",
+      "redirects": [],
+      "elapsed_ms": 873,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/category/career/",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/category/career/",
+      "redirects": [],
+      "elapsed_ms": 643,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/career/",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/career/",
+      "redirects": [],
+      "elapsed_ms": 669,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/320x50-web-banner.jpg",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/wp-content/uploads/2022/03/320x50-web-banner.jpg",
+      "redirects": [],
+      "elapsed_ms": 471,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_7_fb.jpeg",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_7_fb.jpeg",
+      "redirects": [],
+      "elapsed_ms": 522,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_6_fb.jpeg",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_6_fb.jpeg",
+      "redirects": [],
+      "elapsed_ms": 470,
+      "content_type": "image/jpeg",
+      "error": null
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_5_fb.jpeg",
+      "status_code": 200,
+      "final_url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_5_fb.jpeg",
+      "redirects": [],
+      "elapsed_ms": 474,
+      "content_type": "image/jpeg",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://selacine.lk/",
-      "path": "audit.output/selacine.lk/20261022.0636/snapshots/page-01-83ec7992bb14.html",
-      "sha256": "83ec7992bb14e66deeb3cf94d496238159ed07a377a33cbcd2c39e84b8340503",
-      "bytes": 2865
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-01-1c5284c3ff9f.html",
+      "sha256": "1c5284c3ff9f47a40b0b24152190f08ff284daae90ce8d418b75b7c011d7a2f0",
+      "bytes": 339435
     },
     {
       "url": "https://selacine.lk/",
-      "path": "audit.output/selacine.lk/20261022.0636/snapshots/page-02-83ec7992bb14.html",
-      "sha256": "83ec7992bb14e66deeb3cf94d496238159ed07a377a33cbcd2c39e84b8340503",
-      "bytes": 2865
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-02-1c5284c3ff9f.html",
+      "sha256": "1c5284c3ff9f47a40b0b24152190f08ff284daae90ce8d418b75b7c011d7a2f0",
+      "bytes": 339435
     },
     {
       "url": "https://selacine.lk/",
-      "path": "audit.output/selacine.lk/20261022.0636/snapshots/page-03-83ec7992bb14.html",
-      "sha256": "83ec7992bb14e66deeb3cf94d496238159ed07a377a33cbcd2c39e84b8340503",
-      "bytes": 2865
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-03-1c5284c3ff9f.html",
+      "sha256": "1c5284c3ff9f47a40b0b24152190f08ff284daae90ce8d418b75b7c011d7a2f0",
+      "bytes": 339435
     },
     {
       "url": "https://selacine.lk/",
-      "path": "audit.output/selacine.lk/20261022.0636/snapshots/page-04-83ec7992bb14.html",
-      "sha256": "83ec7992bb14e66deeb3cf94d496238159ed07a377a33cbcd2c39e84b8340503",
-      "bytes": 2865
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-04-1c5284c3ff9f.html",
+      "sha256": "1c5284c3ff9f47a40b0b24152190f08ff284daae90ce8d418b75b7c011d7a2f0",
+      "bytes": 339435
+    },
+    {
+      "url": "https://selacine.lk/contact/",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-05-15f10b64b0c5.html",
+      "sha256": "15f10b64b0c5035261870e8a861692cc599d16225dd127f46033f3d2b0eb0b0f",
+      "bytes": 126316
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/Department-Of-Government-Information_625-x-80-Pix-Banner-English.jpg",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-06-0dc3593e47e0.html",
+      "sha256": "0dc3593e47e0e8ba560f117c45ad6a0044b704c76f7039243b0b32b8c6677d08",
+      "bytes": 99597
+    },
+    {
+      "url": "https://selacine.lk",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-07-1c5284c3ff9f.html",
+      "sha256": "1c5284c3ff9f47a40b0b24152190f08ff284daae90ce8d418b75b7c011d7a2f0",
+      "bytes": 339435
+    },
+    {
+      "url": "https://selacine.lk/who-we-are-2/",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-08-00169fe6f87a.html",
+      "sha256": "00169fe6f87ae08ccfc9fed8c3a5be06b1d9cdbf8f9b0318af00144f9aefe40c",
+      "bytes": 122639
+    },
+    {
+      "url": "https://selacine.lk/category/career/",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-09-be5b6c088a94.html",
+      "sha256": "be5b6c088a949c5cf208ebada2be5fab47388b59a2145c1de33f3da815bb5c29",
+      "bytes": 93898
+    },
+    {
+      "url": "https://selacine.lk/career/",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-10-934f2f66054f.html",
+      "sha256": "934f2f66054f35ccf7d999750accda811cfcee857f0897ad558ef46effe1038e",
+      "bytes": 77087
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/320x50-web-banner.jpg",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-11-948d9f8b5c7b.html",
+      "sha256": "948d9f8b5c7b07c28860151a48d11adefd26e80209809cdc41d53b53caf21851",
+      "bytes": 43510
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_7_fb.jpeg",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-12-22b814190884.html",
+      "sha256": "22b81419088441b0c5da24cafcf37e2d6f5e386f8fe8448728e1124b70d522d6",
+      "bytes": 355376
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_6_fb.jpeg",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-13-c156cf8273dc.html",
+      "sha256": "c156cf8273dc599c5991a01f1c7dd911db5941956c37c0ea96829a471d047118",
+      "bytes": 274590
+    },
+    {
+      "url": "https://selacine.lk/wp-content/uploads/2022/03/dr-malkanthi_5_fb.jpeg",
+      "path": "audit.output/selacine.lk/20261023.0638/snapshots/page-14-aead0a0f96cf.html",
+      "sha256": "aead0a0f96cf8d80aa19fc64b196a2bba2c18b8e936aeadc8b46d151b74bdcc7",
+      "bytes": 303638
     }
   ],
   "reviewer_decisions": [],
@@ -177,8 +589,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -190,44 +602,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 162 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 162 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 162 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 162 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -247,9 +659,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: 123 Main Street New York, NY 10001 Hours Monday—Friday: 9:00AM–5:00PM Saturday & Sunday: 11:00AM–3:00PM The Selacine tea"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -277,7 +708,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "40.76.239.97",
+    "egress_ip": "172.185.47.216",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

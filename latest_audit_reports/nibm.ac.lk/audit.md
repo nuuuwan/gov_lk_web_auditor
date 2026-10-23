@@ -1,8 +1,8 @@
 # Website Audit: https://nibm.ac.lk/
 
-- Completed: 2026-10-22 06:18
+- Completed: 2026-10-23 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: delivered by the distinguished Chief Guest, Mr. Shanaka De Silva, who is the Principal / Partner, Ernst \u0026amp; Young; Phone: 0377 222 778 (87 phone numbers found); Email: shamalka@nibm.lk (38 email addresses found); Published named responsibility: director
+Published postal address: delivered by the distinguished Chief Guest, Mr. Shanaka De Silva, who is the Principal / Partner, Ernst \u0026amp; Young; Phone: 011 797 7200 (87 phone numbers found); Email: dilrukshi@nibm.lk (38 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: delivered by the distinguished Chief Guest, Mr. Shanaka De Silva, who is the Principal / Partner, Ernst \u0026amp; Young |
-| reachable_contacts | ✅ | Phone: 0377 222 778 (87 phone numbers found); Email: shamalka@nibm.lk (38 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 797 7200 (87 phone numbers found); Email: dilrukshi@nibm.lk (38 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

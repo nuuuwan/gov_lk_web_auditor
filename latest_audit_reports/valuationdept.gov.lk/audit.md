@@ -1,8 +1,8 @@
 # Website Audit: https://valuationdept.gov.lk/
 
-- Completed: 2026-10-22 06:26
+- Completed: 2026-10-23 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://valuationdept.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://valuationdept.gov.lk/: Probe 2: timed out; https://valuationdept.gov.lk/: Probe 3: timed out; http://valuationdept.gov.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://valuationdept.gov.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://valuationdept.gov.lk/: Probe 2: timed out; https://valuationdept.gov.lk/: Probe 3: timed out; http://valuationdept.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka; Phone: 0 21 22 23 24 2 (5 phone numbers found); Email: cv@valuationdept.gov.lk; Published named responsibility: department
+Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka; Phone: 0 11 12 13 14 1 (5 phone numbers found); Email: cv@valuationdept.gov.lk; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 748, Maradana Road, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0 21 22 23 24 2 (5 phone numbers found); Email: cv@valuationdept.gov.lk |
+| reachable_contacts | ✅ | Phone: 0 11 12 13 14 1 (5 phone numbers found); Email: cv@valuationdept.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

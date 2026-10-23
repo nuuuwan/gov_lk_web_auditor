@@ -1,8 +1,8 @@
 # Website Audit: https://www.railway.gov.lk/
 
-- Completed: 2026-10-22 06:54
+- Completed: 2026-10-23 06:55
 - Overall result: ⚫ Level 0
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,16 +14,16 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200; timed out; timed out
+Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 32 visible characters across 1 pages; below substance threshold 200 |
-| http_available | ✅ | HTTPS probes passed; failing variants: https://www.railway.gov.lk/: Probe 1: timed out; http://www.railway.gov.lk/: Probe 2: timed out; http://www.railway.gov.lk/: Probe 4: timed out |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 32 visible characters across 2 pages; below substance threshold 200 |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://www.railway.gov.lk/: Probe 1: timed out; http://www.railway.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

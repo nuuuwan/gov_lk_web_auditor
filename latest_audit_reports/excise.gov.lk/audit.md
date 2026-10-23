@@ -1,8 +1,8 @@
 # Website Audit: https://excise.gov.lk/
 
-- Completed: 2026-10-22 06:24
+- Completed: 2026-10-23 06:27
 - Overall result: 🔴 Level 1
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0112-045000 (478 phone numbers found); Email: excisen@slt.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011-2877890 (403 phone numbers found); Email: excisen@slt.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

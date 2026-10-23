@@ -1,8 +1,8 @@
 # Website Audit: https://cri.gov.lk/
 
-- Completed: 2026-10-22 06:43
+- Completed: 2026-10-23 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 40.76.239.97 (US, github-actions)
+- Vantage: 172.185.47.216 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Input Address Manually Upload Address Picture Delivery Address * Recipient number * Company (Optional) Province add-ons ; Phone: 1928 (431 phone numbers found); Email: dedenf@gmail.com (3 email addresses found); Published named responsibility: director
+Published postal address: Bandirippuwa Estate, Lunuwila, Sri Lanka. Time: Mon – Fri ( 8.30am – 4.15pm ) Sat & Sun CLOSED Get Free Estimate 1928 Co; Phone: 0883252469 (58 phone numbers found); Email: director@cri.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Input Address Manually Upload Address Picture Delivery Address * Recipient number * Company (Optional) Province add-ons  |
-| reachable_contacts | ✅ | Phone: 1928 (431 phone numbers found); Email: dedenf@gmail.com (3 email addresses found) |
+| postal_address | ✅ | Published postal address: Bandirippuwa Estate, Lunuwila, Sri Lanka. Time: Mon – Fri ( 8.30am – 4.15pm ) Sat & Sun CLOSED Get Free Estimate 1928 Co |
+| reachable_contacts | ✅ | Phone: 0883252469 (58 phone numbers found); Email: director@cri.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: rs3 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 11 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
