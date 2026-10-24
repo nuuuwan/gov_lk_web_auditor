@@ -1,8 +1,8 @@
 # Website Audit: https://www.ism.gov.lk/
 
-- Completed: 2026-10-23 06:55
+- Completed: 2026-10-24 07:00
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number; Phone: 0555555555 (6 phone numbers found); Email: ism_medicine@yahoo.com; Published named responsibility: director
+Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number; Phone: 0.833333333 (6 phone numbers found); Email: ism_medicine@yahoo.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number |
-| reachable_contacts | ✅ | Phone: 0555555555 (6 phone numbers found); Email: ism_medicine@yahoo.com |
+| reachable_contacts | ✅ | Phone: 0.833333333 (6 phone numbers found); Email: ism_medicine@yahoo.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

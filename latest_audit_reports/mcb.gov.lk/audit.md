@@ -1,8 +1,8 @@
 # Website Audit: https://mcb.gov.lk/
 
-- Completed: 2026-10-23 06:06
+- Completed: 2026-10-24 06:05
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 

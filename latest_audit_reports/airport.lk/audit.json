@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "faa48ef0-4e9c-4d0c-b944-a53e6984e721",
+  "audit_id": "4ab0eafb-5f5b-4e56-bf77-d7e57ec8d57a",
   "url": "https://airport.lk",
   "normalized_url": "https://airport.lk/",
-  "started_at": "2026-10-23T06:44:53.749060+05:30",
-  "completed_at": "2026-10-23T06:46:00.706299+05:30",
+  "started_at": "2026-10-24T06:48:02.920857+05:30",
+  "completed_at": "2026-10-24T06:48:10.214095+05:30",
   "result": {
     "status": "fail",
     "confidence": 1.0,
@@ -17,47 +17,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-23T06:44:55.083782+05:30"
+      "observed_at": "2026-10-24T06:48:03.800193+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-23T06:44:55.083800+05:30"
+      "observed_at": "2026-10-24T06:48:03.800210+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-23T06:44:57.064828+05:30"
+      "status": "error",
+      "detail": "[Errno 104] Connection reset by peer",
+      "observed_at": "2026-10-24T06:48:05.708437+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: [Errno 104] Connection reset by peer",
       "source": "https://airport.lk/",
-      "observed_at": "2026-10-23T06:46:00.706117+05:30"
+      "observed_at": "2026-10-24T06:48:10.213955+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: [Errno 104] Connection reset by peer",
       "source": "http://airport.lk/",
-      "observed_at": "2026-10-23T06:46:00.706135+05:30"
+      "observed_at": "2026-10-24T06:48:10.213966+05:30"
     },
     {
       "check": "tls_browser_error",
       "status": "fail",
       "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1010)",
       "source": "https://airport.lk/",
-      "observed_at": "2026-10-23T06:46:00.706142+05:30"
+      "observed_at": "2026-10-24T06:48:10.213971+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: [Errno 104] Connection reset by peer",
       "source": "http://airport.lk/",
-      "observed_at": "2026-10-23T06:46:00.706146+05:30"
+      "observed_at": "2026-10-24T06:48:10.213975+05:30"
     }
   ],
   "observations": [
@@ -77,10 +77,10 @@
     },
     {
       "host": "airport.lk",
-      "status": "valid",
-      "expires_at": "2027-03-28T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 104] Connection reset by peer"
     },
     {
       "url": "https://airport.lk/",
@@ -188,14 +188,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 104] Connection reset by peer"
         }
       ]
     },
@@ -233,8 +233,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.185.47.216",
-    "country": "US",
+    "egress_ip": "4.229.37.5",
+    "country": "CA",
     "runner": "github-actions",
     "proxy": false
   }

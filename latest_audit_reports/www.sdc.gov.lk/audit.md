@@ -1,8 +1,8 @@
 # Website Audit: https://www.sdc.gov.lk/
 
-- Completed: 2026-10-23 06:38
+- Completed: 2026-10-24 06:28
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 2nd Floor, Lake House Building, D.R Wijayawardana MW, Colombo 10, Sri Lanka; Phone: +94112885164 (6 phone numbers found); Email: info@sdc.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: 2nd Floor, Lake House Building, D.R Wijayawardana MW, Colombo 10, Sri Lanka; Phone: +94112885164 (4 phone numbers found); Email: info@sdc.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 2nd Floor, Lake House Building, D.R Wijayawardana MW, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94112885164 (6 phone numbers found); Email: info@sdc.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112885164 (4 phone numbers found); Email: info@sdc.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

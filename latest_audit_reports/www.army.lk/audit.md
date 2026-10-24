@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-10-23 06:11
-- Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Completed: 2026-10-24 06:10
+- Overall result: 🔴 Level 1
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the welfare, infrastructure and administrative requirements of residents at Parakumgama Ranaviru Village in Diyabeduma, ; Phone: +94 11 207 6967 (17 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: the welfare, infrastructure and administrative requirements of residents at Parakumgama Ranaviru Village in Diyabeduma,  |
-| reachable_contacts | ✅ | Phone: +94 11 207 6967 (17 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: +94 11 243 2682 - (17 phone numbers found); Email: info@army.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs 2026 |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 9 DAYS |
-| downloadable_form | ✅ | Published downloadable form: https://www.army.lk/themes/custom/web_tailwind/images/pdf/join_us/officer/app_other_officer_application_4_28.pdf |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

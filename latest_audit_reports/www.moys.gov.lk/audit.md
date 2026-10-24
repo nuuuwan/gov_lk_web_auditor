@@ -1,8 +1,8 @@
 # Website Audit: https://www.moys.gov.lk/
 
-- Completed: 2026-10-23 07:00
+- Completed: 2026-10-24 07:06
 - Overall result: ⚫ Level 0
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 

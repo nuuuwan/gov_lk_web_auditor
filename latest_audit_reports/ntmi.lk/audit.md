@@ -1,8 +1,8 @@
 # Website Audit: https://ntmi.lk/
 
-- Completed: 2026-10-23 06:53
+- Completed: 2026-10-24 06:58
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka; Phone: +94112852868 (22 phone numbers found); Email: ntmi@sltnet.lk; Published named responsibility: division
+Published postal address: is not valid! Please provide a valid email."],"stop_words":"a,able,about,above,abst,accordance,according,accordingly,acr; Phone: +9411) 285 2868 (22 phone numbers found); Email: ntmi@sltnet.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: NTMI ICT S&R 170 High Level Rd Nugegoda, Colombo Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94112852868 (22 phone numbers found); Email: ntmi@sltnet.lk |
+| postal_address | ✅ | Published postal address: is not valid! Please provide a valid email."],"stop_words":"a,able,about,above,abst,accordance,according,accordingly,acr |
+| reachable_contacts | ✅ | Phone: +9411) 285 2868 (22 phone numbers found); Email: ntmi@sltnet.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

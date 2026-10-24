@@ -1,8 +1,8 @@
 # Website Audit: https://www.labourmin.gov.lk/
 
-- Completed: 2026-10-23 06:59
+- Completed: 2026-10-24 07:05
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka; Phone: +94) 11 2368165 (57 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found); Published named responsibility: division
+Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka; Phone: 0112581991 (5733 phone numbers found); Email: info@labourmin.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: RTI Complaints Contact 6th floor, Mehewara Piyasa, Narahenpita, Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94) 11 2368165 (57 phone numbers found); Email: info@labourmin.gov.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112581991 (5733 phone numbers found); Email: info@labourmin.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌
@@ -51,8 +51,8 @@ Published published update date: 01 Jan 1970
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 14 days |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❌ | Published published update date: 01 Jan 1970 |

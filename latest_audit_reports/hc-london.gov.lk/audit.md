@@ -1,8 +1,8 @@
 # Website Audit: https://hc-london.gov.lk/
 
-- Completed: 2026-10-23 06:33
+- Completed: 2026-10-24 06:32
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 1\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"address_label\":\"Address (Optional; Phone: 0963990599 (8 phone numbers found); Email: mail@slhc-london.co.uk (11 email addresses found); Published named responsibility: director
+Published postal address: Line 1\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"address_label\":\"Address (Optional; Phone: +442072621841 (8 phone numbers found); Email: consular.london@mfa.gov.lk (11 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 1\",\"passport_expiry_date_label\":\"Expiry Date of the passport (Optional)\",\"address_label\":\"Address (Optional |
-| reachable_contacts | ✅ | Phone: 0963990599 (8 phone numbers found); Email: mail@slhc-london.co.uk (11 email addresses found) |
+| reachable_contacts | ✅ | Phone: +442072621841 (8 phone numbers found); Email: consular.london@mfa.gov.lk (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

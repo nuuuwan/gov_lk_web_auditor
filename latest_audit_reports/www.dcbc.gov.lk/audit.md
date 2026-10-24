@@ -1,8 +1,8 @@
 # Website Audit: http://www.dcbc.gov.lk/
 
-- Completed: 2026-10-23 06:43
+- Completed: 2026-10-24 06:45
 - Overall result: ⚫ Level 0
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-An HTTP probe was transient; timed out; timed out
+timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ An HTTP probe was transient; timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ❓ | An HTTP probe was transient |
+| http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

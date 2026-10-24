@@ -1,8 +1,8 @@
 # Website Audit: https://hc-kualalumpur.gov.lk/
 
-- Completed: 2026-10-23 06:31
+- Completed: 2026-10-24 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No. 9, Persiaran Ampang Hilir, Taman U-Thant, 55000 Kuala Lumpur, Malaysia. Tel: +60 320341705 , +60 320341706 - General; Phone: 0320341706 (16 phone numbers found); Email: slhc.kl@mfa.gov.lk (4 email addresses found); Published named responsibility: department
+Published postal address: No. 9, Persiaran Ampang Hilir, Taman U-Thant, 55000 Kuala Lumpur, Malaysia. Tel: +60 320341705 , +60 320341706 - General; Phone: 0.675867434 (16 phone numbers found); Email: Consular.kl@mfa.gov.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 9, Persiaran Ampang Hilir, Taman U-Thant, 55000 Kuala Lumpur, Malaysia. Tel: +60 320341705 , +60 320341706 - General |
-| reachable_contacts | ✅ | Phone: 0320341706 (16 phone numbers found); Email: slhc.kl@mfa.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.675867434 (16 phone numbers found); Email: Consular.kl@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

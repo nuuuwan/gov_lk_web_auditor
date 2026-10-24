@@ -1,16 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d75ab123-4d99-4dc3-ad41-dfa7e8d87b8e",
+  "audit_id": "5535c471-d794-4664-9956-a61d262fc426",
   "url": "https://data.gov.lk/",
   "normalized_url": "https://data.gov.lk/",
-  "started_at": "2026-10-23T06:12:20.463328+05:30",
-  "completed_at": "2026-10-23T06:12:29.079344+05:30",
+  "started_at": "2026-10-24T06:11:09.729980+05:30",
+  "completed_at": "2026-10-24T06:13:21.228815+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -18,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-23T06:12:20.763648+05:30"
+      "observed_at": "2026-10-24T06:11:10.173956+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-23T06:12:20.763665+05:30"
+      "observed_at": "2026-10-24T06:11:10.173977+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-10-23T06:12:22.783568+05:30"
+      "check": "tls",
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-24T06:11:20.440338+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://data.gov.lk/",
-      "observed_at": "2026-10-23T06:12:29.079164+05:30"
+      "observed_at": "2026-10-24T06:13:21.228645+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://data.gov.lk/",
-      "observed_at": "2026-10-23T06:12:29.079183+05:30"
+      "observed_at": "2026-10-24T06:13:21.228660+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://data.gov.lk/",
-      "observed_at": "2026-10-23T06:12:29.079189+05:30"
+      "observed_at": "2026-10-24T06:13:21.228665+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://data.gov.lk/",
-      "observed_at": "2026-10-23T06:12:29.079194+05:30"
+      "observed_at": "2026-10-24T06:13:21.228668+05:30"
     }
   ],
   "observations": [
@@ -78,10 +85,10 @@
     },
     {
       "host": "data.gov.lk",
-      "status": "expired",
-      "expires_at": "2023-10-17T15:59:12+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://data.gov.lk/",
@@ -90,7 +97,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://data.gov.lk/",
@@ -99,7 +106,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "https://data.gov.lk/",
@@ -108,7 +115,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://data.gov.lk/",
@@ -117,7 +124,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "error": "timed out"
     }
   ],
   "snapshots": [],
@@ -134,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -172,7 +179,7 @@
           "name": "http_available",
           "level": 1,
           "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -183,20 +190,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "reason": "timed out"
         }
       ]
     },
@@ -234,8 +241,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.185.47.216",
-    "country": "US",
+    "egress_ip": "4.229.37.5",
+    "country": "CA",
     "runner": "github-actions",
     "proxy": false
   }

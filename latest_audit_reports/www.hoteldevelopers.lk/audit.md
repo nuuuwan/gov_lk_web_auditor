@@ -1,8 +1,8 @@
 # Website Audit: https://www.hoteldevelopers.lk/
 
-- Completed: 2026-10-23 06:26
+- Completed: 2026-10-24 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: People's Bank, No.75, Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: +94 11 2433435 (179 phone numbers found); Email: manels@hdl.lk; Published named responsibility: director
+Published postal address: People's Bank, No.75, Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: +94 11 2446545 (179 phone numbers found); Email: manels@hdl.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: People's Bank, No.75, Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2433435 (179 phone numbers found); Email: manels@hdl.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2446545 (179 phone numbers found); Email: manels@hdl.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

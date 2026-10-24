@@ -1,8 +1,8 @@
 # Website Audit: https://craftscouncil.gov.lk/
 
-- Completed: 2026-10-23 06:41
+- Completed: 2026-10-24 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Telephone Email Address Mrs. K.M.T.T. Kulathunga Assistant Director (Province) Attending Duties National Crafts Council ; Phone: +94 11 2787441 (60 phone numbers found); Email: craftscouncil@sltnet.lk (43 email addresses found); Published named responsibility: director
+Published postal address: Telephone Email Address Mrs. K.M.T.T. Kulathunga Assistant Director (Province) Attending Duties National Crafts Council ; Phone: +94) 11 2440814 (60 phone numbers found); Email: craftscouncil@sltnet.lk (43 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Telephone Email Address Mrs. K.M.T.T. Kulathunga Assistant Director (Province) Attending Duties National Crafts Council  |
-| reachable_contacts | ✅ | Phone: +94 11 2787441 (60 phone numbers found); Email: craftscouncil@sltnet.lk (43 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 11 2440814 (60 phone numbers found); Email: craftscouncil@sltnet.lk (43 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

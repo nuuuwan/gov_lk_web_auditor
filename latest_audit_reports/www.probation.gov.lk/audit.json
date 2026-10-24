@@ -1,16 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ee30db39-c562-40fa-aa50-68e92e207eb8",
+  "audit_id": "ed1b788f-1a3d-4e5b-9eb4-b908c8600634",
   "url": "https://www.probation.gov.lk/",
   "normalized_url": "https://www.probation.gov.lk/",
-  "started_at": "2026-10-23T06:54:36.183690+05:30",
-  "completed_at": "2026-10-23T06:54:42.892940+05:30",
+  "started_at": "2026-10-24T06:59:13.463631+05:30",
+  "completed_at": "2026-10-24T07:01:25.078917+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)",
-      "tls_hostname_matches: TLS certificate does not match the hostname"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -18,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-23T06:54:36.477179+05:30"
+      "observed_at": "2026-10-24T06:59:13.894941+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-23T06:54:36.477194+05:30"
+      "observed_at": "2026-10-24T06:59:13.894958+05:30"
     },
     {
-      "check": "tls_hostname",
-      "status": "fail",
-      "detail": "TLS certificate does not match the hostname",
-      "observed_at": "2026-10-23T06:54:37.177096+05:30"
+      "check": "tls",
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-24T06:59:24.156334+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.probation.gov.lk/",
-      "observed_at": "2026-10-23T06:54:42.892796+05:30"
+      "observed_at": "2026-10-24T07:01:25.078755+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.probation.gov.lk/",
-      "observed_at": "2026-10-23T06:54:42.892810+05:30"
+      "observed_at": "2026-10-24T07:01:25.078773+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.probation.gov.lk/",
-      "observed_at": "2026-10-23T06:54:42.892814+05:30"
+      "observed_at": "2026-10-24T07:01:25.078777+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)",
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.probation.gov.lk/",
-      "observed_at": "2026-10-23T06:54:42.892818+05:30"
+      "observed_at": "2026-10-24T07:01:25.078781+05:30"
     }
   ],
   "observations": [
@@ -78,10 +85,10 @@
     },
     {
       "host": "www.probation.gov.lk",
-      "status": "hostname_error",
-      "expires_at": "2027-01-11T15:28:09+05:30",
-      "hostname_valid": false,
-      "detail": "TLS certificate does not match the hostname"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.probation.gov.lk/",
@@ -90,7 +97,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://www.probation.gov.lk/",
@@ -99,7 +106,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "https://www.probation.gov.lk/",
@@ -108,7 +115,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://www.probation.gov.lk/",
@@ -117,7 +124,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)"
+      "error": "timed out"
     }
   ],
   "snapshots": [],
@@ -134,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -172,7 +179,7 @@
           "name": "http_available",
           "level": 1,
           "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -183,20 +190,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.probation.gov.lk'. (_ssl.c:1010)"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate does not match the hostname"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -234,8 +241,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.185.47.216",
-    "country": "US",
+    "egress_ip": "4.229.37.5",
+    "country": "CA",
     "runner": "github-actions",
     "proxy": false
   }

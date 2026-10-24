@@ -1,8 +1,8 @@
 # Website Audit: https://www.agrarian.lk/
 
-- Completed: 2026-10-23 06:05
+- Completed: 2026-10-24 06:03
 - Overall result: 🔴 Level 1
-- Vantage: 172.185.47.216 (US, github-actions)
+- Vantage: 4.229.37.5 (CA, github-actions)
 
 ## ⚫ Level 0: ✅
 
