@@ -1,8 +1,8 @@
 # Website Audit: https://emb-brasilia.gov.lk/
 
-- Completed: 2026-10-24 06:32
+- Completed: 2026-10-25 06:35
 - Overall result: 🟠 Level 2
-- Vantage: 4.229.37.5 (CA, github-actions)
+- Vantage: 52.250.243.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to the staff, Ambassador Chaminda Colonne highlighted on the current situation in Sri Lanka, aftermath of Cyclone Ditwah; Phone: 009-9415-454 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found); Published named responsibility: director
+Published postal address: to the staff, Ambassador Chaminda Colonne highlighted on the current situation in Sri Lanka, aftermath of Cyclone Ditwah; Phone: +55 61 3541 3488 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: to the staff, Ambassador Chaminda Colonne highlighted on the current situation in Sri Lanka, aftermath of Cyclone Ditwah |
-| reachable_contacts | ✅ | Phone: 009-9415-454 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +55 61 3541 3488 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

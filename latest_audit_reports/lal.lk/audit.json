@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c32765e1-f18a-40c7-b8e6-0803eb424aa0",
+  "audit_id": "e2c5a7df-1d18-4cac-b936-c7d09f97b7f1",
   "url": "https://lal.lk/",
   "normalized_url": "https://lal.lk/",
-  "started_at": "2026-10-24T06:41:27.411119+05:30",
-  "completed_at": "2026-10-24T06:43:38.357595+05:30",
+  "started_at": "2026-10-25T06:41:43.989245+05:30",
+  "completed_at": "2026-10-25T06:42:14.197588+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,924 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T06:41:27.612181+05:30"
+      "observed_at": "2026-10-25T06:41:44.575674+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T06:41:27.612194+05:30"
+      "observed_at": "2026-10-25T06:41:44.575692+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-10-24T06:41:37.668677+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-25T06:41:45.107043+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://lal.lk/",
       "source": "https://lal.lk/",
-      "observed_at": "2026-10-24T06:43:38.357366+05:30"
+      "observed_at": "2026-10-25T06:42:11.597800+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: timed out",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://lal.lk/",
       "source": "http://lal.lk/",
-      "observed_at": "2026-10-24T06:43:38.357380+05:30"
+      "observed_at": "2026-10-25T06:42:11.597817+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://lal.lk/",
       "source": "https://lal.lk/",
-      "observed_at": "2026-10-24T06:43:38.357385+05:30"
+      "observed_at": "2026-10-25T06:42:11.597822+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://lal.lk/",
       "source": "http://lal.lk/",
-      "observed_at": "2026-10-24T06:43:38.357390+05:30"
+      "observed_at": "2026-10-25T06:42:11.597825+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://lal.lk/services/",
+      "source": "https://lal.lk/services/",
+      "observed_at": "2026-10-25T06:42:11.597827+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://lal.lk/contact-us/",
+      "source": "https://lal.lk/contact-us/",
+      "observed_at": "2026-10-25T06:42:11.597830+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://lal.lk/services/",
+      "source": "https://lal.lk/services",
+      "observed_at": "2026-10-25T06:42:11.597833+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://lal.lk/evs/",
+      "source": "https://lal.lk/evs/",
+      "observed_at": "2026-10-25T06:42:11.597836+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://lal.lk/bus/",
+      "source": "https://lal.lk/bus/",
+      "observed_at": "2026-10-25T06:42:11.597839+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://lal.lk/specials/",
+      "source": "https://lal.lk/specials/",
+      "observed_at": "2026-10-25T06:42:11.597841+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://lal.lk/leyparts/",
+      "source": "https://lal.lk/leyparts/",
+      "observed_at": "2026-10-25T06:42:11.597844+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://lal.lk/trucks/",
+      "source": "https://lal.lk/trucks/",
+      "observed_at": "2026-10-25T06:42:11.597847+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://lal.lk/learning-center/",
+      "source": "https://lal.lk/learning-center/",
+      "observed_at": "2026-10-25T06:42:11.597850+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://lal.lk/news/",
+      "source": "https://lal.lk/news/",
+      "observed_at": "2026-10-25T06:42:11.597853+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94742000790",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "+94742000790"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mktinfo@lal.lk",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "mktinfo@lal.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94742000790",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "+94742000790"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mktinfo@lal.lk",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "mktinfo@lal.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94742000790",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "+94742000790"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mktinfo@lal.lk",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "mktinfo@lal.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94742000790",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "+94742000790"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mktinfo@lal.lk",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "mktinfo@lal.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://lal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/services/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/services/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://lal.lk/services/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 287 42 59 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "076 287 42 59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777 883 880 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777 883 880 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0716907009",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0716907009"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777668648",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777668648"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0662285590",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0662285590"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777883880",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777883880"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0812223296",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0812223296"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0766256325",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0766256325"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 50 22 86 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0112 50 22 86 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 205 70 60 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "021 205 70 60 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 357 25 21 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "077 357 25 21 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777730786",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777730786"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0812424985",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0812424985"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112719257",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0112719257"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 081 242 49 85 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "081 242 49 85 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 788 93 41 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "076 788 93 41 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777 32 39 31 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777 32 39 31 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773488557",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0773488557"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777323931",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777323931"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07777 30 786 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "07777 30 786 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112502286",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0112502286"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112502532",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0112502532"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777 668 648 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777 668 648 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 514 39 52 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "077 514 39 52 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0472262802",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0472262802"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 35 31 426 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "077 35 31 426 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773572521",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0773572521"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 660 65 24 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "076 660 65 24 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 07777 30 785 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "07777 30 785 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0777730785",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0777730785"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 076 625 63 25 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "076 625 63 25 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112325996",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0112325996"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0766606524",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0766606524"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 271 92 57 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "011 271 92 57 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0767889341",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0767889341"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 066 228 55 90 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "066 228 55 90 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0762874259",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0762874259"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 50 25 32 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0112 50 25 32 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0773531426",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0773531426"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 047 226 28 02 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "047 226 28 02 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0212057060",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0212057060"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 325 996 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0112 325 996 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 081 222 32 96 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "081 222 32 96 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0775143952",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "0775143952"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 690 7009 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "071 690 7009 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 34 88 557 ",
+      "source": "https://lal.lk/contact-us/",
+      "data": {
+        "value": "077 34 88 557 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/services/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/services/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://lal.lk/services/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/evs/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/evs/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/bus/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/bus/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/specials/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/specials/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/leyparts/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/leyparts/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/trucks/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/trucks/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/learning-center/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/learning-center/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://lal.lk/learning-center/",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.833333333",
+      "source": "https://lal.lk/news/",
+      "data": {
+        "value": "0.833333333"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.777777777",
+      "source": "https://lal.lk/news/",
+      "data": {
+        "value": "0.777777777"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 7795 visible characters across 14 pages",
+      "source": "https://lal.lk/"
     }
   ],
   "observations": [
@@ -85,49 +963,230 @@
     },
     {
       "host": "lal.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2026-12-24T06:20:55+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://lal.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lal.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1238,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lal.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://lal.lk/",
+      "redirects": [
+        "https://lal.lk/"
+      ],
+      "elapsed_ms": 1186,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://lal.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lal.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1184,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://lal.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://lal.lk/",
+      "redirects": [
+        "https://lal.lk/"
+      ],
+      "elapsed_ms": 1196,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/services/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/services/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 1082,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/contact-us/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/contact-us/",
+      "redirects": [],
+      "elapsed_ms": 1149,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/services",
+      "status_code": 200,
+      "final_url": "https://lal.lk/services/",
+      "redirects": [
+        "https://lal.lk/services/"
+      ],
+      "elapsed_ms": 1097,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/evs/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/evs/",
+      "redirects": [],
+      "elapsed_ms": 1983,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/bus/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/bus/",
+      "redirects": [],
+      "elapsed_ms": 1244,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/specials/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/specials/",
+      "redirects": [],
+      "elapsed_ms": 1109,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/leyparts/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/leyparts/",
+      "redirects": [],
+      "elapsed_ms": 2362,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/trucks/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/trucks/",
+      "redirects": [],
+      "elapsed_ms": 1429,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/learning-center/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/learning-center/",
+      "redirects": [],
+      "elapsed_ms": 1659,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://lal.lk/news/",
+      "status_code": 200,
+      "final_url": "https://lal.lk/news/",
+      "redirects": [],
+      "elapsed_ms": 1101,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://lal.lk/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-01-d2a18649ef2f.html",
+      "sha256": "d2a18649ef2ff90bfa977bfc9d50ebb85c9f17507d6a8063cd7266c601e8519f",
+      "bytes": 439070
+    },
+    {
+      "url": "https://lal.lk/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-02-d2a18649ef2f.html",
+      "sha256": "d2a18649ef2ff90bfa977bfc9d50ebb85c9f17507d6a8063cd7266c601e8519f",
+      "bytes": 439070
+    },
+    {
+      "url": "https://lal.lk/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-03-d2a18649ef2f.html",
+      "sha256": "d2a18649ef2ff90bfa977bfc9d50ebb85c9f17507d6a8063cd7266c601e8519f",
+      "bytes": 439070
+    },
+    {
+      "url": "https://lal.lk/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-04-d2a18649ef2f.html",
+      "sha256": "d2a18649ef2ff90bfa977bfc9d50ebb85c9f17507d6a8063cd7266c601e8519f",
+      "bytes": 439070
+    },
+    {
+      "url": "https://lal.lk/services/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-05-3e242f6e7819.html",
+      "sha256": "3e242f6e7819565dbdb31bc7528cd5595bcf3a466748c177ce73af48666ff801",
+      "bytes": 234973
+    },
+    {
+      "url": "https://lal.lk/contact-us/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-06-b6ac584196f9.html",
+      "sha256": "b6ac584196f9880ee0969c0411819e7c209669699028dbb115440e83c992d7d7",
+      "bytes": 318295
+    },
+    {
+      "url": "https://lal.lk/services/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-07-3e242f6e7819.html",
+      "sha256": "3e242f6e7819565dbdb31bc7528cd5595bcf3a466748c177ce73af48666ff801",
+      "bytes": 234973
+    },
+    {
+      "url": "https://lal.lk/evs/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-08-11ff604581bd.html",
+      "sha256": "11ff604581bdb1e73791a41e539efee629d3a5608e4b52c818db8a928f7040d3",
+      "bytes": 242171
+    },
+    {
+      "url": "https://lal.lk/bus/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-09-1d1ecdc56ff3.html",
+      "sha256": "1d1ecdc56ff35b5e11c236c44f9bf8fad0a79a92019654f6c687afd65aadc1c6",
+      "bytes": 263253
+    },
+    {
+      "url": "https://lal.lk/specials/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-10-51ed0bb9f9a1.html",
+      "sha256": "51ed0bb9f9a1a384c333cc6b3b85b02d80c1ece43654d1e7f7dcd75a96422219",
+      "bytes": 248063
+    },
+    {
+      "url": "https://lal.lk/leyparts/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-11-bc73fcba63a1.html",
+      "sha256": "bc73fcba63a10791ef6d3d34e5d65e0c26884fe78be0fcc2dce0494da7906ea1",
+      "bytes": 245375
+    },
+    {
+      "url": "https://lal.lk/trucks/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-12-954d3949e407.html",
+      "sha256": "954d3949e4071d5bcdb62d3334cf2be14fe32b96a4f22f28cc4cf0d7833c5a53",
+      "bytes": 277629
+    },
+    {
+      "url": "https://lal.lk/learning-center/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-13-84233055161e.html",
+      "sha256": "84233055161e9b7732884fe304c72d2b98ec5ad2d7551bed745654e9dd7ef8f0",
+      "bytes": 217188
+    },
+    {
+      "url": "https://lal.lk/news/",
+      "path": "audit.output/lal.lk/20261025.0641/snapshots/page-14-a37d82ad70c8.html",
+      "sha256": "a37d82ad70c8a68ffb189934b57d34d213fa156e673a0ace3e36d0f77c862c93",
+      "bytes": 228633
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1200,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +1213,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +1270,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0.833333333 (49 phone numbers found); Email: mktinfo@lal.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,8 +1319,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.229.37.5",
-    "country": "CA",
+    "egress_ip": "52.250.243.98",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }

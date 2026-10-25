@@ -1,8 +1,8 @@
 # Website Audit: https://www.supremecourt.lk/
 
-- Completed: 2026-10-24 07:10
+- Completed: 2026-10-25 07:07
 - Overall result: ⚫ Level 0
-- Vantage: 4.229.37.5 (CA, github-actions)
+- Vantage: 52.250.243.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -19,10 +19,10 @@ Every repeated HTTP probe failed: [403, 403, 403, 403]
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200 |
+| domain_not_parked | ❓ | No usable page was inspected |
+| site_not_defaced | ❓ | No usable page was inspected |
+| content_relevant | ❓ | No usable page was inspected |
+| hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❌ | Every repeated HTTP probe failed: [403, 403, 403, 403] |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |

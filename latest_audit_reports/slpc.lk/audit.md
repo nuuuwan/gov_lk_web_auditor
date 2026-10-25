@@ -1,8 +1,8 @@
 # Website Audit: https://slpc.lk/
 
-- Completed: 2026-10-24 06:39
+- Completed: 2026-10-25 06:40
 - Overall result: 🟠 Level 2
-- Vantage: 4.229.37.5 (CA, github-actions)
+- Vantage: 52.250.243.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc; Phone: 0269462854 (13 phone numbers found); Email: slpresscouncil@gmail.com; Published named responsibility: director
+Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 | Fax: 0112693271 Email- slpresscounc; Phone: 0112693271 (13 phone numbers found); Email: slpresscouncil@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sri Lanka Press Council, No. 325, Bauddhaloka Mawatha, Colombo 07 Tel : 0112693272 \| Fax: 0112693271 Email- slpresscounc |
-| reachable_contacts | ✅ | Phone: 0269462854 (13 phone numbers found); Email: slpresscouncil@gmail.com |
+| reachable_contacts | ✅ | Phone: 0112693271 (13 phone numbers found); Email: slpresscouncil@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

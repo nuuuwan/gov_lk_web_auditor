@@ -1,8 +1,8 @@
 # Website Audit: https://dea.gov.lk/
 
-- Completed: 2026-10-24 06:05
+- Completed: 2026-10-25 06:09
 - Overall result: ⚫ Level 0
-- Vantage: 4.229.37.5 (CA, github-actions)
+- Vantage: 52.250.243.98 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ No usable page was inspected; No usable page was inspected; No usable page was i
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 

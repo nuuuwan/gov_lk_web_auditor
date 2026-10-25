@@ -1,16 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "7afc8df5-0989-4438-b6b0-906bed9f1f47",
+  "audit_id": "2fb1c790-85c2-4a5a-9e13-fda3a4fb49d8",
   "url": "https://www.planetarium.gov.lk/",
   "normalized_url": "https://www.planetarium.gov.lk/",
-  "started_at": "2026-10-24T06:54:23.449677+05:30",
-  "completed_at": "2026-10-24T06:54:28.740336+05:30",
+  "started_at": "2026-10-25T06:51:36.476068+05:30",
+  "completed_at": "2026-10-25T06:53:48.326190+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)",
-      "tls_hostname_matches: TLS certificate does not match the hostname"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -18,53 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-24T06:54:24.213286+05:30"
+      "observed_at": "2026-10-25T06:51:37.020606+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-24T06:54:24.213300+05:30"
+      "observed_at": "2026-10-25T06:51:37.020626+05:30"
     },
     {
-      "check": "tls_hostname",
-      "status": "fail",
-      "detail": "TLS certificate does not match the hostname",
-      "observed_at": "2026-10-24T06:54:24.984037+05:30"
-    },
-    {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)",
-      "source": "https://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-24T06:54:28.739223+05:30"
+      "check": "tls",
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-25T06:51:47.032631+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 500 at http://www.planetarium.gov.lk/",
-      "source": "http://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-24T06:54:28.739243+05:30"
-    },
-    {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-24T06:54:28.739248+05:30"
+      "observed_at": "2026-10-25T06:53:48.326001+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 500 at http://www.planetarium.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.planetarium.gov.lk/",
-      "observed_at": "2026-10-24T06:54:28.739252+05:30"
+      "observed_at": "2026-10-25T06:53:48.326023+05:30"
     },
     {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 73 visible characters across 2 pages; below substance threshold 200",
-      "source": "https://www.planetarium.gov.lk/"
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 3: timed out",
+      "source": "https://www.planetarium.gov.lk/",
+      "observed_at": "2026-10-25T06:53:48.326029+05:30"
+    },
+    {
+      "check": "http",
+      "status": "error",
+      "detail": "Probe 4: timed out",
+      "source": "http://www.planetarium.gov.lk/",
+      "observed_at": "2026-10-25T06:53:48.326033+05:30"
     }
   ],
   "observations": [
@@ -84,10 +85,10 @@
     },
     {
       "host": "www.planetarium.gov.lk",
-      "status": "hostname_error",
-      "expires_at": "2027-01-07T22:33:28+05:30",
-      "hostname_valid": false,
-      "detail": "TLS certificate does not match the hostname"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.planetarium.gov.lk/",
@@ -96,16 +97,16 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://www.planetarium.gov.lk/",
-      "status_code": 500,
-      "final_url": "http://www.planetarium.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 739,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.planetarium.gov.lk/",
@@ -114,32 +115,19 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)"
+      "error": "timed out"
     },
     {
       "url": "http://www.planetarium.gov.lk/",
-      "status_code": 500,
-      "final_url": "http://www.planetarium.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 498,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "http://www.planetarium.gov.lk/",
-      "path": "audit.output/www.planetarium.gov.lk/20261024.0654/snapshots/page-01-d3af065b1a97.html",
-      "sha256": "d3af065b1a979140769859a3464a3dc0f167dee16085068f13a63e12b1e6ab0d",
-      "bytes": 186
-    },
-    {
-      "url": "http://www.planetarium.gov.lk/",
-      "path": "audit.output/www.planetarium.gov.lk/20261024.0654/snapshots/page-02-d3af065b1a97.html",
-      "sha256": "d3af065b1a979140769859a3464a3dc0f167dee16085068f13a63e12b1e6ab0d",
-      "bytes": 186
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -153,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010); TLS certificate does not match the hostname",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -167,31 +155,31 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 73 visible characters across 2 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -202,20 +190,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.planetarium.gov.lk'. (_ssl.c:1010)"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate does not match the hostname"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -253,8 +241,8 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.229.37.5",
-    "country": "CA",
+    "egress_ip": "52.250.243.98",
+    "country": "US",
     "runner": "github-actions",
     "proxy": false
   }
