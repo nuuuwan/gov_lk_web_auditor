@@ -1,8 +1,8 @@
 # Website Audit: https://nec.gov.lk/
 
-- Completed: 2026-10-25 06:22
+- Completed: 2026-10-26 06:22
 - Overall result: 🟠 Level 2
-- Vantage: 52.250.243.98 (US, github-actions)
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

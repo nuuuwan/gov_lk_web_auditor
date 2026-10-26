@@ -1,8 +1,8 @@
 # Website Audit: https://hc-male.gov.lk/
 
-- Completed: 2026-10-25 06:32
+- Completed: 2026-10-26 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 52.250.243.98 (US, github-actions)
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

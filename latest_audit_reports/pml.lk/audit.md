@@ -1,8 +1,8 @@
 # Website Audit: https://pml.lk/
 
-- Completed: 2026-10-25 06:26
+- Completed: 2026-10-26 06:25
 - Overall result: ⚫ Level 0
-- Vantage: 52.250.243.98 (US, github-actions)
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -19,10 +19,10 @@ Every repeated HTTP probe failed: [503, 403, 503, 403]
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 82 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 82 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 82 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 82 visible characters across 4 pages; below substance threshold 200 |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
 | http_available | ❌ | Every repeated HTTP probe failed: [503, 403, 503, 403] |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |

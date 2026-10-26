@@ -1,8 +1,8 @@
 # Website Audit: https://hc-singapore.gov.lk/
 
-- Completed: 2026-10-25 06:33
+- Completed: 2026-10-26 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 52.250.243.98 (US, github-actions)
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: 0907976696 (17 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: director
+Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: 0622494874 (17 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu |
-| reachable_contacts | ✅ | Phone: 0907976696 (17 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0622494874 (17 phone numbers found); Email: slhcs@lanka.com.sg (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 1300 Hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 20 October 2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

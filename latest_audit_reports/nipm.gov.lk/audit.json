@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "02b955c0-3377-4a5b-b163-6879e751b149",
+  "audit_id": "24a64470-d701-4ce0-83e4-fd12d1d05954",
   "url": "https://nipm.gov.lk/",
   "normalized_url": "https://nipm.gov.lk/",
-  "started_at": "2026-10-25T06:45:51.018727+05:30",
-  "completed_at": "2026-10-25T06:45:56.867960+05:30",
+  "started_at": "2026-10-26T06:46:03.569471+05:30",
+  "completed_at": "2026-10-26T06:46:23.510399+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
-      "tls_not_expired: TLS certificate has expired"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,47 +26,1005 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-25T06:45:51.307646+05:30"
+      "observed_at": "2026-10-26T06:46:04.267348+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-25T06:45:51.307666+05:30"
+      "observed_at": "2026-10-26T06:46:04.267364+05:30"
     },
     {
-      "check": "tls_expired",
-      "status": "fail",
-      "detail": "TLS certificate has expired",
-      "observed_at": "2026-10-25T06:45:51.591747+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-26T06:46:04.571728+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://nipm.gov.lk/",
       "source": "https://nipm.gov.lk/",
-      "observed_at": "2026-10-25T06:45:56.867820+05:30"
+      "observed_at": "2026-10-26T06:46:22.774102+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 2: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://nipm.gov.lk/",
       "source": "http://nipm.gov.lk/",
-      "observed_at": "2026-10-25T06:45:56.867834+05:30"
+      "observed_at": "2026-10-26T06:46:22.774121+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://nipm.gov.lk/",
       "source": "https://nipm.gov.lk/",
-      "observed_at": "2026-10-25T06:45:56.867838+05:30"
+      "observed_at": "2026-10-26T06:46:22.774124+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 4: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://nipm.gov.lk/",
       "source": "http://nipm.gov.lk/",
-      "observed_at": "2026-10-25T06:45:56.867841+05:30"
+      "observed_at": "2026-10-26T06:46:22.774126+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://nipm.gov.lk/contact/",
+      "source": "https://nipm.gov.lk/contact/",
+      "observed_at": "2026-10-26T06:46:22.774128+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://nipm.gov.lk/courses/",
+      "source": "https://nipm.gov.lk/courses/",
+      "observed_at": "2026-10-26T06:46:22.774129+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "observed_at": "2026-10-26T06:46:22.774131+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://nipm.gov.lk/athurugiriya-training-center/",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "observed_at": "2026-10-26T06:46:22.774133+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://nipm.gov.lk/bogawantalwa-training-center/",
+      "source": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "observed_at": "2026-10-26T06:46:22.774134+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://nipm.gov.lk/about-us/",
+      "source": "https://nipm.gov.lk/about-us/",
+      "observed_at": "2026-10-26T06:46:22.774136+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://nipm.gov.lk/managment-staff/",
+      "source": "https://nipm.gov.lk/managment-staff/",
+      "observed_at": "2026-10-26T06:46:22.774137+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://nipm.gov.lk/executive-staff/",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "observed_at": "2026-10-26T06:46:22.774138+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://nipm.gov.lk/academic-board/",
+      "source": "https://nipm.gov.lk/academic-board/",
+      "observed_at": "2026-10-26T06:46:22.774140+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "source": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "observed_at": "2026-10-26T06:46:22.774141+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 .",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 ."
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 .",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 ."
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 .",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 ."
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 .",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "+94) 11-2770232 ."
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/contact/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/contact/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 51 226 7554 ",
+      "source": "https://nipm.gov.lk/contact/",
+      "data": {
+        "value": "+94 51 226 7554 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2798 790",
+      "source": "https://nipm.gov.lk/contact/",
+      "data": {
+        "value": "+94 11 2798 790"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nipm1979@gmail.com",
+      "source": "https://nipm.gov.lk/contact/",
+      "data": {
+        "value": "nipm1979@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/contact/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/contact/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/courses/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/courses/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/courses/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/courses/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 070 345 5794 ",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "070 345 5794 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 277 0232 ",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "011 277 0232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 279 8776 ",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "011 279 8776 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nipmrpl@gmail.com",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "nipmrpl@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: LKR 1,500",
+      "source": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "data": {
+        "value": "LKR 1,500"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 699 5282 ",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "071 699 5282 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: external@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "external@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: Rs. 12,000",
+      "source": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "data": {
+        "value": "Rs. 12,000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/about-us/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/about-us/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/about-us/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/about-us/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://nipm.gov.lk/about-us/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/managment-staff/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/managment-staff/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/managment-staff/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/managment-staff/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nipm.gov.lk/managment-staff/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 070-3455784",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "070-3455784"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2798772 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "011-2798772 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2798782 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "011-2798782 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 070-3455785",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "070-3455785"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-9708625 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "071-9708625 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0719708664 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "0719708664 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-0831465",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "071-0831465"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-9492422 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "071-9492422 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 052-2267554 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "052-2267554 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-4426647",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "071-4426647"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071-7686212",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "071-7686212"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 070-3455790 ",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "070-3455790 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: kpmbandara@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "kpmbandara@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nirosh.suranga123123@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "nirosh.suranga123123@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: priyantha.nipm@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "priyantha.nipm@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nishamininipm@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "nishamininipm@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: kulasekara.lahiru99@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "kulasekara.lahiru99@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: chanakanipm@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "chanakanipm@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ruvini.nirudika@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "ruvini.nirudika@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: udaraprasad@gmail.com",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "udaraprasad@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://nipm.gov.lk/executive-staff/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/academic-board/",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/academic-board/",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/academic-board/",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/academic-board/",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nipm.gov.lk/academic-board/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://nipm.gov.lk/academic-board/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94) 11-2770232 ",
+      "source": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "data": {
+        "value": "+94) 11-2770232 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: (+94) 11-2770232",
+      "source": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "data": {
+        "value": "(+94) 11-2770232"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nipm.gov.lk",
+      "source": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "data": {
+        "value": "info@nipm.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa",
+      "source": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "data": {
+        "value": "info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 7485 visible characters across 14 pages",
+      "source": "https://nipm.gov.lk/"
     }
   ],
   "observations": [
@@ -78,49 +1044,228 @@
     },
     {
       "host": "nipm.gov.lk",
-      "status": "expired",
-      "expires_at": "2026-10-24T09:31:52+05:30",
+      "status": "valid",
+      "expires_at": "2027-05-12T05:29:59+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate has expired"
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://nipm.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 1147,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://nipm.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/",
+      "redirects": [
+        "https://nipm.gov.lk/"
+      ],
+      "elapsed_ms": 1121,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "https://nipm.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 1090,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://nipm.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/",
+      "redirects": [
+        "https://nipm.gov.lk/"
+      ],
+      "elapsed_ms": 782,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/contact/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/contact/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+      "elapsed_ms": 1046,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/courses/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/courses/",
+      "redirects": [],
+      "elapsed_ms": 1020,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "redirects": [],
+      "elapsed_ms": 801,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "redirects": [],
+      "elapsed_ms": 743,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "redirects": [],
+      "elapsed_ms": 987,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/about-us/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/about-us/",
+      "redirects": [],
+      "elapsed_ms": 1272,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/managment-staff/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/managment-staff/",
+      "redirects": [],
+      "elapsed_ms": 1231,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/executive-staff/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/executive-staff/",
+      "redirects": [],
+      "elapsed_ms": 997,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/academic-board/",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/academic-board/",
+      "redirects": [],
+      "elapsed_ms": 996,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "status_code": 200,
+      "final_url": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "redirects": [],
+      "elapsed_ms": 755,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://nipm.gov.lk/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-01-6486325cf77d.html",
+      "sha256": "6486325cf77dfd75b0f04f4ae2d3f4a3f3f514cb5cf0db26f73a72f5dee19554",
+      "bytes": 145718
+    },
+    {
+      "url": "https://nipm.gov.lk/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-02-fa36c2d88517.html",
+      "sha256": "fa36c2d885176c1d6b70b3fcc268e227415c7c8a35e6cbe0fbcce61cf1fbb2d2",
+      "bytes": 145718
+    },
+    {
+      "url": "https://nipm.gov.lk/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-03-c7200c862798.html",
+      "sha256": "c7200c862798012fb32105be18ab519cd788e5b1a4850473c0b786565a8ea5b4",
+      "bytes": 145717
+    },
+    {
+      "url": "https://nipm.gov.lk/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-04-9073e0088b61.html",
+      "sha256": "9073e0088b618edcac857d46e645380e634f9f2c3d252d962e8bbe654094d4de",
+      "bytes": 145717
+    },
+    {
+      "url": "https://nipm.gov.lk/contact/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-05-d07382e5c7e5.html",
+      "sha256": "d07382e5c7e5cba2e0b8fc6b15f74901957e096f4c1b0f0f4409982090809f61",
+      "bytes": 130076
+    },
+    {
+      "url": "https://nipm.gov.lk/courses/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-06-c2e55141bcf2.html",
+      "sha256": "c2e55141bcf27ef1b0af0bee79e3d232409cfdfbfccd5eee41f254a9b9402ad4",
+      "bytes": 162164
+    },
+    {
+      "url": "https://nipm.gov.lk/recognition-of-prior-learning-rpl/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-07-037bb5884fec.html",
+      "sha256": "037bb5884fec125e105819da1725d1331ce523641dee59da3edc9c3c2ac48deb",
+      "bytes": 137993
+    },
+    {
+      "url": "https://nipm.gov.lk/athurugiriya-training-center/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-08-7034c10944f3.html",
+      "sha256": "7034c10944f345c26cfe0593135daf32669413c37236f81e4857d66343ce8ebc",
+      "bytes": 144939
+    },
+    {
+      "url": "https://nipm.gov.lk/bogawantalwa-training-center/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-09-fd3dd08a3228.html",
+      "sha256": "fd3dd08a32285b85ce4dd08694f66c60980202002385d00284f8115ff7204efa",
+      "bytes": 139809
+    },
+    {
+      "url": "https://nipm.gov.lk/about-us/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-10-6ac5f3369c6e.html",
+      "sha256": "6ac5f3369c6e0e1e2c41bb01980166dd392a787891646139feb660b475d9d5a1",
+      "bytes": 140922
+    },
+    {
+      "url": "https://nipm.gov.lk/managment-staff/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-11-305e44177ab5.html",
+      "sha256": "305e44177ab5607bf6226a75410938ae0e10f55a35df4e17b5623464178461ff",
+      "bytes": 139018
+    },
+    {
+      "url": "https://nipm.gov.lk/executive-staff/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-12-866728130ee2.html",
+      "sha256": "866728130ee2d5a0ffb8e1b6d6b1662d0c6f8d672b5b11612f6296ba15278518",
+      "bytes": 168966
+    },
+    {
+      "url": "https://nipm.gov.lk/academic-board/",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-13-51dcf4cccdaf.html",
+      "sha256": "51dcf4cccdaf344b14d97a46983ae3d59a4c03038b794bb9d4ce1d4d20e8d6c9",
+      "bytes": 130238
+    },
+    {
+      "url": "https://nipm.gov.lk/course-category/academic-programmes/?tutor-course-filter-category=71",
+      "path": "audit.output/nipm.gov.lk/20261026.0646/snapshots/page-14-9f07fe59f711.html",
+      "sha256": "9f07fe59f7116d8a57b78df329be49303f9979b2ed512b3448a1d81c8ce69002",
+      "bytes": 161532
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -134,8 +1279,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -147,74 +1292,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate has expired"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa; Phone: +94) 11-2770232 (21 phone numbers found); Email: info@nipm.gov.lk (12 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: info@nipm.gov.lk Home Courses Courses Recognition of Prior Learning (RPL) Facilities Athurugiriya Training Center Bogawa"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94) 11-2770232 (21 phone numbers found); Email: info@nipm.gov.lk (12 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: LKR 1,500"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -234,7 +1441,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "52.250.243.98",
+    "egress_ip": "135.119.22.241",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

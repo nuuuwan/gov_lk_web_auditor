@@ -1,8 +1,8 @@
 # Website Audit: https://itn.lk/
 
-- Completed: 2026-10-25 06:39
+- Completed: 2026-10-26 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 52.250.243.98 (US, github-actions)
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 9 hours |
+| processing_time | ✅ | Published processing time: 2 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

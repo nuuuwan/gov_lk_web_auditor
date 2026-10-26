@@ -1,8 +1,8 @@
 # Website Audit: http://www.wyb.ac.lk/
 
-- Completed: 2026-10-25 06:19
+- Completed: 2026-10-26 06:18
 - Overall result: 🟠 Level 2
-- Vantage: 52.250.243.98 (US, github-actions)
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Lional Jayathilake Mawatha, Kanadulla, Kuliyapitiya, 60200,Sri Lanka. Telephone +(94) 37 22 81412, +(94) 37 22 81414, +(; Phone: 071 494 9770 (66 phone numbers found); Email: psvc@wyb.ac.lk (44 email addresses found); Published named responsibility: director
+Published postal address: Lional Jayathilake Mawatha, Kanadulla, Kuliyapitiya, 60200,Sri Lanka. Telephone +(94) 37 22 81412, +(94) 37 22 81414, +(; Phone: 037 2282758 (38 phone numbers found); Email: psvc@wyb.ac.lk (23 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Lional Jayathilake Mawatha, Kanadulla, Kuliyapitiya, 60200,Sri Lanka. Telephone +(94) 37 22 81412, +(94) 37 22 81414, +( |
-| reachable_contacts | ✅ | Phone: 071 494 9770 (66 phone numbers found); Email: psvc@wyb.ac.lk (44 email addresses found) |
+| reachable_contacts | ✅ | Phone: 037 2282758 (38 phone numbers found); Email: psvc@wyb.ac.lk (23 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+Published published update date: 08 September 2020
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ❌ | Published published update date: 08 September 2020 |

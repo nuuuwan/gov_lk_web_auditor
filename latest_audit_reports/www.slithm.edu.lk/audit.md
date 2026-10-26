@@ -1,8 +1,8 @@
 # Website Audit: https://www.slithm.edu.lk/
 
-- Completed: 2026-10-25 06:37
+- Completed: 2026-10-26 06:37
 - Overall result: 🔴 Level 1
-- Vantage: 52.250.243.98 (US, github-actions)
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 112 208 312 (30 phone numbers found); Email: info@slithm.edu.lk (22 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112208312 (30 phone numbers found); Email: info@slithm.edu.lk (22 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://alliancefinanceplc.com/
 
-- Completed: 2026-10-25 06:26
-- Overall result: 🟠 Level 2
-- Vantage: 52.250.243.98 (US, github-actions)
+- Completed: 2026-10-26 06:25
+- Overall result: 🔴 Level 1
+- Vantage: 135.119.22.241 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Address Loan Amount Occupation Submit Here Related Resources Calculator LAFL % Monthly repayment = 0.00 TK Calculate Res; Phone: 09617-17119 (6 phone numbers found); Email: info@alliancefinanceplc.com (2 email addresses found); Published named responsibility: director
+No passing postal address evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Address Loan Amount Occupation Submit Here Related Resources Calculator LAFL % Monthly repayment = 0.00 TK Calculate Res |
-| reachable_contacts | ✅ | Phone: 09617-17119 (6 phone numbers found); Email: info@alliancefinanceplc.com (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: 0961717119 (2 phone numbers found); Email: info@alliancefinanceplc.com |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs. 3 |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://alliancefinanceplc.com/public/assets/account-form/Individual-Account-Opening-Form.pdf |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass
