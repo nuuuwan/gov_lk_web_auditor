@@ -1,8 +1,8 @@
 # Website Audit: https://bor.gov.lk/
 
-- Completed: 2026-10-26 06:49
+- Completed: 2026-10-27 06:47
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the impact of educational backgrounds on substance addiction, stressing that counselling is not the conclusion of the re; Phone: 0192707879 (52 phone numbers found); Email: email@gmail.com (3 email addresses found); Published named responsibility: division
+Published postal address: the impact of educational backgrounds on substance addiction, stressing that counselling is not the conclusion of the re; Phone: 0192707879 (52 phone numbers found); Email: bcg.rehabilitation@gmail.com (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the impact of educational backgrounds on substance addiction, stressing that counselling is not the conclusion of the re |
-| reachable_contacts | ✅ | Phone: 0192707879 (52 phone numbers found); Email: email@gmail.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0192707879 (52 phone numbers found); Email: bcg.rehabilitation@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❌

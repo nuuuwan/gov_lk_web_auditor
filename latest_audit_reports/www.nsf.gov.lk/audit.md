@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsf.gov.lk/
 
-- Completed: 2026-10-26 06:53
+- Completed: 2026-10-27 06:51
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: [Errno 104] Connection reset by peer; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: Server disconnected without sending a response.; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: [Errno 104] Connection reset by peer |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://www.nsf.gov.lk/: Probe 2: [Errno 104] Connection reset by peer; http://www.nsf.gov.lk/: Probe 4: Server disconnected without sending a response. |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was delivered by the Director General of the NSF, Prof Shiromi Perera while Dr Sudath Samaraweera, Chairman of the NSF i; Phone: 0962570016 . (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found); Published named responsibility: director
+Published postal address: was delivered by the Director General of the NSF, Prof Shiromi Perera while Dr Sudath Samaraweera, Chairman of the NSF i; Phone: 0005602082 . (99 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: was delivered by the Director General of the NSF, Prof Shiromi Perera while Dr Sudath Samaraweera, Chairman of the NSF i |
-| reachable_contacts | ✅ | Phone: 0962570016 . (98 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0005602082 . (99 phone numbers found); Email: info@nsf.gov.lk (42 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

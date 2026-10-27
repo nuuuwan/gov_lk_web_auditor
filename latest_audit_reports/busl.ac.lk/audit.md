@@ -1,8 +1,8 @@
 # Website Audit: https://busl.ac.lk/
 
-- Completed: 2026-10-26 06:20
+- Completed: 2026-10-27 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: to comment Enter your website URL (optional) Save my name, email, and website in this browser for the next time I commen; Phone: +94 252 057 978 (12 phone numbers found); Email: registrar@busl.ac.lk (7 email addresses found); Published named responsibility: director
+Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search; Phone: +94 25 223 6760 (14 phone numbers found); Email: info@busl.ac.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: to comment Enter your website URL (optional) Save my name, email, and website in this browser for the next time I commen |
-| reachable_contacts | ✅ | Phone: +94 252 057 978 (12 phone numbers found); Email: registrar@busl.ac.lk (7 email addresses found) |
+| postal_address | ✅ | Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search |
+| reachable_contacts | ✅ | Phone: +94 25 223 6760 (14 phone numbers found); Email: info@busl.ac.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -52,7 +52,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: LKR 5,500 |
-| legal_basis | ✅ | Published legal basis: under the act |
+| legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

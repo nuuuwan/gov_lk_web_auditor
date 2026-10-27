@@ -1,8 +1,8 @@
 # Website Audit: https://www.mohe.gov.lk/
 
-- Completed: 2026-10-26 07:01
+- Completed: 2026-10-27 06:59
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 18, Ward Place, Colombo 07, Sri Lanka; Phone: +94 11 2688423 (43 phone numbers found); Email: info@mohe.gov.lk; Published named responsibility: division
+Published postal address: 18, Ward Place, Colombo 07, Sri Lanka; Phone: +94 11 2688620 (42 phone numbers found); Email: info@mohe.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 18, Ward Place, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2688423 (43 phone numbers found); Email: info@mohe.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2688620 (42 phone numbers found); Email: info@mohe.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,46 +1,538 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "d5396a63-b2d2-40cb-9c48-6aa148086d83",
+  "audit_id": "5bdc640f-600f-4e8b-8420-a3f7e3c4634e",
   "url": "https://www.pdn.ac.lk/",
   "normalized_url": "https://www.pdn.ac.lk/",
-  "started_at": "2026-10-26T06:16:28.697991+05:30",
-  "completed_at": "2026-10-26T06:16:29.207227+05:30",
+  "started_at": "2026-10-27T06:14:55.665525+05:30",
+  "completed_at": "2026-10-27T06:16:37.129427+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: [Errno -5] No address associated with hostname"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
     {
-      "check": "dns_absent",
-      "status": "fail",
-      "detail": "[Errno -5] No address associated with hostname",
-      "observed_at": "2026-10-26T06:16:29.207091+05:30"
+      "check": "dns",
+      "status": "pass",
+      "detail": "Public DNS resolved",
+      "observed_at": "2026-10-27T06:14:56.648330+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-26T06:16:29.207108+05:30"
+      "observed_at": "2026-10-27T06:14:56.648353+05:30"
+    },
+    {
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-10-27T06:14:57.540784+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.pdn.ac.lk/",
+      "source": "https://www.pdn.ac.lk/",
+      "observed_at": "2026-10-27T06:16:36.933024+05:30"
+    },
+    {
+      "check": "http",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 400 at http://www.pdn.ac.lk/",
+      "source": "http://www.pdn.ac.lk/",
+      "observed_at": "2026-10-27T06:16:36.933045+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.pdn.ac.lk/",
+      "source": "https://www.pdn.ac.lk/",
+      "observed_at": "2026-10-27T06:16:36.933048+05:30"
+    },
+    {
+      "check": "http",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 400 at http://www.pdn.ac.lk/",
+      "source": "http://www.pdn.ac.lk/",
+      "observed_at": "2026-10-27T06:16:36.933051+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.pdn.ac.lk/ContactPage",
+      "source": "https://www.pdn.ac.lk/ContactPage",
+      "observed_at": "2026-10-27T06:16:36.933052+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.pdn.ac.lk/History",
+      "source": "https://www.pdn.ac.lk/History",
+      "observed_at": "2026-10-27T06:16:36.933054+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.pdn.ac.lk/AllProgrammes",
+      "source": "https://www.pdn.ac.lk/AllProgrammes",
+      "observed_at": "2026-10-27T06:16:36.933056+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.pdn.ac.lk/Undergraduates",
+      "source": "https://www.pdn.ac.lk/Undergraduates",
+      "observed_at": "2026-10-27T06:16:36.933058+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.pdn.ac.lk/PostgraduateProgrammes",
+      "source": "https://www.pdn.ac.lk/PostgraduateProgrammes",
+      "observed_at": "2026-10-27T06:16:36.933060+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.pdn.ac.lk/research",
+      "source": "https://www.pdn.ac.lk/research",
+      "observed_at": "2026-10-27T06:16:36.933061+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.pdn.ac.lk/News",
+      "source": "https://www.pdn.ac.lk/News",
+      "observed_at": "2026-10-27T06:16:36.933063+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.pdn.ac.lk/AllEvents",
+      "source": "https://www.pdn.ac.lk/AllEvents",
+      "observed_at": "2026-10-27T06:16:36.933065+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.pdn.ac.lk/Notices",
+      "source": "https://www.pdn.ac.lk/Notices",
+      "observed_at": "2026-10-27T06:16:36.933066+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.pdn.ac.lk/Publications",
+      "source": "https://www.pdn.ac.lk/Publications",
+      "observed_at": "2026-10-27T06:16:36.933068+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301",
+      "source": "https://www.pdn.ac.lk/",
+      "data": {
+        "value": "+94 81 238 8301"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80",
+      "source": "http://www.pdn.ac.lk/",
+      "data": {
+        "value": "Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301",
+      "source": "https://www.pdn.ac.lk/",
+      "data": {
+        "value": "+94 81 238 8301"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80",
+      "source": "http://www.pdn.ac.lk/",
+      "data": {
+        "value": "Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/ContactPage",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.pdn.ac.lk/ContactPage",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/History",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/AllProgrammes",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/Undergraduates",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/PostgraduateProgrammes",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/research",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/News",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/AllEvents",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/Notices",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 81 238 8301 ",
+      "source": "https://www.pdn.ac.lk/Publications",
+      "data": {
+        "value": "+94 81 238 8301 "
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 428 visible characters across 14 pages",
+      "source": "https://www.pdn.ac.lk/"
     }
   ],
   "observations": [
     {
       "host": "www.pdn.ac.lk",
-      "addresses": [],
-      "status": "absent",
-      "detail": "[Errno -5] No address associated with hostname"
+      "addresses": [
+        "192.248.40.36"
+      ],
+      "status": "resolved",
+      "detail": "Public DNS resolved"
     },
     {
       "domain": "ac.lk",
       "status": "unknown",
       "expires_at": null,
       "detail": "Domain is absent from RDAP"
+    },
+    {
+      "host": "www.pdn.ac.lk",
+      "status": "valid",
+      "expires_at": "2026-12-15T16:55:31+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
+    },
+    {
+      "url": "https://www.pdn.ac.lk/",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/",
+      "redirects": [],
+      "elapsed_ms": 1224,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://www.pdn.ac.lk/",
+      "status_code": 400,
+      "final_url": "http://www.pdn.ac.lk/",
+      "redirects": [],
+      "elapsed_ms": 20570,
+      "content_type": "text/html; charset=iso-8859-1",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/",
+      "redirects": [],
+      "elapsed_ms": 20925,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://www.pdn.ac.lk/",
+      "status_code": 400,
+      "final_url": "http://www.pdn.ac.lk/",
+      "redirects": [],
+      "elapsed_ms": 20055,
+      "content_type": "text/html; charset=iso-8859-1",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/ContactPage",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/ContactPage",
+      "redirects": [],
+      "elapsed_ms": 21406,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/History",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/History",
+      "redirects": [],
+      "elapsed_ms": 979,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/AllProgrammes",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/AllProgrammes",
+      "redirects": [],
+      "elapsed_ms": 997,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/Undergraduates",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/Undergraduates",
+      "redirects": [],
+      "elapsed_ms": 1039,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/PostgraduateProgrammes",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/PostgraduateProgrammes",
+      "redirects": [],
+      "elapsed_ms": 2398,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/research",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/research",
+      "redirects": [],
+      "elapsed_ms": 1244,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/News",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/News",
+      "redirects": [],
+      "elapsed_ms": 999,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/AllEvents",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/AllEvents",
+      "redirects": [],
+      "elapsed_ms": 2172,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/Notices",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/Notices",
+      "redirects": [],
+      "elapsed_ms": 974,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.pdn.ac.lk/Publications",
+      "status_code": 200,
+      "final_url": "https://www.pdn.ac.lk/Publications",
+      "redirects": [],
+      "elapsed_ms": 1420,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.pdn.ac.lk/",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-01-65b051fab8bc.html",
+      "sha256": "65b051fab8bcb3ef48c80cb4afada1e0e087089adfe1b1a7e7a309d7c92941e2",
+      "bytes": 7114
+    },
+    {
+      "url": "http://www.pdn.ac.lk/",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-02-bf4a27aec608.html",
+      "sha256": "bf4a27aec608ea07c93f789136cf529ecb8de7ea64c773f8e2be6f4cd2c06e36",
+      "bytes": 441
+    },
+    {
+      "url": "https://www.pdn.ac.lk/",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-03-65b051fab8bc.html",
+      "sha256": "65b051fab8bcb3ef48c80cb4afada1e0e087089adfe1b1a7e7a309d7c92941e2",
+      "bytes": 7114
+    },
+    {
+      "url": "http://www.pdn.ac.lk/",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-04-bf4a27aec608.html",
+      "sha256": "bf4a27aec608ea07c93f789136cf529ecb8de7ea64c773f8e2be6f4cd2c06e36",
+      "bytes": 441
+    },
+    {
+      "url": "https://www.pdn.ac.lk/ContactPage",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-05-a8d679fffa65.html",
+      "sha256": "a8d679fffa65d5b019130ebe093e0afc4b11950d139860ab6b46b940d79fb07a",
+      "bytes": 6163
+    },
+    {
+      "url": "https://www.pdn.ac.lk/History",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-06-c3a20c42bd94.html",
+      "sha256": "c3a20c42bd94e27d776e67907d8ed5369181a08cad63ede10c6bd0d924e9b27f",
+      "bytes": 6339
+    },
+    {
+      "url": "https://www.pdn.ac.lk/AllProgrammes",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-07-29244f100068.html",
+      "sha256": "29244f100068612debc8ebcad4e2c31831252128a69eb97178c070a28720dcc6",
+      "bytes": 6325
+    },
+    {
+      "url": "https://www.pdn.ac.lk/Undergraduates",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-08-b69048abd681.html",
+      "sha256": "b69048abd681b187d7be5d2ea68288368b5527d315658896efabf625409ab028",
+      "bytes": 6298
+    },
+    {
+      "url": "https://www.pdn.ac.lk/PostgraduateProgrammes",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-09-b645ae59d722.html",
+      "sha256": "b645ae59d722f68ea87a3b679df88c7ef4eaf15452532a9be2158f9c716a66a4",
+      "bytes": 6476
+    },
+    {
+      "url": "https://www.pdn.ac.lk/research",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-10-a84f9314a1ec.html",
+      "sha256": "a84f9314a1ec6b4d746c1b3969e092438a397f0bc9fd537f2c9bd9b12d4b8bf1",
+      "bytes": 6318
+    },
+    {
+      "url": "https://www.pdn.ac.lk/News",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-11-2adc7a67af9a.html",
+      "sha256": "2adc7a67af9a6b86f43cf2e70b0daf4535118d10bce49247b9414e39513b82f4",
+      "bytes": 6104
+    },
+    {
+      "url": "https://www.pdn.ac.lk/AllEvents",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-12-38b4a6e33bcb.html",
+      "sha256": "38b4a6e33bcb79d9ca62ab3dc0e417d9ef51b2f54e614f122eee9fa69bdab5c2",
+      "bytes": 6129
+    },
+    {
+      "url": "https://www.pdn.ac.lk/Notices",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-13-43b81e0f9243.html",
+      "sha256": "43b81e0f9243f12599c5a3d215db63cd975d4d5805f0942edefec6870377317f",
+      "bytes": 6349
+    },
+    {
+      "url": "https://www.pdn.ac.lk/Publications",
+      "path": "audit.output/www.pdn.ac.lk/20261027.0614/snapshots/page-14-833aef6cc838.html",
+      "sha256": "833aef6cc838f53bfbe52346af962e0f86e17f7b8bc8c1321ba1b23b53269d36",
+      "bytes": 6361
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -54,69 +546,69 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "[Errno -5] No address associated with hostname",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
           "name": "dns_resolves",
           "level": 1,
-          "status": "fail",
-          "reason": "[Errno -5] No address associated with hostname"
+          "status": "pass",
+          "reason": "Public DNS resolved"
         },
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -124,9 +616,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Apache/2.4.58 (Ubuntu) Server at www.pdn.ac.lk Port 80"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -154,7 +665,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "135.119.22.241",
+    "egress_ip": "128.203.197.210",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

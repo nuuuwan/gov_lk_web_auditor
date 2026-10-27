@@ -1,8 +1,8 @@
 # Website Audit: https://www.coastal.gov.lk/
 
-- Completed: 2026-10-26 06:24
+- Completed: 2026-10-27 06:22
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the above matters, but also the promotions, transfers, discipline of the staff members and making comfort working enviro; Phone: +94 11 243 8005 (64 phone numbers found); Email: info@coastal.gov.lk; Published named responsibility: director
+Published postal address: the above matters, but also the promotions, transfers, discipline of the staff members and making comfort working enviro; Phone: +94 11 243 8005 (65 phone numbers found); Email: info@coastal.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the above matters, but also the promotions, transfers, discipline of the staff members and making comfort working enviro |
-| reachable_contacts | ✅ | Phone: +94 11 243 8005 (64 phone numbers found); Email: info@coastal.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 243 8005 (65 phone numbers found); Email: info@coastal.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

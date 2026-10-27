@@ -1,8 +1,8 @@
 # Website Audit: https://emb-bucharest.gov.lk/
 
-- Completed: 2026-10-26 06:34
+- Completed: 2026-10-27 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Strada General Constantin Budișteanu 28, 030167 București, Romania Email: consular.bucharest@mfa.gov.lk Facebook : https; Phone: 0 31 433 8200 (12 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: Strada General Constantin Budișteanu 28, 030167 București, Romania Email: consular.bucharest@mfa.gov.lk Facebook : https; Phone: 0 773 759 233 ( (9 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Strada General Constantin Budișteanu 28, 030167 București, Romania Email: consular.bucharest@mfa.gov.lk Facebook : https |
-| reachable_contacts | ✅ | Phone: 0 31 433 8200 (12 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 773 759 233 ( (9 phone numbers found); Email: consular.bucharest@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 3 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2 March 2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

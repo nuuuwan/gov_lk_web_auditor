@@ -1,8 +1,8 @@
 # Website Audit: https://lllf.gov.lk/
 
-- Completed: 2026-10-26 06:29
+- Completed: 2026-10-27 06:27
 - Overall result: 🔴 Level 1
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No email evidence found
+No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: 100 3/2, SIR CHITTAMPALAM,A. GARDINER MAWATHA,COLOMBO 02,SRI LANKA Email: This email address is being protected from spa |
-| reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ✅ | Published named responsibility: department |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ❓ | No phone or email evidence found |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 

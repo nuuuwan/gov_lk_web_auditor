@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-10-26 07:02
+- Completed: 2026-10-27 07:01
 - Overall result: 🟠 Level 2
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Contact & Support New Secretariat, Maligawatta, Colombo 10, Sri Lanka; Phone: +94 112 327 060 (39 phone numbers found); Email: info@fisheries.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N; Phone: 0 0 1 1.265-1.26 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Contact & Support New Secretariat, Maligawatta, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 112 327 060 (39 phone numbers found); Email: info@fisheries.gov.lk (5 email addresses found) |
+| postal_address | ✅ | Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N |
+| reachable_contacts | ✅ | Phone: 0 0 1 1.265-1.26 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 24 October 2026 |
+| published_update_date | ✅ | Published published update date: 26 October 2026 |

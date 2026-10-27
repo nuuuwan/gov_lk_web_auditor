@@ -1,8 +1,8 @@
 # Website Audit: https://pml.lk/
 
-- Completed: 2026-10-26 06:25
+- Completed: 2026-10-27 06:25
 - Overall result: ⚫ Level 0
-- Vantage: 135.119.22.241 (US, github-actions)
+- Vantage: 128.203.197.210 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,17 +14,17 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Every repeated HTTP probe failed: [503, 403, 503, 403]
+Detected generic hosting marker: back soon
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 83 visible characters across 4 pages; below substance threshold 200 |
-| http_available | ❌ | Every repeated HTTP probe failed: [503, 403, 503, 403] |
-| redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ❌ | Detected generic hosting marker: back soon |
+| http_available | ✅ | HTTP probes did not all fail |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
