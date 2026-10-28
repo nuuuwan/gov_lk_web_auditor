@@ -1,8 +1,8 @@
 # Website Audit: https://emb-havana.gov.lk/
 
-- Completed: 2026-10-27 06:34
+- Completed: 2026-10-28 06:26
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

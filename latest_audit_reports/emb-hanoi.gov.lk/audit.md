@@ -1,8 +1,8 @@
 # Website Audit: https://emb-hanoi.gov.lk/
 
-- Completed: 2026-10-27 06:32
+- Completed: 2026-10-28 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 02835353292 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found); Published named responsibility: department
+Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d; Phone: 0310270009 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 02835353292 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found) |
+| postal_address | ✅ | Published postal address: (Optional)\",\"validation_nic_full_format\":\"Invalid NIC format. Use 9 digits + V/X or 12 digits\",\"validation_issue_d |
+| reachable_contacts | ✅ | Phone: 0310270009 (13 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

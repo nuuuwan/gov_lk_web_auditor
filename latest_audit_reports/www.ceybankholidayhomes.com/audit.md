@@ -1,8 +1,8 @@
 # Website Audit: https://www.ceybankholidayhomes.com/
 
-- Completed: 2026-10-27 06:23
+- Completed: 2026-10-28 06:16
 - Overall result: ⚫ Level 0
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-An HTTP probe was transient; [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010); [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010)
+An HTTP probe was transient; [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011); [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ An HTTP probe was transient; [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert inter
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010) |
-| tls_hostname_matches | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1010) |
+| tls_not_expired | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011) |
+| tls_hostname_matches | ❓ | [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1011) |
 
 ## 🟠 Level 2: ❓
 

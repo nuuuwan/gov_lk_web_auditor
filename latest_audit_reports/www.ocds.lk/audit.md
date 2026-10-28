@@ -1,8 +1,8 @@
 # Website Audit: https://www.ocds.lk/
 
-- Completed: 2026-10-27 06:11
+- Completed: 2026-10-28 06:03
 - Overall result: ⚫ Level 0
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ocds.lk'. (_ssl.c:1010); TLS certificate does not match the hostname
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ocds.lk'. (_ssl.c:1011); TLS certificate does not match the hostname
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,6 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | hosting_configured | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ocds.lk'. (_ssl.c:1010) |
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.ocds.lk'. (_ssl.c:1011) |
 | tls_not_expired | ❓ | TLS expiry check did not run |
 | tls_hostname_matches | ❌ | TLS certificate does not match the hostname |

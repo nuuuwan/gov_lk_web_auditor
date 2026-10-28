@@ -1,8 +1,8 @@
 # Website Audit: https://vncoe.edu.lk/
 
-- Completed: 2026-10-27 06:20
+- Completed: 2026-10-28 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Nedunkulam, Vavuniya, Northern Province, Sri Lanka. Email Address : presidentvncoe@gmail.com First Name * Last Name Emai; Phone: +94 277200490 (3 phone numbers found); Email: presidentvncoe@gmail.com; Published named responsibility: director
+Published postal address: Nedunkulam, Vavuniya, Northern Province, Sri Lanka. Email Address : presidentvncoe@gmail.com First Name * Last Name Emai; Phone: 024-2222272 (3 phone numbers found); Email: presidentvncoe@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Nedunkulam, Vavuniya, Northern Province, Sri Lanka. Email Address : presidentvncoe@gmail.com First Name * Last Name Emai |
-| reachable_contacts | ✅ | Phone: +94 277200490 (3 phone numbers found); Email: presidentvncoe@gmail.com |
+| reachable_contacts | ✅ | Phone: 024-2222272 (3 phone numbers found); Email: presidentvncoe@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

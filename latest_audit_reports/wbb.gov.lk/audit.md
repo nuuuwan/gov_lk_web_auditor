@@ -1,8 +1,8 @@
 # Website Audit: https://wbb.gov.lk/
 
-- Completed: 2026-10-27 06:29
+- Completed: 2026-10-28 06:21
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the implementation of aswesuma and other welfare benefits. The discussion focused on current issues encountered and pote; Phone: +94 714479793; Email: info@iwms.wbb.gov.lk (6 email addresses found); Published named responsibility: division
+Published postal address: the implementation of aswesuma and other welfare benefits. The discussion focused on current issues encountered and pote; Phone: +94 714479793; Email: info@iwms.wbb.gov.lk (11 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the implementation of aswesuma and other welfare benefits. The discussion focused on current issues encountered and pote |
-| reachable_contacts | ✅ | Phone: +94 714479793; Email: info@iwms.wbb.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 714479793; Email: info@iwms.wbb.gov.lk (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://cadet.lk/
 
-- Completed: 2026-10-27 06:11
+- Completed: 2026-10-28 06:03
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No 15, Dutugemunu Street, Pamankada, Dehiwala, Sri Lanka. Telephone Telephone: +94 11 2815346 , +94 71 3613159 Email: nc; Phone: 0112815346 (23 phone numbers found); Email: ncchq.lk@gmail.com; Published named responsibility: director
+Published postal address: No 15, Dutugemunu Street, Pamankada, Dehiwala, Sri Lanka. Telephone Telephone: +94 11 2815346 , +94 71 3613159 Email: nc; Phone: 0713613159 (23 phone numbers found); Email: ncchq.lk@gmail.com; Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No 15, Dutugemunu Street, Pamankada, Dehiwala, Sri Lanka. Telephone Telephone: +94 11 2815346 , +94 71 3613159 Email: nc |
-| reachable_contacts | ✅ | Phone: 0112815346 (23 phone numbers found); Email: ncchq.lk@gmail.com |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: 0713613159 (23 phone numbers found); Email: ncchq.lk@gmail.com |
+| named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓
 

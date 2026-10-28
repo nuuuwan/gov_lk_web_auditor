@@ -1,8 +1,8 @@
 # Website Audit: http://www.luppd.gov.lk/
 
-- Completed: 2026-10-27 06:06
+- Completed: 2026-10-28 05:58
 - Overall result: ⚫ Level 0
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,17 +14,17 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Detected generic hosting marker: under construction; Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010); TLS certificate has expired
+Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011); TLS certificate has expired
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 26 visible characters across 2 pages; below substance threshold 200 |
-| hosting_configured | ❌ | Detected generic hosting marker: under construction |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 190 visible characters across 2 pages; below substance threshold 200 |
 | http_available | ✅ | HTTP probes did not all fail |
-| redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1010) |
+| redirect_related | ❓ | No redirect result was available |
+| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011) |
 | tls_not_expired | ❌ | TLS certificate has expired |
 | tls_hostname_matches | ❓ | TLS hostname check did not run |

@@ -1,8 +1,8 @@
 # Website Audit: https://slmc.gov.lk/
 
-- Completed: 2026-10-27 06:39
+- Completed: 2026-10-28 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Instructions for Photograph Contact 31, Norris Canal Road, Colombo 10, Sri Lanka; Phone: +94112693218 (8 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: Instructions for Photograph Contact 31, Norris Canal Road, Colombo 10, Sri Lanka; Phone: +94717412222 (8 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Instructions for Photograph Contact 31, Norris Canal Road, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94112693218 (8 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94717412222 (8 phone numbers found); Email: da@slmc.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing published update date evidence found
 | fees_and_payment | ✅ | Published fees and payment: rs 2025 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 3 months |
-| downloadable_form | ✅ | Published downloadable form: https://slmc.gov.lk/applications/15URGENT_APPLICATION-FOR-CGS.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://slmc.gov.lk/website/applications/app-0006-6ae0216e6562f.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

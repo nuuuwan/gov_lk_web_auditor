@@ -1,8 +1,8 @@
 # Website Audit: https://ceynor.gov.lk/
 
-- Completed: 2026-10-27 06:29
+- Completed: 2026-10-28 06:21
 - Overall result: 🔴 Level 1
-- Vantage: 128.203.197.210 (US, github-actions)
+- Vantage: 132.196.37.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94112448040 (9 phone numbers found); Email: info@ceynor.lk (10 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112445657 (9 phone numbers found); Email: info@ceynor.lk (10 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

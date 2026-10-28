@@ -1,24 +1,17 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ab75d473-2a11-45ae-a5f0-11f8e92d1d10",
+  "audit_id": "074c2338-d667-4faa-a132-c23890fe3909",
   "url": "https://elections.gov.lk/",
   "normalized_url": "https://elections.gov.lk/",
-  "started_at": "2026-10-27T07:05:53.499250+05:30",
-  "completed_at": "2026-10-27T07:06:25.021361+05:30",
+  "started_at": "2026-10-28T06:58:28.780235+05:30",
+  "completed_at": "2026-10-28T06:59:54.674575+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "http_available: An HTTP probe was transient",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,132 +19,294 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-10-27T07:05:54.108016+05:30"
+      "observed_at": "2026-10-28T06:58:29.208534+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-10-27T07:05:54.108033+05:30"
+      "observed_at": "2026-10-28T06:58:29.208555+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-10-27T07:05:55.093650+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-10-28T06:58:39.456137+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://elections.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://elections.gov.lk/",
-      "observed_at": "2026-10-27T07:06:24.879088+05:30"
+      "observed_at": "2026-10-28T06:59:54.562188+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://elections.gov.lk/",
+      "detail": "Probe 2: HTTP 200 at http://elections.gov.lk/",
       "source": "http://elections.gov.lk/",
-      "observed_at": "2026-10-27T07:06:24.879103+05:30"
+      "observed_at": "2026-10-28T06:59:54.562209+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://elections.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://elections.gov.lk/",
-      "observed_at": "2026-10-27T07:06:24.879106+05:30"
+      "observed_at": "2026-10-28T06:59:54.562212+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://elections.gov.lk/",
+      "detail": "Probe 4: HTTP 200 at http://elections.gov.lk/",
       "source": "http://elections.gov.lk/",
-      "observed_at": "2026-10-27T07:06:24.879107+05:30"
+      "observed_at": "2026-10-28T06:59:54.562215+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://elections.gov.lk/si/",
-      "source": "https://elections.gov.lk/si/",
-      "observed_at": "2026-10-27T07:06:24.879109+05:30"
+      "detail": "Probe 5: HTTP 200 at http://elections.gov.lk/si/index.html",
+      "source": "http://elections.gov.lk/si/index.html",
+      "observed_at": "2026-10-28T06:59:54.562216+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://elections.gov.lk/ta/",
-      "source": "https://elections.gov.lk/ta/",
-      "observed_at": "2026-10-27T07:06:24.879110+05:30"
+      "detail": "Probe 6: HTTP 200 at http://elections.gov.lk/ta/index.html",
+      "source": "http://elections.gov.lk/ta/index.html",
+      "observed_at": "2026-10-28T06:59:54.562218+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://elections.gov.lk/en/",
-      "source": "https://elections.gov.lk/en/",
-      "observed_at": "2026-10-27T07:06:24.879111+05:30"
+      "detail": "Probe 7: HTTP 200 at http://elections.gov.lk/en/index.html",
+      "source": "http://elections.gov.lk/en/index.html",
+      "observed_at": "2026-10-28T06:59:54.562220+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://elections.gov.lk/indexSi.html",
-      "source": "https://elections.gov.lk/indexSi.html",
-      "observed_at": "2026-10-27T07:06:24.879113+05:30"
+      "detail": "Probe 8: HTTP 200 at http://elections.gov.lk/indexSi.html",
+      "source": "http://elections.gov.lk/indexSi.html",
+      "observed_at": "2026-10-28T06:59:54.562222+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://elections.gov.lk/indexTa.html",
-      "source": "https://elections.gov.lk/indexTa.html",
-      "observed_at": "2026-10-27T07:06:24.879114+05:30"
+      "detail": "Probe 9: HTTP 200 at http://elections.gov.lk/indexTa.html",
+      "source": "http://elections.gov.lk/indexTa.html",
+      "observed_at": "2026-10-28T06:59:54.562224+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://elections.gov.lk/indexEn.html",
-      "source": "https://elections.gov.lk/indexEn.html",
-      "observed_at": "2026-10-27T07:06:24.879116+05:30"
+      "detail": "Probe 10: HTTP 200 at http://elections.gov.lk/indexEn.html",
+      "source": "http://elections.gov.lk/indexEn.html",
+      "observed_at": "2026-10-28T06:59:54.562226+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://elections.gov.lk/si/public_officer/E_dataSheet_S.html",
-      "source": "https://elections.gov.lk/si/public_officer/E_dataSheet_S.html",
-      "observed_at": "2026-10-27T07:06:24.879117+05:30"
+      "detail": "Probe 11: HTTP 200 at http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "observed_at": "2026-10-28T06:59:54.562227+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://elections.gov.lk/si/public_officer/circuit_bungalow_S.html",
-      "source": "https://elections.gov.lk/si/public_officer/circuit_bungalow_S.html",
-      "observed_at": "2026-10-27T07:06:24.879119+05:30"
+      "detail": "Probe 12: HTTP 200 at http://elections.gov.lk/si/public_officers/circuit_bungalow_S.html",
+      "source": "http://elections.gov.lk/si/public_officers/circuit_bungalow_S.html",
+      "observed_at": "2026-10-28T06:59:54.562229+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://elections.gov.lk/si/public_officer/vacancy_S.html",
-      "source": "https://elections.gov.lk/si/public_officer/vacancy_S.html",
-      "observed_at": "2026-10-27T07:06:24.879120+05:30"
+      "detail": "Probe 13: HTTP 200 at http://elections.gov.lk/si/public_officers/vacancy_S.html",
+      "source": "http://elections.gov.lk/si/public_officers/vacancy_S.html",
+      "observed_at": "2026-10-28T06:59:54.562231+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "observed_at": "2026-10-27T07:06:24.879122+05:30"
+      "detail": "Probe 14: HTTP 200 at http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "observed_at": "2026-10-28T06:59:54.562232+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021.06.01-202",
+      "source": "http://elections.gov.lk/indexSi.html",
+      "data": {
+        "value": "021.06.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 286 8441 ",
+      "source": "http://elections.gov.lk/indexSi.html",
+      "data": {
+        "value": "+94 11 286 8441 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023.02.01-202",
+      "source": "http://elections.gov.lk/indexSi.html",
+      "data": {
+        "value": "023.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022.02.01-202",
+      "source": "http://elections.gov.lk/indexSi.html",
+      "data": {
+        "value": "022.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024.02.01-202",
+      "source": "http://elections.gov.lk/indexSi.html",
+      "data": {
+        "value": "024.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025.02.01-202",
+      "source": "http://elections.gov.lk/indexSi.html",
+      "data": {
+        "value": "025.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021.06.01-202",
+      "source": "http://elections.gov.lk/indexTa.html",
+      "data": {
+        "value": "021.06.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 286 8441 ",
+      "source": "http://elections.gov.lk/indexTa.html",
+      "data": {
+        "value": "+94 11 286 8441 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023.02.01-202",
+      "source": "http://elections.gov.lk/indexTa.html",
+      "data": {
+        "value": "023.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022.02.01-202",
+      "source": "http://elections.gov.lk/indexTa.html",
+      "data": {
+        "value": "022.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024.02.01-202",
+      "source": "http://elections.gov.lk/indexTa.html",
+      "data": {
+        "value": "024.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025.02.01-202",
+      "source": "http://elections.gov.lk/indexTa.html",
+      "data": {
+        "value": "025.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021.06.01-202",
+      "source": "http://elections.gov.lk/indexEn.html",
+      "data": {
+        "value": "021.06.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 286 8441 ",
+      "source": "http://elections.gov.lk/indexEn.html",
+      "data": {
+        "value": "+94 11 286 8441 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023.02.01-202",
+      "source": "http://elections.gov.lk/indexEn.html",
+      "data": {
+        "value": "023.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022.02.01-202",
+      "source": "http://elections.gov.lk/indexEn.html",
+      "data": {
+        "value": "022.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 024.02.01-202",
+      "source": "http://elections.gov.lk/indexEn.html",
+      "data": {
+        "value": "024.02.01-202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025.02.01-202",
+      "source": "http://elections.gov.lk/indexEn.html",
+      "data": {
+        "value": "025.02.01-202"
+      }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://elections.gov.lk/indexEn.html",
+      "detail": "Published named responsibility: director",
+      "source": "http://elections.gov.lk/indexEn.html",
       "data": {
-        "value": "division"
+        "value": "director"
       }
     },
     {
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: regulations",
-      "source": "https://elections.gov.lk/indexEn.html",
+      "source": "http://elections.gov.lk/indexEn.html",
       "data": {
         "value": "regulations"
       }
@@ -160,7 +315,7 @@
       "check": "downloadable_form",
       "status": "pass",
       "detail": "Published downloadable form: https://elections.gov.lk/web/wp-content/uploads/2026/02/EC_YC_2026.pdf",
-      "source": "https://elections.gov.lk/indexEn.html",
+      "source": "http://elections.gov.lk/indexEn.html",
       "data": {
         "value": "https://elections.gov.lk/web/wp-content/uploads/2026/02/EC_YC_2026.pdf"
       }
@@ -168,62 +323,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 023.09.01 202",
-      "source": "https://elections.gov.lk/si/public_officer/vacancy_S.html",
-      "data": {
-        "value": "023.09.01 202"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112879133 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "0112879133 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112860028 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "0112860028 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112868444 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "0112868444 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112868441 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "0112868441 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112868442 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "0112868442 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0112868445 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
         "value": "0112868445 "
       }
@@ -231,26 +332,35 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112879131 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "detail": "Published phone: +94 11 286 8441 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
-        "value": "0112879131 "
+        "value": "+94 11 286 8441 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0112868426 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "detail": "Published phone: 0112868444 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
-        "value": "0112868426 "
+        "value": "0112868444 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868442 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "data": {
+        "value": "0112868442 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0112860030 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
         "value": "0112860030 "
       }
@@ -258,8 +368,53 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0112868441 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "data": {
+        "value": "0112868441 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112879131 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "data": {
+        "value": "0112879131 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112860028 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "data": {
+        "value": "0112860028 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112879133 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "data": {
+        "value": "0112879133 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868426 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "data": {
+        "value": "0112868426 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0112879132 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
         "value": "0112879132 "
       }
@@ -268,7 +423,7 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0112868443 ",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
         "value": "0112868443 "
       }
@@ -276,35 +431,8 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: pa.chairman@elections.gov.lk",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "pa.chairman@elections.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@elections.gov.lk",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "info@elections.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: cc.ec@elections.gov.lk",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "data": {
-        "value": "cc.ec@elections.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: amfaaiz@gmail.com",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
         "value": "amfaaiz@gmail.com"
       }
@@ -312,16 +440,493 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: secretary.ec@elections.gov.lk",
-      "source": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "detail": "Published email: info@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "data": {
-        "value": "secretary.ec@elections.gov.lk"
+        "value": "info@elections.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 286 8441 ",
+      "source": "http://elections.gov.lk/si/public_officers/circuit_bungalow_S.html",
+      "data": {
+        "value": "+94 11 286 8441 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 286 8441 ",
+      "source": "http://elections.gov.lk/si/public_officers/vacancy_S.html",
+      "data": {
+        "value": "+94 11 286 8441 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866521 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112866521 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112074599 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112074599 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112860027 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112860027 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868962 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868962 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868448 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868448 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868454 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868454 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112885208 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112885208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112886806 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112886806 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112879570 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112879570 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 286 8441 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "+94 11 286 8441 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112867471 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112867471 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112877618 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112877618 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112877615 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112877615 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112886805 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112886805 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868153 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868153 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868368 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868368 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112877208 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112877208 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868399 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868399 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112872406 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112872406 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868169 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868169 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112863785 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112863785 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868406 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868406 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112868447 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112868447 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112885207 ",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "0112885207 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: procurement.acct@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "procurement.acct@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ac.admin@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "ac.admin@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: addcompe@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "addcompe@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cc.audit@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "cc.audit@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: admin_branch@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "admin_branch@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cc.lae@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "cc.lae@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cc.legal@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "cc.legal@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: supply@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "supply@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: it@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "it@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sanjeewa@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "sanjeewa@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ac.lae@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "ac.lae@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: legalofficer@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "legalofficer@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dc.ne@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "dc.ne@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: finance@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "finance@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ac.ne@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "ac.ne@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: kalpanie@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "kalpanie@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dc.lae@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "dc.lae@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cge@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "cge@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: channa@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "channa@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cc.ne@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "cc.ne@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sidath@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "sidath@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ao.admin@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "ao.admin@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: transportbranch@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "transportbranch@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ca@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "ca@elections.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: directorict@elections.gov.lk",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "directorict@elections.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: රු,",
+      "source": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "data": {
+        "value": "රු,"
       }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 10321 visible characters across 14 pages",
+      "detail": "Substantive page content: 10863 visible characters across 12 pages",
       "source": "https://elections.gov.lk/"
     }
   ],
@@ -329,7 +934,7 @@
     {
       "host": "elections.gov.lk",
       "addresses": [
-        "222.165.190.40"
+        "124.43.162.144"
       ],
       "status": "resolved",
       "detail": "Public DNS resolved"
@@ -342,226 +947,210 @@
     },
     {
       "host": "elections.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-11-24T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://elections.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://elections.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1219,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://elections.gov.lk/",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/",
-      "redirects": [
-        "https://elections.gov.lk/"
-      ],
-      "elapsed_ms": 1258,
-      "content_type": "text/html; charset=UTF-8",
+      "final_url": "http://elections.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 741,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://elections.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://elections.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 986,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://elections.gov.lk/",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/",
-      "redirects": [
-        "https://elections.gov.lk/"
-      ],
-      "elapsed_ms": 1235,
-      "content_type": "text/html; charset=UTF-8",
+      "final_url": "http://elections.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 732,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/si/",
+      "url": "http://elections.gov.lk/si/index.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/si/",
+      "final_url": "http://elections.gov.lk/si/index.html",
       "redirects": [],
-      "elapsed_ms": 988,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 735,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/ta/",
+      "url": "http://elections.gov.lk/ta/index.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/ta/",
+      "final_url": "http://elections.gov.lk/ta/index.html",
       "redirects": [],
-      "elapsed_ms": 1004,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 556,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/en/",
+      "url": "http://elections.gov.lk/en/index.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/en/",
+      "final_url": "http://elections.gov.lk/en/index.html",
       "redirects": [],
-      "elapsed_ms": 976,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 740,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/indexSi.html",
+      "url": "http://elections.gov.lk/indexSi.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/indexSi.html",
+      "final_url": "http://elections.gov.lk/indexSi.html",
       "redirects": [],
-      "elapsed_ms": 1969,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1406,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/indexTa.html",
+      "url": "http://elections.gov.lk/indexTa.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/indexTa.html",
+      "final_url": "http://elections.gov.lk/indexTa.html",
       "redirects": [],
-      "elapsed_ms": 6600,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1191,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/indexEn.html",
+      "url": "http://elections.gov.lk/indexEn.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/indexEn.html",
+      "final_url": "http://elections.gov.lk/indexEn.html",
       "redirects": [],
-      "elapsed_ms": 1701,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1067,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/si/public_officer/E_dataSheet_S.html",
+      "url": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/si/public_officer/E_dataSheet_S.html",
+      "final_url": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
       "redirects": [],
-      "elapsed_ms": 1739,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1424,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/si/public_officer/circuit_bungalow_S.html",
+      "url": "http://elections.gov.lk/si/public_officers/circuit_bungalow_S.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/si/public_officer/circuit_bungalow_S.html",
+      "final_url": "http://elections.gov.lk/si/public_officers/circuit_bungalow_S.html",
       "redirects": [],
-      "elapsed_ms": 2607,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1468,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/si/public_officer/vacancy_S.html",
+      "url": "http://elections.gov.lk/si/public_officers/vacancy_S.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/si/public_officer/vacancy_S.html",
+      "final_url": "http://elections.gov.lk/si/public_officers/vacancy_S.html",
       "redirects": [],
-      "elapsed_ms": 1445,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 962,
+      "content_type": "text/html",
       "error": null
     },
     {
-      "url": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "url": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
       "status_code": 200,
-      "final_url": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "final_url": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
       "redirects": [],
-      "elapsed_ms": 1953,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 1232,
+      "content_type": "text/html",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://elections.gov.lk/",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-01-589b6ebcd8ed.html",
-      "sha256": "589b6ebcd8edd2642ff4fbd4d1f284a6bc5ea7c5fd4ee1558c0680e7fd38575b",
-      "bytes": 6795
+      "url": "http://elections.gov.lk/",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-01-a821365c084b.html",
+      "sha256": "a821365c084bc6be4426f56b48a3181f8e751dbcda603e3f54d29bc00547e1a0",
+      "bytes": 11693
     },
     {
-      "url": "https://elections.gov.lk/",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-02-589b6ebcd8ed.html",
-      "sha256": "589b6ebcd8edd2642ff4fbd4d1f284a6bc5ea7c5fd4ee1558c0680e7fd38575b",
-      "bytes": 6795
+      "url": "http://elections.gov.lk/",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-02-a821365c084b.html",
+      "sha256": "a821365c084bc6be4426f56b48a3181f8e751dbcda603e3f54d29bc00547e1a0",
+      "bytes": 11693
     },
     {
-      "url": "https://elections.gov.lk/",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-03-589b6ebcd8ed.html",
-      "sha256": "589b6ebcd8edd2642ff4fbd4d1f284a6bc5ea7c5fd4ee1558c0680e7fd38575b",
-      "bytes": 6795
+      "url": "http://elections.gov.lk/si/index.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-03-f17108676819.html",
+      "sha256": "f17108676819b39091400175958079fd5304a12fca5fc4aa0c5c3b749be56d6c",
+      "bytes": 10698
     },
     {
-      "url": "https://elections.gov.lk/",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-04-589b6ebcd8ed.html",
-      "sha256": "589b6ebcd8edd2642ff4fbd4d1f284a6bc5ea7c5fd4ee1558c0680e7fd38575b",
-      "bytes": 6795
+      "url": "http://elections.gov.lk/ta/index.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-04-5a822bc3f2bc.html",
+      "sha256": "5a822bc3f2bcdeb43f577179ec5eb1c32e2fb22645a3b009c94426939f4b5122",
+      "bytes": 10797
     },
     {
-      "url": "https://elections.gov.lk/si/",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-05-1a9ef8154858.html",
-      "sha256": "1a9ef8154858b11922036961e0a9232c1d46be75d9568634a7003e099706c320",
-      "bytes": 4501
+      "url": "http://elections.gov.lk/en/index.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-05-9768517b3d96.html",
+      "sha256": "9768517b3d96c1853a8e6469b6fcefbf3d0b62b4c31b3b4c9c7cddb518d69947",
+      "bytes": 9221
     },
     {
-      "url": "https://elections.gov.lk/ta/",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-06-df4c37acfbc8.html",
-      "sha256": "df4c37acfbc8fb5afef4ce7d31eebcb4b4a49ed8ca95f78def006dd0afd3a417",
-      "bytes": 4539
+      "url": "http://elections.gov.lk/indexSi.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-06-42a4e7fd1c2b.html",
+      "sha256": "42a4e7fd1c2b05418a17131f9161823ed909f5d0292d05417f24918c08cfb4b0",
+      "bytes": 111988
     },
     {
-      "url": "https://elections.gov.lk/en/",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-07-b5fc753df344.html",
-      "sha256": "b5fc753df3440b292393925beab963ab6329df67d432ff9684408dfbdf276bb5",
-      "bytes": 4048
+      "url": "http://elections.gov.lk/indexTa.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-07-d4684fabe9f9.html",
+      "sha256": "d4684fabe9f9baa3eda4cf8532a025a2ec0ccd5330f2b91343c9d17401b6f623",
+      "bytes": 108722
     },
     {
-      "url": "https://elections.gov.lk/indexSi.html",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-08-16d6df1085fd.html",
-      "sha256": "16d6df1085fd23be2a0e227031b27afaf3181cf4b7dd3d5c73959b9d2b3b0fd7",
-      "bytes": 125751
+      "url": "http://elections.gov.lk/indexEn.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-08-a3a01a224bab.html",
+      "sha256": "a3a01a224bab74cc90b1f3c1cfd202f082e8a5dba7232d28c8e42178e7afe62d",
+      "bytes": 94813
     },
     {
-      "url": "https://elections.gov.lk/indexTa.html",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-09-78c893a9067b.html",
-      "sha256": "78c893a9067b1c1edf0ae3a62279b365ab3ba79cd7dc4479876ef3309f6c8730",
-      "bytes": 128186
+      "url": "http://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-09-b15eb8581761.html",
+      "sha256": "b15eb8581761b8f03275fcf3b17531c4d9f37dacd6caadb822af08cb69daf258",
+      "bytes": 59562
     },
     {
-      "url": "https://elections.gov.lk/indexEn.html",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-10-5853986a0e2c.html",
-      "sha256": "5853986a0e2cea7770ad467a7bfdf065c898511f781779abd779b4661649e7fe",
-      "bytes": 115654
+      "url": "http://elections.gov.lk/si/public_officers/circuit_bungalow_S.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-10-0496b35c4162.html",
+      "sha256": "0496b35c4162a6ee15904c648fe49a7d4c51576ebe101038232a32b9f04e8f36",
+      "bytes": 46964
     },
     {
-      "url": "https://elections.gov.lk/si/public_officer/E_dataSheet_S.html",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-11-a57f3426e5a8.html",
-      "sha256": "a57f3426e5a8c5add9ea7920406046c04caf869ae5a1204af574591bd4626741",
-      "bytes": 102081
+      "url": "http://elections.gov.lk/si/public_officers/vacancy_S.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-11-a98ba43b42e3.html",
+      "sha256": "a98ba43b42e322a693ac14f8555e80ab614f2c765f9d01d15b094cfba23a7e43",
+      "bytes": 47155
     },
     {
-      "url": "https://elections.gov.lk/si/public_officer/circuit_bungalow_S.html",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-12-909a698ca147.html",
-      "sha256": "909a698ca14742fd47fd667adf674cedd9b009269cf46a8567ac76bc7e8340df",
-      "bytes": 104286
-    },
-    {
-      "url": "https://elections.gov.lk/si/public_officer/vacancy_S.html",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-13-54a3e0dde774.html",
-      "sha256": "54a3e0dde7741aba52fb361dc879777dccdd8310b296ebea38e7936700d6ee97",
-      "bytes": 117422
-    },
-    {
-      "url": "https://elections.gov.lk/si/contactus/contactus_election_commission_S.html",
-      "path": "audit.output/elections.gov.lk/20261027.0705/snapshots/page-14-ea05bdf6a761.html",
-      "sha256": "ea05bdf6a76163814d53c94f702e3c0e5cbf4e8d507c27cfdba9c94739966dd3",
-      "bytes": 114235
+      "url": "http://elections.gov.lk/si/contactus/contactus_elections_secretariat_S.html",
+      "path": "audit.output/elections.gov.lk/20261028.0658/snapshots/page-12-db4678f9d979.html",
+      "sha256": "db4678f9d97948112aea6af86b1f293f75ae406e5793ec3ed509e1bfbb84b54e",
+      "bytes": 84774
     }
   ],
   "reviewer_decisions": [],
@@ -577,8 +1166,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "An HTTP probe was transient; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -614,8 +1203,8 @@
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -632,14 +1221,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -647,28 +1236,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 023.09.01 202 (12 phone numbers found); Email: pa.chairman@elections.gov.lk (5 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -696,7 +1266,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "128.203.197.210",
+    "egress_ip": "132.196.37.160",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
