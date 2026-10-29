@@ -1,8 +1,8 @@
 # Website Audit: https://www.harti.gov.lk/
 
-- Completed: 2026-10-28 05:59
+- Completed: 2026-10-29 05:59
 - Overall result: ⚫ Level 0
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

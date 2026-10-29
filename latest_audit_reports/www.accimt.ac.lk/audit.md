@@ -1,8 +1,8 @@
 # Website Audit: https://www.accimt.ac.lk/
 
-- Completed: 2026-10-28 06:41
+- Completed: 2026-10-29 06:45
 - Overall result: ⚫ Level 0
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Detected unrelated marker: online casino
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ❌ | Detected unrelated marker: online casino |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://www.accimt.ac.lk/: Probe 2: The read operation timed out; https://www.accimt.ac.lk/: Probe 3: [Errno 101] Network is unreachable; http://www.accimt.ac.lk/: Probe 4: [Errno 101] Network is unreachable |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

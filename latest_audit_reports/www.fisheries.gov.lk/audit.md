@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-10-28 06:52
+- Completed: 2026-10-29 06:54
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N; Phone: 0 0 1-1.265 1.26 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
+Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N; Phone: 0 0 1 .709-1.528 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: at the \"China–South Asian Countries Marine Cooperation Forum,\" held on September 17 and 18 in the Qingdao West Coast N |
-| reachable_contacts | ✅ | Phone: 0 0 1-1.265 1.26 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 0 1 .709-1.528 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 27 October 2026 |
+| published_update_date | ✅ | Published published update date: 28 October 2026 |

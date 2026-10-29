@@ -1,8 +1,8 @@
 # Website Audit: https://botanicgardens.gov.lk/
 
-- Completed: 2026-10-28 06:15
+- Completed: 2026-10-29 06:15
 - Overall result: 🔴 Level 1
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

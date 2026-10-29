@@ -1,8 +1,8 @@
 # Website Audit: https://nationalsalt.lk/
 
-- Completed: 2026-10-28 06:33
+- Completed: 2026-10-29 06:34
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: GENERAL NUMBER 0112368974 EMAIL info@nationalsalt.lk WEBSITE www.nationalsalt.lk Thank you. Your message has been sent Error, email not sent Sent Now NATIONAL SALT LIMITED Copyright 2023 by Ceylon Cloud Technologies (Pvt) Ltd. Download $(document).ready(function() { // required elements var imgPopup = $('.img-popup'); var imgCont = $('.s'); var popupImage = $('.img-popup img'); var closeBtn = $('.close-btn'); // handle events imgCont.on('click', function() { var img_src = $(this).children('img').attr('src'); imgPopup.children('img').attr('src', img_src); // show a Download button in the popup when the card has a download link var dl = $(this).find('a[href*="notices/download"]').attr('href'); var popupDl = imgPopup.children('.popup-download'); if (dl) { popupDl.attr('href', dl).addClass('show'); } else { popupDl.removeClass('show'); } imgPopup.addClass('opened'); }); imgPopup.on('click', function() { imgPopup.removeClass('opened'); imgPopup.children('img').attr('src', ''); }); popupImage.on('click', function(e) { e.stopPropagation(); }); });; Phone: 02.2022 09.12. (2532 phone numbers found); Email: nslhomkt@gmail.com (7 email addresses found); Published named responsibility: director
+Published postal address: GENERAL NUMBER 0112368974 EMAIL info@nationalsalt.lk WEBSITE www.nationalsalt.lk Thank you. Your message has been sent Error, email not sent Sent Now NATIONAL SALT LIMITED Copyright 2023 by Ceylon Cloud Technologies (Pvt) Ltd. Download $(document).ready(function() { // required elements var imgPopup = $('.img-popup'); var imgCont = $('.s'); var popupImage = $('.img-popup img'); var closeBtn = $('.close-btn'); // handle events imgCont.on('click', function() { var img_src = $(this).children('img').attr('src'); imgPopup.children('img').attr('src', img_src); // show a Download button in the popup when the card has a download link var dl = $(this).find('a[href*="notices/download"]').attr('href'); var popupDl = imgPopup.children('.popup-download'); if (dl) { popupDl.attr('href', dl).addClass('show'); } else { popupDl.removeClass('show'); } imgPopup.addClass('opened'); }); imgPopup.on('click', function() { imgPopup.removeClass('opened'); imgPopup.children('img').attr('src', ''); }); popupImage.on('click', function(e) { e.stopPropagation(); }); });; Phone: 082 2132045 (2532 phone numbers found); Email: suyanthan.sme@gmail.com (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: GENERAL NUMBER 0112368974 EMAIL info@nationalsalt.lk WEBSITE www.nationalsalt.lk Thank you. Your message has been sent Error, email not sent Sent Now NATIONAL SALT LIMITED Copyright 2023 by Ceylon Cloud Technologies (Pvt) Ltd. Download $(document).ready(function() { // required elements var imgPopup = $('.img-popup'); var imgCont = $('.s'); var popupImage = $('.img-popup img'); var closeBtn = $('.close-btn'); // handle events imgCont.on('click', function() { var img_src = $(this).children('img').attr('src'); imgPopup.children('img').attr('src', img_src); // show a Download button in the popup when the card has a download link var dl = $(this).find('a[href*="notices/download"]').attr('href'); var popupDl = imgPopup.children('.popup-download'); if (dl) { popupDl.attr('href', dl).addClass('show'); } else { popupDl.removeClass('show'); } imgPopup.addClass('opened'); }); imgPopup.on('click', function() { imgPopup.removeClass('opened'); imgPopup.children('img').attr('src', ''); }); popupImage.on('click', function(e) { e.stopPropagation(); }); }); |
-| reachable_contacts | ✅ | Phone: 02.2022 09.12. (2532 phone numbers found); Email: nslhomkt@gmail.com (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 082 2132045 (2532 phone numbers found); Email: suyanthan.sme@gmail.com (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

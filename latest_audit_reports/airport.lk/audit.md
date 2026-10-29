@@ -1,8 +1,8 @@
 # Website Audit: https://airport.lk/
 
-- Completed: 2026-10-28 06:37
+- Completed: 2026-10-29 06:39
 - Overall result: ⚫ Level 0
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)
+Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011)
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -25,6 +25,6 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to g
 | hosting_configured | ❓ | No usable page was inspected |
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011) |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_browser_trusted | ❌ | Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011) |
+| tls_not_expired | ❓ | [Errno 104] Connection reset by peer |
+| tls_hostname_matches | ❓ | [Errno 104] Connection reset by peer |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.nysc.lk/
 
-- Completed: 2026-10-28 06:50
+- Completed: 2026-10-29 06:52
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Subscribe 2026 National Youth Council Designed By TEAM IT-NYSC | All rights reserved. var siteUrl = 'https://www.nysc.lk; Phone: 0714181264 (23 phone numbers found); Email: chairman@nysc.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Subscribe 2026 National Youth Council Designed By TEAM IT-NYSC | All rights reserved. var siteUrl = 'https://www.nysc.lk; Phone: 011 285 0986 (23 phone numbers found); Email: chairman@nysc.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Subscribe 2026 National Youth Council Designed By TEAM IT-NYSC \| All rights reserved. var siteUrl = 'https://www.nysc.lk |
-| reachable_contacts | ✅ | Phone: 0714181264 (23 phone numbers found); Email: chairman@nysc.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 285 0986 (23 phone numbers found); Email: chairman@nysc.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.lankasugar.lk/
 
-- Completed: 2026-10-28 06:32
+- Completed: 2026-10-29 06:33
 - Overall result: 🔴 Level 1
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found; No email evidence found; No passing named responsibility evidence found
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
+| postal_address | ✅ | Published postal address: No 327, Ekamuthu Mawatha, Thalangama North, Battaramulla Corporate Headquarters No 327, Ekamuthu Mawatha, Thalangama Nor |
 | reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

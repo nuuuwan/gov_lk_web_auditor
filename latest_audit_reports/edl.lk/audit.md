@@ -1,8 +1,8 @@
 # Website Audit: https://edl.lk/
 
-- Completed: 2026-10-28 06:14
+- Completed: 2026-10-29 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 132.196.37.160 (US, github-actions)
+- Vantage: 20.115.146.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Dehiwala, Mathugama 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: 0.3 142 105 21 (399 phone numbers found); Email: dgmwpn@ceb.lk (88 email addresses found); Published named responsibility: division
+Published postal address: 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka; Phone: 0 138 27.4-40.4 (383 phone numbers found); Email: agmdd1@ceb.lk (88 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Dehiwala, Mathugama 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0.3 142 105 21 (399 phone numbers found); Email: dgmwpn@ceb.lk (88 email addresses found) |
+| postal_address | ✅ | Published postal address: 50 Sir Chittampalam A. Gardiner Mawatha, Colombo 2, Sri Lanka |
+| reachable_contacts | ✅ | Phone: 0 138 27.4-40.4 (383 phone numbers found); Email: agmdd1@ceb.lk (88 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | fees_and_payment | ✅ | Published fees and payment: free of Charge |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ✅ | Published processing time: 30 days |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://www.ceb.lk/front_img/img_reports/1742277909Solar_Inverter_settings.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |
