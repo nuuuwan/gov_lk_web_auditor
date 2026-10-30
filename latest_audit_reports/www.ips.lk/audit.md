@@ -1,8 +1,8 @@
 # Website Audit: https://www.ips.lk/
 
-- Completed: 2026-10-29 06:20
+- Completed: 2026-10-30 06:22
 - Overall result: 🔴 Level 1
-- Vantage: 20.115.146.225 (US, github-actions)
+- Vantage: 48.214.53.80 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: 94-11-2143100 Visit Us 100/20, Independence Avenue, Colombo 07, Sri Lanka |
+| postal_address | ✅ | Published postal address: Agricultural Challenges and Leverage Opportunities – Dr Manoj Thibbotuwawa Read More 22 October 2026 Sri Lanka Advances  |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 

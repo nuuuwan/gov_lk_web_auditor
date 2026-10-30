@@ -1,8 +1,8 @@
 # Website Audit: https://bor.gov.lk/
 
-- Completed: 2026-10-29 06:40
-- Overall result: 🟠 Level 2
-- Vantage: 20.115.146.225 (US, github-actions)
+- Completed: 2026-10-30 06:41
+- Overall result: 🔴 Level 1
+- Vantage: 48.214.53.80 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the impact of educational backgrounds on substance addiction, stressing that counselling is not the conclusion of the re; Phone: 0192707879 (52 phone numbers found); Email: email@gmail.com (3 email addresses found); Published named responsibility: division
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: the impact of educational backgrounds on substance addiction, stressing that counselling is not the conclusion of the re |
-| reachable_contacts | ✅ | Phone: 0192707879 (52 phone numbers found); Email: email@gmail.com (3 email addresses found) |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: +94 112 883 891 (52 phone numbers found); Email: email@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 12 September 2006
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ✅ | Published processing time: 3 months |
-| downloadable_form | ✅ | Published downloadable form: https://bor.gov.lk/wp-content/uploads/2025/12/Application-Volunteer-english.pdf |
-| published_update_date | ❌ | Published published update date: 12 September 2006 |
+Not run because 🟠 Level 2 did not pass

@@ -1,8 +1,8 @@
 # Website Audit: https://www.mrds.gov.lk/
 
-- Completed: 2026-10-29 06:58
+- Completed: 2026-10-30 06:55
 - Overall result: ⚫ Level 0
-- Vantage: 20.115.146.225 (US, github-actions)
+- Vantage: 48.214.53.80 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 104] Connection reset by peer; [Errno 104] Connection reset by peer
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ No usable page was inspected; No usable page was inspected; No usable page was i
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| tls_not_expired | ❓ | [Errno 104] Connection reset by peer |
+| tls_hostname_matches | ❓ | [Errno 104] Connection reset by peer |
 
 ## 🟠 Level 2: ❓
 

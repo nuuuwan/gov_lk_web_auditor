@@ -1,8 +1,8 @@
 # Website Audit: https://lldf.gov.lk/
 
-- Completed: 2026-10-29 06:40
+- Completed: 2026-10-30 06:40
 - Overall result: 🟠 Level 2
-- Vantage: 20.115.146.225 (US, github-actions)
+- Vantage: 48.214.53.80 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: lldf1916@gmail.com Fax : 0112691261 Downloads Loan Application E Loan Application S Leaflet Sample Project Report E - Su; Phone: 0112687514 (5 phone numbers found); Email: lldf1916@gmail.com (2 email addresses found); Published named responsibility: department
+Published postal address: lldf1916@gmail.com Fax : 0112691261 Downloads Loan Application E Loan Application S Leaflet Sample Project Report E - Su; Phone: 0112691261 (5 phone numbers found); Email: lldf1916@gmail.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: lldf1916@gmail.com Fax : 0112691261 Downloads Loan Application E Loan Application S Leaflet Sample Project Report E - Su |
-| reachable_contacts | ✅ | Phone: 0112687514 (5 phone numbers found); Email: lldf1916@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112691261 (5 phone numbers found); Email: lldf1916@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing legal basis evidence 
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://lldf.gov.lk/wp-content/uploads/2025/07/Loan-Application-English.pdf |
-| published_update_date | ✅ | Published published update date: 2026-09-30 |
+| published_update_date | ✅ | Published published update date: 2026-10-25 |

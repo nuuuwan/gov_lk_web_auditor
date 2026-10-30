@@ -1,8 +1,8 @@
 # Website Audit: https://selacine.lk/
 
-- Completed: 2026-10-29 06:31
+- Completed: 2026-10-30 06:32
 - Overall result: 🔴 Level 1
-- Vantage: 20.115.146.225 (US, github-actions)
+- Vantage: 48.214.53.80 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -37,7 +37,7 @@ No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: 123 Main Street New York, NY 10001 Hours Monday—Friday: 9:00AM–5:00PM Saturday & Sunday: 11:00AM–3:00PM The Selacine tea |
+| postal_address | ✅ | Published postal address: will not be published. Required fields are marked * Comment * Name * Email * Website Save my name, email, and website in |
 | reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 
