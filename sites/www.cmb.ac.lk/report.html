@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Government website audit · http://www.cmb.ac.lk/</title>
+    <style>
+      :root {
+        --ink: #17201d;
+        --paper: #f4f6f2;
+        --line: #cbd2cc;
+        --green: #176b4d;
+        --red: #a33b2b;
+        --amber: #8a5a00;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: linear-gradient(120deg, #edf2ed, #f8f7f2);
+        color: var(--ink);
+        font:
+          15px/1.5 Georgia,
+          serif;
+      }
+      header,
+      main {
+        width: min(1100px, calc(100% - 32px));
+        margin: auto;
+      }
+      header {
+        padding: 56px 0 28px;
+        border-bottom: 2px solid var(--ink);
+      }
+      .eyebrow {
+        font:
+          700 12px/1.2 ui-monospace,
+          monospace;
+        text-transform: uppercase;
+      }
+      h1 {
+        margin: 8px 0;
+        font-size: clamp(28px, 5vw, 54px);
+        overflow-wrap: anywhere;
+        letter-spacing: 0;
+      }
+      .result {
+        display: flex;
+        gap: 32px;
+        flex-wrap: wrap;
+        padding: 24px 0;
+      }
+      .metric strong {
+        display: block;
+        font:
+          700 20px/1.3 ui-monospace,
+          monospace;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 12px 0 56px;
+        background: #fff;
+      }
+      th,
+      td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+        vertical-align: top;
+      }
+      th {
+        background: #e5e9e4;
+        font:
+          700 12px/1.2 ui-monospace,
+          monospace;
+        text-transform: uppercase;
+      }
+      .pass {
+        color: var(--green);
+      }
+      .fail {
+        color: var(--red);
+      }
+      .error,
+      .review {
+        color: var(--amber);
+      }
+      span {
+        font:
+          700 13px/1.3 ui-monospace,
+          monospace;
+      }
+      @media (max-width: 640px) {
+        header {
+          padding-top: 32px;
+        }
+        th:nth-child(1),
+        td:nth-child(1) {
+          display: none;
+        }
+        td {
+          padding: 10px 8px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="eyebrow">glwa · Website audit</div>
+      <h1>http://www.cmb.ac.lk/</h1>
+    </header>
+    <main>
+      <section class="result">
+        <div class="metric">Finding<strong>fail</strong></div>
+        <div class="metric">Confidence<strong>100%</strong></div>
+        <div class="metric">Completed<strong>2026-10-31T06:02:58.621226+05:30</strong></div>
+      </section>
+      <table>
+        <thead>
+          <tr>
+            <th>Level</th>
+            <th>Status</th>
+            <th>Reason</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Level 0</td><td><span class='pass'>pass</span></td><td>Baseline website grade</td></tr><tr><td>Level 1</td><td><span class='fail'>fail</span></td><td>Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for &#x27;www.cmb.ac.lk&#x27;. (_ssl.c:1011); TLS certificate does not match the hostname</td></tr><tr><td>Level 2</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 1 did not pass</td></tr><tr><td>Level 3</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 2 did not pass</td></tr><tr><td>Level 4</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 3 did not pass</td></tr><tr><td>Level 5</td><td><span class='inconclusive'>inconclusive</span></td><td>Not run because Level 4 did not pass</td></tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr>
+            <th>Check</th>
+            <th>Status</th>
+            <th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>dns</td><td><span class='pass'>pass</span></td><td>Public DNS resolved</td></tr><tr><td>domain_registration</td><td><span class='error'>error</span></td><td>Domain is absent from RDAP</td></tr><tr><td>tls_hostname</td><td><span class='fail'>fail</span></td><td>TLS certificate does not match the hostname</td></tr><tr><td>tls_browser_error</td><td><span class='fail'>fail</span></td><td>Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for &#x27;www.cmb.ac.lk&#x27;. (_ssl.c:1011)</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 2: HTTP 200 at https://cmb.ac.lk/</td></tr><tr><td>tls_browser_error</td><td><span class='fail'>fail</span></td><td>Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for &#x27;www.cmb.ac.lk&#x27;. (_ssl.c:1011)</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 4: HTTP 200 at https://cmb.ac.lk/</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 5: HTTP 200 at https://cmb.ac.lk/services</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 6: HTTP 200 at https://cmb.ac.lk/noc/microsoft-office</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 7: HTTP 200 at https://cmb.ac.lk/contact-us</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 8: HTTP 200 at https://cmb.ac.lk/administrative-financial-officers</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 9: HTTP 200 at https://cmb.ac.lk/emergency-contacts</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 10: HTTP 200 at https://cmb.ac.lk/marshal-office</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 11: HTTP 200 at https://cmb.ac.lk/course/postgraduate-programs-department-of-sociology</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 12: HTTP 200 at https://cmb.ac.lk/departments</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 13: HTTP 200 at https://cmb.ac.lk/alumni-association</td></tr><tr><td>http</td><td><span class='pass'>pass</span></td><td>Probe 14: HTTP 200 at https://cmb.ac.lk/staff</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0012738389</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0482904376</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0674906967</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0144984896</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0012738389</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0482904376</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0674906967</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0144984896</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0801193198</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: as the User ID. The University Microsoft Office 365 administrator will send you a new password to your university email </td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>fees_and_payment</td><td><span class='pass'>pass</span></td><td>Published fees and payment: free of charge</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94) 112 584 695 (</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94) 112 581 835 (</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0818517811</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 11 2583810 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 11 2586652 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 112586445 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 112 583 818 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0418829140</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94) 112 585 509 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 11 2586059 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: gayani@vco.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: vc@cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@legal.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: bursar@cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: registrar@cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: worksengineer@maintain.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: vc-office@cmb.ac.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: College House 94, Cumaratunga Munidasa Mw Colombo 03 Sri Lanka TELEPHONE (+94) 112 581 835 (+94) 112 584 695 (+94) 112 5</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dr@ga.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: bursar@cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sab@fgs.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: curator@cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: amani@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: manjula@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: kumar@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: db@med.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: db@pe.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ab@acc.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: arexaminations@med.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: logendra@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@sci.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dr@fgs.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ar@exam.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: uthpala@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ar@tec.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dilani@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: shifar@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sab@acc.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@ssa.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dr@fmf.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@law.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@arts.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: lalith@iim.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dcm@mo.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sab@sci.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: db@fmf.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sab@arts.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: intaudit@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: suratissa@zoology.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: registrar@cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@lib.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: subashinie@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dr@exam.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@nursing.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dr@ap.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@edu.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dr@ace.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@legal.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: ab@pay.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: kapila@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sar@nonaca.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: worksengineer@maintain.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: kavindu@admin.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: nadee@cwp.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sab@tec.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: himani.sab@acc.cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: sab@pe.cmb.ac.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 071-3991430 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2422222 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 071-3991444 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 078-7560850 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2434251</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2691111 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011- 4617575 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4055106</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 071-3920919 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2466660</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2433335 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 071-5834654 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2433333 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0112583107 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0112559906 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011 -2421111 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2667565</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-5717171 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2667565 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2691500 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-2677410 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 078-6794260 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 076-6911604 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 071-5371522 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 011-4055105</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 71-5371522 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 11 2583107 </td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: +94 112559906 </td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: mo@cmb.ac.lk</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: dcm@mo.cmb.ac.lk</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>processing_time</td><td><span class='pass'>pass</span></td><td>Published processing time: 24 Hours</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: </td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: Department of Sociology, Faculty of Arts, University of Colombo View map Categories Arts , Courses , Postgraduate Course</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>phone</td><td><span class='pass'>pass</span></td><td>Published phone: 0145149317</td></tr><tr><td>email</td><td><span class='pass'>pass</span></td><td>Published email: alumni.colombo@gmail.com</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>postal_address</td><td><span class='pass'>pass</span></td><td>Published postal address: University of Colombo, Sri Lanka</td></tr><tr><td>named_responsibility</td><td><span class='pass'>pass</span></td><td>Published named responsibility: director</td></tr><tr><td>required_documents</td><td><span class='pass'>pass</span></td><td>Published required documents: required documents</td></tr><tr><td>legal_basis</td><td><span class='pass'>pass</span></td><td>Published legal basis: regulations</td></tr><tr><td>downloadable_form</td><td><span class='pass'>pass</span></td><td>Published downloadable form: https://cmb.ac.lk/wp-content/uploads/day-care-application.pdf</td></tr><tr><td>page_text</td><td><span class='pass'>pass</span></td><td>Substantive page content: 23673 visible characters across 12 pages</td></tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
