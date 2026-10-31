@@ -1,8 +1,8 @@
 # Website Audit: https://www.cecb.lk/
 
-- Completed: 2026-10-30 05:57
+- Completed: 2026-10-31 05:52
 - Overall result: 🟠 Level 2
-- Vantage: 48.214.53.80 (US, github-actions)
+- Vantage: 158.23.19.35 (MX, github-actions)
 
 ## ⚫ Level 0: ✅
 

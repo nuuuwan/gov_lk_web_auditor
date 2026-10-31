@@ -1,8 +1,8 @@
 # Website Audit: http://www.vau.ac.lk/
 
-- Completed: 2026-10-30 06:11
+- Completed: 2026-10-31 06:05
 - Overall result: 🟠 Level 2
-- Vantage: 48.214.53.80 (US, github-actions)
+- Vantage: 158.23.19.35 (MX, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: by the Vice \u2013 Chancellor ,University of Vavuniya Inauguration Ceremony UOV \u2013 University of Vavuniya The Inaugu; Phone: 0069378401 (66 phone numbers found); Email: vc@vau.ac.lk (58 email addresses found); Published named responsibility: director
+Published postal address: by the Vice \u2013 Chancellor ,University of Vavuniya Inauguration Ceremony UOV \u2013 University of Vavuniya The Inaugu; Phone: 013 11.01.202 (66 phone numbers found); Email: vc@vau.ac.lk (58 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: by the Vice \u2013 Chancellor ,University of Vavuniya Inauguration Ceremony UOV \u2013 University of Vavuniya The Inaugu |
-| reachable_contacts | ✅ | Phone: 0069378401 (66 phone numbers found); Email: vc@vau.ac.lk (58 email addresses found) |
+| reachable_contacts | ✅ | Phone: 013 11.01.202 (66 phone numbers found); Email: vc@vau.ac.lk (58 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

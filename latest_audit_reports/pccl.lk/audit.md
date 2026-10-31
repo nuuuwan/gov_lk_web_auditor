@@ -1,8 +1,8 @@
 # Website Audit: https://pccl.lk/
 
-- Completed: 2026-10-30 06:36
+- Completed: 2026-10-31 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 48.214.53.80 (US, github-actions)
+- Vantage: 158.23.19.35 (MX, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the; Phone: +94112634634 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found); Published named responsibility: division
+Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the; Phone: +94 76 195 2077 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the |
-| reachable_contacts | ✅ | Phone: +94112634634 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 76 195 2077 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

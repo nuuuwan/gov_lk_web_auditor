@@ -1,8 +1,8 @@
 # Website Audit: https://lrh.health.gov.lk/
 
-- Completed: 2026-10-30 06:32
+- Completed: 2026-10-31 06:25
 - Overall result: 🔴 Level 1
-- Vantage: 48.214.53.80 (US, github-actions)
+- Vantage: 158.23.19.35 (MX, github-actions)
 
 ## ⚫ Level 0: ✅
 

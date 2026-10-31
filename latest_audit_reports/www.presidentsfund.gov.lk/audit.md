@@ -1,8 +1,8 @@
 # Website Audit: https://www.presidentsfund.gov.lk/
 
-- Completed: 2026-10-30 06:56
+- Completed: 2026-10-31 06:52
 - Overall result: 🟠 Level 2
-- Vantage: 48.214.53.80 (US, github-actions)
+- Vantage: 158.23.19.35 (MX, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: President's Fund Ground Floor, Chartered Building, Janadhipathi Mawatha, Colombo 01, Sri Lanka; Phone: 0 18-97.8-104.5 (20 phone numbers found); Email: prefund@presidentsoffice.lk; Published named responsibility: division
+Published postal address: President's Fund Ground Floor, Chartered Building, Janadhipathi Mawatha, Colombo 01, Sri Lanka; Phone: +94) 11 4 354 250 (20 phone numbers found); Email: prefund@presidentsoffice.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: President's Fund Ground Floor, Chartered Building, Janadhipathi Mawatha, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0 18-97.8-104.5 (20 phone numbers found); Email: prefund@presidentsoffice.lk |
+| reachable_contacts | ✅ | Phone: +94) 11 4 354 250 (20 phone numbers found); Email: prefund@presidentsoffice.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

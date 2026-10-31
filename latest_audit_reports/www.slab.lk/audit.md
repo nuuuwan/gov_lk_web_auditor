@@ -1,8 +1,8 @@
 # Website Audit: https://www.slab.lk/
 
-- Completed: 2026-10-30 06:47
+- Completed: 2026-10-31 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 48.214.53.80 (US, github-actions)
+- Vantage: 158.23.19.35 (MX, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.44, Dedicated Economic Centre, Kirimandala Mawatha, Narahenpita, Sri Lanka Phone: +94 11 2689157 Email: [email protec; Phone: 0694482744 (39 phone numbers found); Email: info@slab.lk; Published named responsibility: director
+Published postal address: No.44, Dedicated Economic Centre, Kirimandala Mawatha, Narahenpita, Sri Lanka Phone: +94 11 2689157 Email: [email protec; Phone: +94-11-2689157 (39 phone numbers found); Email: info@slab.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.44, Dedicated Economic Centre, Kirimandala Mawatha, Narahenpita, Sri Lanka Phone: +94 11 2689157 Email: [email protec |
-| reachable_contacts | ✅ | Phone: 0694482744 (39 phone numbers found); Email: info@slab.lk |
+| reachable_contacts | ✅ | Phone: +94-11-2689157 (39 phone numbers found); Email: info@slab.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing fees and payment evid
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 28 October 2026 |
+| published_update_date | ✅ | Published published update date: 30 October 2026 |

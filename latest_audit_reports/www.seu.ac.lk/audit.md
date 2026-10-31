@@ -1,8 +1,8 @@
 # Website Audit: http://www.seu.ac.lk/
 
-- Completed: 2026-10-30 06:09
+- Completed: 2026-10-31 06:04
 - Overall result: 🟠 Level 2
-- Vantage: 48.214.53.80 (US, github-actions)
+- Vantage: 158.23.19.35 (MX, github-actions)
 
 ## ⚫ Level 0: ✅
 
