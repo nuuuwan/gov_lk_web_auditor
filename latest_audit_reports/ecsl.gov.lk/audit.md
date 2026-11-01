@@ -1,8 +1,8 @@
 # Website Audit: https://ecsl.gov.lk/
 
-- Completed: 2026-10-31 06:27
+- Completed: 2026-11-01 06:34
 - Overall result: 🔴 Level 1
-- Vantage: 158.23.19.35 (MX, github-actions)
+- Vantage: 20.231.101.42 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94) 112588811; Email: registrar@ecsl.gov.lk |
+| reachable_contacts | ✅ | Phone: +94) 112588811 (4 phone numbers found); Email: registrar@ecsl.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

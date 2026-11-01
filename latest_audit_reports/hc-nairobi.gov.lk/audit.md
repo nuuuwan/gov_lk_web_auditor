@@ -1,8 +1,8 @@
 # Website Audit: https://hc-nairobi.gov.lk/
 
-- Completed: 2026-10-31 06:24
+- Completed: 2026-11-01 06:31
 - Overall result: 🟠 Level 2
-- Vantage: 158.23.19.35 (MX, github-actions)
+- Vantage: 20.231.101.42 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_surname_required\":\"Surname is required\",\"subject_placeholder\":\"Enter subject\",\"choose_serv; Phone: 0163985648 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"validation_surname_required\":\"Surname is required\",\"subject_placeholder\":\"Enter subject\",\"choose_serv; Phone: 0080205189 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 2\",\"validation_surname_required\":\"Surname is required\",\"subject_placeholder\":\"Enter subject\",\"choose_serv |
-| reachable_contacts | ✅ | Phone: 0163985648 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0080205189 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

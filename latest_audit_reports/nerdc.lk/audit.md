@@ -1,8 +1,8 @@
 # Website Audit: https://nerdc.lk/
 
-- Completed: 2026-10-31 06:37
+- Completed: 2026-11-01 06:45
 - Overall result: 🟠 Level 2
-- Vantage: 158.23.19.35 (MX, github-actions)
+- Vantage: 20.231.101.42 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid ema; Phone: 0.59 12 7 8.41 8. (20 phone numbers found); Email: nerdcentre@nerdc.lk; Published named responsibility: director
+Published postal address: already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid ema; Phone: 0 10 10 10-4.47 (20 phone numbers found); Email: nerdcentre@nerdc.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: already exists!","es_unexpected_error_notice":"Oops.. Unexpected error occurred.","es_invalid_email_notice":"Invalid ema |
-| reachable_contacts | ✅ | Phone: 0.59 12 7 8.41 8. (20 phone numbers found); Email: nerdcentre@nerdc.lk |
+| reachable_contacts | ✅ | Phone: 0 10 10 10-4.47 (20 phone numbers found); Email: nerdcentre@nerdc.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

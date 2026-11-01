@@ -1,8 +1,8 @@
 # Website Audit: https://analyst.gov.lk/
 
-- Completed: 2026-10-31 06:29
+- Completed: 2026-11-01 06:37
 - Overall result: 🟠 Level 2
-- Vantage: 158.23.19.35 (MX, github-actions)
+- Vantage: 20.231.101.42 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
