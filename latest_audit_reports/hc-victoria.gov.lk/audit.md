@@ -1,8 +1,8 @@
 # Website Audit: https://hc-victoria.gov.lk/
 
-- Completed: 2026-11-01 06:31
+- Completed: 2026-11-02 06:26
 - Overall result: 🟠 Level 2
-- Vantage: 20.231.101.42 (US, github-actions)
+- Vantage: 20.55.223.182 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition; Phone: +2482813499 (4 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
+Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition; Phone: +2482813499 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: in Sri Lanka\",\"clean_form_button\":\"Clean Form\",\"name\":\"Name\",\"cancel_button\":\"Cancel\",\"terms_and_condition |
-| reachable_contacts | ✅ | Phone: +2482813499 (4 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +2482813499 (4 phone numbers found); Email: slhc.seychelles@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

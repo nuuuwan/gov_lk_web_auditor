@@ -1,24 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "50e60005-baa6-4539-b3e8-f384a070e506",
+  "audit_id": "d1c75b3b-8c5a-47c4-9d86-462b07ce4750",
   "url": "https://mepa.gov.lk/",
   "normalized_url": "https://mepa.gov.lk/",
-  "started_at": "2026-11-01T06:17:53.750303+05:30",
-  "completed_at": "2026-11-01T06:18:10.892492+05:30",
+  "started_at": "2026-11-02T06:13:19.936132+05:30",
+  "completed_at": "2026-11-02T06:13:26.062800+05:30",
   "result": {
-    "status": "pass",
+    "status": "fail",
     "confidence": 1.0,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mepa.gov.lk'. (_ssl.c:1011)",
+      "tls_hostname_matches: TLS certificate does not match the hostname"
     ]
   },
   "evidence": [
@@ -26,1319 +18,52 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-01T06:17:54.108067+05:30"
+      "observed_at": "2026-11-02T06:13:20.231014+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-01T06:17:54.108097+05:30"
+      "observed_at": "2026-11-02T06:13:20.231035+05:30"
     },
     {
-      "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-01T06:17:54.378190+05:30"
+      "check": "tls_hostname",
+      "status": "fail",
+      "detail": "TLS certificate does not match the hostname",
+      "observed_at": "2026-11-02T06:13:20.487657+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://mepa.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mepa.gov.lk'. (_ssl.c:1011)",
       "source": "https://mepa.gov.lk/",
-      "observed_at": "2026-11-01T06:18:09.887313+05:30"
+      "observed_at": "2026-11-02T06:13:26.036378+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://mepa.gov.lk/",
+      "detail": "Probe 2: HTTP 200 at http://mepa.gov.lk/404.html",
       "source": "http://mepa.gov.lk/",
-      "observed_at": "2026-11-01T06:18:09.887336+05:30"
+      "observed_at": "2026-11-02T06:13:26.036399+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://mepa.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mepa.gov.lk'. (_ssl.c:1011)",
       "source": "https://mepa.gov.lk/",
-      "observed_at": "2026-11-01T06:18:09.887341+05:30"
+      "observed_at": "2026-11-02T06:13:26.036404+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://mepa.gov.lk/",
+      "detail": "Probe 4: HTTP 200 at http://mepa.gov.lk/404.html",
       "source": "http://mepa.gov.lk/",
-      "observed_at": "2026-11-01T06:18:09.887345+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://mepa.gov.lk/ship-services/",
-      "source": "https://mepa.gov.lk/ship-services/",
-      "observed_at": "2026-11-01T06:18:09.887348+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://mepa.gov.lk/head-office/",
-      "source": "https://mepa.gov.lk/head-office/",
-      "observed_at": "2026-11-01T06:18:09.887351+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://mepa.gov.lk/regional-office/",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "observed_at": "2026-11-01T06:18:09.887354+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://mepa.gov.lk/our-services/",
-      "source": "https://mepa.gov.lk/our-services/",
-      "observed_at": "2026-11-01T06:18:09.887357+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "source": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "observed_at": "2026-11-01T06:18:09.887360+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "source": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "observed_at": "2026-11-01T06:18:09.887363+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://mepa.gov.lk/services/environmental-approvals/",
-      "source": "https://mepa.gov.lk/services/environmental-approvals/",
-      "observed_at": "2026-11-01T06:18:09.887366+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://mepa.gov.lk/services/world-oceans-day/",
-      "source": "https://mepa.gov.lk/services/world-oceans-day/",
-      "observed_at": "2026-11-01T06:18:09.887369+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://mepa.gov.lk/services/ocean-watch/",
-      "source": "https://mepa.gov.lk/services/ocean-watch/",
-      "observed_at": "2026-11-01T06:18:09.887372+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://mepa.gov.lk/services/laboratory/",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "observed_at": "2026-11-01T06:18:09.887374+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/ship-services/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/ship-services/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/ship-services/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/ship-services/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/ship-services/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554682 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554682 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554908 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554908 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554318 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554318 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554683 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554683 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554634 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554634 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554624 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554624 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554562 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554562 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554534 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554534 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554373 (",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554373 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554006",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554006"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554247 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554247 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554389 ",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "0112 554389 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: pushpa@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "pushpa@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dinishiya@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "dinishiya@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: bandara@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "bandara@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: semini@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "semini@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sumeda@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "sumeda@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: neil@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "neil@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nilantha@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "nilantha@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prabath@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "prabath@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mohan@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "mohan@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: danushka@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "danushka@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: achini@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "achini@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/head-office/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 031 2228606 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "031 2228606 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 065 2224979 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "065 2224979 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 023 2251758 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "023 2251758 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 034 2221790 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "034 2221790 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091 2233547 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "091 2233547 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 070 2559088 (",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "070 2559088 ("
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 021 2212663 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "021 2212663 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091 2121077 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "091 2121077 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 067 2265416 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "067 2265416 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2554078 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "011 2554078 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 041-2234250 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "041-2234250 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 2391212 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "011 2391212 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 026 2050805 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "026 2050805 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 032 2222865 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "032 2222865 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 047 2256372 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "047 2256372 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 021 2282101 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "021 2282101 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 554652 ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "0112 554652 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": ""
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: siva@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "siva@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wijerathna@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "wijerathna@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: madhura@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "madhura@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: cmbmepa@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "cmbmepa@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wrsmepasl@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "wrsmepasl@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sasi@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "sasi@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wrs@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "wrs@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: amali@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "amali@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kasun@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "kasun@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: aashifa@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "aashifa@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: shripathy@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "shripathy@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: prasath@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "prasath@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kesavan@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "kesavan@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eranthi@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "eranthi@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: samarasekara@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "samarasekara@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sandun@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "sandun@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/regional-office/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/our-services/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/our-services/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/our-services/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/our-services/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/our-services/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: Rs. 51,000",
-      "source": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "data": {
-        "value": "Rs. 51,000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/services/environmental-approvals/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/services/environmental-approvals/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/services/environmental-approvals/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: environmental risks, clearance will be granted. The approval may include specific conditions that the applicant must ful",
-      "source": "https://mepa.gov.lk/services/environmental-approvals/",
-      "data": {
-        "value": "environmental risks, clearance will be granted. The approval may include specific conditions that the applicant must ful"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/services/environmental-approvals/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/services/environmental-approvals/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/services/world-oceans-day/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/services/world-oceans-day/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/services/world-oceans-day/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/services/world-oceans-day/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://mepa.gov.lk/services/world-oceans-day/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 20Day",
-      "source": "https://mepa.gov.lk/services/world-oceans-day/",
-      "data": {
-        "value": "20Day"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/services/ocean-watch/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/services/ocean-watch/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/services/ocean-watch/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: these challenges, an effective mechanism is essential to streamline pollution prevention efforts. The Marine Environment",
-      "source": "https://mepa.gov.lk/services/ocean-watch/",
-      "data": {
-        "value": "these challenges, an effective mechanism is essential to streamline pollution prevention efforts. The Marine Environment"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/services/ocean-watch/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://mepa.gov.lk/services/ocean-watch/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 091 2121077 ",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "data": {
-        "value": "091 2121077 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 002-345-6789 ",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "data": {
-        "value": "002-345-6789 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2554373 ",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "data": {
-        "value": "+94 11 2554373 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@mepa.gov.lk",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "data": {
-        "value": "info@mepa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: mepalab@gmail.com",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "data": {
-        "value": "mepalab@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://mepa.gov.lk/services/laboratory/",
-      "data": {
-        "value": "regulations"
-      }
+      "observed_at": "2026-11-02T06:13:26.036408+05:30"
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 6963 visible characters across 14 pages",
+      "detail": "Substantive page content: 5841 visible characters across 2 pages",
       "source": "https://mepa.gov.lk/"
     }
   ],
@@ -1359,226 +84,64 @@
     },
     {
       "host": "mepa.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-16T15:04:20+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "hostname_error",
+      "expires_at": "2027-02-06T05:29:59+05:30",
+      "hostname_valid": false,
+      "detail": "TLS certificate does not match the hostname"
     },
     {
       "url": "https://mepa.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 562,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mepa.gov.lk'. (_ssl.c:1011)"
     },
     {
       "url": "http://mepa.gov.lk/",
       "status_code": 200,
-      "final_url": "https://mepa.gov.lk/",
+      "final_url": "http://mepa.gov.lk/404.html",
       "redirects": [
-        "https://mepa.gov.lk/"
+        "http://mepa.gov.lk/404.html"
       ],
-      "elapsed_ms": 530,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 19,
+      "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://mepa.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 512,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mepa.gov.lk'. (_ssl.c:1011)"
     },
     {
       "url": "http://mepa.gov.lk/",
       "status_code": 200,
-      "final_url": "https://mepa.gov.lk/",
+      "final_url": "http://mepa.gov.lk/404.html",
       "redirects": [
-        "https://mepa.gov.lk/"
+        "http://mepa.gov.lk/404.html"
       ],
-      "elapsed_ms": 509,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/ship-services/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/ship-services/",
-      "redirects": [],
-      "elapsed_ms": 472,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/head-office/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/head-office/",
-      "redirects": [],
-      "elapsed_ms": 314,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/regional-office/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/regional-office/",
-      "redirects": [],
-      "elapsed_ms": 265,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/our-services/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/our-services/",
-      "redirects": [],
-      "elapsed_ms": 212,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "redirects": [],
-      "elapsed_ms": 250,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "redirects": [],
-      "elapsed_ms": 222,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/services/environmental-approvals/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/services/environmental-approvals/",
-      "redirects": [],
-      "elapsed_ms": 504,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/services/world-oceans-day/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/services/world-oceans-day/",
-      "redirects": [],
-      "elapsed_ms": 463,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/services/ocean-watch/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/services/ocean-watch/",
-      "redirects": [],
-      "elapsed_ms": 491,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://mepa.gov.lk/services/laboratory/",
-      "status_code": 200,
-      "final_url": "https://mepa.gov.lk/services/laboratory/",
-      "redirects": [],
-      "elapsed_ms": 230,
-      "content_type": "text/html; charset=UTF-8",
+      "elapsed_ms": 278,
+      "content_type": "text/html",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://mepa.gov.lk/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-01-8b17e621daaa.html",
-      "sha256": "8b17e621daaa9122f197e0c54f5d69f44fc2e1c46573f40d400c16efcbb4e00b",
-      "bytes": 258713
+      "url": "http://mepa.gov.lk/404.html",
+      "path": "audit.output/mepa.gov.lk/20261102.0613/snapshots/page-01-bccb23d41c2c.html",
+      "sha256": "bccb23d41c2cc69cf0c7d22c4314ca8181a513c6999b73e45307792830f4e482",
+      "bytes": 11816
     },
     {
-      "url": "https://mepa.gov.lk/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-02-8b17e621daaa.html",
-      "sha256": "8b17e621daaa9122f197e0c54f5d69f44fc2e1c46573f40d400c16efcbb4e00b",
-      "bytes": 258713
-    },
-    {
-      "url": "https://mepa.gov.lk/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-03-8b17e621daaa.html",
-      "sha256": "8b17e621daaa9122f197e0c54f5d69f44fc2e1c46573f40d400c16efcbb4e00b",
-      "bytes": 258713
-    },
-    {
-      "url": "https://mepa.gov.lk/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-04-8b17e621daaa.html",
-      "sha256": "8b17e621daaa9122f197e0c54f5d69f44fc2e1c46573f40d400c16efcbb4e00b",
-      "bytes": 258713
-    },
-    {
-      "url": "https://mepa.gov.lk/ship-services/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-05-e8df0b0c1278.html",
-      "sha256": "e8df0b0c1278211031cad8afc1476d77a349d36de8d11b6a484579ea6f2492e0",
-      "bytes": 172961
-    },
-    {
-      "url": "https://mepa.gov.lk/head-office/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-06-6dc317bbb3ea.html",
-      "sha256": "6dc317bbb3eaf3fcd787415dff38c98e48422bdc06d157018530915ab4b74825",
-      "bytes": 202559
-    },
-    {
-      "url": "https://mepa.gov.lk/regional-office/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-07-03465c88183a.html",
-      "sha256": "03465c88183a7237ef8a873edb1f78d17aa9859a757b5dd199b7785177740a9d",
-      "bytes": 236051
-    },
-    {
-      "url": "https://mepa.gov.lk/our-services/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-08-701ee094b8a9.html",
-      "sha256": "701ee094b8a9ce9b1e201b36c28177cd90b3d20b38f74f21aded84fc5be7edc8",
-      "bytes": 189351
-    },
-    {
-      "url": "https://mepa.gov.lk/services/oil-spill-contingency-plan-approvals/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-09-999d80a5309e.html",
-      "sha256": "999d80a5309e95d3d1cbe0f5876293080030189028e807455eaee21532c13a72",
-      "bytes": 193429
-    },
-    {
-      "url": "https://mepa.gov.lk/services/biofouling-management-glofouling-partnership-project/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-10-c063accb6cfb.html",
-      "sha256": "c063accb6cfb770da2a8c9b3bda8f6d118307c22f6b88b1ba7d910c50d5acccf",
-      "bytes": 195981
-    },
-    {
-      "url": "https://mepa.gov.lk/services/environmental-approvals/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-11-6e24698beb5f.html",
-      "sha256": "6e24698beb5f4b6a81b3997770f95f883f6f6e099eccb51bdc0345d998d30fa7",
-      "bytes": 204007
-    },
-    {
-      "url": "https://mepa.gov.lk/services/world-oceans-day/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-12-5ca6d44080c9.html",
-      "sha256": "5ca6d44080c97427cf6ad226adcf7e28bc582c00fc22fb379b283a7dee5a78d0",
-      "bytes": 193873
-    },
-    {
-      "url": "https://mepa.gov.lk/services/ocean-watch/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-13-5a2b7795bd08.html",
-      "sha256": "5a2b7795bd08a0706dd95aea7ef91ba72d82b85fb772729eaf445cd305213bf3",
-      "bytes": 197016
-    },
-    {
-      "url": "https://mepa.gov.lk/services/laboratory/",
-      "path": "audit.output/mepa.gov.lk/20261101.0617/snapshots/page-14-0340552c9dc5.html",
-      "sha256": "0340552c9dc5b0a2454986efdd804584dd9638f0735a221827a008c701c1efff",
-      "bytes": 190593
+      "url": "http://mepa.gov.lk/404.html",
+      "path": "audit.output/mepa.gov.lk/20261102.0613/snapshots/page-02-bccb23d41c2c.html",
+      "sha256": "bccb23d41c2cc69cf0c7d22c4314ca8181a513c6999b73e45307792830f4e482",
+      "bytes": 11816
     }
   ],
   "reviewer_decisions": [],
@@ -1594,8 +157,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mepa.gov.lk'. (_ssl.c:1011); TLS certificate does not match the hostname",
       "executed": true,
       "checks": [
         {
@@ -1643,100 +206,38 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'mepa.gov.lk'. (_ssl.c:1011)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS expiry check did not run"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "fail",
+          "reason": "TLS certificate does not match the hostname"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: environmental risks, clearance will be granted. The approval may include specific conditions that the applicant must ful; Phone: +94 11 2554373 (31 phone numbers found); Email: info@mepa.gov.lk (30 email addresses found); Published named responsibility: department",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: environmental risks, clearance will be granted. The approval may include specific conditions that the applicant must ful"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 11 2554373 (31 phone numbers found); Email: info@mepa.gov.lk (30 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: Rs. 51,000"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: circular"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published processing time: 20Day"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1756,7 +257,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.231.101.42",
+    "egress_ip": "20.55.223.182",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

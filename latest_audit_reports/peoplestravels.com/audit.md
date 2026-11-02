@@ -1,8 +1,8 @@
 # Website Audit: https://peoplestravels.com/
 
-- Completed: 2026-11-01 06:19
-- Overall result: ⚫ Level 0
-- Vantage: 20.231.101.42 (US, github-actions)
+- Completed: 2026-11-02 06:15
+- Overall result: 🔴 Level 1
+- Vantage: 20.55.223.182 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,21 +10,39 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ✅
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Every repeated HTTP probe failed: [429, 429, 429, 429]
+Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 102 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 102 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 102 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 102 visible characters across 4 pages; below substance threshold 200 |
-| http_available | ❌ | Every repeated HTTP probe failed: [429, 429, 429, 429] |
-| redirect_related | ❓ | No redirect result was available |
-| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| domain_not_parked | ✅ | No parked-domain marker found |
+| site_not_defaced | ✅ | No defacement marker found |
+| content_relevant | ✅ | No unrelated-content marker found |
+| hosting_configured | ✅ | No generic-hosting marker found |
+| http_available | ✅ | HTTP probes did not all fail |
+| redirect_related | ✅ | No unrelated redirect found |
+| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+No passing named responsibility evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| postal_address | ✅ | Published postal address: and choose a password to book an appointment.","i18n_appt_required_fields_guest":"Please fill in all \"Information\" fie |
+| reachable_contacts | ✅ | Phone: 0000000000 (22 phone numbers found); Email: ptravel@peoplesbank.lk (2 email addresses found) |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

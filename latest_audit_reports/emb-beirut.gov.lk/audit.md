@@ -1,8 +1,8 @@
 # Website Audit: https://emb-beirut.gov.lk/
 
-- Completed: 2026-11-01 06:30
+- Completed: 2026-11-02 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.231.101.42 (US, github-actions)
+- Vantage: 20.55.223.182 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a valid email address\",\"copy_button\":\"Copy\",\"appointment_detail; Phone: 0156973230 (8 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a valid email address\",\"copy_button\":\"Copy\",\"appointment_detail; Phone: 00 961 54572 (8 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a valid email address\",\"copy_button\":\"Copy\",\"appointment_detail |
-| reachable_contacts | ✅ | Phone: 0156973230 (8 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 00 961 54572 (8 phone numbers found); Email: slemb.beirut@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

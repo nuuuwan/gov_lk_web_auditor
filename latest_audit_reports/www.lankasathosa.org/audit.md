@@ -1,8 +1,8 @@
 # Website Audit: http://www.lankasathosa.org/
 
-- Completed: 2026-11-01 06:49
+- Completed: 2026-11-02 06:43
 - Overall result: ⚫ Level 0
-- Vantage: 20.231.101.42 (US, github-actions)
+- Vantage: 20.55.223.182 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,20 +14,20 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011); [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011)
+Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200; An HTTP probe was transient; [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1011); [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1011)
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 100 visible characters across 2 pages; below substance threshold 200 |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 0 visible characters across 2 pages; below substance threshold 200 |
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011) |
-| tls_hostname_matches | ❓ | [SSL: WRONG_VERSION_NUMBER] wrong version number (_ssl.c:1011) |
+| tls_not_expired | ❓ | [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1011) |
+| tls_hostname_matches | ❓ | [SSL: TLSV1_UNRECOGNIZED_NAME] tlsv1 unrecognized name (_ssl.c:1011) |
 
 ## 🟠 Level 2: ❓
 

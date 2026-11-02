@@ -1,8 +1,8 @@
 # Website Audit: https://rep-ramallah.gov.lk/
 
-- Completed: 2026-11-01 06:30
+- Completed: 2026-11-02 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.231.101.42 (US, github-actions)
+- Vantage: 20.55.223.182 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Villa Azzam Al-Ajjoully H.E. Mahinda Rajapaksa Road, Ain Arik Crossing/ Beitunia Ramallah & Al-Bireh Governorate Palesti; Phone: 00972-2-2904 (10 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
+Published postal address: Villa Azzam Al-Ajjoully H.E. Mahinda Rajapaksa Road, Ain Arik Crossing/ Beitunia Ramallah & Al-Bireh Governorate Palesti; Phone: 00972-2-2902 (10 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Villa Azzam Al-Ajjoully H.E. Mahinda Rajapaksa Road, Ain Arik Crossing/ Beitunia Ramallah & Al-Bireh Governorate Palesti |
-| reachable_contacts | ✅ | Phone: 00972-2-2904 (10 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 00972-2-2902 (10 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
