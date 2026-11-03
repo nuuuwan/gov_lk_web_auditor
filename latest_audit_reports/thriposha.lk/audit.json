@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "88b3b5b5-4183-4b0f-81f2-9cef04209f24",
+  "audit_id": "9aefbeca-4ed4-4637-9430-3517ef1a9427",
   "url": "https://thriposha.lk/",
   "normalized_url": "https://thriposha.lk/",
-  "started_at": "2026-11-02T06:44:25.626639+05:30",
-  "completed_at": "2026-11-02T06:44:29.307863+05:30",
+  "started_at": "2026-11-03T06:43:07.242117+05:30",
+  "completed_at": "2026-11-03T06:43:25.361226+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [500, 500, 500, 500]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,53 +26,636 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-02T06:44:26.110359+05:30"
+      "observed_at": "2026-11-03T06:43:07.829675+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-02T06:44:26.110384+05:30"
+      "observed_at": "2026-11-03T06:43:07.829696+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-02T06:44:26.128791+05:30"
+      "observed_at": "2026-11-03T06:43:07.839612+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 500 at https://thriposha.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://thriposha.lk/",
       "source": "https://thriposha.lk/",
-      "observed_at": "2026-11-02T06:44:29.307690+05:30"
+      "observed_at": "2026-11-03T06:43:25.189769+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 500 at http://thriposha.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://thriposha.lk/",
       "source": "http://thriposha.lk/",
-      "observed_at": "2026-11-02T06:44:29.307705+05:30"
+      "observed_at": "2026-11-03T06:43:25.189786+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 500 at https://thriposha.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://thriposha.lk/",
       "source": "https://thriposha.lk/",
-      "observed_at": "2026-11-02T06:44:29.307711+05:30"
+      "observed_at": "2026-11-03T06:43:25.189790+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 500 at http://thriposha.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://thriposha.lk/",
       "source": "http://thriposha.lk/",
-      "observed_at": "2026-11-02T06:44:29.307715+05:30"
+      "observed_at": "2026-11-03T06:43:25.189793+05:30"
     },
     {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
-      "observed_at": "2026-11-02T06:44:29.307727+05:30"
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://thriposha.lk/Thriposha/index.php",
+      "source": "https://thriposha.lk/Thriposha/index.php",
+      "observed_at": "2026-11-03T06:43:25.189796+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://thriposha.lk/suposha/index.php",
+      "source": "https://thriposha.lk/suposha/index.php",
+      "observed_at": "2026-11-03T06:43:25.189798+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://thriposha.lk/Thriposha/our-services.php",
+      "source": "https://thriposha.lk/Thriposha/our-services.php",
+      "observed_at": "2026-11-03T06:43:25.189801+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://thriposha.lk/Thriposha/contact.php",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "observed_at": "2026-11-03T06:43:25.189804+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://thriposha.lk/Thriposha/about.php",
+      "source": "https://thriposha.lk/Thriposha/about.php",
+      "observed_at": "2026-11-03T06:43:25.189806+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://thriposha.lk/Thriposha/directors.php",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "observed_at": "2026-11-03T06:43:25.189809+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://thriposha.lk/Thriposha/management.php",
+      "source": "https://thriposha.lk/Thriposha/management.php",
+      "observed_at": "2026-11-03T06:43:25.189812+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://thriposha.lk/Thriposha/certificates.php",
+      "source": "https://thriposha.lk/Thriposha/certificates.php",
+      "observed_at": "2026-11-03T06:43:25.189814+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://thriposha.lk/Thriposha/news.php",
+      "source": "https://thriposha.lk/Thriposha/news.php",
+      "observed_at": "2026-11-03T06:43:25.189817+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://thriposha.lk/Thriposha/products.php",
+      "source": "https://thriposha.lk/Thriposha/products.php",
+      "observed_at": "2026-11-03T06:43:25.189820+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/index.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/index.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/index.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/index.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/index.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://thriposha.lk/Thriposha/index.php",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 236 588 ",
+      "source": "https://thriposha.lk/suposha/index.php",
+      "data": {
+        "value": "0112 236 588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 6174959400326",
+      "source": "https://thriposha.lk/suposha/index.php",
+      "data": {
+        "value": "6174959400326"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 237 418 ",
+      "source": "https://thriposha.lk/suposha/index.php",
+      "data": {
+        "value": "0112 237 418 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/suposha/index.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/our-services.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/our-services.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/our-services.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/our-services.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/our-services.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://thriposha.lk/Thriposha/our-services.php",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 223 7418 ",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "011 223 7418 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 223 6588 ",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "011 223 6588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 224 1459 ",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "011 224 1459 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "0112236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/contact.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/about.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/about.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/about.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/about.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/about.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2236588 ",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "data": {
+        "value": "+94 11 2236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: you as the Chairman of Sri Lanka Thriposha Ltd. As we embark on our journey, I am filled with enthusiasm and commitment ",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "data": {
+        "value": "you as the Chairman of Sri Lanka Thriposha Ltd. As we embark on our journey, I am filled with enthusiasm and commitment "
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/directors.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/management.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/management.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/management.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/management.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/management.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/certificates.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/certificates.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/certificates.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/certificates.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/certificates.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/news.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/news.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/news.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/news.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/news.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 - 236588",
+      "source": "https://thriposha.lk/Thriposha/products.php",
+      "data": {
+        "value": "0112 - 236588"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 23055873407",
+      "source": "https://thriposha.lk/Thriposha/products.php",
+      "data": {
+        "value": "23055873407"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112236588 ",
+      "source": "https://thriposha.lk/Thriposha/products.php",
+      "data": {
+        "value": "0112236588 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +8801682648101",
+      "source": "https://thriposha.lk/Thriposha/products.php",
+      "data": {
+        "value": "+8801682648101"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://thriposha.lk/Thriposha/products.php",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 9459 visible characters across 14 pages",
+      "source": "https://thriposha.lk/"
     }
   ],
   "observations": [
@@ -93,42 +685,221 @@
     },
     {
       "url": "https://thriposha.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://thriposha.lk/",
       "redirects": [],
-      "elapsed_ms": 186,
+      "elapsed_ms": 246,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://thriposha.lk/",
-      "status_code": 500,
-      "final_url": "http://thriposha.lk/",
-      "redirects": [],
-      "elapsed_ms": 189,
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/",
+      "redirects": [
+        "https://thriposha.lk/"
+      ],
+      "elapsed_ms": 237,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://thriposha.lk/",
-      "status_code": 500,
+      "status_code": 200,
       "final_url": "https://thriposha.lk/",
       "redirects": [],
-      "elapsed_ms": 259,
+      "elapsed_ms": 239,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://thriposha.lk/",
-      "status_code": 500,
-      "final_url": "http://thriposha.lk/",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/",
+      "redirects": [
+        "https://thriposha.lk/"
+      ],
+      "elapsed_ms": 249,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/index.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/index.php",
       "redirects": [],
-      "elapsed_ms": 171,
+      "elapsed_ms": 843,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/suposha/index.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/suposha/index.php",
+      "redirects": [],
+      "elapsed_ms": 303,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/our-services.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/our-services.php",
+      "redirects": [],
+      "elapsed_ms": 118,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/contact.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/contact.php",
+      "redirects": [],
+      "elapsed_ms": 237,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/about.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/about.php",
+      "redirects": [],
+      "elapsed_ms": 165,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/directors.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/directors.php",
+      "redirects": [],
+      "elapsed_ms": 245,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/management.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/management.php",
+      "redirects": [],
+      "elapsed_ms": 321,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/certificates.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/certificates.php",
+      "redirects": [],
+      "elapsed_ms": 234,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/news.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/news.php",
+      "redirects": [],
+      "elapsed_ms": 220,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/products.php",
+      "status_code": 200,
+      "final_url": "https://thriposha.lk/Thriposha/products.php",
+      "redirects": [],
+      "elapsed_ms": 261,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://thriposha.lk/",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-01-dac162feef9a.html",
+      "sha256": "dac162feef9a82169915a80f6d76673b3ee7e1ad8ea687e5d62e9bdff1266a36",
+      "bytes": 3465
+    },
+    {
+      "url": "https://thriposha.lk/",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-02-dac162feef9a.html",
+      "sha256": "dac162feef9a82169915a80f6d76673b3ee7e1ad8ea687e5d62e9bdff1266a36",
+      "bytes": 3465
+    },
+    {
+      "url": "https://thriposha.lk/",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-03-dac162feef9a.html",
+      "sha256": "dac162feef9a82169915a80f6d76673b3ee7e1ad8ea687e5d62e9bdff1266a36",
+      "bytes": 3465
+    },
+    {
+      "url": "https://thriposha.lk/",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-04-dac162feef9a.html",
+      "sha256": "dac162feef9a82169915a80f6d76673b3ee7e1ad8ea687e5d62e9bdff1266a36",
+      "bytes": 3465
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/index.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-05-510d44d2c9c3.html",
+      "sha256": "510d44d2c9c37ac4c229625815361860997e70ff1468f74e4a9dd91176861321",
+      "bytes": 60584
+    },
+    {
+      "url": "https://thriposha.lk/suposha/index.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-06-6abd9f9cc876.html",
+      "sha256": "6abd9f9cc8769db89b4356560fcd503cd7340738276e45c116e7f8be048c9e28",
+      "bytes": 35933
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/our-services.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-07-592f58ebe02a.html",
+      "sha256": "592f58ebe02aee9d0d3af6e9751a47d7ef810e56fc8ec6c4f597801e2a805ed8",
+      "bytes": 36533
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/contact.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-08-6604ddc8ffe8.html",
+      "sha256": "6604ddc8ffe8c30f0a4f2a171031fdaf7b5bdd233abaed46d38e67cbd1b65175",
+      "bytes": 30115
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/about.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-09-8bd68cb88737.html",
+      "sha256": "8bd68cb8873757aed2c2e95dcece0a3a99518a46f8dbf91eac1e1b07a1eee858",
+      "bytes": 38466
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/directors.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-10-f4061ce01c90.html",
+      "sha256": "f4061ce01c903ba2fb0fb583cfc864980429a26fce2936b020fc88beb161e7d8",
+      "bytes": 38094
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/management.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-11-61d8c63091a7.html",
+      "sha256": "61d8c63091a78b753f1a886d7e3ff52b5b86917e1c45030ec6b7a7863bec6a98",
+      "bytes": 33453
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/certificates.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-12-f44c321e3e9f.html",
+      "sha256": "f44c321e3e9f7f583972431e1082a2cf963d558f81e2c209134b224d4019747a",
+      "bytes": 27539
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/news.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-13-77c9b61011be.html",
+      "sha256": "77c9b61011be37f7c84f8ef2817974f78030784e84585fdaf373a6f505cddde8",
+      "bytes": 43451
+    },
+    {
+      "url": "https://thriposha.lk/Thriposha/products.php",
+      "path": "audit.output/thriposha.lk/20261103.0643/snapshots/page-14-9ae03b21e35b.html",
+      "sha256": "9ae03b21e35b0db6755410526744c4e947c3f8fc0137b969c8644c71a0cf775b",
+      "bytes": 32434
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -142,8 +913,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -155,44 +926,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [500, 500, 500, 500]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -212,9 +983,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: you as the Chairman of Sri Lanka Thriposha Ltd. As we embark on our journey, I am filled with enthusiasm and commitment "
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -242,7 +1032,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.55.223.182",
+    "egress_ip": "20.189.190.87",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

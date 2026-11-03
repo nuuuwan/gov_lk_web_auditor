@@ -1,8 +1,8 @@
 # Website Audit: https://rda.gov.lk/
 
-- Completed: 2026-11-02 06:45
+- Completed: 2026-11-03 06:44
 - Overall result: 🔴 Level 1
-- Vantage: 20.55.223.182 (US, github-actions)
+- Vantage: 20.189.190.87 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2 046200 (2 phone numbers found); Email: 1968@rda.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 11 2 046200; Email: 1968@rda.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

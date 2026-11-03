@@ -1,8 +1,8 @@
 # Website Audit: https://lankamineralsands.com/
 
-- Completed: 2026-11-02 06:30
+- Completed: 2026-11-03 06:28
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.223.182 (US, github-actions)
+- Vantage: 20.189.190.87 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Lanka Mineral Sands Limited, 341 / 13, Sarana Mawatha, Rajagiriya, Sri Lanka. QUICK LINKS Company Management Gallery Env; Phone: +94 11 2883951 (5 phone numbers found); Email: # (3 email addresses found); Published named responsibility: department
+Published postal address: Lanka Mineral Sands Limited, 341 / 13, Sarana Mawatha, Rajagiriya, Sri Lanka. QUICK LINKS Company Management Gallery Env; Phone: +94 11 2882668 (5 phone numbers found); Email: # (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Lanka Mineral Sands Limited, 341 / 13, Sarana Mawatha, Rajagiriya, Sri Lanka. QUICK LINKS Company Management Gallery Env |
-| reachable_contacts | ✅ | Phone: +94 11 2883951 (5 phone numbers found); Email: # (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2882668 (5 phone numbers found); Email: # (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

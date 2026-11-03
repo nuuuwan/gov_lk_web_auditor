@@ -1,8 +1,8 @@
 # Website Audit: https://emb-riyadh.gov.lk/
 
-- Completed: 2026-11-02 06:25
+- Completed: 2026-11-03 06:23
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.223.182 (US, github-actions)
+- Vantage: 20.189.190.87 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"copied_button\":\"Copied!\",\"no_button\":\"No\",\"appointment_details_page_heading\":\"Appointment Details\"; Phone: +966549477567 (11 phone numbers found); Email: slemb.riyadh@mfa.gov.lk (7 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: +966549477567 (11 phone numbers found); Email: slemb.riyadh@mfa.gov.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Line 2\",\"copied_button\":\"Copied!\",\"no_button\":\"No\",\"appointment_details_page_heading\":\"Appointment Details\" |
+| postal_address | ✅ | Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a |
 | reachable_contacts | ✅ | Phone: +966549477567 (11 phone numbers found); Email: slemb.riyadh@mfa.gov.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10/09/2026 |
+| published_update_date | ✅ | Published published update date: 11/02/2026 |

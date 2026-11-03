@@ -1,8 +1,8 @@
 # Website Audit: http://www.kln.ac.lk/
 
-- Completed: 2026-11-02 06:05
+- Completed: 2026-11-03 06:03
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.223.182 (US, github-actions)
+- Vantage: 20.189.190.87 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,25 +33,25 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: University of Kelaniya, No. 218, Kandy Road, Dalugama, Kelaniya 11600, Sri Lanka | Telephone +94 112 903 903 | Other Tel; Phone: 0.540000021 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found); Published named responsibility: department
+Published postal address: University of Kelaniya, No. 218, Kandy Road, Dalugama, Kelaniya 11600, Sri Lanka | Telephone +94 112 903 903 | Other Tel; Phone: 0927835051 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: University of Kelaniya, No. 218, Kandy Road, Dalugama, Kelaniya 11600, Sri Lanka \| Telephone +94 112 903 903 \| Other Tel |
-| reachable_contacts | ✅ | Phone: 0.540000021 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0927835051 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
+| fees_and_payment | ✅ | Published fees and payment: Rs8 |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

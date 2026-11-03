@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-11-02 06:50
+- Completed: 2026-11-03 06:49
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.223.182 (US, github-actions)
+- Vantage: 20.189.190.87 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the challenges faced by fishing communities across the island and to enhance the efficiency of their production processe; Phone: 0 0 0 1.594-1.59 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found); Published named responsibility: director
+Published postal address: the requirements identified by the Ministry.\u003cbr\u003e\u003cbr\u003e\r\nParticipants in this discussion included Dr.; Phone: +94 112 446 183 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: the challenges faced by fishing communities across the island and to enhance the efficiency of their production processe |
-| reachable_contacts | ✅ | Phone: 0 0 0 1.594-1.59 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found) |
+| postal_address | ✅ | Published postal address: the requirements identified by the Ministry.\u003cbr\u003e\u003cbr\u003e\r\nParticipants in this discussion included Dr. |
+| reachable_contacts | ✅ | Phone: +94 112 446 183 (123 phone numbers found); Email: info@fisheries.gov.lk (48 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -52,7 +52,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: circular |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 1 November 2026 |
+| published_update_date | ✅ | Published published update date: 2 November 2026 |

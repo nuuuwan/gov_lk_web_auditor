@@ -1,8 +1,8 @@
 # Website Audit: https://un-newyork.gov.lk/
 
-- Completed: 2026-11-02 06:24
+- Completed: 2026-11-03 06:22
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.223.182 (US, github-actions)
+- Vantage: 20.189.190.87 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,7 +45,7 @@ Published postal address: 820 Second Avenue, 2nd Floor, New York, NY 10017 Phone
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found
+No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing downloadable form evidence found
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 28 October 2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

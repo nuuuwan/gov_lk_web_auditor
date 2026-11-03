@@ -1,8 +1,8 @@
 # Website Audit: https://www.nmra.gov.lk/
 
-- Completed: 2026-11-02 06:28
+- Completed: 2026-11-03 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.55.223.182 (US, github-actions)
+- Vantage: 20.189.190.87 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found); Published named responsibility: division
+Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2687743 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2687743 (16 phone numbers found); Email: info@nmra.gov.lk (59 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -50,9 +50,9 @@ No passing eligibility criteria evidence found; No passing published update date
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ✅ | Published required documents: required documents |
+| required_documents | ✅ | Published required documents: documents required |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 6 months |
-| downloadable_form | ✅ | Published downloadable form: https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/6ac4ca28a0241416aef2f81d_F-MR-037-short%20shelf%20life%20check%20list%20finalized%20after%20CEO%20recommendation.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/6788ae933b4fafc59d2053ba_2025.1.16-20250116115407.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |
