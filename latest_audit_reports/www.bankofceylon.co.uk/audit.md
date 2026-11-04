@@ -1,8 +1,8 @@
 # Website Audit: https://www.bankofceylon.co.uk/
 
-- Completed: 2026-11-03 06:12
+- Completed: 2026-11-04 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 20.189.190.87 (US, github-actions)
+- Vantage: 52.154.140.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and Head Office: 1 Devonshire Square, London EC2M 4WD Our Products Deposits Treasury Trade Services Loan & Advances Mone; Phone: +447350840624 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found); Published named responsibility: department
+Published postal address: and Head Office: 1 Devonshire Square, London EC2M 4WD Our Products Deposits Treasury Trade Services Loan & Advances Mone; Phone: +44207 377 1888 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and Head Office: 1 Devonshire Square, London EC2M 4WD Our Products Deposits Treasury Trade Services Loan & Advances Mone |
-| reachable_contacts | ✅ | Phone: +447350840624 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +44207 377 1888 (5 phone numbers found); Email: info@bankofceylon.co.uk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing required documents evidence found; No passing processing time evidenc
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: No fee |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://bankofceylon.co.uk/downloads/ACCOUNT%20OPENING%20APPLICATION%20(Junior%20Saver)_Fillable.pdf |

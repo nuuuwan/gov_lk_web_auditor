@@ -1,8 +1,8 @@
 # Website Audit: https://www.cshw.health.gov.lk/
 
-- Completed: 2026-11-03 06:24
+- Completed: 2026-11-04 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 20.189.190.87 (US, github-actions)
+- Vantage: 52.154.140.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

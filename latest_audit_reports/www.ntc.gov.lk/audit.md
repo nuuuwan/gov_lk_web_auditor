@@ -1,8 +1,8 @@
 # Website Audit: https://www.ntc.gov.lk/
 
-- Completed: 2026-11-03 06:43
+- Completed: 2026-11-04 06:43
 - Overall result: 🟠 Level 2
-- Vantage: 20.189.190.87 (US, github-actions)
+- Vantage: 52.154.140.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

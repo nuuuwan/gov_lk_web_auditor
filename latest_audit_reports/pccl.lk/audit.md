@@ -1,8 +1,8 @@
 # Website Audit: https://pccl.lk/
 
-- Completed: 2026-11-03 06:30
+- Completed: 2026-11-04 06:29
 - Overall result: 🟠 Level 2
-- Vantage: 20.189.190.87 (US, github-actions)
+- Vantage: 52.154.140.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,7 +45,7 @@ Published postal address: given below on or before 02.11.2026. The post applied 
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing fees and payment evidence found; No passing downloadable form evidence found
+No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing fees and payment evidence found; No passing downloadable form evidenc
 | required_documents | ✅ | Published required documents: supporting documents |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 2026 Days |
+| processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ✅ | Published published update date: 02 November 2026 |

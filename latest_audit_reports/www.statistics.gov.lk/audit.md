@@ -1,8 +1,8 @@
 # Website Audit: https://www.statistics.gov.lk/
 
-- Completed: 2026-11-03 06:14
+- Completed: 2026-11-04 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 20.189.190.87 (US, github-actions)
+- Vantage: 52.154.140.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati; Phone: +94 11 2147011 (833 phone numbers found); Email: data.requests@statistics.gov.lk (241 email addresses found); Published named responsibility: director
+Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati; Phone: +94 11 2147011 (833 phone numbers found); Email: dgcensus@statistics.gov.lk (241 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati |
-| reachable_contacts | ✅ | Phone: +94 11 2147011 (833 phone numbers found); Email: data.requests@statistics.gov.lk (241 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2147011 (833 phone numbers found); Email: dgcensus@statistics.gov.lk (241 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: Rs. 17,719 |
+| fees_and_payment | ✅ | Published fees and payment: Rs. 120,266 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 00 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

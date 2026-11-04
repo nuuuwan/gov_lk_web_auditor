@@ -1,8 +1,8 @@
 # Website Audit: https://spc.cmb.ac.lk/
 
-- Completed: 2026-11-03 06:05
+- Completed: 2026-11-04 06:05
 - Overall result: 🟠 Level 2
-- Vantage: 20.189.190.87 (US, github-actions)
+- Vantage: 52.154.140.81 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265; Phone: +94)34-2263617 (11 phone numbers found); Email: dr@spc.cmb.ac.lk (12 email addresses found); Published named responsibility: division
+Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265; Phone: +94 (34) 2265553 (11 phone numbers found); Email: sripalee@spc.cmb.ac.lk (12 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sri Palee Campus, University of Colombo, Wewala, Horana, Sri Lanka. Phone : +94 (34) 2261371, 2263616 Fax: +94 (34) 2265 |
-| reachable_contacts | ✅ | Phone: +94)34-2263617 (11 phone numbers found); Email: dr@spc.cmb.ac.lk (12 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 (34) 2265553 (11 phone numbers found); Email: sripalee@spc.cmb.ac.lk (12 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
