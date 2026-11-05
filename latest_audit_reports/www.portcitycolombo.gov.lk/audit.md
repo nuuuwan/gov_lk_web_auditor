@@ -1,8 +1,8 @@
 # Website Audit: https://www.portcitycolombo.gov.lk/
 
-- Completed: 2026-11-04 06:13
+- Completed: 2026-11-05 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.140.81 (US, github-actions)
+- Vantage: 57.154.6.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Colombo Port City Economic Commission Unit 901, 9th Floor, One Galle Face Tower, 1A Centre Road, Colombo 02, Sri Lanka I; Phone: +94117560006 (2 phone numbers found); Email: inquiries@portcity.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Colombo Port City Economic Commission Unit 901, 9th Floor, One Galle Face Tower, 1A Centre Road, Colombo 02, Sri Lanka I; Phone: +94) 11 7560 006 (2 phone numbers found); Email: inquiries@portcity.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Colombo Port City Economic Commission Unit 901, 9th Floor, One Galle Face Tower, 1A Centre Road, Colombo 02, Sri Lanka I |
-| reachable_contacts | ✅ | Phone: +94117560006 (2 phone numbers found); Email: inquiries@portcity.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94) 11 7560 006 (2 phone numbers found); Email: inquiries@portcity.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌
@@ -49,7 +49,7 @@ Published published update date: 24 October 2024
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: supporting documents |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |

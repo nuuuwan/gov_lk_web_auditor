@@ -1,8 +1,8 @@
 # Website Audit: https://busl.ac.lk/
 
-- Completed: 2026-11-04 06:07
+- Completed: 2026-11-05 06:08
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.140.81 (US, github-actions)
+- Vantage: 57.154.6.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search; Phone: +94252236340 (106 phone numbers found); Email: info@busl.ac.lk (6 email addresses found); Published named responsibility: director
+Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search; Phone: +94 25 223 6340 (110 phone numbers found); Email: info@busl.ac.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ◎ Bhiksu University of Sri Lanka Puttalam Road, Anuradhapura 50000, Sri Lanka ☎ +94 25 223 6760 +94 25 223 6340 ✉ info@busl.ac.lk Search Our Website Search |
-| reachable_contacts | ✅ | Phone: +94252236340 (106 phone numbers found); Email: info@busl.ac.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 25 223 6340 (110 phone numbers found); Email: info@busl.ac.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: LKR 5,500 |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ❓ | No passing processing time evidence found |
+| processing_time | ✅ | Published processing time: 14 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.cashew.gov.lk/
 
-- Completed: 2026-11-04 06:33
+- Completed: 2026-11-05 06:35
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.140.81 (US, github-actions)
+- Vantage: 57.154.6.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka; Phone: 011-2869843 (60 phone numbers found); Email: cashewco@sltnet.lk (4 email addresses found); Published named responsibility: division
+Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka; Phone: 0006912739 (63 phone numbers found); Email: cashewcorporaion@gmail.com (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sales Outlet Sri Lanka Cashew Corporation Sahas Uyana, Kandy, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 011-2869843 (60 phone numbers found); Email: cashewco@sltnet.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0006912739 (63 phone numbers found); Email: cashewcorporaion@gmail.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing required documents evidence found; No passing processing time evidenc
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: රු 6,880 |
+| fees_and_payment | ✅ | Published fees and payment: රු 8,750 |
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ✅ | Published downloadable form: https://www.cashew.gov.lk/wp-content/uploads/2026/09/Application-for-the-Importation-of-Raw-Cashew-TIEP.pdf |

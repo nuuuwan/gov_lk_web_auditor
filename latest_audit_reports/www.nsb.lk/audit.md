@@ -1,8 +1,8 @@
 # Website Audit: https://www.nsb.lk/
 
-- Completed: 2026-11-04 06:13
+- Completed: 2026-11-05 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.140.81 (US, github-actions)
+- Vantage: 57.154.6.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 7 th Floor, “Savings House” National Savings Bank, No.255, Galle Road, Colombo-3. Direct -0112 576 730 General - 0112 37; Phone: 0112 379 379 (22 phone numbers found); Email: Email - ccu@nsb.lk (7 email addresses found); Published named responsibility: officer in charge
+Published postal address: 7 th Floor, “Savings House” National Savings Bank, No.255, Galle Road, Colombo-3. Direct -0112 576 730 General - 0112 37; Phone: +94112379379 (22 phone numbers found); Email: callcentre@nsb.lk (7 email addresses found); Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 7 th Floor, “Savings House” National Savings Bank, No.255, Galle Road, Colombo-3. Direct -0112 576 730 General - 0112 37 |
-| reachable_contacts | ✅ | Phone: 0112 379 379 (22 phone numbers found); Email: Email - ccu@nsb.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112379379 (22 phone numbers found); Email: callcentre@nsb.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓

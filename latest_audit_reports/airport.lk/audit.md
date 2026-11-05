@@ -1,8 +1,8 @@
 # Website Audit: https://airport.lk/
 
-- Completed: 2026-11-04 06:33
+- Completed: 2026-11-05 06:36
 - Overall result: ⚫ Level 0
-- Vantage: 52.154.140.81 (US, github-actions)
+- Vantage: 57.154.6.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -26,5 +26,5 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to g
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1011) |
-| tls_not_expired | ❓ | [Errno 104] Connection reset by peer |
-| tls_hostname_matches | ❓ | [Errno 104] Connection reset by peer |
+| tls_not_expired | ✅ | TLS certificate valid |
+| tls_hostname_matches | ✅ | TLS certificate valid |

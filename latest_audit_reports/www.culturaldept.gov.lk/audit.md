@@ -1,8 +1,8 @@
 # Website Audit: https://www.culturaldept.gov.lk/
 
-- Completed: 2026-11-04 05:56
+- Completed: 2026-11-05 05:57
 - Overall result: 🔴 Level 1
-- Vantage: 52.154.140.81 (US, github-actions)
+- Vantage: 57.154.6.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 112 866 732 (16 phone numbers found); Email: culturaldept.info@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 866 731 (17 phone numbers found); Email: culturaldept.info@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

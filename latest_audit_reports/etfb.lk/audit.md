@@ -1,8 +1,8 @@
 # Website Audit: https://etfb.lk/
 
-- Completed: 2026-11-04 06:15
+- Completed: 2026-11-05 06:17
 - Overall result: 🟠 Level 2
-- Vantage: 52.154.140.81 (US, github-actions)
+- Vantage: 57.154.6.2 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 22nd Floor, “Mehewara Piyasa”, Narahenpita, Colombo 05, Sri Lanka Telephone: +94 71 141 8071 WhatsApp: +94 71 141 8071 E; Phone: 0-6.4-6.4-12.8-12. (167 phone numbers found); Email: info@etfb.lk (73 email addresses found); Published named responsibility: director
+Published postal address: 22nd Floor, “Mehewara Piyasa”, Narahenpita, Colombo 05, Sri Lanka Telephone: +94 71 141 8071 WhatsApp: +94 71 141 8071 E; Phone: 0 16-7.16 16-16 (167 phone numbers found); Email: info@etfb.lk (69 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 22nd Floor, “Mehewara Piyasa”, Narahenpita, Colombo 05, Sri Lanka Telephone: +94 71 141 8071 WhatsApp: +94 71 141 8071 E |
-| reachable_contacts | ✅ | Phone: 0-6.4-6.4-12.8-12. (167 phone numbers found); Email: info@etfb.lk (73 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0 16-7.16 16-16 (167 phone numbers found); Email: info@etfb.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
