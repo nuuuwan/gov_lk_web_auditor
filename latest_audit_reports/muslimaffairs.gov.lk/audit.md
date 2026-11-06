@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-11-05 05:59
+- Completed: 2026-11-06 05:59
 - Overall result: 🟠 Level 2
-- Vantage: 57.154.6.2 (US, github-actions)
+- Vantage: 20.29.60.106 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 011 266 7909 (12 phone numbers found); Email: Published email:; Published named responsibility: director
+Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 0547332763 (12 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per  |
-| reachable_contacts | ✅ | Phone: 011 266 7909 (12 phone numbers found); Email: Published email: |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: 0547332763 (12 phone numbers found); Email: Published email: |
+| named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❌
 
@@ -53,6 +53,6 @@ Published published update date: 26-03-2024
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs 2027 |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 18 hours |
+| processing_time | ✅ | Published processing time: 13 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❌ | Published published update date: 26-03-2024 |

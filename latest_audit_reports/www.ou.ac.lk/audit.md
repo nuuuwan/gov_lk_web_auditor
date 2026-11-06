@@ -1,8 +1,8 @@
 # Website Audit: http://www.ou.ac.lk/
 
-- Completed: 2026-11-05 06:04
+- Completed: 2026-11-06 06:05
 - Overall result: 🟠 Level 2
-- Vantage: 57.154.6.2 (US, github-actions)
+- Vantage: 20.29.60.106 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing processing time evide
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ✅ | Published fees and payment: Rs 50,000 |
+| fees_and_payment | ✅ | Published fees and payment: LKR 660,000 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

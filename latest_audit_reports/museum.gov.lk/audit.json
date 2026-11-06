@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "62f81105-a2a8-42b8-8bf9-0a234c772e9b",
+  "audit_id": "03724951-491d-414a-8f78-5864cf6e3350",
   "url": "https://museum.gov.lk/",
   "normalized_url": "https://museum.gov.lk/",
-  "started_at": "2026-11-05T05:57:04.304583+05:30",
-  "completed_at": "2026-11-05T05:57:11.556732+05:30",
+  "started_at": "2026-11-06T05:57:32.850974+05:30",
+  "completed_at": "2026-11-06T05:58:29.014327+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [503, 503, 503, 503]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,1392 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-05T05:57:04.651011+05:30"
+      "observed_at": "2026-11-06T05:57:33.263531+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-05T05:57:04.651031+05:30"
+      "observed_at": "2026-11-06T05:57:33.263555+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-05T05:57:05.359455+05:30"
+      "observed_at": "2026-11-06T05:57:34.006931+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 503 at https://museum.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://museum.gov.lk/v1/home",
       "source": "https://museum.gov.lk/",
-      "observed_at": "2026-11-05T05:57:11.551058+05:30"
+      "observed_at": "2026-11-06T05:58:28.530633+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 503 at https://museum.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://museum.gov.lk/v1/home",
       "source": "http://museum.gov.lk/",
-      "observed_at": "2026-11-05T05:57:11.551076+05:30"
+      "observed_at": "2026-11-06T05:58:28.530656+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 503 at https://museum.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://museum.gov.lk/v1/home",
       "source": "https://museum.gov.lk/",
-      "observed_at": "2026-11-05T05:57:11.551080+05:30"
+      "observed_at": "2026-11-06T05:58:28.530658+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 503 at https://museum.gov.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://museum.gov.lk/v1/home",
       "source": "http://museum.gov.lk/",
-      "observed_at": "2026-11-05T05:57:11.551082+05:30"
+      "observed_at": "2026-11-06T05:58:28.530660+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://museum.gov.lk/v1/services",
+      "source": "https://museum.gov.lk/v1/services",
+      "observed_at": "2026-11-06T05:58:28.530662+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://museum.gov.lk/v1/divisions",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "observed_at": "2026-11-06T05:58:28.530664+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://museum.gov.lk/v1/contact",
+      "source": "https://museum.gov.lk/v1/contact",
+      "observed_at": "2026-11-06T05:58:28.530665+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://museum.gov.lk/v1/museums",
+      "source": "https://museum.gov.lk/v1/museums",
+      "observed_at": "2026-11-06T05:58:28.530667+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://museum.gov.lk/v1/news",
+      "source": "https://museum.gov.lk/v1/news",
+      "observed_at": "2026-11-06T05:58:28.530669+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://museum.gov.lk/v1/about-us",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "observed_at": "2026-11-06T05:58:28.530671+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://museum.gov.lk/v1/places-visit",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "observed_at": "2026-11-06T05:58:28.530672+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://museum.gov.lk/v1/vacancy",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "observed_at": "2026-11-06T05:58:28.530674+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://museum.gov.lk/v1/download",
+      "source": "https://museum.gov.lk/v1/download",
+      "observed_at": "2026-11-06T05:58:28.530676+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://museum.gov.lk/v1/site-index",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "observed_at": "2026-11-06T05:58:28.530678+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/home",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/services",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/services",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/services",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/services",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/services",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/services",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/services",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/divisions",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094113167",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0094113167"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94452222451",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94452222451"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094112695",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0094112695"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112667751",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112667751"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112684539",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112684539"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112695686",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112695686"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94812223867",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94812223867"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112667750",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0112667750"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094112688",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0094112688"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112672447",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112672447"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112169294",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112169294"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112448466",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112448466"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094112692",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0094112692"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112688146",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112688146"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112692092",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94912245254",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94912245254"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94472222366",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94472222366"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094112667",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0094112667"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112694366",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112694366"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0912232051",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "0912232051"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112691399",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112691399"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112667750",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112667750"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112690146",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112690146"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112695366",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112695366"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112691825",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "+94112691825"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: jayasundaray6@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "jayasundaray6@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: disna.arch12@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "disna.arch12@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: manorigoonathilake@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "manorigoonathilake@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: poornisathis5253@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "poornisathis5253@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: colombomusacc@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "colombomusacc@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: easenarath@yahoo.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "easenarath@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nayanananda75@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "nayanananda75@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sanujakasthuri@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "sanujakasthuri@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: lankanipavithra88@gmail.com",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "lankanipavithra88@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: @-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes m",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "@-webkit-keyframes mui-auto-fill{from{display:block;}}@keyframes mui-auto-fill{from{display:block;}}@-webkit-keyframes m"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://museum.gov.lk/v1/contact",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/museums",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/museums",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/museums",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/museums",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/museums",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/museums",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/museums",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: spoliaszeylanica@gmail.com",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "spoliaszeylanica@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://museum.gov.lk/v1/news",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112307674",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94112307674"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112695366 ",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94112695366 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112307674 ",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94112307674 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112307335 ",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94112307335 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112695366",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94112695366"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112307335",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "+94112307335"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: mbsecoffice@gmail.com",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "mbsecoffice@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://museum.gov.lk/v1/about-us",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/places-visit",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/vacancy",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://museum.gov.lk/v1/download",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0006378944",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "data": {
+        "value": "0006378944"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2694767 ",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "data": {
+        "value": "+94 11 2694767 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "data": {
+        "value": "+94 11 2692092"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2692092 ",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "data": {
+        "value": "+94 11 2692092 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nmdep@slt.lk",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "data": {
+        "value": "nmdep@slt.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "data": {
+        "value": "P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://museum.gov.lk/v1/site-index",
+      "data": {
+        "value": "division"
+      }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 624 visible characters across 4 pages",
+      "detail": "Substantive page content: 3569 visible characters across 14 pages",
       "source": "https://museum.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
-      "observed_at": "2026-11-05T05:57:11.556191+05:30"
     }
   ],
   "observations": [
@@ -96,69 +1438,225 @@
     },
     {
       "url": "https://museum.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://museum.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 956,
-      "content_type": "text/html",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/home",
+      "redirects": [
+        "https://museum.gov.lk/v1/home"
+      ],
+      "elapsed_ms": 1038,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://museum.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://museum.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/home",
       "redirects": [
-        "https://museum.gov.lk/"
+        "https://museum.gov.lk/",
+        "https://museum.gov.lk/v1/home"
       ],
-      "elapsed_ms": 758,
-      "content_type": "text/html",
+      "elapsed_ms": 1365,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://museum.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://museum.gov.lk/",
-      "redirects": [],
-      "elapsed_ms": 730,
-      "content_type": "text/html",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/home",
+      "redirects": [
+        "https://museum.gov.lk/v1/home"
+      ],
+      "elapsed_ms": 1252,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "http://museum.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://museum.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/home",
       "redirects": [
-        "https://museum.gov.lk/"
+        "https://museum.gov.lk/",
+        "https://museum.gov.lk/v1/home"
       ],
-      "elapsed_ms": 749,
-      "content_type": "text/html",
+      "elapsed_ms": 1249,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/services",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/services",
+      "redirects": [],
+      "elapsed_ms": 1006,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/divisions",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/divisions",
+      "redirects": [],
+      "elapsed_ms": 1045,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/contact",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/contact",
+      "redirects": [],
+      "elapsed_ms": 1038,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/museums",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/museums",
+      "redirects": [],
+      "elapsed_ms": 1079,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/news",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/news",
+      "redirects": [],
+      "elapsed_ms": 1227,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/about-us",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/about-us",
+      "redirects": [],
+      "elapsed_ms": 1012,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/places-visit",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/places-visit",
+      "redirects": [],
+      "elapsed_ms": 1173,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/vacancy",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/vacancy",
+      "redirects": [],
+      "elapsed_ms": 974,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/download",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/download",
+      "redirects": [],
+      "elapsed_ms": 1074,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://museum.gov.lk/v1/site-index",
+      "status_code": 200,
+      "final_url": "https://museum.gov.lk/v1/site-index",
+      "redirects": [],
+      "elapsed_ms": 2064,
+      "content_type": "text/html; charset=utf-8",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://museum.gov.lk/",
-      "path": "audit.output/museum.gov.lk/20261105.0557/snapshots/page-01-c1dabfba1a98.html",
-      "sha256": "c1dabfba1a9830e73c4592259821cc7b139f1f91ccd615459ec0ba8b7e3c94e4",
-      "bytes": 2503
+      "url": "https://museum.gov.lk/v1/home",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-01-a2b91c9af5dc.html",
+      "sha256": "a2b91c9af5dca60ed64c243487241bc54058c2d3decf2aee469286ecaf47343d",
+      "bytes": 139881
     },
     {
-      "url": "https://museum.gov.lk/",
-      "path": "audit.output/museum.gov.lk/20261105.0557/snapshots/page-02-c1dabfba1a98.html",
-      "sha256": "c1dabfba1a9830e73c4592259821cc7b139f1f91ccd615459ec0ba8b7e3c94e4",
-      "bytes": 2503
+      "url": "https://museum.gov.lk/v1/home",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-02-ba4c56c3a1e0.html",
+      "sha256": "ba4c56c3a1e060d15ca2187b0b571b05bd95cce30f82f4af7684ee143e12b2d4",
+      "bytes": 139881
     },
     {
-      "url": "https://museum.gov.lk/",
-      "path": "audit.output/museum.gov.lk/20261105.0557/snapshots/page-03-c1dabfba1a98.html",
-      "sha256": "c1dabfba1a9830e73c4592259821cc7b139f1f91ccd615459ec0ba8b7e3c94e4",
-      "bytes": 2503
+      "url": "https://museum.gov.lk/v1/home",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-03-64c6fb516b3f.html",
+      "sha256": "64c6fb516b3f35078cdb25054eb76d0619135d77f7dd6ee034dcdb3397f129c0",
+      "bytes": 139881
     },
     {
-      "url": "https://museum.gov.lk/",
-      "path": "audit.output/museum.gov.lk/20261105.0557/snapshots/page-04-c1dabfba1a98.html",
-      "sha256": "c1dabfba1a9830e73c4592259821cc7b139f1f91ccd615459ec0ba8b7e3c94e4",
-      "bytes": 2503
+      "url": "https://museum.gov.lk/v1/home",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-04-1fcd110867e5.html",
+      "sha256": "1fcd110867e5eacd2b4426a9c97a12cc6e657887526e0ad4fecd3653678d06d5",
+      "bytes": 139881
+    },
+    {
+      "url": "https://museum.gov.lk/v1/services",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-05-bfa3a3bfff4c.html",
+      "sha256": "bfa3a3bfff4c8ac9a3114c27e04d43c538614540e345d6a2577af9489b72dc33",
+      "bytes": 101182
+    },
+    {
+      "url": "https://museum.gov.lk/v1/divisions",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-06-0d84ff375506.html",
+      "sha256": "0d84ff37550636344bda05fb91ebdaa1d29d7b40dcf1c5aa5b27230057243b89",
+      "bytes": 97753
+    },
+    {
+      "url": "https://museum.gov.lk/v1/contact",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-07-834e5f1a9838.html",
+      "sha256": "834e5f1a9838edd3e07bf6b2d9894c5fe773d7966a4ebc0772ee4babca67749c",
+      "bytes": 127900
+    },
+    {
+      "url": "https://museum.gov.lk/v1/museums",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-08-10eb053c9ba0.html",
+      "sha256": "10eb053c9ba043cdbbbd3e7148d6c0049031c7cb5454430498812082c4a715ad",
+      "bytes": 112908
+    },
+    {
+      "url": "https://museum.gov.lk/v1/news",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-09-b13117a895ba.html",
+      "sha256": "b13117a895bafc1eca28e70fb2fcc0d9ea41aee67a6be485c4ef81f3c2f40cef",
+      "bytes": 115533
+    },
+    {
+      "url": "https://museum.gov.lk/v1/about-us",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-10-fe308617b95d.html",
+      "sha256": "fe308617b95d16a5e78004b98ea564495ece44c379b52202d68f70b2c0ce1dd4",
+      "bytes": 137246
+    },
+    {
+      "url": "https://museum.gov.lk/v1/places-visit",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-11-71a46af3eac1.html",
+      "sha256": "71a46af3eac1989d614e43175d95cc145f0feb837892c522acc35b6e8beb2053",
+      "bytes": 115391
+    },
+    {
+      "url": "https://museum.gov.lk/v1/vacancy",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-12-3b212c096cf4.html",
+      "sha256": "3b212c096cf4f738f51e3d316717a38c6c809a0d5e156795977848a993832aed",
+      "bytes": 85095
+    },
+    {
+      "url": "https://museum.gov.lk/v1/download",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-13-1168cd4f8787.html",
+      "sha256": "1168cd4f878708728b2e24c5d2e5f3b7b69b167e97e7b3c7417f12d5cefa6962",
+      "bytes": 109503
+    },
+    {
+      "url": "https://museum.gov.lk/v1/site-index",
+      "path": "audit.output/museum.gov.lk/20261106.0557/snapshots/page-14-ae51cd5d8a7b.html",
+      "sha256": "ae51cd5d8a7bb3efb67e34c580b3c96392148b26ce0b3b1a886a1c84814e147f",
+      "bytes": 97473
     }
   ],
   "reviewer_decisions": [],
@@ -174,8 +1672,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -187,44 +1685,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -243,18 +1741,80 @@
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka; Phone: 0006378944 (30 phone numbers found); Email: nmdep@slt.lk (12 email addresses found); Published named responsibility: division",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: P.O. Box 854, Sir Marcus Fernando Mawatha Colombo 07, Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0006378944 (30 phone numbers found); Email: nmdep@slt.lk (12 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -274,7 +1834,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "57.154.6.2",
+    "egress_ip": "20.29.60.106",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

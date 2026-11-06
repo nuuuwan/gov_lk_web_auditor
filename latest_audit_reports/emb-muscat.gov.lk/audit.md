@@ -1,8 +1,8 @@
 # Website Audit: https://emb-muscat.gov.lk/
 
-- Completed: 2026-11-05 06:24
+- Completed: 2026-11-06 06:25
 - Overall result: ⚫ Level 0
-- Vantage: 57.154.6.2 (US, github-actions)
+- Vantage: 20.29.60.106 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mi
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://emb-muscat.gov.lk/: Probe 4: The read operation timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011) |
 | tls_not_expired | ❓ | TLS expiry check did not run |

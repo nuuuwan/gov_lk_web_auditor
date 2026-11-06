@@ -1,8 +1,8 @@
 # Website Audit: https://hc-london.gov.lk/
 
-- Completed: 2026-11-05 06:23
+- Completed: 2026-11-06 06:23
 - Overall result: 🟠 Level 2
-- Vantage: 57.154.6.2 (US, github-actions)
+- Vantage: 20.29.60.106 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: by Mrs. Jayasundara on investment opportunities in Sri Lanka and a presentation by Ms. Priyanka Samaraweera, Director of; Phone: 020 7262184 (8 phone numbers found); Email: john@example.com (11 email addresses found); Published named responsibility: director
+Published postal address: by Mrs. Jayasundara on investment opportunities in Sri Lanka and a presentation by Ms. Priyanka Samaraweera, Director of; Phone: 0963990599 (8 phone numbers found); Email: mail@slhc-london.co.uk (11 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: by Mrs. Jayasundara on investment opportunities in Sri Lanka and a presentation by Ms. Priyanka Samaraweera, Director of |
-| reachable_contacts | ✅ | Phone: 020 7262184 (8 phone numbers found); Email: john@example.com (11 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0963990599 (8 phone numbers found); Email: mail@slhc-london.co.uk (11 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
