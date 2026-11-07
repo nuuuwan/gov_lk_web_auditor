@@ -1,8 +1,8 @@
 # Website Audit: https://www.crib.lk/
 
-- Completed: 2026-11-06 06:17
+- Completed: 2026-11-07 06:13
 - Overall result: 🟠 Level 2
-- Vantage: 20.29.60.106 (US, github-actions)
+- Vantage: 4.154.167.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka; Phone: 0240418986 (6 phone numbers found); Email: info@crib.lk; Published named responsibility: director
+Published postal address: Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka; Phone: +94 112 131313 (6 phone numbers found); Email: info@crib.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0240418986 (6 phone numbers found); Email: info@crib.lk |
+| reachable_contacts | ✅ | Phone: +94 112 131313 (6 phone numbers found); Email: info@crib.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

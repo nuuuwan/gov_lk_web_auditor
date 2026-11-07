@@ -1,8 +1,8 @@
 # Website Audit: https://energy.gov.lk/
 
-- Completed: 2026-11-06 06:15
+- Completed: 2026-11-07 06:10
 - Overall result: 🟠 Level 2
-- Vantage: 20.29.60.106 (US, github-actions)
+- Vantage: 4.154.167.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: delivered by Mr. Lahiru Sadaruwan, Development Officer of the Industrial Development Authority, who emphasized the impor; Phone: 0112575114, 0112575066, 0112575030, 0112575203, 0112575036 (37 phone numbers found); Email: info@energy.gov.lk (21 email addresses found); Published named responsibility: director
+Published postal address: delivered by Mr. Lahiru Sadaruwan, Development Officer of the Industrial Development Authority, who emphasized the impor; Phone: 0112575114, 0112575066, 0112575030, 0112575203, 0112575036 (41 phone numbers found); Email: info@energy.gov.lk (22 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: delivered by Mr. Lahiru Sadaruwan, Development Officer of the Industrial Development Authority, who emphasized the impor |
-| reachable_contacts | ✅ | Phone: 0112575114, 0112575066, 0112575030, 0112575203, 0112575036 (37 phone numbers found); Email: info@energy.gov.lk (21 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112575114, 0112575066, 0112575030, 0112575203, 0112575036 (41 phone numbers found); Email: info@energy.gov.lk (22 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://energy.gov.lk/images/energy-management/em-application-form.docx |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.presidentsfund.gov.lk/
 
-- Completed: 2026-11-06 06:54
+- Completed: 2026-11-07 06:48
 - Overall result: 🟠 Level 2
-- Vantage: 20.29.60.106 (US, github-actions)
+- Vantage: 4.154.167.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: President's Fund Ground Floor, Chartered Building, Janadhipathi Mawatha, Colombo 01, Sri Lanka; Phone: 00.4 26.4 124.1 (20 phone numbers found); Email: prefund@presidentsoffice.lk; Published named responsibility: division
+Published postal address: President's Fund Ground Floor, Chartered Building, Janadhipathi Mawatha, Colombo 01, Sri Lanka; Phone: +94) 11 4 331 243 (20 phone numbers found); Email: prefund@presidentsoffice.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: President's Fund Ground Floor, Chartered Building, Janadhipathi Mawatha, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 00.4 26.4 124.1 (20 phone numbers found); Email: prefund@presidentsoffice.lk |
+| reachable_contacts | ✅ | Phone: +94) 11 4 331 243 (20 phone numbers found); Email: prefund@presidentsoffice.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing required documents evidence found; No passing legal basis evidence fo
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| fees_and_payment | ✅ | Published fees and payment: Rs. 200,000 |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ✅ | Published downloadable form: https://www.presidentsfund.gov.lk/assets/documents/PFUND-Application-English.pdf |

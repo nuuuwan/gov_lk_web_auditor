@@ -1,8 +1,8 @@
 # Website Audit: https://www.ruhunancoe.edu.lk/
 
-- Completed: 2026-11-06 06:09
+- Completed: 2026-11-07 06:07
 - Overall result: 🟠 Level 2
-- Vantage: 20.29.60.106 (US, github-actions)
+- Vantage: 4.154.167.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

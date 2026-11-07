@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "073342ea-3efb-468e-9220-46ec6327ce99",
+  "audit_id": "e61e1738-dc7f-43e0-8ebc-8f371cbddeb9",
   "url": "https://www.psc.gov.lk/",
   "normalized_url": "https://www.psc.gov.lk/",
-  "started_at": "2026-11-06T06:54:02.876110+05:30",
-  "completed_at": "2026-11-06T06:56:15.774925+05:30",
+  "started_at": "2026-11-07T06:48:35.475318+05:30",
+  "completed_at": "2026-11-07T06:50:26.145316+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: https://www.psc.gov.lk/: Probe 1: timed out; http://www.psc.gov.lk/: Probe 2: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,1059 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-06T06:54:03.518706+05:30"
+      "observed_at": "2026-11-07T06:48:35.850649+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-06T06:54:03.518715+05:30"
+      "observed_at": "2026-11-07T06:48:35.850671+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-06T06:54:13.756667+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-07T06:48:36.551949+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 1: timed out",
       "source": "https://www.psc.gov.lk/",
-      "observed_at": "2026-11-06T06:56:15.774796+05:30"
+      "observed_at": "2026-11-07T06:50:25.821358+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.psc.gov.lk/",
-      "observed_at": "2026-11-06T06:56:15.774810+05:30"
+      "observed_at": "2026-11-07T06:50:25.821378+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://psc.gov.lk/index.php?lang=en",
       "source": "https://www.psc.gov.lk/",
-      "observed_at": "2026-11-06T06:56:15.774812+05:30"
+      "observed_at": "2026-11-07T06:50:25.821382+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://psc.gov.lk/index.php?lang=en",
       "source": "http://www.psc.gov.lk/",
-      "observed_at": "2026-11-06T06:56:15.774814+05:30"
+      "observed_at": "2026-11-07T06:50:25.821385+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821388+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821390+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821393+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821395+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821398+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821400+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821403+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821405+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821407+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "observed_at": "2026-11-07T06:50:25.821410+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2021.07.2",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "021 2021.07.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-11-06",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "2026-11-06"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0535404511",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0535404511"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2021.07.2",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "021 2021.07.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-11-06",
+      "source": "https://psc.gov.lk/index.php?lang=en",
+      "data": {
+        "value": "2026-11-06"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 2021.07.2",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "021 2021.07.2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "downloadable_form",
+      "status": "pass",
+      "detail": "Published downloadable form: https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "https://psc.gov.lk/images/latest_document/psc_announcements/2023/1693975072-ioext-e.pdf"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 2026-11-06",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "data": {
+        "value": "2026-11-06"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0078500022",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "0078500022"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "processing_time",
+      "status": "pass",
+      "detail": "Published processing time: 02 working days",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "02 working days"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 08 October 2026",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "data": {
+        "value": "08 October 2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "data": {
+        "value": "0890334430 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0890334430",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "data": {
+        "value": "0890334430"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 13 6600 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "data": {
+        "value": "+94 11 2 13 6600 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2 87 6181 ",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "data": {
+        "value": "+94 11 2 87 6181 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@psc.gov.lk",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "data": {
+        "value": "info@psc.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 9081 visible characters across 12 pages",
+      "source": "https://www.psc.gov.lk/"
     }
   ],
   "observations": [
@@ -85,10 +1098,10 @@
     },
     {
       "host": "www.psc.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-02-02T15:39:14+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.psc.gov.lk/",
@@ -110,24 +1123,193 @@
     },
     {
       "url": "https://www.psc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://psc.gov.lk/",
+        "https://psc.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 2040,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.psc.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?lang=en",
+      "redirects": [
+        "https://psc.gov.lk/",
+        "https://psc.gov.lk/index.php?lang=en"
+      ],
+      "elapsed_ms": 1799,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "elapsed_ms": 2053,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1484,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1510,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1506,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1486,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1514,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1468,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1460,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1496,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "status_code": 200,
+      "final_url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "redirects": [],
+      "elapsed_ms": 1503,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://psc.gov.lk/index.php?lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-01-3d3674e2f85e.html",
+      "sha256": "3d3674e2f85e4d4f353cd98a2da66955f7860185a361d46f1254c9ea157172e8",
+      "bytes": 133417
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-02-30f9facd3758.html",
+      "sha256": "30f9facd37580508cda20e9859378dbf8e96ea6a2af5da2d6972cbd3825a449b",
+      "bytes": 133417
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-03-e149f4e7eb0b.html",
+      "sha256": "e149f4e7eb0b407371ebdf6b719c39ce3733d1d1ef68d1b94ac2f8cd11d9116d",
+      "bytes": 133617
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=106&Itemid=232&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-04-c316273d9a12.html",
+      "sha256": "c316273d9a12365510e5d7693224af505c61a9f8ad499f494802e30d94e2ca93",
+      "bytes": 99442
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=14&Itemid=136&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-05-a971a8a713bd.html",
+      "sha256": "a971a8a713bd8bc2f1bd2398cf1c6c606da10e3a37143314014b0eb917a2cad1",
+      "bytes": 104180
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=15&Itemid=137&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-06-6d10b8dc645e.html",
+      "sha256": "6d10b8dc645ed188b83d72dea7dfd571189ad3087b4134582055bd8af5a7e425",
+      "bytes": 98091
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=16&Itemid=138&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-07-4147dd581250.html",
+      "sha256": "4147dd581250a3c19045d7253b90dbbb638cdd3e31030042c9badfcb425b4d61",
+      "bytes": 104603
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=25&Itemid=146&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-08-e80c6596bd12.html",
+      "sha256": "e80c6596bd1227116247711a0a777afa0a47d66217d5ae5df11bc31b3463856a",
+      "bytes": 102230
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=90&Itemid=178&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-09-88c83acfa73f.html",
+      "sha256": "88c83acfa73f0f35319b5b5c060980404b3be46948967821536352d5dc6968ed",
+      "bytes": 102487
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=26&Itemid=147&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-10-5fb352d153b4.html",
+      "sha256": "5fb352d153b48629ff83714cd2f2890b724ba131d89cfac05d9f6afe39908c9a",
+      "bytes": 99907
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=23&Itemid=143&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-11-32d484e6358c.html",
+      "sha256": "32d484e6358c7edb7b295dbb3af42d314b669bc1ff1119e4f61ef9abc8609124",
+      "bytes": 98884
+    },
+    {
+      "url": "https://psc.gov.lk/index.php?option=com_content&view=article&id=91&Itemid=179&lang=en",
+      "path": "audit.output/www.psc.gov.lk/20261107.0648/snapshots/page-12-0430161016f2.html",
+      "sha256": "0430161016f2f37b6f11ac210e7f3deabd02480c4015e4fa43641210cb9147cb",
+      "bytes": 99243
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1323,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://www.psc.gov.lk/: Probe 1: timed out; http://www.psc.gov.lk/: Probe 2: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +1336,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: https://www.psc.gov.lk/: Probe 1: timed out; http://www.psc.gov.lk/: Probe 2: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +1393,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0890334430 (6 phone numbers found); Email: info@psc.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1442,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.29.60.106",
+    "egress_ip": "4.154.167.160",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

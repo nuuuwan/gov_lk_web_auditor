@@ -1,8 +1,8 @@
 # Website Audit: https://investsrilanka.com/
 
-- Completed: 2026-11-06 06:16
+- Completed: 2026-11-07 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 20.29.60.106 (US, github-actions)
+- Vantage: 4.154.167.160 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: issues where some users faced problems with the `document` event not triggering as expected. // Define cachedScript glob; Phone: 0 9.372 9.373 9. (136 phone numbers found); Email: info@boi.lk (28 email addresses found); Published named responsibility: director
+Published postal address: issues where some users faced problems with the `document` event not triggering as expected. // Define cachedScript glob; Phone: +94-11-2346131 (135 phone numbers found); Email: info@boi.lk (28 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: issues where some users faced problems with the `document` event not triggering as expected. // Define cachedScript glob |
-| reachable_contacts | ✅ | Phone: 0 9.372 9.373 9. (136 phone numbers found); Email: info@boi.lk (28 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94-11-2346131 (135 phone numbers found); Email: info@boi.lk (28 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
