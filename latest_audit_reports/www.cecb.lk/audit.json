@@ -1,18 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "db4ce96c-587f-4f82-ae23-4c1a879ff4cd",
+  "audit_id": "105f8417-b11a-4c87-910d-5f2bc0bd9a9e",
   "url": "https://www.cecb.lk/",
   "normalized_url": "https://www.cecb.lk/",
-  "started_at": "2026-11-07T05:51:01.221580+05:30",
-  "completed_at": "2026-11-07T05:51:05.812650+05:30",
+  "started_at": "2026-11-08T05:55:04.242679+05:30",
+  "completed_at": "2026-11-08T05:55:09.484762+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -20,89 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T05:51:01.862304+05:30"
+      "observed_at": "2026-11-08T05:55:05.074709+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T05:51:01.862326+05:30"
+      "observed_at": "2026-11-08T05:55:05.074733+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T05:51:01.946366+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T05:55:05.823181+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.cecb.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://www.cecb.lk/",
-      "observed_at": "2026-11-07T05:51:05.794433+05:30"
+      "observed_at": "2026-11-08T05:55:09.484500+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://www.cecb.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://www.cecb.lk/",
-      "observed_at": "2026-11-07T05:51:05.794468+05:30"
+      "observed_at": "2026-11-08T05:55:09.484530+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.cecb.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://www.cecb.lk/",
-      "observed_at": "2026-11-07T05:51:05.794472+05:30"
+      "observed_at": "2026-11-08T05:55:09.484536+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://www.cecb.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://www.cecb.lk/",
-      "observed_at": "2026-11-07T05:51:05.794474+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://www.cecb.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://www.cecb.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "https://www.cecb.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0950635027",
-      "source": "http://www.cecb.lk/",
-      "data": {
-        "value": "0950635027"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 80 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://www.cecb.lk/"
+      "observed_at": "2026-11-08T05:55:09.484542+05:30"
     }
   ],
   "observations": [
@@ -122,74 +85,49 @@
     },
     {
       "host": "www.cecb.lk",
-      "status": "valid",
-      "expires_at": "2027-01-02T20:13:22+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.cecb.lk/",
-      "status_code": 200,
-      "final_url": "https://www.cecb.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 203,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.cecb.lk/",
-      "status_code": 200,
-      "final_url": "http://www.cecb.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 87,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.cecb.lk/",
-      "status_code": 200,
-      "final_url": "https://www.cecb.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 746,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.cecb.lk/",
-      "status_code": 200,
-      "final_url": "http://www.cecb.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 82,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.cecb.lk/",
-      "path": "audit.output/www.cecb.lk/20261107.0551/snapshots/page-01-bde2b88564c5.html",
-      "sha256": "bde2b88564c519bb5d273721ff95e92d0d978875950f1afc489d9e26d99c3b8a",
-      "bytes": 12141
-    },
-    {
-      "url": "http://www.cecb.lk/",
-      "path": "audit.output/www.cecb.lk/20261107.0551/snapshots/page-02-15351421387a.html",
-      "sha256": "15351421387ad51849c8a73e1cfee722a94124906c9fbb24801f57edb9943fc6",
-      "bytes": 12063
-    },
-    {
-      "url": "https://www.cecb.lk/",
-      "path": "audit.output/www.cecb.lk/20261107.0551/snapshots/page-03-b956a220148e.html",
-      "sha256": "b956a220148eee5f0f3d597f73e993d1c81fb3274db9ac41349e2cd8bbb72138",
-      "bytes": 12116
-    },
-    {
-      "url": "http://www.cecb.lk/",
-      "path": "audit.output/www.cecb.lk/20261107.0551/snapshots/page-04-ec155939e6ef.html",
-      "sha256": "ec155939e6efa2e6e5321b67a8eb43bd66fa0cec1b62e2e7f17b3cfff66bdcbe",
-      "bytes": 12109
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -204,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -217,55 +155,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 80 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
@@ -303,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

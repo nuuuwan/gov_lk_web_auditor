@@ -1,8 +1,8 @@
 # Website Audit: https://www.dlb.lk/
 
-- Completed: 2026-11-07 06:13
+- Completed: 2026-11-08 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 4.154.167.160 (US, github-actions)
+- Vantage: 20.51.198.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

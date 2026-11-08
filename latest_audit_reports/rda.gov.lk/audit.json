@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "92b62d7c-f590-4367-89c6-76a18196db8a",
+  "audit_id": "bd59edee-48ac-4348-8837-508347935154",
   "url": "https://rda.gov.lk/",
   "normalized_url": "https://rda.gov.lk/",
-  "started_at": "2026-11-07T06:38:55.656087+05:30",
-  "completed_at": "2026-11-07T06:39:29.803262+05:30",
+  "started_at": "2026-11-08T06:34:40.251385+05:30",
+  "completed_at": "2026-11-08T06:34:44.836683+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -26,555 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T06:38:56.016701+05:30"
+      "observed_at": "2026-11-08T06:34:40.597756+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T06:38:56.016721+05:30"
+      "observed_at": "2026-11-08T06:34:40.597773+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T06:38:56.966961+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T06:34:41.087329+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://rda.gov.lk/",
-      "observed_at": "2026-11-07T06:39:29.514778+05:30"
+      "observed_at": "2026-11-08T06:34:44.836503+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://rda.gov.lk/",
-      "observed_at": "2026-11-07T06:39:29.514806+05:30"
+      "observed_at": "2026-11-08T06:34:44.836525+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://rda.gov.lk/",
-      "observed_at": "2026-11-07T06:39:29.514809+05:30"
+      "observed_at": "2026-11-08T06:34:44.836529+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://rda.gov.lk/index.php?lang=en",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://rda.gov.lk/",
-      "observed_at": "2026-11-07T06:39:29.514812+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514815+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514817+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514821+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://rda.gov.lk/rda_project_new/map",
-      "source": "https://rda.gov.lk/rda_project_new/map",
-      "observed_at": "2026-11-07T06:39:29.514824+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514826+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514829+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514831+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514834+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514836+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "observed_at": "2026-11-07T06:39:29.514838+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://rda.gov.lk/index.php?lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0320342481",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "data": {
-        "value": "0320342481"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://rda.gov.lk/images/publications/Internal_Affairs_Unit/2026_10_21_Internal_Affairs_Unit.pdf",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "data": {
-        "value": "https://rda.gov.lk/images/publications/Internal_Affairs_Unit/2026_10_21_Internal_Affairs_Unit.pdf"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 2 046200 ",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "data": {
-        "value": "+94 11 2 046200 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: 1968@rda.gov.lk",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "data": {
-        "value": "1968@rda.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 32589 visible characters across 14 pages",
-      "source": "https://rda.gov.lk/"
+      "observed_at": "2026-11-08T06:34:44.836533+05:30"
     }
   ],
   "observations": [
@@ -594,234 +85,49 @@
     },
     {
       "host": "rda.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-11-16T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://rda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rda.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 2714,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://rda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rda.gov.lk/",
-        "https://rda.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1614,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://rda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rda.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1798,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://rda.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?lang=en",
-      "redirects": [
-        "https://rda.gov.lk/",
-        "https://rda.gov.lk/index.php?lang=en"
-      ],
-      "elapsed_ms": 1800,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1923,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1318,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "redirects": [],
-      "elapsed_ms": 2138,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/rda_project_new/map",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/rda_project_new/map",
-      "redirects": [],
-      "elapsed_ms": 1226,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1490,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1307,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1316,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1393,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1682,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "status_code": 200,
-      "final_url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "redirects": [],
-      "elapsed_ms": 1293,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-01-dce35b177073.html",
-      "sha256": "dce35b177073d0e768158f38aadda15819c6f6597c3e498a62cce7015ee3c6a6",
-      "bytes": 43571
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-02-05a73ac9bdf6.html",
-      "sha256": "05a73ac9bdf67154880a8e240d81a403e191e61306b61b6f3e1e1c2570f10142",
-      "bytes": 43571
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-03-8c81ba615fd8.html",
-      "sha256": "8c81ba615fd86288f728b4b33e3194c6ad76de0fb5564b8059b54b50acbc31ed",
-      "bytes": 43571
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-04-f27a5f71d8e7.html",
-      "sha256": "f27a5f71d8e72bc9032fba2926d8a96689a53dfe4e2701da2464a56aa4b27acd",
-      "bytes": 43571
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-05-91de00e7ea9f.html",
-      "sha256": "91de00e7ea9f2d900e614d463be7eb26d005b23d7d150eac7bf7b6c2f569e3e6",
-      "bytes": 44021
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=102&Itemid=112&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-06-e00e3b8377cd.html",
-      "sha256": "e00e3b8377cdafe3a4e763a799a233114199ff4d9dbd5593616e516b54919484",
-      "bytes": 39418
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=24&Itemid=123&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-07-858976e08189.html",
-      "sha256": "858976e08189c79be944158891bc3498309077f1d232bf84c650ff2554b99ee1",
-      "bytes": 118464
-    },
-    {
-      "url": "https://rda.gov.lk/rda_project_new/map",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-08-9e81a9ca7003.html",
-      "sha256": "9e81a9ca7003c2394e406c9f26dd90efbdee57f7b2017d759da018bd36167e9a",
-      "bytes": 31057
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=92&Itemid=167&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-09-d4340b4c591f.html",
-      "sha256": "d4340b4c591f182a120d5aff0d2e5f3ab655a9607d08b2c60be5f92579a20e55",
-      "bytes": 25473
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=114&Itemid=195&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-10-382d67c2c0fc.html",
-      "sha256": "382d67c2c0fc6d7d516b5436c74b02aab4a69bbab28f5172d6b46c080243f5f1",
-      "bytes": 27009
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_inquiries&view=biddetail&Itemid=130&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-11-df0dabce5649.html",
-      "sha256": "df0dabce5649c6abb9f03e5fdda74e572fa158886fb608339209b01b6d3822b8",
-      "bytes": 37849
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=83&Itemid=141&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-12-417098faaf12.html",
-      "sha256": "417098faaf123874306a247560be3d5d0bc44af4eb2402426218ec444089283b",
-      "bytes": 24228
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=27&Itemid=129&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-13-3a8ba906daa0.html",
-      "sha256": "3a8ba906daa0ae19868f0caa9233acae9d885aa94070d992d2d30fab421f20c0",
-      "bytes": 85075
-    },
-    {
-      "url": "https://rda.gov.lk/index.php?option=com_content&view=article&id=22&Itemid=132&lang=en",
-      "path": "audit.output/rda.gov.lk/20261107.0638/snapshots/page-14-5358b922a7d6.html",
-      "sha256": "5358b922a7d639a0734b21fbb58ce84321798185dd8c8f58fe32a5c39f99b97b",
-      "bytes": 28417
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -835,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -848,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
@@ -905,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 11 2 046200 (2 phone numbers found); Email: 1968@rda.gov.lk"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -954,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

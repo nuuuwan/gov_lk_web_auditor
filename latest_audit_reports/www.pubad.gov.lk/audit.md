@@ -1,8 +1,8 @@
 # Website Audit: https://www.pubad.gov.lk/
 
-- Completed: 2026-11-07 06:47
+- Completed: 2026-11-08 06:39
 - Overall result: ⚫ Level 0
-- Vantage: 4.154.167.160 (US, github-actions)
+- Vantage: 20.51.198.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ No usable page was inspected; No usable page was inspected; No usable page was i
 | http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ❓ | timed out |
-| tls_hostname_matches | ❓ | timed out |
+| tls_not_expired | ❓ | [Errno 111] Connection refused |
+| tls_hostname_matches | ❓ | [Errno 111] Connection refused |
 
 ## 🟠 Level 2: ❓
 

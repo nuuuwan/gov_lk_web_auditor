@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c602490c-957a-4d80-8174-fef8b8a73790",
+  "audit_id": "5f008f59-05e1-4ce8-9c4d-56aa4168e13a",
   "url": "https://archaeology.gov.lk",
   "normalized_url": "https://archaeology.gov.lk/",
-  "started_at": "2026-11-07T05:53:52.115488+05:30",
-  "completed_at": "2026-11-07T05:56:04.035167+05:30",
+  "started_at": "2026-11-08T05:56:30.901087+05:30",
+  "completed_at": "2026-11-08T05:56:35.534488+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -16,8 +16,8 @@
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
       "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -25,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T05:53:52.503886+05:30"
+      "observed_at": "2026-11-08T05:56:31.271440+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T05:53:52.503907+05:30"
+      "observed_at": "2026-11-08T05:56:31.271462+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-07T05:54:02.714164+05:30"
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T05:56:31.761811+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 1: timed out",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://archaeology.gov.lk/",
-      "observed_at": "2026-11-07T05:56:04.034966+05:30"
+      "observed_at": "2026-11-08T05:56:35.534301+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 2: timed out",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://archaeology.gov.lk/",
-      "observed_at": "2026-11-07T05:56:04.034987+05:30"
+      "observed_at": "2026-11-08T05:56:35.534322+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: timed out",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://archaeology.gov.lk/",
-      "observed_at": "2026-11-07T05:56:04.034991+05:30"
+      "observed_at": "2026-11-08T05:56:35.534326+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: timed out",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://archaeology.gov.lk/",
-      "observed_at": "2026-11-07T05:56:04.034994+05:30"
+      "observed_at": "2026-11-08T05:56:35.534329+05:30"
     }
   ],
   "observations": [
@@ -88,7 +88,7 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "timed out"
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://archaeology.gov.lk/",
@@ -97,7 +97,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://archaeology.gov.lk/",
@@ -106,7 +106,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://archaeology.gov.lk/",
@@ -115,7 +115,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://archaeology.gov.lk/",
@@ -124,7 +124,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 111] Connection refused"
     }
   ],
   "snapshots": [],
@@ -142,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -197,13 +197,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
@@ -241,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

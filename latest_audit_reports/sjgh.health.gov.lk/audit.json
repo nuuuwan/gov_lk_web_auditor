@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "afd277c0-3470-440d-9642-7bbf70d53dc8",
+  "audit_id": "3589e2d5-b90c-4f81-b2c8-f489613af83c",
   "url": "https://sjgh.health.gov.lk/",
   "normalized_url": "https://sjgh.health.gov.lk/",
-  "started_at": "2026-11-07T06:23:14.578366+05:30",
-  "completed_at": "2026-11-07T06:23:34.922620+05:30",
+  "started_at": "2026-11-08T06:23:32.680945+05:30",
+  "completed_at": "2026-11-08T06:23:37.684623+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -26,672 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T06:23:15.085169+05:30"
+      "observed_at": "2026-11-08T06:23:33.374683+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T06:23:15.085195+05:30"
+      "observed_at": "2026-11-08T06:23:33.374707+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T06:23:15.840687+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T06:23:33.900894+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://sjgh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://sjgh.health.gov.lk/",
-      "observed_at": "2026-11-07T06:23:34.745880+05:30"
+      "observed_at": "2026-11-08T06:23:37.684422+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://sjgh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://sjgh.health.gov.lk/",
-      "observed_at": "2026-11-07T06:23:34.745900+05:30"
+      "observed_at": "2026-11-08T06:23:37.684446+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://sjgh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://sjgh.health.gov.lk/",
-      "observed_at": "2026-11-07T06:23:34.745903+05:30"
+      "observed_at": "2026-11-08T06:23:37.684452+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://sjgh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://sjgh.health.gov.lk/",
-      "observed_at": "2026-11-07T06:23:34.745906+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://sjgh.health.gov.lk/our-services.php",
-      "source": "https://sjgh.health.gov.lk/our-services.php",
-      "observed_at": "2026-11-07T06:23:34.745908+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "source": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "observed_at": "2026-11-07T06:23:34.745911+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "source": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "observed_at": "2026-11-07T06:23:34.745913+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "observed_at": "2026-11-07T06:23:34.745915+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "observed_at": "2026-11-07T06:23:34.745917+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "source": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "observed_at": "2026-11-07T06:23:34.745920+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "source": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "observed_at": "2026-11-07T06:23:34.745922+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "source": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "observed_at": "2026-11-07T06:23:34.745924+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "source": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "observed_at": "2026-11-07T06:23:34.745926+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "source": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "observed_at": "2026-11-07T06:23:34.745928+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "0112 778 610 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "0112 778 610 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "0112 778 610 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "0112 778 610 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/our-services.php",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/our-services.php",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/our-services.php",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/our-services.php",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +112 778 610",
-      "source": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "data": {
-        "value": "+112 778 610"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 778 610 ",
-      "source": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "data": {
-        "value": "+94 112 778 610 "
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte",
-      "source": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "data": {
-        "value": "Hospital Road, Sri Jayawardenepura, Kotte"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 7882 visible characters across 14 pages",
-      "source": "https://sjgh.health.gov.lk/"
+      "observed_at": "2026-11-08T06:23:37.684456+05:30"
     }
   ],
   "observations": [
@@ -711,228 +85,49 @@
     },
     {
       "host": "sjgh.health.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-20T07:26:08+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://sjgh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1478,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://sjgh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/",
-      "redirects": [
-        "https://sjgh.health.gov.lk/"
-      ],
-      "elapsed_ms": 1209,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://sjgh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1456,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://sjgh.health.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/",
-      "redirects": [
-        "https://sjgh.health.gov.lk/"
-      ],
-      "elapsed_ms": 1447,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/our-services.php",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/our-services.php",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 958,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "redirects": [],
-      "elapsed_ms": 986,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "redirects": [],
-      "elapsed_ms": 1219,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "redirects": [],
-      "elapsed_ms": 974,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "redirects": [],
-      "elapsed_ms": 980,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "redirects": [],
-      "elapsed_ms": 950,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "redirects": [],
-      "elapsed_ms": 958,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "redirects": [],
-      "elapsed_ms": 967,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "redirects": [],
-      "elapsed_ms": 1021,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "status_code": 200,
-      "final_url": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "redirects": [],
-      "elapsed_ms": 972,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://sjgh.health.gov.lk/",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-01-b1eec5b2e877.html",
-      "sha256": "b1eec5b2e877c763dbe5c0af3301b708ddef46cc1160487e536bc60078206c17",
-      "bytes": 45046
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-02-b1eec5b2e877.html",
-      "sha256": "b1eec5b2e877c763dbe5c0af3301b708ddef46cc1160487e536bc60078206c17",
-      "bytes": 45046
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-03-b1eec5b2e877.html",
-      "sha256": "b1eec5b2e877c763dbe5c0af3301b708ddef46cc1160487e536bc60078206c17",
-      "bytes": 45046
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-04-b1eec5b2e877.html",
-      "sha256": "b1eec5b2e877c763dbe5c0af3301b708ddef46cc1160487e536bc60078206c17",
-      "bytes": 45046
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/our-services.php",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-05-5461a2c4b737.html",
-      "sha256": "5461a2c4b737753a1daa04abac788b1ca27c9d5c1e21551ac5f8609ed967a617",
-      "bytes": 38716
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=anaesthesiology-unit",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-06-81bb09c9ca07.html",
-      "sha256": "81bb09c9ca07cff7913f7d3417828ce976f3d56ec90ed4b0f78848428de5b077",
-      "bytes": 25731
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=blood-bank",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-07-fcc67d023aaf.html",
-      "sha256": "fcc67d023aaf7c27f3c50c5472ce29197b896a084494d8ac451467e1ca282b3b",
-      "bytes": 25161
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=cardiology-unit",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-08-b5e5633f2f25.html",
-      "sha256": "b5e5633f2f251fcf03a7e25afab2b75ee98ce2f05763a686d0aac4f6c0495e69",
-      "bytes": 25317
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=cardiothoracic-unit",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-09-c9e82637930f.html",
-      "sha256": "c9e82637930ff3678319dc6c8ed01d705f3323cbf645432b713b17f58159821c",
-      "bytes": 25035
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=dermatology-unit",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-10-d274edc2d477.html",
-      "sha256": "d274edc2d477851eaff3ff98f35364b2f86afe5504a286fe1703e5b292675d37",
-      "bytes": 25499
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=ear-nose-throat-(ent)-unit",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-11-0a40a7d1bb94.html",
-      "sha256": "0a40a7d1bb946c8548b6203ad5a52901858a2cf08808bc761101723cf21bd873",
-      "bytes": 25254
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=emergency-treatment-unit-(etu)",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-12-c0850a600c83.html",
-      "sha256": "c0850a600c8328969e3e08e99b9760c493a7e3a6a8c1e5373075493d038e2547",
-      "bytes": 24814
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=endocrinology-unit",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-13-7c9d5be06872.html",
-      "sha256": "7c9d5be06872e1d5fe4020c7cd290935f8294775995539811c1ce153ee7cd432",
-      "bytes": 25089
-    },
-    {
-      "url": "https://sjgh.health.gov.lk/services.php?service=general-medical-unit",
-      "path": "audit.output/sjgh.health.gov.lk/20261107.0623/snapshots/page-14-a0e491d7fc92.html",
-      "sha256": "a0e491d7fc92adafabdb3bcd08c0c625f16591fbe125da3a4a1e934a3c416b39",
-      "bytes": 25257
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -946,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -959,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
@@ -1016,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: Hospital Road, Sri Jayawardenepura, Kotte"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1065,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

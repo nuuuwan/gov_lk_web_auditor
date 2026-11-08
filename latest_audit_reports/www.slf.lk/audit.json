@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "06f29c45-44b8-4db5-80e7-42e23713360e",
+  "audit_id": "930cdb4c-bbf5-4b6a-8046-87d30884920e",
   "url": "https://www.slf.lk/",
   "normalized_url": "https://www.slf.lk/",
-  "started_at": "2026-11-07T06:23:19.541583+05:30",
-  "completed_at": "2026-11-07T06:23:43.159514+05:30",
+  "started_at": "2026-11-08T06:23:39.159129+05:30",
+  "completed_at": "2026-11-08T06:23:43.133801+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -26,663 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T06:23:19.876861+05:30"
+      "observed_at": "2026-11-08T06:23:39.581807+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T06:23:19.876883+05:30"
+      "observed_at": "2026-11-08T06:23:39.581828+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T06:23:21.317231+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T06:23:39.842128+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.slf.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://www.slf.lk/",
-      "observed_at": "2026-11-07T06:23:42.712485+05:30"
+      "observed_at": "2026-11-08T06:23:43.133579+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.slf.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://www.slf.lk/",
-      "observed_at": "2026-11-07T06:23:42.712503+05:30"
+      "observed_at": "2026-11-08T06:23:43.133603+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.slf.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://www.slf.lk/",
-      "observed_at": "2026-11-07T06:23:42.712507+05:30"
+      "observed_at": "2026-11-08T06:23:43.133608+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.slf.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://www.slf.lk/",
-      "observed_at": "2026-11-07T06:23:42.712510+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.slf.lk/information-officer/",
-      "source": "https://www.slf.lk/information-officer/",
-      "observed_at": "2026-11-07T06:23:42.712512+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.slf.lk/contact/",
-      "source": "https://www.slf.lk/contact/",
-      "observed_at": "2026-11-07T06:23:42.712514+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.slf.lk/newsletters/",
-      "source": "https://www.slf.lk/newsletters/",
-      "observed_at": "2026-11-07T06:23:42.712516+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.slf.lk/videos/",
-      "source": "https://www.slf.lk/videos/",
-      "observed_at": "2026-11-07T06:23:42.712519+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.slf.lk/gallery/",
-      "source": "https://www.slf.lk/gallery/",
-      "observed_at": "2026-11-07T06:23:42.712521+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.slf.lk/admissions/",
-      "source": "https://slf.lk/admissions/",
-      "observed_at": "2026-11-07T06:23:42.712523+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.slf.lk/upload-bank-transfer-slip-page/",
-      "source": "https://www.slf.lk/upload-bank-transfer-slip-page/",
-      "observed_at": "2026-11-07T06:23:42.712525+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.slf.lk/pay-online/",
-      "source": "https://www.slf.lk/pay-online/",
-      "observed_at": "2026-11-07T06:23:42.712527+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.slf.lk/courses/",
-      "source": "https://www.slf.lk/courses/",
-      "observed_at": "2026-11-07T06:23:42.712529+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.slf.lk/facilities/",
-      "source": "https://www.slf.lk/facilities/",
-      "observed_at": "2026-11-07T06:23:42.712532+05:30"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs 100",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "rs 100"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs 100",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "rs 100"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs 100",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "rs 100"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs 100",
-      "source": "https://www.slf.lk/",
-      "data": {
-        "value": "rs 100"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 94112695249",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "94112695249"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 94112691814",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "94112691814"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112695249 ",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "+94112695249 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112691814 ",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "+94112691814 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: gayani@slf.lk",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "gayani@slf.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: gayani@slf.lk Contact Number +94112691814 / +94112695249 Location No.100, Sri Lanka Padanama Mawatha, Independence Squar",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "gayani@slf.lk Contact Number +94112691814 / +94112695249 Location No.100, Sri Lanka Padanama Mawatha, Independence Squar"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: free of charge",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "free of charge"
-      }
-    },
-    {
-      "check": "downloadable_form",
-      "status": "pass",
-      "detail": "Published downloadable form: https://www.slf.lk/wp-content/uploads/2025/06/RTI-Application-Information.docx",
-      "source": "https://www.slf.lk/information-officer/",
-      "data": {
-        "value": "https://www.slf.lk/wp-content/uploads/2025/06/RTI-Application-Information.docx"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 679 686",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 679 686"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 699 482 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 699 482 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 679 685 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 679 685 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 113 071 209 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 113 071 209 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 698 377",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 698 377"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 679 686 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 679 686 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 127",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 127"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 691 028 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 691 028 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 127 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 127 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 695 249",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 695 249"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 699 482",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 699 482"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 113 071 209",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 113 071 209"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 512",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 512"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 589",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 589"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 512 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 512 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 698 377 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 698 377 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 589 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 589 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 698 378",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 698 378"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 695 249 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 695 249 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 691 814 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 691 814 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 509 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 509 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 698 378 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 698 378 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 691 028",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 691 028"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 691 814",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 691 814"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 679 685",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 679 685"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 113 071 794",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 113 071 794"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 113 071 794 ",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 113 071 794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 684 509",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "+94 112 684 509"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: bdu@slf.lk",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "bdu@slf.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: edu@slf.lk",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "edu@slf.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: is not allowed.\",\"val_number\":\"Please enter a valid number.\",\"val_number_positive\":\"Please enter a valid positive number",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "is not allowed.\",\"val_number\":\"Please enter a valid number.\",\"val_number_positive\":\"Please enter a valid positive number"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 24 hours",
-      "source": "https://www.slf.lk/contact/",
-      "data": {
-        "value": "24 hours"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: johndoe@example.com",
-      "source": "https://www.slf.lk/admissions/",
-      "data": {
-        "value": "johndoe@example.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Hint: johndoe@example.com Send © 2026 External Exam Admissions Portal. All rights reserved. {\"prefetch\":[{\"source\":\"docu",
-      "source": "https://www.slf.lk/admissions/",
-      "data": {
-        "value": "Hint: johndoe@example.com Send © 2026 External Exam Admissions Portal. All rights reserved. {\"prefetch\":[{\"source\":\"docu"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Phone Number Province Select Sabaragamuwa Province Uva Province North Central Province North Western Province Eastern Pr",
-      "source": "https://www.slf.lk/pay-online/",
-      "data": {
-        "value": "Phone Number Province Select Sabaragamuwa Province Uva Province North Central Province North Western Province Eastern Pr"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: LKR 0",
-      "source": "https://www.slf.lk/pay-online/",
-      "data": {
-        "value": "LKR 0"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01 202505 20",
-      "source": "https://www.slf.lk/courses/",
-      "data": {
-        "value": "01 202505 20"
-      }
-    },
-    {
-      "check": "fees_and_payment",
-      "status": "pass",
-      "detail": "Published fees and payment: rs,",
-      "source": "https://www.slf.lk/facilities/",
-      "data": {
-        "value": "rs,"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 7794 visible characters across 14 pages",
-      "source": "https://www.slf.lk/"
+      "observed_at": "2026-11-08T06:23:43.133612+05:30"
     }
   ],
   "observations": [
@@ -702,230 +85,49 @@
     },
     {
       "host": "www.slf.lk",
-      "status": "valid",
-      "expires_at": "2026-12-29T02:39:14+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.slf.lk/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1414,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.slf.lk/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/",
-      "redirects": [
-        "https://www.slf.lk/"
-      ],
-      "elapsed_ms": 1347,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.slf.lk/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1316,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.slf.lk/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/",
-      "redirects": [
-        "https://www.slf.lk/"
-      ],
-      "elapsed_ms": 1282,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/information-officer/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/information-officer/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1250,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/contact/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/contact/",
-      "redirects": [],
-      "elapsed_ms": 1278,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/newsletters/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/newsletters/",
-      "redirects": [],
-      "elapsed_ms": 1294,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/videos/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/videos/",
-      "redirects": [],
-      "elapsed_ms": 1350,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/gallery/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/gallery/",
-      "redirects": [],
-      "elapsed_ms": 1349,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://slf.lk/admissions/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/admissions/",
-      "redirects": [
-        "https://www.slf.lk/admissions/"
-      ],
-      "elapsed_ms": 812,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/upload-bank-transfer-slip-page/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/upload-bank-transfer-slip-page/",
-      "redirects": [],
-      "elapsed_ms": 1024,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/pay-online/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/pay-online/",
-      "redirects": [],
-      "elapsed_ms": 1317,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/courses/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/courses/",
-      "redirects": [],
-      "elapsed_ms": 1299,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.slf.lk/facilities/",
-      "status_code": 200,
-      "final_url": "https://www.slf.lk/facilities/",
-      "redirects": [],
-      "elapsed_ms": 1238,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.slf.lk/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-01-7a81022bf0a3.html",
-      "sha256": "7a81022bf0a3d0fc571d9ca5377577f671e2b8500f27e685ebda0e5e8e8ec0c8",
-      "bytes": 148283
-    },
-    {
-      "url": "https://www.slf.lk/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-02-1c7fc3a7fba3.html",
-      "sha256": "1c7fc3a7fba3b479863145d6cc4a797697267fa1aa2fec92327d6805d2bb4a3b",
-      "bytes": 148283
-    },
-    {
-      "url": "https://www.slf.lk/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-03-b35fe78ef924.html",
-      "sha256": "b35fe78ef92404d87f5573b7f13625e2d67e7d29b0fa3ff43880040e27b95a0d",
-      "bytes": 148283
-    },
-    {
-      "url": "https://www.slf.lk/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-04-5efaf5f54b7e.html",
-      "sha256": "5efaf5f54b7ef97b2d7adc1b28fb4a4e4bbf9c667eee8f0abff20277a1e7331c",
-      "bytes": 148283
-    },
-    {
-      "url": "https://www.slf.lk/information-officer/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-05-56ff4313b14b.html",
-      "sha256": "56ff4313b14b28b081002504855dc58cb232df20c74f655e440a51b0eb040d26",
-      "bytes": 75958
-    },
-    {
-      "url": "https://www.slf.lk/contact/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-06-8b755f778c75.html",
-      "sha256": "8b755f778c752cd6e786eddfadadfa500bdc301d42178922f6228486f02ad7cf",
-      "bytes": 98811
-    },
-    {
-      "url": "https://www.slf.lk/newsletters/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-07-076017e7848c.html",
-      "sha256": "076017e7848cea0a92e1d576844d2cd1a408a6bbef82f302bf55d2ea37965e24",
-      "bytes": 80845
-    },
-    {
-      "url": "https://www.slf.lk/videos/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-08-9530fb542258.html",
-      "sha256": "9530fb542258505772fda744cb3fbda9e062947dcbb9e62f0f01cdbb5c559f75",
-      "bytes": 87912
-    },
-    {
-      "url": "https://www.slf.lk/gallery/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-09-f2c41f03732f.html",
-      "sha256": "f2c41f03732fe8bc17c2cef9e5da8b20687885613686968adc0a5abf9e62b369",
-      "bytes": 72199
-    },
-    {
-      "url": "https://www.slf.lk/admissions/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-10-d4ea0bff3522.html",
-      "sha256": "d4ea0bff35226eb61d59cf3a308e74932bc9f73b7388768df871288793753dee",
-      "bytes": 36194
-    },
-    {
-      "url": "https://www.slf.lk/upload-bank-transfer-slip-page/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-11-d32315e99aac.html",
-      "sha256": "d32315e99aacdb0df54dfcb51dc3098f81c81b0ae84e2ffaa2ed14fdb1c8d751",
-      "bytes": 39782
-    },
-    {
-      "url": "https://www.slf.lk/pay-online/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-12-716e024d3980.html",
-      "sha256": "716e024d39801d9f1288e393d3d110bd15a4568c259f3c371b36741670e3d025",
-      "bytes": 110299
-    },
-    {
-      "url": "https://www.slf.lk/courses/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-13-4c9392000e2d.html",
-      "sha256": "4c9392000e2d9b2919e615fdbf9da2f8de5a42ad0dbf51d39d00671e751da720",
-      "bytes": 90586
-    },
-    {
-      "url": "https://www.slf.lk/facilities/",
-      "path": "audit.output/www.slf.lk/20261107.0623/snapshots/page-14-1f76f942a87f.html",
-      "sha256": "1f76f942a87f7ad45b95ef1780754ee900a32ed7598d8d5713a2cbcad6002992",
-      "bytes": 86262
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -939,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -952,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: gayani@slf.lk Contact Number +94112691814 / +94112695249 Location No.100, Sri Lanka Padanama Mawatha, Independence Squar; Phone: 94112695249 (19 phone numbers found); Email: gayani@slf.lk (4 email addresses found); Published named responsibility: director",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: gayani@slf.lk Contact Number +94112691814 / +94112695249 Location No.100, Sri Lanka Padanama Mawatha, Independence Squar"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 94112695249 (19 phone numbers found); Email: gayani@slf.lk (4 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: director"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published fees and payment: rs 100"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: circular"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published processing time: 24 hours"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published downloadable form: https://www.slf.lk/wp-content/uploads/2025/06/RTI-Application-Information.docx"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1101,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

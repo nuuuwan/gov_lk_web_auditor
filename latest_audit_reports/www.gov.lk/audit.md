@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-07 06:00
+- Completed: 2026-11-08 06:01
 - Overall result: 🔴 Level 1
-- Vantage: 4.154.167.160 (US, github-actions)
+- Vantage: 20.51.198.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0009672944 (179 phone numbers found); Email: secretariat@ceypetco.gov.lk (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (182 phone numbers found); Email: info@meteo.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

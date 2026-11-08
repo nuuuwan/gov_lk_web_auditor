@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "8d37af27-2958-42f0-ae9b-03c8f979d804",
+  "audit_id": "5fcde6f5-b0bc-4861-8e24-717dc0f1404d",
   "url": "https://archives.gov.lk/",
   "normalized_url": "https://archives.gov.lk/",
-  "started_at": "2026-11-07T05:54:42.804327+05:30",
-  "completed_at": "2026-11-07T05:54:57.805311+05:30",
+  "started_at": "2026-11-08T05:57:09.075028+05:30",
+  "completed_at": "2026-11-08T05:57:16.359192+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -26,121 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T05:54:43.723040+05:30"
+      "observed_at": "2026-11-08T05:57:09.946088+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T05:54:43.723058+05:30"
+      "observed_at": "2026-11-08T05:57:09.946107+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T05:54:44.850568+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T05:57:10.915333+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://archives.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://archives.gov.lk/",
-      "observed_at": "2026-11-07T05:54:57.472231+05:30"
+      "observed_at": "2026-11-08T05:57:16.358940+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://archives.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://archives.gov.lk/",
-      "observed_at": "2026-11-07T05:54:57.472253+05:30"
+      "observed_at": "2026-11-08T05:57:16.358966+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://archives.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://archives.gov.lk/",
-      "observed_at": "2026-11-07T05:54:57.472258+05:30"
+      "observed_at": "2026-11-08T05:57:16.358973+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://archives.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://archives.gov.lk/",
-      "observed_at": "2026-11-07T05:54:57.472262+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://archives.gov.lk/index.php",
-      "source": "https://archives.gov.lk/index.php",
-      "observed_at": "2026-11-07T05:54:57.472266+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at http://archives.gov.lk/index.php",
-      "source": "http://archives.gov.lk/index.php",
-      "observed_at": "2026-11-07T05:54:57.472270+05:30"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://archives.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "http://archives.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://archives.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "http://archives.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://archives.gov.lk/index.php",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "http://archives.gov.lk/index.php",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 399 visible characters across 6 pages",
-      "source": "https://archives.gov.lk/"
+      "observed_at": "2026-11-08T05:57:16.358979+05:30"
     }
   ],
   "observations": [
@@ -160,104 +85,49 @@
     },
     {
       "host": "archives.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-14T04:25:32+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://archives.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://archives.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 2610,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://archives.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://archives.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 2161,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://archives.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://archives.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1880,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://archives.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://archives.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 996,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://archives.gov.lk/index.php",
-      "status_code": 200,
-      "final_url": "https://archives.gov.lk/index.php",
-      "redirects": [],
-      "elapsed_ms": 1952,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://archives.gov.lk/index.php",
-      "status_code": 200,
-      "final_url": "http://archives.gov.lk/index.php",
-      "redirects": [],
-      "elapsed_ms": 1519,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://archives.gov.lk/",
-      "path": "audit.output/archives.gov.lk/20261107.0554/snapshots/page-01-aa3884443493.html",
-      "sha256": "aa3884443493fc78f1c71b970dba5e659f81fe2878477d4372e48ad226204601",
-      "bytes": 96509
-    },
-    {
-      "url": "http://archives.gov.lk/",
-      "path": "audit.output/archives.gov.lk/20261107.0554/snapshots/page-02-aa3884443493.html",
-      "sha256": "aa3884443493fc78f1c71b970dba5e659f81fe2878477d4372e48ad226204601",
-      "bytes": 96509
-    },
-    {
-      "url": "https://archives.gov.lk/",
-      "path": "audit.output/archives.gov.lk/20261107.0554/snapshots/page-03-aa3884443493.html",
-      "sha256": "aa3884443493fc78f1c71b970dba5e659f81fe2878477d4372e48ad226204601",
-      "bytes": 96509
-    },
-    {
-      "url": "http://archives.gov.lk/",
-      "path": "audit.output/archives.gov.lk/20261107.0554/snapshots/page-04-aa3884443493.html",
-      "sha256": "aa3884443493fc78f1c71b970dba5e659f81fe2878477d4372e48ad226204601",
-      "bytes": 96509
-    },
-    {
-      "url": "https://archives.gov.lk/index.php",
-      "path": "audit.output/archives.gov.lk/20261107.0554/snapshots/page-05-19cecf9ced64.html",
-      "sha256": "19cecf9ced64f1b729bdba5b7c6b7ad990be180402a654b2099aefbdb1b3b4d1",
-      "bytes": 96527
-    },
-    {
-      "url": "http://archives.gov.lk/index.php",
-      "path": "audit.output/archives.gov.lk/20261107.0554/snapshots/page-06-19cecf9ced64.html",
-      "sha256": "19cecf9ced64f1b729bdba5b7c6b7ad990be180402a654b2099aefbdb1b3b4d1",
-      "bytes": 96527
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -271,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -284,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
@@ -341,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found; No phone or email evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No phone or email evidence found"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -390,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

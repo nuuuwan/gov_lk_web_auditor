@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "9c846a8b-69c3-4f6d-b7f2-6d0e2e9d5b41",
+  "audit_id": "d66a8b2c-03c5-4df3-a0e4-f991e1a2fb27",
   "url": "https://www.industry.gov.lk",
   "normalized_url": "https://www.industry.gov.lk/",
-  "started_at": "2026-11-07T06:43:17.969061+05:30",
-  "completed_at": "2026-11-07T06:43:45.528819+05:30",
+  "started_at": "2026-11-08T06:38:21.999528+05:30",
+  "completed_at": "2026-11-08T06:38:28.813042+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -26,1122 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T06:43:18.606744+05:30"
+      "observed_at": "2026-11-08T06:38:22.862564+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T06:43:18.606763+05:30"
+      "observed_at": "2026-11-08T06:38:22.862584+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T06:43:19.751956+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T06:38:23.611190+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.industry.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://www.industry.gov.lk/",
-      "observed_at": "2026-11-07T06:43:45.146425+05:30"
+      "observed_at": "2026-11-08T06:38:28.812850+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.industry.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://www.industry.gov.lk/",
-      "observed_at": "2026-11-07T06:43:45.146443+05:30"
+      "observed_at": "2026-11-08T06:38:28.812873+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.industry.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://www.industry.gov.lk/",
-      "observed_at": "2026-11-07T06:43:45.146446+05:30"
+      "observed_at": "2026-11-08T06:38:28.812877+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.industry.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://www.industry.gov.lk/",
-      "observed_at": "2026-11-07T06:43:45.146448+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "observed_at": "2026-11-07T06:43:45.146451+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "source": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "observed_at": "2026-11-07T06:43:45.146453+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.industry.gov.lk/web/",
-      "source": "https://www.industry.gov.lk/web/",
-      "observed_at": "2026-11-07T06:43:45.146456+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "observed_at": "2026-11-07T06:43:45.146458+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "observed_at": "2026-11-07T06:43:45.146461+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "observed_at": "2026-11-07T06:43:45.146463+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "observed_at": "2026-11-07T06:43:45.146466+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "observed_at": "2026-11-07T06:43:45.146468+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "observed_at": "2026-11-07T06:43:45.146471+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.industry.gov.lk/web/organizational-structure/",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "observed_at": "2026-11-07T06:43:45.146473+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "data": {
-        "value": "No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: இலக்கம்: 73/1, காலி வீதி, கொழும்பு 03, இலங்கை. தொலைபேசி: +94 112 392149 +94 112 392150 மின்னஞ்சல் முகவரி: info@industry.gov.lk Copyright கைத்தொழில் மற்றும் தொழில் முயற்சியாண்மை அபிவிருத்தி அமைச்சு©2026 | Site by TheekshanaR&D",
-      "source": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "data": {
-        "value": "இலக்கம்: 73/1, காலி வீதி, கொழும்பு 03, இலங்கை. தொலைபேசி: +94 112 392149 +94 112 392150 மின்னஞ்சல் முகவரி: info@industry.gov.lk Copyright கைத்தொழில் மற்றும் தொழில் முயற்சியாண்மை அபிவிருத்தி அமைச்சு©2026 | Site by TheekshanaR&D"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, Galle Road, Colombo 003, Sri Lanka. Tel: +94 112 392149 +94 112 392150 Email: info@industry.gov.lk Copyright Ministry of Industry and Entrepreneurship Development©2026 | Site by TheekshanaR&D",
-      "source": "https://www.industry.gov.lk/web/",
-      "data": {
-        "value": "No. 73/1, Galle Road, Colombo 003, Sri Lanka. Tel: +94 112 392149 +94 112 392150 Email: info@industry.gov.lk Copyright Ministry of Industry and Entrepreneurship Development©2026 | Site by TheekshanaR&D"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://www.industry.gov.lk/web/",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "data": {
-        "value": "No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: minister@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "minister@industry.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: deputy.minister@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "deputy.minister@industry.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "data": {
-        "value": "No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: secretary@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "secretary@industry.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sec.indus73@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "sec.indus73@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "data": {
-        "value": "No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 03 77734301",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "03 77734301"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05 71832976",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05 71832976"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0717378800 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "0717378800 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0. 767002931 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "0. 767002931 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05. 77124502",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05. 77124502"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0712481481 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "0712481481 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05. 07773788",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05. 07773788"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0714817185 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "0714817185 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 02. 77387923",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "02. 77387923"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0. 773634735 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "0. 773634735 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 03. 77318566",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "03. 77318566"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05. 77748994",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05. 77748994"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05 77359510",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05 77359510"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112607002 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "0112607002 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05. 07772798",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05. 07772798"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05. 77310619",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05. 77310619"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 04. 71447144",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "04. 71447144"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05. 77734301",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "05. 77734301"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0376496087",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "0376496087"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chaminda@uom.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "chaminda@uom.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ndthisera@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "ndthisera@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: milsinghe@ymail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "milsinghe@ymail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ayesha@uom.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "ayesha@uom.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: lalithwijenayaka@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "lalithwijenayaka@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chairman@laksala.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "chairman@laksala.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chairman@edb.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "chairman@edb.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chairmanbcclanka@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "chairmanbcclanka@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: lucky@janrichlk.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "lucky@janrichlk.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: kumarabandara@rklssrilanka.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "kumarabandara@rklssrilanka.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: shankarsivasothy@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "shankarsivasothy@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: wasantha1011@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "wasantha1011@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: anandakumarsge29@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "anandakumarsge29@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: ndcchairman73@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "ndcchairman73@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dhinuk@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "dhinuk@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chairman@idb.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "chairman@idb.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: gwfer@ou.ac.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "gwfer@ou.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: vjauditsl@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "vjauditsl@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: charman@slita.ac.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "charman@slita.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: rmsupali@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "rmsupali@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: hpanagoda54@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "hpanagoda54@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: gppeiris361@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "gppeiris361@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chairman@gsmb.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "chairman@gsmb.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chaminda@uom.lk.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "chaminda@uom.lk.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: nesanrdb5@gmail.com",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "nesanrdb5@gmail.com"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "data": {
-        "value": "No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392150 ",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "data": {
-        "value": "+94 112 392150 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 392149 ",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "data": {
-        "value": "+94 112 392149 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392150",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "data": {
-        "value": "112392150"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 112392149",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "data": {
-        "value": "112392149"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@industry.gov.lk",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "data": {
-        "value": "info@industry.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: No. 73/1, Galle Road, Colombo 003, Sri Lanka. Tel: +94 112 392149 +94 112 392150 Email: info@industry.gov.lk Copyright Ministry of Industry and Entrepreneurship Development©2026 | Site by TheekshanaR&D",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "data": {
-        "value": "No. 73/1, Galle Road, Colombo 003, Sri Lanka. Tel: +94 112 392149 +94 112 392150 Email: info@industry.gov.lk Copyright Ministry of Industry and Entrepreneurship Development©2026 | Site by TheekshanaR&D"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://www.industry.gov.lk/web/organizational-structure/",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 5649 visible characters across 14 pages",
-      "source": "https://www.industry.gov.lk/"
+      "observed_at": "2026-11-08T06:38:28.812880+05:30"
     }
   ],
   "observations": [
@@ -1161,228 +85,49 @@
     },
     {
       "host": "www.industry.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-02T19:30:38+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.industry.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 980,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.industry.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/",
-      "redirects": [
-        "https://www.industry.gov.lk/"
-      ],
-      "elapsed_ms": 953,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.industry.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1392,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.industry.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/",
-      "redirects": [
-        "https://www.industry.gov.lk/"
-      ],
-      "elapsed_ms": 997,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 1659,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "redirects": [],
-      "elapsed_ms": 1651,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/",
-      "redirects": [],
-      "elapsed_ms": 2129,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "redirects": [],
-      "elapsed_ms": 1464,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "redirects": [],
-      "elapsed_ms": 1463,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "redirects": [],
-      "elapsed_ms": 1441,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "redirects": [],
-      "elapsed_ms": 1958,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "redirects": [],
-      "elapsed_ms": 1418,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "redirects": [],
-      "elapsed_ms": 1584,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/organizational-structure/",
-      "status_code": 200,
-      "final_url": "https://www.industry.gov.lk/web/organizational-structure/",
-      "redirects": [],
-      "elapsed_ms": 1437,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.industry.gov.lk/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-01-216f3da97674.html",
-      "sha256": "216f3da97674ca86d71cd212faa83a7f2018a864bf5e8a8d23ba3fb7a86d0d48",
-      "bytes": 3870
-    },
-    {
-      "url": "https://www.industry.gov.lk/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-02-216f3da97674.html",
-      "sha256": "216f3da97674ca86d71cd212faa83a7f2018a864bf5e8a8d23ba3fb7a86d0d48",
-      "bytes": 3870
-    },
-    {
-      "url": "https://www.industry.gov.lk/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-03-216f3da97674.html",
-      "sha256": "216f3da97674ca86d71cd212faa83a7f2018a864bf5e8a8d23ba3fb7a86d0d48",
-      "bytes": 3870
-    },
-    {
-      "url": "https://www.industry.gov.lk/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-04-216f3da97674.html",
-      "sha256": "216f3da97674ca86d71cd212faa83a7f2018a864bf5e8a8d23ba3fb7a86d0d48",
-      "bytes": 3870
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%b8%e0%b7%94%e0%b6%bd%e0%b7%8a-%e0%b6%b4%e0%b7%92%e0%b6%a7%e0%b7%94%e0%b7%80/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-05-d19bc45a7cbc.html",
-      "sha256": "d19bc45a7cbc58432a9e3f89cda4068169c9b2e41464bed3cb94c3c71ff7c92f",
-      "bytes": 166107
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/ta/home-new-tamil/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-06-8c72addbf305.html",
-      "sha256": "8c72addbf305eefd61b4b36e52e7fc24edf8bff2b21a7a0bedf2b1a00879462b",
-      "bytes": 167816
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-07-f739745f5ce5.html",
-      "sha256": "f739745f5ce51057d5ab8c385efea7c1e259cd1a8097104994f86b609bbd3197",
-      "bytes": 153852
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b7%84%e0%b7%90%e0%b6%b3%e0%b7%92%e0%b6%b1%e0%b7%8a%e0%b7%80%e0%b7%93%e0%b6%b8/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-08-a6a07efc1676.html",
-      "sha256": "a6a07efc1676f07709131aff1e48f7cd06b21bafae1d6c9d86f922ac0656b25b",
-      "bytes": 95008
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-09-738c42078bc8.html",
-      "sha256": "738c42078bc87465da64aba19140df0a0d90f973a0670c7701197ee771254d3c",
-      "bytes": 84394
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%9c%e0%b6%bb%e0%b7%94-%e0%b6%b1%e0%b7%92%e0%b6%ba%e0%b7%9d%e0%b6%a2%e0%b7%8a%e0%b6%ba-%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%ad%e0%b7%94%e0%b6%b8%e0%b7%8f/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-10-986a489daee4.html",
-      "sha256": "986a489daee42f92a9620523df04f3db4ac7e28a36cd0d95676d832a1548cd0a",
-      "bytes": 82189
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%85%e0%b6%b8%e0%b7%8f%e0%b6%ad%e0%b7%8a%e0%b6%ba%e0%b6%82%e0%b7%81-%e0%b6%bd%e0%b7%9a%e0%b6%9a%e0%b6%b8%e0%b7%8a/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-11-61b81de36b76.html",
-      "sha256": "61b81de36b76fa3b689e386fee8b5ca3e53e0ba6b176549c4ffaa37edac94077",
-      "bytes": 82264
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%9a%e0%b6%bb%e0%b7%8a%e0%b6%b8%e0%b7%8f%e0%b6%b1%e0%b7%8a%e0%b6%ad-%e0%b7%84%e0%b7%8f-%e0%b7%80%e0%b7%8a%e0%b6%ba%e0%b7%80%e0%b7%83%e0%b7%8f%e0%b6%ba%e0%b6%9a%e0%b6%ad%e0%b7%8a%e0%b7%80/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-12-4b0f370ba84f.html",
-      "sha256": "4b0f370ba84f254869da4b3098fec436b9065f9860c07bc02e13ccefa9cdc760",
-      "bytes": 91258
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/si/%e0%b6%b4%e0%b6%b1%e0%b6%ad%e0%b7%8a/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-13-00289bcd0295.html",
-      "sha256": "00289bcd0295a32443cfd69d36e8e520756d311b71b14e42895dacdcd6203690",
-      "bytes": 89507
-    },
-    {
-      "url": "https://www.industry.gov.lk/web/organizational-structure/",
-      "path": "audit.output/www.industry.gov.lk/20261107.0643/snapshots/page-14-6515bab11182.html",
-      "sha256": "6515bab1118298c4377d5726ee53ddafbc113e16c36188ec27b57a9e2b33fb88",
-      "bytes": 69323
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1396,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -1409,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk; Phone: +94 112 392150 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found); Published named responsibility: division",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: No. 73/1, ගාලු පාර, කොළඹ 03, ශ්‍රී ලංකාව. දුරකථන අංක: +94 112 392149 +94 112 392150 විද්‍යුත් තැපැල: info@industry.gov.lk"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 112 392150 (23 phone numbers found); Email: info@industry.gov.lk (30 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: gazette"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1558,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

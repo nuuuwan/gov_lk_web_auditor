@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "52d2fe97-b43e-42f0-8992-febcfbc37e40",
+  "audit_id": "ea088670-c758-44f5-8b5e-caabfa5dd7a3",
   "url": "https://www.pubsec.gov.lk/",
   "normalized_url": "https://www.pubsec.gov.lk/",
-  "started_at": "2026-11-07T06:42:41.771602+05:30",
-  "completed_at": "2026-11-07T06:43:43.968700+05:30",
+  "started_at": "2026-11-08T06:38:13.946030+05:30",
+  "completed_at": "2026-11-08T06:38:18.607404+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -26,546 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T06:42:42.374749+05:30"
+      "observed_at": "2026-11-08T06:38:14.346664+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T06:42:42.374769+05:30"
+      "observed_at": "2026-11-08T06:38:14.346685+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T06:42:43.302104+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T06:38:14.840610+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://pubsec.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://www.pubsec.gov.lk/",
-      "observed_at": "2026-11-07T06:43:42.819834+05:30"
+      "observed_at": "2026-11-08T06:38:18.607130+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://pubsec.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://www.pubsec.gov.lk/",
-      "observed_at": "2026-11-07T06:43:42.819853+05:30"
+      "observed_at": "2026-11-08T06:38:18.607155+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://pubsec.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://www.pubsec.gov.lk/",
-      "observed_at": "2026-11-07T06:43:42.819857+05:30"
+      "observed_at": "2026-11-08T06:38:18.607160+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://pubsec.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://www.pubsec.gov.lk/",
-      "observed_at": "2026-11-07T06:43:42.819860+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "observed_at": "2026-11-07T06:43:42.819863+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://pubsec.gov.lk/contact-us/",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "observed_at": "2026-11-07T06:43:42.819865+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "source": "https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "observed_at": "2026-11-07T06:43:42.819868+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://pubsec.gov.lk/marking-the-commencement-of-official-operations-for-the-year-2026-the-official-event-was-held-on-01-january-2026-with-the-participation-of-all-departments-under-the-purview-of-the-ministry/",
-      "source": "https://pubsec.gov.lk/marking-the-commencement-of-official-operations-for-the-year-2026-the-official-event-was-held-on-01-january-2026-with-the-participation-of-all-departments-under-the-purview-of-the-ministry/",
-      "observed_at": "2026-11-07T06:43:42.819870+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://pubsec.gov.lk/a-christmas-carol-service-was-held-at-the-ministry-on-23-december-2025-under-the-leadership-of-the-secretary-to-the-ministry/",
-      "source": "https://pubsec.gov.lk/a-christmas-carol-service-was-held-at-the-ministry-on-23-december-2025-under-the-leadership-of-the-secretary-to-the-ministry/",
-      "observed_at": "2026-11-07T06:43:42.819872+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://pubsec.gov.lk/si/home-%e0%b7%83%e0%b7%92%e0%b6%82%e0%b7%84%e0%b6%bd/",
-      "source": "https://pubsec.gov.lk/si/home-%e0%b7%83%e0%b7%92%e0%b6%82%e0%b7%84%e0%b6%bd/",
-      "observed_at": "2026-11-07T06:43:42.819875+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://pubsec.gov.lk/ta/home-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%af%8d/",
-      "source": "https://pubsec.gov.lk/ta/home-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%af%8d/",
-      "observed_at": "2026-11-07T06:43:42.819877+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://pubsec.gov.lk/vision-mission/",
-      "source": "https://pubsec.gov.lk/vision-mission/",
-      "observed_at": "2026-11-07T06:43:42.819879+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://pubsec.gov.lk/key-functions/",
-      "source": "https://pubsec.gov.lk/key-functions/",
-      "observed_at": "2026-11-07T06:43:42.819881+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://pubsec.gov.lk/our-history/",
-      "source": "https://pubsec.gov.lk/our-history/",
-      "observed_at": "2026-11-07T06:43:42.819883+05:30"
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 786948 ",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "0112 786948 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112786968 ",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "0112786968 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112786974 ",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "0112786974 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 786947 ",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "0112 786947 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 786946 ",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "0112 786946 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112786951 ",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "0112786951 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sas.parliamentaryaffairs@gmail.com",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "sas.parliamentaryaffairs@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: addlsecpa@gmail.com",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "addlsecpa@gmail.com"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 288 77 50 ",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "011 288 77 50 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 288 7307 ",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "+94 11 288 7307 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 288 77 56 ",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "011 288 77 56 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 288 77 56 ",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "+94 11 288 77 56 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 786947 ",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "0112 786947 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011 288 76 83 ",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "011 288 76 83 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 786946 ",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "0112 786946 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iau@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "iau@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: sasadmin@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "sasadmin@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: addlsecpa@gmail.com",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "addlsecpa@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: adsec_admin@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "adsec_admin@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/contact-us/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "processing_time",
-      "status": "pass",
-      "detail": "Published processing time: 24 hours",
-      "source": "https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "data": {
-        "value": "24 hours"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/marking-the-commencement-of-official-operations-for-the-year-2026-the-official-event-was-held-on-01-january-2026-with-the-participation-of-all-departments-under-the-purview-of-the-ministry/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/marking-the-commencement-of-official-operations-for-the-year-2026-the-official-event-was-held-on-01-january-2026-with-the-participation-of-all-departments-under-the-purview-of-the-ministry/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/a-christmas-carol-service-was-held-at-the-ministry-on-23-december-2025-under-the-leadership-of-the-secretary-to-the-ministry/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/a-christmas-carol-service-was-held-at-the-ministry-on-23-december-2025-under-the-leadership-of-the-secretary-to-the-ministry/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/si/home-%e0%b7%83%e0%b7%92%e0%b6%82%e0%b7%84%e0%b6%bd/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/ta/home-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%af%8d/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/vision-mission/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/vision-mission/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/key-functions/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/key-functions/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@pubsec.gov.lk",
-      "source": "https://pubsec.gov.lk/our-history/",
-      "data": {
-        "value": "info@pubsec.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://pubsec.gov.lk/our-history/",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "https://pubsec.gov.lk/our-history/",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 4288 visible characters across 14 pages",
-      "source": "https://www.pubsec.gov.lk/"
+      "observed_at": "2026-11-08T06:38:18.607164+05:30"
     }
   ],
   "observations": [
@@ -585,234 +85,49 @@
     },
     {
       "host": "www.pubsec.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-02-24T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.pubsec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/",
-      "redirects": [
-        "https://pubsec.gov.lk/"
-      ],
-      "elapsed_ms": 3514,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.pubsec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/",
-      "redirects": [
-        "https://www.pubsec.gov.lk/",
-        "https://pubsec.gov.lk/"
-      ],
-      "elapsed_ms": 3566,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.pubsec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/",
-      "redirects": [
-        "https://pubsec.gov.lk/"
-      ],
-      "elapsed_ms": 3474,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.pubsec.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/",
-      "redirects": [
-        "https://www.pubsec.gov.lk/",
-        "https://pubsec.gov.lk/"
-      ],
-      "elapsed_ms": 3568,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/parliamentary-affairs-division/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 3146,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/contact-us/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/contact-us/",
-      "redirects": [],
-      "elapsed_ms": 3413,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "redirects": [],
-      "elapsed_ms": 3090,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/marking-the-commencement-of-official-operations-for-the-year-2026-the-official-event-was-held-on-01-january-2026-with-the-participation-of-all-departments-under-the-purview-of-the-ministry/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/marking-the-commencement-of-official-operations-for-the-year-2026-the-official-event-was-held-on-01-january-2026-with-the-participation-of-all-departments-under-the-purview-of-the-ministry/",
-      "redirects": [],
-      "elapsed_ms": 3269,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/a-christmas-carol-service-was-held-at-the-ministry-on-23-december-2025-under-the-leadership-of-the-secretary-to-the-ministry/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/a-christmas-carol-service-was-held-at-the-ministry-on-23-december-2025-under-the-leadership-of-the-secretary-to-the-ministry/",
-      "redirects": [],
-      "elapsed_ms": 3202,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/si/home-%e0%b7%83%e0%b7%92%e0%b6%82%e0%b7%84%e0%b6%bd/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/si/home-%e0%b7%83%e0%b7%92%e0%b6%82%e0%b7%84%e0%b6%bd/",
-      "redirects": [],
-      "elapsed_ms": 3713,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/ta/home-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%af%8d/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/ta/home-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%af%8d/",
-      "redirects": [],
-      "elapsed_ms": 3410,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/vision-mission/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/vision-mission/",
-      "redirects": [],
-      "elapsed_ms": 2957,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/key-functions/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/key-functions/",
-      "redirects": [],
-      "elapsed_ms": 2974,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://pubsec.gov.lk/our-history/",
-      "status_code": 200,
-      "final_url": "https://pubsec.gov.lk/our-history/",
-      "redirects": [],
-      "elapsed_ms": 3023,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://pubsec.gov.lk/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-01-cc15ac43cc9b.html",
-      "sha256": "cc15ac43cc9b3dbc2bbe6140d139616ec92c43d231c3c77dfb4a1e90141b9eea",
-      "bytes": 143100
-    },
-    {
-      "url": "https://pubsec.gov.lk/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-02-cc15ac43cc9b.html",
-      "sha256": "cc15ac43cc9b3dbc2bbe6140d139616ec92c43d231c3c77dfb4a1e90141b9eea",
-      "bytes": 143100
-    },
-    {
-      "url": "https://pubsec.gov.lk/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-03-cc15ac43cc9b.html",
-      "sha256": "cc15ac43cc9b3dbc2bbe6140d139616ec92c43d231c3c77dfb4a1e90141b9eea",
-      "bytes": 143100
-    },
-    {
-      "url": "https://pubsec.gov.lk/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-04-cc15ac43cc9b.html",
-      "sha256": "cc15ac43cc9b3dbc2bbe6140d139616ec92c43d231c3c77dfb4a1e90141b9eea",
-      "bytes": 143100
-    },
-    {
-      "url": "https://pubsec.gov.lk/parliamentary-affairs-division/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-05-9d836d1644f7.html",
-      "sha256": "9d836d1644f7f83c4639dce3b10d7cc2de7274b3a81ce269eb709a6cbe428ffa",
-      "bytes": 100345
-    },
-    {
-      "url": "https://pubsec.gov.lk/contact-us/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-06-779aaf4755ad.html",
-      "sha256": "779aaf4755ad232c287f77d38c122a1b4d07c7c7d1ff69e21d1db0900588a0a8",
-      "bytes": 101272
-    },
-    {
-      "url": "https://pubsec.gov.lk/the-official-website-of-the-118-public-security-service-operates-as-a-24-7-online-portal-for-submitting-public-information-and-complaints/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-07-82e2e085b4b9.html",
-      "sha256": "82e2e085b4b9fe08c0d06804983e86894500e875adf6ccbfb6f3fbf50c2eff2b",
-      "bytes": 104712
-    },
-    {
-      "url": "https://pubsec.gov.lk/marking-the-commencement-of-official-operations-for-the-year-2026-the-official-event-was-held-on-01-january-2026-with-the-participation-of-all-departments-under-the-purview-of-the-ministry/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-08-f819a48b4300.html",
-      "sha256": "f819a48b43005e12f443c3171e18f506d0ff9f28356e5d4b536b0c8fa6fdedce",
-      "bytes": 108063
-    },
-    {
-      "url": "https://pubsec.gov.lk/a-christmas-carol-service-was-held-at-the-ministry-on-23-december-2025-under-the-leadership-of-the-secretary-to-the-ministry/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-09-51b059083450.html",
-      "sha256": "51b059083450bdf9077062d0198328aeae11ab694174ba7e01fd98e1326266a9",
-      "bytes": 102689
-    },
-    {
-      "url": "https://pubsec.gov.lk/si/home-%e0%b7%83%e0%b7%92%e0%b6%82%e0%b7%84%e0%b6%bd/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-10-0d94d8a94721.html",
-      "sha256": "0d94d8a94721f181c1774580d1ad27713e739200b23d6590cdc21ea38701d9f0",
-      "bytes": 143640
-    },
-    {
-      "url": "https://pubsec.gov.lk/ta/home-%e0%ae%a4%e0%ae%ae%e0%ae%bf%e0%ae%b4%e0%af%8d/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-11-019ed713b8f5.html",
-      "sha256": "019ed713b8f5e75fd7f3742a117794df96a6f6ba4fdc62a692a19b6be99b3855",
-      "bytes": 135450
-    },
-    {
-      "url": "https://pubsec.gov.lk/vision-mission/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-12-1530e4796c78.html",
-      "sha256": "1530e4796c78c15a95b9c1f9ebbed3f4d692dfa9014e7b9a53c633f5e0094b42",
-      "bytes": 93812
-    },
-    {
-      "url": "https://pubsec.gov.lk/key-functions/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-13-baba9500b521.html",
-      "sha256": "baba9500b5217514c198420d71903b027b364d05a51169d464d58f8bcdc85652",
-      "bytes": 94850
-    },
-    {
-      "url": "https://pubsec.gov.lk/our-history/",
-      "path": "audit.output/www.pubsec.gov.lk/20261107.0642/snapshots/page-14-547b9fd6eba8.html",
-      "sha256": "547b9fd6eba8a47ce3af4ed00d845b72590efac9ac4bbba76b2dfd1b1c0a0a1e",
-      "bytes": 94824
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -826,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -839,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
@@ -896,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 0112 786948 (11 phone numbers found); Email: info@pubsec.gov.lk (6 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -945,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

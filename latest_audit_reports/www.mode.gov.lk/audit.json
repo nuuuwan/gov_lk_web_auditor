@@ -1,18 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "0e5181a9-da6b-460f-957b-2eda6aa56701",
+  "audit_id": "69aab096-ac0b-498c-8052-0ab76542ffc3",
   "url": "https://www.mode.gov.lk/",
   "normalized_url": "https://www.mode.gov.lk/",
-  "started_at": "2026-11-07T06:41:43.055287+05:30",
-  "completed_at": "2026-11-07T06:41:50.306989+05:30",
+  "started_at": "2026-11-08T06:37:02.599865+05:30",
+  "completed_at": "2026-11-08T06:37:07.012389+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: [Errno 111] Connection refused",
+      "tls_hostname_matches: [Errno 111] Connection refused"
     ]
   },
   "evidence": [
@@ -20,53 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-07T06:41:43.715767+05:30"
+      "observed_at": "2026-11-08T06:37:03.006262+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-07T06:41:43.715812+05:30"
+      "observed_at": "2026-11-08T06:37:03.006285+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-07T06:41:44.416766+05:30"
+      "status": "error",
+      "detail": "[Errno 111] Connection refused",
+      "observed_at": "2026-11-08T06:37:03.497940+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.mode.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: [Errno 111] Connection refused",
       "source": "https://www.mode.gov.lk/",
-      "observed_at": "2026-11-07T06:41:50.305631+05:30"
+      "observed_at": "2026-11-08T06:37:07.012177+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.mode.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: [Errno 111] Connection refused",
       "source": "http://www.mode.gov.lk/",
-      "observed_at": "2026-11-07T06:41:50.305649+05:30"
+      "observed_at": "2026-11-08T06:37:07.012222+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.mode.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: [Errno 111] Connection refused",
       "source": "https://www.mode.gov.lk/",
-      "observed_at": "2026-11-07T06:41:50.305653+05:30"
+      "observed_at": "2026-11-08T06:37:07.012227+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.mode.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: [Errno 111] Connection refused",
       "source": "http://www.mode.gov.lk/",
-      "observed_at": "2026-11-07T06:41:50.305656+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "fail",
-      "detail": "Only 27 visible characters across 4 pages; below substance threshold 200",
-      "source": "https://www.mode.gov.lk/"
+      "observed_at": "2026-11-08T06:37:07.012231+05:30"
     }
   ],
   "observations": [
@@ -86,78 +85,49 @@
     },
     {
       "host": "www.mode.gov.lk",
-      "status": "valid",
-      "expires_at": "2026-12-31T05:29:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.mode.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.mode.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 743,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.mode.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.mode.gov.lk/",
-      "redirects": [
-        "https://www.mode.gov.lk/"
-      ],
-      "elapsed_ms": 1002,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "https://www.mode.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.mode.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 932,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     },
     {
       "url": "http://www.mode.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.mode.gov.lk/",
-      "redirects": [
-        "https://www.mode.gov.lk/"
-      ],
-      "elapsed_ms": 734,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[Errno 111] Connection refused"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.mode.gov.lk/",
-      "path": "audit.output/www.mode.gov.lk/20261107.0641/snapshots/page-01-59f9c0862b54.html",
-      "sha256": "59f9c0862b54f0e94787661b1383cb40ae41bf7e4d4f67b07d2a0b85554deb71",
-      "bytes": 479
-    },
-    {
-      "url": "https://www.mode.gov.lk/",
-      "path": "audit.output/www.mode.gov.lk/20261107.0641/snapshots/page-02-59f9c0862b54.html",
-      "sha256": "59f9c0862b54f0e94787661b1383cb40ae41bf7e4d4f67b07d2a0b85554deb71",
-      "bytes": 479
-    },
-    {
-      "url": "https://www.mode.gov.lk/",
-      "path": "audit.output/www.mode.gov.lk/20261107.0641/snapshots/page-03-59f9c0862b54.html",
-      "sha256": "59f9c0862b54f0e94787661b1383cb40ae41bf7e4d4f67b07d2a0b85554deb71",
-      "bytes": 479
-    },
-    {
-      "url": "https://www.mode.gov.lk/",
-      "path": "audit.output/www.mode.gov.lk/20261107.0641/snapshots/page-04-59f9c0862b54.html",
-      "sha256": "59f9c0862b54f0e94787661b1383cb40ae41bf7e4d4f67b07d2a0b85554deb71",
-      "bytes": 479
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -172,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
       "executed": true,
       "checks": [
         {
@@ -185,55 +155,55 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 27 visible characters across 4 pages; below substance threshold 200"
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "[Errno 111] Connection refused"
         }
       ]
     },
@@ -271,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "4.154.167.160",
+    "egress_ip": "20.51.198.213",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

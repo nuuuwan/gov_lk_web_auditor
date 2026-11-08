@@ -1,8 +1,8 @@
 # Website Audit: https://www.gsmb.gov.lk/
 
-- Completed: 2026-11-07 06:25
+- Completed: 2026-11-08 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 4.154.167.160 (US, github-actions)
+- Vantage: 20.51.198.213 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Geological Survey and Mines Bureau, 569, Epitamulla Road, Pitakotte, Sri Lanka. Related Links Ministry of Industry and E; Phone: +94-112 886289 (3 phone numbers found); Email: info@gsmb.gov.lk; Published named responsibility: director
+Published postal address: Geological Survey and Mines Bureau, 569, Epitamulla Road, Pitakotte, Sri Lanka. Related Links Ministry of Industry and E; Phone: +94-112 886290 (4 phone numbers found); Email: info@gsmb.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Geological Survey and Mines Bureau, 569, Epitamulla Road, Pitakotte, Sri Lanka. Related Links Ministry of Industry and E |
-| reachable_contacts | ✅ | Phone: +94-112 886289 (3 phone numbers found); Email: info@gsmb.gov.lk |
+| reachable_contacts | ✅ | Phone: +94-112 886290 (4 phone numbers found); Email: info@gsmb.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
