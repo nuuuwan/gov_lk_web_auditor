@@ -1,8 +1,8 @@
 # Website Audit: https://govtech.lk/
 
-- Completed: 2026-11-08 06:00
+- Completed: 2026-11-09 06:01
 - Overall result: 🔴 Level 1
-- Vantage: 20.51.198.213 (US, github-actions)
+- Vantage: 20.161.30.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: may be mistyped, or the page may have moved. These will get you back on track.\"}],[\"$\",\"nav\",null,{\"aria-label\":\ |
-| reachable_contacts | ✅ | Phone: 0 1 1 0 5 2.5 2.5 0 (26 phone numbers found); Email: info@govtech.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 06 2.06 0 1 1 0-4. (26 phone numbers found); Email: info@govtech.lk (3 email addresses found) |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

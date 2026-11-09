@@ -1,8 +1,8 @@
 # Website Audit: https://www.defence.lk/
 
-- Completed: 2026-11-08 06:37
+- Completed: 2026-11-09 06:39
 - Overall result: 🔴 Level 1
-- Vantage: 20.51.198.213 (US, github-actions)
+- Vantage: 20.161.30.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: modmlobranch@defence.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: directormedia@defence.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

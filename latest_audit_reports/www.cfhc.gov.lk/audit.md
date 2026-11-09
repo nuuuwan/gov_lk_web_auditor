@@ -1,8 +1,8 @@
 # Website Audit: https://www.cfhc.gov.lk/
 
-- Completed: 2026-11-08 06:14
+- Completed: 2026-11-09 06:15
 - Overall result: ⚫ Level 0
-- Vantage: 20.51.198.213 (US, github-actions)
+- Vantage: 20.161.30.225 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Every repeated HTTP probe failed: [500, 500, 500, 500]
+Every repeated HTTP probe failed: [503, 503, 503, 503]
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,7 +23,7 @@ Every repeated HTTP probe failed: [500, 500, 500, 500]
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❌ | Every repeated HTTP probe failed: [500, 500, 500, 500] |
+| http_available | ❌ | Every repeated HTTP probe failed: [503, 503, 503, 503] |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
 | tls_not_expired | ✅ | TLS certificate valid |
