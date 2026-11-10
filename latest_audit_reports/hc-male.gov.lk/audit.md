@@ -1,8 +1,8 @@
 # Website Audit: https://hc-male.gov.lk/
 
-- Completed: 2026-11-09 06:16
+- Completed: 2026-11-10 06:18
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.225 (US, github-actions)
+- Vantage: 172.210.143.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you ; Phone: +9603321652 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found); Published named responsibility: director
+Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you ; Phone: +96 (0) 33 22 845 (13 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: H. Noomuraka, Hadheebee Magu, Male, Maldives Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad, you  |
-| reachable_contacts | ✅ | Phone: +9603321652 (12 phone numbers found); Email: slhc.male@mfa.gov.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: +96 (0) 33 22 845 (13 phone numbers found); Email: john@example.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing downloadable form evidence found; No passing published update date evidence found
+No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing downloadable form evidence found; No passing published update date ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 6 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| published_update_date | ✅ | Published published update date: 11/10/2026 |

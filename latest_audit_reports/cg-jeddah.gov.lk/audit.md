@@ -1,8 +1,8 @@
 # Website Audit: https://cg-jeddah.gov.lk/
 
-- Completed: 2026-11-09 06:22
+- Completed: 2026-11-10 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.225 (US, github-actions)
+- Vantage: 172.210.143.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Building No. 7399, Abdallah Sultan, Ar Rawdah District, Jeddah (JERA7399) Email: slcg.jeddah@mfa.gov.lk Telephone : 0096; Phone: 0378909-975 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: Building No. 7399, Abdallah Sultan, Ar Rawdah District, Jeddah (JERA7399) Email: slcg.jeddah@mfa.gov.lk Telephone : 0096; Phone: 0457516374 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Building No. 7399, Abdallah Sultan, Ar Rawdah District, Jeddah (JERA7399) Email: slcg.jeddah@mfa.gov.lk Telephone : 0096 |
-| reachable_contacts | ✅ | Phone: 0378909-975 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0457516374 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

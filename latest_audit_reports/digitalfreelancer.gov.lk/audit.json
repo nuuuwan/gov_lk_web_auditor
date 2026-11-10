@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "6c94cca0-6edc-4fb6-98a7-d6fc4f9f73fe",
+  "audit_id": "a18dc057-7ed5-47b0-be9f-b392f39e235d",
   "url": "https://digitalfreelancer.gov.lk/",
   "normalized_url": "https://digitalfreelancer.gov.lk/",
-  "started_at": "2026-11-09T06:00:44.117353+05:30",
-  "completed_at": "2026-11-09T06:00:48.421490+05:30",
+  "started_at": "2026-11-10T06:01:06.382355+05:30",
+  "completed_at": "2026-11-10T06:01:33.656636+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,411 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T06:00:44.417138+05:30"
+      "observed_at": "2026-11-10T06:01:06.823662+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T06:00:44.417156+05:30"
+      "observed_at": "2026-11-10T06:01:06.823681+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-11-09T06:00:44.664115+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-10T06:01:07.599641+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://digitalfreelancer.gov.lk/",
       "source": "https://digitalfreelancer.gov.lk/",
-      "observed_at": "2026-11-09T06:00:48.421260+05:30"
+      "observed_at": "2026-11-10T06:01:33.207967+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://digitalfreelancer.gov.lk/",
       "source": "http://digitalfreelancer.gov.lk/",
-      "observed_at": "2026-11-09T06:00:48.421286+05:30"
+      "observed_at": "2026-11-10T06:01:33.207994+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://digitalfreelancer.gov.lk/",
       "source": "https://digitalfreelancer.gov.lk/",
-      "observed_at": "2026-11-09T06:00:48.421294+05:30"
+      "observed_at": "2026-11-10T06:01:33.207997+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://digitalfreelancer.gov.lk/",
       "source": "http://digitalfreelancer.gov.lk/",
-      "observed_at": "2026-11-09T06:00:48.421299+05:30"
+      "observed_at": "2026-11-10T06:01:33.208000+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://digitalfreelancer.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk",
+      "observed_at": "2026-11-10T06:01:33.208002+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://digitalfreelancer.gov.lk?page_id=891",
+      "source": "https://digitalfreelancer.gov.lk?page_id=891",
+      "observed_at": "2026-11-10T06:01:33.208004+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://digitalfreelancer.gov.lk?page_id=918",
+      "source": "https://digitalfreelancer.gov.lk?page_id=918",
+      "observed_at": "2026-11-10T06:01:33.208006+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://digitalfreelancer.gov.lk/?page_id=992",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=992",
+      "observed_at": "2026-11-10T06:01:33.208008+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://digitalfreelancer.gov.lk/?page_id=8",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "observed_at": "2026-11-10T06:01:33.208010+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://digitalfreelancer.gov.lk/?page_id=1475",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=1475",
+      "observed_at": "2026-11-10T06:01:33.208013+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://digitalfreelancer.gov.lk/?page_id=1364",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=1364",
+      "observed_at": "2026-11-10T06:01:33.208015+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://digitalfreelancer.gov.lk/?page_id=874",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=874",
+      "observed_at": "2026-11-10T06:01:33.208017+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://digitalfreelancer.gov.lk/?page_id=457",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=457",
+      "observed_at": "2026-11-10T06:01:33.208020+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://digitalfreelancer.gov.lk/?page_id=244",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=244",
+      "observed_at": "2026-11-10T06:01:33.208022+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "http://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "http://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "http://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "http://digitalfreelancer.gov.lk/",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk?page_id=891",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk?page_id=891",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk?page_id=918",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk?page_id=918",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=992",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=992",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs 0",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=992",
+      "data": {
+        "value": "rs 0"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "data": {
+        "value": "+94 11 236 9099 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112369099",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "data": {
+        "value": "+94112369099"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@icta.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "data": {
+        "value": "info@icta.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=1475",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=1475",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=1364",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=1364",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=874",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=874",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=457",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=457",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112-369-099 ",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=244",
+      "data": {
+        "value": "+94 112-369-099 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@lightingdigital.gov.lk",
+      "source": "https://digitalfreelancer.gov.lk/?page_id=244",
+      "data": {
+        "value": "info@lightingdigital.gov.lk"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 5791 visible characters across 14 pages",
+      "source": "https://digitalfreelancer.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +450,224 @@
     },
     {
       "host": "digitalfreelancer.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "valid",
+      "expires_at": "2027-01-28T05:29:08+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://digitalfreelancer.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1434,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://digitalfreelancer.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://digitalfreelancer.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1152,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://digitalfreelancer.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1458,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://digitalfreelancer.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://digitalfreelancer.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1043,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk",
+      "redirects": [],
+      "elapsed_ms": 1464,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk?page_id=891",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk?page_id=891",
+      "redirects": [],
+      "elapsed_ms": 1182,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk?page_id=918",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk?page_id=918",
+      "redirects": [],
+      "elapsed_ms": 1453,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=992",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/?page_id=992",
+      "redirects": [],
+      "elapsed_ms": 1337,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "redirects": [],
+      "elapsed_ms": 1171,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=1475",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/?page_id=1475",
+      "redirects": [],
+      "elapsed_ms": 1625,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=1364",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/?page_id=1364",
+      "redirects": [],
+      "elapsed_ms": 1192,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=874",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/?page_id=874",
+      "redirects": [],
+      "elapsed_ms": 1146,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=457",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/?page_id=457",
+      "redirects": [],
+      "elapsed_ms": 1320,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=244",
+      "status_code": 200,
+      "final_url": "https://digitalfreelancer.gov.lk/?page_id=244",
+      "redirects": [],
+      "elapsed_ms": 1497,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://digitalfreelancer.gov.lk/",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-01-e0eb905cbd13.html",
+      "sha256": "e0eb905cbd13e7b1684e45671599fe2e5d595222b55190d6bd3c42ff69ba2e67",
+      "bytes": 93689
+    },
+    {
+      "url": "http://digitalfreelancer.gov.lk/",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-02-3e3a24692fe5.html",
+      "sha256": "3e3a24692fe55aeba11ce47156ddd2f861e560a1fd618a91abbe50743e5112a6",
+      "bytes": 93615
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-03-e0eb905cbd13.html",
+      "sha256": "e0eb905cbd13e7b1684e45671599fe2e5d595222b55190d6bd3c42ff69ba2e67",
+      "bytes": 93689
+    },
+    {
+      "url": "http://digitalfreelancer.gov.lk/",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-04-3e3a24692fe5.html",
+      "sha256": "3e3a24692fe55aeba11ce47156ddd2f861e560a1fd618a91abbe50743e5112a6",
+      "bytes": 93615
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-05-e0eb905cbd13.html",
+      "sha256": "e0eb905cbd13e7b1684e45671599fe2e5d595222b55190d6bd3c42ff69ba2e67",
+      "bytes": 93689
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk?page_id=891",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-06-9e95551cf92c.html",
+      "sha256": "9e95551cf92ccdbe3d31e0fae8642793b079630cc6d3df7766e4aacbc0274f20",
+      "bytes": 98538
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk?page_id=918",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-07-9e5e3543c399.html",
+      "sha256": "9e5e3543c39930bf1492dac1e15c297cc70a4e0c2f9748369111430e761a3d25",
+      "bytes": 99992
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=992",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-08-165bcc6736cb.html",
+      "sha256": "165bcc6736cbeac141e7b0bc0be3c242d020ee4ecf9edcf4a258e59b9d4b33ee",
+      "bytes": 129386
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=8",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-09-67f74c15f175.html",
+      "sha256": "67f74c15f175508e8310ba049f26f88b0608f5f518fa9bbb6fe52c74e58cfe7b",
+      "bytes": 64204
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=1475",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-10-e9eab8b41704.html",
+      "sha256": "e9eab8b41704fd0e30ee069e02d4aaee89061bc2bb7353f2cf12a930dd16f54e",
+      "bytes": 136317
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=1364",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-11-7445f760fb25.html",
+      "sha256": "7445f760fb252e32ef99c08345a2d90ab3336318f3a5d3361a19af50820cbd43",
+      "bytes": 83028
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=874",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-12-819f42e6dcf0.html",
+      "sha256": "819f42e6dcf0800669e275a8bba3ae28fbe4e7c853019540121a31f88b067112",
+      "bytes": 70980
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=457",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-13-6f0ee8e58602.html",
+      "sha256": "6f0ee8e5860231aa0e06ca7613115afd0c02de421c4e1502efe309121b86db7e",
+      "bytes": 64032
+    },
+    {
+      "url": "https://digitalfreelancer.gov.lk/?page_id=244",
+      "path": "audit.output/digitalfreelancer.gov.lk/20261110.0601/snapshots/page-14-dc3bb60127a3.html",
+      "sha256": "dc3bb60127a3892b7cc5c477fe0f03f3ef0e708c0a51790930059a5421a44546",
+      "bytes": 58164
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +681,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +694,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +751,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found; No passing named responsibility evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 112-369-099 (3 phone numbers found); Email: info@lightingdigital.gov.lk (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing named responsibility evidence found"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +800,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.225",
+    "egress_ip": "172.210.143.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

@@ -1,8 +1,8 @@
 # Website Audit: https://slspc.lk/
 
-- Completed: 2026-11-09 06:30
+- Completed: 2026-11-10 06:33
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.225 (US, github-actions)
+- Vantage: 172.210.143.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Password Remember Me Forgot Password? Log In Username or Email Address Get New Password ← Back to login Search Login Sho; Phone: 011-2438635 (66 phone numbers found); Email: careers.slspc@gmail.com (19 email addresses found); Published named responsibility: division
+Published postal address: Password Remember Me Forgot Password? Log In Username or Email Address Get New Password ← Back to login Search Login Sho; Phone: 011-2438530 (66 phone numbers found); Email: careers.slspc@gmail.com (19 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Password Remember Me Forgot Password? Log In Username or Email Address Get New Password ← Back to login Search Login Sho |
-| reachable_contacts | ✅ | Phone: 011-2438635 (66 phone numbers found); Email: careers.slspc@gmail.com (19 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011-2438530 (66 phone numbers found); Email: careers.slspc@gmail.com (19 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

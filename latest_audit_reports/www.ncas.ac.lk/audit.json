@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3285785e-594e-4c2b-ae23-e5ef984daaa0",
+  "audit_id": "b841e628-2923-410f-8a4a-ae584afdac6c",
   "url": "http://www.ncas.ac.lk/",
   "normalized_url": "http://www.ncas.ac.lk/",
-  "started_at": "2026-11-09T06:04:50.783430+05:30",
-  "completed_at": "2026-11-09T06:04:55.445255+05:30",
+  "started_at": "2026-11-10T06:05:24.585670+05:30",
+  "completed_at": "2026-11-10T06:06:49.253706+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,1194 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T06:04:51.305648+05:30"
+      "observed_at": "2026-11-10T06:05:24.874039+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T06:04:51.305664+05:30"
+      "observed_at": "2026-11-10T06:05:24.874058+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-11-09T06:04:51.737169+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-10T06:05:25.808834+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://ncas.ac.lk/",
       "source": "https://www.ncas.ac.lk/",
-      "observed_at": "2026-11-09T06:04:55.444996+05:30"
+      "observed_at": "2026-11-10T06:06:48.604612+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at https://ncas.ac.lk/",
       "source": "http://www.ncas.ac.lk/",
-      "observed_at": "2026-11-09T06:04:55.445018+05:30"
+      "observed_at": "2026-11-10T06:06:48.604638+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://ncas.ac.lk/",
       "source": "https://www.ncas.ac.lk/",
-      "observed_at": "2026-11-09T06:04:55.445023+05:30"
+      "observed_at": "2026-11-10T06:06:48.604643+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://ncas.ac.lk/",
       "source": "http://www.ncas.ac.lk/",
-      "observed_at": "2026-11-09T06:04:55.445026+05:30"
+      "observed_at": "2026-11-10T06:06:48.604646+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://ncas.ac.lk/home-2/contact-us/",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "observed_at": "2026-11-10T06:06:48.604650+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://ncas.ac.lk",
+      "source": "https://ncas.ac.lk",
+      "observed_at": "2026-11-10T06:06:48.604653+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://ncas.ac.lk/cor/",
+      "source": "https://ncas.ac.lk/cor",
+      "observed_at": "2026-11-10T06:06:48.604657+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://ncas.ac.lk/com/",
+      "source": "https://ncas.ac.lk/ncasn/com",
+      "observed_at": "2026-11-10T06:06:48.604660+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://ncas.ac.lk/director/",
+      "source": "https://ncas.ac.lk/director/",
+      "observed_at": "2026-11-10T06:06:48.604664+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://ncas.ac.lk/previous-directors/",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "observed_at": "2026-11-10T06:06:48.604667+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://ncas.ac.lk/secretariat/",
+      "source": "https://ncas.ac.lk/ncasn/secretariat",
+      "observed_at": "2026-11-10T06:06:48.604671+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://ncas.ac.lk/vision/",
+      "source": "https://ncas.ac.lk/ncasn/vision",
+      "observed_at": "2026-11-10T06:06:48.604675+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://ncas.ac.lk/objectives/",
+      "source": "https://ncas.ac.lk/ncasn/objectives",
+      "observed_at": "2026-11-10T06:06:48.604679+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://ncas.ac.lk/organizational-structure/",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "observed_at": "2026-11-10T06:06:48.604683+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sar@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "sar@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sc@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "sc@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: director@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "director@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: grants@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "grants@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sab@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "sab@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: librarian@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "librarian@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: procurement@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "procurement@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/home-2/contact-us/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/cor/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/com/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/director/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/previous-directors/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/secretariat/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/vision/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/objectives/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 268084",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "+94 011 268084"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 018 2017 201",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "018 2017 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 011 269 397",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "+94 011 269 397"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 025 2024 202",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "025 2024 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 2020 201",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "022 2020 201"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@ncas.ac.lk",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "info@ncas.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://ncas.ac.lk/organizational-structure/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 10021 visible characters across 14 pages",
+      "source": "http://www.ncas.ac.lk/"
     }
   ],
   "observations": [
@@ -85,49 +1233,244 @@
     },
     {
       "host": "www.ncas.ac.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "valid",
+      "expires_at": "2027-01-10T11:10:28+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.ncas.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/",
+      "redirects": [
+        "https://ncas.ac.lk/"
+      ],
+      "elapsed_ms": 3608,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ncas.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/",
+      "redirects": [
+        "https://www.ncas.ac.lk/",
+        "https://ncas.ac.lk/"
+      ],
+      "elapsed_ms": 3591,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.ncas.ac.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/",
+      "redirects": [
+        "https://ncas.ac.lk/"
+      ],
+      "elapsed_ms": 3595,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.ncas.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/",
+      "redirects": [
+        "https://www.ncas.ac.lk/",
+        "https://ncas.ac.lk/"
+      ],
+      "elapsed_ms": 3308,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/home-2/contact-us/",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/home-2/contact-us/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 2969,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk",
+      "redirects": [],
+      "elapsed_ms": 3434,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/cor",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/cor/",
+      "redirects": [
+        "https://ncas.ac.lk/cor/"
+      ],
+      "elapsed_ms": 5381,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/ncasn/com",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/com/",
+      "redirects": [
+        "https://ncas.ac.lk/com/"
+      ],
+      "elapsed_ms": 3011,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/director/",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/director/",
+      "redirects": [],
+      "elapsed_ms": 2786,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/previous-directors/",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/previous-directors/",
+      "redirects": [],
+      "elapsed_ms": 3187,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/ncasn/secretariat",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/secretariat/",
+      "redirects": [
+        "https://ncas.ac.lk/secretariat/"
+      ],
+      "elapsed_ms": 3385,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/ncasn/vision",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/vision/",
+      "redirects": [
+        "https://ncas.ac.lk/vision/"
+      ],
+      "elapsed_ms": 3055,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/ncasn/objectives",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/objectives/",
+      "redirects": [
+        "https://ncas.ac.lk/objectives/"
+      ],
+      "elapsed_ms": 3246,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://ncas.ac.lk/organizational-structure/",
+      "status_code": 200,
+      "final_url": "https://ncas.ac.lk/organizational-structure/",
+      "redirects": [],
+      "elapsed_ms": 3014,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://ncas.ac.lk/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-01-502ef18004c4.html",
+      "sha256": "502ef18004c40307c54abf05069a396a827c98a856bed33d19a680ab27abd061",
+      "bytes": 157960
+    },
+    {
+      "url": "https://ncas.ac.lk/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-02-48ba824a852d.html",
+      "sha256": "48ba824a852d99e49335f97b69abf2f7484535aa1c4abd095770f7d8b0191aa2",
+      "bytes": 157960
+    },
+    {
+      "url": "https://ncas.ac.lk/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-03-f42e56190c3b.html",
+      "sha256": "f42e56190c3b21ef5e58028f26b859f2c78ad900a046fe400ef227aed8961a49",
+      "bytes": 157960
+    },
+    {
+      "url": "https://ncas.ac.lk/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-04-abc2173878aa.html",
+      "sha256": "abc2173878aabf540d92fbad9696f150192e004efa432cc90820305750d9e4ce",
+      "bytes": 157960
+    },
+    {
+      "url": "https://ncas.ac.lk/home-2/contact-us/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-05-1c6bee8f93e9.html",
+      "sha256": "1c6bee8f93e9905288dccdc74e7b8167dfb1e872ebda96d005897f4c9c4558b1",
+      "bytes": 106881
+    },
+    {
+      "url": "https://ncas.ac.lk",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-06-a0170225aea6.html",
+      "sha256": "a0170225aea6a4af7a31329885e92f793f8c15fb04b75033044b0d682c88cc33",
+      "bytes": 157960
+    },
+    {
+      "url": "https://ncas.ac.lk/cor/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-07-7b3e7da4a2b5.html",
+      "sha256": "7b3e7da4a2b5a9681fea67dcc12a32afccbc67e5107d9800ab54a2129f7664e3",
+      "bytes": 114245
+    },
+    {
+      "url": "https://ncas.ac.lk/com/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-08-9e5f11b710ac.html",
+      "sha256": "9e5f11b710ace2e6896aa0acd74f9b23904b3fe728e4201125f850123af9edb8",
+      "bytes": 111898
+    },
+    {
+      "url": "https://ncas.ac.lk/director/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-09-f0f8e3fe135d.html",
+      "sha256": "f0f8e3fe135d53e392e28a0c4f079a6b687f463ced10afc9b8b26a3a896a3bce",
+      "bytes": 107543
+    },
+    {
+      "url": "https://ncas.ac.lk/previous-directors/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-10-16581f788ffd.html",
+      "sha256": "16581f788ffd9d566a95d1cc0b1f7f15635a0d5e6cc339d567c63d9c860a500c",
+      "bytes": 107388
+    },
+    {
+      "url": "https://ncas.ac.lk/secretariat/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-11-19a9af5d6c98.html",
+      "sha256": "19a9af5d6c98d45d2ab8431e4bd33db86c4bfa903c898c7baee1506a552c8aea",
+      "bytes": 114858
+    },
+    {
+      "url": "https://ncas.ac.lk/vision/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-12-6d1862a4c9e7.html",
+      "sha256": "6d1862a4c9e731f700d5161a2846f239af75c8ceb5111dd6b852bd74f39e2dcf",
+      "bytes": 104752
+    },
+    {
+      "url": "https://ncas.ac.lk/objectives/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-13-4b53a8342f92.html",
+      "sha256": "4b53a8342f925d82875ba2eb9e975cb3d5e9af30c0b385fb457a3af5cebfb16d",
+      "bytes": 106536
+    },
+    {
+      "url": "https://ncas.ac.lk/organizational-structure/",
+      "path": "audit.output/www.ncas.ac.lk/20261110.0605/snapshots/page-14-fb795cd26cda.html",
+      "sha256": "fb795cd26cda05cf1d625759846f2f3a30d8c5a7eb9f9954fb6fdb2b0e388df0",
+      "bytes": 102678
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1484,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,56 +1497,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -211,9 +1554,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 011 268084 (5 phone numbers found); Email: info@ncas.ac.lk (8 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -241,7 +1603,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.225",
+    "egress_ip": "172.210.143.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

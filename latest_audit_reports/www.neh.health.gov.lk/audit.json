@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "24433b8c-fa6a-4132-844e-258ee3b2c21d",
+  "audit_id": "402aa050-d1c3-4d6d-9856-ec8b5b2165d0",
   "url": "https://www.neh.health.gov.lk/",
   "normalized_url": "https://www.neh.health.gov.lk/",
-  "started_at": "2026-11-09T06:23:11.992714+05:30",
-  "completed_at": "2026-11-09T06:23:16.693601+05:30",
+  "started_at": "2026-11-10T06:24:58.272717+05:30",
+  "completed_at": "2026-11-10T06:27:13.817151+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [503, 503, 503, 503]"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: _ssl.c:994: The handshake operation timed out",
+      "tls_hostname_matches: _ssl.c:994: The handshake operation timed out"
     ]
   },
   "evidence": [
@@ -17,59 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T06:23:12.519169+05:30"
+      "observed_at": "2026-11-10T06:24:58.581375+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T06:23:12.519219+05:30"
+      "observed_at": "2026-11-10T06:24:58.581393+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-09T06:23:12.917898+05:30"
+      "status": "error",
+      "detail": "_ssl.c:994: The handshake operation timed out",
+      "observed_at": "2026-11-10T06:25:08.922178+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 503 at https://www.neh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: _ssl.c:994: The handshake operation timed out",
       "source": "https://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-09T06:23:16.689976+05:30"
+      "observed_at": "2026-11-10T06:27:13.816998+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 503 at http://www.neh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-09T06:23:16.689995+05:30"
+      "observed_at": "2026-11-10T06:27:13.817015+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 503 at https://www.neh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: _ssl.c:994: The handshake operation timed out",
       "source": "https://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-09T06:23:16.689999+05:30"
+      "observed_at": "2026-11-10T06:27:13.817019+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 503 at http://www.neh.health.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.neh.health.gov.lk/",
-      "observed_at": "2026-11-09T06:23:16.690003+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 296 visible characters across 4 pages",
-      "source": "https://www.neh.health.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
-      "observed_at": "2026-11-09T06:23:16.692892+05:30"
+      "observed_at": "2026-11-10T06:27:13.817021+05:30"
     }
   ],
   "observations": [
@@ -89,74 +85,49 @@
     },
     {
       "host": "www.neh.health.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-10T15:35:52+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "https://www.neh.health.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://www.neh.health.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 594,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "http://www.neh.health.gov.lk/",
-      "status_code": 503,
-      "final_url": "http://www.neh.health.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 520,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.neh.health.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://www.neh.health.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 338,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "http://www.neh.health.gov.lk/",
-      "status_code": 503,
-      "final_url": "http://www.neh.health.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 516,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.neh.health.gov.lk/",
-      "path": "audit.output/www.neh.health.gov.lk/20261109.0623/snapshots/page-01-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    },
-    {
-      "url": "http://www.neh.health.gov.lk/",
-      "path": "audit.output/www.neh.health.gov.lk/20261109.0623/snapshots/page-02-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    },
-    {
-      "url": "https://www.neh.health.gov.lk/",
-      "path": "audit.output/www.neh.health.gov.lk/20261109.0623/snapshots/page-03-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    },
-    {
-      "url": "http://www.neh.health.gov.lk/",
-      "path": "audit.output/www.neh.health.gov.lk/20261109.0623/snapshots/page-04-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -170,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:994: The handshake operation timed out; _ssl.c:994: The handshake operation timed out",
       "executed": true,
       "checks": [
         {
@@ -207,8 +178,8 @@
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -225,14 +196,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:994: The handshake operation timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:994: The handshake operation timed out"
         }
       ]
     },
@@ -270,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.225",
+    "egress_ip": "172.210.143.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

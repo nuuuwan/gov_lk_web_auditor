@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "fbb915aa-9524-4403-85a7-696d852b96b6",
+  "audit_id": "4ea58a79-f293-4e09-939e-0b7088923015",
   "url": "https://www.courtofappeal.lk/",
   "normalized_url": "https://www.courtofappeal.lk/",
-  "started_at": "2026-11-09T06:43:16.599698+05:30",
-  "completed_at": "2026-11-09T06:43:21.116258+05:30",
+  "started_at": "2026-11-10T06:53:24.077081+05:30",
+  "completed_at": "2026-11-10T06:53:44.023483+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [403, 403, 403, 403]"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,59 +26,1293 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T06:43:17.747983+05:30"
+      "observed_at": "2026-11-10T06:53:24.270121+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T06:43:17.748005+05:30"
+      "observed_at": "2026-11-10T06:53:24.270146+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-09T06:43:17.893437+05:30"
+      "observed_at": "2026-11-10T06:53:24.292651+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 403 at https://www.courtofappeal.lk/",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.courtofappeal.lk/",
       "source": "https://www.courtofappeal.lk/",
-      "observed_at": "2026-11-09T06:43:20.995061+05:30"
+      "observed_at": "2026-11-10T06:53:43.645567+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 403 at http://www.courtofappeal.lk/",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.courtofappeal.lk/",
       "source": "http://www.courtofappeal.lk/",
-      "observed_at": "2026-11-09T06:43:20.995081+05:30"
+      "observed_at": "2026-11-10T06:53:43.645586+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 403 at https://www.courtofappeal.lk/",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.courtofappeal.lk/",
       "source": "https://www.courtofappeal.lk/",
-      "observed_at": "2026-11-09T06:43:20.995085+05:30"
+      "observed_at": "2026-11-10T06:53:43.645589+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 403 at http://www.courtofappeal.lk/",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.courtofappeal.lk/",
       "source": "http://www.courtofappeal.lk/",
-      "observed_at": "2026-11-09T06:43:20.995089+05:30"
+      "observed_at": "2026-11-10T06:53:43.645592+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.courtofappeal.lk/divisions",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "observed_at": "2026-11-10T06:53:43.645594+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.courtofappeal.lk/contact",
+      "source": "https://www.courtofappeal.lk/contact",
+      "observed_at": "2026-11-10T06:53:43.645596+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.courtofappeal.lk/",
+      "source": "https://www.courtofappeal.lk/index",
+      "observed_at": "2026-11-10T06:53:43.645598+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.courtofappeal.lk/history",
+      "source": "https://www.courtofappeal.lk/history",
+      "observed_at": "2026-11-10T06:53:43.645600+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.courtofappeal.lk/vision_mission",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "observed_at": "2026-11-10T06:53:43.645602+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.courtofappeal.lk/jurisdiction",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "observed_at": "2026-11-10T06:53:43.645605+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.courtofappeal.lk/justices",
+      "source": "https://www.courtofappeal.lk/justices",
+      "observed_at": "2026-11-10T06:53:43.645608+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.courtofappeal.lk/past_presidents",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "observed_at": "2026-11-10T06:53:43.645610+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.courtofappeal.lk/past_justices",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "observed_at": "2026-11-10T06:53:43.645612+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.courtofappeal.lk/structure",
+      "source": "https://www.courtofappeal.lk/structure",
+      "observed_at": "2026-11-10T06:53:43.645614+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "http://www.courtofappeal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/divisions",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112437468",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "+94112437468"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 2 435 061 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 - 2 435 061 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112433466",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "+94112433466"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 - 8099989 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "071 - 8099989 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 2 437 468 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 - 2 437 468 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112437507",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "+94112437507"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 2 300 184 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 - 2 300 184 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94718099989",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "+94718099989"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 2 326 010 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 - 2 326 010 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112300184",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "+94112300184"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 437 512 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 2 437 512 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 437 507 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 2 437 507 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112435061",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "+94112435061"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112320286",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "+94112320286"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 2 320 286 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 - 2 320 286 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 - 2 433 466 ",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "011 - 2 433 466 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: { display: flex; flex-direction: column; justify-content: center; padding: 34px 30px; background: #fff; border: 1px soli",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "{ display: flex; flex-direction: column; justify-content: center; padding: 34px 30px; background: #fff; border: 1px soli"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/contact",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.courtofappeal.lk/history",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/vision_mission",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/jurisdiction",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/justices",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/past_presidents",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/past_justices",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 2019 201",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "020 2019 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 017 2016 201",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "017 2016 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 2013 201",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "014 2013 201"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 026 2025 202",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "026 2025 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 2022 202",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "023 2022 202"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 232 7798 ",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "011 232 7798 "
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: University of Colombo Sri Lanka",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "University of Colombo Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.courtofappeal.lk/structure",
+      "data": {
+        "value": "division"
+      }
     },
     {
       "check": "page_text",
-      "status": "fail",
-      "detail": "Only 16 visible characters across 4 pages; below substance threshold 200",
+      "status": "pass",
+      "detail": "Substantive page content: 52966 visible characters across 14 pages",
       "source": "https://www.courtofappeal.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
-      "observed_at": "2026-11-09T06:43:21.115498+05:30"
     }
   ],
   "observations": [
@@ -99,37 +1342,129 @@
     },
     {
       "url": "https://www.courtofappeal.lk/",
-      "status_code": 403,
+      "status_code": 200,
       "final_url": "https://www.courtofappeal.lk/",
       "redirects": [],
-      "elapsed_ms": 261,
+      "elapsed_ms": 1564,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.courtofappeal.lk/",
-      "status_code": 403,
+      "status_code": 200,
       "final_url": "http://www.courtofappeal.lk/",
       "redirects": [],
-      "elapsed_ms": 35,
+      "elapsed_ms": 1238,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://www.courtofappeal.lk/",
-      "status_code": 403,
+      "status_code": 200,
       "final_url": "https://www.courtofappeal.lk/",
       "redirects": [],
-      "elapsed_ms": 53,
+      "elapsed_ms": 1559,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.courtofappeal.lk/",
-      "status_code": 403,
+      "status_code": 200,
       "final_url": "http://www.courtofappeal.lk/",
       "redirects": [],
-      "elapsed_ms": 27,
+      "elapsed_ms": 1197,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/divisions",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/divisions",
+      "redirects": [],
+      "elapsed_ms": 1495,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/contact",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/contact",
+      "redirects": [],
+      "elapsed_ms": 370,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/index",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/",
+      "redirects": [
+        "https://www.courtofappeal.lk/"
+      ],
+      "elapsed_ms": 1534,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/history",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/history",
+      "redirects": [],
+      "elapsed_ms": 1559,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/vision_mission",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/vision_mission",
+      "redirects": [],
+      "elapsed_ms": 1190,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/jurisdiction",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/jurisdiction",
+      "redirects": [],
+      "elapsed_ms": 355,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/justices",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/justices",
+      "redirects": [],
+      "elapsed_ms": 1354,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/past_presidents",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/past_presidents",
+      "redirects": [],
+      "elapsed_ms": 1337,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/past_justices",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/past_justices",
+      "redirects": [],
+      "elapsed_ms": 1493,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.courtofappeal.lk/structure",
+      "status_code": 200,
+      "final_url": "https://www.courtofappeal.lk/structure",
+      "redirects": [],
+      "elapsed_ms": 669,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -137,27 +1472,87 @@
   "snapshots": [
     {
       "url": "https://www.courtofappeal.lk/",
-      "path": "audit.output/www.courtofappeal.lk/20261109.0643/snapshots/page-01-b9b639b888ca.html",
-      "sha256": "b9b639b888ca39f407945c3c25e593dbf44448963e4bb94622fe3f6b70244fc7",
-      "bytes": 5293
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-01-57534dfe02e0.html",
+      "sha256": "57534dfe02e0a5de82c712e5d2db182f64f5ea61f0fbd535bec5d7d48c53f325",
+      "bytes": 63563
     },
     {
       "url": "http://www.courtofappeal.lk/",
-      "path": "audit.output/www.courtofappeal.lk/20261109.0643/snapshots/page-02-64e7c3d49e84.html",
-      "sha256": "64e7c3d49e84b5610ef4021b563add595c4f78c79895621b5b18f14886d857cb",
-      "bytes": 5251
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-02-1f5bdf10d69b.html",
+      "sha256": "1f5bdf10d69bbb975b7bcd3e6b891e51ebb43612dc5bb42fa0c647983b95e06e",
+      "bytes": 63563
     },
     {
       "url": "https://www.courtofappeal.lk/",
-      "path": "audit.output/www.courtofappeal.lk/20261109.0643/snapshots/page-03-3eed64930bec.html",
-      "sha256": "3eed64930bec4c435deeb7a6a0baa0e220efde3809d3d1a7c042948da966ad45",
-      "bytes": 5293
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-03-86ef5a2f10a0.html",
+      "sha256": "86ef5a2f10a0492460e695b1189766629fa32deadff7ac1488f0080393510930",
+      "bytes": 63563
     },
     {
       "url": "http://www.courtofappeal.lk/",
-      "path": "audit.output/www.courtofappeal.lk/20261109.0643/snapshots/page-04-3bf9abcc9d73.html",
-      "sha256": "3bf9abcc9d733ffe4a44c45c5d89b3bf6ac11e6d1b4d8c1a6f21b989a00a02c8",
-      "bytes": 5251
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-04-e3ea790b4160.html",
+      "sha256": "e3ea790b4160354f8b7ce72dd3b1d1340bb1f04487c0114cb9d4b792e130641d",
+      "bytes": 63563
+    },
+    {
+      "url": "https://www.courtofappeal.lk/divisions",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-05-b39ab24ef590.html",
+      "sha256": "b39ab24ef590440e12d12610ce050d00632e052d95f643e67f768feeb15a48d0",
+      "bytes": 43740
+    },
+    {
+      "url": "https://www.courtofappeal.lk/contact",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-06-0c685e33cfae.html",
+      "sha256": "0c685e33cfaeba67872904dc08d671074b916ec2a30e3ee347c6f421003f44d2",
+      "bytes": 47743
+    },
+    {
+      "url": "https://www.courtofappeal.lk/",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-07-2f68a4a1ec1c.html",
+      "sha256": "2f68a4a1ec1cdc4c477a22ff33fb9aaf9dee2a38ecb133865d3956e56bb67c4c",
+      "bytes": 63563
+    },
+    {
+      "url": "https://www.courtofappeal.lk/history",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-08-d0a89de72f55.html",
+      "sha256": "d0a89de72f55fe91dec789f079a02fee319358f014c484175730b95e2c622cf6",
+      "bytes": 93716
+    },
+    {
+      "url": "https://www.courtofappeal.lk/vision_mission",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-09-a17cf8577b56.html",
+      "sha256": "a17cf8577b5698abb5a25527f67c92a88d797bc0e30df080947b3175481304bb",
+      "bytes": 32852
+    },
+    {
+      "url": "https://www.courtofappeal.lk/jurisdiction",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-10-3af2f4304b62.html",
+      "sha256": "3af2f4304b62223c4afcc51ad81f743ce9902cdbdcf326c0da3e017cf8ab6872",
+      "bytes": 38887
+    },
+    {
+      "url": "https://www.courtofappeal.lk/justices",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-11-176781f8b06a.html",
+      "sha256": "176781f8b06a60fedf3c9a417e8fde0ba3347b1777839f89f74460a2ada3d30a",
+      "bytes": 34992
+    },
+    {
+      "url": "https://www.courtofappeal.lk/past_presidents",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-12-f487b95fd821.html",
+      "sha256": "f487b95fd82138e31eacedee6b011a0c625b44bdb4491d447c1b5cc04e2abbff",
+      "bytes": 40173
+    },
+    {
+      "url": "https://www.courtofappeal.lk/past_justices",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-13-2570310f8a3e.html",
+      "sha256": "2570310f8a3e1ef33665e3ebf154b85dd07d8e0872db15bd92803764fa54af33",
+      "bytes": 47880
+    },
+    {
+      "url": "https://www.courtofappeal.lk/structure",
+      "path": "audit.output/www.courtofappeal.lk/20261110.0653/snapshots/page-14-44158e655422.html",
+      "sha256": "44158e65542257fb6c58779512d94404acd8054db533568e30da5cb746e61933",
+      "bytes": 32734
     }
   ],
   "reviewer_decisions": [],
@@ -173,8 +1568,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -186,44 +1581,44 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 16 visible characters across 4 pages; below substance threshold 200"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [403, 403, 403, 403]"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
@@ -243,9 +1638,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No email evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: University of Colombo Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No email evidence found"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: division"
+        }
+      ]
     },
     {
       "level": 3,
@@ -273,7 +1687,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.225",
+    "egress_ip": "172.210.143.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

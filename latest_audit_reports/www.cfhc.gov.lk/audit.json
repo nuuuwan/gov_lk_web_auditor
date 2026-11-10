@@ -1,15 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "1d6e25e9-be8e-414f-b5ef-fc53e92a9670",
+  "audit_id": "699282d6-5dfe-4ab4-8b42-b6596c65b88b",
   "url": "https://www.cfhc.gov.lk/",
   "normalized_url": "https://www.cfhc.gov.lk/",
-  "started_at": "2026-11-09T06:15:33.436932+05:30",
-  "completed_at": "2026-11-09T06:15:37.741939+05:30",
+  "started_at": "2026-11-10T06:16:36.901475+05:30",
+  "completed_at": "2026-11-10T06:18:30.723301+05:30",
   "result": {
-    "status": "fail",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "http_available: Every repeated HTTP probe failed: [503, 503, 503, 503]"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: _ssl.c:994: The handshake operation timed out",
+      "tls_hostname_matches: _ssl.c:994: The handshake operation timed out"
     ]
   },
   "evidence": [
@@ -17,59 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T06:15:33.826255+05:30"
+      "observed_at": "2026-11-10T06:16:37.309114+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T06:15:33.826273+05:30"
+      "observed_at": "2026-11-10T06:16:37.309136+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-09T06:15:34.207259+05:30"
+      "status": "error",
+      "detail": "_ssl.c:994: The handshake operation timed out",
+      "observed_at": "2026-11-10T06:16:47.643095+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 1: HTTP 503 at https://www.cfhc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: _ssl.c:994: The handshake operation timed out",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-09T06:15:37.738378+05:30"
+      "observed_at": "2026-11-10T06:18:30.723152+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 2: HTTP 503 at http://www.cfhc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-09T06:15:37.738400+05:30"
+      "observed_at": "2026-11-10T06:18:30.723169+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 3: HTTP 503 at https://www.cfhc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: _ssl.c:994: The handshake operation timed out",
       "source": "https://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-09T06:15:37.738406+05:30"
+      "observed_at": "2026-11-10T06:18:30.723173+05:30"
     },
     {
       "check": "http",
-      "status": "fail",
-      "detail": "Probe 4: HTTP 503 at http://www.cfhc.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: Unsafe redirect blocked: [Errno -2] Name or service not known",
       "source": "http://www.cfhc.gov.lk/",
-      "observed_at": "2026-11-09T06:15:37.738410+05:30"
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 296 visible characters across 4 pages",
-      "source": "https://www.cfhc.gov.lk/"
-    },
-    {
-      "check": "persistent_http_failure",
-      "status": "fail",
-      "detail": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
-      "observed_at": "2026-11-09T06:15:37.741254+05:30"
+      "observed_at": "2026-11-10T06:18:30.723176+05:30"
     }
   ],
   "observations": [
@@ -89,74 +85,49 @@
     },
     {
       "host": "www.cfhc.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-12T09:35:59+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://www.cfhc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 597,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "http://www.cfhc.gov.lk/",
-      "status_code": 503,
-      "final_url": "http://www.cfhc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 514,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.cfhc.gov.lk/",
-      "status_code": 503,
-      "final_url": "https://www.cfhc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 623,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "_ssl.c:994: The handshake operation timed out"
     },
     {
       "url": "http://www.cfhc.gov.lk/",
-      "status_code": 503,
-      "final_url": "http://www.cfhc.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 263,
-      "content_type": "text/html; charset=iso-8859-1",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "Unsafe redirect blocked: [Errno -2] Name or service not known"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20261109.0615/snapshots/page-01-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    },
-    {
-      "url": "http://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20261109.0615/snapshots/page-02-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    },
-    {
-      "url": "https://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20261109.0615/snapshots/page-03-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    },
-    {
-      "url": "http://www.cfhc.gov.lk/",
-      "path": "audit.output/www.cfhc.gov.lk/20261109.0615/snapshots/page-04-f326d36dbf13.html",
-      "sha256": "f326d36dbf139488d220da777ca0d5ff6ccbdd8954c56052dc57f48a1ca9ebe3",
-      "bytes": 468
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -170,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:994: The handshake operation timed out; _ssl.c:994: The handshake operation timed out",
       "executed": true,
       "checks": [
         {
@@ -207,8 +178,8 @@
         {
           "name": "http_available",
           "level": 1,
-          "status": "fail",
-          "reason": "Every repeated HTTP probe failed: [503, 503, 503, 503]"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
@@ -225,14 +196,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:994: The handshake operation timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "_ssl.c:994: The handshake operation timed out"
         }
       ]
     },
@@ -270,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.225",
+    "egress_ip": "172.210.143.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

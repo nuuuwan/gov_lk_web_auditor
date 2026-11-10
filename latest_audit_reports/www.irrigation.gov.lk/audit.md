@@ -1,8 +1,8 @@
 # Website Audit: https://www.irrigation.gov.lk/
 
-- Completed: 2026-11-09 05:55
+- Completed: 2026-11-10 05:52
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.225 (US, github-actions)
+- Vantage: 172.210.143.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

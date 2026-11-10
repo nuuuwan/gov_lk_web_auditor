@@ -1,8 +1,8 @@
 # Website Audit: https://www.cfhc.gov.lk/
 
-- Completed: 2026-11-09 06:15
+- Completed: 2026-11-10 06:18
 - Overall result: ⚫ Level 0
-- Vantage: 20.161.30.225 (US, github-actions)
+- Vantage: 172.210.143.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ❌
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Every repeated HTTP probe failed: [503, 503, 503, 503]
+No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; _ssl.c:994: The handshake operation timed out; _ssl.c:994: The handshake operation timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -23,8 +23,20 @@ Every repeated HTTP probe failed: [503, 503, 503, 503]
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❌ | Every repeated HTTP probe failed: [503, 503, 503, 503] |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❓ | Browser TLS check did not complete |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | _ssl.c:994: The handshake operation timed out |
+| tls_hostname_matches | ❓ | _ssl.c:994: The handshake operation timed out |
+
+## 🟠 Level 2: ❓
+
+To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
+
+Not run because 🔴 Level 1 did not pass
+
+## 🟢 Level 3: ❓
+
+To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
+
+Not run because 🟠 Level 2 did not pass

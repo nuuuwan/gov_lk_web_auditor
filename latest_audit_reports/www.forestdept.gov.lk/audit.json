@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "e3efd910-a610-45ba-a3cf-79509e9b0be2",
+  "audit_id": "c16ce9b6-8e48-40bf-b70a-0fad1d0ce7d6",
   "url": "https://www.forestdept.gov.lk",
   "normalized_url": "https://www.forestdept.gov.lk/",
-  "started_at": "2026-11-09T06:09:56.607003+05:30",
-  "completed_at": "2026-11-09T06:10:01.435033+05:30",
+  "started_at": "2026-11-10T06:09:51.441573+05:30",
+  "completed_at": "2026-11-10T06:12:04.014435+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -16,8 +16,8 @@
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
       "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -25,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T06:09:57.175760+05:30"
+      "observed_at": "2026-11-10T06:09:51.876503+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T06:09:57.175777+05:30"
+      "observed_at": "2026-11-10T06:09:51.876524+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-11-09T06:09:57.671325+05:30"
+      "detail": "timed out",
+      "observed_at": "2026-11-10T06:10:02.121049+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "detail": "Probe 1: timed out",
       "source": "https://www.forestdept.gov.lk/",
-      "observed_at": "2026-11-09T06:10:01.434834+05:30"
+      "observed_at": "2026-11-10T06:12:04.014250+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "detail": "Probe 2: timed out",
       "source": "http://www.forestdept.gov.lk/",
-      "observed_at": "2026-11-09T06:10:01.434857+05:30"
+      "observed_at": "2026-11-10T06:12:04.014271+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "detail": "Probe 3: timed out",
       "source": "https://www.forestdept.gov.lk/",
-      "observed_at": "2026-11-09T06:10:01.434863+05:30"
+      "observed_at": "2026-11-10T06:12:04.014276+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "detail": "Probe 4: timed out",
       "source": "http://www.forestdept.gov.lk/",
-      "observed_at": "2026-11-09T06:10:01.434867+05:30"
+      "observed_at": "2026-11-10T06:12:04.014280+05:30"
     }
   ],
   "observations": [
@@ -88,7 +88,7 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "detail": "timed out"
     },
     {
       "url": "https://www.forestdept.gov.lk/",
@@ -97,7 +97,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     },
     {
       "url": "http://www.forestdept.gov.lk/",
@@ -106,7 +106,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     },
     {
       "url": "https://www.forestdept.gov.lk/",
@@ -115,7 +115,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     },
     {
       "url": "http://www.forestdept.gov.lk/",
@@ -124,7 +124,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "error": "timed out"
     }
   ],
   "snapshots": [],
@@ -142,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -197,13 +197,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "reason": "timed out"
         }
       ]
     },
@@ -241,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.225",
+    "egress_ip": "172.210.143.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

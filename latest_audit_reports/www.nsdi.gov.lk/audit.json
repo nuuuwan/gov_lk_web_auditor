@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3bfd0cf6-7f06-46e6-8af2-957c018efe40",
+  "audit_id": "da820e47-a2a6-40d6-9d38-cb5e545f3db0",
   "url": "https://www.nsdi.gov.lk/",
   "normalized_url": "https://www.nsdi.gov.lk/",
-  "started_at": "2026-11-09T06:00:31.995631+05:30",
-  "completed_at": "2026-11-09T06:00:36.535630+05:30",
+  "started_at": "2026-11-10T06:00:19.226039+05:30",
+  "completed_at": "2026-11-10T06:00:45.448186+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: [Errno 111] Connection refused",
-      "tls_hostname_matches: [Errno 111] Connection refused"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,1086 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-09T06:00:32.285207+05:30"
+      "observed_at": "2026-11-10T06:00:19.663452+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-09T06:00:32.285227+05:30"
+      "observed_at": "2026-11-10T06:00:19.663464+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "[Errno 111] Connection refused",
-      "observed_at": "2026-11-09T06:00:32.795168+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-10T06:00:20.668649+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.nsdi.gov.lk/",
       "source": "https://www.nsdi.gov.lk/",
-      "observed_at": "2026-11-09T06:00:36.535468+05:30"
+      "observed_at": "2026-11-10T06:00:45.262703+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 2: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.nsdi.gov.lk/",
       "source": "http://www.nsdi.gov.lk/",
-      "observed_at": "2026-11-09T06:00:36.535484+05:30"
+      "observed_at": "2026-11-10T06:00:45.262721+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.nsdi.gov.lk/",
       "source": "https://www.nsdi.gov.lk/",
-      "observed_at": "2026-11-09T06:00:36.535488+05:30"
+      "observed_at": "2026-11-10T06:00:45.262724+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: [Errno 111] Connection refused",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.nsdi.gov.lk/",
       "source": "http://www.nsdi.gov.lk/",
-      "observed_at": "2026-11-09T06:00:36.535491+05:30"
+      "observed_at": "2026-11-10T06:00:45.262727+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.nsdi.gov.lk/contact/feedback",
+      "source": "https://www.nsdi.gov.lk/contact/feedback",
+      "observed_at": "2026-11-10T06:00:45.262729+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.nsdi.gov.lk/spatial-data-services",
+      "source": "https://www.nsdi.gov.lk/spatial-data-services",
+      "observed_at": "2026-11-10T06:00:45.262731+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.nsdi.gov.lk/nsdi-services",
+      "source": "https://www.nsdi.gov.lk/nsdi-services",
+      "observed_at": "2026-11-10T06:00:45.262733+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "source": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "observed_at": "2026-11-10T06:00:45.262735+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "source": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "observed_at": "2026-11-10T06:00:45.262737+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.nsdi.gov.lk/contact",
+      "source": "https://www.nsdi.gov.lk/contact",
+      "observed_at": "2026-11-10T06:00:45.262740+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.nsdi.gov.lk/nsdi",
+      "source": "https://www.nsdi.gov.lk/nsdi",
+      "observed_at": "2026-11-10T06:00:45.262742+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.nsdi.gov.lk/stakeholder",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "observed_at": "2026-11-10T06:00:45.262744+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.nsdi.gov.lk/site-history",
+      "source": "https://www.nsdi.gov.lk/site-history",
+      "observed_at": "2026-11-10T06:00:45.262746+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "source": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "observed_at": "2026-11-10T06:00:45.262748+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "fail",
+      "detail": "Published published update date: 22 April 2022",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "22 April 2022"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "fail",
+      "detail": "Published published update date: 22 April 2022",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "22 April 2022"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "fail",
+      "detail": "Published published update date: 22 April 2022",
+      "source": "https://www.nsdi.gov.lk/",
+      "data": {
+        "value": "22 April 2022"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "fail",
+      "detail": "Published published update date: 22 April 2022",
+      "source": "http://www.nsdi.gov.lk/",
+      "data": {
+        "value": "22 April 2022"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/contact/feedback",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/contact/feedback",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl",
+      "source": "https://www.nsdi.gov.lk/contact/feedback",
+      "data": {
+        "value": "Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/contact/feedback",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/spatial-data-services",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/spatial-data-services",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/spatial-data-services",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/nsdi-services",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/nsdi-services",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/nsdi-services",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/contact",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/contact",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl",
+      "source": "https://www.nsdi.gov.lk/contact",
+      "data": {
+        "value": "Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/contact",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/nsdi",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/nsdi",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.nsdi.gov.lk/nsdi",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/nsdi",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112369343 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112369343 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2786854 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 11 2786854 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0714426656",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0714426656"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0812388355 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0812388355 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2787191 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "011-2787191 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011- 2872390 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "011- 2872390 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2 784 811 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "011-2 784 811 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0772642365 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0772642365 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112368931 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112368931 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2876297 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "011-2876297 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0714420995 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0714420995 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 4846 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 11 269 4846 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866633 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112866633 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112368569",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112368569"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2555647 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 11 2555647 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112866631 (",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112866631 ("
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112624727 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112624727 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2875921 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "011-2875921 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0772159109 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0772159109 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 426 900 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 112 426 900 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112636770 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112636770 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 2880000",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 11 2880000"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112888585 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112888585 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112368718 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112368718 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112187166 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 112187166 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9011 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 11 236 9011 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112077376 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112077376 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-2 785 162 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "011-2 785 162 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112368102 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112368102 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112186130 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 112186130 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 269 8311 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "+94 11 269 8311 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112872061 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "0112872061 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011-7195049 ",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "011-7195049 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ranjandwc@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "ranjandwc@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: gisluppd@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "gisluppd@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: jenniferweerakoon@yahoo.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "jenniferweerakoon@yahoo.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cemapping@waterboard.lk",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "cemapping@waterboard.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: meteo@slt.lk",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "meteo@slt.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dirps@uda.gov.lk",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "dirps@uda.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: nsbkekulandara@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "nsbkekulandara@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: secretary.education@moe.gov.lk",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "secretary.education@moe.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ajandes@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "ajandes@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: d.wiberg@cgiar.org",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "d.wiberg@cgiar.org"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dsnsamara@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "dsnsamara@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: jagathrr@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "jagathrr@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dsggeoinfo@survey.gov.lk",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "dsggeoinfo@survey.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sectoch@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "sectoch@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sg@survey.gov.lk",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "sg@survey.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: anurapmu@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "anurapmu@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: cegisirrigation@gmail.com",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "cegisirrigation@gmail.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: iwmi@cgiar.org",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "iwmi@cgiar.org"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: reduction, food security and ecosystem health. Headquartered in Colombo, Sri Lanka",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "reduction, food security and ecosystem health. Headquartered in Colombo, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.nsdi.gov.lk/stakeholder",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/site-history",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/site-history",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.nsdi.gov.lk/site-history",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/site-history",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 11 236 9091 ",
+      "source": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "data": {
+        "value": "+94 11 236 9091 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: NSDISupport@icta.lk",
+      "source": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "data": {
+        "value": "NSDISupport@icta.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "published_update_date",
+      "status": "pass",
+      "detail": "Published published update date: 22-10-2026",
+      "source": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "data": {
+        "value": "22-10-2026"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 21494 visible characters across 14 pages",
+      "source": "https://www.nsdi.gov.lk/"
     }
   ],
   "observations": [
@@ -85,49 +1125,224 @@
     },
     {
       "host": "www.nsdi.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "[Errno 111] Connection refused"
+      "status": "valid",
+      "expires_at": "2027-01-28T08:41:25+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.nsdi.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1589,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.nsdi.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.nsdi.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1367,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "https://www.nsdi.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1317,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     },
     {
       "url": "http://www.nsdi.gov.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "http://www.nsdi.gov.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[Errno 111] Connection refused"
+      "elapsed_ms": 1294,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/contact/feedback",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/contact/feedback",
+      "redirects": [],
+      "elapsed_ms": 1557,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/spatial-data-services",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/spatial-data-services",
+      "redirects": [],
+      "elapsed_ms": 1324,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi-services",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/nsdi-services",
+      "redirects": [],
+      "elapsed_ms": 1553,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "redirects": [],
+      "elapsed_ms": 1374,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "redirects": [],
+      "elapsed_ms": 1313,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/contact",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/contact",
+      "redirects": [],
+      "elapsed_ms": 1597,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/nsdi",
+      "redirects": [],
+      "elapsed_ms": 1549,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/stakeholder",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/stakeholder",
+      "redirects": [],
+      "elapsed_ms": 1822,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/site-history",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/site-history",
+      "redirects": [],
+      "elapsed_ms": 1349,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "status_code": 200,
+      "final_url": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "redirects": [],
+      "elapsed_ms": 1361,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.nsdi.gov.lk/",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-01-e22db5d9dc8c.html",
+      "sha256": "e22db5d9dc8cc1f9b1d987fb6ecd9050d6df7e5d151a5804f4695b0f0d7f87b1",
+      "bytes": 52733
+    },
+    {
+      "url": "http://www.nsdi.gov.lk/",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-02-e22db5d9dc8c.html",
+      "sha256": "e22db5d9dc8cc1f9b1d987fb6ecd9050d6df7e5d151a5804f4695b0f0d7f87b1",
+      "bytes": 52733
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-03-e22db5d9dc8c.html",
+      "sha256": "e22db5d9dc8cc1f9b1d987fb6ecd9050d6df7e5d151a5804f4695b0f0d7f87b1",
+      "bytes": 52733
+    },
+    {
+      "url": "http://www.nsdi.gov.lk/",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-04-e22db5d9dc8c.html",
+      "sha256": "e22db5d9dc8cc1f9b1d987fb6ecd9050d6df7e5d151a5804f4695b0f0d7f87b1",
+      "bytes": 52733
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/contact/feedback",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-05-2727c7b07cb5.html",
+      "sha256": "2727c7b07cb5563e3665a073ecba1d63d2a213cce5762013e166be1d600c0f1c",
+      "bytes": 27233
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/spatial-data-services",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-06-f0704b3ca517.html",
+      "sha256": "f0704b3ca517b8dd903eda4f4fa23f412c30f7527cc5385858dbb31a1a148e15",
+      "bytes": 40601
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi-services",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-07-3e2e468f4ffa.html",
+      "sha256": "3e2e468f4ffa1ab1abfddf12a1f6cf267ecd0570f7c42fd82c7d0b7d641cec2a",
+      "bytes": 22089
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi-user-training-sri-lanka-navy-hydrography-service",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-08-f653ca069aec.html",
+      "sha256": "f653ca069aeca787100db9db5a04250aa98a2c09cf771a4c91511f4db4746412",
+      "bytes": 30768
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi-metadata-catalogue-training-survey-department-srilanka",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-09-49153396f4a3.html",
+      "sha256": "49153396f4a37da188305150594d5c19be011a0e6c4b483c01b0d67585a49710",
+      "bytes": 30896
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/contact",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-10-b08e9227175b.html",
+      "sha256": "b08e9227175bd7e9d4ed6c53f739c63b9e022bafc83f853e18e9090ae3b576c5",
+      "bytes": 24652
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/nsdi",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-11-05d172f7969c.html",
+      "sha256": "05d172f7969c91698d052d8ef3dc5d05f9956bace237ec945064feb5db185610",
+      "bytes": 26164
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/stakeholder",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-12-45270e9cd494.html",
+      "sha256": "45270e9cd4947d3933c3c88ca50166824156e1150bd6d2cae6a793ab09ca0432",
+      "bytes": 63051
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/site-history",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-13-ceebd15d1b59.html",
+      "sha256": "ceebd15d1b5931342b5b811f5a9b477650efe6fda418a2735c4c06b7488db989",
+      "bytes": 31045
+    },
+    {
+      "url": "https://www.nsdi.gov.lk/national-data-sharing-policy-draft",
+      "path": "audit.output/www.nsdi.gov.lk/20261110.0600/snapshots/page-14-b4d0fa546cdf.html",
+      "sha256": "b4d0fa546cdf2196f9c2a289d3867243f2e52a77818d26c63ff6d5be8ab58273",
+      "bytes": 23757
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1356,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 111] Connection refused; [Errno 111] Connection refused",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,74 +1369,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno 111] Connection refused"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl; Phone: +94 11 236 9091 (34 phone numbers found); Email: NSDISupport@icta.lk (19 email addresses found); Published named responsibility: department",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Subject Message ABOUT US var myVar = setInterval(myTimer, 1000); function myTimer() { var d = new Date(); document.getEl"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 11 236 9091 (34 phone numbers found); Email: NSDISupport@icta.lk (19 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "fail",
+      "reason": "Published published update date: 22 April 2022",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: gazette"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "fail",
+          "reason": "Published published update date: 22 April 2022"
+        }
+      ]
     },
     {
       "level": 4,
@@ -241,7 +1518,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.161.30.225",
+    "egress_ip": "172.210.143.48",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

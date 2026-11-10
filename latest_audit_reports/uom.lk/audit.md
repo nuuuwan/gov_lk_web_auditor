@@ -1,8 +1,8 @@
 # Website Audit: https://uom.lk/
 
-- Completed: 2026-11-09 06:02
+- Completed: 2026-11-10 06:03
 - Overall result: 🟠 Level 2
-- Vantage: 20.161.30.225 (US, github-actions)
+- Vantage: 172.210.143.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: University of Moratuwa Bandaranayake Mawatha Moratuwa 10400 Telephone +94 112 640 051 +94 112 650 301 Email info [AT] uo; Phone: +94 112 640 051 (5 phone numbers found); Email: admissions@uom.lk (23 email addresses found); Published named responsibility: director
+Published postal address: University of Moratuwa Bandaranayake Mawatha Moratuwa 10400 Telephone +94 112 640 051 +94 112 650 301 Email info [AT] uo; Phone: +94 112 650 301 (5 phone numbers found); Email: admissions@uom.lk (23 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: University of Moratuwa Bandaranayake Mawatha Moratuwa 10400 Telephone +94 112 640 051 +94 112 650 301 Email info [AT] uo |
-| reachable_contacts | ✅ | Phone: +94 112 640 051 (5 phone numbers found); Email: admissions@uom.lk (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 650 301 (5 phone numbers found); Email: admissions@uom.lk (23 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
