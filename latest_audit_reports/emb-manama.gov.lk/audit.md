@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manama.gov.lk/
 
-- Completed: 2026-11-10 06:22
+- Completed: 2026-11-12 06:24
 - Overall result: 🟢 Level 3
-- Vantage: 172.210.143.48 (US, github-actions)
+- Vantage: 4.154.7.20 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[; Phone: +97317008410 (2 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: division
+Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[; Phone: +97317008410 (2 phone numbers found); Email: slemb.bahrain@mfa.gov.lk (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and Contact Information\",\"page\":\"/address-and-contact-information\",\"order\":3,\"hasSubItems\":false,\"subItems\":[ |
-| reachable_contacts | ✅ | Phone: +97317008410 (2 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +97317008410 (2 phone numbers found); Email: slemb.bahrain@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ✅

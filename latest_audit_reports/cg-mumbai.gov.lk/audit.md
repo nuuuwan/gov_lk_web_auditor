@@ -1,8 +1,8 @@
 # Website Audit: https://cg-mumbai.gov.lk/
 
-- Completed: 2026-11-10 06:18
+- Completed: 2026-11-12 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 172.210.143.48 (US, github-actions)
+- Vantage: 4.154.7.20 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m; Phone: 0389671451 (10 phone numbers found); Email: john@example.com (6 email addresses found); Published named responsibility: director
+Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m; Phone: 095.9676513 (10 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 34, Mulla House Homi Modi Street Fort, Mumbai 400 001 India Tel: (00-91-22) 22045861 , (00-91-22) 22048303 Email: slcg.m |
-| reachable_contacts | ✅ | Phone: 0389671451 (10 phone numbers found); Email: john@example.com (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 095.9676513 (10 phone numbers found); Email: slcg.mumbai@mfa.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: free of charge |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

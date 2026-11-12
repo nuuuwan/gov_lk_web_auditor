@@ -1,8 +1,8 @@
 # Website Audit: https://elections.gov.lk/
 
-- Completed: 2026-11-10 06:52
+- Completed: 2026-11-12 06:56
 - Overall result: 🔴 Level 1
-- Vantage: 172.210.143.48 (US, github-actions)
+- Vantage: 4.154.7.20 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

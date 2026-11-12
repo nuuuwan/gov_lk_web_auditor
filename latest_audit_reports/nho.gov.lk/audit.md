@@ -1,8 +1,8 @@
 # Website Audit: https://nho.gov.lk/
 
-- Completed: 2026-11-10 06:00
+- Completed: 2026-11-12 06:01
 - Overall result: 🔴 Level 1
-- Vantage: 172.210.143.48 (US, github-actions)
+- Vantage: 4.154.7.20 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Office Naval Detachment Colombo, Upper Chatham street , Colombo 01 Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 7194855 (2 phone numbers found); Email: sectonh@nho.gov.lk |
+| reachable_contacts | ✅ | Phone: +94 71 7154747 (2 phone numbers found); Email: sectonh@nho.gov.lk |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

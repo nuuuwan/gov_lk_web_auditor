@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "716e52af-b637-47aa-891d-21c9f4598690",
+  "audit_id": "ba34293c-8981-4231-abe4-fb095af4de59",
   "url": "https://npd.treasury.gov.lk/",
   "normalized_url": "https://npd.treasury.gov.lk/",
-  "started_at": "2026-11-10T06:13:27.582084+05:30",
-  "completed_at": "2026-11-10T06:15:41.111542+05:30",
+  "started_at": "2026-11-12T06:15:12.974654+05:30",
+  "completed_at": "2026-11-12T06:16:17.974695+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -16,8 +16,8 @@
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
       "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "tls_not_expired: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)",
+      "tls_hostname_matches: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)"
     ]
   },
   "evidence": [
@@ -25,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-10T06:13:27.884095+05:30"
+      "observed_at": "2026-11-12T06:15:13.400417+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-10T06:13:27.884111+05:30"
+      "observed_at": "2026-11-12T06:15:13.400430+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-10T06:13:38.155709+05:30"
+      "detail": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)",
+      "observed_at": "2026-11-12T06:15:15.121429+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 1: timed out",
+      "detail": "Probe 1: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)",
       "source": "https://npd.treasury.gov.lk/",
-      "observed_at": "2026-11-10T06:15:41.111370+05:30"
+      "observed_at": "2026-11-12T06:16:17.974491+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://npd.treasury.gov.lk/",
-      "observed_at": "2026-11-10T06:15:41.111392+05:30"
+      "observed_at": "2026-11-12T06:16:17.974514+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: timed out",
+      "detail": "Probe 3: [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)",
       "source": "https://npd.treasury.gov.lk/",
-      "observed_at": "2026-11-10T06:15:41.111396+05:30"
+      "observed_at": "2026-11-12T06:16:17.974521+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://npd.treasury.gov.lk/",
-      "observed_at": "2026-11-10T06:15:41.111399+05:30"
+      "observed_at": "2026-11-12T06:16:17.974525+05:30"
     }
   ],
   "observations": [
@@ -88,7 +88,7 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "timed out"
+      "detail": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)"
     },
     {
       "url": "https://npd.treasury.gov.lk/",
@@ -97,7 +97,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)"
     },
     {
       "url": "http://npd.treasury.gov.lk/",
@@ -115,7 +115,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)"
     },
     {
       "url": "http://npd.treasury.gov.lk/",
@@ -142,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011); [SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)",
       "executed": true,
       "checks": [
         {
@@ -197,13 +197,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "[SSL: UNSAFE_LEGACY_RENEGOTIATION_DISABLED] unsafe legacy renegotiation disabled (_ssl.c:1011)"
         }
       ]
     },
@@ -241,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "172.210.143.48",
+    "egress_ip": "4.154.7.20",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

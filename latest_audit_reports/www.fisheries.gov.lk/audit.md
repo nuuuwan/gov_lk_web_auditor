@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-11-10 06:47
+- Completed: 2026-11-12 06:51
 - Overall result: 🟠 Level 2
-- Vantage: 172.210.143.48 (US, github-actions)
+- Vantage: 4.154.7.20 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these ; Phone: 0 0 0 1.594-1.59 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
+Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these ; Phone: +94 112 446 184 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these  |
-| reachable_contacts | ✅ | Phone: 0 0 0 1.594-1.59 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 446 184 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 9 November 2026 |
+| published_update_date | ✅ | Published published update date: 11 November 2026 |

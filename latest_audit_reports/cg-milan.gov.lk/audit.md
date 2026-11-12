@@ -1,8 +1,8 @@
 # Website Audit: https://cg-milan.gov.lk/
 
-- Completed: 2026-11-10 06:21
+- Completed: 2026-11-12 06:22
 - Overall result: 🟠 Level 2
-- Vantage: 172.210.143.48 (US, github-actions)
+- Vantage: 4.154.7.20 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: 0475813372 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa.; Phone: 0379896887 (24 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Via Giovanni da Udine 15/A, 20156, Milan Italy Tel: 0039-02-49536530 , 0039-3275480615 (Hot line) Email: Slcg.milan@mfa. |
-| reachable_contacts | ✅ | Phone: 0475813372 (25 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0379896887 (24 phone numbers found); Email: Slcg.milan@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing legal basis evidence found; No passing downloadable form evidence fou
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 3 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10/01/2026 |
+| published_update_date | ❓ | No passing published update date evidence found |
