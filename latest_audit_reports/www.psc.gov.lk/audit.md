@@ -1,8 +1,8 @@
 # Website Audit: https://www.psc.gov.lk/
 
-- Completed: 2026-11-12 06:57
-- Overall result: 🔴 Level 1
-- Vantage: 4.154.7.20 (US, github-actions)
+- Completed: 2026-11-13 06:56
+- Overall result: ⚫ Level 0
+- Vantage: 20.51.119.16 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,11 +10,11 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ✅
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://www.psc.gov.lk/: Probe 1: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,20 +26,14 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | http_available | ✅ | HTTPS probes passed; failing variants: https://www.psc.gov.lk/: Probe 1: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0890334430 (114 phone numbers found); Email: info@psc.gov.lk |
-| named_responsibility | ✅ | Published named responsibility: division |
+Not run because 🔴 Level 1 did not pass
 
 ## 🟢 Level 3: ❓
 

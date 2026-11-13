@@ -1,8 +1,8 @@
 # Website Audit: https://productivity.lk/
 
-- Completed: 2026-11-12 06:31
+- Completed: 2026-11-13 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 4.154.7.20 (US, github-actions)
+- Vantage: 20.51.119.16 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: National Productivity Awards 2025/26 Souvenir English Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline Sinhala Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline Tamil Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline English; Phone: +94) 112 186 031 ( (20 phone numbers found); Email: info@productivity.gov.lk; Published named responsibility: division
+Published postal address: National Productivity Awards 2025/26 Souvenir English Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline Sinhala Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline Tamil Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline English; Phone: +94) 112 186 025 (18 phone numbers found); Email: info@productivity.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: National Productivity Awards 2025/26 Souvenir English Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline Sinhala Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline Tamil Citizen Mirror 2026 Divisional Productivity Index 1.1 Verification Guideline English |
-| reachable_contacts | ✅ | Phone: +94) 112 186 031 ( (20 phone numbers found); Email: info@productivity.gov.lk |
+| reachable_contacts | ✅ | Phone: +94) 112 186 025 (18 phone numbers found); Email: info@productivity.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

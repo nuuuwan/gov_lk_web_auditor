@@ -1,8 +1,8 @@
 # Website Audit: http://www.jfn.ac.lk/
 
-- Completed: 2026-11-12 06:05
+- Completed: 2026-11-13 06:05
 - Overall result: 🔴 Level 1
-- Vantage: 4.154.7.20 (US, github-actions)
+- Vantage: 20.51.119.16 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

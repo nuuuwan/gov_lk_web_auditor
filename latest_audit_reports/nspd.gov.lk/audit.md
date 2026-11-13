@@ -1,8 +1,8 @@
 # Website Audit: https://nspd.gov.lk/
 
-- Completed: 2026-11-12 06:39
+- Completed: 2026-11-13 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 4.154.7.20 (US, github-actions)
+- Vantage: 20.51.119.16 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: li:first-child { color: var(--template-color-primary); }.container-address li:last-child { font-size: 19px; width: 280px; Phone: +94 112 806 706 (6 phone numbers found); Email: mssnspd@gmail.com; Published named responsibility: director
+Published postal address: li:first-child { color: var(--template-color-primary); }.container-address li:last-child { font-size: 19px; width: 280px; Phone: +94112877374 (6 phone numbers found); Email: mssnspd@gmail.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: li:first-child { color: var(--template-color-primary); }.container-address li:last-child { font-size: 19px; width: 280px |
-| reachable_contacts | ✅ | Phone: +94 112 806 706 (6 phone numbers found); Email: mssnspd@gmail.com |
+| reachable_contacts | ✅ | Phone: +94112877374 (6 phone numbers found); Email: mssnspd@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
