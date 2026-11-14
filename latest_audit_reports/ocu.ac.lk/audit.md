@@ -1,8 +1,8 @@
 # Website Audit: https://ocu.ac.lk/
 
-- Completed: 2026-11-13 06:10
+- Completed: 2026-11-14 06:07
 - Overall result: 🟠 Level 2
-- Vantage: 20.51.119.16 (US, github-actions)
+- Vantage: 3.41.210.134 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
-| downloadable_form | ✅ | Published downloadable form: https://ocu.ac.lk/wp-content/uploads/2026/05/Application-Instructor.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://ocu.ac.lk/wp-content/uploads/2026/11/Application-Assistant-Director-Deputy-Director.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

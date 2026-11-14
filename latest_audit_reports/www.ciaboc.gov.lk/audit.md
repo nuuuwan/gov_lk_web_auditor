@@ -1,8 +1,8 @@
 # Website Audit: https://www.ciaboc.gov.lk/
 
-- Completed: 2026-11-13 06:55
+- Completed: 2026-11-14 06:44
 - Overall result: 🟠 Level 2
-- Vantage: 20.51.119.16 (US, github-actions)
+- Vantage: 3.41.210.134 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below).; Phone: 0112 596363 (12 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below).; Phone: 0112 596365 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below). |
-| reachable_contacts | ✅ | Phone: 0112 596363 (12 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112 596365 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: Rs. 1,000 |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 2 hours |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❓ | No passing published update date evidence found |
+| processing_time | ✅ | Published processing time: 02 hours |
+| downloadable_form | ✅ | Published downloadable form: https://www.ciaboc.gov.lk/Application-Form-Assistant-Director-Maintenance-EN.pdf |
+| published_update_date | ✅ | Published published update date: 14 December 2026 |

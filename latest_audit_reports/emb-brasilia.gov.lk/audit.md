@@ -1,8 +1,8 @@
 # Website Audit: https://emb-brasilia.gov.lk/
 
-- Completed: 2026-11-13 06:23
+- Completed: 2026-11-14 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 20.51.119.16 (US, github-actions)
+- Vantage: 3.41.210.134 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0519-2481-47 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found); Published named responsibility: director
+Published postal address: to the staff, Ambassador Chaminda Colonne highlighted on the current situation in Sri Lanka, aftermath of Cyclone Ditwah; Phone: 00-4898-9229- (15 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 0519-2481-47 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found) |
+| postal_address | ✅ | Published postal address: to the staff, Ambassador Chaminda Colonne highlighted on the current situation in Sri Lanka, aftermath of Cyclone Ditwah |
+| reachable_contacts | ✅ | Phone: 00-4898-9229- (15 phone numbers found); Email: john@example.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

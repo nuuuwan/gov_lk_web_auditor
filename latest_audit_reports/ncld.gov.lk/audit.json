@@ -1,10 +1,10 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "77b0f830-6840-444b-80b0-c1c66f466ca3",
+  "audit_id": "61e54e47-d452-4e09-8c34-8aabe84e4f18",
   "url": "http://ncld.gov.lk/",
   "normalized_url": "http://ncld.gov.lk/",
-  "started_at": "2026-11-13T06:47:18.424617+05:30",
-  "completed_at": "2026-11-13T06:49:30.164205+05:30",
+  "started_at": "2026-11-14T06:37:35.452475+05:30",
+  "completed_at": "2026-11-14T06:37:51.973863+05:30",
   "result": {
     "status": "inconclusive",
     "confidence": 0.5,
@@ -16,8 +16,8 @@
       "http_available: An HTTP probe was transient",
       "redirect_related: No redirect result was available",
       "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "tls_not_expired: [Errno 113] No route to host",
+      "tls_hostname_matches: [Errno 113] No route to host"
     ]
   },
   "evidence": [
@@ -25,47 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-13T06:47:18.724800+05:30"
+      "observed_at": "2026-11-14T06:37:35.897620+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-13T06:47:18.724818+05:30"
+      "observed_at": "2026-11-14T06:37:35.897642+05:30"
     },
     {
       "check": "tls",
       "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-13T06:47:28.943302+05:30"
+      "detail": "[Errno 113] No route to host",
+      "observed_at": "2026-11-14T06:37:39.180534+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 1: timed out",
+      "detail": "Probe 1: [Errno 113] No route to host",
       "source": "https://ncld.gov.lk/",
-      "observed_at": "2026-11-13T06:49:30.164045+05:30"
+      "observed_at": "2026-11-14T06:37:51.973667+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 2: timed out",
+      "detail": "Probe 2: [Errno 113] No route to host",
       "source": "http://ncld.gov.lk/",
-      "observed_at": "2026-11-13T06:49:30.164065+05:30"
+      "observed_at": "2026-11-14T06:37:51.973692+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 3: timed out",
+      "detail": "Probe 3: [Errno 113] No route to host",
       "source": "https://ncld.gov.lk/",
-      "observed_at": "2026-11-13T06:49:30.164069+05:30"
+      "observed_at": "2026-11-14T06:37:51.973696+05:30"
     },
     {
       "check": "http",
       "status": "error",
-      "detail": "Probe 4: timed out",
+      "detail": "Probe 4: [Errno 113] No route to host",
       "source": "http://ncld.gov.lk/",
-      "observed_at": "2026-11-13T06:49:30.164072+05:30"
+      "observed_at": "2026-11-14T06:37:51.973699+05:30"
     }
   ],
   "observations": [
@@ -88,7 +88,7 @@
       "status": "error",
       "expires_at": null,
       "hostname_valid": null,
-      "detail": "timed out"
+      "detail": "[Errno 113] No route to host"
     },
     {
       "url": "https://ncld.gov.lk/",
@@ -97,7 +97,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 113] No route to host"
     },
     {
       "url": "http://ncld.gov.lk/",
@@ -106,7 +106,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 113] No route to host"
     },
     {
       "url": "https://ncld.gov.lk/",
@@ -115,7 +115,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 113] No route to host"
     },
     {
       "url": "http://ncld.gov.lk/",
@@ -124,7 +124,7 @@
       "redirects": [],
       "elapsed_ms": null,
       "content_type": null,
-      "error": "timed out"
+      "error": "[Errno 113] No route to host"
     }
   ],
   "snapshots": [],
@@ -142,7 +142,7 @@
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
       "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; [Errno 113] No route to host; [Errno 113] No route to host",
       "executed": true,
       "checks": [
         {
@@ -197,13 +197,13 @@
           "name": "tls_not_expired",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "[Errno 113] No route to host"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
           "status": "inconclusive",
-          "reason": "timed out"
+          "reason": "[Errno 113] No route to host"
         }
       ]
     },
@@ -241,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.51.119.16",
+    "egress_ip": "3.41.210.134",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

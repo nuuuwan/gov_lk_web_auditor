@@ -1,8 +1,8 @@
 # Website Audit: https://nils.gov.lk/
 
-- Completed: 2026-11-13 06:32
+- Completed: 2026-11-14 06:27
 - Overall result: 🟠 Level 2
-- Vantage: 20.51.119.16 (US, github-actions)
+- Vantage: 3.41.210.134 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: National Institute of Labour Studies (NILS) 2nd Floor, Labour Secretariat, Narahenpita, Colombo 05, Sri Lanka General & ; Phone: 05 011 278 65 (10 phone numbers found); Email: info@nils.lk; Published named responsibility: director
+Published postal address: National Institute of Labour Studies (NILS) 2nd Floor, Labour Secretariat, Narahenpita, Colombo 05, Sri Lanka General & ; Phone: 071 795 7777 (10 phone numbers found); Email: info@nils.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: National Institute of Labour Studies (NILS) 2nd Floor, Labour Secretariat, Narahenpita, Colombo 05, Sri Lanka General &  |
-| reachable_contacts | ✅ | Phone: 05 011 278 65 (10 phone numbers found); Email: info@nils.lk |
+| reachable_contacts | ✅ | Phone: 071 795 7777 (10 phone numbers found); Email: info@nils.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

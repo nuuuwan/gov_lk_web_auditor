@@ -1,8 +1,8 @@
 # Website Audit: https://dtet.gov.lk/
 
-- Completed: 2026-11-13 06:09
+- Completed: 2026-11-14 06:06
 - Overall result: 🟠 Level 2
-- Vantage: 20.51.119.16 (US, github-actions)
+- Vantage: 3.41.210.134 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Contact Us P.O.Box 557, Olcott Mawatha, Colombo 10, Sri Lanka; Phone: 0.1952 2.1382 (5295 phone numbers found); Email: info@dtet.gov.lk (18 email addresses found); Published named responsibility: director
+Published postal address: Contact Us P.O.Box 557, Olcott Mawatha, Colombo 10, Sri Lanka; Phone: 0.8908 5.4124 (5295 phone numbers found); Email: info@dtet.gov.lk (18 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Contact Us P.O.Box 557, Olcott Mawatha, Colombo 10, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0.1952 2.1382 (5295 phone numbers found); Email: info@dtet.gov.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.8908 5.4124 (5295 phone numbers found); Email: info@dtet.gov.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
