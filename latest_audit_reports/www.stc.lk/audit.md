@@ -1,8 +1,8 @@
 # Website Audit: https://www.stc.lk/
 
-- Completed: 2026-11-14 06:36
-- Overall result: 🟠 Level 2
-- Vantage: 3.41.210.134 (US, github-actions)
+- Completed: 2026-11-15 06:45
+- Overall result: ⚫ Level 0
+- Vantage: 74.249.190.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -10,49 +10,33 @@ A site is classified as `⚫ Level 0` when it is unavailable or unusable, or whe
 
 Baseline website grade
 
-## 🔴 Level 1: ✅
+## 🔴 Level 1: ❓
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid
+[Errno -3] Temporary failure in name resolution; No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; HTTP checks did not run; No redirect result was available; Browser TLS check did not complete; TLS expiry check did not run; TLS hostname check did not run
 
 | Test | Result | Details |
 | --- | --- | --- |
-| dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTP probes did not all fail |
-| redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| dns_resolves | ❓ | [Errno -3] Temporary failure in name resolution |
+| domain_not_parked | ❓ | No usable page was inspected |
+| site_not_defaced | ❓ | No usable page was inspected |
+| content_relevant | ❓ | No usable page was inspected |
+| hosting_configured | ❓ | No usable page was inspected |
+| http_available | ❓ | HTTP checks did not run |
+| redirect_related | ❓ | No redirect result was available |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
+| tls_not_expired | ❓ | TLS expiry check did not run |
+| tls_hostname_matches | ❓ | TLS hostname check did not run |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 071 440 6181 (68 phone numbers found); Email: chandika@stc.lk (18 email addresses found); Published named responsibility: officer in charge
-
-| Test | Result | Details |
-| --- | --- | --- |
-| postal_address | ✅ | Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St |
-| reachable_contacts | ✅ | Phone: 071 440 6181 (68 phone numbers found); Email: chandika@stc.lk (18 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: officer in charge |
+Not run because 🔴 Level 1 did not pass
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs6 |
-| legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 10 November 2026 |
+Not run because 🟠 Level 2 did not pass

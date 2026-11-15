@@ -1,8 +1,8 @@
 # Website Audit: https://www.ltl.lk/
 
-- Completed: 2026-11-14 06:08
+- Completed: 2026-11-15 06:13
 - Overall result: 🔴 Level 1
-- Vantage: 3.41.210.134 (US, github-actions)
+- Vantage: 74.249.190.48 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing named responsibility evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Registered Office : No.77, Level 01,Park Street, Colombo 02, Sri Lanka. Corporate Office : No.67, Park Street, Colombo 0 |
-| reachable_contacts | ✅ | Phone: +94 11) 743 6000 (4 phone numbers found); Email: info@ltl.lk |
+| reachable_contacts | ✅ | Phone: +94112695007 (4 phone numbers found); Email: info@ltl.lk |
 | named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓

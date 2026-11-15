@@ -1,6 +1,6 @@
 # Grading Government Websites (`glwa`)
 
-[![MIT License](https://img.shields.io/github/license/nuuuwan/glwa)](LICENSE) [![Author](https://img.shields.io/badge/author-nuuuwan-181717?logo=github)](https://github.com/nuuuwan) [![Author](https://img.shields.io/badge/author-prdai-181717?logo=github)](https://github.com/prdai) [![Author](https://img.shields.io/badge/author-dushmilan-181717?logo=github)](https://github.com/dushmilan) ![Last updated](https://img.shields.io/badge/last_updated-2026--11--14_06%3A47_SLST-007ec6)
+[![MIT License](https://img.shields.io/github/license/nuuuwan/glwa)](LICENSE) [![Author](https://img.shields.io/badge/author-nuuuwan-181717?logo=github)](https://github.com/nuuuwan) [![Author](https://img.shields.io/badge/author-prdai-181717?logo=github)](https://github.com/prdai) [![Author](https://img.shields.io/badge/author-dushmilan-181717?logo=github)](https://github.com/dushmilan) ![Last updated](https://img.shields.io/badge/last_updated-2026--11--15_07%3A02_SLST-007ec6)
 
 `glwa` audits Sri Lankan government websites using an evidence-based, cumulative grading model. It records reproducible evidence for each level and publishes the latest classification and audit report for every website in Sri Lanka. 🇱🇰
 
@@ -25,9 +25,9 @@ The score is out of 3. `🔴 Level 1` through `🟢 Level 3` each contribute up 
 %%{init: {"themeVariables":{"pie1":"black","pie2":"red","pie3":"orange","pie4":"green"}}}%%
 pie showData
     title Sites by level
-    "⚫ Level 0" : 187
-    "🔴 Level 1" : 122
-    "🟠 Level 2" : 265
+    "⚫ Level 0" : 202
+    "🔴 Level 1" : 117
+    "🟠 Level 2" : 255
     "🟢 Level 3" : 1
 ```
 
@@ -39,7 +39,7 @@ pie showData
 
 ## `⚫ Level 0`
 
-**187 URLs at `⚫ Level 0`.**
+**202 URLs at `⚫ Level 0`.**
 
 Checks used: Availability and usability checks.
 
@@ -50,12 +50,14 @@ Checks used: Availability and usability checks.
 | 0.0/3 | [http://www.skillsdevelop.lk/](latest_audit_reports/www.skillsdevelop.lk/audit.md) |
 | 0.0/3 | [http://www.slmti.lk/](latest_audit_reports/www.slmti.lk/audit.md) |
 | 0.0/3 | [https://maganeguma.lk/](latest_audit_reports/maganeguma.lk/audit.md) |
+| 0.0/3 | [https://phdt.lk/](latest_audit_reports/phdt.lk/audit.md) |
 | 0.0/3 | [https://www.ayurvedicmedicoun.gov.lk/](latest_audit_reports/www.ayurvedicmedicoun.gov.lk/audit.md) |
 | 0.0/3 | [https://www.delimitation.gov.lk/](latest_audit_reports/www.delimitation.gov.lk/audit.md) |
 | 0.0/3 | [https://www.nproccom.gov.lk/](latest_audit_reports/www.nproccom.gov.lk/audit.md) |
 | 0.0/3 | [https://www.sema.gov.lk/](latest_audit_reports/www.sema.gov.lk/audit.md) |
 | 0.0/3 | [https://www.slilg.lk/](latest_audit_reports/www.slilg.lk/audit.md) |
 | 0.0/3 | [https://www.slsbank.lk/](latest_audit_reports/www.slsbank.lk/audit.md) |
+| 0.0/3 | [https://www.stc.lk/](latest_audit_reports/www.stc.lk/audit.md) |
 | 0.1/3 | [http://ncld.gov.lk/](latest_audit_reports/ncld.gov.lk/audit.md) |
 | 0.1/3 | [http://nse.gov.lk/](latest_audit_reports/nse.gov.lk/audit.md) |
 | 0.1/3 | [http://textiledept.gov.lk/](latest_audit_reports/textiledept.gov.lk/audit.md) |
@@ -63,6 +65,7 @@ Checks used: Availability and usability checks.
 | 0.1/3 | [http://www.dgshipping.gov.lk/](latest_audit_reports/www.dgshipping.gov.lk/audit.md) |
 | 0.1/3 | [http://www.hindudept.gov.lk/](latest_audit_reports/www.hindudept.gov.lk/audit.md) |
 | 0.1/3 | [http://www.ndrsc.gov.lk/](latest_audit_reports/www.ndrsc.gov.lk/audit.md) |
+| 0.1/3 | [http://www.vau.ac.lk/](latest_audit_reports/www.vau.ac.lk/audit.md) |
 | 0.1/3 | [http://www.vpa.ac.lk/](latest_audit_reports/www.vpa.ac.lk/audit.md) |
 | 0.1/3 | [https://archaeology.gov.lk/](latest_audit_reports/archaeology.gov.lk/audit.md) |
 | 0.1/3 | [https://caa.gov.lk/](latest_audit_reports/caa.gov.lk/audit.md) |
@@ -83,6 +86,7 @@ Checks used: Availability and usability checks.
 | 0.1/3 | [https://kdb.gov.lk/](latest_audit_reports/kdb.gov.lk/audit.md) |
 | 0.1/3 | [https://landcom.gov.lk/](latest_audit_reports/landcom.gov.lk/audit.md) |
 | 0.1/3 | [https://ld.gov.lk/](latest_audit_reports/ld.gov.lk/audit.md) |
+| 0.1/3 | [https://lgc.gov.lk/](latest_audit_reports/lgc.gov.lk/audit.md) |
 | 0.1/3 | [https://mbs.gov.lk/](latest_audit_reports/mbs.gov.lk/audit.md) |
 | 0.1/3 | [https://measurementsdept.gov.lk/](latest_audit_reports/measurementsdept.gov.lk/audit.md) |
 | 0.1/3 | [https://meteo.gov.lk/](latest_audit_reports/meteo.gov.lk/audit.md) |
@@ -108,8 +112,12 @@ Checks used: Availability and usability checks.
 | 0.1/3 | [https://www.gjrti.gov.lk/](latest_audit_reports/www.gjrti.gov.lk/audit.md) |
 | 0.1/3 | [https://www.harti.gov.lk/](latest_audit_reports/www.harti.gov.lk/audit.md) |
 | 0.1/3 | [https://www.jsc.gov.lk/](latest_audit_reports/www.jsc.gov.lk/audit.md) |
+| 0.1/3 | [https://www.landdevelopment.lk/](latest_audit_reports/www.landdevelopment.lk/audit.md) |
+| 0.1/3 | [https://www.mbrc.gov.lk/](latest_audit_reports/www.mbrc.gov.lk/audit.md) |
 | 0.1/3 | [https://www.moe.gov.lk/](latest_audit_reports/www.moe.gov.lk/audit.md) |
+| 0.1/3 | [https://www.moudh.gov.lk/](latest_audit_reports/www.moudh.gov.lk/audit.md) |
 | 0.1/3 | [https://www.mrds.gov.lk/](latest_audit_reports/www.mrds.gov.lk/audit.md) |
+| 0.1/3 | [https://www.nipo.gov.lk/](latest_audit_reports/www.nipo.gov.lk/audit.md) |
 | 0.1/3 | [https://www.niss.gov.lk/](latest_audit_reports/www.niss.gov.lk/audit.md) |
 | 0.1/3 | [https://www.npc.gov.lk/](latest_audit_reports/www.npc.gov.lk/audit.md) |
 | 0.1/3 | [https://www.nvq.gov.lk/](latest_audit_reports/www.nvq.gov.lk/audit.md) |
@@ -122,7 +130,11 @@ Checks used: Availability and usability checks.
 | 0.1/3 | [https://www.railway.gov.lk/](latest_audit_reports/www.railway.gov.lk/audit.md) |
 | 0.1/3 | [https://www.rdb.gov.lk/](latest_audit_reports/www.rdb.gov.lk/audit.md) |
 | 0.1/3 | [https://www.rdtri.gov.lk/](latest_audit_reports/www.rdtri.gov.lk/audit.md) |
+| 0.1/3 | [https://www.roadsafety.gov.lk/](latest_audit_reports/www.roadsafety.gov.lk/audit.md) |
 | 0.1/3 | [https://www.sdc.gov.lk/](latest_audit_reports/www.sdc.gov.lk/audit.md) |
+| 0.1/3 | [https://www.socialservices.gov.lk/](latest_audit_reports/www.socialservices.gov.lk/audit.md) |
+| 0.1/3 | [https://www.trade.gov.lk/](latest_audit_reports/www.trade.gov.lk/audit.md) |
+| 0.1/3 | [https://www.transport.gov.lk/](latest_audit_reports/www.transport.gov.lk/audit.md) |
 | 0.2/3 | [https://pmb.gov.lk/](latest_audit_reports/pmb.gov.lk/audit.md) |
 | 0.3/3 | [http://cpl.gov.lk/](latest_audit_reports/cpl.gov.lk/audit.md) |
 | 0.3/3 | [http://govtfactory.gov.lk/](latest_audit_reports/govtfactory.gov.lk/audit.md) |
@@ -142,11 +154,15 @@ Checks used: Availability and usability checks.
 | 0.3/3 | [https://mpc.kdu.ac.lk/](latest_audit_reports/mpc.kdu.ac.lk/audit.md) |
 | 0.3/3 | [https://nhrdc.gov.lk/](latest_audit_reports/nhrdc.gov.lk/audit.md) |
 | 0.3/3 | [https://olc.gov.lk/](latest_audit_reports/olc.gov.lk/audit.md) |
+| 0.3/3 | [https://public.stratlinksl.imexport.gov.lk/](latest_audit_reports/public.stratlinksl.imexport.gov.lk/audit.md) |
 | 0.3/3 | [https://sladc.lk/](latest_audit_reports/sladc.lk/audit.md) |
+| 0.3/3 | [https://www.boc.lk/](latest_audit_reports/www.boc.lk/audit.md) |
 | 0.3/3 | [https://www.caa.lk/](latest_audit_reports/www.caa.lk/audit.md) |
+| 0.3/3 | [https://www.cbsl.gov.lk/](latest_audit_reports/www.cbsl.gov.lk/audit.md) |
 | 0.3/3 | [https://www.cfhc.gov.lk/](latest_audit_reports/www.cfhc.gov.lk/audit.md) |
 | 0.3/3 | [https://www.erd.gov.lk/](latest_audit_reports/www.erd.gov.lk/audit.md) |
 | 0.3/3 | [https://www.fcd.gov.lk/](latest_audit_reports/www.fcd.gov.lk/audit.md) |
+| 0.3/3 | [https://www.fisheriesdept.gov.lk/](latest_audit_reports/www.fisheriesdept.gov.lk/audit.md) |
 | 0.3/3 | [https://www.icta.lk/](latest_audit_reports/www.icta.lk/audit.md) |
 | 0.3/3 | [https://www.ism.gov.lk/](latest_audit_reports/unknown/audit.md) |
 | 0.3/3 | [https://www.jedb.lk/](latest_audit_reports/www.jedb.lk/audit.md) |
@@ -155,6 +171,7 @@ Checks used: Availability and usability checks.
 | 0.3/3 | [https://www.pedmis.gov.lk/](latest_audit_reports/www.pedmis.gov.lk/audit.md) |
 | 0.3/3 | [https://www.plc.lk/](latest_audit_reports/www.plc.lk/audit.md) |
 | 0.3/3 | [https://www.supremecourt.lk/](latest_audit_reports/www.supremecourt.lk/audit.md) |
+| 0.3/3 | [https://www.ugc.ac.lk/](latest_audit_reports/www.ugc.ac.lk/audit.md) |
 | 0.3/3 | [https://www.waterboard.lk/](latest_audit_reports/www.waterboard.lk/audit.md) |
 | 0.6/3 | [http://edupub.gov.lk/](latest_audit_reports/edupub.gov.lk/audit.md) |
 | 0.6/3 | [http://pgihs.ac.lk/](latest_audit_reports/pgihs.ac.lk/audit.md) |
@@ -176,10 +193,8 @@ Checks used: Availability and usability checks.
 | 0.6/3 | [https://www.childsec.gov.lk/](latest_audit_reports/www.childsec.gov.lk/audit.md) |
 | 0.6/3 | [https://www.cida.gov.lk/](latest_audit_reports/www.cida.gov.lk/audit.md) |
 | 0.6/3 | [https://www.doenets.lk/](latest_audit_reports/www.doenets.lk/audit.md) |
-| 0.6/3 | [https://www.fisheriesdept.gov.lk/](latest_audit_reports/www.fisheriesdept.gov.lk/audit.md) |
 | 0.6/3 | [https://www.leco.lk/](latest_audit_reports/www.leco.lk/audit.md) |
 | 0.6/3 | [https://www.mode.gov.lk/](latest_audit_reports/www.mode.gov.lk/audit.md) |
-| 0.6/3 | [https://www.moudh.gov.lk/](latest_audit_reports/www.moudh.gov.lk/audit.md) |
 | 0.6/3 | [https://www.neh.health.gov.lk/](latest_audit_reports/www.neh.health.gov.lk/audit.md) |
 | 0.6/3 | [https://www.nlb.lk/](latest_audit_reports/www.nlb.lk/audit.md) |
 | 0.6/3 | [https://www.northsea.lk/](latest_audit_reports/www.northsea.lk/audit.md) |
@@ -210,6 +225,7 @@ Checks used: Availability and usability checks.
 | 0.7/3 | [https://www.ceybankholidayhomes.com/](latest_audit_reports/www.ceybankholidayhomes.com/audit.md) |
 | 0.7/3 | [https://www.moys.gov.lk/](latest_audit_reports/www.moys.gov.lk/audit.md) |
 | 0.7/3 | [https://www.nelumpokuna.com/](latest_audit_reports/www.nelumpokuna.com/audit.md) |
+| 0.8/3 | [https://coastguard.gov.lk/](latest_audit_reports/coastguard.gov.lk/audit.md) |
 | 0.9/3 | [http://www.cscl.lk/](latest_audit_reports/www.cscl.lk/audit.md) |
 | 0.9/3 | [https://course.vta.lk/](latest_audit_reports/course.vta.lk/audit.md) |
 | 0.9/3 | [https://dmt.gov.lk/](latest_audit_reports/dmt.gov.lk/audit.md) |
@@ -224,7 +240,6 @@ Checks used: Availability and usability checks.
 | 0.9/3 | [https://www.bncoe.net/](latest_audit_reports/www.bncoe.net/audit.md) |
 | 0.9/3 | [https://www.hrcsl.lk/](latest_audit_reports/www.hrcsl.lk/audit.md) |
 | 0.9/3 | [https://www.iti.lk/](latest_audit_reports/www.iti.lk/audit.md) |
-| 0.9/3 | [https://www.mbrc.gov.lk/](latest_audit_reports/www.mbrc.gov.lk/audit.md) |
 | 0.9/3 | [https://www.mbslinsurance.lk/](latest_audit_reports/www.mbslinsurance.lk/audit.md) |
 | 0.9/3 | [https://www.moha.gov.lk/](latest_audit_reports/www.moha.gov.lk/audit.md) |
 | 0.9/3 | [https://www.nfpb.lk/](latest_audit_reports/www.nfpb.lk/audit.md) |
@@ -235,7 +250,7 @@ Checks used: Availability and usability checks.
 
 ## `🔴 Level 1`
 
-**122 URLs at `🔴 Level 1`.**
+**117 URLs at `🔴 Level 1`.**
 
 Checks used: DNS resolves, Domain not parked, Site not defaced, Content relevant, Hosting configured, HTTP available, Redirect related, TLS browser trusted, TLS not expired, TLS hostname matches.
 
@@ -243,7 +258,6 @@ Checks used: DNS resolves, Domain not parked, Site not defaced, Content relevant
 | ---: | --- |
 | 1.0/3 | [https://vavuniyadec.com/](latest_audit_reports/vavuniyadec.com/audit.md) |
 | 1.0/3 | [https://www.aerc.gov.lk/](latest_audit_reports/www.aerc.gov.lk/audit.md) |
-| 1.0/3 | [https://www.ugc.ac.lk/](latest_audit_reports/www.ugc.ac.lk/audit.md) |
 | 1.3/3 | [https://archives.gov.lk/](latest_audit_reports/archives.gov.lk/audit.md) |
 | 1.3/3 | [https://botanicgardens.gov.lk/](latest_audit_reports/botanicgardens.gov.lk/audit.md) |
 | 1.3/3 | [https://csd.lk/](latest_audit_reports/csd.lk/audit.md) |
@@ -254,7 +268,6 @@ Checks used: DNS resolves, Domain not parked, Site not defaced, Content relevant
 | 1.3/3 | [https://judgesinstitute.lk/](latest_audit_reports/judgesinstitute.lk/audit.md) |
 | 1.3/3 | [https://legalaid.gov.lk/](latest_audit_reports/legalaid.gov.lk/audit.md) |
 | 1.3/3 | [https://mahaweli.gov.lk/](latest_audit_reports/mahaweli.gov.lk/audit.md) |
-| 1.3/3 | [https://public.stratlinksl.imexport.gov.lk/](latest_audit_reports/public.stratlinksl.imexport.gov.lk/audit.md) |
 | 1.3/3 | [https://rticommission.lk/](latest_audit_reports/rticommission.lk/audit.md) |
 | 1.3/3 | [https://sliop.edu.lk/](latest_audit_reports/sliop.edu.lk/audit.md) |
 | 1.3/3 | [https://slsi.lk/](latest_audit_reports/slsi.lk/audit.md) |
@@ -294,7 +307,6 @@ Checks used: DNS resolves, Domain not parked, Site not defaced, Content relevant
 | 1.7/3 | [https://lal.lk/](latest_audit_reports/lal.lk/audit.md) |
 | 1.7/3 | [https://landmin.gov.lk/](latest_audit_reports/landmin.gov.lk/audit.md) |
 | 1.7/3 | [https://lankacoal.lk/](latest_audit_reports/lankacoal.lk/audit.md) |
-| 1.7/3 | [https://lgc.gov.lk/](latest_audit_reports/lgc.gov.lk/audit.md) |
 | 1.7/3 | [https://lki.lk/](latest_audit_reports/lki.lk/audit.md) |
 | 1.7/3 | [https://lllf.gov.lk/](latest_audit_reports/lllf.gov.lk/audit.md) |
 | 1.7/3 | [https://lpl.lk/](latest_audit_reports/lpl.lk/audit.md) |
@@ -357,16 +369,14 @@ Checks used: DNS resolves, Domain not parked, Site not defaced, Content relevant
 | 1.7/3 | [https://www.slbc.lk/](latest_audit_reports/www.slbc.lk/audit.md) |
 | 1.7/3 | [https://www.slintec.lk/](latest_audit_reports/www.slintec.lk/audit.md) |
 | 1.7/3 | [https://www.slithm.edu.lk/](latest_audit_reports/www.slithm.edu.lk/audit.md) |
-| 1.7/3 | [https://www.socialservices.gov.lk/](latest_audit_reports/www.socialservices.gov.lk/audit.md) |
 | 1.7/3 | [https://www.spicelk.com/](latest_audit_reports/www.spicelk.com/audit.md) |
 | 1.7/3 | [https://www.svias.esn.ac.lk/](latest_audit_reports/www.svias.esn.ac.lk/audit.md) |
-| 1.7/3 | [https://www.trade.gov.lk/](latest_audit_reports/www.trade.gov.lk/audit.md) |
 | 1.7/3 | [https://www.tri.lk/](latest_audit_reports/www.tri.lk/audit.md) |
 | 1.7/3 | [https://youthcorps.lk/](latest_audit_reports/youthcorps.lk/audit.md) |
 
 ## `🟠 Level 2`
 
-**265 URLs at `🟠 Level 2`.**
+**255 URLs at `🟠 Level 2`.**
 
 Checks used: Postal address, Reachable contacts, Named responsibility.
 
@@ -401,7 +411,7 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.1/3 | [https://artscouncil.lk/](latest_audit_reports/artscouncil.lk/audit.md) |
 | 2.1/3 | [https://cadet.lk/](latest_audit_reports/cadet.lk/audit.md) |
 | 2.1/3 | [https://cg-dubai.gov.lk/](latest_audit_reports/cg-dubai.gov.lk/audit.md) |
-| 2.1/3 | [https://coastguard.gov.lk/](latest_audit_reports/coastguard.gov.lk/audit.md) |
+| 2.1/3 | [https://cg-jeddah.gov.lk/](latest_audit_reports/cg-jeddah.gov.lk/audit.md) |
 | 2.1/3 | [https://emb-doha.gov.lk/](latest_audit_reports/emb-doha.gov.lk/audit.md) |
 | 2.1/3 | [https://emb-warsaw.gov.lk/](latest_audit_reports/emb-warsaw.gov.lk/audit.md) |
 | 2.1/3 | [https://galoya.lk/](latest_audit_reports/galoya.lk/audit.md) |
@@ -436,21 +446,19 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.1/3 | [https://www.dwc.gov.lk/](latest_audit_reports/www.dwc.gov.lk/audit.md) |
 | 2.1/3 | [https://www.gsmbts.gov.lk/](latest_audit_reports/www.gsmbts.gov.lk/audit.md) |
 | 2.1/3 | [https://www.industry.gov.lk/](latest_audit_reports/www.industry.gov.lk/audit.md) |
-| 2.1/3 | [https://www.landdevelopment.lk/](latest_audit_reports/www.landdevelopment.lk/audit.md) |
 | 2.1/3 | [https://www.lankasugar.lk/](latest_audit_reports/www.lankasugar.lk/audit.md) |
 | 2.1/3 | [https://www.lrc.gov.lk/](latest_audit_reports/www.lrc.gov.lk/audit.md) |
 | 2.1/3 | [https://www.natlib.lk/](latest_audit_reports/www.natlib.lk/audit.md) |
 | 2.1/3 | [https://www.ncgil.lk/](latest_audit_reports/www.ncgil.lk/audit.md) |
 | 2.1/3 | [https://www.ncisl.health.gov.lk/](latest_audit_reports/www.ncisl.health.gov.lk/audit.md) |
 | 2.1/3 | [https://www.nifs.ac.lk/](latest_audit_reports/www.nifs.ac.lk/audit.md) |
-| 2.1/3 | [https://www.nipo.gov.lk/](latest_audit_reports/www.nipo.gov.lk/audit.md) |
 | 2.1/3 | [https://www.nsf.gov.lk/](latest_audit_reports/www.nsf.gov.lk/audit.md) |
+| 2.1/3 | [https://www.ntc.gov.lk/](latest_audit_reports/www.ntc.gov.lk/audit.md) |
 | 2.1/3 | [https://www.ombudsman.gov.lk/](latest_audit_reports/www.ombudsman.gov.lk/audit.md) |
 | 2.1/3 | [https://www.parliament.lk/](latest_audit_reports/www.parliament.lk/audit.md) |
 | 2.1/3 | [https://www.psmpa.com/](latest_audit_reports/www.psmpa.com/audit.md) |
 | 2.1/3 | [https://www.spc.lk/](latest_audit_reports/www.spc.lk/audit.md) |
 | 2.1/3 | [https://www.tc.esn.ac.lk/](latest_audit_reports/www.tc.esn.ac.lk/audit.md) |
-| 2.1/3 | [https://www.transport.gov.lk/](latest_audit_reports/www.transport.gov.lk/audit.md) |
 | 2.3/3 | [http://www.rjt.ac.lk/](latest_audit_reports/www.rjt.ac.lk/audit.md) |
 | 2.3/3 | [http://www.sab.ac.lk/](latest_audit_reports/www.sab.ac.lk/audit.md) |
 | 2.3/3 | [http://www.uwu.ac.lk/](latest_audit_reports/www.uwu.ac.lk/audit.md) |
@@ -500,9 +508,7 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.3/3 | [https://www.mlfe.gov.lk/](latest_audit_reports/www.mlfe.gov.lk/audit.md) |
 | 2.3/3 | [https://www.nastec.gov.lk/](latest_audit_reports/www.nastec.gov.lk/audit.md) |
 | 2.3/3 | [https://www.nsdi.gov.lk/](latest_audit_reports/www.nsdi.gov.lk/audit.md) |
-| 2.3/3 | [https://www.ntc.gov.lk/](latest_audit_reports/www.ntc.gov.lk/audit.md) |
 | 2.3/3 | [https://www.nysc.lk/](latest_audit_reports/www.nysc.lk/audit.md) |
-| 2.3/3 | [https://www.roadsafety.gov.lk/](latest_audit_reports/www.roadsafety.gov.lk/audit.md) |
 | 2.3/3 | [https://www.slecic.lk/](latest_audit_reports/www.slecic.lk/audit.md) |
 | 2.3/3 | [https://www.treasury.gov.lk/](latest_audit_reports/www.treasury.gov.lk/audit.md) |
 | 2.4/3 | [http://www.ihra.cmb.ac.lk/](latest_audit_reports/www.ihra.cmb.ac.lk/audit.md) |
@@ -518,6 +524,7 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.4/3 | [https://emb-brussels.gov.lk/](latest_audit_reports/emb-brussels.gov.lk/audit.md) |
 | 2.4/3 | [https://emb-bucharest.gov.lk/](latest_audit_reports/emb-bucharest.gov.lk/audit.md) |
 | 2.4/3 | [https://emb-moscow.gov.lk/](latest_audit_reports/emb-moscow.gov.lk/audit.md) |
+| 2.4/3 | [https://emb-vienna.gov.lk/](latest_audit_reports/emb-vienna.gov.lk/audit.md) |
 | 2.4/3 | [https://etfb.lk/](latest_audit_reports/etfb.lk/audit.md) |
 | 2.4/3 | [https://hc-islamabad.gov.lk/](latest_audit_reports/hc-islamabad.gov.lk/audit.md) |
 | 2.4/3 | [https://hc-pretoria.gov.lk/](latest_audit_reports/hc-pretoria.gov.lk/audit.md) |
@@ -531,13 +538,11 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.4/3 | [https://ocu.ac.lk/](latest_audit_reports/ocu.ac.lk/audit.md) |
 | 2.4/3 | [https://onur.gov.lk/](latest_audit_reports/onur.gov.lk/audit.md) |
 | 2.4/3 | [https://peoplesinsurance.lk/](latest_audit_reports/peoplesinsurance.lk/audit.md) |
-| 2.4/3 | [https://phdt.lk/](latest_audit_reports/phdt.lk/audit.md) |
 | 2.4/3 | [https://publictrustee.gov.lk/](latest_audit_reports/publictrustee.gov.lk/audit.md) |
 | 2.4/3 | [https://rti.gov.lk/](latest_audit_reports/rti.gov.lk/audit.md) |
 | 2.4/3 | [https://uciars.cmb.ac.lk/](latest_audit_reports/uciars.cmb.ac.lk/audit.md) |
 | 2.4/3 | [https://wrb.lk/](latest_audit_reports/wrb.lk/audit.md) |
 | 2.4/3 | [https://www.attorneygeneral.gov.lk/](latest_audit_reports/www.attorneygeneral.gov.lk/audit.md) |
-| 2.4/3 | [https://www.cbsl.gov.lk/](latest_audit_reports/www.cbsl.gov.lk/audit.md) |
 | 2.4/3 | [https://www.cpstl.lk/](latest_audit_reports/www.cpstl.lk/audit.md) |
 | 2.4/3 | [https://www.fisheries.gov.lk/](latest_audit_reports/www.fisheries.gov.lk/audit.md) |
 | 2.4/3 | [https://www.irrigation.gov.lk/](latest_audit_reports/www.irrigation.gov.lk/audit.md) |
@@ -558,17 +563,14 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.4/3 | [https://www.slt.lk/](latest_audit_reports/www.slt.lk/audit.md) |
 | 2.4/3 | [https://www.smib.lk/](latest_audit_reports/www.smib.lk/audit.md) |
 | 2.4/3 | [https://www.srilankainsurance.com/](latest_audit_reports/www.srilankainsurance.com/audit.md) |
-| 2.4/3 | [https://www.stc.lk/](latest_audit_reports/www.stc.lk/audit.md) |
 | 2.4/3 | [https://www.uda.gov.lk/](latest_audit_reports/www.uda.gov.lk/audit.md) |
 | 2.6/3 | [http://www.pgia.ac.lk/](latest_audit_reports/www.pgia.ac.lk/audit.md) |
-| 2.6/3 | [http://www.vau.ac.lk/](latest_audit_reports/www.vau.ac.lk/audit.md) |
 | 2.6/3 | [https://cg-karachi.gov.lk/](latest_audit_reports/cg-karachi.gov.lk/audit.md) |
 | 2.6/3 | [https://cg-milan.gov.lk/](latest_audit_reports/cg-milan.gov.lk/audit.md) |
 | 2.6/3 | [https://emb-havana.gov.lk/](latest_audit_reports/emb-havana.gov.lk/audit.md) |
 | 2.6/3 | [https://emb-jakarta.gov.lk/](latest_audit_reports/emb-jakarta.gov.lk/audit.md) |
 | 2.6/3 | [https://emb-kathmandu.gov.lk/](latest_audit_reports/emb-kathmandu.gov.lk/audit.md) |
 | 2.6/3 | [https://emb-tehran.gov.lk/](latest_audit_reports/emb-tehran.gov.lk/audit.md) |
-| 2.6/3 | [https://emb-vienna.gov.lk/](latest_audit_reports/emb-vienna.gov.lk/audit.md) |
 | 2.6/3 | [https://emb-washington.gov.lk/](latest_audit_reports/emb-washington.gov.lk/audit.md) |
 | 2.6/3 | [https://emb-yangon.gov.lk/](latest_audit_reports/emb-yangon.gov.lk/audit.md) |
 | 2.6/3 | [https://hc-chennai.gov.lk/](latest_audit_reports/hc-chennai.gov.lk/audit.md) |
@@ -576,6 +578,7 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.6/3 | [https://hc-wellington.gov.lk/](latest_audit_reports/hc-wellington.gov.lk/audit.md) |
 | 2.6/3 | [https://lldf.gov.lk/](latest_audit_reports/lldf.gov.lk/audit.md) |
 | 2.6/3 | [https://pccl.lk/](latest_audit_reports/pccl.lk/audit.md) |
+| 2.6/3 | [https://rep-ramallah.gov.lk/](latest_audit_reports/rep-ramallah.gov.lk/audit.md) |
 | 2.6/3 | [https://slpc.lk/](latest_audit_reports/slpc.lk/audit.md) |
 | 2.6/3 | [https://un-geneva.gov.lk/](latest_audit_reports/un-geneva.gov.lk/audit.md) |
 | 2.6/3 | [https://uovt.ac.lk/](latest_audit_reports/uovt.ac.lk/audit.md) |
@@ -590,7 +593,6 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.6/3 | [https://www.slpa.lk/](latest_audit_reports/www.slpa.lk/audit.md) |
 | 2.6/3 | [https://www.statistics.gov.lk/](latest_audit_reports/www.statistics.gov.lk/audit.md) |
 | 2.7/3 | [https://cg-guangzhou.gov.lk/](latest_audit_reports/cg-guangzhou.gov.lk/audit.md) |
-| 2.7/3 | [https://cg-jeddah.gov.lk/](latest_audit_reports/cg-jeddah.gov.lk/audit.md) |
 | 2.7/3 | [https://cg-losangeles.gov.lk/](latest_audit_reports/cg-losangeles.gov.lk/audit.md) |
 | 2.7/3 | [https://cg-mumbai.gov.lk/](latest_audit_reports/cg-mumbai.gov.lk/audit.md) |
 | 2.7/3 | [https://cg-nicosia.gov.lk/](latest_audit_reports/cg-nicosia.gov.lk/audit.md) |
@@ -618,9 +620,8 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.7/3 | [https://hc-singapore.gov.lk/](latest_audit_reports/hc-singapore.gov.lk/audit.md) |
 | 2.7/3 | [https://mediation.gov.lk/](latest_audit_reports/mediation.gov.lk/audit.md) |
 | 2.7/3 | [https://muslimaffairs.gov.lk/](latest_audit_reports/muslimaffairs.gov.lk/audit.md) |
-| 2.7/3 | [https://rep-ramallah.gov.lk/](latest_audit_reports/rep-ramallah.gov.lk/audit.md) |
 | 2.7/3 | [https://slpost.gov.lk/](latest_audit_reports/slpost.gov.lk/audit.md) |
-| 2.7/3 | [https://www.boc.lk/](latest_audit_reports/www.boc.lk/audit.md) |
+| 2.7/3 | [https://un-newyork.gov.lk/](latest_audit_reports/un-newyork.gov.lk/audit.md) |
 | 2.7/3 | [https://www.ciaboc.gov.lk/](latest_audit_reports/www.ciaboc.gov.lk/audit.md) |
 | 2.7/3 | [https://www.nmra.gov.lk/](latest_audit_reports/www.nmra.gov.lk/audit.md) |
 | 2.7/3 | [https://www.slida.lk/](latest_audit_reports/www.slida.lk/audit.md) |
@@ -633,7 +634,6 @@ Checks used: Postal address, Reachable contacts, Named responsibility.
 | 2.9/3 | [https://hc-kualalumpur.gov.lk/](latest_audit_reports/hc-kualalumpur.gov.lk/audit.md) |
 | 2.9/3 | [https://hc-male.gov.lk/](latest_audit_reports/hc-male.gov.lk/audit.md) |
 | 2.9/3 | [https://slmc.gov.lk/](latest_audit_reports/slmc.gov.lk/audit.md) |
-| 2.9/3 | [https://un-newyork.gov.lk/](latest_audit_reports/un-newyork.gov.lk/audit.md) |
 | 2.9/3 | [https://www.customs.gov.lk/](latest_audit_reports/www.customs.gov.lk/audit.md) |
 | 2.9/3 | [https://www.peoplesbank.lk/](latest_audit_reports/www.peoplesbank.lk/audit.md) |
 | 2.9/3 | [https://www.portcitycolombo.gov.lk/](latest_audit_reports/www.portcitycolombo.gov.lk/audit.md) |
