@@ -1,8 +1,8 @@
 # Website Audit: https://hc-chennai.gov.lk/
 
-- Completed: 2026-11-15 06:21
+- Completed: 2026-11-16 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 74.249.190.48 (US, github-actions)
+- Vantage: 20.49.62.192 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Sri Lanka Deputy High Commission No. 56, Sterling Road Nungambakkam Chennai - 600 034 Phone: +91 44 28241896 , +91 44 28; Phone: 0812679167 (16 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: director
+Published postal address: Sri Lanka Deputy High Commission No. 56, Sterling Road Nungambakkam Chennai - 600 034 Phone: +91 44 28241896 , +91 44 28; Phone: 0652357774 (16 phone numbers found); Email: john@example.com (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Sri Lanka Deputy High Commission No. 56, Sterling Road Nungambakkam Chennai - 600 034 Phone: +91 44 28241896 , +91 44 28 |
-| reachable_contacts | ✅ | Phone: 0812679167 (16 phone numbers found); Email: john@example.com (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0652357774 (16 phone numbers found); Email: john@example.com (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

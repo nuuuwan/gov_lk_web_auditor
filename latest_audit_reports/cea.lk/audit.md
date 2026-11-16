@@ -1,8 +1,8 @@
 # Website Audit: https://cea.lk/
 
-- Completed: 2026-11-15 06:14
-- Overall result: 🟠 Level 2
-- Vantage: 74.249.190.48 (US, github-actions)
+- Completed: 2026-11-16 06:18
+- Overall result: 🔴 Level 1
+- Vantage: 20.49.62.192 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,49 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa; Phone: 011-2873448 (9 phone numbers found); Email: <script type='text/javascript'>
- <!--
- var prefix = 'ma' + 'il' + 'to';
- var path = 'hr' + 'ef' + '=';
- var addy86442 = 'wmpg' + '@';
- addy86442 = addy86442 + 'cea' + '.' + 'lk';
- document.write('<a ' + path + '\'' + prefix + ':' + addy86442 + '\'>');
- document.write(addy86442);
- document.write('<\/a>');
- //-->\n </script><script type='text/javascript'>
- <!--
- document.write('<span style=\'display: none;\'>');
- //-->
- </script>This email address is being protected from spambots. You need JavaScript enabled to view it.
- <script type='text/javascript'>
- <!--
- document.write('</');
- document.write('span>');
- //-->
- </script>; Published named responsibility: division
+No passing postal address evidence found; No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. <!-- document.write('</'); document.write('spa |
-| reachable_contacts | ✅ | Phone: 011-2873448 (9 phone numbers found); Email: <script type='text/javascript'>  <!--  var prefix = 'ma' + 'il' + 'to';  var path = 'hr' + 'ef' + '=';  var addy86442 = 'wmpg' + '@';  addy86442 = addy86442 + 'cea' + '.' + 'lk';  document.write('<a ' + path + '\'' + prefix + ':' + addy86442 + '\'>');  document.write(addy86442);  document.write('<\/a>');  //-->\n </script><script type='text/javascript'>  <!--  document.write('<span style=\'display: none;\'>');  //-->  </script>This email address is being protected from spambots. You need JavaScript enabled to view it.  <script type='text/javascript'>  <!--  document.write('</');  document.write('span>');  //-->  </script> |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://cea.lk/web/images/pdf/2025/Wastemgmt/BASIC_INFORMATION_QUESTIONNAIRE__FOR_PLASTIC_RELATED_PROJECTS_FOR_SRI_LANKA.docx |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

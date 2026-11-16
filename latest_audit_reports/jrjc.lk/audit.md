@@ -1,8 +1,8 @@
 # Website Audit: https://jrjc.lk/
 
-- Completed: 2026-11-15 06:00
+- Completed: 2026-11-16 06:04
 - Overall result: 🔴 Level 1
-- Vantage: 74.249.190.48 (US, github-actions)
+- Vantage: 20.49.62.192 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -39,7 +39,7 @@ No email evidence found
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No. 191, Dharmapala Mawatha, Colombo 07, Sri Lanka. Fax +94 11 269 5137​ Email [email protected] [email protected] Openi |
 | reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ✅ | Published named responsibility: department |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 

@@ -1,8 +1,8 @@
 # Website Audit: https://emb-beirut.gov.lk/
 
-- Completed: 2026-11-15 06:26
+- Completed: 2026-11-16 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 74.249.190.48 (US, github-actions)
+- Vantage: 20.49.62.192 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a; Phone: 01332-2464-4 (9 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
+Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a valid email address\",\"copy_button\":\"Copy\",\"appointment_detail; Phone: +9615457226 (9 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Line 2\",\"validation_dob_future\":\"Date of birth cannot be in the future\",\"validation_email_valid\":\"Please enter a |
-| reachable_contacts | ✅ | Phone: 01332-2464-4 (9 phone numbers found); Email: john@example.com (2 email addresses found) |
+| postal_address | ✅ | Published postal address: Line 2\",\"validation_email_valid\":\"Please enter a valid email address\",\"copy_button\":\"Copy\",\"appointment_detail |
+| reachable_contacts | ✅ | Phone: +9615457226 (9 phone numbers found); Email: john@example.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
