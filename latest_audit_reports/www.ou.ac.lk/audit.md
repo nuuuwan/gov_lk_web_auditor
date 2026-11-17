@@ -1,8 +1,8 @@
 # Website Audit: http://www.ou.ac.lk/
 
-- Completed: 2026-11-16 06:11
+- Completed: 2026-11-17 06:06
 - Overall result: 🔴 Level 1
-- Vantage: 20.49.62.192 (US, github-actions)
+- Vantage: 4.149.236.251 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,8 +38,8 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 288 1000 (62 phone numbers found); Email: pio@ou.ac.lk (17 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: 025-02-23-21.4 (62 phone numbers found); Email: pio@ou.ac.lk (17 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 

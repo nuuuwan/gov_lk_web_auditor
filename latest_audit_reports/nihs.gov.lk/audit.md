@@ -1,8 +1,8 @@
 # Website Audit: https://nihs.gov.lk/
 
-- Completed: 2026-11-16 06:33
+- Completed: 2026-11-17 06:29
 - Overall result: ⚫ Level 0
-- Vantage: 20.49.62.192 (US, github-actions)
+- Vantage: 4.149.236.251 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

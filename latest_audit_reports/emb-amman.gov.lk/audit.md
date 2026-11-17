@@ -1,8 +1,8 @@
 # Website Audit: https://emb-amman.gov.lk/
 
-- Completed: 2026-11-16 06:30
+- Completed: 2026-11-17 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.49.62.192 (US, github-actions)
+- Vantage: 4.149.236.251 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: 0-4597-9949-3 (8 phone numbers found); Email: john@example.com (2 email addresses found); Published named responsibility: department
+Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777; Phone: +96265820612 (7 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Al Madina Al Munawa Street, P.O Box 830731, Amman General Number: +96265820611 , +96265820612 Hotline (24/7) : + 962 777 |
-| reachable_contacts | ✅ | Phone: 0-4597-9949-3 (8 phone numbers found); Email: john@example.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +96265820612 (7 phone numbers found); Email: slemb.amman@mfa.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -52,7 +52,7 @@ No passing downloadable form evidence found; No passing published update date ev
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: Free of charge |
-| legal_basis | ✅ | Published legal basis: regulations |
+| legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 90 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

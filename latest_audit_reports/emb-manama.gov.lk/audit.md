@@ -1,8 +1,8 @@
 # Website Audit: https://emb-manama.gov.lk/
 
-- Completed: 2026-11-16 06:30
+- Completed: 2026-11-17 06:25
 - Overall result: 🟢 Level 3
-- Vantage: 20.49.62.192 (US, github-actions)
+- Vantage: 4.149.236.251 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -45,7 +45,7 @@ Published postal address: and Contact Information\",\"page\":\"/address-and-cont
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published eligibility criteria: eligibility; Published required documents: documents required; Published fees and payment: No fee; Published legal basis: gazette; Published processing time: 30 days; Published downloadable form: https://www.immigration.gov.lk/content/files/visa/eta_application.pdf; Published published update date: 10/04/2026
+Published eligibility criteria: eligibility; Published required documents: documents required; Published fees and payment: No fee; Published legal basis: gazette; Published processing time: 30 days; Published downloadable form: https://www.immigration.gov.lk/content/files/visa/eta_application.pdf; Published published update date: 25 May 2026
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ Published eligibility criteria: eligibility; Published required documents: docum
 | legal_basis | ✅ | Published legal basis: gazette |
 | processing_time | ✅ | Published processing time: 30 days |
 | downloadable_form | ✅ | Published downloadable form: https://www.immigration.gov.lk/content/files/visa/eta_application.pdf |
-| published_update_date | ✅ | Published published update date: 10/04/2026 |
+| published_update_date | ✅ | Published published update date: 25 May 2026 |

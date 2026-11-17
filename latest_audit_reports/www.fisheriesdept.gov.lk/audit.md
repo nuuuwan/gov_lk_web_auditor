@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheriesdept.gov.lk/
 
-- Completed: 2026-11-16 06:24
+- Completed: 2026-11-17 06:20
 - Overall result: ⚫ Level 0
-- Vantage: 20.49.62.192 (US, github-actions)
+- Vantage: 4.149.236.251 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,16 +14,16 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200
+Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200; Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ❓ | Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200 |
-| site_not_defaced | ❓ | Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200 |
-| content_relevant | ❓ | Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200 |
-| hosting_configured | ❓ | Insufficient substantive page content: Only 43 visible characters across 4 pages; below substance threshold 200 |
-| http_available | ✅ | HTTP probes did not all fail |
+| domain_not_parked | ❓ | Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200 |
+| site_not_defaced | ❓ | Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200 |
+| content_relevant | ❓ | Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200 |
+| hosting_configured | ❓ | Insufficient substantive page content: Only 43 visible characters across 2 pages; below substance threshold 200 |
+| http_available | ✅ | HTTPS probes passed; failing variants: http://www.fisheriesdept.gov.lk/: Probe 2: timed out; http://www.fisheriesdept.gov.lk/: Probe 4: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ✅ | TLS certificate valid |

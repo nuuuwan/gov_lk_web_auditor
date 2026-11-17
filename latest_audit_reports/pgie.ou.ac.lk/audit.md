@@ -1,8 +1,8 @@
 # Website Audit: https://pgie.ou.ac.lk/
 
-- Completed: 2026-11-16 06:12
+- Completed: 2026-11-17 06:08
 - Overall result: 🟠 Level 2
-- Vantage: 20.49.62.192 (US, github-actions)
+- Vantage: 4.149.236.251 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
