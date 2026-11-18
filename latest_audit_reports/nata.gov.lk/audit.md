@@ -1,8 +1,8 @@
 # Website Audit: https://nata.gov.lk/
 
-- Completed: 2026-11-17 06:29
+- Completed: 2026-11-18 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 11th Floor, Wing A, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Office +94 112 187 140 Fax +94 112 186 024 Email Thi; Phone: +94 112 187 140 (4 phone numbers found); Email: natamoh.lk@gmail.com; Published named responsibility: department
+Published postal address: 11th Floor, Wing A, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Office +94 112 187 140 Fax +94 112 186 024 Email Thi; Phone: +94 112 186 024 (3 phone numbers found); Email: natamoh.lk@gmail.com; Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 11th Floor, Wing A, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Office +94 112 187 140 Fax +94 112 186 024 Email Thi |
-| reachable_contacts | ✅ | Phone: +94 112 187 140 (4 phone numbers found); Email: natamoh.lk@gmail.com |
+| reachable_contacts | ✅ | Phone: +94 112 186 024 (3 phone numbers found); Email: natamoh.lk@gmail.com |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

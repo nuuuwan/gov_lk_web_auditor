@@ -1,8 +1,8 @@
 # Website Audit: http://www.kln.ac.lk/
 
-- Completed: 2026-11-17 06:05
+- Completed: 2026-11-18 06:03
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: University of Kelaniya, No. 218, Kandy Road, Dalugama, Kelaniya 11600, Sri Lanka | Telephone +94 112 903 903 | Other Tel; Phone: 0.540000021 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found); Published named responsibility: department
+Published postal address: University of Kelaniya, No. 218, Kandy Road, Dalugama, Kelaniya 11600, Sri Lanka | Telephone +94 112 903 903 | Other Tel; Phone: 0.119999997 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: University of Kelaniya, No. 218, Kandy Road, Dalugama, Kelaniya 11600, Sri Lanka \| Telephone +94 112 903 903 \| Other Tel |
-| reachable_contacts | ✅ | Phone: 0.540000021 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0.119999997 (16 phone numbers found); Email: oneuok@kln.ac.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

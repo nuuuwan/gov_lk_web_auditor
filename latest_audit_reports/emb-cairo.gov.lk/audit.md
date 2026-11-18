@@ -1,8 +1,8 @@
 # Website Audit: https://emb-cairo.gov.lk/
 
-- Completed: 2026-11-17 06:26
+- Completed: 2026-11-18 06:23
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la; Phone: 047458-9684- (13 phone numbers found); Email: slemb.cairo@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la; Phone: +0020227354966 (13 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la |
-| reachable_contacts | ✅ | Phone: 047458-9684- (13 phone numbers found); Email: slemb.cairo@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +0020227354966 (13 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

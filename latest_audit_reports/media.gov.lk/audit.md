@@ -1,8 +1,8 @@
 # Website Audit: https://media.gov.lk/
 
-- Completed: 2026-11-17 06:51
+- Completed: 2026-11-18 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakc34b2dbeef451707; Phone: 011-2513 459 (45 phone numbers found); Email: secretary@media.gov.lk (22 email addresses found); Published named responsibility: division
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak146e17d275d47db8; Phone: 011-2513 460 (46 phone numbers found); Email: secretary@media.gov.lk (22 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakc34b2dbeef451707 |
-| reachable_contacts | ✅ | Phone: 011-2513 459 (45 phone numbers found); Email: secretary@media.gov.lk (22 email addresses found) |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak146e17d275d47db8 |
+| reachable_contacts | ✅ | Phone: 011-2513 460 (46 phone numbers found); Email: secretary@media.gov.lk (22 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

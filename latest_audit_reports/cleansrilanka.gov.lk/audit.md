@@ -1,8 +1,8 @@
 # Website Audit: https://cleansrilanka.gov.lk/
 
-- Completed: 2026-11-17 06:58
+- Completed: 2026-11-18 06:46
 - Overall result: 🔴 Level 1
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

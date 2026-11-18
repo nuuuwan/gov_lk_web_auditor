@@ -1,8 +1,8 @@
 # Website Audit: https://survey.gov.lk/
 
-- Completed: 2026-11-17 05:58
+- Completed: 2026-11-18 05:57
 - Overall result: 🔴 Level 1
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +9411 2 36 9011 (1008 phone numbers found); Email: sg@survey.gov.lk (47 email addresses found) |
+| reachable_contacts | ✅ | Phone: +9411 2 36 9011 (2 phone numbers found); Email: sg@survey.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

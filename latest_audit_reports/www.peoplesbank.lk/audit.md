@@ -1,8 +1,8 @@
 # Website Audit: https://www.peoplesbank.lk/
 
-- Completed: 2026-11-17 06:16
+- Completed: 2026-11-18 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number; Phone: +94 (0)11 374074 (135 phone numbers found); Email: info@peoplesbank.lk (33 email addresses found); Published named responsibility: director
+Published postal address: Tower, No.374, Dr. Colvin R. De Silva Mawatha, Colombo 2, Sri Lanka; Phone: +94 (0)11 374074 (140 phone numbers found); Email: info@peoplesbank.lk (39 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is not allowed.","val_number":"Please enter a valid number.","val_number_positive":"Please enter a valid positive number |
-| reachable_contacts | ✅ | Phone: +94 (0)11 374074 (135 phone numbers found); Email: info@peoplesbank.lk (33 email addresses found) |
+| postal_address | ✅ | Published postal address: Tower, No.374, Dr. Colvin R. De Silva Mawatha, Colombo 2, Sri Lanka |
+| reachable_contacts | ✅ | Phone: +94 (0)11 374074 (140 phone numbers found); Email: info@peoplesbank.lk (39 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,8 +51,8 @@ No passing published update date evidence found
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: LKR 1,000,000 |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ✅ | Published processing time: 24 Hours |
+| processing_time | ✅ | Published processing time: 51 days |
 | downloadable_form | ✅ | Published downloadable form: https://www.peoplesbank.lk/roastoth/2025/12/RTI-NOTICE-SINHALATAMIL-ENGLISH-Latest-Update-3.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

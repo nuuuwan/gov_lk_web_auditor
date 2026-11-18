@@ -1,8 +1,8 @@
 # Website Audit: https://www.treasury.gov.lk/
 
-- Completed: 2026-11-17 06:17
+- Completed: 2026-11-18 06:15
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: u003e3rd Floor, Ministry of Finance, The Secretariat, Colombo 01, Sri Lanka; Phone: 0.11.2019 - 07-0 (319 phone numbers found); Email: yasarathna.gksck@pfd.treasury.gov.lk (169 email addresses found); Published named responsibility: department
+Published postal address: u003eThe Secretariat, Colombo 01, Sri Lanka; Phone: 0.11.2019 - 07-0 (281 phone numbers found); Email: perera.wta@fpd.treasury.gov.lk (222 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: u003e3rd Floor, Ministry of Finance, The Secretariat, Colombo 01, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0.11.2019 - 07-0 (319 phone numbers found); Email: yasarathna.gksck@pfd.treasury.gov.lk (169 email addresses found) |
+| postal_address | ✅ | Published postal address: u003eThe Secretariat, Colombo 01, Sri Lanka |
+| reachable_contacts | ✅ | Phone: 0.11.2019 - 07-0 (281 phone numbers found); Email: perera.wta@fpd.treasury.gov.lk (222 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

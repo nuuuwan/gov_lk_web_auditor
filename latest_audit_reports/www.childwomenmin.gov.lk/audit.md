@@ -1,8 +1,8 @@
 # Website Audit: https://www.childwomenmin.gov.lk/
 
-- Completed: 2026-11-17 06:52
+- Completed: 2026-11-18 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa; Phone: 0112186145 (16 phone numbers found); Email: minister@childwomenmin.gov.lk (6 email addresses found); Published named responsibility: department
+Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa; Phone: 0112186145 (16 phone numbers found); Email: deputyminister@childwomenmin.gov.lk (6 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Ministry of Women and Child Affairs, 5th Floor, Sethsiripaya Stage II, Battaramulla, Sri Lanka. Phone: +94 11 2186055 Fa |
-| reachable_contacts | ✅ | Phone: 0112186145 (16 phone numbers found); Email: minister@childwomenmin.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0112186145 (16 phone numbers found); Email: deputyminister@childwomenmin.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

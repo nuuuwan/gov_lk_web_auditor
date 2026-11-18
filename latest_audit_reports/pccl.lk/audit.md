@@ -1,8 +1,8 @@
 # Website Audit: https://pccl.lk/
 
-- Completed: 2026-11-17 06:33
+- Completed: 2026-11-18 06:28
 - Overall result: 🟠 Level 2
-- Vantage: 4.149.236.251 (US, github-actions)
+- Vantage: 3.41.210.136 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the; Phone: +94 76 195 2077 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found); Published named responsibility: division
+Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the; Phone: +94112634634 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: given below on or before 02.11.2026. The post applied for should be clearly mentioned on the top left-hand corner of the |
-| reachable_contacts | ✅ | Phone: +94 76 195 2077 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112634634 (27 phone numbers found); Email: info@pccl.lk (13 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing fees and payment evidence found; No passing processing time evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -54,5 +54,5 @@ No passing fees and payment evidence found; No passing processing time evidence 
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
+| downloadable_form | ✅ | Published downloadable form: https://pccl.lk/wp-content/uploads/2026/11/2027-Supply-Registartion.pdf |
 | published_update_date | ✅ | Published published update date: 02 November 2026 |
