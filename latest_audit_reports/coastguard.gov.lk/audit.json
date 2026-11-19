@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "4bd1e885-cd74-46f1-9e1f-8b4d58a6fa2c",
+  "audit_id": "84847899-81d7-4591-8e35-7b2d827728d8",
   "url": "https://coastguard.gov.lk",
   "normalized_url": "https://coastguard.gov.lk/",
-  "started_at": "2026-11-18T05:59:25.180846+05:30",
-  "completed_at": "2026-11-18T06:08:27.013880+05:30",
+  "started_at": "2026-11-19T05:58:43.442003+05:30",
+  "completed_at": "2026-11-19T06:06:30.540762+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: https://coastguard.gov.lk/: Probe 1: timed out; http://coastguard.gov.lk/: Probe 2: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,117 +26,110 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-18T05:59:25.850683+05:30"
+      "observed_at": "2026-11-19T05:58:44.036346+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-18T05:59:25.850705+05:30"
+      "observed_at": "2026-11-19T05:58:44.036358+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-18T05:59:35.861765+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-19T05:58:44.503962+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://coastguard.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://coastguard.gov.lk/",
-      "observed_at": "2026-11-18T06:08:26.715132+05:30"
+      "observed_at": "2026-11-19T06:06:29.766299+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://coastguard.gov.lk/",
-      "observed_at": "2026-11-18T06:08:26.715152+05:30"
+      "observed_at": "2026-11-19T06:06:29.766311+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://coastguard.gov.lk/",
       "source": "https://coastguard.gov.lk/",
-      "observed_at": "2026-11-18T06:08:26.715155+05:30"
+      "observed_at": "2026-11-19T06:06:29.766315+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 4: timed out",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at https://coastguard.gov.lk",
       "source": "http://coastguard.gov.lk/",
-      "observed_at": "2026-11-18T06:08:26.715157+05:30"
+      "observed_at": "2026-11-19T06:06:29.766317+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://coastguard.gov.lk/history.html",
-      "source": "https://coastguard.gov.lk/history.html",
-      "observed_at": "2026-11-18T06:08:26.715160+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://coastguard.gov.lk/powers-of-slcg.html",
+      "detail": "Probe 5: HTTP 200 at https://coastguard.gov.lk/powers-of-slcg.html",
       "source": "https://coastguard.gov.lk/powers-of-slcg.html",
-      "observed_at": "2026-11-18T06:08:26.715162+05:30"
+      "observed_at": "2026-11-19T06:06:29.766319+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://coastguard.gov.lk/organization.html",
+      "source": "https://coastguard.gov.lk/organization.html",
+      "observed_at": "2026-11-19T06:06:29.766321+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 7: HTTP 200 at https://coastguard.gov.lk/rank-and-rates.html",
       "source": "https://coastguard.gov.lk/rank-and-rates.html",
-      "observed_at": "2026-11-18T06:08:26.715164+05:30"
+      "observed_at": "2026-11-19T06:06:29.766323+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://coastguard.gov.lk/former-director-generals.html",
-      "source": "https://coastguard.gov.lk/former-director-generals.html",
-      "observed_at": "2026-11-18T06:08:26.715166+05:30"
+      "detail": "Probe 8: HTTP 200 at https://coastguard.gov.lk/uniforms.html",
+      "source": "https://coastguard.gov.lk/uniforms.html",
+      "observed_at": "2026-11-19T06:06:29.766325+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://coastguard.gov.lk/maritime-law-enforcement.html",
+      "detail": "Probe 9: HTTP 200 at https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "observed_at": "2026-11-19T06:06:29.766327+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "observed_at": "2026-11-19T06:06:29.766328+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://coastguard.gov.lk/maritime-law-enforcement.html",
       "source": "https://coastguard.gov.lk/maritime-law-enforcement.html",
-      "observed_at": "2026-11-18T06:08:26.715168+05:30"
+      "observed_at": "2026-11-19T06:06:29.766330+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
-      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
-      "observed_at": "2026-11-18T06:08:26.715171+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://coastguard.gov.lk/maritime-safety.html",
-      "source": "https://coastguard.gov.lk/maritime-safety.html",
-      "observed_at": "2026-11-18T06:08:26.715173+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://coastguard.gov.lk/international-cooperation.html",
-      "source": "https://coastguard.gov.lk/international-cooperation.html",
-      "observed_at": "2026-11-18T06:08:26.715175+05:30"
+      "detail": "Probe 12: HTTP 200 at https://coastguard.gov.lk/slcg-green-belt-project.html",
+      "source": "https://coastguard.gov.lk/slcg-green-belt-project.html",
+      "observed_at": "2026-11-19T06:06:29.766332+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 13: HTTP 200 at https://coastguard.gov.lk/life-saving.html",
       "source": "https://coastguard.gov.lk/life-saving.html",
-      "observed_at": "2026-11-18T06:08:26.715177+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "observed_at": "2026-11-18T06:08:26.715179+05:30"
+      "observed_at": "2026-11-19T06:06:29.766334+05:30"
     },
     {
       "check": "phone",
@@ -170,34 +171,34 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 412 260 312 ",
-      "source": "https://coastguard.gov.lk/history.html",
+      "source": "https://coastguard.gov.lk",
       "data": {
         "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 106",
+      "source": "https://coastguard.gov.lk",
+      "data": {
+        "value": "106"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: dgsecretariat@coastguard.gov.lk",
-      "source": "https://coastguard.gov.lk/history.html",
+      "source": "https://coastguard.gov.lk",
       "data": {
         "value": "dgsecretariat@coastguard.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: the growing need for effective enforcement of fisheries laws at sea. At the time, the Hon. Mahinda Rajapaksa, Minister o",
-      "source": "https://coastguard.gov.lk/history.html",
-      "data": {
-        "value": "the growing need for effective enforcement of fisheries laws at sea. At the time, the Hon. Mahinda Rajapaksa, Minister o"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "https://coastguard.gov.lk/history.html",
+      "source": "https://coastguard.gov.lk",
       "data": {
         "value": "director"
       }
@@ -233,6 +234,33 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/organization.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/organization.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/organization.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
       "source": "https://coastguard.gov.lk/rank-and-rates.html",
       "data": {
         "value": "+94 412 260 312 "
@@ -260,7 +288,7 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 412 260 312 ",
-      "source": "https://coastguard.gov.lk/former-director-generals.html",
+      "source": "https://coastguard.gov.lk/uniforms.html",
       "data": {
         "value": "+94 412 260 312 "
       }
@@ -269,7 +297,7 @@
       "check": "email",
       "status": "pass",
       "detail": "Published email: dgsecretariat@coastguard.gov.lk",
-      "source": "https://coastguard.gov.lk/former-director-generals.html",
+      "source": "https://coastguard.gov.lk/uniforms.html",
       "data": {
         "value": "dgsecretariat@coastguard.gov.lk"
       }
@@ -278,7 +306,61 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "https://coastguard.gov.lk/former-director-generals.html",
+      "source": "https://coastguard.gov.lk/uniforms.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 412 260 312 ",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "data": {
+        "value": "+94 412 260 312 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "data": {
+        "value": "dgsecretariat@coastguard.gov.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
       "data": {
         "value": "director"
       }
@@ -323,7 +405,7 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 412 260 312 ",
-      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "source": "https://coastguard.gov.lk/slcg-green-belt-project.html",
       "data": {
         "value": "+94 412 260 312 "
       }
@@ -332,7 +414,7 @@
       "check": "email",
       "status": "pass",
       "detail": "Published email: dgsecretariat@coastguard.gov.lk",
-      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "source": "https://coastguard.gov.lk/slcg-green-belt-project.html",
       "data": {
         "value": "dgsecretariat@coastguard.gov.lk"
       }
@@ -341,34 +423,7 @@
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 412 260 312 ",
-      "source": "https://coastguard.gov.lk/maritime-safety.html",
-      "data": {
-        "value": "+94 412 260 312 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
-      "source": "https://coastguard.gov.lk/maritime-safety.html",
-      "data": {
-        "value": "dgsecretariat@coastguard.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://coastguard.gov.lk/maritime-safety.html",
+      "source": "https://coastguard.gov.lk/slcg-green-belt-project.html",
       "data": {
         "value": "director"
       }
@@ -377,54 +432,9 @@
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: regulations",
-      "source": "https://coastguard.gov.lk/maritime-safety.html",
+      "source": "https://coastguard.gov.lk/slcg-green-belt-project.html",
       "data": {
         "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 412 260 312 ",
-      "source": "https://coastguard.gov.lk/international-cooperation.html",
-      "data": {
-        "value": "+94 412 260 312 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: dgsecretariat@coastguard.gov.lk",
-      "source": "https://coastguard.gov.lk/international-cooperation.html",
-      "data": {
-        "value": "dgsecretariat@coastguard.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://coastguard.gov.lk/international-cooperation.html",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 021 82 14 96 2",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "021 82 14 96 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 023 140 170 3",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "023 140 170 3"
       }
     },
     {
@@ -439,82 +449,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 022 105 68 17",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "022 105 68 17"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94 412 260 312 ",
       "source": "https://coastguard.gov.lk/life-saving.html",
       "data": {
         "value": "+94 412 260 312 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 2017 90 73 1",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "0 2017 90 73 1"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 019 106 165 2",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "019 106 165 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 016 118 132 2",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "016 118 132 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 009 - 1 1 2010 2 ",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "009 - 1 1 2010 2 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 013 106 16 12",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "013 106 16 12"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 018 124 104 2",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "018 124 104 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 015 79 103 18",
-      "source": "https://coastguard.gov.lk/life-saving.html",
-      "data": {
-        "value": "015 79 103 18"
       }
     },
     {
@@ -529,19 +467,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 014 135 47 18",
+      "detail": "Published phone: 019 106 165 2",
       "source": "https://coastguard.gov.lk/life-saving.html",
       "data": {
-        "value": "014 135 47 18"
+        "value": "019 106 165 2"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 020 42 48 90 2",
+      "detail": "Published phone: 018 124 104 2",
       "source": "https://coastguard.gov.lk/life-saving.html",
       "data": {
-        "value": "020 42 48 90 2"
+        "value": "018 124 104 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 021 82 14 96 2",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "021 82 14 96 2"
       }
     },
     {
@@ -551,6 +498,87 @@
       "source": "https://coastguard.gov.lk/life-saving.html",
       "data": {
         "value": "025 97 83 180 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 022 105 68 17",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "022 105 68 17"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 016 118 132 2",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "016 118 132 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 2017 90 73 1",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "0 2017 90 73 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 013 106 16 12",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "013 106 16 12"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 014 135 47 18",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "014 135 47 18"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 015 79 103 18",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "015 79 103 18"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 023 140 170 3",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "023 140 170 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 009 - 1 1 2010 2 ",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "009 - 1 1 2010 2 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 020 42 48 90 2",
+      "source": "https://coastguard.gov.lk/life-saving.html",
+      "data": {
+        "value": "020 42 48 90 2"
       }
     },
     {
@@ -572,108 +600,9 @@
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0694236453",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0694236453"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0151278491",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0151278491"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0218101768",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0218101768"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0713351660",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0713351660"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0217742-582",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0217742-582"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0009832007",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0009832007"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0539986 681",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0539986 681"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0857312072",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0857312072"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0797734132",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0797734132"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0086150833",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0086150833"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0444588334",
-      "source": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "data": {
-        "value": "0444588334"
-      }
-    },
-    {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 133206 visible characters across 11 pages",
+      "detail": "Substantive page content: 10747 visible characters across 11 pages",
       "source": "https://coastguard.gov.lk/"
     }
   ],
@@ -694,53 +623,46 @@
     },
     {
       "host": "coastguard.gov.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-02-17T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
+    },
+    {
+      "url": "https://coastguard.gov.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
+    },
+    {
+      "url": "http://coastguard.gov.lk/",
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://coastguard.gov.lk/",
       "status_code": 200,
       "final_url": "https://coastguard.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 1107,
+      "elapsed_ms": 977,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://coastguard.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
-    },
-    {
-      "url": "https://coastguard.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
-    },
-    {
-      "url": "http://coastguard.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
-    },
-    {
-      "url": "https://coastguard.gov.lk/history.html",
       "status_code": 200,
-      "final_url": "https://coastguard.gov.lk/history.html",
-      "redirects": [],
-      "elapsed_ms": 1082,
+      "final_url": "https://coastguard.gov.lk",
+      "redirects": [
+        "https://coastguard.gov.lk"
+      ],
+      "elapsed_ms": 946,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -749,7 +671,16 @@
       "status_code": 200,
       "final_url": "https://coastguard.gov.lk/powers-of-slcg.html",
       "redirects": [],
-      "elapsed_ms": 852,
+      "elapsed_ms": 726,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/organization.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/organization.html",
+      "redirects": [],
+      "elapsed_ms": 719,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -758,16 +689,34 @@
       "status_code": 200,
       "final_url": "https://coastguard.gov.lk/rank-and-rates.html",
       "redirects": [],
-      "elapsed_ms": 870,
+      "elapsed_ms": 740,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://coastguard.gov.lk/former-director-generals.html",
+      "url": "https://coastguard.gov.lk/uniforms.html",
       "status_code": 200,
-      "final_url": "https://coastguard.gov.lk/former-director-generals.html",
+      "final_url": "https://coastguard.gov.lk/uniforms.html",
       "redirects": [],
-      "elapsed_ms": 869,
+      "elapsed_ms": 923,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "redirects": [],
+      "elapsed_ms": 738,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "status_code": 200,
+      "final_url": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "redirects": [],
+      "elapsed_ms": 743,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -776,34 +725,16 @@
       "status_code": 200,
       "final_url": "https://coastguard.gov.lk/maritime-law-enforcement.html",
       "redirects": [],
-      "elapsed_ms": 3084,
+      "elapsed_ms": 942,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
-      "url": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "url": "https://coastguard.gov.lk/slcg-green-belt-project.html",
       "status_code": 200,
-      "final_url": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
+      "final_url": "https://coastguard.gov.lk/slcg-green-belt-project.html",
       "redirects": [],
-      "elapsed_ms": 2986,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://coastguard.gov.lk/maritime-safety.html",
-      "status_code": 200,
-      "final_url": "https://coastguard.gov.lk/maritime-safety.html",
-      "redirects": [],
-      "elapsed_ms": 1481,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://coastguard.gov.lk/international-cooperation.html",
-      "status_code": 200,
-      "final_url": "https://coastguard.gov.lk/international-cooperation.html",
-      "redirects": [],
-      "elapsed_ms": 1076,
+      "elapsed_ms": 951,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -812,86 +743,77 @@
       "status_code": 200,
       "final_url": "https://coastguard.gov.lk/life-saving.html",
       "redirects": [],
-      "elapsed_ms": 1124,
+      "elapsed_ms": 950,
       "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "status_code": 200,
-      "final_url": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "redirects": [],
-      "elapsed_ms": 2195,
-      "content_type": "image/jpeg",
       "error": null
     }
   ],
   "snapshots": [
     {
       "url": "https://coastguard.gov.lk/",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-01-1ca2960ae78b.html",
-      "sha256": "1ca2960ae78b63a549c92335d5e7ae065c838d2ac8c9e2f15a948d731d46f4bc",
-      "bytes": 66844
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-01-f58460e4ad10.html",
+      "sha256": "f58460e4ad1043eeb1eeab14d67d4642e77113b863d41ea7bafc437fbdfcf1a2",
+      "bytes": 66852
     },
     {
-      "url": "https://coastguard.gov.lk/history.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-02-a712845527f4.html",
-      "sha256": "a712845527f4c60b5f109c5dae7d019c21c1f1e0f056bde6d503d00e553a632e",
-      "bytes": 69644
+      "url": "https://coastguard.gov.lk",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-02-f58460e4ad10.html",
+      "sha256": "f58460e4ad1043eeb1eeab14d67d4642e77113b863d41ea7bafc437fbdfcf1a2",
+      "bytes": 66852
     },
     {
       "url": "https://coastguard.gov.lk/powers-of-slcg.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-03-3ae0afb21a74.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-03-3ae0afb21a74.html",
       "sha256": "3ae0afb21a7481e139873be83d5edcb478a195b6fac9052303f30f6d161f60b2",
       "bytes": 35955
     },
     {
+      "url": "https://coastguard.gov.lk/organization.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-04-a91e40ff29ef.html",
+      "sha256": "a91e40ff29efcb35fc72ad7d31cba2c908823ef50d0ecc77b653222e422ffeea",
+      "bytes": 47708
+    },
+    {
       "url": "https://coastguard.gov.lk/rank-and-rates.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-04-c8f58faabdea.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-05-c8f58faabdea.html",
       "sha256": "c8f58faabdea841a61622971fd09a1da2b8a3f945de16b45af3e247633319724",
       "bytes": 37941
     },
     {
-      "url": "https://coastguard.gov.lk/former-director-generals.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-05-60cdd9883315.html",
-      "sha256": "60cdd988331522ca27638db842732ebeeace7b747c1437f0c2d5f7502e5cb455",
-      "bytes": 40005
+      "url": "https://coastguard.gov.lk/uniforms.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-06-663a571be75a.html",
+      "sha256": "663a571be75adb27986549adaf8adefa2f5c4001510fb713193b6a7518c4ca5f",
+      "bytes": 89330
+    },
+    {
+      "url": "https://coastguard.gov.lk/sri-lanka-coast-guard-fleet.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-07-a45ba2e37e28.html",
+      "sha256": "a45ba2e37e28bfdde2680c0417d01afe7a2869109c9c93d08ae748299afdd4f0",
+      "bytes": 35185
+    },
+    {
+      "url": "https://coastguard.gov.lk/sri-lanka-coast-guard-station.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-08-973658bff29d.html",
+      "sha256": "973658bff29d596162c09e65f877bbeb3230769f3b7e51a637db948e481d3f6a",
+      "bytes": 35688
     },
     {
       "url": "https://coastguard.gov.lk/maritime-law-enforcement.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-06-b94b2dd25504.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-09-b94b2dd25504.html",
       "sha256": "b94b2dd255045a7d4aa2a889d4a8da7cfbbc3e3a3b77dabdf53be51cc630f5e2",
       "bytes": 57869
     },
     {
-      "url": "https://coastguard.gov.lk/maritime-and-marine-environmental-protection.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-07-2097d9793ff4.html",
-      "sha256": "2097d9793ff456f7b3d35726b82a673d08d864985df6eda7d247e2c774bedfe3",
-      "bytes": 62596
-    },
-    {
-      "url": "https://coastguard.gov.lk/maritime-safety.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-08-175ffc99dd53.html",
-      "sha256": "175ffc99dd5372f594210875b03d4f8b1adab49ff803007794632cbc131d5135",
-      "bytes": 50875
-    },
-    {
-      "url": "https://coastguard.gov.lk/international-cooperation.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-09-f69519a08e14.html",
-      "sha256": "f69519a08e1404eb84edcf91916ca6a66dca74871805c696bee1d357e3a40b49",
-      "bytes": 70842
+      "url": "https://coastguard.gov.lk/slcg-green-belt-project.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-10-96c162ce9d07.html",
+      "sha256": "96c162ce9d077cb9dbc16fa0e799838ed062a8c3c7e439bd42efb5304f120032",
+      "bytes": 65630
     },
     {
       "url": "https://coastguard.gov.lk/life-saving.html",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-10-1d3cda44b170.html",
+      "path": "audit.output/coastguard.gov.lk/20261119.0558/snapshots/page-11-1d3cda44b170.html",
       "sha256": "1d3cda44b170d13a58f974ecacdf1fd947afc2bbac8b5d400343a6515b6a4a44",
       "bytes": 57801
-    },
-    {
-      "url": "https://coastguard.gov.lk/assets/images/other_pages/history/part_1/1.jpg",
-      "path": "audit.output/coastguard.gov.lk/20261118.0559/snapshots/page-11-ca6f1537f251.html",
-      "sha256": "ca6f1537f25157b50cba85064dc3032cc8c5f2a3d76a4fa3fb83c7416a30b804",
-      "bytes": 469179
     }
   ],
   "reviewer_decisions": [],
@@ -907,8 +829,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: https://coastguard.gov.lk/: Probe 1: timed out; http://coastguard.gov.lk/: Probe 2: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -945,7 +867,7 @@
           "name": "http_available",
           "level": 1,
           "status": "pass",
-          "reason": "HTTPS probes passed; failing variants: http://coastguard.gov.lk/: Probe 2: timed out; https://coastguard.gov.lk/: Probe 3: timed out; http://coastguard.gov.lk/: Probe 4: timed out"
+          "reason": "HTTPS probes passed; failing variants: https://coastguard.gov.lk/: Probe 1: timed out; http://coastguard.gov.lk/: Probe 2: timed out"
         },
         {
           "name": "redirect_related",
@@ -962,14 +884,14 @@
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
@@ -977,9 +899,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing postal address evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing postal address evidence found"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +94 412 260 312 (17 phone numbers found); Email: dgsecretariat@coastguard.gov.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
@@ -1007,7 +948,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.136",
+    "egress_ip": "3.42.157.65",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

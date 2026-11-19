@@ -1,8 +1,8 @@
 # Website Audit: https://hc-nairobi.gov.lk/
 
-- Completed: 2026-11-18 06:23
+- Completed: 2026-11-19 06:21
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"validation_surname_required\":\"Surname is required\",\"subject_placeholder\":\"Enter subject\",\"choose_serv; Phone: 0005791502 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"no_button\":\"No\",\"booking_details\":\"Booking Details\",\"appointment_on\":\"on\",\"cannot_submit_review_h; Phone: +254734387267 (7 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Line 2\",\"validation_surname_required\":\"Surname is required\",\"subject_placeholder\":\"Enter subject\",\"choose_serv |
-| reachable_contacts | ✅ | Phone: 0005791502 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| postal_address | ✅ | Published postal address: Line 2\",\"no_button\":\"No\",\"booking_details\":\"Booking Details\",\"appointment_on\":\"on\",\"cannot_submit_review_h |
+| reachable_contacts | ✅ | Phone: +254734387267 (7 phone numbers found); Email: john@example.com (3 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
@@ -51,7 +51,7 @@ No passing legal basis evidence found; No passing downloadable form evidence fou
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 6 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

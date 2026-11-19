@@ -1,55 +1,1690 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "fe0434c5-c964-4baa-bb80-49167e7df705",
+  "audit_id": "85f89f10-b1b3-49aa-8ad6-c5e01d256e76",
   "url": "http://www.mri.gov.lk/",
   "normalized_url": "http://www.mri.gov.lk/",
-  "started_at": "2026-11-18T06:24:58.945447+05:30",
-  "completed_at": "2026-11-18T06:25:09.153667+05:30",
+  "started_at": "2026-11-19T06:22:49.182164+05:30",
+  "completed_at": "2026-11-19T06:23:10.173465+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "dns_resolves: [Errno -3] Temporary failure in name resolution",
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: HTTP checks did not run",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: TLS expiry check did not run",
-      "tls_hostname_matches: TLS hostname check did not run"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
     {
       "check": "dns",
-      "status": "error",
-      "detail": "[Errno -3] Temporary failure in name resolution",
-      "observed_at": "2026-11-18T06:25:09.153473+05:30"
+      "status": "pass",
+      "detail": "Public DNS resolved",
+      "observed_at": "2026-11-19T06:22:50.072026+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-18T06:25:09.153498+05:30"
+      "observed_at": "2026-11-19T06:22:50.072039+05:30"
+    },
+    {
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-19T06:22:50.406525+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.mri.gov.lk/",
+      "source": "https://www.mri.gov.lk/",
+      "observed_at": "2026-11-19T06:23:08.658382+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 2: HTTP 200 at http://www.mri.gov.lk/",
+      "source": "http://www.mri.gov.lk/",
+      "observed_at": "2026-11-19T06:23:08.658394+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.mri.gov.lk/",
+      "source": "https://www.mri.gov.lk/",
+      "observed_at": "2026-11-19T06:23:08.658397+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 4: HTTP 200 at http://www.mri.gov.lk/",
+      "source": "http://www.mri.gov.lk/",
+      "observed_at": "2026-11-19T06:23:08.658399+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.mri.gov.lk/units/animal-center/services/",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "observed_at": "2026-11-19T06:23:08.658401+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "observed_at": "2026-11-19T06:23:08.658403+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "observed_at": "2026-11-19T06:23:08.658405+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "observed_at": "2026-11-19T06:23:08.658407+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "observed_at": "2026-11-19T06:23:08.658408+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "observed_at": "2026-11-19T06:23:08.658410+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "observed_at": "2026-11-19T06:23:08.658412+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "observed_at": "2026-11-19T06:23:08.658414+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "observed_at": "2026-11-19T06:23:08.658416+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "observed_at": "2026-11-19T06:23:08.658418+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "http://www.mri.gov.lk/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693532-",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0112 693532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112693527 ",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0112693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112695604 ",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0112695604 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/units/animal-center/services/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: division",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "data": {
+        "value": "division"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: circular",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "data": {
+        "value": "circular"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094112691",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "0094112691"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 009411 269 3",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "009411 269 3"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: microneqas97.mri@gmail.com",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "microneqas97.mri@gmail.com"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Quality Control Laboratory, Department of Bacteriology Medical Research Institute, Dr. Danister de Silva Mawatha, Colomb",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "Quality Control Laboratory, Department of Bacteriology Medical Research Institute, Dr. Danister de Silva Mawatha, Colomb"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: the neonatal intensive care unit at Teaching Hospital, Kandy, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "the neonatal intensive care unit at Teaching Hospital, Kandy, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: National Reference Laboratory for leptospirosis, Medical Research Institute, Colombo, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "National Reference Laboratory for leptospirosis, Medical Research Institute, Colombo, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "0112-693 532-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 691495 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "0112 691495 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 21 22 23 24 2",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "0 21 22 23 24 2"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 11 12 13 14 1",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "0 11 12 13 14 1"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112-693 527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "0112-693 527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112 693527 ",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "0112 693527 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 2 693532-",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "011 2 693532-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info.mri@health.gov.lk",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "info.mri@health.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: , Colombo 08, Sri Lanka",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": ", Colombo 08, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 19740 visible characters across 14 pages",
+      "source": "http://www.mri.gov.lk/"
     }
   ],
   "observations": [
     {
       "host": "www.mri.gov.lk",
-      "addresses": [],
-      "status": "error",
-      "detail": "[Errno -3] Temporary failure in name resolution"
+      "addresses": [
+        "66.163.116.170"
+      ],
+      "status": "resolved",
+      "detail": "Public DNS resolved"
     },
     {
       "domain": "mri.gov.lk",
       "status": "unknown",
       "expires_at": null,
       "detail": "Domain is absent from RDAP"
+    },
+    {
+      "host": "www.mri.gov.lk",
+      "status": "valid",
+      "expires_at": "2027-02-16T17:45:02+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
+    },
+    {
+      "url": "https://www.mri.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 2241,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://www.mri.gov.lk/",
+      "status_code": 200,
+      "final_url": "http://www.mri.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 980,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 1156,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "http://www.mri.gov.lk/",
+      "status_code": 200,
+      "final_url": "http://www.mri.gov.lk/",
+      "redirects": [],
+      "elapsed_ms": 1015,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/animal-center/services/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/animal-center/services/",
+      "redirects": [],
+      "elapsed_ms": 1165,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "redirects": [],
+      "elapsed_ms": 1157,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "redirects": [],
+      "elapsed_ms": 1510,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "redirects": [],
+      "elapsed_ms": 1579,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "redirects": [],
+      "elapsed_ms": 1162,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "redirects": [],
+      "elapsed_ms": 1179,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "redirects": [],
+      "elapsed_ms": 1164,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "redirects": [],
+      "elapsed_ms": 1169,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "redirects": [],
+      "elapsed_ms": 994,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "status_code": 200,
+      "final_url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "redirects": [],
+      "elapsed_ms": 1197,
+      "content_type": "text/html; charset=UTF-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.mri.gov.lk/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-01-7d0985941833.html",
+      "sha256": "7d09859418334204a99b67ae275e90718787d0a081c6e2de168652cdd5ef987e",
+      "bytes": 137232
+    },
+    {
+      "url": "http://www.mri.gov.lk/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-02-dfb4917f1d29.html",
+      "sha256": "dfb4917f1d29775896586bec13ade36dd0766842492936571364846144a1f758",
+      "bytes": 136675
+    },
+    {
+      "url": "https://www.mri.gov.lk/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-03-7d0985941833.html",
+      "sha256": "7d09859418334204a99b67ae275e90718787d0a081c6e2de168652cdd5ef987e",
+      "bytes": 137232
+    },
+    {
+      "url": "http://www.mri.gov.lk/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-04-dfb4917f1d29.html",
+      "sha256": "dfb4917f1d29775896586bec13ade36dd0766842492936571364846144a1f758",
+      "bytes": 136675
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/animal-center/services/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-05-30efe42e4d56.html",
+      "sha256": "30efe42e4d56c6ebd667efb40fc9118cbd85b74a3fdccaa28ce937499829b8d2",
+      "bytes": 138117
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-06-75a4eca2fb05.html",
+      "sha256": "75a4eca2fb05559ae483f53b144f2016824949d007aa42fb74884ae9fc3a61f6",
+      "bytes": 143343
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-07-8f1857055e8c.html",
+      "sha256": "8f1857055e8c50abf58e6114dc27ff76a7d753422e312c0cb403507d4539aee6",
+      "bytes": 166697
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-microbiology-molecular-biology/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-08-b46993744d26.html",
+      "sha256": "b46993744d26ce5028e56ed557fcdb0782d6337cd3e7a6fc5e3b28bfe45b6c9f",
+      "bytes": 142777
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/leptospira/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-09-27c35f6f40cd.html",
+      "sha256": "27c35f6f40cdec2aee98220f6ffe04517842bd7d96be0fe3fd8390e77e89416c",
+      "bytes": 147044
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/clinical-bacteriology-laboratory-cbl/quality-control-and-media-preparation-laboratory/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-10-83b12ec55939.html",
+      "sha256": "83b12ec55939ec16fc37adc96ee94673cd6aa3d4acd0f3c11c23b7affd79e06a",
+      "bytes": 187728
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/research-and-publications-in-bacteriology/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-11-23c19c54482e.html",
+      "sha256": "23c19c54482e0c2cccadb13218a0f2ee98eeb8c40f6b91a06c8a96babf94311c",
+      "bytes": 148400
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/history/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-12-488068655e2a.html",
+      "sha256": "488068655e2a3c2171819ba6599247465e879fc826f8acc704709eb3709b798d",
+      "bytes": 141723
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/achievements-in-bacteriology/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-13-58a83f273801.html",
+      "sha256": "58a83f27380130c4f4f4e6f6ca6434495eea07060b5ba6ee327911a9afa57479",
+      "bytes": 103071
+    },
+    {
+      "url": "https://www.mri.gov.lk/units/departments-a-m/bacteriology/enteric-bacteriology/",
+      "path": "audit.output/www.mri.gov.lk/20261119.0622/snapshots/page-14-73403e9aadb0.html",
+      "sha256": "73403e9aadb0cd6823833a567c44889325fcfefeeabdd7eb49457c4c8e3cbb5c",
+      "bytes": 134037
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -63,87 +1698,149 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "[Errno -3] Temporary failure in name resolution; No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; HTTP checks did not run; No redirect result was available; Browser TLS check did not complete; TLS expiry check did not run; TLS hostname check did not run",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
           "name": "dns_resolves",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "[Errno -3] Temporary failure in name resolution"
+          "status": "pass",
+          "reason": "Public DNS resolved"
         },
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "HTTP checks did not run"
+          "status": "pass",
+          "reason": "HTTP probes did not all fail"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS hostname check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: , Colombo 08, Sri Lanka; Phone: 0112-693 532- (12 phone numbers found); Email: info.mri@health.gov.lk (2 email addresses found); Published named responsibility: department",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: , Colombo 08, Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0112-693 532- (12 phone numbers found); Email: info.mri@health.gov.lk (2 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: department"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing required documents evidence found"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing fees and payment evidence found"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: circular"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -163,7 +1860,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.136",
+    "egress_ip": "3.42.157.65",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

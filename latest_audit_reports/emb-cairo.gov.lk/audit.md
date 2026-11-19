@@ -1,8 +1,8 @@
 # Website Audit: https://emb-cairo.gov.lk/
 
-- Completed: 2026-11-18 06:23
+- Completed: 2026-11-19 06:21
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la; Phone: +0020227354966 (13 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 00 202 2735 4 (13 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: (Optional)\",\"select_gender_option\":\"Select Gender\",\"passport_id_label\":\"Passport ID (Optional)\",\"profession_la |
-| reachable_contacts | ✅ | Phone: +0020227354966 (13 phone numbers found); Email: john@example.com (3 email addresses found) |
+| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
+| reachable_contacts | ✅ | Phone: 00 202 2735 4 (13 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ✅ | Published processing time: 02 working days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 11 October 2026 |
+| published_update_date | ✅ | Published published update date: 11/12/2026 |

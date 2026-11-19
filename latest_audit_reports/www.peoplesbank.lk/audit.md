@@ -1,8 +1,8 @@
 # Website Audit: https://www.peoplesbank.lk/
 
-- Completed: 2026-11-18 06:14
+- Completed: 2026-11-19 06:12
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,24 +33,24 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Tower, No.374, Dr. Colvin R. De Silva Mawatha, Colombo 2, Sri Lanka; Phone: +94 (0)11 374074 (140 phone numbers found); Email: info@peoplesbank.lk (39 email addresses found); Published named responsibility: director
+Published postal address: Tower, No.374, Dr. Colvin R. De Silva Mawatha, Colombo 2, Sri Lanka; Phone: +94 (0)11 374074 (70 phone numbers found); Email: info@peoplesbank.lk (19 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Tower, No.374, Dr. Colvin R. De Silva Mawatha, Colombo 2, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 (0)11 374074 (140 phone numbers found); Email: info@peoplesbank.lk (39 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 (0)11 374074 (70 phone numbers found); Email: info@peoplesbank.lk (19 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing published update date evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ✅ | Published required documents: required documents |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: LKR 1,000,000 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 51 days |

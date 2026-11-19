@@ -1,8 +1,8 @@
 # Website Audit: https://www.ips.lk/
 
-- Completed: 2026-11-18 06:15
-- Overall result: 🔴 Level 1
-- Vantage: 3.41.210.136 (US, github-actions)
+- Completed: 2026-11-19 06:13
+- Overall result: 🟠 Level 2
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No email evidence found
+Published postal address: 94-11-2143100 Visit Us 100/20, Independence Avenue, Colombo 07, Sri Lanka; Phone: +94112143100 (4 phone numbers found); Email: info@ips.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 94-11-2143100 Visit Us 100/20, Independence Avenue, Colombo 07, Sri Lanka |
-| reachable_contacts | ❓ | No email evidence found |
+| reachable_contacts | ✅ | Phone: +94112143100 (4 phone numbers found); Email: info@ips.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ✅ | Published legal basis: gazette |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ✅ | Published published update date: 20 November 2026 |

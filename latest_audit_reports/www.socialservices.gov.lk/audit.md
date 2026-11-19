@@ -1,8 +1,8 @@
 # Website Audit: https://www.socialservices.gov.lk/
 
-- Completed: 2026-11-18 06:35
+- Completed: 2026-11-19 06:33
 - Overall result: 🔴 Level 1
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0112186275 (37 phone numbers found); Email: director@socialservices.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 187 059 (37 phone numbers found); Email: itadmin@socialservices.gov.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

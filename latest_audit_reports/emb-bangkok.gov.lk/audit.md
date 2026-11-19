@@ -1,8 +1,8 @@
 # Website Audit: https://emb-bangkok.gov.lk/
 
-- Completed: 2026-11-18 06:19
+- Completed: 2026-11-19 06:18
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -51,8 +51,8 @@ Published published update date: 10 December 1954
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
-| legal_basis | ✅ | Published legal basis: circular |
+| fees_and_payment | ✅ | Published fees and payment: Free of Charge |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 03 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❌ | Published published update date: 10 December 1954 |

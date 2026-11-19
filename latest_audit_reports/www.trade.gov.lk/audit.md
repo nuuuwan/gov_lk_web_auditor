@@ -1,8 +1,8 @@
 # Website Audit: https://www.trade.gov.lk/
 
-- Completed: 2026-11-18 06:43
+- Completed: 2026-11-19 06:41
 - Overall result: 🔴 Level 1
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 2118 667 (32 phone numbers found); Email: info@trademin.gov.lk (24 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2423 979 (32 phone numbers found); Email: info@trademin.gov.lk (24 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

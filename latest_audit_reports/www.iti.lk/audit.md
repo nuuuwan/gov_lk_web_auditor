@@ -1,8 +1,8 @@
 # Website Audit: https://www.iti.lk/
 
-- Completed: 2026-11-18 06:35
+- Completed: 2026-11-19 06:33
 - Overall result: ⚫ Level 0
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,17 +14,17 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Detected generic hosting marker: under construction
+Every repeated HTTP probe failed: [500, 500, 500, 500]
 
 | Test | Result | Details |
 | --- | --- | --- |
 | dns_resolves | ✅ | Public DNS resolved |
-| domain_not_parked | ✅ | No parked-domain marker found |
-| site_not_defaced | ✅ | No defacement marker found |
-| content_relevant | ✅ | No unrelated-content marker found |
-| hosting_configured | ❌ | Detected generic hosting marker: under construction |
-| http_available | ✅ | HTTP probes did not all fail |
-| redirect_related | ✅ | No unrelated redirect found |
-| tls_browser_trusted | ✅ | No browser-blocking TLS error found |
+| domain_not_parked | ❓ | No usable page was inspected |
+| site_not_defaced | ❓ | No usable page was inspected |
+| content_relevant | ❓ | No usable page was inspected |
+| hosting_configured | ❓ | No usable page was inspected |
+| http_available | ❌ | Every repeated HTTP probe failed: [500, 500, 500, 500] |
+| redirect_related | ❓ | No redirect result was available |
+| tls_browser_trusted | ❓ | Browser TLS check did not complete |
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |

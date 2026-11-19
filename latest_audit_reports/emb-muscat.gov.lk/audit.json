@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "8bf63d6e-127d-436d-a792-088e5e5f85a1",
+  "audit_id": "deb076ac-d6cd-450f-b14a-5b356927d4d2",
   "url": "https://emb-muscat.gov.lk",
   "normalized_url": "https://emb-muscat.gov.lk/",
-  "started_at": "2026-11-18T06:22:09.562013+05:30",
-  "completed_at": "2026-11-18T06:22:45.932508+05:30",
+  "started_at": "2026-11-19T06:20:07.872088+05:30",
+  "completed_at": "2026-11-19T06:20:43.406169+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011)",
-      "tls_hostname_matches: TLS certificate does not match the hostname"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,117 +26,126 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-18T06:22:10.037683+05:30"
+      "observed_at": "2026-11-19T06:20:08.195008+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-18T06:22:10.037704+05:30"
+      "observed_at": "2026-11-19T06:20:08.195028+05:30"
     },
     {
-      "check": "tls_hostname",
-      "status": "fail",
-      "detail": "TLS certificate does not match the hostname",
-      "observed_at": "2026-11-18T06:22:10.500901+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-19T06:20:08.543898+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.emb-muscat.gov.lk/en",
       "source": "https://emb-muscat.gov.lk/",
-      "observed_at": "2026-11-18T06:22:44.375351+05:30"
+      "observed_at": "2026-11-19T06:20:40.873265+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at https://www.emb-muscat.gov.lk/en",
       "source": "http://emb-muscat.gov.lk/",
-      "observed_at": "2026-11-18T06:22:44.375372+05:30"
+      "observed_at": "2026-11-19T06:20:40.873285+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.emb-muscat.gov.lk/en",
       "source": "https://emb-muscat.gov.lk/",
-      "observed_at": "2026-11-18T06:22:44.375376+05:30"
+      "observed_at": "2026-11-19T06:20:40.873288+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at https://www.emb-muscat.gov.lk/en",
       "source": "http://emb-muscat.gov.lk/",
-      "observed_at": "2026-11-18T06:22:44.375379+05:30"
+      "observed_at": "2026-11-19T06:20:40.873290+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://www.emb-muscat.gov.lk/en/contact",
       "source": "https://www.emb-muscat.gov.lk/en/contact",
-      "observed_at": "2026-11-18T06:22:44.375381+05:30"
+      "observed_at": "2026-11-19T06:20:40.873292+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 6: HTTP 200 at https://www.emb-muscat.gov.lk/en/allPosts?category=News",
       "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
-      "observed_at": "2026-11-18T06:22:44.375382+05:30"
+      "observed_at": "2026-11-19T06:20:40.873294+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 7: HTTP 200 at https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
       "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
-      "observed_at": "2026-11-18T06:22:44.375384+05:30"
+      "observed_at": "2026-11-19T06:20:40.873296+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 8: HTTP 200 at https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "observed_at": "2026-11-18T06:22:44.375386+05:30"
+      "observed_at": "2026-11-19T06:20:40.873299+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 9: HTTP 200 at https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
-      "observed_at": "2026-11-18T06:22:44.375389+05:30"
+      "observed_at": "2026-11-19T06:20:40.873301+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 10: HTTP 200 at https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
-      "observed_at": "2026-11-18T06:22:44.375391+05:30"
+      "observed_at": "2026-11-19T06:20:40.873303+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 11: HTTP 200 at https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
-      "observed_at": "2026-11-18T06:22:44.375393+05:30"
+      "observed_at": "2026-11-19T06:20:40.873305+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 12: HTTP 200 at https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "observed_at": "2026-11-18T06:22:44.375395+05:30"
+      "observed_at": "2026-11-19T06:20:40.873307+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 13: HTTP 200 at https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "observed_at": "2026-11-18T06:22:44.375397+05:30"
+      "observed_at": "2026-11-19T06:20:40.873309+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 14: HTTP 200 at https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "observed_at": "2026-11-18T06:22:44.375399+05:30"
+      "observed_at": "2026-11-19T06:20:40.873312+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96880007877",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96880007877"
+      }
     },
     {
       "check": "phone",
@@ -146,15 +163,6 @@
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
         "value": "+96878252852"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +96880007877",
-      "source": "https://www.emb-muscat.gov.lk/en",
-      "data": {
-        "value": "+96880007877"
       }
     },
     {
@@ -187,15 +195,6 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +96824697841",
-      "source": "https://www.emb-muscat.gov.lk/en",
-      "data": {
-        "value": "+96824697841"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 050-4071-492",
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
@@ -203,12 +202,12 @@
       }
     },
     {
-      "check": "email",
+      "check": "phone",
       "status": "pass",
-      "detail": "Published email: slemb.muscat@mfa.gov.lk",
+      "detail": "Published phone: +96824697841",
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
-        "value": "slemb.muscat@mfa.gov.lk"
+        "value": "+96824697841"
       }
     },
     {
@@ -218,6 +217,15 @@
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
         "value": "john@example.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "slemb.muscat@mfa.gov.lk"
       }
     },
     {
@@ -250,6 +258,15 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +96880007877",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96880007877"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +96824600231",
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
@@ -263,15 +280,6 @@
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
         "value": "+96878252852"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +96880007877",
-      "source": "https://www.emb-muscat.gov.lk/en",
-      "data": {
-        "value": "+96880007877"
       }
     },
     {
@@ -304,6 +312,15 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 050-4071-492",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "050-4071-492"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +96824697841",
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
@@ -311,12 +328,12 @@
       }
     },
     {
-      "check": "phone",
+      "check": "email",
       "status": "pass",
-      "detail": "Published phone: 050-4071-492",
+      "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
-        "value": "050-4071-492"
+        "value": "john@example.com"
       }
     },
     {
@@ -331,10 +348,235 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "slemb.muscat@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96880007877",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96880007877"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824600231",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96824600231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96878252852",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96878252852"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-8217-4056-",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "01-8217-4056-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697842",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96824697842"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 086861-4396-",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "086861-4396-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 050-4071-492",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "050-4071-492"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96824697841"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en",
       "data": {
         "value": "john@example.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "slemb.muscat@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "slemb.muscat@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96880007877",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96880007877"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824600231",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96824600231"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96878252852",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96878252852"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-8217-4056-",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "01-8217-4056-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697842",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96824697842"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 086861-4396-",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "086861-4396-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 050-4071-492",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "050-4071-492"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "+96824697841"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: john@example.com",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "john@example.com"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en",
+      "data": {
+        "value": "slemb.muscat@mfa.gov.lk"
       }
     },
     {
@@ -376,6 +618,15 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en/contact",
+      "data": {
+        "value": "+96824697841"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0146690952",
       "source": "https://www.emb-muscat.gov.lk/en/contact",
       "data": {
@@ -383,12 +634,12 @@
       }
     },
     {
-      "check": "phone",
+      "check": "email",
       "status": "pass",
-      "detail": "Published phone: +96824697841",
+      "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en/contact",
       "data": {
-        "value": "+96824697841"
+        "value": "john@example.com"
       }
     },
     {
@@ -401,21 +652,12 @@
       }
     },
     {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: john@example.com",
-      "source": "https://www.emb-muscat.gov.lk/en/contact",
-      "data": {
-        "value": "john@example.com"
-      }
-    },
-    {
       "check": "postal_address",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
       "source": "https://www.emb-muscat.gov.lk/en/contact",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -430,15 +672,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: slemb.muscat@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
-      "data": {
-        "value": "slemb.muscat@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
       "data": {
@@ -446,12 +679,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "slemb.muscat@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
+      "data": {
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -461,6 +703,15 @@
       "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
       "data": {
         "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
+      "data": {
+        "value": "+96824697841"
       }
     },
     {
@@ -473,12 +724,12 @@
       }
     },
     {
-      "check": "phone",
+      "check": "email",
       "status": "pass",
-      "detail": "Published phone: +96824697841",
+      "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
       "data": {
-        "value": "+96824697841"
+        "value": "john@example.com"
       }
     },
     {
@@ -491,129 +742,12 @@
       }
     },
     {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: john@example.com",
-      "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
-      "data": {
-        "value": "john@example.com"
-      }
-    },
-    {
       "check": "postal_address",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
       "source": "https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 71 99 67 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "0094 71 99 67 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 71 9967",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "0094 71 9967"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112338812",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "+94112338812"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0509-4448-44",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "0509-4448-44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112275575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "+94112275575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112385",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "0094-112385"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112338",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "0094-112338"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 532 9",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "0094 11 532 9"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 275 575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "+94 112 275 575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112433075 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "+94112433075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +96824697841",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "+96824697841"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 2674",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "0094 11 2674"
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -628,10 +762,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94115329326",
+      "detail": "Published phone: +94 112 473 899 ",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
-        "value": "+94115329326"
+        "value": "+94 112 473 899 "
       }
     },
     {
@@ -646,10 +780,46 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 473 899 ",
+      "detail": "Published phone: 0094-112338",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
-        "value": "+94 112 473 899 "
+        "value": "0094-112338"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94115329326",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "+94115329326"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112433075 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "+94112433075 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112329773",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "+94112329773"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 2674",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "0094 11 2674"
       }
     },
     {
@@ -664,6 +834,42 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0094 71 99 67 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "0094 71 99 67 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112338812",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "+94112338812"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 532 9",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "0094 11 532 9"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 71 9967",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "0094 71 9967"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 009411-2885",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
@@ -673,10 +879,46 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94112329773",
+      "detail": "Published phone: +94112275575",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
-        "value": "+94112329773"
+        "value": "+94112275575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 275 575",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "+94 112 275 575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0509-4448-44",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "0509-4448-44"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "+96824697841"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-112385",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "0094-112385"
       }
     },
     {
@@ -700,33 +942,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: authentication.consular@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "authentication.consular@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
@@ -736,6 +951,33 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: eta@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "eta@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
@@ -745,19 +987,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
+      "detail": "Published email: eta@immigration.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
-        "value": "controller@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "data": {
-        "value": "controller@immigration.gov.lk"
+        "value": "eta@immigration.gov.lk"
       }
     },
     {
@@ -770,12 +1003,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "authentication.consular@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
+      "data": {
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -835,15 +1077,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: slemb.muscat@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
-      "data": {
-        "value": "slemb.muscat@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
       "data": {
@@ -851,12 +1084,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "slemb.muscat@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
+      "data": {
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -871,15 +1113,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: slemb.muscat@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
-      "data": {
-        "value": "slemb.muscat@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
       "data": {
@@ -887,12 +1120,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "slemb.muscat@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
+      "data": {
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -907,15 +1149,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: slemb.muscat@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
-      "data": {
-        "value": "slemb.muscat@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: john@example.com",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
       "data": {
@@ -923,120 +1156,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "slemb.muscat@mfa.gov.lk"
       }
     },
     {
-      "check": "phone",
+      "check": "postal_address",
       "status": "pass",
-      "detail": "Published phone: 0094 71 99 67 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
       "data": {
-        "value": "0094 71 99 67 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 71 9967",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "0094 71 9967"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112338812",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "+94112338812"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0509-4448-44",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "0509-4448-44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112275575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "+94112275575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112385",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "0094-112385"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112338",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "0094-112338"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 532 9",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "0094 11 532 9"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 275 575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "+94 112 275 575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112433075 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "+94112433075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +96824697841",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "+96824697841"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 2674",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "0094 11 2674"
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -1051,10 +1185,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94115329326",
+      "detail": "Published phone: +94 112 473 899 ",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
-        "value": "+94115329326"
+        "value": "+94 112 473 899 "
       }
     },
     {
@@ -1069,10 +1203,46 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 473 899 ",
+      "detail": "Published phone: 0094-112338",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
-        "value": "+94 112 473 899 "
+        "value": "0094-112338"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94115329326",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "+94115329326"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112433075 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "+94112433075 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112329773",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "+94112329773"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 2674",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "0094 11 2674"
       }
     },
     {
@@ -1087,6 +1257,42 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0094 71 99 67 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "0094 71 99 67 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112338812",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "+94112338812"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 532 9",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "0094 11 532 9"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 71 9967",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "0094 71 9967"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 009411-2885",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
@@ -1096,10 +1302,46 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94112329773",
+      "detail": "Published phone: +94112275575",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
-        "value": "+94112329773"
+        "value": "+94112275575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 275 575",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "+94 112 275 575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0509-4448-44",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "0509-4448-44"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "+96824697841"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-112385",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "0094-112385"
       }
     },
     {
@@ -1123,33 +1365,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: authentication.consular@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "authentication.consular@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
@@ -1159,6 +1374,33 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: eta@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "eta@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
@@ -1168,19 +1410,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
+      "detail": "Published email: eta@immigration.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
-        "value": "controller@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "data": {
-        "value": "controller@immigration.gov.lk"
+        "value": "eta@immigration.gov.lk"
       }
     },
     {
@@ -1193,12 +1426,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "authentication.consular@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
+      "data": {
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -1249,136 +1491,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0094 71 99 67 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "0094 71 99 67 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 71 9967",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "0094 71 9967"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112338812",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "+94112338812"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0509-4448-44",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "0509-4448-44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112275575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "+94112275575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112385",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "0094-112385"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112338",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "0094-112338"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 532 9",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "0094 11 532 9"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 275 575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "+94 112 275 575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112433075 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "+94112433075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +96824697841",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "+96824697841"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 2674",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "0094 11 2674"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94115329000",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "data": {
         "value": "+94115329000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94115329326",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "+94115329326"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94719967888",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "+94719967888"
       }
     },
     {
@@ -1393,10 +1509,100 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94719967888",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "+94719967888"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-112338",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "0094-112338"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94115329326",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "+94115329326"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112433075 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "+94112433075 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112329773",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "+94112329773"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 2674",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "0094 11 2674"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94112433075",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "data": {
         "value": "+94112433075"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 71 99 67 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "0094 71 99 67 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112338812",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "+94112338812"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 532 9",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "0094 11 532 9"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 71 9967",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "0094 71 9967"
       }
     },
     {
@@ -1411,10 +1617,46 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94112329773",
+      "detail": "Published phone: +94112275575",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "data": {
-        "value": "+94112329773"
+        "value": "+94112275575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 275 575",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "+94 112 275 575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0509-4448-44",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "0509-4448-44"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "+96824697841"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-112385",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "0094-112385"
       }
     },
     {
@@ -1438,33 +1680,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: authentication.consular@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "authentication.consular@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "data": {
@@ -1474,6 +1689,33 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: eta@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "eta@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "data": {
@@ -1483,19 +1725,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
+      "detail": "Published email: eta@immigration.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "data": {
-        "value": "controller@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "data": {
-        "value": "controller@immigration.gov.lk"
+        "value": "eta@immigration.gov.lk"
       }
     },
     {
@@ -1508,12 +1741,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "authentication.consular@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
+      "data": {
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -1564,136 +1806,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0094 71 99 67 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "0094 71 99 67 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 71 9967",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "0094 71 9967"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112338812",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "+94112338812"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0509-4448-44",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "0509-4448-44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112275575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "+94112275575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112385",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "0094-112385"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094-112338",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "0094-112338"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 532 9",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "0094 11 532 9"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 275 575",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "+94 112 275 575"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112433075 ",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "+94112433075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +96824697841",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "+96824697841"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0094 11 2674",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "0094 11 2674"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: +94115329000",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "data": {
         "value": "+94115329000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94115329326",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "+94115329326"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94719967888",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "+94719967888"
       }
     },
     {
@@ -1708,10 +1824,100 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94719967888",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "+94719967888"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-112338",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "0094-112338"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94115329326",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "+94115329326"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112433075 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "+94112433075 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112329773",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "+94112329773"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 2674",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "0094 11 2674"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94112433075",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "data": {
         "value": "+94112433075"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 71 99 67 ",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "0094 71 99 67 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112338812",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "+94112338812"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 11 532 9",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "0094 11 532 9"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094 71 9967",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "0094 71 9967"
       }
     },
     {
@@ -1726,10 +1932,46 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94112329773",
+      "detail": "Published phone: +94112275575",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "data": {
-        "value": "+94112329773"
+        "value": "+94112275575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 275 575",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "+94 112 275 575"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0509-4448-44",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "0509-4448-44"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +96824697841",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "+96824697841"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0094-112385",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "0094-112385"
       }
     },
     {
@@ -1753,33 +1995,6 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: authentication.consular@mfa.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "authentication.consular@mfa.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: eta@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "eta@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
       "detail": "Published email: slemb.muscat@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "data": {
@@ -1789,6 +2004,33 @@
     {
       "check": "email",
       "status": "pass",
+      "detail": "Published email: eta@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "eta@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: controller@immigration.gov.lk",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "controller@immigration.gov.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
       "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "data": {
@@ -1798,19 +2040,10 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
+      "detail": "Published email: eta@immigration.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "data": {
-        "value": "controller@immigration.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: controller@immigration.gov.lk",
-      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "data": {
-        "value": "controller@immigration.gov.lk"
+        "value": "eta@immigration.gov.lk"
       }
     },
     {
@@ -1823,12 +2056,21 @@
       }
     },
     {
-      "check": "postal_address",
+      "check": "email",
       "status": "pass",
-      "detail": "Published postal address: in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p",
+      "detail": "Published email: authentication.consular@mfa.gov.lk",
       "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "data": {
-        "value": "in Sri Lanka\\\",\\\"contact_example_phone_placeholder\\\":\\\"Ex: +1 234 567 890\\\",\\\"personal_details_description\\\":\\\"Help us p"
+        "value": "authentication.consular@mfa.gov.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo",
+      "source": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
+      "data": {
+        "value": "Line 2\\\",\\\"validation_dob_future\\\":\\\"Date of birth cannot be in the future\\\",\\\"closed_on_holidays_message\\\":\\\"We are clo"
       }
     },
     {
@@ -1879,7 +2121,7 @@
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 3696 visible characters across 12 pages",
+      "detail": "Substantive page content: 3696 visible characters across 14 pages",
       "source": "https://emb-muscat.gov.lk/"
     }
   ],
@@ -1900,19 +2142,22 @@
     },
     {
       "host": "emb-muscat.gov.lk",
-      "status": "hostname_error",
-      "expires_at": "2026-11-26T14:47:01+05:30",
-      "hostname_valid": false,
-      "detail": "TLS certificate does not match the hostname"
+      "status": "valid",
+      "expires_at": "2027-02-17T03:52:30+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://emb-muscat.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011)"
+      "status_code": 200,
+      "final_url": "https://www.emb-muscat.gov.lk/en",
+      "redirects": [
+        "https://www.emb-muscat.gov.lk/",
+        "https://www.emb-muscat.gov.lk/en"
+      ],
+      "elapsed_ms": 2014,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://emb-muscat.gov.lk/",
@@ -1922,18 +2167,21 @@
         "https://www.emb-muscat.gov.lk/",
         "https://www.emb-muscat.gov.lk/en"
       ],
-      "elapsed_ms": 2610,
+      "elapsed_ms": 1132,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
     {
       "url": "https://emb-muscat.gov.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011)"
+      "status_code": 200,
+      "final_url": "https://www.emb-muscat.gov.lk/en",
+      "redirects": [
+        "https://www.emb-muscat.gov.lk/",
+        "https://www.emb-muscat.gov.lk/en"
+      ],
+      "elapsed_ms": 1192,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://emb-muscat.gov.lk/",
@@ -1943,7 +2191,7 @@
         "https://www.emb-muscat.gov.lk/",
         "https://www.emb-muscat.gov.lk/en"
       ],
-      "elapsed_ms": 1852,
+      "elapsed_ms": 840,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1952,7 +2200,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/contact",
       "redirects": [],
-      "elapsed_ms": 985,
+      "elapsed_ms": 935,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1961,7 +2209,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
       "redirects": [],
-      "elapsed_ms": 1187,
+      "elapsed_ms": 1463,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1970,7 +2218,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
       "redirects": [],
-      "elapsed_ms": 812,
+      "elapsed_ms": 757,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1979,7 +2227,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
       "redirects": [],
-      "elapsed_ms": 3934,
+      "elapsed_ms": 4681,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1988,7 +2236,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
       "redirects": [],
-      "elapsed_ms": 1909,
+      "elapsed_ms": 1120,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -1997,7 +2245,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
       "redirects": [],
-      "elapsed_ms": 2461,
+      "elapsed_ms": 1591,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -2006,7 +2254,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
       "redirects": [],
-      "elapsed_ms": 1231,
+      "elapsed_ms": 840,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -2015,7 +2263,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
       "redirects": [],
-      "elapsed_ms": 3307,
+      "elapsed_ms": 2569,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -2024,7 +2272,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
       "redirects": [],
-      "elapsed_ms": 4956,
+      "elapsed_ms": 2221,
       "content_type": "text/html; charset=utf-8",
       "error": null
     },
@@ -2033,7 +2281,7 @@
       "status_code": 200,
       "final_url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
       "redirects": [],
-      "elapsed_ms": 2998,
+      "elapsed_ms": 3831,
       "content_type": "text/html; charset=utf-8",
       "error": null
     }
@@ -2041,74 +2289,86 @@
   "snapshots": [
     {
       "url": "https://www.emb-muscat.gov.lk/en",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-01-1c79057ec07d.html",
-      "sha256": "1c79057ec07d9e83333f7d4edf2b616ad14025f4d20d05332605e381ead87c8f",
-      "bytes": 310600
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-01-df19acdac954.html",
+      "sha256": "df19acdac954afe29a0f66ae6728458303e9e20cfc4cbc644de4e2917f826627",
+      "bytes": 311070
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-02-558ec86ca466.html",
-      "sha256": "558ec86ca466b8f95229ae8022a91717e0033650dcecb591268097e40593cafa",
-      "bytes": 310600
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-02-fb1cac9c0e10.html",
+      "sha256": "fb1cac9c0e10cc2a5fbca6f5b1caf1ab923fc3bfff9b9176beb2983b95fb90ac",
+      "bytes": 311070
+    },
+    {
+      "url": "https://www.emb-muscat.gov.lk/en",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-03-4cff6c8bc8ef.html",
+      "sha256": "4cff6c8bc8ef8a58bd17ce1ad26d5497be2b5e1ed4008f8e8e6388ce00c27a66",
+      "bytes": 311070
+    },
+    {
+      "url": "https://www.emb-muscat.gov.lk/en",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-04-97a444300c5a.html",
+      "sha256": "97a444300c5a6c756835550ea8a695093c261dd494cd7021e4b3380aa978d4f3",
+      "bytes": 311070
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/contact",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-03-64bc11c3bbec.html",
-      "sha256": "64bc11c3bbec99e18c3c8161a0387842c7b76caba7fac4c94a748c44333f1c51",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-05-bdd483764763.html",
+      "sha256": "bdd4837647634b9b206cb1b6d56fedc9d9d190c659ffb7ff126790bccedf8bc4",
       "bytes": 104789
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/allPosts?category=News",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-04-ab9c63480e82.html",
-      "sha256": "ab9c63480e829ee7d0b19c2128f5bf24f0b84196fdb6cd0aa9391ca5af6a7299",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-06-14c988f2fb8b.html",
+      "sha256": "14c988f2fb8bb118a71d39a8c1a93d51b2019c1e8c02ad1aba6e31cc1f127d4c",
       "bytes": 156409
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/allPosts?category=Others",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-05-af9ea698d14b.html",
-      "sha256": "af9ea698d14b213dfa198640f56b64c68d4002c343e12c797aef1fe02351ce8a",
-      "bytes": 151896
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-07-64ef01974320.html",
+      "sha256": "64ef019743202aea3c0cd21008a4fe10da3befe3992bd6f635f69c204efbe557",
+      "bytes": 151011
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a49f80a650dc954490fb",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-06-7d1fcea5b293.html",
-      "sha256": "7d1fcea5b293a344350e2f97f4cc494f4522112a94cf291e88cc50bb2b6657f5",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-08-7ab6ad334707.html",
+      "sha256": "7ab6ad3347070ac95e6d95e3b5cc7551d0358e6cbcc686c2aa916598166ed7c2",
       "bytes": 462647
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a38380a650dc95448eba",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-07-0ce9fe2945e7.html",
-      "sha256": "0ce9fe2945e70109902949172d3c124fd28dd2de525c23e0ae9fe2ab86a3f2a6",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-09-aa559c442cda.html",
+      "sha256": "aa559c442cda2520a367e1c913b225313d34acb7a450919edea341666f9b7690",
       "bytes": 95505
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a48ddf5e6e5c62934150",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-08-06e03825c989.html",
-      "sha256": "06e03825c9890bf6a5a19fa8f8fda1bc5d267dcb1085b17f7ca2321f0f0bdaeb",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-10-9cf6ea2cf317.html",
+      "sha256": "9cf6ea2cf317e1725cf932db4d17d48204b8ec897547c0639110ac03943297f9",
       "bytes": 95505
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/appointment?page=2&serviceId=6a86a44580a650dc954490a9",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-09-54fefd2233a6.html",
-      "sha256": "54fefd2233a6ef9afece4a304261437ac21e39171c436a6d45963d96c1d8af31",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-11-1a7b9ca21adb.html",
+      "sha256": "1a7b9ca21adb0ae0de2038cef9c40466d7601ad644774f00ceaa947448b69c68",
       "bytes": 95505
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a50080a650dc954491cf",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-10-c6bfe30cf104.html",
-      "sha256": "c6bfe30cf104c8168de64e74093c64dfbebf47ba12ba5c72f0bea05b9276f503",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-12-8d3460f6f4a4.html",
+      "sha256": "8d3460f6f4a4419cf79e699d12cd04133489d7dbbe4637169302b02df0498113",
       "bytes": 462647
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86a546df5e6e5c62934293",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-11-dc1a2fb8d373.html",
-      "sha256": "dc1a2fb8d373b128864ba117fb58c47246283af3110a37b2e6b024b4af4ae6a0",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-13-00383526491b.html",
+      "sha256": "00383526491b6d86a9a837f05187d34eca93ff5f920cdf4d0cd90a10a060e6f2",
       "bytes": 462647
     },
     {
       "url": "https://www.emb-muscat.gov.lk/en/appointment?serviceId=6a86b21a80a650dc9544aae4",
-      "path": "audit.output/emb-muscat.gov.lk/20261118.0622/snapshots/page-12-b6453653180a.html",
-      "sha256": "b6453653180a1766cf2aa32a308013d2aa57f14ed8b82f05f1730b7ae6ce4f96",
+      "path": "audit.output/emb-muscat.gov.lk/20261119.0620/snapshots/page-14-d18eff2778b8.html",
+      "sha256": "d18eff2778b83eda0e95f16f824885f1833a978cd46d1a7b7388715868136826",
       "bytes": 462647
     }
   ],
@@ -2125,8 +2385,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011); TLS certificate does not match the hostname",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -2174,38 +2434,100 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'emb-muscat.gov.lk'. (_ssl.c:1011)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate does not match the hostname"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s; Phone: +96880007877 (28 phone numbers found); Email: john@example.com (6 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Embassy of Sri Lanka, Al Bashair Street, Villa No. 701, Way No. 2114, Madinat Sultan Qaboos, Sultanate of Oman Email : s"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: +96880007877 (28 phone numbers found); Email: john@example.com (6 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published eligibility criteria: eligibility"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published required documents: required documents"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: free of charge"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing legal basis evidence found"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published processing time: 03 months"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -2225,7 +2547,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.136",
+    "egress_ip": "3.42.157.65",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

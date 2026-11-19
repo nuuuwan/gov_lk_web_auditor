@@ -1,8 +1,8 @@
 # Website Audit: https://www.slpa.lk/
 
-- Completed: 2026-11-18 06:32
+- Completed: 2026-11-19 06:30
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.136 (US, github-actions)
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: or at the address where the vehicle is ordinarily kept, notice that the Ports Authority has exercised the powers of this; Phone: +94 112 42 12 01 (34 phone numbers found); Email: info@slpa.lk (13 email addresses found); Published named responsibility: director
+Published postal address: or at the address where the vehicle is ordinarily kept, notice that the Ports Authority has exercised the powers of this; Phone: +94 112 42 12 31 (34 phone numbers found); Email: info@slpa.lk (13 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: or at the address where the vehicle is ordinarily kept, notice that the Ports Authority has exercised the powers of this |
-| reachable_contacts | ✅ | Phone: +94 112 42 12 01 (34 phone numbers found); Email: info@slpa.lk (13 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 42 12 31 (34 phone numbers found); Email: info@slpa.lk (13 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

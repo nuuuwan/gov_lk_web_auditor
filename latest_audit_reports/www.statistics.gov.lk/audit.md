@@ -1,8 +1,8 @@
 # Website Audit: https://www.statistics.gov.lk/
 
-- Completed: 2026-11-18 06:14
-- Overall result: 🟠 Level 2
-- Vantage: 3.41.210.136 (US, github-actions)
+- Completed: 2026-11-19 06:12
+- Overall result: 🔴 Level 1
+- Vantage: 3.42.157.65 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati; Phone: 0.3333 0.3333 (833 phone numbers found); Email: dgcensus@statistics.gov.lk (241 email addresses found); Published named responsibility: director
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: information@statistics.gov.lk Web www.statistics.gov.lk Director General & Additional Director Generals Name & Designati |
-| reachable_contacts | ✅ | Phone: 0.3333 0.3333 (833 phone numbers found); Email: dgcensus@statistics.gov.lk (241 email addresses found) |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: +94 11 2147011 (37 phone numbers found); Email: dgcensus@statistics.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: Rs. 17,742 |
-| legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 00 hours |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 29 April 2025 |
+Not run because 🟠 Level 2 did not pass
