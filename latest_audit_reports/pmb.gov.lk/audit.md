@@ -1,8 +1,8 @@
 # Website Audit: https://pmb.gov.lk/
 
-- Completed: 2026-11-19 05:56
+- Completed: 2026-11-20 05:53
 - Overall result: ⚫ Level 0
-- Vantage: 3.42.157.65 (US, github-actions)
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

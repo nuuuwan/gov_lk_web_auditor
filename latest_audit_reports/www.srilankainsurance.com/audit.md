@@ -1,8 +1,8 @@
 # Website Audit: https://www.srilankainsurance.com/
 
-- Completed: 2026-11-19 06:14
+- Completed: 2026-11-20 06:14
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.65 (US, github-actions)
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: presence in the North Region 26th May 2023, Colombo Sri Lanka; Phone: +94 11 535 7357 (31 phone numbers found); Email: email@srilankainsurance.com; Published named responsibility: director
+Published postal address: presence in the North Region 26th May 2023, Colombo Sri Lanka; Phone: +94117357357 (31 phone numbers found); Email: email@srilankainsurance.com; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: presence in the North Region 26th May 2023, Colombo Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 535 7357 (31 phone numbers found); Email: email@srilankainsurance.com |
+| reachable_contacts | ✅ | Phone: +94117357357 (31 phone numbers found); Email: email@srilankainsurance.com |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

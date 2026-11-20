@@ -1,8 +1,8 @@
 # Website Audit: https://hadabima.gov.lk/
 
-- Completed: 2026-11-19 05:56
+- Completed: 2026-11-20 05:54
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.65 (US, github-actions)
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Hadabima Authority of Sri Lanka, P.O.Box 09,Gannoruwa Road, Peradeniya. Phone 0812 388 107 Fax 0812-388132 E-Mail hadabi; Phone: +94812388107 (95 phone numbers found); Email: hadabima@mail.com (51 email addresses found); Published named responsibility: director
+Published postal address: Hadabima Authority of Sri Lanka, P.O.Box 09,Gannoruwa Road, Peradeniya. Phone 0812 388 107 Fax 0812-388132 E-Mail hadabi; Phone: 081 238 8107 (95 phone numbers found); Email: hadabima@mail.com (51 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Hadabima Authority of Sri Lanka, P.O.Box 09,Gannoruwa Road, Peradeniya. Phone 0812 388 107 Fax 0812-388132 E-Mail hadabi |
-| reachable_contacts | ✅ | Phone: +94812388107 (95 phone numbers found); Email: hadabima@mail.com (51 email addresses found) |
+| reachable_contacts | ✅ | Phone: 081 238 8107 (95 phone numbers found); Email: hadabima@mail.com (51 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

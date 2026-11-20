@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-11-19 05:58
+- Completed: 2026-11-20 05:56
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.65 (US, github-actions)
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per ; Phone: 0547332763 (13 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
+Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat; Phone: 0547332763 (10 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: ✅ National Identity Card (NIC) or Valid Passport ✅ Valid Credit/Debit Card 💳 Application Processing Fee Rs. 5,000/- per  |
-| reachable_contacts | ✅ | Phone: 0547332763 (13 phone numbers found); Email: Published email: |
+| postal_address | ✅ | Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat |
+| reachable_contacts | ✅ | Phone: 0547332763 (10 phone numbers found); Email: Published email: |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 26-03-2024
+No passing eligibility criteria evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs 2027 |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 15 hours |
+| processing_time | ✅ | Published processing time: 21 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 26-03-2024 |
+| published_update_date | ❓ | No passing published update date evidence found |

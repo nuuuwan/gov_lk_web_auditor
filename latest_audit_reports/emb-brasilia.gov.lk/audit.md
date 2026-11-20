@@ -1,8 +1,8 @@
 # Website Audit: https://emb-brasilia.gov.lk/
 
-- Completed: 2026-11-19 06:19
+- Completed: 2026-11-20 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.65 (US, github-actions)
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 00-4898-9229- (15 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
+Published postal address: gaps in knowledge and skills, improve extension\\nservices, and increase sugarcane yields and sugar production, thereby\; Phone: 009-9415-454 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 00-4898-9229- (15 phone numbers found); Email: john@example.com (4 email addresses found) |
+| postal_address | ✅ | Published postal address: gaps in knowledge and skills, improve extension\\nservices, and increase sugarcane yields and sugar production, thereby\ |
+| reachable_contacts | ✅ | Phone: 009-9415-454 (15 phone numbers found); Email: slemb.brasilia@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

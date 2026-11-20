@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-19 06:02
+- Completed: 2026-11-20 06:00
 - Overall result: 🔴 Level 1
-- Vantage: 3.42.157.65 (US, github-actions)
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0004310490 (180 phone numbers found); Email: slarmymedia@gmail.com (69 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0670396207 (179 phone numbers found); Email: eservices@elections.gov.lk (69 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

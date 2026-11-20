@@ -1,8 +1,8 @@
 # Website Audit: https://bor.gov.lk/
 
-- Completed: 2026-11-19 06:31
-- Overall result: 🔴 Level 1
-- Vantage: 3.42.157.65 (US, github-actions)
+- Completed: 2026-11-20 06:32
+- Overall result: 🟠 Level 2
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
+Published postal address: at the commencement of the programme, Brigadier Prasanna Priyalal,Additional Commissioner General of Rehabilitation, out; Phone: +94 112 577 457 (53 phone numbers found); Email: email@gmail.com (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0771234567 (53 phone numbers found); Email: bcg.rehabilitation@gmail.com (3 email addresses found) |
+| postal_address | ✅ | Published postal address: at the commencement of the programme, Brigadier Prasanna Priyalal,Additional Commissioner General of Rehabilitation, out |
+| reachable_contacts | ✅ | Phone: +94 112 577 457 (53 phone numbers found); Email: email@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
-## 🟢 Level 3: ❓
+## 🟢 Level 3: ❌
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+Published published update date: 12 September 2006
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ✅ | Published legal basis: gazette |
+| processing_time | ✅ | Published processing time: 3 months |
+| downloadable_form | ✅ | Published downloadable form: https://bor.gov.lk/wp-content/uploads/2025/12/Application-Volunteer-english.pdf |
+| published_update_date | ❌ | Published published update date: 12 September 2006 |

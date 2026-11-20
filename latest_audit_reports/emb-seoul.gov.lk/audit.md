@@ -1,8 +1,8 @@
 # Website Audit: https://emb-seoul.gov.lk/
 
-- Completed: 2026-11-19 06:17
+- Completed: 2026-11-20 06:17
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.65 (US, github-actions)
+- Vantage: 134.138.46.215 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: 00813457-80 (14 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: +82027942968 (13 phone numbers found); Email: mission@slembkr.org (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794- |
-| reachable_contacts | ✅ | Phone: 00813457-80 (14 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: +82027942968 (13 phone numbers found); Email: mission@slembkr.org (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing downloadable form evidence found; No passing published update date ev
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 3 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
