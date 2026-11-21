@@ -1,8 +1,8 @@
 # Website Audit: http://www.ucsc.cmb.ac.lk/
 
-- Completed: 2026-11-20 06:04
+- Completed: 2026-11-21 06:04
 - Overall result: 🟠 Level 2
-- Vantage: 134.138.46.215 (US, github-actions)
+- Vantage: 3.42.157.122 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev; Phone: +94112581245 (9 phone numbers found); Email: exam@ucsc.cmb.ac.lk; Published named responsibility: director
+Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev; Phone: +94-11-2587239 (8 phone numbers found); Email: exam@ucsc.cmb.ac.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the growing need of local language computing in Sri Lanka by doing Localization and Language Processing research and dev |
-| reachable_contacts | ✅ | Phone: +94112581245 (9 phone numbers found); Email: exam@ucsc.cmb.ac.lk |
+| reachable_contacts | ✅ | Phone: +94-11-2587239 (8 phone numbers found); Email: exam@ucsc.cmb.ac.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

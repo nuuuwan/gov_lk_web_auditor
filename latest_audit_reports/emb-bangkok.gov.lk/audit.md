@@ -1,8 +1,8 @@
 # Website Audit: https://emb-bangkok.gov.lk/
 
-- Completed: 2026-11-20 06:17
+- Completed: 2026-11-21 06:16
 - Overall result: 🟠 Level 2
-- Vantage: 134.138.46.215 (US, github-actions)
+- Vantage: 3.42.157.122 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 13th Floor, 75/6-7 Ocean Tower2 Soi 19, Sukhumvit Rd, Wattana, Bangkok 10110 General Number : +66 2 105 4851 Fax : +66 2; Phone: +6621054851 (5 phone numbers found); Email: slemb.bangkok@mfa.gov.lk (7 email addresses found); Published named responsibility: director
+Published postal address: 13th Floor, 75/6-7 Ocean Tower2 Soi 19, Sukhumvit Rd, Wattana, Bangkok 10110 General Number : +66 2 105 4851 Fax : +66 2; Phone: 04-79755123 (5 phone numbers found); Email: slemb.bangkok@mfa.gov.lk (7 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 13th Floor, 75/6-7 Ocean Tower2 Soi 19, Sukhumvit Rd, Wattana, Bangkok 10110 General Number : +66 2 105 4851 Fax : +66 2 |
-| reachable_contacts | ✅ | Phone: +6621054851 (5 phone numbers found); Email: slemb.bangkok@mfa.gov.lk (7 email addresses found) |
+| reachable_contacts | ✅ | Phone: 04-79755123 (5 phone numbers found); Email: slemb.bangkok@mfa.gov.lk (7 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❌
@@ -51,7 +51,7 @@ Published published update date: 10 December 1954
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ✅ | Published required documents: required documents |
-| fees_and_payment | ✅ | Published fees and payment: Free of Charge |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 03 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

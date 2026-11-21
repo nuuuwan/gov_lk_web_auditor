@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-11-20 05:56
+- Completed: 2026-11-21 05:57
 - Overall result: 🟠 Level 2
-- Vantage: 134.138.46.215 (US, github-actions)
+- Vantage: 3.42.157.122 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat; Phone: 0547332763 (10 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
+Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat; Phone: 023 2023.11.2 (10 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat |
-| reachable_contacts | ✅ | Phone: 0547332763 (10 phone numbers found); Email: Published email: |
+| reachable_contacts | ✅ | Phone: 023 2023.11.2 (10 phone numbers found); Email: Published email: |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing downloadable form evi
 | required_documents | ✅ | Published required documents: required documents |
 | fees_and_payment | ✅ | Published fees and payment: rs 2027 |
 | legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ✅ | Published processing time: 21 hours |
+| processing_time | ✅ | Published processing time: 2 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

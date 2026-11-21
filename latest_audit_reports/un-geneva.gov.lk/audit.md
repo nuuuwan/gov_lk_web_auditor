@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-11-20 06:19
+- Completed: 2026-11-21 06:18
 - Overall result: 🟠 Level 2
-- Vantage: 134.138.46.215 (US, github-actions)
+- Vantage: 3.42.157.122 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu; Phone: 022 919 12 50 (10 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found); Published named responsibility: division
+Published postal address: the full lifecycle of chemicals, including products and waste, while preventing harmful impacts on human health and the ; Phone: 022 919 12 50 (9 phone numbers found); Email: prun.geneva@mfa.gov.lk (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: these challenges and institute meaningful change. Since then, our Government has been working with determination to rebu |
-| reachable_contacts | ✅ | Phone: 022 919 12 50 (10 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found) |
+| postal_address | ✅ | Published postal address: the full lifecycle of chemicals, including products and waste, while preventing harmful impacts on human health and the  |
+| reachable_contacts | ✅ | Phone: 022 919 12 50 (9 phone numbers found); Email: prun.geneva@mfa.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

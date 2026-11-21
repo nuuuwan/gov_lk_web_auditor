@@ -1,8 +1,8 @@
 # Website Audit: https://www.smib.lk/
 
-- Completed: 2026-11-20 06:14
+- Completed: 2026-11-21 06:13
 - Overall result: 🟠 Level 2
-- Vantage: 134.138.46.215 (US, github-actions)
+- Vantage: 3.42.157.122 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -54,5 +54,5 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | fees_and_payment | ✅ | Published fees and payment: රු 3 |
 | legal_basis | ✅ | Published legal basis: circular |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.smib.lk/upload/reports/supplier-registration-application-for-the-year-2026.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://www.smib.lk/upload/documents/1795149767_6affcfc7633d0_supplier-registration-application-for-the-year-2027.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

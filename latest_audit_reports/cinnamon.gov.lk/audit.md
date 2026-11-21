@@ -1,8 +1,8 @@
 # Website Audit: https://cinnamon.gov.lk/
 
-- Completed: 2026-11-20 05:51
-- Overall result: 🟠 Level 2
-- Vantage: 134.138.46.215 (US, github-actions)
+- Completed: 2026-11-21 05:52
+- Overall result: 🔴 Level 1
+- Vantage: 3.42.157.122 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma; Phone: +94 718125575 (14 phone numbers found); Email: info.cinnamontraining@gmail.com (10 email addresses found); Published named responsibility: department
+No passing postal address evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Gunarathna Weerakoon Mawatha, Borakanda, Karandeniya /*! elementor - v3.22.0 - 26-06-2024 */ .elementor-widget-google_ma |
-| reachable_contacts | ✅ | Phone: +94 718125575 (14 phone numbers found); Email: info.cinnamontraining@gmail.com (10 email addresses found) |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ✅ | Phone: +94 112 034 343 (35 phone numbers found); Email: pabasara.sum@gmail.com (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
-## 🟢 Level 3: ❌
+## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Published published update date: 26-06-2024
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs. 8 |
-| legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ❌ | Published published update date: 26-06-2024 |
+Not run because 🟠 Level 2 did not pass
