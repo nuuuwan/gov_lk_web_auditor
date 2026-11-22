@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "c8ebd6c0-b735-4990-bbc3-8b803dfbbd04",
+  "audit_id": "8071ec4f-9ffa-4d06-848e-64b9fd2da95e",
   "url": "https://www.socialservices.gov.lk/",
   "normalized_url": "https://www.socialservices.gov.lk/",
-  "started_at": "2026-11-21T06:30:28.957598+05:30",
-  "completed_at": "2026-11-21T06:31:40.181081+05:30",
+  "started_at": "2026-11-22T06:38:30.143646+05:30",
+  "completed_at": "2026-11-22T06:40:42.720215+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,1059 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-21T06:30:29.306744+05:30"
+      "observed_at": "2026-11-22T06:38:30.717893+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-21T06:30:29.306761+05:30"
+      "observed_at": "2026-11-22T06:38:30.717915+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-21T06:30:29.460417+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-11-22T06:38:40.982752+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.socialservices.gov.lk/",
-      "observed_at": "2026-11-21T06:31:39.560908+05:30"
+      "observed_at": "2026-11-22T06:40:42.720029+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.socialservices.gov.lk/",
-      "observed_at": "2026-11-21T06:31:39.560923+05:30"
+      "observed_at": "2026-11-22T06:40:42.720050+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.socialservices.gov.lk/",
-      "observed_at": "2026-11-21T06:31:39.560926+05:30"
+      "observed_at": "2026-11-22T06:40:42.720053+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at https://www.socialservices.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.socialservices.gov.lk/",
-      "observed_at": "2026-11-21T06:31:39.560928+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "observed_at": "2026-11-21T06:31:39.560930+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "observed_at": "2026-11-21T06:31:39.560932+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "observed_at": "2026-11-21T06:31:39.560934+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/Annual-Transfer_Social-Services-Officers.pdf",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/Annual-Transfer_Social-Services-Officers.pdf",
-      "observed_at": "2026-11-21T06:31:39.560936+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "source": "https://www.socialservices.gov.lk/web/index.php",
-      "observed_at": "2026-11-21T06:31:39.560938+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "observed_at": "2026-11-21T06:31:39.560940+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "observed_at": "2026-11-21T06:31:39.560942+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "observed_at": "2026-11-21T06:31:39.560944+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "observed_at": "2026-11-21T06:31:39.560945+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.socialservices.gov.lk/web/index.php?option=com_content&view=article&id=1&Itemid=103&lang=ta",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=article&id=1&Itemid=103&lang=ta",
-      "observed_at": "2026-11-21T06:31:39.560947+05:30"
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 279 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 186 279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 058 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 058 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 026 -... 15.10.202",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "026 -... 15.10.202"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 179 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 186 179 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 040 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 040 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 059 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 053 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 053 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 279 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 058 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 058 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 179 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 179 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 040 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 040 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 059 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 053 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 053 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: itadmin@socialservices.gov.lk",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "itadmin@socialservices.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: director@socialservices.gov.lk",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "director@socialservices.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 21 October 2026",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "21 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000561465 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000561465 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 26 0000000",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0 26 0000000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0230911081",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0230911081"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000139510 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000139510 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000660262 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000660262 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000256 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000000256 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000293303 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000293303 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000440608 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000440608 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000660212 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000660212 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000142387 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000142387 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000440715 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000440715 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000293541 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000293541 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000142492 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000142492 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000440477 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000440477 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000152 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000000152 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000561703 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000561703 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000142257 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000142257 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000660102 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000660102 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000022 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000000022 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000142222 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000142222 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000561794 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000561794 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000440806 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000440806 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000142583 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000142583 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000293434 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000293434 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000561596 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000561596 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000293632 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000293632 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000345 ",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "0000000345 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: department",
-      "source": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "data": {
-        "value": "department"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 279 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 058 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 058 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 179 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 186 179 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 040 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 040 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 059 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 053 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 053 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: itadmin@socialservices.gov.lk",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "itadmin@socialservices.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: director@socialservices.gov.lk",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "director@socialservices.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 21 October 2026",
-      "source": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "21 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 279 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 186 279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 058 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 187 058 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 179 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 186 179 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 040 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 187 040 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 059 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 187 059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 053 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 187 053 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 279 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 186 279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 058 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 187 058 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 179 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 186 179 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 040 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 187 040 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 059 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 187 059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 053 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "+94 112 187 053 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: itadmin@socialservices.gov.lk",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "itadmin@socialservices.gov.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: director@socialservices.gov.lk",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "director@socialservices.gov.lk"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: circular",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "circular"
-      }
-    },
-    {
-      "check": "published_update_date",
-      "status": "pass",
-      "detail": "Published published update date: 21 October 2026",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "data": {
-        "value": "21 October 2026"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0123456789",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "data": {
-        "value": "0123456789"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 279 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "+94 112 186 279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 058 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "+94 112 187 058 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 026 -... 15.10.202",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "026 -... 15.10.202"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 186 179 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "+94 112 186 179 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 040 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "+94 112 187 040 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 059 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "+94 112 187 059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 053 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "+94 112 187 053 "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112186275 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=article&id=1&Itemid=103&lang=ta",
-      "data": {
-        "value": "0112186275 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187050 ",
-      "source": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=article&id=1&Itemid=103&lang=ta",
-      "data": {
-        "value": "0112187050 "
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 514672 visible characters across 14 pages",
-      "source": "https://www.socialservices.gov.lk/"
+      "observed_at": "2026-11-22T06:40:42.720056+05:30"
     }
   ],
   "observations": [
@@ -1098,230 +85,49 @@
     },
     {
       "host": "www.socialservices.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-07T00:42:13+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 231,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
-      "redirects": [
-        "https://www.socialservices.gov.lk/"
-      ],
-      "elapsed_ms": 235,
-      "content_type": "text/html",
-      "error": null
+      "status_code": null,
+      "final_url": null,
+      "redirects": [],
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 232,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.socialservices.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/",
-      "redirects": [
-        "https://www.socialservices.gov.lk/"
-      ],
-      "elapsed_ms": 232,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 6196,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "redirects": [],
-      "elapsed_ms": 8376,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "redirects": [],
-      "elapsed_ms": 689,
-      "content_type": "application/pdf",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/Annual-Transfer_Social-Services-Officers.pdf",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/Annual-Transfer_Social-Services-Officers.pdf",
-      "redirects": [],
-      "elapsed_ms": 836,
-      "content_type": "application/pdf",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "redirects": [
-        "https://www.socialservices.gov.lk/web/index.php?lang=en"
-      ],
-      "elapsed_ms": 7559,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "redirects": [],
-      "elapsed_ms": 6306,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "redirects": [],
-      "elapsed_ms": 8276,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "redirects": [],
-      "elapsed_ms": 5726,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "redirects": [],
-      "elapsed_ms": 6574,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=article&id=1&Itemid=103&lang=ta",
-      "status_code": 200,
-      "final_url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=article&id=1&Itemid=103&lang=ta",
-      "redirects": [],
-      "elapsed_ms": 5731,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-01-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-02-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-03-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-04-6d9ba78f1a24.html",
-      "sha256": "6d9ba78f1a241f9351f603e9870073b26f9d46c3745577072a74584fc9ca782b",
-      "bytes": 4532
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?lang=ta",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-05-8a39946982ab.html",
-      "sha256": "8a39946982ab536915dbdc1bfff72048f0d3ceed03f54769f27148cb1041e7b6",
-      "bytes": 105705
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-06-1d3a8afde7e8.html",
-      "sha256": "1d3a8afde7e893f5e97e857be1f14739030ef3c86d18dbea8779468683f04036",
-      "bytes": 94872
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/DEPARTMENT-OF-SOCIAL-SERVICES_TRANSFER_ATTENDENT.pdf",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-07-92735e0856d7.html",
-      "sha256": "92735e0856d7d906d38ddb746562fd33651eeb62b13825d2d721e8d85cb9f9d6",
-      "bytes": 1190058
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/images/AnnualTransfer2024/Annual-Transfer_Social-Services-Officers.pdf",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-08-6c59a50aa7a4.html",
-      "sha256": "6c59a50aa7a4d1386ea8a698caac3414213cff2661d4c896a60c014fc864d3c6",
-      "bytes": 1775602
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?lang=en",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-09-1bd6efb5c033.html",
-      "sha256": "1bd6efb5c0330b9a4ea335858ac6a7eca9d8fe0e0fdd3f8ad2d6b77691a2691d",
-      "bytes": 94872
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-10-14ccb8021073.html",
-      "sha256": "14ccb80210735aa563b296c7a35fe179fc12ae00ef4bbf885cc8a44d3eeb9ff8",
-      "bytes": 102603
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=en",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-11-4cc895b3a4ef.html",
-      "sha256": "4cc895b3a4ef3109ac72aacb3a5f6650eba0d263316157edaa547a261b1f71d7",
-      "bytes": 95146
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_users&view=login&Itemid=199&lang=ta",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-12-9853791cf089.html",
-      "sha256": "9853791cf0898611d1bf3f15f13efc7eb4f0a69ecf958705f393f6d61f745036",
-      "bytes": 60184
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=ta",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-13-58859c80550e.html",
-      "sha256": "58859c80550ed3d9cf47670b304ee2ceaad538f00bf123742e37da742ca9d9e2",
-      "bytes": 105935
-    },
-    {
-      "url": "https://www.socialservices.gov.lk/web/index.php?option=com_content&view=article&id=1&Itemid=103&lang=ta",
-      "path": "audit.output/www.socialservices.gov.lk/20261121.0630/snapshots/page-14-a23849ec4ee4.html",
-      "sha256": "a23849ec4ee4a24d088d72922f0331d40f10f98065971f28a1974b02e22d238c",
-      "bytes": 79442
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1335,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1348,56 +154,56 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
@@ -1405,28 +211,9 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "No passing postal address evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "inconclusive",
-          "reason": "No passing postal address evidence found"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: 0112187050 (37 phone numbers found); Email: itadmin@socialservices.gov.lk (2 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: department"
-        }
-      ]
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
@@ -1454,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.42.157.122",
+    "egress_ip": "172.149.56.201",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

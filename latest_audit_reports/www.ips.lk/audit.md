@@ -1,8 +1,8 @@
 # Website Audit: https://www.ips.lk/
 
-- Completed: 2026-11-21 06:12
+- Completed: 2026-11-22 06:19
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.122 (US, github-actions)
+- Vantage: 172.149.56.201 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 94-11-2143100 Visit Us 100/20, Independence Avenue, Colombo 07, Sri Lanka; Phone: +94-11-2143100 (4 phone numbers found); Email: info@ips.lk; Published named responsibility: director
+Published postal address: 94-11-2143100 Visit Us 100/20, Independence Avenue, Colombo 07, Sri Lanka; Phone: +94112143100 (4 phone numbers found); Email: info@ips.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 94-11-2143100 Visit Us 100/20, Independence Avenue, Colombo 07, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94-11-2143100 (4 phone numbers found); Email: info@ips.lk |
+| reachable_contacts | ✅ | Phone: +94112143100 (4 phone numbers found); Email: info@ips.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

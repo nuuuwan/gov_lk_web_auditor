@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-11-21 05:59
+- Completed: 2026-11-22 06:02
 - Overall result: 🔴 Level 1
-- Vantage: 3.42.157.122 (US, github-actions)
+- Vantage: 172.149.56.201 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 207 6967 (19 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 243 2682 - (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.defence.lk/
 
-- Completed: 2026-11-21 06:38
+- Completed: 2026-11-22 06:47
 - Overall result: 🟠 Level 2
-- Vantage: 3.42.157.122 (US, github-actions)
+- Vantage: 172.149.56.201 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: water-related fatalities through a coordinated, multisectoral approach. ... Deputy Minister of Defence Highlights Strate; Phone: +94 11 2340340 (2 phone numbers found); Email: adlsecds@defence.lk (18 email addresses found); Published named responsibility: division
+Published postal address: water-related fatalities through a coordinated, multisectoral approach. ... Deputy Minister of Defence Highlights Strate; Phone: +94 11 2340340 (2 phone numbers found); Email: modmlobranch@defence.lk (18 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: water-related fatalities through a coordinated, multisectoral approach. ... Deputy Minister of Defence Highlights Strate |
-| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: adlsecds@defence.lk (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2340340 (2 phone numbers found); Email: modmlobranch@defence.lk (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

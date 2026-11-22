@@ -1,15 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "3afbdd78-d96b-4e40-956d-53a17d4e5b3f",
+  "audit_id": "2fdb4d7b-e2ba-4982-a217-c53a344fa981",
   "url": "https://www.rncoe.lk/",
   "normalized_url": "https://www.rncoe.lk/",
-  "started_at": "2026-11-21T06:06:01.755626+05:30",
-  "completed_at": "2026-11-21T06:06:21.458692+05:30",
+  "started_at": "2026-11-22T06:11:19.857252+05:30",
+  "completed_at": "2026-11-22T06:11:27.533900+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "hosting_configured: Detected generic hosting marker: under construction"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -17,105 +26,176 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-21T06:06:02.492730+05:30"
+      "observed_at": "2026-11-22T06:11:20.486720+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-21T06:06:02.492747+05:30"
+      "observed_at": "2026-11-22T06:11:20.486741+05:30"
     },
     {
       "check": "tls",
       "status": "pass",
       "detail": "TLS certificate valid",
-      "observed_at": "2026-11-21T06:06:02.667657+05:30"
+      "observed_at": "2026-11-22T06:11:20.592334+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.rncoe.lk/",
+      "status": "fail",
+      "detail": "Probe 1: HTTP 503 at https://www.rncoe.lk/",
       "source": "https://www.rncoe.lk/",
-      "observed_at": "2026-11-21T06:06:21.448198+05:30"
+      "observed_at": "2026-11-22T06:11:27.516794+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://www.rncoe.lk/",
+      "status": "fail",
+      "detail": "Probe 2: HTTP 503 at http://www.rncoe.lk/",
       "source": "http://www.rncoe.lk/",
-      "observed_at": "2026-11-21T06:06:21.448217+05:30"
+      "observed_at": "2026-11-22T06:11:27.516815+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.rncoe.lk/",
+      "status": "fail",
+      "detail": "Probe 3: HTTP 503 at https://www.rncoe.lk/",
       "source": "https://www.rncoe.lk/",
-      "observed_at": "2026-11-21T06:06:21.448220+05:30"
+      "observed_at": "2026-11-22T06:11:27.516820+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://www.rncoe.lk/",
+      "status": "fail",
+      "detail": "Probe 4: HTTP 503 at http://www.rncoe.lk/",
       "source": "http://www.rncoe.lk/",
-      "observed_at": "2026-11-21T06:06:21.448223+05:30"
+      "observed_at": "2026-11-22T06:11:27.516823+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 5: HTTP 200 at https://www.rncoe.lk/wp-login.php",
       "source": "https://www.rncoe.lk/wp-login.php",
-      "observed_at": "2026-11-21T06:06:21.448225+05:30"
+      "observed_at": "2026-11-22T06:11:27.516827+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.rncoe.lk/wp-login.php",
-      "source": "http://www.rncoe.lk/wp-login.php",
-      "observed_at": "2026-11-21T06:06:21.448227+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.rncoe.lk/wp-login.php?action=register",
+      "detail": "Probe 6: HTTP 200 at https://www.rncoe.lk/wp-login.php?action=register",
       "source": "https://www.rncoe.lk/wp-login.php?action=register",
-      "observed_at": "2026-11-21T06:06:21.448229+05:30"
+      "observed_at": "2026-11-22T06:11:27.516830+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at https://www.rncoe.lk/wp-login.php?action=lostpassword",
+      "detail": "Probe 7: HTTP 200 at https://www.rncoe.lk/wp-login.php?action=lostpassword",
       "source": "https://www.rncoe.lk/wp-login.php?action=lostpassword",
-      "observed_at": "2026-11-21T06:06:21.448232+05:30"
+      "observed_at": "2026-11-22T06:11:27.516834+05:30"
     },
     {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://www.rncoe.lk/"
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 045 227 3019 ",
+      "source": "https://www.rncoe.lk/",
+      "data": {
+        "value": "045 227 3019 "
+      }
     },
     {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "http://www.rncoe.lk/"
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94452273019",
+      "source": "https://www.rncoe.lk/",
+      "data": {
+        "value": "+94452273019"
+      }
     },
     {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://www.rncoe.lk/"
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@rncoe.lk",
+      "source": "https://www.rncoe.lk/",
+      "data": {
+        "value": "info@rncoe.lk"
+      }
     },
     {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "http://www.rncoe.lk/"
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 045 227 3019 ",
+      "source": "http://www.rncoe.lk/",
+      "data": {
+        "value": "045 227 3019 "
+      }
     },
     {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://www.rncoe.lk/wp-login.php"
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94452273019",
+      "source": "http://www.rncoe.lk/",
+      "data": {
+        "value": "+94452273019"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@rncoe.lk",
+      "source": "http://www.rncoe.lk/",
+      "data": {
+        "value": "info@rncoe.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 045 227 3019 ",
+      "source": "https://www.rncoe.lk/",
+      "data": {
+        "value": "045 227 3019 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94452273019",
+      "source": "https://www.rncoe.lk/",
+      "data": {
+        "value": "+94452273019"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@rncoe.lk",
+      "source": "https://www.rncoe.lk/",
+      "data": {
+        "value": "info@rncoe.lk"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 045 227 3019 ",
+      "source": "http://www.rncoe.lk/",
+      "data": {
+        "value": "045 227 3019 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94452273019",
+      "source": "http://www.rncoe.lk/",
+      "data": {
+        "value": "+94452273019"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@rncoe.lk",
+      "source": "http://www.rncoe.lk/",
+      "data": {
+        "value": "info@rncoe.lk"
+      }
     },
     {
       "check": "postal_address",
@@ -125,33 +205,6 @@
       "data": {
         "value": "Password Remember Me Selecting \"Remember Me\" increases the length of time until you’re asked to log in again on this dev"
       }
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://www.rncoe.lk/wp-login.php"
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Password Remember Me Selecting \"Remember Me\" increases the length of time until you’re asked to log in again on this dev",
-      "source": "https://www.rncoe.lk/wp-login.php",
-      "data": {
-        "value": "Password Remember Me Selecting \"Remember Me\" increases the length of time until you’re asked to log in again on this dev"
-      }
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://www.rncoe.lk/wp-login.php?action=register"
-    },
-    {
-      "check": "generic_hosting",
-      "status": "fail",
-      "detail": "Detected generic hosting marker: under construction",
-      "source": "https://www.rncoe.lk/wp-login.php?action=lostpassword"
     },
     {
       "check": "postal_address",
@@ -165,7 +218,7 @@
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 431 visible characters across 8 pages",
+      "detail": "Substantive page content: 546 visible characters across 7 pages",
       "source": "https://www.rncoe.lk/"
     }
   ],
@@ -193,37 +246,37 @@
     },
     {
       "url": "https://www.rncoe.lk/",
-      "status_code": 200,
+      "status_code": 503,
       "final_url": "https://www.rncoe.lk/",
       "redirects": [],
-      "elapsed_ms": 9039,
+      "elapsed_ms": 1438,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.rncoe.lk/",
-      "status_code": 200,
+      "status_code": 503,
       "final_url": "http://www.rncoe.lk/",
       "redirects": [],
-      "elapsed_ms": 1580,
+      "elapsed_ms": 429,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://www.rncoe.lk/",
-      "status_code": 200,
+      "status_code": 503,
       "final_url": "https://www.rncoe.lk/",
       "redirects": [],
-      "elapsed_ms": 1323,
+      "elapsed_ms": 950,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "http://www.rncoe.lk/",
-      "status_code": 200,
+      "status_code": 503,
       "final_url": "http://www.rncoe.lk/",
       "redirects": [],
-      "elapsed_ms": 1223,
+      "elapsed_ms": 402,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -232,18 +285,7 @@
       "status_code": 200,
       "final_url": "https://www.rncoe.lk/wp-login.php",
       "redirects": [],
-      "elapsed_ms": 1369,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.rncoe.lk/wp-login.php",
-      "status_code": 200,
-      "final_url": "https://www.rncoe.lk/wp-login.php",
-      "redirects": [
-        "https://www.rncoe.lk/wp-login.php"
-      ],
-      "elapsed_ms": 1014,
+      "elapsed_ms": 466,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -252,7 +294,7 @@
       "status_code": 200,
       "final_url": "https://www.rncoe.lk/wp-login.php?action=register",
       "redirects": [],
-      "elapsed_ms": 1061,
+      "elapsed_ms": 445,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
@@ -261,7 +303,7 @@
       "status_code": 200,
       "final_url": "https://www.rncoe.lk/wp-login.php?action=lostpassword",
       "redirects": [],
-      "elapsed_ms": 1023,
+      "elapsed_ms": 447,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
@@ -269,51 +311,45 @@
   "snapshots": [
     {
       "url": "https://www.rncoe.lk/",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-01-fea471267f97.html",
-      "sha256": "fea471267f9775424d1fec7e546ed4282c85599de05293b2b95c4a6248ef34f2",
-      "bytes": 3297
+      "path": "audit.output/www.rncoe.lk/20261122.0611/snapshots/page-01-5ac2dc5e88fc.html",
+      "sha256": "5ac2dc5e88fc7972cd62b15d56a1b217568e7687e9f9c878a2388c162e53d153",
+      "bytes": 5793
     },
     {
       "url": "http://www.rncoe.lk/",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-02-e36b9014bd94.html",
-      "sha256": "e36b9014bd942e842595ea65e3276147272b664796dc20a32bfcbabf7a3a0340",
-      "bytes": 3289
+      "path": "audit.output/www.rncoe.lk/20261122.0611/snapshots/page-02-3a9e95521341.html",
+      "sha256": "3a9e9552134188707a61d2ede41557e8f545369b7829d2aef161a6604faaf363",
+      "bytes": 5791
     },
     {
       "url": "https://www.rncoe.lk/",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-03-fea471267f97.html",
-      "sha256": "fea471267f9775424d1fec7e546ed4282c85599de05293b2b95c4a6248ef34f2",
-      "bytes": 3297
+      "path": "audit.output/www.rncoe.lk/20261122.0611/snapshots/page-03-5ac2dc5e88fc.html",
+      "sha256": "5ac2dc5e88fc7972cd62b15d56a1b217568e7687e9f9c878a2388c162e53d153",
+      "bytes": 5793
     },
     {
       "url": "http://www.rncoe.lk/",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-04-e36b9014bd94.html",
-      "sha256": "e36b9014bd942e842595ea65e3276147272b664796dc20a32bfcbabf7a3a0340",
-      "bytes": 3289
+      "path": "audit.output/www.rncoe.lk/20261122.0611/snapshots/page-04-3a9e95521341.html",
+      "sha256": "3a9e9552134188707a61d2ede41557e8f545369b7829d2aef161a6604faaf363",
+      "bytes": 5791
     },
     {
       "url": "https://www.rncoe.lk/wp-login.php",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-05-70d02ac87258.html",
-      "sha256": "70d02ac87258642143a526bde48e036a05f701d22573aa79bda7425501e87ae7",
-      "bytes": 7438
-    },
-    {
-      "url": "https://www.rncoe.lk/wp-login.php",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-06-70d02ac87258.html",
-      "sha256": "70d02ac87258642143a526bde48e036a05f701d22573aa79bda7425501e87ae7",
-      "bytes": 7438
+      "path": "audit.output/www.rncoe.lk/20261122.0611/snapshots/page-05-7891232432aa.html",
+      "sha256": "7891232432aa6ed598bfd4fae03ec06f250288ac20a98af1466e826233b96169",
+      "bytes": 7384
     },
     {
       "url": "https://www.rncoe.lk/wp-login.php?action=register",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-07-9fbf376ed542.html",
-      "sha256": "9fbf376ed5422b4c706ab7501a69f94cc3003b7c9fb7deeb4e9e89c303c25bf3",
-      "bytes": 3729
+      "path": "audit.output/www.rncoe.lk/20261122.0611/snapshots/page-06-bd962096fb9b.html",
+      "sha256": "bd962096fb9b2e3537da1639a2bd2450935356a4df563d15268a5d052f2be836",
+      "bytes": 3676
     },
     {
       "url": "https://www.rncoe.lk/wp-login.php?action=lostpassword",
-      "path": "audit.output/www.rncoe.lk/20261121.0606/snapshots/page-08-46cfd70f0845.html",
-      "sha256": "46cfd70f084518ca3b2941f485add23ad984dd90c401ce788a82c5c7cb97d6f7",
-      "bytes": 3537
+      "path": "audit.output/www.rncoe.lk/20261122.0611/snapshots/page-07-69c56a4f16b2.html",
+      "sha256": "69c56a4f16b2017d661402d8af86f26fd693cbb71033441aac6b830388b7fb0b",
+      "bytes": 3484
     }
   ],
   "reviewer_decisions": [],
@@ -329,8 +365,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Detected generic hosting marker: under construction",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -360,8 +396,8 @@
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "fail",
-          "reason": "Detected generic hosting marker: under construction"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
@@ -399,9 +435,28 @@
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
       "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing named responsibility evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Password Remember Me Selecting \"Remember Me\" increases the length of time until you’re asked to log in again on this dev"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 045 227 3019 (2 phone numbers found); Email: info@rncoe.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "inconclusive",
+          "reason": "No passing named responsibility evidence found"
+        }
+      ]
     },
     {
       "level": 3,
@@ -429,7 +484,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.42.157.122",
+    "egress_ip": "172.149.56.201",
     "country": "US",
     "runner": "github-actions",
     "proxy": false
