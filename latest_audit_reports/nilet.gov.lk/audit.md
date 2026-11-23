@@ -1,8 +1,8 @@
 # Website Audit: https://nilet.gov.lk/
 
-- Completed: 2026-11-22 06:33
-- Overall result: 🟠 Level 2
-- Vantage: 172.149.56.201 (US, github-actions)
+- Completed: 2026-11-23 06:28
+- Overall result: 🔴 Level 1
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event; Phone: +94 11 2172 800 (16 phone numbers found); Email: nilet.languages@gmail.com; Published named responsibility: department
+No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: or an engaging workshop, our auditorium offers the perfect blend of comfort, functionality, and style to make your event |
-| reachable_contacts | ✅ | Phone: +94 11 2172 800 (16 phone numbers found); Email: nilet.languages@gmail.com |
-| named_responsibility | ✅ | Published named responsibility: department |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ❓ | No phone or email evidence found |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: Rs2 |
-| legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 450 Hours |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 2025-07-22 |
+Not run because 🟠 Level 2 did not pass

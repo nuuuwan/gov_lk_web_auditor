@@ -1,8 +1,8 @@
 # Website Audit: https://www.mahapola.lk/
 
-- Completed: 2026-11-22 06:43
+- Completed: 2026-11-23 06:38
 - Overall result: 🟠 Level 2
-- Vantage: 172.149.56.201 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: a search engine that has an out-of-date listing for this site you have no access to this page If difficulties persist, p; Phone: 011 268 5548 (9 phone numbers found); Email: anujamtf@gmail.com (2 email addresses found); Published named responsibility: department
+Published postal address: a search engine that has an out-of-date listing for this site you have no access to this page If difficulties persist, p; Phone: 011 268 5011 (9 phone numbers found); Email: anujamtf@gmail.com (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: a search engine that has an out-of-date listing for this site you have no access to this page If difficulties persist, p |
-| reachable_contacts | ✅ | Phone: 011 268 5548 (9 phone numbers found); Email: anujamtf@gmail.com (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 268 5011 (9 phone numbers found); Email: anujamtf@gmail.com (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
@@ -54,5 +54,5 @@ No passing required documents evidence found; No passing legal basis evidence fo
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: https://www.mahapola.lk/images/pdf/2026/Payment_Status/Oct2026/UVPA_OCT_2026.pdf |
+| downloadable_form | ✅ | Published downloadable form: https://www.mahapola.lk/images/pdf/2026/Payment_Status/Oct2026/2024-2025FirstPayment/UVPA_1_2024-25.pdf |
 | published_update_date | ❓ | No passing published update date evidence found |

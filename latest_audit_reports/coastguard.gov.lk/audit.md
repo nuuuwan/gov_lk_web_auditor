@@ -1,8 +1,8 @@
 # Website Audit: https://coastguard.gov.lk/
 
-- Completed: 2026-11-22 06:14
+- Completed: 2026-11-23 06:06
 - Overall result: ⚫ Level 0
-- Vantage: 172.149.56.201 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ timed out; timed out
 | site_not_defaced | ✅ | No defacement marker found |
 | content_relevant | ✅ | No unrelated-content marker found |
 | hosting_configured | ✅ | No generic-hosting marker found |
-| http_available | ✅ | HTTPS probes passed; failing variants: http://coastguard.gov.lk/: Probe 2: timed out; https://coastguard.gov.lk/: Probe 3: timed out; http://coastguard.gov.lk/: Probe 4: timed out |
+| http_available | ✅ | HTTPS probes passed; failing variants: https://coastguard.gov.lk/: Probe 1: timed out; http://coastguard.gov.lk/: Probe 2: timed out; https://coastguard.gov.lk/: Probe 3: timed out |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
 | tls_not_expired | ❓ | timed out |

@@ -1,8 +1,8 @@
 # Website Audit: https://cinnamon.gov.lk/
 
-- Completed: 2026-11-22 05:54
+- Completed: 2026-11-23 05:55
 - Overall result: 🔴 Level 1
-- Vantage: 172.149.56.201 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0094 91 2210 (35 phone numbers found); Email: thilinitthara@gmail.com (18 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0718141979 (35 phone numbers found); Email: thilinitthara@gmail.com (18 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

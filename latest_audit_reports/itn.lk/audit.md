@@ -1,8 +1,8 @@
 # Website Audit: https://itn.lk/
 
-- Completed: 2026-11-22 06:29
+- Completed: 2026-11-23 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 172.149.56.201 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Independent Television Network Ltd Wickramasinghepura Battaramulla 10120 Sri Lanka Phone Hotline: 94-11-2774424 Corporat; Phone: +94112774424 (28 phone numbers found); Email: info@itn.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Independent Television Network Ltd Wickramasinghepura Battaramulla 10120 Sri Lanka Phone Hotline: 94-11-2774424 Corporat; Phone: +94112774424 (27 phone numbers found); Email: info@itn.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Independent Television Network Ltd Wickramasinghepura Battaramulla 10120 Sri Lanka Phone Hotline: 94-11-2774424 Corporat |
-| reachable_contacts | ✅ | Phone: +94112774424 (28 phone numbers found); Email: info@itn.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112774424 (27 phone numbers found); Email: info@itn.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
 | legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 10 hours |
+| processing_time | ✅ | Published processing time: 2 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
 | published_update_date | ❓ | No passing published update date evidence found |

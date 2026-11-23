@@ -1,8 +1,8 @@
 # Website Audit: https://doa.gov.lk/
 
-- Completed: 2026-11-22 05:55
+- Completed: 2026-11-23 05:56
 - Overall result: 🟠 Level 2
-- Vantage: 172.149.56.201 (US, github-actions)
+- Vantage: 3.41.210.121 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: info@doa.gov.lk / dgoffice@doa.gov.lk Office Address Department of Agriculture,P.O.Box.01, Peradeniya ප්‍රධාන පිටුව අප ග; Phone: +94 812 388 331 (55 phone numbers found); Email: info@doa.gov.lk (8 email addresses found); Published named responsibility: department
+Published postal address: info@doa.gov.lk / dgoffice@doa.gov.lk Office Address Department of Agriculture,P.O.Box.01, Peradeniya ප්‍රධාන පිටුව අප ග; Phone: +94 812 388 331 (55 phone numbers found); Email: dgoffice@doa.gov.lk (8 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: info@doa.gov.lk / dgoffice@doa.gov.lk Office Address Department of Agriculture,P.O.Box.01, Peradeniya ප්‍රධාන පිටුව අප ග |
-| reachable_contacts | ✅ | Phone: +94 812 388 331 (55 phone numbers found); Email: info@doa.gov.lk (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 812 388 331 (55 phone numbers found); Email: dgoffice@doa.gov.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
