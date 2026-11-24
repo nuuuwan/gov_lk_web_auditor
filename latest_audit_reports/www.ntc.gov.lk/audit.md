@@ -1,8 +1,8 @@
 # Website Audit: https://www.ntc.gov.lk/
 
-- Completed: 2026-11-23 06:39
+- Completed: 2026-11-24 06:41
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Office National Transport Commission No 241 Park Road Colombo 05 Sri Lanka; Phone: 0112333222 (7 phone numbers found); Email: info@ntc.gov.lk; Published named responsibility: division
+Published postal address: Office National Transport Commission No 241 Park Road Colombo 05 Sri Lanka; Phone: 0112587372 ( (7 phone numbers found); Email: info@ntc.gov.lk; Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Office National Transport Commission No 241 Park Road Colombo 05 Sri Lanka |
-| reachable_contacts | ✅ | Phone: 0112333222 (7 phone numbers found); Email: info@ntc.gov.lk |
+| reachable_contacts | ✅ | Phone: 0112587372 ( (7 phone numbers found); Email: info@ntc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

@@ -1,16 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b1a7568e-bba7-45f8-8eaa-bcaf43fa9db7",
+  "audit_id": "f84abb6b-0b5f-426b-b93f-85c0118f94e3",
   "url": "https://nisd.ac.lk/",
   "normalized_url": "https://nisd.ac.lk/",
-  "started_at": "2026-11-23T06:33:28.098438+05:30",
-  "completed_at": "2026-11-23T06:35:30.558013+05:30",
+  "started_at": "2026-11-24T06:35:39.963357+05:30",
+  "completed_at": "2026-11-24T06:35:57.216629+05:30",
   "result": {
-    "status": "fail",
+    "status": "pass",
     "confidence": 1.0,
     "reasons": [
-      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nisd.ac.lk'. (_ssl.c:1011)",
-      "tls_hostname_matches: TLS certificate does not match the hostname"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTP probes did not all fail",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -18,123 +26,186 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-23T06:33:28.598231+05:30"
+      "observed_at": "2026-11-24T06:35:40.344122+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-23T06:33:28.598252+05:30"
+      "observed_at": "2026-11-24T06:35:40.344148+05:30"
     },
     {
-      "check": "tls_hostname",
-      "status": "fail",
-      "detail": "TLS certificate does not match the hostname",
-      "observed_at": "2026-11-23T06:33:28.868911+05:30"
+      "check": "tls",
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-24T06:35:40.783936+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nisd.ac.lk'. (_ssl.c:1011)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://nisd.ac.lk/",
       "source": "https://nisd.ac.lk/",
-      "observed_at": "2026-11-23T06:35:29.818474+05:30"
+      "observed_at": "2026-11-24T06:35:55.911222+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://nisd.ac.lk/",
       "source": "http://nisd.ac.lk/",
-      "observed_at": "2026-11-23T06:35:29.818517+05:30"
+      "observed_at": "2026-11-24T06:35:55.911240+05:30"
     },
     {
-      "check": "tls_browser_error",
-      "status": "fail",
-      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nisd.ac.lk'. (_ssl.c:1011)",
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://nisd.ac.lk/",
       "source": "https://nisd.ac.lk/",
-      "observed_at": "2026-11-23T06:35:29.818522+05:30"
+      "observed_at": "2026-11-24T06:35:55.911245+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://nisd.ac.lk/",
       "source": "http://nisd.ac.lk/",
-      "observed_at": "2026-11-23T06:35:29.818526+05:30"
+      "observed_at": "2026-11-24T06:35:55.911248+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 5: HTTP 200 at http://nisd.ac.lk/right-to-information",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "observed_at": "2026-11-23T06:35:29.818528+05:30"
+      "detail": "Probe 5: HTTP 200 at https://nisd.ac.lk/contact/",
+      "source": "https://nisd.ac.lk/contact/",
+      "observed_at": "2026-11-24T06:35:55.911251+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 6: HTTP 200 at http://nisd.ac.lk/it-centre/",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "observed_at": "2026-11-23T06:35:29.818531+05:30"
+      "detail": "Probe 6: HTTP 200 at https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "observed_at": "2026-11-24T06:35:55.911253+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 7: HTTP 200 at http://nisd.ac.lk/center-for-quality-assurance/",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "observed_at": "2026-11-23T06:35:29.818532+05:30"
+      "detail": "Probe 7: HTTP 200 at https://nisd.ac.lk/contact-details/",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "observed_at": "2026-11-24T06:35:55.911256+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 8: HTTP 200 at http://nisd.ac.lk/centre-for-gender-studies",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "observed_at": "2026-11-23T06:35:29.818534+05:30"
+      "detail": "Probe 8: HTTP 200 at https://nisd.ac.lk/the-training-division/",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "observed_at": "2026-11-24T06:35:55.911259+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 9: HTTP 200 at http://nisd.ac.lk/examination-unit/",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "observed_at": "2026-11-23T06:35:29.818535+05:30"
+      "detail": "Probe 9: HTTP 200 at https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "observed_at": "2026-11-24T06:35:55.911262+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 10: HTTP 200 at http://nisd.ac.lk/student-welfare-centre/",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "observed_at": "2026-11-23T06:35:29.818537+05:30"
+      "detail": "Probe 10: HTTP 200 at https://nisd.ac.lk/the-administration-and-finance-division/",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "observed_at": "2026-11-24T06:35:55.911264+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 11: HTTP 200 at http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "observed_at": "2026-11-23T06:35:29.818539+05:30"
+      "detail": "Probe 11: HTTP 200 at https://nisd.ac.lk/administration-division/",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "observed_at": "2026-11-24T06:35:55.911267+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 12: HTTP 200 at http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "observed_at": "2026-11-23T06:35:29.818541+05:30"
+      "detail": "Probe 12: HTTP 200 at https://nisd.ac.lk/finance-division/",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "observed_at": "2026-11-24T06:35:55.911270+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 13: HTTP 200 at http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "observed_at": "2026-11-23T06:35:29.818543+05:30"
+      "detail": "Probe 13: HTTP 200 at https://nisd.ac.lk/registrars-division/",
+      "source": "https://nisd.ac.lk/registrars-division/",
+      "observed_at": "2026-11-24T06:35:55.911272+05:30"
     },
     {
       "check": "http",
       "status": "pass",
-      "detail": "Probe 14: HTTP 200 at http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "observed_at": "2026-11-23T06:35:29.818545+05:30"
+      "detail": "Probe 14: HTTP 200 at https://nisd.ac.lk/internal-audit-division/",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
+      "observed_at": "2026-11-24T06:35:55.911275+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/",
+      "source": "https://nisd.ac.lk/",
       "data": {
         "value": "01-.91 7-4.49 7-8."
       }
@@ -143,9 +214,36 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/",
+      "source": "https://nisd.ac.lk/",
       "data": {
         "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "gazette"
       }
     },
     {
@@ -160,19 +258,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 882 506 ",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
       "source": "http://nisd.ac.lk/",
       "data": {
-        "value": "+94 112 882 506 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/",
-      "data": {
-        "value": "+94 112 882 506"
+        "value": "0.59 12 5 17.59 "
       }
     },
     {
@@ -196,6 +285,15 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "http://nisd.ac.lk/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0.59 6.41 5 5 6.4",
       "source": "http://nisd.ac.lk/",
       "data": {
@@ -205,10 +303,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "detail": "Published phone: +94 112 882 506",
       "source": "http://nisd.ac.lk/",
       "data": {
-        "value": "0.59 12 5 17.59 "
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "http://nisd.ac.lk/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "http://nisd.ac.lk/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
       }
     },
     {
@@ -241,8 +357,71 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/",
+      "source": "https://nisd.ac.lk/",
       "data": {
         "value": "01-.91 7-4.49 7-8."
       }
@@ -251,9 +430,36 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/",
+      "source": "https://nisd.ac.lk/",
       "data": {
         "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/",
+      "data": {
+        "value": "gazette"
       }
     },
     {
@@ -268,19 +474,10 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 882 506 ",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
       "source": "http://nisd.ac.lk/",
       "data": {
-        "value": "+94 112 882 506 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/",
-      "data": {
-        "value": "+94 112 882 506"
+        "value": "0.59 12 5 17.59 "
       }
     },
     {
@@ -304,6 +501,15 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "http://nisd.ac.lk/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0.59 6.41 5 5 6.4",
       "source": "http://nisd.ac.lk/",
       "data": {
@@ -313,10 +519,28 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "detail": "Published phone: +94 112 882 506",
       "source": "http://nisd.ac.lk/",
       "data": {
-        "value": "0.59 12 5 17.59 "
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "http://nisd.ac.lk/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "http://nisd.ac.lk/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
       }
     },
     {
@@ -344,49 +568,13 @@
       "source": "http://nisd.ac.lk/",
       "data": {
         "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 256 049 ",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "+94 112 256 049 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "01-.91 7-4.49 7-8."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "0-1.77-1.02-3.29-"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 15.59 7 17 ",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "0.59 15.59 7 17 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 112 882 502 ",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
         "value": "+94 112 882 502 "
       }
@@ -394,53 +582,26 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 882 506 ",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
-        "value": "+94 112 882 506 "
+        "value": "0.59 15.59 7 17 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 715 340 466 ",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
-        "value": "+94 715 340 466 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 256 051 ",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "+94 112 256 051 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "+94 112 882 506"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 777 683 675 ",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "+94 777 683 675 "
+        "value": "0.59 12 5 17.59 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.59 12 7 8.41 8.",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
         "value": "0.59 12 7 8.41 8."
       }
@@ -448,17 +609,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 714 452 810 ",
-      "source": "http://nisd.ac.lk/right-to-information",
-      "data": {
-        "value": "+94 714 452 810 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0 10 10 10-4.47 ",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
         "value": "0 10 10 10-4.47 "
       }
@@ -466,17 +618,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 882 501 ",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
-        "value": "+94 112 882 501 "
+        "value": "+94 112 882 506 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.59 6.41 5 5 6.4",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
         "value": "0.59 6.41 5 5 6.4"
       }
@@ -484,26 +636,998 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
-        "value": "0.59 12 5 17.59 "
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/contact/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/contact/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: jeyaruban@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact/",
       "data": {
-        "value": "jeyaruban@nisd.ac.lk"
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Liyanagemulla, Seeduwa, Sri Lanka Contact info Telephone :+94 112 882 506 / 07 Fax: +94 112 882 502 Mail: info@nisd.ac.l",
+      "source": "https://nisd.ac.lk/contact/",
+      "data": {
+        "value": "Liyanagemulla, Seeduwa, Sri Lanka Contact info Telephone :+94 112 882 506 / 07 Fax: +94 112 882 502 Mail: info@nisd.ac.l"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/contact/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/contact/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 502 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 882 502 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 714 452 810 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 714 452 810 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 768 833 752 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 768 833 752 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 510 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 882 510 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 715 340 466 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 715 340 466 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 501 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 882 501 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 256 009 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 256 009 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 076 021 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 076 021 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 777 683 675 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 777 683 675 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 716 961 659 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 716 961 659 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 772 482 236 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 772 482 236 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 702 569 602 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 702 569 602 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 702 373 010 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 702 373 010 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 256 079 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 256 079 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 762 114 162 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 762 114 162 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 256 049 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 256 049 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 718 175 071 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 718 175 071 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 701 747 792 ",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "+94 701 747 792 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: adg@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "adg@nisd.ac.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: d.admin@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "d.admin@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: d.training@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "d.training@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: arexam@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "arexam@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: registrar@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "registrar@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: internalauditor@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "internalauditor@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: ao@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "ao@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dg@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "dg@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: accountant@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "accountant@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: indika@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "indika@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dinusha@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "dinusha@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: d.ssw@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "d.ssw@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: hari@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "hari@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/contact-details/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/the-training-division/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "info@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "data": {
+        "value": "gazette"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "0.59 15.59 7 17 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 070 174 7792 ",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "070 174 7792 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 071 445 2810 ",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "071 445 2810 "
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: d.admin@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/administration-division/",
       "data": {
         "value": "d.admin@nisd.ac.lk"
       }
@@ -512,7 +1636,7 @@
       "check": "email",
       "status": "pass",
       "detail": "Published email: info@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/administration-division/",
       "data": {
         "value": "info@nisd.ac.lk"
       }
@@ -520,26 +1644,35 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: indika@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "detail": "Published email: ao@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/administration-division/",
       "data": {
-        "value": "indika@nisd.ac.lk"
+        "value": "ao@nisd.ac.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: dg@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "detail": "Published email: deepika@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/administration-division/",
       "data": {
-        "value": "dg@nisd.ac.lk"
+        "value": "deepika@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Administration Division, National Institute of Social Development, Liyanagemulla, Seeduwa Mail: ao@nisd.ac.lk +94 112 88",
+      "source": "https://nisd.ac.lk/administration-division/",
+      "data": {
+        "value": "Administration Division, National Institute of Social Development, Liyanagemulla, Seeduwa Mail: ao@nisd.ac.lk +94 112 88"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/administration-division/",
       "data": {
         "value": "director"
       }
@@ -548,34 +1681,34 @@
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: gazette",
-      "source": "http://nisd.ac.lk/right-to-information",
+      "source": "https://nisd.ac.lk/administration-division/",
       "data": {
         "value": "gazette"
       }
     },
     {
-      "check": "phone",
+      "check": "fees_and_payment",
       "status": "pass",
-      "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/it-centre/",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://nisd.ac.lk/administration-division/",
       "data": {
-        "value": "01-.91 7-4.49 7-8."
+        "value": "rs,"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/it-centre/",
+      "detail": "Published phone: 0762110284 ",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "0-1.77-1.02-3.29-"
+        "value": "0762110284 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.59 15.59 7 17 ",
-      "source": "http://nisd.ac.lk/it-centre/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "0.59 15.59 7 17 "
       }
@@ -583,8 +1716,98 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 076 211 0613 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "076 211 0613 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "0.59 12 5 17.59 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 070 117 4492 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "070 117 4492 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "0.59 12 7 8.41 8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0767934303 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "0767934303 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 070 712 9284 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "070 712 9284 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "0 10 10 10-4.47 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 077 592 2046 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "077 592 2046 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 075 490 7573 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "075 490 7573 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "0.59 6.41 5 5 6.4"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: +94 112 882 506 ",
-      "source": "http://nisd.ac.lk/it-centre/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "+94 112 882 506 "
       }
@@ -593,7 +1816,7 @@
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/it-centre/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "+94 112 882 506"
       }
@@ -601,107 +1824,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.59 12 7 8.41 8.",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "0.59 12 7 8.41 8."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 10 10 10-4.47 ",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "0 10 10 10-4.47 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 211 3683 ",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "076 211 3683 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 6.41 5 5 6.4",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "0.59 6.41 5 5 6.4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "0.59 12 5 17.59 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: itc@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "itc@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: indika@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "indika@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "info@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: issues promptly. IT Services Request Form >> Request By-laws, Policies and Guidelines related to IT By-Law on Distance L",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "issues promptly. IT Services Request Form >> Request By-laws, Policies and Guidelines related to IT By-Law on Distance L"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "http://nisd.ac.lk/it-centre/",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "01-.91 7-4.49 7-8."
       }
@@ -709,8 +1833,17 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: 077 472 5511 ",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "077 472 5511 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "0-1.77-1.02-3.29-"
       }
@@ -718,152 +1851,35 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.59 15.59 7 17 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "detail": "Published phone: 071 445 2810 ",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "0.59 15.59 7 17 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 568 3646 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "071 568 3646 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 212 0499 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "076 212 0499 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "+94 112 882 506 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 198 2650 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "071 198 2650 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "+94 112 882 506"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 12 7 8.41 8.",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "0.59 12 7 8.41 8."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 531 8059 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "071 531 8059 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 076 140 3014 . ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "076 140 3014 . "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 10 10 10-4.47 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "0 10 10 10-4.47 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 6.41 5 5 6.4",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "0.59 6.41 5 5 6.4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 882 506 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "0112 882 506 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "0.59 12 5 17.59 "
+        "value": "071 445 2810 "
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: kumudini@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "detail": "Published email: d.admin@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "kumudini@nisd.ac.lk"
+        "value": "d.admin@nisd.ac.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: cqa@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "detail": "Published email: lathika@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "cqa@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: priyan@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "data": {
-        "value": "priyan@nisd.ac.lk"
+        "value": "lathika@nisd.ac.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: info@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "info@nisd.ac.lk"
       }
@@ -871,71 +1887,125 @@
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: niluka@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "detail": "Published email: charitha@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "niluka@nisd.ac.lk"
+        "value": "charitha@nisd.ac.lk"
       }
     },
     {
       "check": "email",
       "status": "pass",
-      "detail": "Published email: aloka@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "detail": "Published email: dharshani@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "aloka@nisd.ac.lk"
+        "value": "dharshani@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: accountant@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "accountant@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: samitha@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "samitha@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: sanju@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "sanju@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: dinusha@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "dinusha@nisd.ac.lk"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: minidu@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "minidu@nisd.ac.lk"
       }
     },
     {
       "check": "postal_address",
       "status": "pass",
-      "detail": "Published postal address: Center for Quality Assuarance, National Institute of Social Development, Liyanagemulla, Seeduwa. Mail: cqa@nisd.ac.lk +9",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "detail": "Published postal address: Finance Division, National Institute of Social Development, Liyanagemulla, Seeduwa Mail: accountant@nisd.ac.lk +94 112 8",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "Center for Quality Assuarance, National Institute of Social Development, Liyanagemulla, Seeduwa. Mail: cqa@nisd.ac.lk +9"
+        "value": "Finance Division, National Institute of Social Development, Liyanagemulla, Seeduwa Mail: accountant@nisd.ac.lk +94 112 8"
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "director"
+      }
+    },
+    {
+      "check": "required_documents",
+      "status": "pass",
+      "detail": "Published required documents: supporting documents",
+      "source": "https://nisd.ac.lk/finance-division/",
+      "data": {
+        "value": "supporting documents"
       }
     },
     {
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: regulations",
-      "source": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
         "value": "regulations"
       }
     },
     {
-      "check": "phone",
+      "check": "fees_and_payment",
       "status": "pass",
-      "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://nisd.ac.lk/finance-division/",
       "data": {
-        "value": "01-.91 7-4.49 7-8."
+        "value": "rs,"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
+      "detail": "Published phone: 076 883 3752 ",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
-        "value": "0-1.77-1.02-3.29-"
+        "value": "076 883 3752 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.59 15.59 7 17 ",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "0.59 15.59 7 17 "
       }
@@ -943,26 +2013,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: +94 112 882 506 ",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
-        "value": "+94 112 882 506 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "+94 112 882 506"
+        "value": "0.59 12 5 17.59 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.59 12 7 8.41 8.",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "0.59 12 7 8.41 8."
       }
@@ -970,8 +2031,17 @@
     {
       "check": "phone",
       "status": "pass",
+      "detail": "Published phone: +94 112 076 021 ",
+      "source": "https://nisd.ac.lk/registrars-division/",
+      "data": {
+        "value": "+94 112 076 021 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
       "detail": "Published phone: 0 10 10 10-4.47 ",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "0 10 10 10-4.47 "
       }
@@ -979,170 +2049,8 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0751822341",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "0751822341"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0751822341 ",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "0751822341 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112882506",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "+94112882506"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 6.41 5 5 6.4",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "0.59 6.41 5 5 6.4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "0.59 12 5 17.59 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: chamari@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "chamari@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "info@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: cgs@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "cgs@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Centre for Gender Studies, National Institute of Social Development Director : 0751822341 Office : +94112882506/7 Mail: ",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "Centre for Gender Studies, National Institute of Social Development Director : 0751822341 Office : +94112882506/7 Mail: "
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: gazette",
-      "source": "http://nisd.ac.lk/centre-for-gender-studies",
-      "data": {
-        "value": "gazette"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 11 288 2502 ",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "+94 11 288 2502 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "01-.91 7-4.49 7-8."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94112882502 ",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "+94112882502 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "0-1.77-1.02-3.29-"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 15.59 7 17 ",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "0.59 15.59 7 17 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506 ",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "+94 112 882 506 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "+94 112 882 506"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
       "detail": "Published phone: 0762130734",
-      "source": "http://nisd.ac.lk/examination-unit/",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "0762130734"
       }
@@ -1150,26 +2058,17 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.59 12 7 8.41 8.",
-      "source": "http://nisd.ac.lk/examination-unit/",
+      "detail": "Published phone: +94 11 288 2502 ",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
-        "value": "0.59 12 7 8.41 8."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 10 10 10-4.47 ",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "0 10 10 10-4.47 "
+        "value": "+94 11 288 2502 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
       "detail": "Published phone: 0.59 6.41 5 5 6.4",
-      "source": "http://nisd.ac.lk/examination-unit/",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "0.59 6.41 5 5 6.4"
       }
@@ -1177,17 +2076,44 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
-      "source": "http://nisd.ac.lk/examination-unit/",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
-        "value": "0.59 12 5 17.59 "
+        "value": "+94 112 882 506 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/registrars-division/",
+      "data": {
+        "value": "+94 112 882 506"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/registrars-division/",
+      "data": {
+        "value": "01-.91 7-4.49 7-8."
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/registrars-division/",
+      "data": {
+        "value": "0-1.77-1.02-3.29-"
       }
     },
     {
       "check": "email",
       "status": "pass",
       "detail": "Published email: exams@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/examination-unit/",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "exams@nisd.ac.lk"
       }
@@ -1196,160 +2122,34 @@
       "check": "email",
       "status": "pass",
       "detail": "Published email: info@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/examination-unit/",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "info@nisd.ac.lk"
       }
     },
     {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: registrar@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/registrars-division/",
+      "data": {
+        "value": "registrar@nisd.ac.lk"
+      }
+    },
+    {
       "check": "postal_address",
       "status": "pass",
-      "detail": "Published postal address: Examination Unit, National Institute of Social Development Assistant Registrar : Office : +94 11 288 2502 Ext. 172 Fax :",
-      "source": "http://nisd.ac.lk/examination-unit/",
+      "detail": "Published postal address: Registrar Division, National Institute of Social Development Registrar : 076 883 3752 Office : +94 112 076 021 Ext. 172 ",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
-        "value": "Examination Unit, National Institute of Social Development Assistant Registrar : Office : +94 11 288 2502 Ext. 172 Fax :"
+        "value": "Registrar Division, National Institute of Social Development Registrar : 076 883 3752 Office : +94 112 076 021 Ext. 172 "
       }
     },
     {
       "check": "named_responsibility",
       "status": "pass",
       "detail": "Published named responsibility: director",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "director"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "http://nisd.ac.lk/examination-unit/",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 01-.91 7-4.49 7-8.",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "01-.91 7-4.49 7-8."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0-1.77-1.02-3.29-",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "0-1.77-1.02-3.29-"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 15.59 7 17 ",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "0.59 15.59 7 17 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506 ",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "+94 112 882 506 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 882 506",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "+94 112 882 506"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 071 818 1120 ",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "071 818 1120 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 12 7 8.41 8.",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "0.59 12 7 8.41 8."
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 10 10 10-4.47 ",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "0 10 10 10-4.47 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 6.41 5 5 6.4",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "0.59 6.41 5 5 6.4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0.59 12 5 17.59 ",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "0.59 12 5 17.59 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: welfarecentre@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "welfarecentre@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@nisd.ac.lk",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "info@nisd.ac.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: Student Welfare Centre, National Institute of Social Development Hotline: 071 818 1120 Mail: welfarecentre@nisd.ac.lk Ge",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
-      "data": {
-        "value": "Student Welfare Centre, National Institute of Social Development Hotline: 071 818 1120 Mail: welfarecentre@nisd.ac.lk Ge"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: director",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "director"
       }
@@ -1358,7 +2158,7 @@
       "check": "legal_basis",
       "status": "pass",
       "detail": "Published legal basis: gazette",
-      "source": "http://nisd.ac.lk/student-welfare-centre/",
+      "source": "https://nisd.ac.lk/registrars-division/",
       "data": {
         "value": "gazette"
       }
@@ -1366,2509 +2166,169 @@
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 00 556 278 33",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0.59 15.59 7 17 ",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "00 556 278 33"
+        "value": "0.59 15.59 7 17 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 37 0000000",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0767619804 ",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0 37 0000000"
+        "value": "0767619804 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000000248 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0.59 12 5 17.59 ",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000000248 "
+        "value": "0.59 12 5 17.59 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000012545 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0762114162 ",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000012545 "
+        "value": "0762114162 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 0 0 0 921 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0.59 12 7 8.41 8.",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0 0 0 0 921 722 "
+        "value": "0.59 12 7 8.41 8."
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 00 0 500 556 4",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: +94 762 114 162 ",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "00 0 500 556 4"
+        "value": "+94 762 114 162 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000011817 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0 10 10 10-4.47 ",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000011817 "
+        "value": "0 10 10 10-4.47 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000003615 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: +94 112 882 506 ",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000003615 "
+        "value": "+94 112 882 506 "
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0 0 595.5600 8",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0.59 6.41 5 5 6.4",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0 0 595.5600 8"
+        "value": "0.59 6.41 5 5 6.4"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000036804 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: +94 112 882 506",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000036804 "
+        "value": "+94 112 882 506"
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000012240 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 01-.91 7-4.49 7-8.",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000012240 "
+        "value": "01-.91 7-4.49 7-8."
       }
     },
     {
       "check": "phone",
       "status": "pass",
-      "detail": "Published phone: 0000027297 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
+      "detail": "Published phone: 0-1.77-1.02-3.29-",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000027297 "
+        "value": "0-1.77-1.02-3.29-"
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000000 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000000000 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 0 500 0 4",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 333 0 500 0 4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000003554 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000003554 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000027924 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000027924 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000031371 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000031371 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000012573 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000012573 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000028369 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000028369 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 278 778 50",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 278 778 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000026207 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000026207 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000028008 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000028008 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000031010 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000031010 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 408 0 0 833 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 0 408 0 0 833 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 500 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 250 333 25",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 0 250 333 25"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000027101 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000027101 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000012747 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000012747 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05) 2024-09-13",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "05) 2024-09-13"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000011633 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000011633 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000012098 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000012098 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 27",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 500 500 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000033941 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000033941 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000034302 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000034302 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000012073 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000012073 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 778 667 944 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 778 667 944 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000107 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000000107 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 556 44",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 556 556 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 278 27",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 500 278 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 250 278 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 333 250 278 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 444 500 44",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 444 500 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 722 667 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 722 667 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 333 0 0 2",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 333 333 0 0 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000026168 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000026168 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 0 0 0 0 833 2",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 0 0 0 0 0 833 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 500 500 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 722 50",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 500 722 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 0 0 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "000 0 0 0 0 0 0 0 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000003676 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000003676 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000026488 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000026488 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 722 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 722 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000013008 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000013008 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000017 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000000017 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000026759 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000026759 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 333 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "00 333 0 0 0 0 0 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000027563 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000027563 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000036753 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000036753 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000639 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000000639 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000026287 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0000026287 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 278 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "data": {
-        "value": "0 278 500 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 278 33",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 556 278 33"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000248 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000000248 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000019527 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000019527 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 0 0 921 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 0 0 0 921 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000019457 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000019457 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000005906 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000005906 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 0 500 556 4",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 0 500 556 4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000024382 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000024382 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 595.5600 8",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 0 595.5600 8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000007000 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000007000 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000007210 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000007210 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000000 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000000000 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 25 0000000",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 25 0000000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 0 500 0 4",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 333 0 500 0 4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000006177 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000006177 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000005244 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000005244 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000006734 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000006734 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05) 2024-09-12",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "05) 2024-09-12"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 278 778 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 278 778 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 408 0 0 833 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 0 408 0 0 833 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 500 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 250 333 25",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 0 250 333 25"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000005565 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000005565 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 27",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 500 500 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000005305 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000005305 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 778 667 944 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 778 667 944 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000107 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000000107 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000005366 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000005366 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 556 44",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 556 556 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 278 27",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 500 278 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000628 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000000628 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000006373 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000006373 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 250 278 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 333 250 278 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 444 500 44",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 444 500 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 722 667 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 722 667 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000007466 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000007466 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 333 0 0 2",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 333 333 0 0 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 0 0 0 0 833 2",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 0 0 0 0 0 833 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 500 500 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 722 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 500 722 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 0 0 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "000 0 0 0 0 0 0 0 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000019876 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000019876 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000024433 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000024433 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 722 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 722 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000017 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000000017 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 333 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "00 333 0 0 0 0 0 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000007185 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0000007185 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 278 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "data": {
-        "value": "0 278 500 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 277 777 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 277 777 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000001415 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000001415 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000150743 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000150743 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 0 500 556 4",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 0 500 556 4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000128772 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000128772 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000015525 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000015525 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000150949 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000150949 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000249 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000249 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 333 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 333 333 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000000 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000000 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000543 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000543 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000152279 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000152279 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000149615 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000149615 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000152357 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000152357 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 408 0 0 833 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 0 408 0 0 833 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000151968 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000151968 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 443 479 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 500 443 479 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 333 10",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 500 333 10"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 278 27",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 500 278 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 444 500 44",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 444 500 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 722 667 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 722 667 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 443 1000 5",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 443 1000 5"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 722 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 722 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000150765 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000150765 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 889 722 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 889 722 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 278 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 278 500 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 333 88",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 556 333 88"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000136114 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000136114 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000604 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000604 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 595.5600 8",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 0 595.5600 8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000136075 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000136075 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 0 500 0 4",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 333 0 500 0 4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000132552 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000132552 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000155492 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000155492 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000011114 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000011114 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05) 2024-09-12",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "05) 2024-09-12"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 278 778 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 278 778 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 350 333 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 500 350 333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 27",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 500 500 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 556 722 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 556 722 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 556 44",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 556 556 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000135873 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000135873 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 479 541 35",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 479 541 35"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000015101 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000015101 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000152466 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000152466 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 333 0 0 2",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 333 333 0 0 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 500 500 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 0 0 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "000 0 0 0 0 0 0 0 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 1000 33",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 500 1000 33"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000017 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000017 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000002423 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000002423 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 610 350 350 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 610 350 350 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 833 777 18",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 833 777 18"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000015810 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000015810 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 610 610 610 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 610 610 610 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000001144 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000001144 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 277 27",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 500 277 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000129213 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000129213 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000002448 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000002448 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000001611 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000001611 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000149952 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000149952 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 200 500 333 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 200 500 333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000227657 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000227657 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 500 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 443 443 44",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 443 443 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000014323 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000014323 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000001972 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000001972 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000135568 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000135568 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000014474 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000014474 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 722 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 500 722 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 750 750 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 500 750 750 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000010753 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000010753 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000014918 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000014918 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 333 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 333 0 0 0 0 0 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000128852 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000128852 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 333 443 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 333 443 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000132191 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000132191 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000014890 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000014890 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 278 33",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 556 278 33"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 408 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 333 408 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 250 277 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 333 250 277 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 0 0 921 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 0 0 0 921 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000482 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000482 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 121 000000",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 121 000000"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 722 666 666 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 722 666 666 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 722 722 943 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 722 722 943 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000803 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000803 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000002238 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000002238 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 277 333 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 333 277 333 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 563 333 75",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 563 333 75"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 443 500 443 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 443 500 443 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000152503 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000152503 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000150692 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000150692 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000149535 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000149535 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000152394 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000152394 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 250 333 25",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 0 250 333 25"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 443 722 250 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 443 722 250 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 443 722 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 443 722 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 778 667 944 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 778 667 944 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000135901 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000135901 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 399 548 29",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "00 399 548 29"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000002704 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000002704 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000135426 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000135426 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 250 278 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 333 250 278 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000108 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000000108 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000010662 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000010662 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000136375 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0000136375 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 0 0 0 0 833 2",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "data": {
-        "value": "0 0 0 0 0 0 833 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000005241 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000005241 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 278 33",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 556 278 33"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000013199 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000013199 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000248 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000000248 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 0 0 921 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 0 0 0 921 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 0 500 556 4",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 0 500 556 4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000003080 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000003080 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000134679 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000134679 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 595.5600 8",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 0 595.5600 8"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000131385 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000131385 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000000 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000000000 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 0 500 0 4",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 333 0 500 0 4"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000018423 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000018423 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 39 0000000",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 39 0000000"
-      }
-    },
-    {
-      "check": "phone",
+      "check": "email",
       "status": "pass",
-      "detail": "Published phone: 0000134905 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
+      "detail": "Published email: amali@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000134905 "
+        "value": "amali@nisd.ac.lk"
       }
     },
     {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000017503 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000017503 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000017531 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000017531 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000134880 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000134880 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000004509 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000004509 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 05) 2024-09-12",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "05) 2024-09-12"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000131827 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000131827 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 278 778 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 278 778 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 408 0 0 833 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 0 408 0 0 833 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 500 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 250 333 25",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 0 250 333 25"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000003019 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000003019 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000003340 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000003340 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000004960 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000004960 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000013276 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000013276 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000178646 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000178646 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 500 27",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 500 500 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000003681 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000003681 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 778 667 944 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 778 667 944 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000107 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000000107 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000017087 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000017087 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 556 556 44",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 556 556 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 278 27",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 500 278 27"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000131465 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000131465 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000003141 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000003141 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000628 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000000628 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000004148 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000004148 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 250 278 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 333 250 278 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000004985 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000004985 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000017714 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000017714 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 444 500 44",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 444 500 44"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000016936 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000016936 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 722 667 722 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 722 667 722 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 333 333 0 0 2",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 333 333 0 0 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000135179 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000135179 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000013637 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000013637 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000018138 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000018138 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 0 0 0 0 0 833 2",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 0 0 0 0 0 833 2"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0 500 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0 500 500 500 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 500 722 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 500 722 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 000 0 0 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "000 0 0 0 0 0 0 0 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 00 722 500 50",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "00 722 500 50"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0000000017 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "data": {
-        "value": "0000000017 "
-      }
-    },
-    {
-      "check": "phone",
+      "check": "email",
       "status": "pass",
-      "detail": "Published phone: 00 333 0 0 0 0 0 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
+      "detail": "Published email: info@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "00 333 0 0 0 0 0 "
+        "value": "info@nisd.ac.lk"
       }
     },
     {
-      "check": "phone",
+      "check": "email",
       "status": "pass",
-      "detail": "Published phone: 0000003952 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
+      "detail": "Published email: internalauditor@nisd.ac.lk",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000003952 "
+        "value": "internalauditor@nisd.ac.lk"
       }
     },
     {
-      "check": "phone",
+      "check": "postal_address",
       "status": "pass",
-      "detail": "Published phone: 0000178595 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
+      "detail": "Published postal address: Internal Audit Division, National Institute of Social Development, Liyanagemulla, Seeduwa Mail: internalauditor@nisd.ac.",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000178595 "
+        "value": "Internal Audit Division, National Institute of Social Development, Liyanagemulla, Seeduwa Mail: internalauditor@nisd.ac."
       }
     },
     {
-      "check": "phone",
+      "check": "named_responsibility",
       "status": "pass",
-      "detail": "Published phone: 0000004775 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
+      "detail": "Published named responsibility: director",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0000004775 "
+        "value": "director"
       }
     },
     {
-      "check": "phone",
+      "check": "legal_basis",
       "status": "pass",
-      "detail": "Published phone: 0 278 500 500 ",
-      "source": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
+      "detail": "Published legal basis: gazette",
+      "source": "https://nisd.ac.lk/internal-audit-division/",
       "data": {
-        "value": "0 278 500 500 "
+        "value": "gazette"
       }
     },
     {
       "check": "page_text",
       "status": "pass",
-      "detail": "Substantive page content: 112629 visible characters across 12 pages",
+      "detail": "Substantive page content: 9698 visible characters across 14 pages",
       "source": "https://nisd.ac.lk/"
     }
   ],
@@ -3889,210 +2349,222 @@
     },
     {
       "host": "nisd.ac.lk",
-      "status": "hostname_error",
-      "expires_at": "2027-05-20T21:04:46+05:30",
-      "hostname_valid": false,
-      "detail": "TLS certificate does not match the hostname"
+      "status": "valid",
+      "expires_at": "2027-02-21T08:34:05+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://nisd.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://nisd.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nisd.ac.lk'. (_ssl.c:1011)"
+      "elapsed_ms": 747,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://nisd.ac.lk/",
       "status_code": 200,
       "final_url": "http://nisd.ac.lk/",
       "redirects": [],
-      "elapsed_ms": 563,
+      "elapsed_ms": 642,
       "content_type": "text/html",
       "error": null
     },
     {
       "url": "https://nisd.ac.lk/",
-      "status_code": null,
-      "final_url": null,
+      "status_code": 200,
+      "final_url": "https://nisd.ac.lk/",
       "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nisd.ac.lk'. (_ssl.c:1011)"
+      "elapsed_ms": 772,
+      "content_type": "text/html",
+      "error": null
     },
     {
       "url": "http://nisd.ac.lk/",
       "status_code": 200,
       "final_url": "http://nisd.ac.lk/",
       "redirects": [],
-      "elapsed_ms": 545,
+      "elapsed_ms": 447,
       "content_type": "text/html",
       "error": null
     },
     {
-      "url": "http://nisd.ac.lk/right-to-information",
+      "url": "https://nisd.ac.lk/contact/",
       "status_code": 200,
-      "final_url": "http://nisd.ac.lk/right-to-information",
+      "final_url": "https://nisd.ac.lk/contact/",
       "redirects": [],
-      "elapsed_ms": 434,
+      "elapsed_ms": 472,
       "content_type": "text/html",
       "error": null
     },
     {
-      "url": "http://nisd.ac.lk/it-centre/",
+      "url": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
       "status_code": 200,
-      "final_url": "http://nisd.ac.lk/it-centre/",
+      "final_url": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
       "redirects": [],
-      "elapsed_ms": 410,
+      "elapsed_ms": 727,
       "content_type": "text/html",
       "error": null
     },
     {
-      "url": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "url": "https://nisd.ac.lk/contact-details/",
       "status_code": 200,
-      "final_url": "http://nisd.ac.lk/center-for-quality-assurance/",
+      "final_url": "https://nisd.ac.lk/contact-details/",
       "redirects": [],
-      "elapsed_ms": 397,
+      "elapsed_ms": 667,
       "content_type": "text/html",
       "error": null
     },
     {
-      "url": "http://nisd.ac.lk/centre-for-gender-studies",
+      "url": "https://nisd.ac.lk/the-training-division/",
       "status_code": 200,
-      "final_url": "http://nisd.ac.lk/centre-for-gender-studies",
+      "final_url": "https://nisd.ac.lk/the-training-division/",
       "redirects": [],
-      "elapsed_ms": 570,
+      "elapsed_ms": 407,
       "content_type": "text/html",
       "error": null
     },
     {
-      "url": "http://nisd.ac.lk/examination-unit/",
+      "url": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
       "status_code": 200,
-      "final_url": "http://nisd.ac.lk/examination-unit/",
+      "final_url": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
       "redirects": [],
-      "elapsed_ms": 410,
+      "elapsed_ms": 1360,
       "content_type": "text/html",
       "error": null
     },
     {
-      "url": "http://nisd.ac.lk/student-welfare-centre/",
+      "url": "https://nisd.ac.lk/the-administration-and-finance-division/",
       "status_code": 200,
-      "final_url": "http://nisd.ac.lk/student-welfare-centre/",
+      "final_url": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "redirects": [],
+      "elapsed_ms": 631,
+      "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "https://nisd.ac.lk/administration-division/",
+      "status_code": 200,
+      "final_url": "https://nisd.ac.lk/administration-division/",
+      "redirects": [],
+      "elapsed_ms": 414,
+      "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "https://nisd.ac.lk/finance-division/",
+      "status_code": 200,
+      "final_url": "https://nisd.ac.lk/finance-division/",
+      "redirects": [],
+      "elapsed_ms": 412,
+      "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "https://nisd.ac.lk/registrars-division/",
+      "status_code": 200,
+      "final_url": "https://nisd.ac.lk/registrars-division/",
+      "redirects": [],
+      "elapsed_ms": 413,
+      "content_type": "text/html",
+      "error": null
+    },
+    {
+      "url": "https://nisd.ac.lk/internal-audit-division/",
+      "status_code": 200,
+      "final_url": "https://nisd.ac.lk/internal-audit-division/",
       "redirects": [],
       "elapsed_ms": 426,
       "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "status_code": 200,
-      "final_url": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "redirects": [],
-      "elapsed_ms": 406,
-      "content_type": "application/pdf",
-      "error": null
-    },
-    {
-      "url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "status_code": 200,
-      "final_url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "redirects": [],
-      "elapsed_ms": 438,
-      "content_type": "application/pdf",
-      "error": null
-    },
-    {
-      "url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "status_code": 200,
-      "final_url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "redirects": [],
-      "elapsed_ms": 900,
-      "content_type": "application/pdf",
-      "error": null
-    },
-    {
-      "url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "status_code": 200,
-      "final_url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "redirects": [],
-      "elapsed_ms": 723,
-      "content_type": "application/pdf",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "http://nisd.ac.lk/",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-01-7b59607da142.html",
-      "sha256": "7b59607da1428a2fe089f55b4a90647646c115b3380c63d788cb0b3ed5b1453d",
-      "bytes": 331176
+      "url": "https://nisd.ac.lk/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-01-03accd370a67.html",
+      "sha256": "03accd370a67885212a89326950c7be349dd96381e21d4428d7101e39eb4f78f",
+      "bytes": 331746
     },
     {
       "url": "http://nisd.ac.lk/",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-02-7b59607da142.html",
-      "sha256": "7b59607da1428a2fe089f55b4a90647646c115b3380c63d788cb0b3ed5b1453d",
-      "bytes": 331176
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-02-03accd370a67.html",
+      "sha256": "03accd370a67885212a89326950c7be349dd96381e21d4428d7101e39eb4f78f",
+      "bytes": 331746
     },
     {
-      "url": "http://nisd.ac.lk/right-to-information",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-03-94df662060d1.html",
-      "sha256": "94df662060d12d70cbd4d16c868dc0271350c8f20d21e472daf4dc83053910ff",
-      "bytes": 129152
+      "url": "https://nisd.ac.lk/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-03-03accd370a67.html",
+      "sha256": "03accd370a67885212a89326950c7be349dd96381e21d4428d7101e39eb4f78f",
+      "bytes": 331746
     },
     {
-      "url": "http://nisd.ac.lk/it-centre/",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-04-30f089988933.html",
-      "sha256": "30f089988933cc5b0ca4edde76d672a27f705681d5e8d8685cb102417aed3d52",
-      "bytes": 173054
+      "url": "http://nisd.ac.lk/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-04-03accd370a67.html",
+      "sha256": "03accd370a67885212a89326950c7be349dd96381e21d4428d7101e39eb4f78f",
+      "bytes": 331746
     },
     {
-      "url": "http://nisd.ac.lk/center-for-quality-assurance/",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-05-4bee1d72c5ff.html",
-      "sha256": "4bee1d72c5ffe9f13f017c8c5b68e547d3066e3229eb4a851be50cf0f75678de",
-      "bytes": 203249
+      "url": "https://nisd.ac.lk/contact/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-05-dd735d5aead8.html",
+      "sha256": "dd735d5aead895aef8b86923af3b28938d72444739d8b16be951e2b4f2e34a83",
+      "bytes": 148557
     },
     {
-      "url": "http://nisd.ac.lk/centre-for-gender-studies",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-06-9139855b6bb4.html",
-      "sha256": "9139855b6bb4683a7e5bb5c5e5071784303385345c192eaa2990ffc5c47d60ba",
-      "bytes": 234065
+      "url": "https://nisd.ac.lk/registrars-division/examination-disciplinary-committee/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-06-8c0ef63319b0.html",
+      "sha256": "8c0ef63319b075441200d413b63026de3b61f28b687ae4428e5cb13496d33bf5",
+      "bytes": 146253
     },
     {
-      "url": "http://nisd.ac.lk/examination-unit/",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-07-aaed9fa1c244.html",
-      "sha256": "aaed9fa1c2449906a7f612dde5b3aaef40c360cd4a66f93b410e6757142a258d",
-      "bytes": 161096
+      "url": "https://nisd.ac.lk/contact-details/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-07-8e7d7ab5b2c6.html",
+      "sha256": "8e7d7ab5b2c6fb7c8ea1821812b82123ecea44e5a797132a5a19348c880d0514",
+      "bytes": 143506
     },
     {
-      "url": "http://nisd.ac.lk/student-welfare-centre/",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-08-cad11726a5e5.html",
-      "sha256": "cad11726a5e534a75b35eb2bbcd9b4bd76a5eee31d27b2a7a3c38a973b601596",
-      "bytes": 165129
+      "url": "https://nisd.ac.lk/the-training-division/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-08-22b24fb4918d.html",
+      "sha256": "22b24fb4918d2cbd74c5a6cdb7cf8be0aacea555f9328a367d5029e6e01e46bb",
+      "bytes": 158965
     },
     {
-      "url": "http://nisd.ac.lk/wp-content/download/by-laws/Distance%20Learning%20By-Law.pdf",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-09-29b163dadcc0.html",
-      "sha256": "29b163dadcc01eb0c7b3f42af4bcf7ffba95a9435df00cb03088628362fa98eb",
-      "bytes": 64187
+      "url": "https://nisd.ac.lk/the-social-policy-research-and-publications-division/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-09-053f16d9796c.html",
+      "sha256": "053f16d9796c525748db54e7c5f33a827bacc960e568856a91a55a2d0c49d5f8",
+      "bytes": 186506
     },
     {
-      "url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Internationalization%20and%20Off-shore%20Academic%20Programs.pdf",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-10-9dcb17abf85e.html",
-      "sha256": "9dcb17abf85e52bd38b04d0748ea8a851618f20b9e7cba567bafda8db99e3a62",
-      "bytes": 43123
+      "url": "https://nisd.ac.lk/the-administration-and-finance-division/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-10-adc8c8051021.html",
+      "sha256": "adc8c8051021201488cb1a5830124c4d99cfa1cf9451a30f971461c8d35cb5dc",
+      "bytes": 125445
     },
     {
-      "url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Social%20Media.pdf",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-11-6a05cc05633f.html",
-      "sha256": "6a05cc05633f10990baea272bab6532a32329287e28c434ff79e039c3ea52e23",
-      "bytes": 412733
+      "url": "https://nisd.ac.lk/administration-division/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-11-7e05776c1568.html",
+      "sha256": "7e05776c1568a893e2ec5ed5bc62a5c2dbc8d35f3e2bcd7992e1552797756807",
+      "bytes": 168091
     },
     {
-      "url": "http://nisd.ac.lk/wp-content/download/policies/Policy%20on%20Web%20Content%20Management.pdf",
-      "path": "audit.output/nisd.ac.lk/20261123.0633/snapshots/page-12-2f8ded9e8edb.html",
-      "sha256": "2f8ded9e8edb984a63958b4924fb699bcf49e52d181dabfca8ef64d47c4ce25e",
-      "bytes": 324229
+      "url": "https://nisd.ac.lk/finance-division/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-12-ad7cad1ffc5e.html",
+      "sha256": "ad7cad1ffc5e7a8a28ca2efeff9992c141a1b90ca1002df0ce4e253d5c8d4c70",
+      "bytes": 169039
+    },
+    {
+      "url": "https://nisd.ac.lk/registrars-division/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-13-3fc9947b55b2.html",
+      "sha256": "3fc9947b55b2346b60bdb2d372c881608bd902660d0a7488328bf085dba3f87a",
+      "bytes": 172918
+    },
+    {
+      "url": "https://nisd.ac.lk/internal-audit-division/",
+      "path": "audit.output/nisd.ac.lk/20261124.0635/snapshots/page-14-ac8bc7652843.html",
+      "sha256": "ac8bc76528433943cec7abe505b9ee0263fae6524b9bb9dd6e2cde3ab63d56e3",
+      "bytes": 149896
     }
   ],
   "reviewer_decisions": [],
@@ -4108,8 +2580,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "fail",
-      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nisd.ac.lk'. (_ssl.c:1011); TLS certificate does not match the hostname",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -4157,38 +2629,100 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "fail",
-          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'nisd.ac.lk'. (_ssl.c:1011)"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "TLS expiry check did not run"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "fail",
-          "reason": "TLS certificate does not match the hostname"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Liyanagemulla, Seeduwa, Sri Lanka Contact info Telephone :+94 112 882 506 / 07 Fax: +94 112 882 502 Mail: info@nisd.ac.l; Phone: 0.59 15.59 7 17 (41 phone numbers found); Email: info@nisd.ac.lk (23 email addresses found); Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Liyanagemulla, Seeduwa, Sri Lanka Contact info Telephone :+94 112 882 506 / 07 Fax: +94 112 882 502 Mail: info@nisd.ac.l"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0.59 15.59 7 17 (41 phone numbers found); Email: info@nisd.ac.lk (23 email addresses found)"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing eligibility criteria evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing eligibility criteria evidence found"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published required documents: supporting documents"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: gazette"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -4208,7 +2742,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.121",
+    "egress_ip": "57.151.126.90",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

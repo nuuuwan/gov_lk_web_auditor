@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-11-23 06:02
-- Overall result: 🔴 Level 1
-- Vantage: 3.41.210.121 (US, github-actions)
+- Completed: 2026-11-24 05:59
+- Overall result: 🟠 Level 2
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No passing postal address evidence found
+Published postal address: human-elephant conflict within their respective Areas of Responsibility. Furthermore, the conference laid a strong found; Phone: +94 11 243 2682 - (17 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 207 6967 (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| postal_address | ✅ | Published postal address: human-elephant conflict within their respective Areas of Responsibility. Furthermore, the conference laid a strong found |
+| reachable_contacts | ✅ | Phone: +94 11 243 2682 - (17 phone numbers found); Email: info@army.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing required documents evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ✅ | Published legal basis: regulations |
+| processing_time | ✅ | Published processing time: 9 DAYS |
+| downloadable_form | ✅ | Published downloadable form: https://www.army.lk/sites/default/files/2026-11/di_97_applications_20261120.pdf |
+| published_update_date | ✅ | Published published update date: 2026-11-21 |

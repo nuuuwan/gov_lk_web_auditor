@@ -1,8 +1,8 @@
 # Website Audit: https://www.slab.lk/
 
-- Completed: 2026-11-23 06:39
+- Completed: 2026-11-24 06:41
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,26 +33,26 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.44, Dedicated Economic Centre, Kirimandala Mawatha, Narahenpita, Sri Lanka Phone: +94 11 2689157 Email: [email protec; Phone: 0694482744 (39 phone numbers found); Email: info@slab.lk; Published named responsibility: director
+Published postal address: No.44, Dedicated Economic Centre, Kirimandala Mawatha, Narahenpita, Sri Lanka Phone: +94 11 2689157 Email: [email protec; Phone: +94112176800 (39 phone numbers found); Email: info@slab.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.44, Dedicated Economic Centre, Kirimandala Mawatha, Narahenpita, Sri Lanka Phone: +94 11 2689157 Email: [email protec |
-| reachable_contacts | ✅ | Phone: 0694482744 (39 phone numbers found); Email: info@slab.lk |
+| reachable_contacts | ✅ | Phone: +94112176800 (39 phone numbers found); Email: info@slab.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing fees and payment evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing fees and payment evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: supporting documents |
 | fees_and_payment | ❓ | No passing fees and payment evidence found |
-| legal_basis | ❓ | No passing legal basis evidence found |
+| legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 20 November 2026 |
+| published_update_date | ✅ | Published published update date: 23 November 2026 |

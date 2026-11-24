@@ -1,8 +1,8 @@
 # Website Audit: https://www.police.lk/
 
-- Completed: 2026-11-23 06:33
+- Completed: 2026-11-24 06:35
 - Overall result: 🔴 Level 1
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

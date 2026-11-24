@@ -1,8 +1,8 @@
 # Website Audit: https://wbb.gov.lk/
 
-- Completed: 2026-11-23 06:16
-- Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Completed: 2026-11-24 06:16
+- Overall result: 🔴 Level 1
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the implementation of aswesuma and other welfare benefits. The discussion focused on current issues encountered and pote; Phone: +94 714479793; Email: info@iwms.wbb.gov.lk (15 email addresses found); Published named responsibility: division
+No phone evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: the implementation of aswesuma and other welfare benefits. The discussion focused on current issues encountered and pote |
-| reachable_contacts | ✅ | Phone: +94 714479793; Email: info@iwms.wbb.gov.lk (15 email addresses found) |
+| reachable_contacts | ❓ | No phone evidence found |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing required documents evidence found; No passing processing time evidence found; No passing published update date evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs 04 |
-| legal_basis | ✅ | Published legal basis: circular |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ✅ | Published downloadable form: http://wbb.gov.lk/backend/assets/publications/web/20261030/01 හිමිකම්පෑම්, විරෝධතා ඉදිරිපත් කිරීමේ අයදුම්පත්_රය Final.pdf |
-| published_update_date | ❓ | No passing published update date evidence found |
+Not run because 🟠 Level 2 did not pass

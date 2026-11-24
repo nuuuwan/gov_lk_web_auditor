@@ -1,8 +1,8 @@
 # Website Audit: https://peoplesinsurance.lk/
 
-- Completed: 2026-11-23 06:12
+- Completed: 2026-11-24 06:11
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: * Phone Number * Do You Have An On Going Lease? * Select One Yes No Are You An Existing Customer? * Select One Yes No Ve; Phone: +94112126126 (40 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found); Published named responsibility: director
+Published postal address: * Phone Number * Do You Have An On Going Lease? * Select One Yes No Are You An Existing Customer? * Select One Yes No Ve; Phone: +94112126126 (39 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: * Phone Number * Do You Have An On Going Lease? * Select One Yes No Are You An Existing Customer? * Select One Yes No Ve |
-| reachable_contacts | ✅ | Phone: +94112126126 (40 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94112126126 (39 phone numbers found); Email: pilassist@peoplesinsurance.lk (2 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing required documents evidence found; No passing legal basis evidence fo
 | --- | --- | --- |
 | eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: Rs. 0 |
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 24 hours |
 | downloadable_form | ❓ | No passing downloadable form evidence found |

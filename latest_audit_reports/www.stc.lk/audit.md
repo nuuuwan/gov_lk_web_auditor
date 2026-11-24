@@ -1,8 +1,8 @@
 # Website Audit: https://www.stc.lk/
 
-- Completed: 2026-11-23 06:39
-- Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Completed: 2026-11-24 06:41
+- Overall result: 🔴 Level 1
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St; Phone: 065 22 29 275 (67 phone numbers found); Email: stcjaffna.oic23@gmail.com (18 email addresses found); Published named responsibility: officer in charge
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No-100, Nawam Mawatha, Colombo 02, Sri Lanka. Our Branch Network ANURADHAPURA Showroom No.561/B/38, 4th Lane, New Bus St |
-| reachable_contacts | ✅ | Phone: 065 22 29 275 (67 phone numbers found); Email: stcjaffna.oic23@gmail.com (18 email addresses found) |
+| reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: rs6 |
-| legal_basis | ✅ | Published legal basis: gazette |
-| processing_time | ❓ | No passing processing time evidence found |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 20 November 2026 |
+Not run because 🟠 Level 2 did not pass

@@ -1,24 +1,23 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "b4c982dc-d76a-44cf-8b89-02d915bae8aa",
+  "audit_id": "cd8f5e0e-311b-4e33-bee6-5d7cb1a8a673",
   "url": "https://www.transport.gov.lk/",
   "normalized_url": "https://www.transport.gov.lk/",
-  "started_at": "2026-11-23T06:42:45.728758+05:30",
-  "completed_at": "2026-11-23T06:43:00.291217+05:30",
+  "started_at": "2026-11-24T06:47:00.437935+05:30",
+  "completed_at": "2026-11-24T06:49:12.498883+05:30",
   "result": {
-    "status": "pass",
-    "confidence": 1.0,
+    "status": "inconclusive",
+    "confidence": 0.5,
     "reasons": [
-      "dns_resolves: Public DNS resolved",
-      "domain_not_parked: No parked-domain marker found",
-      "site_not_defaced: No defacement marker found",
-      "content_relevant: No unrelated-content marker found",
-      "hosting_configured: No generic-hosting marker found",
-      "http_available: HTTP probes did not all fail",
-      "redirect_related: No unrelated redirect found",
-      "tls_browser_trusted: No browser-blocking TLS error found",
-      "tls_not_expired: TLS certificate valid",
-      "tls_hostname_matches: TLS certificate valid"
+      "domain_not_parked: No usable page was inspected",
+      "site_not_defaced: No usable page was inspected",
+      "content_relevant: No usable page was inspected",
+      "hosting_configured: No usable page was inspected",
+      "http_available: An HTTP probe was transient",
+      "redirect_related: No redirect result was available",
+      "tls_browser_trusted: Browser TLS check did not complete",
+      "tls_not_expired: timed out",
+      "tls_hostname_matches: timed out"
     ]
   },
   "evidence": [
@@ -26,1212 +25,47 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-23T06:42:46.003531+05:30"
+      "observed_at": "2026-11-24T06:47:00.901577+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-23T06:42:46.003552+05:30"
+      "observed_at": "2026-11-24T06:47:00.901597+05:30"
     },
     {
       "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-23T06:42:46.009130+05:30"
+      "status": "error",
+      "detail": "timed out",
+      "observed_at": "2026-11-24T06:47:11.147405+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.transport.gov.lk/",
+      "status": "error",
+      "detail": "Probe 1: timed out",
       "source": "https://www.transport.gov.lk/",
-      "observed_at": "2026-11-23T06:43:00.085425+05:30"
+      "observed_at": "2026-11-24T06:49:12.498638+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 2: HTTP 200 at http://www.transport.gov.lk/",
+      "status": "error",
+      "detail": "Probe 2: timed out",
       "source": "http://www.transport.gov.lk/",
-      "observed_at": "2026-11-23T06:43:00.085446+05:30"
+      "observed_at": "2026-11-24T06:49:12.498663+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.transport.gov.lk/",
+      "status": "error",
+      "detail": "Probe 3: timed out",
       "source": "https://www.transport.gov.lk/",
-      "observed_at": "2026-11-23T06:43:00.085449+05:30"
+      "observed_at": "2026-11-24T06:49:12.498669+05:30"
     },
     {
       "check": "http",
-      "status": "pass",
-      "detail": "Probe 4: HTTP 200 at http://www.transport.gov.lk/",
+      "status": "error",
+      "detail": "Probe 4: timed out",
       "source": "http://www.transport.gov.lk/",
-      "observed_at": "2026-11-23T06:43:00.085451+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 5: HTTP 200 at https://www.transport.gov.lk/web/index.php?lang=si",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "observed_at": "2026-11-23T06:43:00.085453+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 6: HTTP 200 at https://www.transport.gov.lk/web/index.php?lang=ta",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "observed_at": "2026-11-23T06:43:00.085455+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 7: HTTP 200 at https://www.transport.gov.lk/web/index.php?lang=en",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "observed_at": "2026-11-23T06:43:00.085457+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 8: HTTP 200 at http://www.transport.gov.lk/web/index.php?lang=si",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "observed_at": "2026-11-23T06:43:00.085458+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 9: HTTP 200 at http://www.transport.gov.lk/web/index.php?lang=ta",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "observed_at": "2026-11-23T06:43:00.085460+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 10: HTTP 200 at http://www.transport.gov.lk/web/index.php?lang=en",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "observed_at": "2026-11-23T06:43:00.085462+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 11: HTTP 200 at https://www.transport.gov.lk/web/index.php?lang=en",
-      "source": "https://www.transport.gov.lk/web/index.php",
-      "observed_at": "2026-11-23T06:43:00.085464+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 12: HTTP 200 at https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "observed_at": "2026-11-23T06:43:00.085466+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 13: HTTP 200 at https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "observed_at": "2026-11-23T06:43:00.085468+05:30"
-    },
-    {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 14: HTTP 200 at https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "observed_at": "2026-11-23T06:43:00.085469+05:30"
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112271037",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0112271037"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2271037 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "011-2271037 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112271037",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112271037"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2271037 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "011-2271037 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112187200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112869628 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112869628 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112050522 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112050522 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "“Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112271037",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0112271037"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2271037 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "011-2271037 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112271037",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112271037"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2271037 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "011-2271037 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187200 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112187200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112869628 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112869628 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112050522 ",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112050522 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "“Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112187200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112187200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112869628 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112869628 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112050522 ",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "0112050522 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "postal_address",
-      "status": "pass",
-      "detail": "Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "“Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path"
-      }
-    },
-    {
-      "check": "named_responsibility",
-      "status": "pass",
-      "detail": "Published named responsibility: division",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "division"
-      }
-    },
-    {
-      "check": "legal_basis",
-      "status": "pass",
-      "detail": "Published legal basis: regulations",
-      "source": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "data": {
-        "value": "regulations"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0718757654 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "0718757654 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112271037",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "0112271037"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 011-2271037 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "011-2271037 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: iaucomplaints.mothub@gmail.com",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "iaucomplaints.mothub@gmail.com"
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0724079508 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "0724079508 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "0112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0714033788 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "0714033788 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0773525177 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "0773525177 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "+94 112 187 201 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 226 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "+94 112 187 226 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0779571520 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "0779571520 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 187 200 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "+94 112 187 200 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: +94 112 865 093 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "+94 112 865 093 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0719593829 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "0719593829 "
-      }
-    },
-    {
-      "check": "phone",
-      "status": "pass",
-      "detail": "Published phone: 0112 187 201 ",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "0112 187 201 "
-      }
-    },
-    {
-      "check": "email",
-      "status": "pass",
-      "detail": "Published email: info@transport.gov.lk",
-      "source": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "data": {
-        "value": "info@transport.gov.lk"
-      }
-    },
-    {
-      "check": "page_text",
-      "status": "pass",
-      "detail": "Substantive page content: 6780 visible characters across 14 pages",
-      "source": "https://www.transport.gov.lk/"
+      "observed_at": "2026-11-24T06:49:12.498673+05:30"
     }
   ],
   "observations": [
@@ -1251,226 +85,49 @@
     },
     {
       "host": "www.transport.gov.lk",
-      "status": "valid",
-      "expires_at": "2027-01-04T00:41:01+05:30",
-      "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "status": "error",
+      "expires_at": null,
+      "hostname_valid": null,
+      "detail": "timed out"
     },
     {
       "url": "https://www.transport.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 13,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.transport.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.transport.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 9,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "https://www.transport.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 11,
-      "content_type": "text/html",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     },
     {
       "url": "http://www.transport.gov.lk/",
-      "status_code": 200,
-      "final_url": "http://www.transport.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 8,
-      "content_type": "text/html",
-      "error": null
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 212,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "redirects": [],
-      "elapsed_ms": 191,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "redirects": [],
-      "elapsed_ms": 27,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "status_code": 200,
-      "final_url": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "redirects": [],
-      "elapsed_ms": 215,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "status_code": 200,
-      "final_url": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "redirects": [],
-      "elapsed_ms": 182,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "status_code": 200,
-      "final_url": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "redirects": [],
-      "elapsed_ms": 165,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "redirects": [
-        "https://www.transport.gov.lk/web/index.php?lang=en"
-      ],
-      "elapsed_ms": 30,
-      "content_type": "text/html; charset=utf-8",
-      "error": null
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "redirects": [],
-      "elapsed_ms": 191,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "redirects": [],
-      "elapsed_ms": 71,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "status_code": 200,
-      "final_url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "redirects": [],
-      "elapsed_ms": 61,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "timed out"
     }
   ],
-  "snapshots": [
-    {
-      "url": "https://www.transport.gov.lk/",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-01-ba0c45150f88.html",
-      "sha256": "ba0c45150f88b339d17657fb50baa83c37f78b9df8e320d9b6af7953062c53ad",
-      "bytes": 4542
-    },
-    {
-      "url": "http://www.transport.gov.lk/",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-02-ba0c45150f88.html",
-      "sha256": "ba0c45150f88b339d17657fb50baa83c37f78b9df8e320d9b6af7953062c53ad",
-      "bytes": 4542
-    },
-    {
-      "url": "https://www.transport.gov.lk/",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-03-ba0c45150f88.html",
-      "sha256": "ba0c45150f88b339d17657fb50baa83c37f78b9df8e320d9b6af7953062c53ad",
-      "bytes": 4542
-    },
-    {
-      "url": "http://www.transport.gov.lk/",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-04-ba0c45150f88.html",
-      "sha256": "ba0c45150f88b339d17657fb50baa83c37f78b9df8e320d9b6af7953062c53ad",
-      "bytes": 4542
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?lang=si",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-05-2ad2aa3c1a2b.html",
-      "sha256": "2ad2aa3c1a2b36943028a283d03c874a39c3e476476d156d5a624bb8d05e379d",
-      "bytes": 96268
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?lang=ta",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-06-318b92d2b811.html",
-      "sha256": "318b92d2b8115d2b2fd8540c35035828115b75252241ce1f838f1e91b78c8487",
-      "bytes": 94428
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-07-35c700261435.html",
-      "sha256": "35c70026143566186dd585a46458aecce4d4a59634fa6085ed9b0440530229c1",
-      "bytes": 88059
-    },
-    {
-      "url": "http://www.transport.gov.lk/web/index.php?lang=si",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-08-745be18a536c.html",
-      "sha256": "745be18a536c5d019bc28153a8bc8b3b36a3105842f0985706caa6d13e461525",
-      "bytes": 96255
-    },
-    {
-      "url": "http://www.transport.gov.lk/web/index.php?lang=ta",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-09-3a8407e0dce6.html",
-      "sha256": "3a8407e0dce6cd3d047a764987aa89de70145f23ad8e0dec82e06fd4d96b4436",
-      "bytes": 94415
-    },
-    {
-      "url": "http://www.transport.gov.lk/web/index.php?lang=en",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-10-4b1f552110c5.html",
-      "sha256": "4b1f552110c501ecf2b2c9870834b1731572257261d682cfe937bdd78ddcac9f",
-      "bytes": 88047
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?lang=en",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-11-35c700261435.html",
-      "sha256": "35c70026143566186dd585a46458aecce4d4a59634fa6085ed9b0440530229c1",
-      "bytes": 88059
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=featured&Itemid=101&lang=si",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-12-f0cf2379bc01.html",
-      "sha256": "f0cf2379bc01d0401912ad064d45516cc98ff054ea300c7ee8ca731b2bbb67eb",
-      "bytes": 96700
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=7&Itemid=119&lang=si",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-13-84a1fd55b00b.html",
-      "sha256": "84a1fd55b00b3051b2412e2d31f101c776f1fbb661e3c691f35a5176326e73a6",
-      "bytes": 53866
-    },
-    {
-      "url": "https://www.transport.gov.lk/web/index.php?option=com_content&view=article&id=8&Itemid=121&lang=si",
-      "path": "audit.output/www.transport.gov.lk/20261123.0642/snapshots/page-14-3c96d5aed45f.html",
-      "sha256": "3c96d5aed45f44149978780af28a2a516f5226a2cfa983a47ca19a839615fdde",
-      "bytes": 48274
-    }
-  ],
+  "snapshots": [],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -1484,8 +141,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "pass",
-      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTP probes did not all fail; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
+      "status": "inconclusive",
+      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
       "executed": true,
       "checks": [
         {
@@ -1497,136 +154,74 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "pass",
-          "reason": "No parked-domain marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "pass",
-          "reason": "No defacement marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated-content marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "pass",
-          "reason": "No generic-hosting marker found"
+          "status": "inconclusive",
+          "reason": "No usable page was inspected"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "pass",
-          "reason": "HTTP probes did not all fail"
+          "status": "inconclusive",
+          "reason": "An HTTP probe was transient"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "pass",
-          "reason": "No unrelated redirect found"
+          "status": "inconclusive",
+          "reason": "No redirect result was available"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "inconclusive",
+          "reason": "Browser TLS check did not complete"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "timed out"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "pass",
-      "reason": "Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path; Phone: +94 112 187 201 (17 phone numbers found); Email: iaucomplaints.mothub@gmail.com (2 email addresses found); Published named responsibility: division",
-      "executed": true,
-      "checks": [
-        {
-          "name": "postal_address",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published postal address: “Maganeguma Mahamedura”, 7th Floor, Denzil Kobbekaduwa Mawatha, Koswatta, Battaramulla Head of IAU Mrs. Thushara D. Path"
-        },
-        {
-          "name": "reachable_contacts",
-          "level": 2,
-          "status": "pass",
-          "reason": "Phone: +94 112 187 201 (17 phone numbers found); Email: iaucomplaints.mothub@gmail.com (2 email addresses found)"
-        },
-        {
-          "name": "named_responsibility",
-          "level": 2,
-          "status": "pass",
-          "reason": "Published named responsibility: division"
-        }
-      ]
+      "status": "inconclusive",
+      "reason": "Not run because Level 1 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "No passing eligibility criteria evidence found; No passing required documents evidence found; No passing fees and payment evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
-      "executed": true,
-      "checks": [
-        {
-          "name": "eligibility_criteria",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing eligibility criteria evidence found"
-        },
-        {
-          "name": "required_documents",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing required documents evidence found"
-        },
-        {
-          "name": "fees_and_payment",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing fees and payment evidence found"
-        },
-        {
-          "name": "legal_basis",
-          "level": 3,
-          "status": "pass",
-          "reason": "Published legal basis: regulations"
-        },
-        {
-          "name": "processing_time",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing processing time evidence found"
-        },
-        {
-          "name": "downloadable_form",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing downloadable form evidence found"
-        },
-        {
-          "name": "published_update_date",
-          "level": 3,
-          "status": "inconclusive",
-          "reason": "No passing published update date evidence found"
-        }
-      ]
+      "reason": "Not run because Level 2 did not pass",
+      "executed": false,
+      "checks": []
     },
     {
       "level": 4,
@@ -1646,7 +241,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "3.41.210.121",
+    "egress_ip": "57.151.126.90",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

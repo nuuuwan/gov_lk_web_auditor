@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-11-23 06:42
+- Completed: 2026-11-24 06:46
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these ; Phone: +94112446183 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
+Published postal address: those issues.\u003cbr\u003e\u003cbr\u003e\r\nHowever,it has been observed that the news spread from some media channels ; Phone: +94 112 446 183 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: emergency disaster situations in the country. He assured that the government would take steps to promptly rectify these  |
-| reachable_contacts | ✅ | Phone: +94112446183 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
+| postal_address | ✅ | Published postal address: those issues.\u003cbr\u003e\u003cbr\u003e\r\nHowever,it has been observed that the news spread from some media channels  |
+| reachable_contacts | ✅ | Phone: +94 112 446 183 (123 phone numbers found); Email: info@fisheries.gov.lk (47 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 22 November 2026 |
+| published_update_date | ✅ | Published published update date: 23 November 2026 |

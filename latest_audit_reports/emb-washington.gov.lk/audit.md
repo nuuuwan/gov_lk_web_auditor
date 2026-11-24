@@ -1,8 +1,8 @@
 # Website Audit: https://emb-washington.gov.lk/
 
-- Completed: 2026-11-23 06:21
+- Completed: 2026-11-24 06:21
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 0976614638 (34 phone numbers found); Email: consular.washington@mfa.gov.lk (3 email addresses found); Published named responsibility: division
+Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 | +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle; Phone: 0061-5890-41 (34 phone numbers found); Email: consular.washington@mfa.gov.lk (3 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: 3025 Whitehaven Street NW, Washington D.C. 20008 Tel: +1 202 483 4025 \| +1 202 483 4026 Fax: +1 202 232 2329 Emails: sle |
-| reachable_contacts | ✅ | Phone: 0976614638 (34 phone numbers found); Email: consular.washington@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0061-5890-41 (34 phone numbers found); Email: consular.washington@mfa.gov.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

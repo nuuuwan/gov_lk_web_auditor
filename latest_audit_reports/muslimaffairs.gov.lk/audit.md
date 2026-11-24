@@ -1,8 +1,8 @@
 # Website Audit: https://muslimaffairs.gov.lk/
 
-- Completed: 2026-11-23 06:00
+- Completed: 2026-11-24 05:57
 - Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat; Phone: 0.0 - 26-03-2024 (10 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
+Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat; Phone: 0.800000000 (10 phone numbers found); Email: Published email:; Published named responsibility: officer in charge
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: was delivered by Ash Sheikh Nawwaf Ahmad Al Hunaiyn, who shared valuable insights into the Islamic principles of moderat |
-| reachable_contacts | ✅ | Phone: 0.0 - 26-03-2024 (10 phone numbers found); Email: Published email: |
+| reachable_contacts | ✅ | Phone: 0.800000000 (10 phone numbers found); Email: Published email: |
 | named_responsibility | ✅ | Published named responsibility: officer in charge |
 
 ## 🟢 Level 3: ❓

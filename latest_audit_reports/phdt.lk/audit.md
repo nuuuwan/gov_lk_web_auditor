@@ -1,8 +1,8 @@
 # Website Audit: https://phdt.lk/
 
-- Completed: 2026-11-23 06:30
-- Overall result: 🟠 Level 2
-- Vantage: 3.41.210.121 (US, github-actions)
+- Completed: 2026-11-24 06:32
+- Overall result: 🔴 Level 1
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,30 +29,20 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ✅
+## 🟠 Level 2: ❓
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: and an overview of the objectives by Dr. Sarath Amunugama, Director – Health, PHDT. The ILO Country Director, Ms. Joni S; Phone: (+94) 112 887 476 (5 phone numbers found); Email: info@phdt.lk; Published named responsibility: director
+No email evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: and an overview of the objectives by Dr. Sarath Amunugama, Director – Health, PHDT. The ILO Country Director, Ms. Joni S |
-| reachable_contacts | ✅ | Phone: (+94) 112 887 476 (5 phone numbers found); Email: info@phdt.lk |
+| reachable_contacts | ❓ | No email evidence found |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing legal basis evidence found; No passing downloadable form evidence found
-
-| Test | Result | Details |
-| --- | --- | --- |
-| eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
-| required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: free of charge |
-| legal_basis | ❓ | No passing legal basis evidence found |
-| processing_time | ✅ | Published processing time: 03 Days |
-| downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 3 September 2026 |
+Not run because 🟠 Level 2 did not pass

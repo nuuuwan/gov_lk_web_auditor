@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-23 06:03
+- Completed: 2026-11-24 06:00
 - Overall result: ⚫ Level 0
-- Vantage: 3.41.210.121 (US, github-actions)
+- Vantage: 57.151.126.90 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -23,7 +23,7 @@ Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate
 | site_not_defaced | ❓ | No usable page was inspected |
 | content_relevant | ❓ | No usable page was inspected |
 | hosting_configured | ❓ | No usable page was inspected |
-| http_available | ❓ | HTTP checks did not run |
+| http_available | ❓ | An HTTP probe was transient |
 | redirect_related | ❓ | No redirect result was available |
 | tls_browser_trusted | ❌ | Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011) |
 | tls_not_expired | ❌ | TLS certificate has expired |
