@@ -1,8 +1,8 @@
 # Website Audit: https://emb-hanoi.gov.lk/
 
-- Completed: 2026-11-24 06:19
+- Completed: 2026-11-26 06:21
 - Overall result: 🟠 Level 2
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0933 296 202 (13 phone numbers found); Email: slemb.hanoi@mfa.gov.lk (3 email addresses found); Published named responsibility: department
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid; Phone: 0933296202 (12 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"address_line_2_placeholder\":\"Address Line 2\",\"valid |
-| reachable_contacts | ✅ | Phone: 0933 296 202 (13 phone numbers found); Email: slemb.hanoi@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0933296202 (12 phone numbers found); Email: aluwiharemargo@gmail.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing legal basis evidence found; No passing downloadable form evidence found
+No passing legal basis evidence found; No passing downloadable form evidence found; No passing published update date evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -55,4 +55,4 @@ No passing legal basis evidence found; No passing downloadable form evidence fou
 | legal_basis | ❓ | No passing legal basis evidence found |
 | processing_time | ✅ | Published processing time: 10 months |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 11/04/2026 |
+| published_update_date | ❓ | No passing published update date evidence found |

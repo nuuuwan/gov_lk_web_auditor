@@ -1,8 +1,8 @@
 # Website Audit: https://ntnsp.lk/
 
-- Completed: 2026-11-24 06:09
+- Completed: 2026-11-26 06:12
 - Overall result: 🔴 Level 1
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

@@ -1,8 +1,8 @@
 # Website Audit: http://gwu.ac.lk/
 
-- Completed: 2026-11-24 06:03
+- Completed: 2026-11-26 06:05
 - Overall result: 🔴 Level 1
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: 0931284640 . (26 phone numbers found); Email: librarian@gwu.ac.lk |
+| reachable_contacts | ✅ | Phone: 0500068894 (27 phone numbers found); Email: librarian@gwu.ac.lk |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

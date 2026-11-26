@@ -1,8 +1,8 @@
 # Website Audit: https://emb-ankara.gov.lk/
 
-- Completed: 2026-11-24 06:20
+- Completed: 2026-11-26 06:22
 - Overall result: 🟠 Level 2
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3; Phone: 0-4664-9841-1 (23 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found); Published named responsibility: director
+Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3; Phone: +903124271023 (20 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Gaziosmanpaşa, Kırlangıç Sk. No:41, Çankaya, Ankara, 06700 Türkiye Fax: +90 312 427 10 26 General Contact Numbers: +90 3 |
-| reachable_contacts | ✅ | Phone: 0-4664-9841-1 (23 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: director |
+| reachable_contacts | ✅ | Phone: +903124271023 (20 phone numbers found); Email: slemb.ankara@mfa.gov.lk (2 email addresses found) |
+| named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓
 

@@ -1,8 +1,8 @@
 # Website Audit: http://www.pgia.ac.lk/
 
-- Completed: 2026-11-24 06:04
+- Completed: 2026-11-26 06:06
 - Overall result: 🟠 Level 2
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Postgraduate Institute of Agriculture P.O.Box 55, Old Galaha Road, Peradeniya, Sri Lanka. Contacts : Telephone : +94 81 ; Phone: +94 81 2388219 (715 phone numbers found); Email: info@pgia.ac.lk (15 email addresses found); Published named responsibility: director
+Published postal address: Postgraduate Institute of Agriculture P.O.Box 55, Old Galaha Road, Peradeniya, Sri Lanka. Contacts : Telephone : +94 81 ; Phone: 0707395573 (715 phone numbers found); Email: info@pgia.ac.lk (15 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Postgraduate Institute of Agriculture P.O.Box 55, Old Galaha Road, Peradeniya, Sri Lanka. Contacts : Telephone : +94 81  |
-| reachable_contacts | ✅ | Phone: +94 81 2388219 (715 phone numbers found); Email: info@pgia.ac.lk (15 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0707395573 (715 phone numbers found); Email: info@pgia.ac.lk (15 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

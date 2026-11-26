@@ -1,8 +1,8 @@
 # Website Audit: https://emb-riyadh.gov.lk/
 
-- Completed: 2026-11-24 06:23
+- Completed: 2026-11-26 06:24
 - Overall result: 🟠 Level 2
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Line 2\",\"copied_button\":\"Copied!\",\"no_button\":\"No\",\"appointment_details_page_heading\":\"Appointment Details\"; Phone: 0772820333 (18 phone numbers found); Email: john@example.com (8 email addresses found); Published named responsibility: director
+Published postal address: Line 2\",\"copied_button\":\"Copied!\",\"no_button\":\"No\",\"appointment_details_page_heading\":\"Appointment Details\"; Phone: +966115189333 (18 phone numbers found); Email: slemb.riyadh@mfa.gov.lk (8 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Line 2\",\"copied_button\":\"Copied!\",\"no_button\":\"No\",\"appointment_details_page_heading\":\"Appointment Details\" |
-| reachable_contacts | ✅ | Phone: 0772820333 (18 phone numbers found); Email: john@example.com (8 email addresses found) |
+| reachable_contacts | ✅ | Phone: +966115189333 (18 phone numbers found); Email: slemb.riyadh@mfa.gov.lk (8 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

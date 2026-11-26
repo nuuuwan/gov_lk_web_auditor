@@ -1,8 +1,8 @@
 # Website Audit: https://slndc.gov.lk/
 
-- Completed: 2026-11-24 06:28
+- Completed: 2026-11-26 06:30
 - Overall result: 🔴 Level 1
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No email evidence found
+No email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: will not be published. Required fields are marked * Comment Name * Email * Website Save my name, email, and website in t |
 | reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ✅ | Published named responsibility: director |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 

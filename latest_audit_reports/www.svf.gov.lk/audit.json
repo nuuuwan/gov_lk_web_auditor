@@ -1,18 +1,16 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "8c6f9248-9809-415f-bdc5-bc868aa0666d",
+  "audit_id": "1436f494-d067-4c16-af6f-4d0cb4985694",
   "url": "https://www.svf.gov.lk/",
   "normalized_url": "https://www.svf.gov.lk/",
-  "started_at": "2026-11-24T06:31:30.371911+05:30",
-  "completed_at": "2026-11-24T06:31:34.670038+05:30",
+  "started_at": "2026-11-26T06:32:41.543907+05:30",
+  "completed_at": "2026-11-26T06:32:45.498449+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "fail",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200",
-      "site_not_defaced: Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200",
-      "content_relevant: Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200",
-      "hosting_configured: Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200"
+      "tls_browser_trusted: Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)",
+      "tls_not_expired: TLS certificate has expired"
     ]
   },
   "evidence": [
@@ -20,52 +18,52 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-24T06:31:30.866386+05:30"
+      "observed_at": "2026-11-26T06:32:41.895151+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-24T06:31:30.866404+05:30"
+      "observed_at": "2026-11-26T06:32:41.895173+05:30"
     },
     {
-      "check": "tls",
-      "status": "pass",
-      "detail": "TLS certificate valid",
-      "observed_at": "2026-11-24T06:31:31.124668+05:30"
+      "check": "tls_expired",
+      "status": "fail",
+      "detail": "TLS certificate has expired",
+      "observed_at": "2026-11-26T06:32:42.010314+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 1: HTTP 200 at https://www.svf.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)",
       "source": "https://www.svf.gov.lk/",
-      "observed_at": "2026-11-24T06:31:34.667803+05:30"
+      "observed_at": "2026-11-26T06:32:45.368026+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 2: HTTP 200 at http://www.svf.gov.lk/",
       "source": "http://www.svf.gov.lk/",
-      "observed_at": "2026-11-24T06:31:34.667822+05:30"
+      "observed_at": "2026-11-26T06:32:45.368048+05:30"
     },
     {
-      "check": "http",
-      "status": "pass",
-      "detail": "Probe 3: HTTP 200 at https://www.svf.gov.lk/",
+      "check": "tls_browser_error",
+      "status": "fail",
+      "detail": "Probe 3: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)",
       "source": "https://www.svf.gov.lk/",
-      "observed_at": "2026-11-24T06:31:34.667826+05:30"
+      "observed_at": "2026-11-26T06:32:45.368052+05:30"
     },
     {
       "check": "http",
       "status": "pass",
       "detail": "Probe 4: HTTP 200 at http://www.svf.gov.lk/",
       "source": "http://www.svf.gov.lk/",
-      "observed_at": "2026-11-24T06:31:34.667829+05:30"
+      "observed_at": "2026-11-26T06:32:45.368055+05:30"
     },
     {
       "check": "page_text",
       "status": "fail",
-      "detail": "Only 39 visible characters across 4 pages; below substance threshold 200",
+      "detail": "Only 39 visible characters across 2 pages; below substance threshold 200",
       "source": "https://www.svf.gov.lk/"
     }
   ],
@@ -86,70 +84,58 @@
     },
     {
       "host": "www.svf.gov.lk",
-      "status": "valid",
+      "status": "expired",
       "expires_at": "2026-11-25T04:22:25+05:30",
       "hostname_valid": true,
-      "detail": "TLS certificate valid"
+      "detail": "TLS certificate has expired"
     },
     {
       "url": "https://www.svf.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.svf.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 400,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)"
     },
     {
       "url": "http://www.svf.gov.lk/",
       "status_code": 200,
       "final_url": "http://www.svf.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 296,
+      "elapsed_ms": 692,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     },
     {
       "url": "https://www.svf.gov.lk/",
-      "status_code": 200,
-      "final_url": "https://www.svf.gov.lk/",
+      "status_code": null,
+      "final_url": null,
       "redirects": [],
-      "elapsed_ms": 305,
-      "content_type": "text/html; charset=UTF-8",
-      "error": null
+      "elapsed_ms": null,
+      "content_type": null,
+      "error": "[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)"
     },
     {
       "url": "http://www.svf.gov.lk/",
       "status_code": 200,
       "final_url": "http://www.svf.gov.lk/",
       "redirects": [],
-      "elapsed_ms": 286,
+      "elapsed_ms": 135,
       "content_type": "text/html; charset=UTF-8",
       "error": null
     }
   ],
   "snapshots": [
     {
-      "url": "https://www.svf.gov.lk/",
-      "path": "audit.output/www.svf.gov.lk/20261124.0631/snapshots/page-01-dc60f7c6b5e0.html",
+      "url": "http://www.svf.gov.lk/",
+      "path": "audit.output/www.svf.gov.lk/20261126.0632/snapshots/page-01-dc60f7c6b5e0.html",
       "sha256": "dc60f7c6b5e0fd8a5bce93f1ead49afc53cb8fc8366e8a9d6b16fcc96c072569",
       "bytes": 914
     },
     {
       "url": "http://www.svf.gov.lk/",
-      "path": "audit.output/www.svf.gov.lk/20261124.0631/snapshots/page-02-dc60f7c6b5e0.html",
-      "sha256": "dc60f7c6b5e0fd8a5bce93f1ead49afc53cb8fc8366e8a9d6b16fcc96c072569",
-      "bytes": 914
-    },
-    {
-      "url": "https://www.svf.gov.lk/",
-      "path": "audit.output/www.svf.gov.lk/20261124.0631/snapshots/page-03-dc60f7c6b5e0.html",
-      "sha256": "dc60f7c6b5e0fd8a5bce93f1ead49afc53cb8fc8366e8a9d6b16fcc96c072569",
-      "bytes": 914
-    },
-    {
-      "url": "http://www.svf.gov.lk/",
-      "path": "audit.output/www.svf.gov.lk/20261124.0631/snapshots/page-04-dc60f7c6b5e0.html",
+      "path": "audit.output/www.svf.gov.lk/20261126.0632/snapshots/page-02-dc60f7c6b5e0.html",
       "sha256": "dc60f7c6b5e0fd8a5bce93f1ead49afc53cb8fc8366e8a9d6b16fcc96c072569",
       "bytes": 914
     }
@@ -167,8 +153,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200",
+      "status": "fail",
+      "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011); TLS certificate has expired",
       "executed": true,
       "checks": [
         {
@@ -181,25 +167,25 @@
           "name": "domain_not_parked",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "content_relevant",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "hosting_configured",
           "level": 1,
           "status": "inconclusive",
-          "reason": "Insufficient substantive page content: Only 39 visible characters across 4 pages; below substance threshold 200"
+          "reason": "Insufficient substantive page content: Only 39 visible characters across 2 pages; below substance threshold 200"
         },
         {
           "name": "http_available",
@@ -216,20 +202,20 @@
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "pass",
-          "reason": "No browser-blocking TLS error found"
+          "status": "fail",
+          "reason": "Probe 1: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1011)"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "fail",
+          "reason": "TLS certificate has expired"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "pass",
-          "reason": "TLS certificate valid"
+          "status": "inconclusive",
+          "reason": "TLS hostname check did not run"
         }
       ]
     },
@@ -267,7 +253,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "57.151.126.90",
+    "egress_ip": "20.169.61.102",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

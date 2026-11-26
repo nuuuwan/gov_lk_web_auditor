@@ -1,8 +1,8 @@
 # Website Audit: https://documents.gov.lk/
 
-- Completed: 2026-11-24 06:25
+- Completed: 2026-11-26 06:26
 - Overall result: ⚫ Level 0
-- Vantage: 57.151.126.90 (US, github-actions)
+- Vantage: 20.169.61.102 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -14,7 +14,7 @@ Baseline website grade
 
 To pass `🔴 Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.
 
-Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200
+Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; Insufficient substantive page content: Only 142 visible characters across 4 pages; below substance threshold 200; timed out; timed out
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -26,8 +26,8 @@ Insufficient substantive page content: Only 142 visible characters across 4 page
 | http_available | ✅ | HTTP probes did not all fail |
 | redirect_related | ✅ | No unrelated redirect found |
 | tls_browser_trusted | ✅ | No browser-blocking TLS error found |
-| tls_not_expired | ✅ | TLS certificate valid |
-| tls_hostname_matches | ✅ | TLS certificate valid |
+| tls_not_expired | ❓ | timed out |
+| tls_hostname_matches | ❓ | timed out |
 
 ## 🟠 Level 2: ❓
 
