@@ -1,8 +1,8 @@
 # Website Audit: https://slndc.gov.lk/
 
-- Completed: 2026-11-26 06:30
-- Overall result: 🔴 Level 1
-- Vantage: 20.169.61.102 (US, github-actions)
+- Completed: 2026-11-27 06:30
+- Overall result: 🟠 Level 2
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -29,20 +29,30 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 | tls_not_expired | ✅ | TLS certificate valid |
 | tls_hostname_matches | ✅ | TLS certificate valid |
 
-## 🟠 Level 2: ❓
+## 🟠 Level 2: ✅
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No email evidence found; No passing named responsibility evidence found
+Published postal address: National Design Centre, No 10, De Mel Road, Katubedda, Moratuwa Contact Number General – (+94) 011-2607814 Chairmen – (+; Phone: 0000008180 (21 phone numbers found); Email: Info@slndc.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: will not be published. Required fields are marked * Comment Name * Email * Website Save my name, email, and website in t |
-| reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ❓ | No passing named responsibility evidence found |
+| postal_address | ✅ | Published postal address: National Design Centre, No 10, De Mel Road, Katubedda, Moratuwa Contact Number General – (+94) 011-2607814 Chairmen – (+ |
+| reachable_contacts | ✅ | Phone: 0000008180 (21 phone numbers found); Email: Info@slndc.gov.lk |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-Not run because 🟠 Level 2 did not pass
+No passing required documents evidence found; No passing legal basis evidence found; No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found
+
+| Test | Result | Details |
+| --- | --- | --- |
+| eligibility_criteria | ✅ | Published eligibility criteria: eligibility |
+| required_documents | ❓ | No passing required documents evidence found |
+| fees_and_payment | ✅ | Published fees and payment: rs, |
+| legal_basis | ❓ | No passing legal basis evidence found |
+| processing_time | ❓ | No passing processing time evidence found |
+| downloadable_form | ❓ | No passing downloadable form evidence found |
+| published_update_date | ❓ | No passing published update date evidence found |

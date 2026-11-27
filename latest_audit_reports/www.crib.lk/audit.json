@@ -1,23 +1,24 @@
 {
   "schema_version": "1.3.0",
-  "audit_id": "ab258030-1123-4039-92d6-28b11d361ea9",
+  "audit_id": "15c620c3-260e-4910-9e3f-66d729b9ef81",
   "url": "https://www.crib.lk/",
   "normalized_url": "https://www.crib.lk/",
-  "started_at": "2026-11-26T06:14:20.726763+05:30",
-  "completed_at": "2026-11-26T06:16:35.207027+05:30",
+  "started_at": "2026-11-27T06:14:13.545623+05:30",
+  "completed_at": "2026-11-27T06:15:58.413477+05:30",
   "result": {
-    "status": "inconclusive",
-    "confidence": 0.5,
+    "status": "pass",
+    "confidence": 1.0,
     "reasons": [
-      "domain_not_parked: No usable page was inspected",
-      "site_not_defaced: No usable page was inspected",
-      "content_relevant: No usable page was inspected",
-      "hosting_configured: No usable page was inspected",
-      "http_available: An HTTP probe was transient",
-      "redirect_related: No redirect result was available",
-      "tls_browser_trusted: Browser TLS check did not complete",
-      "tls_not_expired: timed out",
-      "tls_hostname_matches: timed out"
+      "dns_resolves: Public DNS resolved",
+      "domain_not_parked: No parked-domain marker found",
+      "site_not_defaced: No defacement marker found",
+      "content_relevant: No unrelated-content marker found",
+      "hosting_configured: No generic-hosting marker found",
+      "http_available: HTTPS probes passed; failing variants: http://www.crib.lk/: Probe 2: timed out; http://www.crib.lk/: Probe 4: timed out",
+      "redirect_related: No unrelated redirect found",
+      "tls_browser_trusted: No browser-blocking TLS error found",
+      "tls_not_expired: TLS certificate valid",
+      "tls_hostname_matches: TLS certificate valid"
     ]
   },
   "evidence": [
@@ -25,47 +26,933 @@
       "check": "dns",
       "status": "pass",
       "detail": "Public DNS resolved",
-      "observed_at": "2026-11-26T06:14:21.578073+05:30"
+      "observed_at": "2026-11-27T06:14:14.127566+05:30"
     },
     {
       "check": "domain_registration",
       "status": "error",
       "detail": "Domain is absent from RDAP",
-      "observed_at": "2026-11-26T06:14:21.578092+05:30"
+      "observed_at": "2026-11-27T06:14:14.127590+05:30"
     },
     {
       "check": "tls",
-      "status": "error",
-      "detail": "timed out",
-      "observed_at": "2026-11-26T06:14:32.174125+05:30"
+      "status": "pass",
+      "detail": "TLS certificate valid",
+      "observed_at": "2026-11-27T06:14:14.866803+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 1: timed out",
+      "status": "pass",
+      "detail": "Probe 1: HTTP 200 at https://www.crib.lk/en",
       "source": "https://www.crib.lk/",
-      "observed_at": "2026-11-26T06:16:35.206857+05:30"
+      "observed_at": "2026-11-27T06:15:58.169621+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 2: timed out",
       "source": "http://www.crib.lk/",
-      "observed_at": "2026-11-26T06:16:35.206878+05:30"
+      "observed_at": "2026-11-27T06:15:58.169643+05:30"
     },
     {
       "check": "http",
-      "status": "error",
-      "detail": "Probe 3: timed out",
+      "status": "pass",
+      "detail": "Probe 3: HTTP 200 at https://www.crib.lk/en",
       "source": "https://www.crib.lk/",
-      "observed_at": "2026-11-26T06:16:35.206881+05:30"
+      "observed_at": "2026-11-27T06:15:58.169648+05:30"
     },
     {
       "check": "http",
       "status": "error",
       "detail": "Probe 4: timed out",
       "source": "http://www.crib.lk/",
-      "observed_at": "2026-11-26T06:16:35.206884+05:30"
+      "observed_at": "2026-11-27T06:15:58.169652+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 5: HTTP 200 at https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "source": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "observed_at": "2026-11-27T06:15:58.169655+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 6: HTTP 200 at https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "source": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "observed_at": "2026-11-27T06:15:58.169658+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 7: HTTP 200 at https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "source": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "observed_at": "2026-11-27T06:15:58.169661+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 8: HTTP 200 at https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "source": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "observed_at": "2026-11-27T06:15:58.169664+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 9: HTTP 200 at https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "source": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "observed_at": "2026-11-27T06:15:58.169666+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 10: HTTP 200 at https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "source": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "observed_at": "2026-11-27T06:15:58.169669+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 11: HTTP 200 at https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "source": "https://www.crib.lk/index.php/en/our-services/secured-transactions-registry-service",
+      "observed_at": "2026-11-27T06:15:58.169672+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 12: HTTP 200 at https://www.crib.lk/en/contact-us",
+      "source": "https://www.crib.lk/index.php/en/contact-us",
+      "observed_at": "2026-11-27T06:15:58.169675+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 13: HTTP 200 at https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "observed_at": "2026-11-27T06:15:58.169678+05:30"
+    },
+    {
+      "check": "http",
+      "status": "pass",
+      "detail": "Probe 14: HTTP 200 at https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "source": "https://www.crib.lk/index.php/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "observed_at": "2026-11-27T06:15:58.169680+05:30"
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.crib.lk/en",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "data": {
+        "value": "Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "data": {
+        "value": "Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "data": {
+        "value": "Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: and verify the authenticity of the National Identity Card via Department for Registration of Persons (DRP) and the provi",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "and verify the authenticity of the National Identity Card via Department for Registration of Persons (DRP) and the provi"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: department",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "department"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: free of charge",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "data": {
+        "value": "free of charge"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: given in the Corporate MyReport Application form. Benefits and advantages of obtaining Self Inquiry Credit Report (MyRep",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "given in the Corporate MyReport Application form. Benefits and advantages of obtaining Self Inquiry Credit Report (MyRep"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "required_documents",
+      "status": "pass",
+      "detail": "Published required documents: supporting documents",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "supporting documents"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 1313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "011 213 1313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "0112131313"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka"
+      }
+    },
+    {
+      "check": "legal_basis",
+      "status": "pass",
+      "detail": "Published legal basis: regulations",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "regulations"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/contact-us",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/contact-us",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/contact-us",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/contact-us",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/contact-us",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: * Mobile no. * Subject * Message * Submit function onSubmit(token) { document.getElementById(\"contact-form\").submit(); }",
+      "source": "https://www.crib.lk/en/contact-us",
+      "data": {
+        "value": "* Mobile no. * Subject * Message * Submit function onSubmit(token) { document.getElementById(\"contact-form\").submit(); }"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 011 213 1313 ",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "011 213 1313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0112131313",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "0112131313"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka",
+      "source": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "data": {
+        "value": "Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0240418986",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "0240418986"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94 112 131313 ",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "+94 112 131313 "
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: +94112131313",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "+94112131313"
+      }
+    },
+    {
+      "check": "phone",
+      "status": "pass",
+      "detail": "Published phone: 0016012422",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "0016012422"
+      }
+    },
+    {
+      "check": "email",
+      "status": "pass",
+      "detail": "Published email: info@crib.lk",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "info@crib.lk"
+      }
+    },
+    {
+      "check": "postal_address",
+      "status": "pass",
+      "detail": "Published postal address: Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "Sri Lanka No 201, Sir James Peiris Mawatha, Colombo 02, Sri Lanka"
+      }
+    },
+    {
+      "check": "named_responsibility",
+      "status": "pass",
+      "detail": "Published named responsibility: director",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "director"
+      }
+    },
+    {
+      "check": "eligibility_criteria",
+      "status": "pass",
+      "detail": "Published eligibility criteria: eligibility",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "eligibility"
+      }
+    },
+    {
+      "check": "fees_and_payment",
+      "status": "pass",
+      "detail": "Published fees and payment: rs,",
+      "source": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "data": {
+        "value": "rs,"
+      }
+    },
+    {
+      "check": "page_text",
+      "status": "pass",
+      "detail": "Substantive page content: 8911 visible characters across 12 pages",
+      "source": "https://www.crib.lk/"
     }
   ],
   "observations": [
@@ -85,19 +972,23 @@
     },
     {
       "host": "www.crib.lk",
-      "status": "error",
-      "expires_at": null,
-      "hostname_valid": null,
-      "detail": "timed out"
+      "status": "valid",
+      "expires_at": "2027-04-04T05:29:59+05:30",
+      "hostname_valid": true,
+      "detail": "TLS certificate valid"
     },
     {
       "url": "https://www.crib.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en",
+      "redirects": [
+        "https://www.crib.lk/index.php/en/",
+        "https://www.crib.lk/index.php/en",
+        "https://www.crib.lk/en"
+      ],
+      "elapsed_ms": 1497,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.crib.lk/",
@@ -110,12 +1001,16 @@
     },
     {
       "url": "https://www.crib.lk/",
-      "status_code": null,
-      "final_url": null,
-      "redirects": [],
-      "elapsed_ms": null,
-      "content_type": null,
-      "error": "timed out"
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en",
+      "redirects": [
+        "https://www.crib.lk/index.php/en/",
+        "https://www.crib.lk/index.php/en",
+        "https://www.crib.lk/en"
+      ],
+      "elapsed_ms": 1261,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     },
     {
       "url": "http://www.crib.lk/",
@@ -125,9 +1020,190 @@
       "elapsed_ms": null,
       "content_type": null,
       "error": "timed out"
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "redirects": [
+        "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system"
+      ],
+      "elapsed_ms": 1020,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "redirects": [
+        "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports"
+      ],
+      "elapsed_ms": 1265,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "redirects": [
+        "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services"
+      ],
+      "elapsed_ms": 1021,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "redirects": [
+        "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer"
+      ],
+      "elapsed_ms": 1215,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "redirects": [
+        "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate"
+      ],
+      "elapsed_ms": 2028,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "redirects": [
+        "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app"
+      ],
+      "elapsed_ms": 1914,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/our-services/secured-transactions-registry-service",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "redirects": [
+        "https://www.crib.lk/en/our-services/secured-transactions-registry-service"
+      ],
+      "elapsed_ms": 1439,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/contact-us",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/contact-us",
+      "redirects": [
+        "https://www.crib.lk/en/contact-us"
+      ],
+      "elapsed_ms": 4251,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "redirects": [],
+      "elapsed_ms": 1441,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
+    },
+    {
+      "url": "https://www.crib.lk/index.php/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "status_code": 200,
+      "final_url": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "redirects": [
+        "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services"
+      ],
+      "elapsed_ms": 1826,
+      "content_type": "text/html; charset=utf-8",
+      "error": null
     }
   ],
-  "snapshots": [],
+  "snapshots": [
+    {
+      "url": "https://www.crib.lk/en",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-01-06bcd4eb690a.html",
+      "sha256": "06bcd4eb690a63543b7e742e3e0624070480d0209a1995ed9f891f53a77941ac",
+      "bytes": 66249
+    },
+    {
+      "url": "https://www.crib.lk/en",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-02-06bcd4eb690a.html",
+      "sha256": "06bcd4eb690a63543b7e742e3e0624070480d0209a1995ed9f891f53a77941ac",
+      "bytes": 66249
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-management-system",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-03-69a6e21e60cf.html",
+      "sha256": "69a6e21e60cfb122591302872b58f9a60901fb0268ee459161887d02bcad16ae",
+      "bytes": 37327
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/credit-information-reports",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-04-8d9a5cc10663.html",
+      "sha256": "8d9a5cc10663841716e2ff8162af06f488b3993321d4737663dd09063fdf7f37",
+      "bytes": 38921
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-member-institutions/value-added-services",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-05-88b14d189a53.html",
+      "sha256": "88b14d189a53947d54e79bdb8ca78006b3c6ce1976cded13cc6144c0843ee0f6",
+      "bytes": 37267
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-ireport-consumer",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-06-68aeb190ede6.html",
+      "sha256": "68aeb190ede6652fb6469bf2de3ec4b2f1c9b354eac360a4ecc2c8b6655e39be",
+      "bytes": 41590
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/self-inquiry-credit-report-myreport-corporate",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-07-8ea9f7cbdf04.html",
+      "sha256": "8ea9f7cbdf04103c15bcb6067a71a3bd42db653d97b43b928fab54f4fe19d946",
+      "bytes": 43396
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-08-121b25e8397c.html",
+      "sha256": "121b25e8397cb0f14b2d6d3da1fc612425ec91e4f6bbaf1c7bae6c06ac9c7fc0",
+      "bytes": 48638
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/secured-transactions-registry-service",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-09-551bdc4c47d9.html",
+      "sha256": "551bdc4c47d95670253d08470105b1d6e3a60e67eb8bfdc33ce3fb32164d25fe",
+      "bytes": 43986
+    },
+    {
+      "url": "https://www.crib.lk/en/contact-us",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-10-54187cc38354.html",
+      "sha256": "54187cc383547b946b7642f879ceeaa0948ba1ec46cb81a1346efc031a70d87a",
+      "bytes": 42268
+    },
+    {
+      "url": "https://www.crib.lk/en/our-services/credit-information-services-for-the-general-public/mycrib-mobile-app",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-11-121b25e8397c.html",
+      "sha256": "121b25e8397cb0f14b2d6d3da1fc612425ec91e4f6bbaf1c7bae6c06ac9c7fc0",
+      "bytes": 48638
+    },
+    {
+      "url": "https://www.crib.lk/en/crib-empowers-sri-lankans-with-digital-access-to-services",
+      "path": "audit.output/www.crib.lk/20261127.0614/snapshots/page-12-83ed222efcc2.html",
+      "sha256": "83ed222efcc2b425176fd59ae9da705ccdc4e849d9831e28592388f55c4e94bb",
+      "bytes": 40301
+    }
+  ],
   "reviewer_decisions": [],
   "levels": [
     {
@@ -141,8 +1217,8 @@
     {
       "level": 1,
       "description": "To pass `Level 1`, the website must be available, usable, and clearly associated with the government institution. It must load reliably with valid DNS, HTTP, and TLS behavior.",
-      "status": "inconclusive",
-      "reason": "No usable page was inspected; No usable page was inspected; No usable page was inspected; No usable page was inspected; An HTTP probe was transient; No redirect result was available; Browser TLS check did not complete; timed out; timed out",
+      "status": "pass",
+      "reason": "Public DNS resolved; No parked-domain marker found; No defacement marker found; No unrelated-content marker found; No generic-hosting marker found; HTTPS probes passed; failing variants: http://www.crib.lk/: Probe 2: timed out; http://www.crib.lk/: Probe 4: timed out; No unrelated redirect found; No browser-blocking TLS error found; TLS certificate valid; TLS certificate valid",
       "executed": true,
       "checks": [
         {
@@ -154,74 +1230,136 @@
         {
           "name": "domain_not_parked",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No parked-domain marker found"
         },
         {
           "name": "site_not_defaced",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No defacement marker found"
         },
         {
           "name": "content_relevant",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No unrelated-content marker found"
         },
         {
           "name": "hosting_configured",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No usable page was inspected"
+          "status": "pass",
+          "reason": "No generic-hosting marker found"
         },
         {
           "name": "http_available",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "An HTTP probe was transient"
+          "status": "pass",
+          "reason": "HTTPS probes passed; failing variants: http://www.crib.lk/: Probe 2: timed out; http://www.crib.lk/: Probe 4: timed out"
         },
         {
           "name": "redirect_related",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "No redirect result was available"
+          "status": "pass",
+          "reason": "No unrelated redirect found"
         },
         {
           "name": "tls_browser_trusted",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "Browser TLS check did not complete"
+          "status": "pass",
+          "reason": "No browser-blocking TLS error found"
         },
         {
           "name": "tls_not_expired",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         },
         {
           "name": "tls_hostname_matches",
           "level": 1,
-          "status": "inconclusive",
-          "reason": "timed out"
+          "status": "pass",
+          "reason": "TLS certificate valid"
         }
       ]
     },
     {
       "level": 2,
       "description": "To pass `Level 2`, citizens must be able to identify and contact the correct office for the service they need.",
-      "status": "inconclusive",
-      "reason": "Not run because Level 1 did not pass",
-      "executed": false,
-      "checks": []
+      "status": "pass",
+      "reason": "Published postal address: Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka; Phone: 0240418986 (6 phone numbers found); Email: info@crib.lk; Published named responsibility: director",
+      "executed": true,
+      "checks": [
+        {
+          "name": "postal_address",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published postal address: Hosts Annual CEOs Forum and Institutional Rating Awards74... Colombo, Sri Lanka"
+        },
+        {
+          "name": "reachable_contacts",
+          "level": 2,
+          "status": "pass",
+          "reason": "Phone: 0240418986 (6 phone numbers found); Email: info@crib.lk"
+        },
+        {
+          "name": "named_responsibility",
+          "level": 2,
+          "status": "pass",
+          "reason": "Published named responsibility: director"
+        }
+      ]
     },
     {
       "level": 3,
       "description": "To pass `Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.",
       "status": "inconclusive",
-      "reason": "Not run because Level 2 did not pass",
-      "executed": false,
-      "checks": []
+      "reason": "No passing processing time evidence found; No passing downloadable form evidence found; No passing published update date evidence found",
+      "executed": true,
+      "checks": [
+        {
+          "name": "eligibility_criteria",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published eligibility criteria: eligibility"
+        },
+        {
+          "name": "required_documents",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published required documents: supporting documents"
+        },
+        {
+          "name": "fees_and_payment",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published fees and payment: rs,"
+        },
+        {
+          "name": "legal_basis",
+          "level": 3,
+          "status": "pass",
+          "reason": "Published legal basis: regulations"
+        },
+        {
+          "name": "processing_time",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing processing time evidence found"
+        },
+        {
+          "name": "downloadable_form",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing downloadable form evidence found"
+        },
+        {
+          "name": "published_update_date",
+          "level": 3,
+          "status": "inconclusive",
+          "reason": "No passing published update date evidence found"
+        }
+      ]
     },
     {
       "level": 4,
@@ -241,7 +1379,7 @@
     }
   ],
   "vantage": {
-    "egress_ip": "20.169.61.102",
+    "egress_ip": "64.236.201.21",
     "country": "US",
     "runner": "github-actions",
     "proxy": false

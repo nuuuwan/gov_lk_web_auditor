@@ -1,8 +1,8 @@
 # Website Audit: https://www.slithm.edu.lk/
 
-- Completed: 2026-11-26 06:25
+- Completed: 2026-11-27 06:25
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Internal Affairs Unit, SLITHM, No. 78, Galle Road, Colombo 03 Email iau@slithm.edu.lk Telephone +94 11 220 8312 WhatsApp; Phone: +94112208312 (32 phone numbers found); Email: info@slithm.edu.lk (23 email addresses found); Published named responsibility: department
+Published postal address: Internal Affairs Unit, SLITHM, No. 78, Galle Road, Colombo 03 Email iau@slithm.edu.lk Telephone +94 11 220 8312 WhatsApp; Phone: +94 112 382 219 (32 phone numbers found); Email: info@slithm.edu.lk (23 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Internal Affairs Unit, SLITHM, No. 78, Galle Road, Colombo 03 Email iau@slithm.edu.lk Telephone +94 11 220 8312 WhatsApp |
-| reachable_contacts | ✅ | Phone: +94112208312 (32 phone numbers found); Email: info@slithm.edu.lk (23 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 382 219 (32 phone numbers found); Email: info@slithm.edu.lk (23 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

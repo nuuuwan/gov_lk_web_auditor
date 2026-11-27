@@ -1,8 +1,8 @@
 # Website Audit: https://emb-seoul.gov.lk/
 
-- Completed: 2026-11-26 06:21
+- Completed: 2026-11-27 06:21
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: +82027942968 (13 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found); Published named responsibility: director
+Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794-; Phone: 0561899549 (14 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: No.39, Dongho-ro 10-gil, Jung-gu, Seoul 04590 Republic of Korea Phone Numbers: (+82) 02-735-2966 , 02-735-2967 , 02-794- |
-| reachable_contacts | ✅ | Phone: +82027942968 (13 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0561899549 (14 phone numbers found); Email: slemb.seoul@mfa.gov.lk (5 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

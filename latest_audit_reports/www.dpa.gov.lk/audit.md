@@ -1,8 +1,8 @@
 # Website Audit: https://www.dpa.gov.lk/
 
-- Completed: 2026-11-26 06:01
+- Completed: 2026-11-27 06:01
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement; Phone: +940112697241 (5 phone numbers found); Email: info@dpa.gov.lk (6 email addresses found); Published named responsibility: director
+Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement; Phone: +94 (0)11269724 (5 phone numbers found); Email: info@dpa.gov.lk (6 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Data Protection Authority First Floor; Block 5, Bandaranaike Memorial International Conference Hall (BMICH), Bauddhaloka Mawatha, Colombo 07, Sri Lanka. Get in Touch Email: info@dpa.gov.lk Phone: +94 (0)112697241 Website: www.dpa.gov.lk Related Links Presidential Secretariat of Sri Lanka Prime Minister's Office, Sri Lanka Ministry of Digital Economy Copyright © Data Protection Authority 2026. All Rights Reserved. Data Protection Statement |
-| reachable_contacts | ✅ | Phone: +940112697241 (5 phone numbers found); Email: info@dpa.gov.lk (6 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 (0)11269724 (5 phone numbers found); Email: info@dpa.gov.lk (6 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

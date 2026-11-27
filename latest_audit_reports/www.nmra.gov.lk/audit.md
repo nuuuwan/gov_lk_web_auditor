@@ -1,8 +1,8 @@
 # Website Audit: https://www.nmra.gov.lk/
 
-- Completed: 2026-11-26 06:26
+- Completed: 2026-11-27 06:27
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2687744 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found); Published named responsibility: division
+Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka; Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: , No. 130, W.A.D Ramanayaka Mawatha, Colombo 02, Sri Lanka |
-| reachable_contacts | ✅ | Phone: +94 11 2687744 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2698897 (16 phone numbers found); Email: info@nmra.gov.lk (58 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing published update date
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ✅ | Published required documents: documents required |
-| fees_and_payment | ✅ | Published fees and payment: rs, |
+| fees_and_payment | ✅ | Published fees and payment: No fee |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 6 months |
 | downloadable_form | ✅ | Published downloadable form: https://cdn.prod.website-files.com/666d0695ca3ba7fa496a5068/6788ae933b4fafc59d2053ba_2025.1.16-20250116115407.pdf |

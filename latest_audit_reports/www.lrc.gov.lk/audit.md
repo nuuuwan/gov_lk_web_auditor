@@ -1,8 +1,8 @@
 # Website Audit: https://www.lrc.gov.lk/
 
-- Completed: 2026-11-26 05:55
+- Completed: 2026-11-27 05:55
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,11 +33,11 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak459600bf8657831b; Phone: +94 112 878 052 (3 phone numbers found); Email: info@lrc.gov.lk; Published named responsibility: director
+Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakf6e2f9029a4bea9f; Phone: +94 112 878 052 (3 phone numbers found); Email: info@lrc.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloak459600bf8657831b |
+| postal_address | ✅ | Published postal address: is being protected from spambots. You need JavaScript enabled to view it. document.getElementById('cloakf6e2f9029a4bea9f |
 | reachable_contacts | ✅ | Phone: +94 112 878 052 (3 phone numbers found); Email: info@lrc.gov.lk |
 | named_responsibility | ✅ | Published named responsibility: director |
 

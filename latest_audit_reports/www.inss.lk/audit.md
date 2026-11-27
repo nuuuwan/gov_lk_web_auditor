@@ -1,8 +1,8 @@
 # Website Audit: https://www.inss.lk/
 
-- Completed: 2026-11-26 06:00
+- Completed: 2026-11-27 06:00
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

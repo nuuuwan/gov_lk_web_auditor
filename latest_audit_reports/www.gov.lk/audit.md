@@ -1,8 +1,8 @@
 # Website Audit: https://www.gov.lk/
 
-- Completed: 2026-11-26 06:09
+- Completed: 2026-11-27 06:09
 - Overall result: 🔴 Level 1
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -38,7 +38,7 @@ No passing postal address evidence found
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ❓ | No passing postal address evidence found |
-| reachable_contacts | ✅ | Phone: +94 11 4 191919 . (145 phone numbers found); Email: hindudir@yahoo.com (59 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 4 191919 . (244 phone numbers found); Email: dba.gov.lk@gmail.com (103 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

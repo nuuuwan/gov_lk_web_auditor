@@ -1,8 +1,8 @@
 # Website Audit: https://ovdc.lk/
 
-- Completed: 2026-11-26 06:28
+- Completed: 2026-11-27 06:28
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: { margin: 0 0 8px 0; font-size: 13px; color: #666; line-height: 1.5; } .map-info-window .description { margin: 0; font-s; Phone: +94 11 20 58 260 (9 phone numbers found); Email: ovdc123@sltnet.lk (3 email addresses found); Published named responsibility: director
+Published postal address: { margin: 0 0 8px 0; font-size: 13px; color: #666; line-height: 1.5; } .map-info-window .description { margin: 0; font-s; Phone: 94112058090 (9 phone numbers found); Email: ovdc123@sltnet.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: { margin: 0 0 8px 0; font-size: 13px; color: #666; line-height: 1.5; } .map-info-window .description { margin: 0; font-s |
-| reachable_contacts | ✅ | Phone: +94 11 20 58 260 (9 phone numbers found); Email: ovdc123@sltnet.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 94112058090 (9 phone numbers found); Email: ovdc123@sltnet.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://un-geneva.gov.lk/
 
-- Completed: 2026-11-26 06:22
+- Completed: 2026-11-27 06:22
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: the full lifecycle of chemicals, including products and waste, while preventing harmful impacts on human health and the ; Phone: 03.12424167 (9 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found); Published named responsibility: division
+Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"validation_surname_format\":\"Surname should contain on; Phone: 0887277863 (9 phone numbers found); Email: trade@lankamission.org (4 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: the full lifecycle of chemicals, including products and waste, while preventing harmful impacts on human health and the  |
-| reachable_contacts | ✅ | Phone: 03.12424167 (9 phone numbers found); Email: slcgs.geneva@lankamission.org (4 email addresses found) |
+| postal_address | ✅ | Published postal address: (Optional)\",\"address_line_1_placeholder\":\"Address Line 1\",\"validation_surname_format\":\"Surname should contain on |
+| reachable_contacts | ✅ | Phone: 0887277863 (9 phone numbers found); Email: trade@lankamission.org (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

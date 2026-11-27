@@ -1,8 +1,8 @@
 # Website Audit: https://emb-hague.gov.lk/
 
-- Completed: 2026-11-26 06:22
+- Completed: 2026-11-27 06:22
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Javastraat 2C, 2585 AM, The Hague, The Netherlands Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad; Phone: 06703622-20 (13 phone numbers found); Email: slemb.hague@mfa.gov.lk (3 email addresses found); Published named responsibility: director
+Published postal address: Javastraat 2C, 2585 AM, The Hague, The Netherlands Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad; Phone: 0705035388 (14 phone numbers found); Email: john@example.com (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Javastraat 2C, 2585 AM, The Hague, The Netherlands Register as a Sri Lankan Abroad If you are a Sri Lankan living abroad |
-| reachable_contacts | ✅ | Phone: 06703622-20 (13 phone numbers found); Email: slemb.hague@mfa.gov.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: 0705035388 (14 phone numbers found); Email: john@example.com (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

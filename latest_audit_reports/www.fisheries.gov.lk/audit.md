@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-11-26 06:49
+- Completed: 2026-11-27 06:50
 - Overall result: 🟠 Level 2
-- Vantage: 20.169.61.102 (US, github-actions)
+- Vantage: 64.236.201.21 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: those issues.\u003cbr\u003e\u003cbr\u003e\r\nHowever,it has been observed that the news spread from some media channels ; Phone: 0 0 1 1.265-1.26 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found); Published named responsibility: director
+Published postal address: those issues.\u003cbr\u003e\u003cbr\u003e\r\nHowever,it has been observed that the news spread from some media channels ; Phone: +94 112 446 184 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: those issues.\u003cbr\u003e\u003cbr\u003e\r\nHowever,it has been observed that the news spread from some media channels  |
-| reachable_contacts | ✅ | Phone: 0 0 1 1.265-1.26 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 112 446 184 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
@@ -55,4 +55,4 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ❓ | No passing processing time evidence found |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 25 November 2026 |
+| published_update_date | ✅ | Published published update date: 26 November 2026 |
