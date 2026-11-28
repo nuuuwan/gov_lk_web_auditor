@@ -1,8 +1,8 @@
 # Website Audit: https://survey.gov.lk/
 
-- Completed: 2026-11-27 05:57
+- Completed: 2026-11-28 05:55
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: survey.gov.lk No 150, Bernad Soysa Road, Narahenpita, Colombo 05, Sri Lanka; Phone: 011) 2 36 9011 (3 phone numbers found); Email: sg@survey.gov.lk (2 email addresses found); Published named responsibility: department
+Published postal address: survey.gov.lk No 150, Bernad Soysa Road, Narahenpita, Colombo 05, Sri Lanka; Phone: +94 11) 236 9011 (4 phone numbers found); Email: sd_csc@survey.gov.lk (4 email addresses found); Published named responsibility: department
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: survey.gov.lk No 150, Bernad Soysa Road, Narahenpita, Colombo 05, Sri Lanka |
-| reachable_contacts | ✅ | Phone: 011) 2 36 9011 (3 phone numbers found); Email: sg@survey.gov.lk (2 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11) 236 9011 (4 phone numbers found); Email: sd_csc@survey.gov.lk (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: department |
 
 ## 🟢 Level 3: ❓

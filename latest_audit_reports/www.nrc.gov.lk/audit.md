@@ -1,8 +1,8 @@
 # Website Audit: https://www.nrc.gov.lk/
 
-- Completed: 2026-11-27 06:40
+- Completed: 2026-11-28 06:39
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: National Research Council 120/07, Vidya Mawatha Colombo 07, Sri Lanka. Contact Information Tel: +94 11 2675430 Tel: +94 ; Phone: +94 11 2675430 (22 phone numbers found); Email: monitoring@nrc.gov.lk (16 email addresses found); Published named responsibility: director
+Published postal address: National Research Council 120/07, Vidya Mawatha Colombo 07, Sri Lanka. Contact Information Tel: +94 11 2675430 Tel: +94 ; Phone: +94 11 2675176 (22 phone numbers found); Email: thilini@nrc.gov.lk (16 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: National Research Council 120/07, Vidya Mawatha Colombo 07, Sri Lanka. Contact Information Tel: +94 11 2675430 Tel: +94  |
-| reachable_contacts | ✅ | Phone: +94 11 2675430 (22 phone numbers found); Email: monitoring@nrc.gov.lk (16 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 11 2675176 (22 phone numbers found); Email: thilini@nrc.gov.lk (16 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

@@ -1,8 +1,8 @@
 # Website Audit: https://www.fisheries.gov.lk/
 
-- Completed: 2026-11-27 06:50
+- Completed: 2026-11-28 06:48
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,19 +33,19 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: those issues.\u003cbr\u003e\u003cbr\u003e\r\nHowever,it has been observed that the news spread from some media channels ; Phone: +94 112 446 184 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found); Published named responsibility: director
+Published postal address: the core challenges affecting the fisheries sectors of both nations.\u003cbr\u003e\u003cbr\u003e\r\nSpecifically, the ag; Phone: +94112446183 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: those issues.\u003cbr\u003e\u003cbr\u003e\r\nHowever,it has been observed that the news spread from some media channels  |
-| reachable_contacts | ✅ | Phone: +94 112 446 184 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found) |
+| postal_address | ✅ | Published postal address: the core challenges affecting the fisheries sectors of both nations.\u003cbr\u003e\u003cbr\u003e\r\nSpecifically, the ag |
+| reachable_contacts | ✅ | Phone: +94112446183 (123 phone numbers found); Email: info@fisheries.gov.lk (49 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
 To pass `🟢 Level 3`, citizens must find complete and current instructions, requirements, fees, times, and usable forms.
 
-No passing eligibility criteria evidence found; No passing required documents evidence found; No passing processing time evidence found; No passing downloadable form evidence found
+No passing eligibility criteria evidence found; No passing required documents evidence found; No passing downloadable form evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
@@ -53,6 +53,6 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | required_documents | ❓ | No passing required documents evidence found |
 | fees_and_payment | ✅ | Published fees and payment: rs, |
 | legal_basis | ✅ | Published legal basis: regulations |
-| processing_time | ❓ | No passing processing time evidence found |
+| processing_time | ✅ | Published processing time: 365 days |
 | downloadable_form | ❓ | No passing downloadable form evidence found |
-| published_update_date | ✅ | Published published update date: 26 November 2026 |
+| published_update_date | ✅ | Published published update date: 27 November 2026 |

@@ -1,8 +1,8 @@
 # Website Audit: https://www.cpstl.lk/
 
-- Completed: 2026-11-27 06:11
+- Completed: 2026-11-28 06:10
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: ── */ .cft-address p { font-size: 13.5px; line-height: 1.8; color: rgba(255,255,255,0.80); font-weight: 300; margin-bott; Phone: 011-2572307 (58 phone numbers found); Email: secretariat@cpstl.lk (30 email addresses found); Published named responsibility: director
+Published postal address: ── */ .cft-address p { font-size: 13.5px; line-height: 1.8; color: rgba(255,255,255,0.80); font-weight: 300; margin-bott; Phone: 011 - 2572307 (58 phone numbers found); Email: secretariat@cpstl.lk (30 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: ── */ .cft-address p { font-size: 13.5px; line-height: 1.8; color: rgba(255,255,255,0.80); font-weight: 300; margin-bott |
-| reachable_contacts | ✅ | Phone: 011-2572307 (58 phone numbers found); Email: secretariat@cpstl.lk (30 email addresses found) |
+| reachable_contacts | ✅ | Phone: 011 - 2572307 (58 phone numbers found); Email: secretariat@cpstl.lk (30 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

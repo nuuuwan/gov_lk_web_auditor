@@ -1,8 +1,8 @@
 # Website Audit: https://nicd.edu.lk/
 
-- Completed: 2026-11-27 06:43
+- Completed: 2026-11-28 06:42
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: is required","url":"Please enter a valid URL","date":"Please enter a valid date","dateISO":"Please enter a valid date (I; Phone: 021 2026-11-0 (18 phone numbers found); Email: education@nicd.edu.lk (28 email addresses found); Published named responsibility: division
+Published postal address: is required","url":"Please enter a valid URL","date":"Please enter a valid date","dateISO":"Please enter a valid date (I; Phone: 081 249 8680 (21 phone numbers found); Email: nicd@sltnet.lk (28 email addresses found); Published named responsibility: division
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: is required","url":"Please enter a valid URL","date":"Please enter a valid date","dateISO":"Please enter a valid date (I |
-| reachable_contacts | ✅ | Phone: 021 2026-11-0 (18 phone numbers found); Email: education@nicd.edu.lk (28 email addresses found) |
+| reachable_contacts | ✅ | Phone: 081 249 8680 (21 phone numbers found); Email: nicd@sltnet.lk (28 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: division |
 
 ## 🟢 Level 3: ❓

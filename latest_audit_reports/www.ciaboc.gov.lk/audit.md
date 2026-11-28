@@ -1,8 +1,8 @@
 # Website Audit: https://www.ciaboc.gov.lk/
 
-- Completed: 2026-11-27 06:55
+- Completed: 2026-11-28 06:53
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below).; Phone: 0112596363 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found); Published named responsibility: division
+Published postal address: 2.2 Postal Address 2.3 District 2.4 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone N; Phone: 0112-596363 (269 phone numbers found); Email: da@ciaboc.gov.lk; Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: on or before 16.11.2026. Applications received later are rejected.","Use the specimen form (see Application form below). |
-| reachable_contacts | ✅ | Phone: 0112596363 (13 phone numbers found); Email: ciaboc_gen@ciaboc.gov.lk (2 email addresses found) |
-| named_responsibility | ✅ | Published named responsibility: division |
+| postal_address | ✅ | Published postal address: 2.2 Postal Address 2.3 District 2.4 Province 3.0 3.1 Gender 3.2 National Identity Card Number 4.0 4.1 Mobile Telephone N |
+| reachable_contacts | ✅ | Phone: 0112-596363 (269 phone numbers found); Email: da@ciaboc.gov.lk |
+| named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
 
@@ -51,7 +51,7 @@ No passing eligibility criteria evidence found; No passing required documents ev
 | --- | --- | --- |
 | eligibility_criteria | ❓ | No passing eligibility criteria evidence found |
 | required_documents | ❓ | No passing required documents evidence found |
-| fees_and_payment | ✅ | Published fees and payment: Rs. 1,000 |
+| fees_and_payment | ✅ | Published fees and payment: Rs. 131,300 |
 | legal_basis | ✅ | Published legal basis: regulations |
 | processing_time | ✅ | Published processing time: 02 hours |
 | downloadable_form | ✅ | Published downloadable form: https://www.ciaboc.gov.lk/Application-Form-Assistant-Director-Maintenance-EN.pdf |

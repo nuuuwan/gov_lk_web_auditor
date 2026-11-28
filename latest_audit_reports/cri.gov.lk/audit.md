@@ -1,8 +1,8 @@
 # Website Audit: https://cri.gov.lk/
 
-- Completed: 2026-11-27 06:33
+- Completed: 2026-11-28 06:33
 - Overall result: ⚫ Level 0
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 

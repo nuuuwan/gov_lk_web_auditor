@@ -1,8 +1,8 @@
 # Website Audit: https://cg-losangeles.gov.lk/
 
-- Completed: 2026-11-27 06:23
+- Completed: 2026-11-28 06:23
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: Consulate General of Sri Lanka 3250 Wilshire Blvd., Suite #2180 Los Angeles, CA 90010 USA General : +1(213)3870210 Emerg; Phone: 0887277863 (26 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
+Published postal address: Consulate General of Sri Lanka 3250 Wilshire Blvd., Suite #2180 Los Angeles, CA 90010 USA General : +1(213)3870210 Emerg; Phone: 01-3776-4949- (26 phone numbers found); Email: john@example.com (4 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: Consulate General of Sri Lanka 3250 Wilshire Blvd., Suite #2180 Los Angeles, CA 90010 USA General : +1(213)3870210 Emerg |
-| reachable_contacts | ✅ | Phone: 0887277863 (26 phone numbers found); Email: john@example.com (4 email addresses found) |
+| reachable_contacts | ✅ | Phone: 01-3776-4949- (26 phone numbers found); Email: john@example.com (4 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓

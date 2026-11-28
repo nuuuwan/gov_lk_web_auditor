@@ -1,8 +1,8 @@
 # Website Audit: https://slfea.lk/
 
-- Completed: 2026-11-27 06:25
+- Completed: 2026-11-28 06:25
 - Overall result: 🔴 Level 1
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,13 +33,13 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-No email evidence found
+No passing postal address evidence found; No phone or email evidence found; No passing named responsibility evidence found
 
 | Test | Result | Details |
 | --- | --- | --- |
-| postal_address | ✅ | Published postal address: Sri Lanka Foreign Employment Agency, No. 12, Narahenpita Road, Nawala, Sri Lanka. Call us Tel: (+94) 011 280 7400 Email  |
-| reachable_contacts | ❓ | No email evidence found |
-| named_responsibility | ✅ | Published named responsibility: director |
+| postal_address | ❓ | No passing postal address evidence found |
+| reachable_contacts | ❓ | No phone or email evidence found |
+| named_responsibility | ❓ | No passing named responsibility evidence found |
 
 ## 🟢 Level 3: ❓
 

@@ -1,8 +1,8 @@
 # Website Audit: https://www.army.lk/
 
-- Completed: 2026-11-27 06:01
+- Completed: 2026-11-28 05:59
 - Overall result: 🟠 Level 2
-- Vantage: 64.236.201.21 (US, github-actions)
+- Vantage: 48.217.180.220 (US, github-actions)
 
 ## ⚫ Level 0: ✅
 
@@ -33,12 +33,12 @@ Public DNS resolved; No parked-domain marker found; No defacement marker found; 
 
 To pass `🟠 Level 2`, citizens must be able to identify and contact the correct office for the service they need.
 
-Published postal address: human-elephant conflict within their respective Areas of Responsibility. Furthermore, the conference laid a strong found; Phone: +94 11 243 2682 - (18 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
+Published postal address: human-elephant conflict within their respective Areas of Responsibility. Furthermore, the conference laid a strong found; Phone: +94 76 690 7749 (18 phone numbers found); Email: info@army.lk (3 email addresses found); Published named responsibility: director
 
 | Test | Result | Details |
 | --- | --- | --- |
 | postal_address | ✅ | Published postal address: human-elephant conflict within their respective Areas of Responsibility. Furthermore, the conference laid a strong found |
-| reachable_contacts | ✅ | Phone: +94 11 243 2682 - (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
+| reachable_contacts | ✅ | Phone: +94 76 690 7749 (18 phone numbers found); Email: info@army.lk (3 email addresses found) |
 | named_responsibility | ✅ | Published named responsibility: director |
 
 ## 🟢 Level 3: ❓
